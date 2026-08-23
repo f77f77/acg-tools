@@ -65,10 +65,51 @@
       <h2>ACG Tools</h2>
       <p class="muted">請輸入密碼</p>
       <input type="password" id="gate-input" placeholder="Password" autocomplete="current-password" />
-      <button type="button" id="gate-btn" class="btn btn-primary">進入</button>
+      <button type="button" id="gate-btn">進入</button>
       <p id="gate-error" class="gate-error hidden">密碼錯誤</p>
     </div>
   </div>
+  <script>
+  (function () {
+    var PW = 'acg2026';
+    var KEY = 'acg_tools_unlocked';
+    var gate = document.getElementById('gate');
+    var app = document.getElementById('app');
+    var input = document.getElementById('gate-input');
+    var btn = document.getElementById('gate-btn');
+    var err = document.getElementById('gate-error');
+    function unlock() {
+      if (gate) gate.className = 'gate hidden';
+      if (app) app.className = (app.className || '').replace(/app-locked/g, '').trim();
+      try { sessionStorage.setItem(KEY, '1'); } catch (e) {}
+      window.__acgUnlocked = true;
+      if (typeof window.onAcgUnlocked === 'function') {
+        try { window.onAcgUnlocked(); } catch (e) { console.error(e); }
+      }
+    }
+    function tryUnlock() {
+      var v = (input && input.value || '').trim();
+      if (v === PW) {
+        if (err) err.className = 'gate-error hidden';
+        unlock();
+      } else {
+        if (err) err.className = 'gate-error';
+        if (input) { input.value = ''; input.focus(); }
+      }
+    }
+    try {
+      if (sessionStorage.getItem(KEY) === '1') { unlock(); return; }
+    } catch (e) {}
+    if (btn) btn.onclick = tryUnlock;
+    if (input) {
+      input.onkeydown = function (e) {
+        e = e || window.event;
+        if ((e.key || e.keyCode) === 'Enter' || e.keyCode === 13) tryUnlock();
+      };
+      setTimeout(function () { try { input.focus(); } catch (e) {} }, 100);
+    }
+  })();
+  </script>
   <div id="app" class="app-locked">
     <aside id="sidebar" class="sidebar">
       <div class="sidebar-header">

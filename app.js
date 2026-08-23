@@ -1,57 +1,25 @@
 
-// ==================== Password gate（前端門檻，非真正加密）====================
-const GATE_PW = 'acg2026';
-const GATE_KEY = 'acg_tools_unlocked';
-
-function unlockApp() {
-  const gate = document.getElementById('gate');
-  const app = document.getElementById('app');
-  if (gate) gate.classList.add('hidden');
-  if (app) app.classList.remove('app-locked');
-  try { sessionStorage.setItem(GATE_KEY, '1'); } catch (e) {}
-  // 解鎖後先初始化生詞
-  if (typeof initVocab === 'function' && !window.__vocabInited) {
-    window.__vocabInited = true;
-    initVocab();
-  }
-}
-
-function initGate() {
-  let unlocked = false;
-  try {
-    unlocked = sessionStorage.getItem(GATE_KEY) === '1';
-  } catch (e) {}
-
-  if (unlocked) {
-    unlockApp();
-    return;
-  }
-
-  // 未解鎖：確保 app 隱藏
-  document.getElementById('app')?.classList.add('app-locked');
-  document.getElementById('gate')?.classList.remove('hidden');
-
-  const input = document.getElementById('gate-input');
-  const btn = document.getElementById('gate-btn');
-  const err = document.getElementById('gate-error');
-  const tryUnlock = () => {
-    if ((input?.value || '') === GATE_PW) {
-      err?.classList.add('hidden');
-      unlockApp();
-    } else {
-      err?.classList.remove('hidden');
-      if (input) { input.value = ''; input.focus(); }
+// ==================== Password gate hook ====================
+// 實際解鎖邏輯在 index.html 內聯 script；這裡只負責解鎖後初始化
+window.onAcgUnlocked = function () {
+  if (window.__vocabInited) return;
+  window.__vocabInited = true;
+  if (typeof initVocab === 'function') initVocab();
+};
+// 若 HTML 已解鎖（session），DOMContent 後補呼叫
+(function () {
+  function boot() {
+    if (window.__acgUnlocked && !window.__vocabInited) {
+      window.onAcgUnlocked();
     }
-  };
-  btn?.addEventListener('click', tryUnlock);
-  input?.addEventListener('keydown', (e) => {
-    if (e.key === 'Enter') tryUnlock();
-  });
-  setTimeout(() => input?.focus(), 50);
-}
-
-initGate();
-
+  }
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', boot);
+  } else {
+    // app.js 在 body 尾載入時，HTML 內聯 gate 已跑過
+    setTimeout(boot, 0);
+  }
+})();
 
 // ==================== Utils ====================
 const $ = (s) => document.querySelector(s);
