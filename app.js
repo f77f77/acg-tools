@@ -1,9 +1,10 @@
 
 // ==================== Password gate hook ====================
 // 實際解鎖邏輯在 index.html 內聯 script；這裡只負責解鎖後初始化
+window.__acgAppReady = false;
 window.onAcgUnlocked = function () {
-  if (window.__vocabInited) return;
-  window.__vocabInited = true;
+  // 只標記已解鎖；真正 init 等 app.js 尾 __acgAppReady = true
+  window.__acgUnlocked = true;
   var app = document.getElementById('app');
   if (app) {
     app.classList.remove('app-locked');
@@ -11,20 +12,25 @@ window.onAcgUnlocked = function () {
     app.style.visibility = 'visible';
   }
   var gate = document.getElementById('gate');
-  if (gate) gate.style.display = 'none';
+  if (gate) {
+    gate.classList.add('hidden');
+    gate.style.display = 'none';
+  }
+  tryStartVocab();
+};
+function tryStartVocab() {
+  if (!window.__acgUnlocked || !window.__acgAppReady) return;
+  if (window.__vocabInited) return;
+  window.__vocabInited = true;
   if (typeof initVocab === 'function') {
     initVocab();
   }
-};
+}
 (function () {
-  function boot() {
-    if (window.__acgUnlocked && !window.__vocabInited) {
-      window.onAcgUnlocked();
-    }
+  // 若 HTML 已解鎖，只更新 UI；唔好喺 SB_URL 未 ready 時 init
+  if (window.__acgUnlocked) {
+    window.onAcgUnlocked();
   }
-  boot();
-  setTimeout(boot, 100);
-  setTimeout(boot, 500);
 })();
 
 // ==================== Utils ====================
@@ -1029,3 +1035,7 @@ $('#btn-review-all')?.addEventListener('click', () => beginReviewSession(null));
 
 // ==================== Init ====================
 // initVocab 喺解鎖後由 unlockApp() 呼叫
+
+// App 常數同函數已全部定義，可以安全 init
+window.__acgAppReady = true;
+if (typeof tryStartVocab === 'function') tryStartVocab();
