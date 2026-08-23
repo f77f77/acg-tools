@@ -1,3 +1,44 @@
+
+// ==================== Password gate（前端門檻，非真正加密）====================
+const GATE_PW = 'acg2026';
+const GATE_KEY = 'acg_tools_unlocked';
+
+function unlockApp() {
+  const gate = document.getElementById('gate');
+  const app = document.getElementById('app');
+  gate?.classList.add('hidden');
+  app?.classList.remove('app-locked');
+  try { sessionStorage.setItem(GATE_KEY, '1'); } catch (e) {}
+}
+
+function initGate() {
+  try {
+    if (sessionStorage.getItem(GATE_KEY) === '1') {
+      unlockApp();
+      return;
+    }
+  } catch (e) {}
+  const input = document.getElementById('gate-input');
+  const btn = document.getElementById('gate-btn');
+  const err = document.getElementById('gate-error');
+  const tryUnlock = () => {
+    if ((input?.value || '') === GATE_PW) {
+      err?.classList.add('hidden');
+      unlockApp();
+    } else {
+      err?.classList.remove('hidden');
+      if (input) { input.value = ''; input.focus(); }
+    }
+  };
+  btn?.addEventListener('click', tryUnlock);
+  input?.addEventListener('keydown', (e) => {
+    if (e.key === 'Enter') tryUnlock();
+  });
+  input?.focus();
+}
+
+initGate();
+
 // ==================== Utils ====================
 const $ = (s) => document.querySelector(s);
 const $$ = (s) => document.querySelectorAll(s);

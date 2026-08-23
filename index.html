@@ -7,7 +7,16 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <div id="app">
+  <div id="gate" class="gate">
+    <div class="gate-box">
+      <h2>ACG Tools</h2>
+      <p class="muted">請輸入密碼</p>
+      <input type="password" id="gate-input" placeholder="Password" autocomplete="current-password" />
+      <button type="button" id="gate-btn" class="btn btn-primary">進入</button>
+      <p id="gate-error" class="gate-error hidden">密碼錯誤</p>
+    </div>
+  </div>
+  <div id="app" class="app-locked">
     <aside id="sidebar" class="sidebar">
       <div class="sidebar-header">
         <span class="logo">ACG Tools</span>

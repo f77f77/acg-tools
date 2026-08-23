@@ -573,3 +573,40 @@ body {
 }
 .fx-fee-hint { font-size: 0.8rem; margin: 0; }
 .fx-result-fee { margin-top: 8px; font-size: 0.85rem; }
+
+/* Password gate */
+.gate {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  background: #0a0a0a;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+.gate.hidden { display: none; }
+.gate-box {
+  width: 100%;
+  max-width: 320px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 28px 24px;
+  text-align: center;
+}
+.gate-box h2 { margin-bottom: 8px; font-size: 1.25rem; }
+.gate-box .muted { margin-bottom: 16px; font-size: 0.9rem; color: var(--text-muted); }
+.gate-box input {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 12px;
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  color: var(--text);
+  font-size: 1rem;
+}
+.gate-box input:focus { outline: none; border-color: var(--primary); }
+.gate-error { color: #e74c3c; font-size: 0.85rem; margin-top: 10px; }
+.app-locked { visibility: hidden; pointer-events: none; }
