@@ -6,18 +6,31 @@ const GATE_KEY = 'acg_tools_unlocked';
 function unlockApp() {
   const gate = document.getElementById('gate');
   const app = document.getElementById('app');
-  gate?.classList.add('hidden');
-  app?.classList.remove('app-locked');
+  if (gate) gate.classList.add('hidden');
+  if (app) app.classList.remove('app-locked');
   try { sessionStorage.setItem(GATE_KEY, '1'); } catch (e) {}
+  // 解鎖後先初始化生詞
+  if (typeof initVocab === 'function' && !window.__vocabInited) {
+    window.__vocabInited = true;
+    initVocab();
+  }
 }
 
 function initGate() {
+  let unlocked = false;
   try {
-    if (sessionStorage.getItem(GATE_KEY) === '1') {
-      unlockApp();
-      return;
-    }
+    unlocked = sessionStorage.getItem(GATE_KEY) === '1';
   } catch (e) {}
+
+  if (unlocked) {
+    unlockApp();
+    return;
+  }
+
+  // 未解鎖：確保 app 隱藏
+  document.getElementById('app')?.classList.add('app-locked');
+  document.getElementById('gate')?.classList.remove('hidden');
+
   const input = document.getElementById('gate-input');
   const btn = document.getElementById('gate-btn');
   const err = document.getElementById('gate-error');
@@ -34,10 +47,11 @@ function initGate() {
   input?.addEventListener('keydown', (e) => {
     if (e.key === 'Enter') tryUnlock();
   });
-  input?.focus();
+  setTimeout(() => input?.focus(), 50);
 }
 
 initGate();
+
 
 // ==================== Utils ====================
 const $ = (s) => document.querySelector(s);
@@ -1040,4 +1054,4 @@ $$('.review-batch').forEach(btn => {
 $('#btn-review-all')?.addEventListener('click', () => beginReviewSession(null));
 
 // ==================== Init ====================
-initVocab();
+// initVocab 喺解鎖後由 unlockApp() 呼叫
