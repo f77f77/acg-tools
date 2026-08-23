@@ -364,11 +364,37 @@ body {
 
 /* Mobile */
 @media (max-width: 768px) {
-  .sidebar { transform: translateX(-100%); }
+  body { overflow-x: hidden; }
+  #app {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 100vw;
+    overflow-x: hidden;
+  }
+  .sidebar {
+    transform: translateX(-100%);
+    width: min(80vw, 260px);
+  }
   .sidebar.open { transform: translateX(0); }
-  .main-wrap { margin-left: 0; }
-  .topbar { display: flex; }
+  .main-wrap {
+    margin-left: 0 !important;
+    width: 100%;
+    max-width: 100vw;
+    min-height: 100vh;
+    min-height: 100dvh;
+  }
+  .topbar { display: flex !important; }
+  #main {
+    padding: 12px;
+    max-width: 100%;
+  }
   .anime-grid { grid-template-columns: repeat(auto-fill, minmax(130px, 1fr)); gap: 10px; }
+  .review-setup { padding: 24px 12px; }
+  .module-toolbar {
+    flex-direction: column;
+    align-items: stretch;
+  }
 }
 
 /* FX module */
@@ -609,4 +635,5 @@ body {
 }
 .gate-box input:focus { outline: none; border-color: var(--primary); }
 .gate-error { color: #e74c3c; font-size: 0.85rem; margin-top: 10px; }
-.app-locked { visibility: hidden; pointer-events: none; }
+#app.app-locked { display: none !important; }
+#app:not(.app-locked) { display: flex !important; visibility: visible !important; }

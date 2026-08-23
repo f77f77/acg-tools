@@ -4,21 +4,27 @@
 window.onAcgUnlocked = function () {
   if (window.__vocabInited) return;
   window.__vocabInited = true;
-  if (typeof initVocab === 'function') initVocab();
+  var app = document.getElementById('app');
+  if (app) {
+    app.classList.remove('app-locked');
+    app.style.display = 'flex';
+    app.style.visibility = 'visible';
+  }
+  var gate = document.getElementById('gate');
+  if (gate) gate.style.display = 'none';
+  if (typeof initVocab === 'function') {
+    initVocab();
+  }
 };
-// 若 HTML 已解鎖（session），DOMContent 後補呼叫
 (function () {
   function boot() {
     if (window.__acgUnlocked && !window.__vocabInited) {
       window.onAcgUnlocked();
     }
   }
-  if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', boot);
-  } else {
-    // app.js 在 body 尾載入時，HTML 內聯 gate 已跑過
-    setTimeout(boot, 0);
-  }
+  boot();
+  setTimeout(boot, 100);
+  setTimeout(boot, 500);
 })();
 
 // ==================== Utils ====================

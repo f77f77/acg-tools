@@ -57,6 +57,31 @@
     #app.app-locked {
       display: none !important;
     }
+    #app:not(.app-locked) {
+      display: flex !important;
+      min-height: 100vh;
+      width: 100%;
+      visibility: visible !important;
+    }
+    @media (max-width: 768px) {
+      #app:not(.app-locked) {
+        flex-direction: column;
+      }
+      .main-wrap {
+        margin-left: 0 !important;
+        width: 100% !important;
+        max-width: 100vw !important;
+      }
+      .topbar {
+        display: flex !important;
+      }
+      .sidebar {
+        transform: translateX(-100%) !important;
+      }
+      .sidebar.open {
+        transform: translateX(0) !important;
+      }
+    }
   </style>
 </head>
 <body>
@@ -79,13 +104,28 @@
     var btn = document.getElementById('gate-btn');
     var err = document.getElementById('gate-error');
     function unlock() {
-      if (gate) gate.className = 'gate hidden';
-      if (app) app.className = (app.className || '').replace(/app-locked/g, '').trim();
+      if (gate) {
+        gate.className = 'gate hidden';
+        gate.style.display = 'none';
+      }
+      if (app) {
+        app.classList.remove('app-locked');
+        app.style.display = 'flex';
+        app.style.visibility = 'visible';
+        app.style.minHeight = '100vh';
+        app.style.width = '100%';
+      }
       try { sessionStorage.setItem(KEY, '1'); } catch (e) {}
       window.__acgUnlocked = true;
-      if (typeof window.onAcgUnlocked === 'function') {
-        try { window.onAcgUnlocked(); } catch (e) { console.error(e); }
+      // 等 app.js 載入完再 init（手機可能較慢）
+      function runInit() {
+        if (typeof window.onAcgUnlocked === 'function') {
+          try { window.onAcgUnlocked(); } catch (e) { console.error(e); }
+        } else {
+          setTimeout(runInit, 50);
+        }
       }
+      runInit();
     }
     function tryUnlock() {
       var v = (input && input.value || '').trim();
