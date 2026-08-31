@@ -110,9 +110,17 @@ function speakJapanese(text) {
 
 function ttsTextForCard(card) {
   if (!card) return '';
-  // 有讀音就讀「單字。讀音」，否則只讀單字
-  if (card.reading) return card.word + '。' + card.reading;
-  return card.word;
+  // 只讀平假名／讀音，避免漢字被系統讀錯
+  return (card.reading || '').trim();
+}
+
+function speakCard(card) {
+  const text = ttsTextForCard(card);
+  if (!text) {
+    alert('呢張卡冇「平假名／讀音」，無法朗讀。請先補上讀音。');
+    return;
+  }
+  speakJapanese(text);
 }
 
 // ==================== VOCAB MODULE ====================
@@ -483,10 +491,10 @@ function gradeCard(grade) {
 $('#btn-reveal')?.addEventListener('click', revealAnswer);
 $('#btn-tts')?.addEventListener('click', (e) => {
   e.stopPropagation();
-  if (currentCard) speakJapanese(ttsTextForCard(currentCard));
+  if (currentCard) speakCard(currentCard);
 });
 $('#flashcard')?.addEventListener('dblclick', () => {
-  if (currentCard) speakJapanese(ttsTextForCard(currentCard));
+  if (currentCard) speakCard(currentCard);
 });
 $('#flashcard')?.addEventListener('click', () => { if (!isRevealed) revealAnswer(); });
 $$('[data-grade]').forEach(btn => btn.addEventListener('click', () => gradeCard(btn.dataset.grade)));
@@ -554,7 +562,7 @@ function renderCardsList() {
     btn.addEventListener('click', (e) => {
       const id = e.target.closest('.card-item').dataset.id;
       const card = cards.find(c => c.id === id);
-      if (card) speakJapanese(ttsTextForCard(card));
+      if (card) speakCard(card);
     });
   });
 }
