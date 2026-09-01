@@ -54,18 +54,32 @@ function setSidebarOpen(open) {
   }
 }
 
-$('#btn-toggle-sidebar')?.addEventListener('click', () => {
-  const isCollapsed = sidebar.classList.contains('collapsed') || !sidebar.classList.contains('open') && window.innerWidth <= 768;
+function toggleSidebar() {
+  if (!sidebar) return;
   if (window.innerWidth <= 768) {
     sidebar.classList.toggle('open');
   } else {
-    sidebar.classList.toggle('collapsed');
-    mainWrap.classList.toggle('expanded');
+    const willCollapse = !sidebar.classList.contains('collapsed');
+    sidebar.classList.toggle('collapsed', willCollapse);
+    mainWrap?.classList.toggle('expanded', willCollapse);
   }
+}
+
+$('#btn-toggle-sidebar')?.addEventListener('click', (e) => {
+  e.preventDefault();
+  e.stopPropagation();
+  toggleSidebar();
 });
 
-$('#btn-open-sidebar')?.addEventListener('click', () => {
-  sidebar.classList.add('open');
+$('#btn-open-sidebar')?.addEventListener('click', (e) => {
+  e.preventDefault();
+  e.stopPropagation();
+  if (window.innerWidth <= 768) {
+    sidebar?.classList.add('open');
+  } else {
+    sidebar?.classList.remove('collapsed');
+    mainWrap?.classList.remove('expanded');
+  }
 });
 
 // Close sidebar on mobile when clicking nav
