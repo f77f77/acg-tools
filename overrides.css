@@ -65,3 +65,24 @@
 #gate-btn:active {
   background: #5b4bd0;
 }
+
+/* Apple Music: fill sidebar, less leftover gutter */
+:root { --sidebar-w: 336px; }
+.sidebar-player {
+  padding: 2px 10px 10px !important;
+}
+.sidebar-player-toggle {
+  padding: 8px 2px !important;
+}
+.sidebar-player-body {
+  padding: 0 !important;
+}
+.sidebar-player iframe {
+  display: block;
+  width: 100% !important;
+  max-width: 100% !important;
+  height: 360px !important;
+  border: 0 !important;
+  border-radius: 12px;
+  overflow: hidden;
+}
