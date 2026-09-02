@@ -28,6 +28,26 @@
     setPlayerOpen(saved === '1');
   })();
 
+  // 漢堡鍵：桌面只用側欄鍵摺盤；手機只用 topbar 鍵開關
+  (function unifyHamburger() {
+    const openBtn = $('#btn-open-sidebar');
+    if (!openBtn) return;
+    openBtn.addEventListener('click', function (e) {
+      e.preventDefault();
+      e.stopImmediatePropagation();
+      const sidebar = $('#sidebar');
+      const mainWrap = $('#main-wrap');
+      if (!sidebar) return;
+      if (window.innerWidth <= 768) {
+        sidebar.classList.toggle('open');
+      } else {
+        const willCollapse = !sidebar.classList.contains('collapsed');
+        sidebar.classList.toggle('collapsed', willCollapse);
+        if (mainWrap) mainWrap.classList.toggle('expanded', willCollapse);
+      }
+    }, true);
+  })();
+
   // 覆蓋卡片列表：加編輯
   const _render = window.renderCardsList;
   window.renderCardsList = function renderCardsList() {
