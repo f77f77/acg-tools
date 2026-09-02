@@ -8,3 +8,60 @@
 @media (max-width: 768px) {
   #btn-toggle-sidebar { display: none !important; }
 }
+
+/* Gate: dark input + primary button */
+#gate .gate-box h2 {
+  font-size: 1.35rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  margin-bottom: 6px;
+}
+#gate .gate-box .muted {
+  margin-bottom: 16px;
+}
+#gate-input {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 12px 14px;
+  margin-bottom: 12px;
+  background: #111 !important;
+  border: 1px solid #3a3a3a !important;
+  border-radius: 10px;
+  color: #e8e8e8 !important;
+  font-size: 1rem;
+  outline: none;
+  -webkit-text-fill-color: #e8e8e8;
+  box-shadow: none !important;
+}
+#gate-input:focus {
+  border-color: #7c6af0 !important;
+}
+#gate-input:-webkit-autofill,
+#gate-input:-webkit-autofill:hover,
+#gate-input:-webkit-autofill:focus {
+  -webkit-text-fill-color: #e8e8e8 !important;
+  caret-color: #e8e8e8;
+  box-shadow: 0 0 0 1000px #111 inset !important;
+  transition: background-color 9999s ease-out;
+}
+#gate-btn {
+  display: block;
+  width: 100%;
+  padding: 12px 16px;
+  border: none;
+  border-radius: 10px;
+  background: #7c6af0;
+  color: #fff;
+  font-size: 0.95rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  cursor: pointer;
+  appearance: none;
+  -webkit-appearance: none;
+}
+#gate-btn:hover {
+  background: #6a58e0;
+}
+#gate-btn:active {
+  background: #5b4bd0;
+}
