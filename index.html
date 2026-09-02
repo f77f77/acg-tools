@@ -5,8 +5,345 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
   <title>ACG Tools · 生詞本 + 新番表 + 匯率</title>
   <link rel="stylesheet" href="style.css" />
+  <style id="gate-critical">
+    #gate {
+      position: fixed !important;
+      inset: 0 !important;
+      z-index: 99999 !important;
+      background: #0a0a0a !important;
+      display: flex !important;
+      align-items: center !important;
+      justify-content: center !important;
+      padding: 20px !important;
+      margin: 0 !important;
+    }
+    #gate.hidden { display: none !important; }
+    #gate .gate-box {
+      width: 100%;
+      max-width: 320px;
+      background: #1a1a1a;
+      border: 1px solid #333;
+      border-radius: 12px;
+      padding: 28px 24px;
+      text-align: center;
+      color: #e8e8e8;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    }
+    #gate h2 { margin: 0 0 8px; font-size: 1.25rem; }
+    #gate .muted { margin: 0 0 16px; font-size: 0.9rem; color: #999; }
+    #gate input {
+      width: 100%;
+      box-sizing: border-box;
+      padding: 12px;
+      margin-bottom: 12px;
+      background: #0f0f0f;
+      border: 1px solid #333;
+      border-radius: 8px;
+      color: #e8e8e8;
+      font-size: 1rem;
+    }
+    #gate button {
+      width: 100%;
+      padding: 12px;
+      border: none;
+      border-radius: 8px;
+      background: #7c6af0;
+      color: #fff;
+      font-size: 1rem;
+      cursor: pointer;
+    }
+    #gate .gate-error { color: #e74c3c; font-size: 0.85rem; margin-top: 10px; }
+    #gate .gate-error.hidden { display: none; }
+    #app.app-locked { display: none !important; }
+    #app:not(.app-locked) {
+      display: flex !important;
+      min-height: 100vh;
+      width: 100%;
+      visibility: visible !important;
+    }
+    @media (max-width: 768px) {
+      #app:not(.app-locked) { flex-direction: column; }
+      .main-wrap { margin-left: 0 !important; width: 100% !important; max-width: 100vw !important; }
+      .topbar { display: flex !important; }
+      .sidebar { transform: translateX(-100%) !important; }
+      .sidebar.open { transform: translateX(0) !important; }
+    }
+  </style>
 </head>
 <body>
-PLACEHOLDER
+  <div id="gate" class="gate">
+    <div class="gate-box">
+      <h2>ACG Tools</h2>
+      <p class="muted">請輸入密碼</p>
+      <input type="password" id="gate-input" placeholder="Password" autocomplete="current-password" />
+      <button type="button" id="gate-btn">進入</button>
+      <p id="gate-error" class="gate-error hidden">密碼錯誤</p>
+    </div>
+  </div>
+  <script>
+  (function () {
+    var PW = 'acg2026';
+    var KEY = 'acg_tools_unlocked';
+    var gate = document.getElementById('gate');
+    var app = document.getElementById('app');
+    var input = document.getElementById('gate-input');
+    var btn = document.getElementById('gate-btn');
+    var err = document.getElementById('gate-error');
+    function unlock() {
+      if (gate) { gate.className = 'gate hidden'; gate.style.display = 'none'; }
+      if (app) {
+        app.classList.remove('app-locked');
+        app.style.display = 'flex';
+        app.style.visibility = 'visible';
+        app.style.minHeight = '100vh';
+        app.style.width = '100%';
+      }
+      try { sessionStorage.setItem(KEY, '1'); } catch (e) {}
+      window.__acgUnlocked = true;
+      function runInit() {
+        if (typeof window.onAcgUnlocked === 'function') {
+          try { window.onAcgUnlocked(); } catch (e) { console.error(e); }
+        } else { setTimeout(runInit, 50); }
+      }
+      runInit();
+    }
+    function tryUnlock() {
+      var v = (input && input.value || '').trim();
+      if (v === PW) {
+        if (err) err.className = 'gate-error hidden';
+        unlock();
+      } else {
+        if (err) err.className = 'gate-error';
+        if (input) { input.value = ''; input.focus(); }
+      }
+    }
+    try { if (sessionStorage.getItem(KEY) === '1') { unlock(); return; } } catch (e) {}
+    if (btn) btn.onclick = tryUnlock;
+    if (input) {
+      input.onkeydown = function (e) {
+        e = e || window.event;
+        if ((e.key || e.keyCode) === 'Enter' || e.keyCode === 13) tryUnlock();
+      };
+      setTimeout(function () { try { input.focus(); } catch (e) {} }, 100);
+    }
+  })();
+  </script>
+  <div id="app" class="app-locked">
+    <aside id="sidebar" class="sidebar">
+      <div class="sidebar-header">
+        <span class="logo">ACG Tools</span>
+        <button id="btn-toggle-sidebar" class="btn-icon" title="收起側欄">☰</button>
+      </div>
+      <nav class="sidebar-nav">
+        <button class="nav-item active" data-module="vocab"><span class="nav-icon">📖</span><span class="nav-label">生詞本</span></button>
+        <button class="nav-item" data-module="season"><span class="nav-icon">📺</span><span class="nav-label">新番表</span></button>
+        <button class="nav-item" data-module="fx"><span class="nav-icon">💱</span><span class="nav-label">匯率計算</span></button>
+      </nav>
+      <div class="sidebar-player collapsed" id="sidebar-player">
+        <button type="button" id="btn-toggle-player" class="sidebar-player-toggle" aria-expanded="false">
+          <span class="sidebar-player-label">Apple Music</span>
+          <span class="sidebar-player-chevron">▸</span>
+        </button>
+        <div class="sidebar-player-body">
+          <iframe id="am-player" title="Apple Music" allow="autoplay *; encrypted-media *; fullscreen *; clipboard-write" frameborder="0" height="360" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation" data-src="https://embed.music.apple.com/jp/playlist/favorite-songs/pl.u-EgUD7ApZa9" src="about:blank"></iframe>
+        </div>
+      </div>
+      <div class="sidebar-footer"><small>個人工具</small></div>
+    </aside>
+    <div id="main-wrap" class="main-wrap">
+      <header class="topbar">
+        <button id="btn-open-sidebar" class="btn-icon">☰</button>
+        <h1 id="page-title">生詞本</h1>
+      </header>
+      <main id="main">
+        <section id="module-vocab" class="module active">
+          <div class="module-toolbar">
+            <div class="tabs">
+              <button class="tab active" data-vocab-view="review">複習</button>
+              <button class="tab" data-vocab-view="cards">全部卡片</button>
+              <button class="tab" data-vocab-view="add">新增</button>
+            </div>
+            <div class="toolbar-actions">
+              <button id="btn-import-file" class="btn btn-ghost btn-sm">匯入 CSV</button>
+              <button id="btn-export" class="btn btn-ghost btn-sm">匯出</button>
+              <button id="btn-stats" class="btn btn-ghost btn-sm">統計</button>
+            </div>
+          </div>
+          <input type="file" id="file-input" accept=".csv,text/csv" class="hidden" />
+          <div id="vocab-review" class="vocab-view active">
+            <div id="review-setup" class="review-setup">
+              <p class="review-setup-title">今次複習幾多張？</p>
+              <p class="sub" id="review-due-hint">到期：—</p>
+              <div class="review-batch-btns">
+                <button type="button" class="btn btn-secondary review-batch" data-batch="30">30 張</button>
+                <button type="button" class="btn btn-secondary review-batch" data-batch="50">50 張</button>
+                <button type="button" class="btn btn-secondary review-batch" data-batch="80">80 張</button>
+                <button type="button" class="btn btn-secondary review-batch" data-batch="100">100 張</button>
+              </div>
+              <button type="button" id="btn-review-all" class="btn btn-ghost btn-sm">全部到期</button>
+            </div>
+            <div id="review-empty" class="empty-state hidden">
+              <p>暫時冇需要複習嘅卡片</p>
+              <p class="sub">去「新增」加入生詞</p>
+            </div>
+            <div id="review-card" class="card-container hidden">
+              <div class="card" id="flashcard">
+                <div class="card-front">
+                  <div class="word" id="card-word"></div>
+                  <div class="reading" id="card-reading"></div>
+                  <button type="button" id="btn-tts" class="btn-tts" title="朗讀日文">🔊 朗讀</button>
+                </div>
+                <div class="card-back hidden">
+                  <div class="meaning" id="card-meaning"></div>
+                  <div class="example" id="card-example"></div>
+                </div>
+              </div>
+              <div class="review-actions" id="review-actions-front">
+                <button id="btn-reveal" class="btn btn-primary btn-large">顯示答案</button>
+              </div>
+              <div class="review-actions hidden" id="review-actions-back">
+                <button class="btn btn-again" data-grade="again"><span class="grade-label">Again</span><span class="grade-time" id="grade-time-again"></span></button>
+                <button class="btn btn-hard" data-grade="hard"><span class="grade-label">Hard</span><span class="grade-time" id="grade-time-hard"></span></button>
+                <button class="btn btn-good" data-grade="good"><span class="grade-label">Good</span><span class="grade-time" id="grade-time-good"></span></button>
+                <button class="btn btn-easy" data-grade="easy"><span class="grade-label">Easy</span><span class="grade-time" id="grade-time-easy"></span></button>
+              </div>
+              <div class="review-progress"><span id="review-count">0</span> 張剩餘</div>
+              <p class="review-keys muted">空白／Enter 揭答案 · 1 Again · 2 Hard · 3 Good · 4 Easy</p>
+            </div>
+          </div>
+          <div id="vocab-cards" class="vocab-view">
+            <div class="search-bar">
+              <input type="text" id="search-input" placeholder="搜尋單字 / 讀音 / 意思..." />
+              <span id="cards-count" class="cards-count"></span>
+            </div>
+            <div id="cards-list" class="cards-list"></div>
+            <div id="cards-empty" class="empty-state hidden"><p>未有任何卡片</p></div>
+          </div>
+          <div id="vocab-add" class="vocab-view">
+            <form id="add-form" class="add-form">
+              <div class="form-group"><label>日文單字 *</label><input type="text" id="input-word" required placeholder="例：憂鬱" /></div>
+              <div class="form-group"><label>平假名 / 讀音</label><input type="text" id="input-reading" placeholder="例：ゆううつ" /></div>
+              <div class="form-group"><label>中文意思 *</label><input type="text" id="input-meaning" required placeholder="例：憂鬱、郁闷" /></div>
+              <div class="form-group"><label>例句 / 備註</label><textarea id="input-example" rows="2" placeholder="原文例句或備註（可選）"></textarea></div>
+              <button type="submit" class="btn btn-primary btn-large">加入卡片</button>
+            </form>
+            <div class="divider">或</div>
+            <div class="paste-area">
+              <label>貼上 CSV / Table 內容</label>
+              <textarea id="paste-input" rows="5" placeholder="可直接貼上 Google Sheet 或 Gemini 出嘅內容..."></textarea>
+              <button id="btn-parse-paste" class="btn btn-secondary">解析並加入</button>
+            </div>
+          </div>
+        </section>
+        <section id="module-season" class="module">
+          <div class="module-toolbar">
+            <div class="season-info">
+              <span id="season-label">本季放送表（本地 season.json）</span>
+              <span id="season-updated" class="muted"></span>
+            </div>
+            <button id="btn-refresh-season" class="btn btn-ghost btn-sm">重新整理</button>
+          </div>
+          <div id="season-loading" class="empty-state"><p>載入中...</p></div>
+          <div id="season-error" class="empty-state hidden">
+            <p>載入失敗</p>
+            <p class="sub" id="season-error-msg"></p>
+            <button id="btn-retry-season" class="btn btn-secondary">重試</button>
+          </div>
+          <div id="season-content" class="hidden"></div>
+        </section>
+        <section id="module-fx" class="module">
+          <div class="module-toolbar">
+            <div class="season-info">
+              <span>即時匯率計算器</span>
+              <span id="fx-updated" class="muted"></span>
+            </div>
+            <button id="btn-refresh-fx" class="btn btn-ghost btn-sm">重新整理</button>
+          </div>
+          <div class="fx-hotkeys">
+            <span class="fx-hotkey-label">快捷切換基準：</span>
+            <button type="button" class="btn btn-secondary fx-hotkey" data-base="HKD" title="快捷鍵 1">1 · 港幣 HKD</button>
+            <button type="button" class="btn btn-secondary fx-hotkey" data-base="CNY" title="快捷鍵 2">2 · 人民幣 CNY</button>
+            <button type="button" class="btn btn-secondary fx-hotkey" data-base="JPY" title="快捷鍵 3">3 · 日元 JPY</button>
+          </div>
+          <div class="fx-panel">
+            <div class="fx-row"><label>金額</label><input type="number" id="fx-amount" value="100" min="0" step="any" /></div>
+            <div class="fx-row"><label>由</label>
+              <select id="fx-from">
+                <option value="HKD" selected>港幣 HKD</option>
+                <option value="CNY">人民幣 CNY</option>
+                <option value="JPY">日元 JPY</option>
+                <option value="USD">美元 USD</option>
+                <option value="EUR">歐元 EUR</option>
+                <option value="TWD">台幣 TWD</option>
+              </select>
+            </div>
+            <div class="fx-row"><label>到</label>
+              <select id="fx-to">
+                <option value="HKD">港幣 HKD</option>
+                <option value="CNY">人民幣 CNY</option>
+                <option value="JPY" selected>日元 JPY</option>
+                <option value="USD">美元 USD</option>
+                <option value="EUR">歐元 EUR</option>
+                <option value="TWD">台幣 TWD</option>
+              </select>
+            </div>
+            <button type="button" id="btn-fx-swap" class="btn btn-ghost btn-sm">⇄ 對調</button>
+            <div class="fx-fee-row">
+              <label class="fx-fee-check"><input type="checkbox" id="fx-fee-enable" /><span>含 Mastercard／信用卡手續費</span></label>
+              <label class="fx-fee-pct"><input type="number" id="fx-fee-pct" value="1.5" min="0" max="10" step="0.1" /><span>%</span></label>
+            </div>
+            <p class="fx-fee-hint muted">一般發卡行約 1.5%–2%；實際以銀行／卡種為準</p>
+          </div>
+          <div id="fx-result" class="fx-result">
+            <div class="fx-result-main" id="fx-result-main">—</div>
+            <div class="fx-result-rate" id="fx-result-rate"></div>
+            <div class="fx-result-fee muted" id="fx-result-fee"></div>
+          </div>
+          <div id="fx-loading" class="empty-state hidden"><p>載入匯率中...</p></div>
+          <div id="fx-error" class="empty-state hidden"><p>載入失敗</p><p class="sub" id="fx-error-msg"></p></div>
+          <div class="fx-quick" id="fx-quick">
+            <div class="fx-quick-title">常用對照（以目前基準）</div>
+            <div class="fx-quick-grid" id="fx-quick-grid"></div>
+          </div>
+          <p class="fx-attribution muted">匯率來源：<a href="https://www.exchangerate-api.com" target="_blank" rel="noopener">Exchange Rate API</a>（每日更新）</p>
+          <p class="fx-hint muted">鍵盤快捷鍵：1 = 港幣基準 · 2 = 人民幣基準 · 3 = 日元基準（在匯率頁時有效）</p>
+        </section>
+      </main>
+    </div>
+  </div>
+  <div id="modal-import" class="modal hidden">
+    <div class="modal-content">
+      <h3>預覽將會加入嘅卡片</h3>
+      <div id="import-preview" class="import-preview"></div>
+      <div class="modal-actions">
+        <button id="btn-import-confirm" class="btn btn-primary">確認加入</button>
+        <button id="btn-import-cancel" class="btn btn-ghost">取消</button>
+      </div>
+    </div>
+  </div>
+  <div id="modal-stats" class="modal hidden">
+    <div class="modal-content">
+      <h3>統計</h3>
+      <div id="stats-content"></div>
+      <button id="btn-stats-close" class="btn btn-ghost">關閉</button>
+    </div>
+  </div>
+  <div id="modal-edit" class="modal hidden">
+    <div class="modal-content">
+      <h3>編輯卡片</h3>
+      <form id="edit-form" class="add-form">
+        <input type="hidden" id="edit-id" />
+        <div class="form-group"><label>日文單字 *</label><input type="text" id="edit-word" required /></div>
+        <div class="form-group"><label>平假名 / 讀音</label><input type="text" id="edit-reading" /></div>
+        <div class="form-group"><label>中文意思 *</label><input type="text" id="edit-meaning" required /></div>
+        <div class="form-group"><label>例句 / 備註</label><textarea id="edit-example" rows="2"></textarea></div>
+        <div class="modal-actions">
+          <button type="submit" class="btn btn-primary">儲存</button>
+          <button type="button" id="btn-edit-cancel" class="btn btn-ghost">取消</button>
+        </div>
+      </form>
+    </div>
+  </div>
+  <script src="app.js"></script>
 </body>
 </html>
