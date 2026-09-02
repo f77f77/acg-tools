@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
   <title>ACG Tools · 生詞本 + 新番表 + 匯率</title>
   <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="overrides.css" />
   <style id="gate-critical">
     #gate { position: fixed !important; inset: 0 !important; z-index: 99999 !important; background: #0a0a0a !important; display: flex !important; align-items: center !important; justify-content: center !important; padding: 20px !important; }
     #gate.hidden { display: none !important; }
@@ -142,7 +143,7 @@
           </div>
         </section>
         <section id="module-season" class="module">
-          <div class="module-toolbar"><div class="season-info"><span id="season-label">本季放送表（本地 season.json）</span><span id="season-updated" class="muted"></span></div><button id="btn-refresh-season" class="btn btn-ghost btn-sm">重新整理</button></div>
+          <div class="module-toolbar"><div class="season-info"><span id="season-label">本季放送表（Bangumi · 每日自動更新）</span><span id="season-updated" class="muted"></span></div><button id="btn-refresh-season" class="btn btn-ghost btn-sm">重新整理</button></div>
           <div id="season-loading" class="empty-state"><p>載入中...</p></div>
           <div id="season-error" class="empty-state hidden"><p>載入失敗</p><p class="sub" id="season-error-msg"></p><button id="btn-retry-season" class="btn btn-secondary">重試</button></div>
           <div id="season-content" class="hidden"></div>
