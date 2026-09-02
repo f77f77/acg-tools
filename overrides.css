@@ -1,0 +1,10 @@
+/* Desktop: sidebar already visible → hide topbar hamburger */
+@media (min-width: 769px) {
+  #btn-open-sidebar { display: none !important; }
+  .main-wrap.expanded #btn-open-sidebar { display: inline-flex !important; }
+}
+
+/* Mobile: sidebar off-canvas → hide sidebar hamburger, keep topbar one */
+@media (max-width: 768px) {
+  #btn-toggle-sidebar { display: none !important; }
+}
