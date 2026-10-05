@@ -93,11 +93,21 @@ $$('.nav-item').forEach(btn => {
 $$('.nav-item').forEach(btn => {
   btn.addEventListener('click', () => {
     const mod = btn.dataset.module;
+    if (!mod) return;
     $$('.nav-item').forEach(b => b.classList.remove('active'));
     btn.classList.add('active');
     $$('.module').forEach(m => m.classList.remove('active'));
     $(`#module-${mod}`)?.classList.add('active');
-    $('#page-title').textContent = ({ vocab: '生詞本', season: '新番表', fx: '匯率計算' })[mod] || mod;
+    $('#page-title').textContent = ({
+      vocab: '生詞本',
+      season: '新番表',
+      fx: '匯率計算',
+      names: '中日英名稱對照',
+      codes: '配送碼',
+      events: '香港活動看板',
+      anime: '中文字幕動畫',
+      subs: '訂閱／續費',
+    })[mod] || mod;
     if (mod === 'fx') loadFx();
     if (mod === 'season') loadSeason();
     if (mod === 'vocab') startReview();

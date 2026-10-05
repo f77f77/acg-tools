@@ -1,0 +1,52 @@
+name: Deploy GitHub Pages
+
+# Hub stays at the site root. Champions is built into /champions/
+# with Vite base /acg-tools/champions/.
+#
+# acg-tools Pages is currently "Deploy from a branch" (main /).
+# After this workflow lands on main, switch Settings → Pages → Source
+# to GitHub Actions once. Until then, branch deploys still publish the
+# hub from the repo root, and /champions/ is not the Vite build.
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  build:
+    if: github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+          cache: npm
+          cache-dependency-path: apps/champions/package-lock.json
+      - name: Assemble hub + champions
+        env:
+          NPM_CI: "1"
+          VITE_BASE: /acg-tools/champions/
+        run: bash scripts/build-pages.sh
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: dist
+
+  deploy:
+    needs: build
+    if: github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4

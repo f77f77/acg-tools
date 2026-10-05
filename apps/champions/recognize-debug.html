@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="UTF-8" />
+    <title>recognize-debug</title>
+  </head>
+  <body>
+    <pre id="out">loading…</pre>
+    <script type="module">
+      import { loadGeneratedSpeciesData, findSpecies } from '/src/lib/species.ts';
+      import {
+        recognizeEnemyTeamFromCanvas,
+        loadPreviewThumbTemplates,
+        PREVIEW_THUMB_TEMPLATES,
+        CONFIDENCE_THRESHOLD,
+        fixtureTeamPreviewUrl,
+      } from '/src/lib/recognize.ts';
+
+      const params = new URLSearchParams(location.search);
+      const rel = params.get('img') || 'fixtures/team-preview-live-latest.jpg';
+      const base = import.meta.env.BASE_URL || '/';
+      const imgUrl = rel.startsWith('http')
+        ? rel
+        : (base.endsWith('/') ? base : base + '/') + rel.replace(/^\//, '');
+
+      function drawImageToCanvas(img) {
+        const c = document.createElement('canvas');
+        c.width = img.naturalWidth;
+        c.height = img.naturalHeight;
+        const ctx = c.getContext('2d', { willReadFrequently: true });
+        ctx.drawImage(img, 0, 0);
+        return c;
+      }
+
+      async function main() {
+        const out = { ok: false };
+        try {
+          const n = await loadGeneratedSpeciesData();
+          const templates = await loadPreviewThumbTemplates();
+          const img = new Image();
+          img.decoding = 'async';
+          await new Promise((resolve, reject) => {
+            img.onload = resolve;
+            img.onerror = () => reject(new Error('image load failed: ' + imgUrl));
+            img.src = imgUrl;
+          });
+          const canvas = drawImageToCanvas(img);
+          const results = await recognizeEnemyTeamFromCanvas(canvas);
+          out.ok = true;
+          out.imgUrl = imgUrl;
+          out.canvas = { w: canvas.width, h: canvas.height };
+          out.generatedSpecies = n;
+          out.templateCount = templates.length || PREVIEW_THUMB_TEMPLATES.length;
+          out.threshold = CONFIDENCE_THRESHOLD;
+          out.fixtureHelper = fixtureTeamPreviewUrl(false);
+          out.slots = results.map((r) => {
+            const sp = r.speciesId ? findSpecies(r.speciesId) : undefined;
+            return {
+              slot: r.slot,
+              speciesId: r.speciesId ?? null,
+              speciesNameZh: r.speciesNameZh ?? null,
+              confidence: r.confidence,
+              margin: r.margin ?? null,
+              detectedTypes: r.detectedTypes ?? [],
+              typeScores: r.typeScores ?? [],
+              altSpeciesId: r.altSpeciesId ?? null,
+              rejectReason: r.rejectReason ?? null,
+              topCandidates: r.topCandidates ?? [],
+              ahashHit: r.ahashHit ?? null,
+              findSpeciesKey: sp?.key ?? null,
+              findSpeciesName: sp?.nameZh ?? null,
+              findSpeciesForm: sp?.formKey ?? null,
+              identified: !!(sp && r.speciesId && r.confidence >= CONFIDENCE_THRESHOLD),
+              hasThumb: !!r.thumbnailDataUrl,
+            };
+          });
+        } catch (e) {
+          out.ok = false;
+          out.error = String(e && e.stack ? e.stack : e);
+        }
+        document.getElementById('out').textContent = JSON.stringify(out, null, 2);
+        document.title = out.ok ? 'recognize-debug-done' : 'recognize-debug-error';
+        window.__RECOGNIZE_DEBUG__ = out;
+      }
+
+      main();
+    </script>
+  </body>
+</html>

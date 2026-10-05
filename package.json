@@ -1,0 +1,11 @@
+{
+  "name": "acg-tools",
+  "private": true,
+  "description": "ACG hub (site root) plus Pokémon Champions assistant (apps/champions).",
+  "scripts": {
+    "hub": "python3 -m http.server 8080",
+    "champions": "npm --prefix apps/champions run dev",
+    "build:pages": "bash scripts/build-pages.sh",
+    "build:names": "node scripts/build_names_index.mjs"
+  }
+}

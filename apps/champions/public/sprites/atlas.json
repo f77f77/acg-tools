@@ -1,0 +1,5266 @@
+{
+  "version": 2,
+  "primaryKey": "nationalDex",
+  "sheet": "sprite_poke.png",
+  "css": "sprite_poke.css",
+  "cell": 128,
+  "sheetSize": [
+    2208,
+    2078
+  ],
+  "source": "official sprite sheet + CSS (in-memory crops; no per-species PNG dump)",
+  "notes": "Templates are cropped in memory from this sheet using CSS/atlas rects. Key = nationalDex or nationalDex-form (e.g. 6, 38-1, 6-mega-x alias).",
+  "entries": [
+    {
+      "dexKey": "3",
+      "dexAliases": [],
+      "nationalDex": 3,
+      "form": 0,
+      "formSuffix": null,
+      "speciesId": "venusaur",
+      "speciesNameZh": "妙蛙花",
+      "speciesNameEn": "venusaur",
+      "formKey": "venusaur",
+      "x": 0,
+      "y": 0,
+      "w": 128,
+      "h": 128,
+      "types": [
+        "grass",
+        "poison"
+      ],
+      "source": "sprite_sheet"
+    },
+    {
+      "dexKey": "6",
+      "dexAliases": [],
+      "nationalDex": 6,
+      "form": 0,
+      "formSuffix": null,
+      "speciesId": "charizard",
+      "speciesNameZh": "噴火龍",
+      "speciesNameEn": "charizard",
+      "formKey": "charizard",
+      "x": 130,
+      "y": 0,
+      "w": 128,
+      "h": 128,
+      "types": [
+        "fire",
+        "flying"
+      ],
+      "source": "sprite_sheet"
+    },
+    {
+      "dexKey": "9",
+      "dexAliases": [],
+      "nationalDex": 9,
+      "form": 0,
+      "formSuffix": null,
+      "speciesId": "blastoise",
+      "speciesNameZh": "水箭龜",
+      "speciesNameEn": "blastoise",
+      "formKey": "blastoise",
+      "x": 0,
+      "y": 130,
+      "w": 128,
+      "h": 128,
+      "types": [
+        "water"
+      ],
+      "source": "sprite_sheet"
+    },
+    {
+      "dexKey": "15",
+      "dexAliases": [],
+      "nationalDex": 15,
+      "form": 0,
+      "formSuffix": null,
+      "speciesId": "beedrill",
+      "speciesNameZh": "大針蜂",
+      "speciesNameEn": "beedrill",
+      "formKey": "beedrill",
+      "x": 130,
+      "y": 130,
+      "w": 128,
+      "h": 128,
+      "types": [
+        "bug",
+        "poison"
+      ],
+      "source": "sprite_sheet"
+    },
+    {
+      "dexKey": "18",
+      "dexAliases": [],
+      "nationalDex": 18,
+      "form": 0,
+      "formSuffix": null,
+      "speciesId": "pidgeot",
+      "speciesNameZh": "大比鳥",
+      "speciesNameEn": "pidgeot",
+      "formKey": "pidgeot",
+      "x": 260,
+      "y": 0,
+      "w": 128,
+      "h": 128,
+      "types": [
+        "normal",
+        "flying"
+      ],
+      "source": "sprite_sheet"
+    },
+    {
+      "dexKey": "24",
+      "dexAliases": [],
+      "nationalDex": 24,
+      "form": 0,
+      "formSuffix": null,
+      "speciesId": "arbok",
+      "speciesNameZh": "阿柏怪",
+      "speciesNameEn": "arbok",
+      "formKey": "arbok",
+      "x": 260,
+      "y": 130,
+      "w": 128,
+      "h": 128,
+      "types": [
+        "poison"
+      ],
+      "source": "sprite_sheet"
+    },
+    {
+      "dexKey": "25",
+      "dexAliases": [],
+      "nationalDex": 25,
+      "form": 0,
+      "formSuffix": null,
+      "speciesId": "pikachu",
+      "speciesNameZh": "皮卡丘",
+      "speciesNameEn": "pikachu",
+      "formKey": "pikachu",
+      "x": 0,
+      "y": 260,
+      "w": 128,
+      "h": 128,
+      "types": [
+        "electric"
+      ],
+      "source": "sprite_sheet"
+    },
+    {
+      "dexKey": "26",
+      "dexAliases": [],
+      "nationalDex": 26,
+      "form": 0,
+      "formSuffix": null,
+      "speciesId": "raichu",
+      "speciesNameZh": "雷丘",
+      "speciesNameEn": "raichu",
+      "formKey": "raichu",
+      "x": 130,
+      "y": 260,
+      "w": 128,
+      "h": 128,
+      "types": [
+        "electric"
+      ],
+      "source": "sprite_sheet"
+    },
+    {
+      "dexKey": "26-1",
+      "dexAliases": [
+        "26-alola"
+      ],
+      "nationalDex": 26,
+      "form": 1,
+      "formSuffix": "alola",
+      "speciesId": "raichualola",
+      "speciesNameZh": "雷丘 (阿羅拉的樣子)",
+      "speciesNameEn": "raichu-alola",
+      "formKey": "raichu-alola",
+      "x": 260,
+      "y": 260,
+      "w": 128,
+      "h": 128,
+      "types": [
+        "electric",
+        "psychic"
+      ],
+      "source": "sprite_sheet"
+    },
+    {
+      "dexKey": "36",
+      "dexAliases": [],
+      "nationalDex": 36,
+      "form": 0,
+      "formSuffix": null,
+      "speciesId": "clefable",
+      "speciesNameZh": "皮可西",
+      "speciesNameEn": "clefable",
+      "formKey": "clefable",
+      "x": 390,
+      "y": 0,
+      "w": 128,
+      "h": 128,
+      "types": [
+        "fairy"
+      ],
+      "source": "sprite_sheet"
+    },
+    {
+      "dexKey": "38",
+      "dexAliases": [],
+      "nationalDex": 38,
+      "form": 0,
+      "formSuffix": null,
+      "speciesId": "ninetales",
+      "speciesNameZh": "九尾",
+      "speciesNameEn": "ninetales",
+      "formKey": "ninetales",
+      "x": 390,
+      "y": 130,
+      "w": 128,
+      "h": 128,
+      "types": [
+        "fire"
+      ],
+      "source": "sprite_sheet"
+    },
+    {
+      "dexKey": "38-1",
+      "dexAliases": [
+        "38-alola"
+      ],
+      "nationalDex": 38,
+      "form": 1,
+      "formSuffix": "alola",
+      "speciesId": "ninetalesalola",
+      "speciesNameZh": "九尾 (阿羅拉的樣子)",
+      "speciesNameEn": "ninetales-alola",
+      "formKey": "ninetales-alola",
+      "x": 390,
+      "y": 260,
+      "w": 128,
+      "h": 128,
+      "types": [
+        "ice",
+        "fairy"
+      ],
+      "source": "sprite_sheet"
+    },
+    {
+      "dexKey": "40",
+      "dexAliases": [],
+      "nationalDex": 40,
+      "form": 0,
+      "formSuffix": null,
+      "speciesId": "wigglytuff",
+      "speciesNameZh": "胖可丁",
+      "speciesNameEn": "wigglytuff",
+      "formKey": "wigglytuff",
+      "x": 0,
+      "y": 390,
+      "w": 128,
+      "h": 128,
+      "types": [
+        "normal",
+        "fairy"
+      ],
+      "source": "sprite_sheet"
+    },
+    {
+      "dexKey": "45",
+      "dexAliases": [],
+      "nationalDex": 45,
+      "form": 0,
+      "formSuffix": null,
+      "speciesId": "vileplume",
+      "speciesNameZh": "霸王花",
+      "speciesNameEn": "vileplume",
+      "formKey": "vileplume",
+      "x": 130,
+      "y": 390,
+      "w": 128,
+      "h": 128,
+      "types": [
+        "grass",
+        "poison"
+      ],
+      "source": "sprite_sheet"
+    },
+    {
+      "dexKey": "53",
+      "dexAliases": [],
+      "nationalDex": 53,
+      "form": 0,
+      "formSuffix": null,
+      "speciesId": "persian",
+      "speciesNameZh": "貓老大",
+      "speciesNameEn": "persian",
+      "formKey": "persian",
+      "x": 260,
+      "y": 390,
+      "w": 128,
+      "h": 128,
+      "types": [
+        "normal"
+      ],
+      "source": "sprite_sheet"
+    },
+    {
+      "dexKey": "53-1",
+      "dexAliases": [
+        "53-alola"
+      ],
+      "nationalDex": 53,
+      "form": 1,
+      "formSuffix": "alola",
+      "speciesId": "persianalola",
+      "speciesNameZh": "貓老大 (阿羅拉的樣子)",
+      "speciesNameEn": "persian-alola",
+      "formKey": "persian-alola",
+      "x": 390,
+      "y": 390,
+      "w": 128,
+      "h": 128,
+      "types": [
+        "dark"
+      ],
+      "source": "sprite_sheet"
+    },
+    {
+      "dexKey": "59",
+      "dexAliases": [],
+      "nationalDex": 59,
+      "form": 0,
+      "formSuffix": null,
+      "speciesId": "arcanine",
+      "speciesNameZh": "風速狗",
+      "speciesNameEn": "arcanine",
+      "formKey": "arcanine",
+      "x": 520,
+      "y": 0,
+      "w": 128,
+      "h": 128,
+      "types": [
+        "fire"
+      ],
+      "source": "sprite_sheet"
+    },
+    {
+      "dexKey": "59-1",
+      "dexAliases": [
+        "59-hisui"
+      ],
+      "nationalDex": 59,
+      "form": 1,
+      "formSuffix": "hisui",
+      "speciesId": "arcaninehisui",
+      "speciesNameZh": "風速狗 (洗翠的樣子)",
+      "speciesNameEn": "arcanine-hisui",
+      "formKey": "arcanine-hisui",
+      "x": 520,
+      "y": 130,
+      "w": 128,
+      "h": 128,
+      "types": [
+        "fire",
+        "rock"
+      ],
+      "source": "sprite_sheet"
+    },
+    {
+      "dexKey": "65",
+      "dexAliases": [],
+      "nationalDex": 65,
+      "form": 0,
+      "formSuffix": null,
+      "speciesId": "alakazam",
+      "speciesNameZh": "胡地",
+      "speciesNameEn": "alakazam",
+      "formKey": "alakazam",
+      "x": 520,
+      "y": 260,
+      "w": 128,
+      "h": 128,
+      "types": [
+        "psychic"
+      ],
+      "source": "sprite_sheet"
+    },
+    {
+      "dexKey": "68",
+      "dexAliases": [],
+      "nationalDex": 68,
+      "form": 0,
+      "formSuffix": null,
+      "speciesId": "machamp",
+      "speciesNameZh": "怪力",
+      "speciesNameEn": "machamp",
+      "formKey": "machamp",
+      "x": 520,
+      "y": 390,
+      "w": 128,
+      "h": 128,
+      "types": [
+        "fighting"
+      ],
+      "source": "sprite_sheet"
+    },
+    {
+      "dexKey": "71",
+      "dexAliases": [],
+      "nationalDex": 71,
+      "form": 0,
+      "formSuffix": null,
+      "speciesId": "victreebel",
+      "speciesNameZh": "大食花",
+      "speciesNameEn": "victreebel",
+      "formKey": "victreebel",
+      "x": 0,
+      "y": 520,
+      "w": 128,
+      "h": 128,
+      "types": [
+        "grass",
+        "poison"
+      ],
+      "source": "sprite_sheet"
+    },
+    {
+      "dexKey": "80",
+      "dexAliases": [],
+      "nationalDex": 80,
+      "form": 0,
+      "formSuffix": null,
+      "speciesId": "slowbro",
+      "speciesNameZh": "呆殼獸",
+      "speciesNameEn": "slowbro",
+      "formKey": "slowbro",
+      "x": 130,
+      "y": 520,
+      "w": 128,
+      "h": 128,
+      "types": [
+        "water",
+        "psychic"
+      ],
+      "source": "sprite_sheet"
+    },
+    {
+      "dexKey": "80-2",
+      "dexAliases": [
+        "80-galar"
+      ],
+      "nationalDex": 80,
+      "form": 2,
+      "formSuffix": "galar",
+      "speciesId": "slowbrogalar",
+      "speciesNameZh": "呆殼獸 (伽勒爾的樣子)",
+      "speciesNameEn": "slowbro-galar",
+      "formKey": "slowbro-galar",
+      "x": 260,
+      "y": 520,
+      "w": 128,
+      "h": 128,
+      "types": [
+        "poison",
+        "psychic"
+      ],
+      "source": "sprite_sheet"
+    },
+    {
+      "dexKey": "83",
+      "dexAliases": [],
+      "nationalDex": 83,
+      "form": 0,
+      "formSuffix": null,
+      "speciesId": "farfetchd",
+      "speciesNameZh": "大蔥鴨",
+      "speciesNameEn": "farfetchd",
+      "formKey": "farfetchd",
+      "x": 390,
+      "y": 520,
+      "w": 128,
+      "h": 128,
+      "types": [
+        "normal",
+        "flying"
+      ],
+      "source": "sprite_sheet"
+    },
+    {
+      "dexKey": "94",
+      "dexAliases": [],
+      "nationalDex": 94,
+      "form": 0,
+      "formSuffix": null,
+      "speciesId": "gengar",
+      "speciesNameZh": "耿鬼",
+      "speciesNameEn": "gengar",
+      "formKey": "gengar",
+      "x": 520,
+      "y": 520,
+      "w": 128,
+      "h": 128,
+      "types": [
+        "ghost",
+        "poison"
+      ],
+      "source": "sprite_sheet"
+    },
+    {
+      "dexKey": "115",
+      "dexAliases": [],
+      "nationalDex": 115,
+      "form": 0,
+      "formSuffix": null,
+      "speciesId": "kangaskhan",
+      "speciesNameZh": "袋獸",
+      "speciesNameEn": "kangaskhan",
+      "formKey": "kangaskhan",
+      "x": 650,
+      "y": 0,
+      "w": 128,
+      "h": 128,
+      "types": [
+        "normal"
+      ],
+      "source": "sprite_sheet"
+    },
+    {
+      "dexKey": "121",
+      "dexAliases": [],
+      "nationalDex": 121,
+      "form": 0,
+      "formSuffix": null,
+      "speciesId": "starmie",
+      "speciesNameZh": "寶石海星",
+      "speciesNameEn": "starmie",
+      "formKey": "starmie",
+      "x": 650,
+      "y": 130,
+      "w": 128,
+      "h": 128,
+      "types": [
+        "water",
+        "psychic"
+      ],
+      "source": "sprite_sheet"
+    },
+    {
+      "dexKey": "122",
+      "dexAliases": [
+        "122-mime"
+      ],
+      "nationalDex": 122,
+      "form": 0,
+      "formSuffix": "mime",
+      "speciesId": "mrmime",
+      "speciesNameZh": "魔牆人偶",
+      "speciesNameEn": "mr-mime",
+      "formKey": "mr-mime",
+      "x": 650,
+      "y": 260,
+      "w": 128,
+      "h": 128,
+      "types": [
+        "psychic",
+        "fairy"
+      ],
+      "source": "sprite_sheet"
+    },
+    {
+      "dexKey": "127",
+      "dexAliases": [],
+      "nationalDex": 127,
+      "form": 0,
+      "formSuffix": null,
+      "speciesId": "pinsir",
+      "speciesNameZh": "凱羅斯",
+      "speciesNameEn": "pinsir",
+      "formKey": "pinsir",
+      "x": 650,
+      "y": 390,
+      "w": 128,
+      "h": 128,
+      "types": [
+        "bug"
+      ],
+      "source": "sprite_sheet"
+    },
+    {
+      "dexKey": "128",
+      "dexAliases": [],
+      "nationalDex": 128,
+      "form": 0,
+      "formSuffix": null,
+      "speciesId": "tauros",
+      "speciesNameZh": "肯泰羅",
+      "speciesNameEn": "tauros",
+      "formKey": "tauros",
+      "x": 650,
+      "y": 520,
+      "w": 128,
+      "h": 128,
+      "types": [
+        "normal"
+      ],
+      "source": "sprite_sheet"
+    },
+    {
+      "dexKey": "128-1",
+      "dexAliases": [
+        "128-paldea-combat-breed"
+      ],
+      "nationalDex": 128,
+      "form": 1,
+      "formSuffix": "paldea-combat-breed",
+      "speciesId": "taurospaldeacombat",
+      "speciesNameZh": "肯泰羅 (帕底亞的樣子（鬥戰種）)",
+      "speciesNameEn": "tauros-paldea-combat-breed",
+      "formKey": "tauros-paldea-combat-breed",
+      "x": 0,
+      "y": 650,
+      "w": 128,
+      "h": 128,
+      "types": [
+        "fighting"
+      ],
+      "source": "sprite_sheet"
+    },
+    {
+      "dexKey": "128-2",
+      "dexAliases": [
+        "128-paldea-blaze-breed"
+      ],
+      "nationalDex": 128,
+      "form": 2,
+      "formSuffix": "paldea-blaze-breed",
+      "speciesId": "taurospaldeablaze",
+      "speciesNameZh": "肯泰羅 (帕底亞的樣子（火熾種）)",
+      "speciesNameEn": "tauros-paldea-blaze-breed",
+      "formKey": "tauros-paldea-blaze-breed",
+      "x": 130,
+      "y": 650,
+      "w": 128,
+      "h": 128,
+      "types": [
+        "fighting",
+        "fire"
+      ],
+      "source": "sprite_sheet"
+    },
+    {
+      "dexKey": "128-3",
+      "dexAliases": [
+        "128-paldea-aqua-breed"
+      ],
+      "nationalDex": 128,
+      "form": 3,
+      "formSuffix": "paldea-aqua-breed",
+      "speciesId": "taurospaldeaaqua",
+      "speciesNameZh": "肯泰羅 (帕底亞的樣子（水瀾種）)",
+      "speciesNameEn": "tauros-paldea-aqua-breed",
+      "formKey": "tauros-paldea-aqua-breed",
+      "x": 260,
+      "y": 650,
+      "w": 128,
+      "h": 128,
+      "types": [
+        "fighting",
+        "water"
+      ],
+      "source": "sprite_sheet"
+    },
+    {
+      "dexKey": "130",
+      "dexAliases": [],
+      "nationalDex": 130,
+      "form": 0,
+      "formSuffix": null,
+      "speciesId": "gyarados",
+      "speciesNameZh": "暴鯉龍",
+      "speciesNameEn": "gyarados",
+      "formKey": "gyarados",
+      "x": 390,
+      "y": 650,
+      "w": 128,
+      "h": 128,
+      "types": [
+        "water",
+        "flying"
+      ],
+      "source": "sprite_sheet"
+    },
+    {
+      "dexKey": "132",
+      "dexAliases": [],
+      "nationalDex": 132,
+      "form": 0,
+      "formSuffix": null,
+      "speciesId": "ditto",
+      "speciesNameZh": "百變怪",
+      "speciesNameEn": "ditto",
+      "formKey": "ditto",
+      "x": 520,
+      "y": 650,
+      "w": 128,
+      "h": 128,
+      "types": [
+        "normal"
+      ],
+      "source": "sprite_sheet"
+    },
+    {
+      "dexKey": "134",
+      "dexAliases": [],
+      "nationalDex": 134,
+      "form": 0,
+      "formSuffix": null,
+      "speciesId": "vaporeon",
+      "speciesNameZh": "水伊布",
+      "speciesNameEn": "vaporeon",
+      "formKey": "vaporeon",
+      "x": 650,
+      "y": 650,
+      "w": 128,
+      "h": 128,
+      "types": [
+        "water"
+      ],
+      "source": "sprite_sheet"
+    },
+    {
+      "dexKey": "135",
+      "dexAliases": [],
+      "nationalDex": 135,
+      "form": 0,
+      "formSuffix": null,
+      "speciesId": "jolteon",
+      "speciesNameZh": "雷伊布",
+      "speciesNameEn": "jolteon",
+      "formKey": "jolteon",
+      "x": 780,
+      "y": 0,
+      "w": 128,
+      "h": 128,
+      "types": [
+        "electric"
+      ],
+      "source": "sprite_sheet"
+    },
+    {
+      "dexKey": "136",
+      "dexAliases": [],
+      "nationalDex": 136,
+      "form": 0,
+      "formSuffix": null,
+      "speciesId": "flareon",
+      "speciesNameZh": "火伊布",
+      "speciesNameEn": "flareon",
+      "formKey": "flareon",
+      "x": 780,
+      "y": 130,
+      "w": 128,
+      "h": 128,
+      "types": [
+        "fire"
+      ],
+      "source": "sprite_sheet"
+    },
+    {
+      "dexKey": "142",
+      "dexAliases": [],
+      "nationalDex": 142,
+      "form": 0,
+      "formSuffix": null,
+      "speciesId": "aerodactyl",
+      "speciesNameZh": "化石翼龍",
+      "speciesNameEn": "aerodactyl",
+      "formKey": "aerodactyl",
+      "x": 780,
+      "y": 260,
+      "w": 128,
+      "h": 128,
+      "types": [
+        "rock",
+        "flying"
+      ],
+      "source": "sprite_sheet"
+    },
+    {
+      "dexKey": "143",
+      "dexAliases": [],
+      "nationalDex": 143,
+      "form": 0,
+      "formSuffix": null,
+      "speciesId": "snorlax",
+      "speciesNameZh": "卡比獸",
+      "speciesNameEn": "snorlax",
+      "formKey": "snorlax",
+      "x": 780,
+      "y": 390,
+      "w": 128,
+      "h": 128,
+      "types": [
+        "normal"
+      ],
+      "source": "sprite_sheet"
+    },
+    {
+      "dexKey": "149",
+      "dexAliases": [],
+      "nationalDex": 149,
+      "form": 0,
+      "formSuffix": null,
+      "speciesId": "dragonite",
+      "speciesNameZh": "快龍",
+      "speciesNameEn": "dragonite",
+      "formKey": "dragonite",
+      "x": 780,
+      "y": 520,
+      "w": 128,
+      "h": 128,
+      "types": [
+        "dragon",
+        "flying"
+      ],
+      "source": "sprite_sheet"
+    },
+    {
+      "dexKey": "154",
+      "dexAliases": [],
+      "nationalDex": 154,
+      "form": 0,
+      "formSuffix": null,
+      "speciesId": "meganium",
+      "speciesNameZh": "大竺葵",
+      "speciesNameEn": "meganium",
+      "formKey": "meganium",
+      "x": 780,
+      "y": 650,
+      "w": 128,
+      "h": 128,
+      "types": [
+        "grass"
+      ],
+      "source": "sprite_sheet"
+    },
+    {
+      "dexKey": "157",
+      "dexAliases": [],
+      "nationalDex": 157,
+      "form": 0,
+      "formSuffix": null,
+      "speciesId": "typhlosion",
+      "speciesNameZh": "火爆獸",
+      "speciesNameEn": "typhlosion",
+      "formKey": "typhlosion",
+      "x": 0,
+      "y": 780,
+      "w": 128,
+      "h": 128,
+      "types": [
+        "fire"
+      ],
+      "source": "sprite_sheet"
+    },
+    {
+      "dexKey": "157-1",
+      "dexAliases": [
+        "157-hisui"
+      ],
+      "nationalDex": 157,
+      "form": 1,
+      "formSuffix": "hisui",
+      "speciesId": "typhlosionhisui",
+      "speciesNameZh": "火爆獸 (洗翠的樣子)",
+      "speciesNameEn": "typhlosion-hisui",
+      "formKey": "typhlosion-hisui",
+      "x": 130,
+      "y": 780,
+      "w": 128,
+      "h": 128,
+      "types": [
+        "fire",
+        "ghost"
+      ],
+      "source": "sprite_sheet"
+    },
+    {
+      "dexKey": "160",
+      "dexAliases": [],
+      "nationalDex": 160,
+      "form": 0,
+      "formSuffix": null,
+      "speciesId": "feraligatr",
+      "speciesNameZh": "大力鱷",
+      "speciesNameEn": "feraligatr",
+      "formKey": "feraligatr",
+      "x": 260,
+      "y": 780,
+      "w": 128,
+      "h": 128,
+      "types": [
+        "water"
+      ],
+      "source": "sprite_sheet"
+    },
+    {
+      "dexKey": "168",
+      "dexAliases": [],
+      "nationalDex": 168,
+      "form": 0,
+      "formSuffix": null,
+      "speciesId": "ariados",
+      "speciesNameZh": "阿利多斯",
+      "speciesNameEn": "ariados",
+      "formKey": "ariados",
+      "x": 390,
+      "y": 780,
+      "w": 128,
+      "h": 128,
+      "types": [
+        "bug",
+        "poison"
+      ],
+      "source": "sprite_sheet"
+    },
+    {
+      "dexKey": "181",
+      "dexAliases": [],
+      "nationalDex": 181,
+      "form": 0,
+      "formSuffix": null,
+      "speciesId": "ampharos",
+      "speciesNameZh": "電龍",
+      "speciesNameEn": "ampharos",
+      "formKey": "ampharos",
+      "x": 520,
+      "y": 780,
+      "w": 128,
+      "h": 128,
+      "types": [
+        "electric"
+      ],
+      "source": "sprite_sheet"
+    },
+    {
+      "dexKey": "184",
+      "dexAliases": [],
+      "nationalDex": 184,
+      "form": 0,
+      "formSuffix": null,
+      "speciesId": "azumarill",
+      "speciesNameZh": "瑪力露麗",
+      "speciesNameEn": "azumarill",
+      "formKey": "azumarill",
+      "x": 650,
+      "y": 780,
+      "w": 128,
+      "h": 128,
+      "types": [
+        "water",
+        "fairy"
+      ],
+      "source": "sprite_sheet"
+    },
+    {
+      "dexKey": "186",
+      "dexAliases": [],
+      "nationalDex": 186,
+      "form": 0,
+      "formSuffix": null,
+      "speciesId": "politoed",
+      "speciesNameZh": "蚊香蛙皇",
+      "speciesNameEn": "politoed",
+      "formKey": "politoed",
+      "x": 780,
+      "y": 780,
+      "w": 128,
+      "h": 128,
+      "types": [
+        "water"
+      ],
+      "source": "sprite_sheet"
+    },
+    {
+      "dexKey": "196",
+      "dexAliases": [],
+      "nationalDex": 196,
+      "form": 0,
+      "formSuffix": null,
+      "speciesId": "espeon",
+      "speciesNameZh": "太陽伊布",
+      "speciesNameEn": "espeon",
+      "formKey": "espeon",
+      "x": 910,
+      "y": 0,
+      "w": 128,
+      "h": 128,
+      "types": [
+        "psychic"
+      ],
+      "source": "sprite_sheet"
+    },
+    {
+      "dexKey": "197",
+      "dexAliases": [],
+      "nationalDex": 197,
+      "form": 0,
+      "formSuffix": null,
+      "speciesId": "umbreon",
+      "speciesNameZh": "月亮伊布",
+      "speciesNameEn": "umbreon",
+      "formKey": "umbreon",
+      "x": 910,
+      "y": 130,
+      "w": 128,
+      "h": 128,
+      "types": [
+        "dark"
+      ],
+      "source": "sprite_sheet"
+    },
+    {
+      "dexKey": "199",
+      "dexAliases": [],
+      "nationalDex": 199,
+      "form": 0,
+      "formSuffix": null,
+      "speciesId": "slowking",
+      "speciesNameZh": "呆呆王",
+      "speciesNameEn": "slowking",
+      "formKey": "slowking",
+      "x": 910,
+      "y": 260,
+      "w": 128,
+      "h": 128,
+      "types": [
+        "water",
+        "psychic"
+      ],
+      "source": "sprite_sheet"
+    },
+    {
+      "dexKey": "199-1",
+      "dexAliases": [
+        "199-galar"
+      ],
+      "nationalDex": 199,
+      "form": 1,
+      "formSuffix": "galar",
+      "speciesId": "slowkinggalar",
+      "speciesNameZh": "呆呆王 (伽勒爾的樣子)",
+      "speciesNameEn": "slowking-galar",
+      "formKey": "slowking-galar",
+      "x": 910,
+      "y": 390,
+      "w": 128,
+      "h": 128,
+      "types": [
+        "poison",
+        "psychic"
+      ],
+      "source": "sprite_sheet"
+    },
+    {
+      "dexKey": "205",
+      "dexAliases": [],
+      "nationalDex": 205,
+      "form": 0,
+      "formSuffix": null,
+      "speciesId": "forretress",
+      "speciesNameZh": "佛烈托斯",
+      "speciesNameEn": "forretress",
+      "formKey": "forretress",
+      "x": 910,
+      "y": 520,
+      "w": 128,
+      "h": 128,
+      "types": [
+        "bug",
+        "steel"
+      ],
+      "source": "sprite_sheet"
+    },
+    {
+      "dexKey": "208",
+      "dexAliases": [],
+      "nationalDex": 208,
+      "form": 0,
+      "formSuffix": null,
+      "speciesId": "steelix",
+      "speciesNameZh": "大鋼蛇",
+      "speciesNameEn": "steelix",
+      "formKey": "steelix",
+      "x": 910,
+      "y": 650,
+      "w": 128,
+      "h": 128,
+      "types": [
+        "steel",
+        "ground"
+      ],
+      "source": "sprite_sheet"
+    },
+    {
+      "dexKey": "211",
+      "dexAliases": [],
+      "nationalDex": 211,
+      "form": 0,
+      "formSuffix": null,
+      "speciesId": "qwilfish",
+      "speciesNameZh": "千針魚",
+      "speciesNameEn": "qwilfish",
+      "formKey": "qwilfish",
+      "x": 910,
+      "y": 780,
+      "w": 128,
+      "h": 128,
+      "types": [
+        "water",
+        "poison"
+      ],
+      "source": "sprite_sheet"
+    },
+    {
+      "dexKey": "212",
+      "dexAliases": [],
+      "nationalDex": 212,
+      "form": 0,
+      "formSuffix": null,
+      "speciesId": "scizor",
+      "speciesNameZh": "巨鉗螳螂",
+      "speciesNameEn": "scizor",
+      "formKey": "scizor",
+      "x": 0,
+      "y": 910,
+      "w": 128,
+      "h": 128,
+      "types": [
+        "bug",
+        "steel"
+      ],
+      "source": "sprite_sheet"
+    },
+    {
+      "dexKey": "214",
+      "dexAliases": [],
+      "nationalDex": 214,
+      "form": 0,
+      "formSuffix": null,
+      "speciesId": "heracross",
+      "speciesNameZh": "赫拉克羅斯",
+      "speciesNameEn": "heracross",
+      "formKey": "heracross",
+      "x": 130,
+      "y": 910,
+      "w": 128,
+      "h": 128,
+      "types": [
+        "bug",
+        "fighting"
+      ],
+      "source": "sprite_sheet"
+    },
+    {
+      "dexKey": "227",
+      "dexAliases": [],
+      "nationalDex": 227,
+      "form": 0,
+      "formSuffix": null,
+      "speciesId": "skarmory",
+      "speciesNameZh": "盔甲鳥",
+      "speciesNameEn": "skarmory",
+      "formKey": "skarmory",
+      "x": 260,
+      "y": 910,
+      "w": 128,
+      "h": 128,
+      "types": [
+        "steel",
+        "flying"
+      ],
+      "source": "sprite_sheet"
+    },
+    {
+      "dexKey": "229",
+      "dexAliases": [],
+      "nationalDex": 229,
+      "form": 0,
+      "formSuffix": null,
+      "speciesId": "houndoom",
+      "speciesNameZh": "黑魯加",
+      "speciesNameEn": "houndoom",
+      "formKey": "houndoom",
+      "x": 390,
+      "y": 910,
+      "w": 128,
+      "h": 128,
+      "types": [
+        "dark",
+        "fire"
+      ],
+      "source": "sprite_sheet"
+    },
+    {
+      "dexKey": "248",
+      "dexAliases": [],
+      "nationalDex": 248,
+      "form": 0,
+      "formSuffix": null,
+      "speciesId": "tyranitar",
+      "speciesNameZh": "班基拉斯",
+      "speciesNameEn": "tyranitar",
+      "formKey": "tyranitar",
+      "x": 520,
+      "y": 910,
+      "w": 128,
+      "h": 128,
+      "types": [
+        "rock",
+        "dark"
+      ],
+      "source": "sprite_sheet"
+    },
+    {
+      "dexKey": "254",
+      "dexAliases": [],
+      "nationalDex": 254,
+      "form": 0,
+      "formSuffix": null,
+      "speciesId": "sceptile",
+      "speciesNameZh": "蜥蜴王",
+      "speciesNameEn": "sceptile",
+      "formKey": "sceptile",
+      "x": 650,
+      "y": 910,
+      "w": 128,
+      "h": 128,
+      "types": [
+        "grass"
+      ],
+      "source": "sprite_sheet"
+    },
+    {
+      "dexKey": "257",
+      "dexAliases": [],
+      "nationalDex": 257,
+      "form": 0,
+      "formSuffix": null,
+      "speciesId": "blaziken",
+      "speciesNameZh": "火焰雞",
+      "speciesNameEn": "blaziken",
+      "formKey": "blaziken",
+      "x": 780,
+      "y": 910,
+      "w": 128,
+      "h": 128,
+      "types": [
+        "fire",
+        "fighting"
+      ],
+      "source": "sprite_sheet"
+    },
+    {
+      "dexKey": "260",
+      "dexAliases": [],
+      "nationalDex": 260,
+      "form": 0,
+      "formSuffix": null,
+      "speciesId": "swampert",
+      "speciesNameZh": "巨沼怪",
+      "speciesNameEn": "swampert",
+      "formKey": "swampert",
+      "x": 910,
+      "y": 910,
+      "w": 128,
+      "h": 128,
+      "types": [
+        "water",
+        "ground"
+      ],
+      "source": "sprite_sheet"
+    },
+    {
+      "dexKey": "279",
+      "dexAliases": [],
+      "nationalDex": 279,
+      "form": 0,
+      "formSuffix": null,
+      "speciesId": "pelipper",
+      "speciesNameZh": "大嘴鷗",
+      "speciesNameEn": "pelipper",
+      "formKey": "pelipper",
+      "x": 1040,
+      "y": 0,
+      "w": 128,
+      "h": 128,
+      "types": [
+        "water",
+        "flying"
+      ],
+      "source": "sprite_sheet"
+    },
+    {
+      "dexKey": "282",
+      "dexAliases": [],
+      "nationalDex": 282,
+      "form": 0,
+      "formSuffix": null,
+      "speciesId": "gardevoir",
+      "speciesNameZh": "沙奈朵",
+      "speciesNameEn": "gardevoir",
+      "formKey": "gardevoir",
+      "x": 1040,
+      "y": 130,
+      "w": 128,
+      "h": 128,
+      "types": [
+        "psychic",
+        "fairy"
+      ],
+      "source": "sprite_sheet"
+    },
+    {
+      "dexKey": "302",
+      "dexAliases": [],
+      "nationalDex": 302,
+      "form": 0,
+      "formSuffix": null,
+      "speciesId": "sableye",
+      "speciesNameZh": "勾魂眼",
+      "speciesNameEn": "sableye",
+      "formKey": "sableye",
+      "x": 1040,
+      "y": 260,
+      "w": 128,
+      "h": 128,
+      "types": [
+        "dark",
+        "ghost"
+      ],
+      "source": "sprite_sheet"
+    },
+    {
+      "dexKey": "303",
+      "dexAliases": [],
+      "nationalDex": 303,
+      "form": 0,
+      "formSuffix": null,
+      "speciesId": "mawile",
+      "speciesNameZh": "大嘴娃",
+      "speciesNameEn": "mawile",
+      "formKey": "mawile",
+      "x": 1040,
+      "y": 390,
+      "w": 128,
+      "h": 128,
+      "types": [
+        "steel",
+        "fairy"
+      ],
+      "source": "sprite_sheet"
+    },
+    {
+      "dexKey": "306",
+      "dexAliases": [],
+      "nationalDex": 306,
+      "form": 0,
+      "formSuffix": null,
+      "speciesId": "aggron",
+      "speciesNameZh": "波士可多拉",
+      "speciesNameEn": "aggron",
+      "formKey": "aggron",
+      "x": 1040,
+      "y": 520,
+      "w": 128,
+      "h": 128,
+      "types": [
+        "steel",
+        "rock"
+      ],
+      "source": "sprite_sheet"
+    },
+    {
+      "dexKey": "308",
+      "dexAliases": [],
+      "nationalDex": 308,
+      "form": 0,
+      "formSuffix": null,
+      "speciesId": "medicham",
+      "speciesNameZh": "恰雷姆",
+      "speciesNameEn": "medicham",
+      "formKey": "medicham",
+      "x": 1040,
+      "y": 650,
+      "w": 128,
+      "h": 128,
+      "types": [
+        "fighting",
+        "psychic"
+      ],
+      "source": "sprite_sheet"
+    },
+    {
+      "dexKey": "310",
+      "dexAliases": [],
+      "nationalDex": 310,
+      "form": 0,
+      "formSuffix": null,
+      "speciesId": "manectric",
+      "speciesNameZh": "雷電獸",
+      "speciesNameEn": "manectric",
+      "formKey": "manectric",
+      "x": 1040,
+      "y": 780,
+      "w": 128,
+      "h": 128,
+      "types": [
+        "electric"
+      ],
+      "source": "sprite_sheet"
+    },
+    {
+      "dexKey": "317",
+      "dexAliases": [],
+      "nationalDex": 317,
+      "form": 0,
+      "formSuffix": null,
+      "speciesId": "swalot",
+      "speciesNameZh": "吞食獸",
+      "speciesNameEn": "swalot",
+      "formKey": "swalot",
+      "x": 1040,
+      "y": 910,
+      "w": 128,
+      "h": 128,
+      "types": [
+        "poison"
+      ],
+      "source": "sprite_sheet"
+    },
+    {
+      "dexKey": "319",
+      "dexAliases": [],
+      "nationalDex": 319,
+      "form": 0,
+      "formSuffix": null,
+      "speciesId": "sharpedo",
+      "speciesNameZh": "巨牙鯊",
+      "speciesNameEn": "sharpedo",
+      "formKey": "sharpedo",
+      "x": 0,
+      "y": 1040,
+      "w": 128,
+      "h": 128,
+      "types": [
+        "water",
+        "dark"
+      ],
+      "source": "sprite_sheet"
+    },
+    {
+      "dexKey": "323",
+      "dexAliases": [],
+      "nationalDex": 323,
+      "form": 0,
+      "formSuffix": null,
+      "speciesId": "camerupt",
+      "speciesNameZh": "噴火駝",
+      "speciesNameEn": "camerupt",
+      "formKey": "camerupt",
+      "x": 130,
+      "y": 1040,
+      "w": 128,
+      "h": 128,
+      "types": [
+        "fire",
+        "ground"
+      ],
+      "source": "sprite_sheet"
+    },
+    {
+      "dexKey": "324",
+      "dexAliases": [],
+      "nationalDex": 324,
+      "form": 0,
+      "formSuffix": null,
+      "speciesId": "torkoal",
+      "speciesNameZh": "煤炭龜",
+      "speciesNameEn": "torkoal",
+      "formKey": "torkoal",
+      "x": 260,
+      "y": 1040,
+      "w": 128,
+      "h": 128,
+      "types": [
+        "fire"
+      ],
+      "source": "sprite_sheet"
+    },
+    {
+      "dexKey": "334",
+      "dexAliases": [],
+      "nationalDex": 334,
+      "form": 0,
+      "formSuffix": null,
+      "speciesId": "altaria",
+      "speciesNameZh": "七夕青鳥",
+      "speciesNameEn": "altaria",
+      "formKey": "altaria",
+      "x": 390,
+      "y": 1040,
+      "w": 128,
+      "h": 128,
+      "types": [
+        "dragon",
+        "flying"
+      ],
+      "source": "sprite_sheet"
+    },
+    {
+      "dexKey": "350",
+      "dexAliases": [],
+      "nationalDex": 350,
+      "form": 0,
+      "formSuffix": null,
+      "speciesId": "milotic",
+      "speciesNameZh": "美納斯",
+      "speciesNameEn": "milotic",
+      "formKey": "milotic",
+      "x": 520,
+      "y": 1040,
+      "w": 128,
+      "h": 128,
+      "types": [
+        "water"
+      ],
+      "source": "sprite_sheet"
+    },
+    {
+      "dexKey": "351",
+      "dexAliases": [],
+      "nationalDex": 351,
+      "form": 0,
+      "formSuffix": null,
+      "speciesId": "castform",
+      "speciesNameZh": "飄浮泡泡",
+      "speciesNameEn": "castform",
+      "formKey": "castform",
+      "x": 650,
+      "y": 1040,
+      "w": 128,
+      "h": 128,
+      "types": [
+        "normal"
+      ],
+      "source": "sprite_sheet"
+    },
+    {
+      "dexKey": "354",
+      "dexAliases": [],
+      "nationalDex": 354,
+      "form": 0,
+      "formSuffix": null,
+      "speciesId": "banette",
+      "speciesNameZh": "詛咒娃娃",
+      "speciesNameEn": "banette",
+      "formKey": "banette",
+      "x": 780,
+      "y": 1040,
+      "w": 128,
+      "h": 128,
+      "types": [
+        "ghost"
+      ],
+      "source": "sprite_sheet"
+    },
+    {
+      "dexKey": "358",
+      "dexAliases": [],
+      "nationalDex": 358,
+      "form": 0,
+      "formSuffix": null,
+      "speciesId": "chimecho",
+      "speciesNameZh": "風鈴鈴",
+      "speciesNameEn": "chimecho",
+      "formKey": "chimecho",
+      "x": 910,
+      "y": 1040,
+      "w": 128,
+      "h": 128,
+      "types": [
+        "psychic"
+      ],
+      "source": "sprite_sheet"
+    },
+    {
+      "dexKey": "359",
+      "dexAliases": [],
+      "nationalDex": 359,
+      "form": 0,
+      "formSuffix": null,
+      "speciesId": "absol",
+      "speciesNameZh": "阿勃梭魯",
+      "speciesNameEn": "absol",
+      "formKey": "absol",
+      "x": 1040,
+      "y": 1040,
+      "w": 128,
+      "h": 128,
+      "types": [
+        "dark"
+      ],
+      "source": "sprite_sheet"
+    },
+    {
+      "dexKey": "362",
+      "dexAliases": [],
+      "nationalDex": 362,
+      "form": 0,
+      "formSuffix": null,
+      "speciesId": "glalie",
+      "speciesNameZh": "冰鬼護",
+      "speciesNameEn": "glalie",
+      "formKey": "glalie",
+      "x": 1170,
+      "y": 0,
+      "w": 128,
+      "h": 128,
+      "types": [
+        "ice"
+      ],
+      "source": "sprite_sheet"
+    },
+    {
+      "dexKey": "373",
+      "dexAliases": [],
+      "nationalDex": 373,
+      "form": 0,
+      "formSuffix": null,
+      "speciesId": "salamence",
+      "speciesNameZh": "暴飛龍",
+      "speciesNameEn": "salamence",
+      "formKey": "salamence",
+      "x": 1170,
+      "y": 130,
+      "w": 128,
+      "h": 128,
+      "types": [
+        "dragon",
+        "flying"
+      ],
+      "source": "sprite_sheet"
+    },
+    {
+      "dexKey": "376",
+      "dexAliases": [],
+      "nationalDex": 376,
+      "form": 0,
+      "formSuffix": null,
+      "speciesId": "metagross",
+      "speciesNameZh": "巨金怪",
+      "speciesNameEn": "metagross",
+      "formKey": "metagross",
+      "x": 1170,
+      "y": 260,
+      "w": 128,
+      "h": 128,
+      "types": [
+        "steel",
+        "psychic"
+      ],
+      "source": "sprite_sheet"
+    },
+    {
+      "dexKey": "389",
+      "dexAliases": [],
+      "nationalDex": 389,
+      "form": 0,
+      "formSuffix": null,
+      "speciesId": "torterra",
+      "speciesNameZh": "土台龜",
+      "speciesNameEn": "torterra",
+      "formKey": "torterra",
+      "x": 1170,
+      "y": 390,
+      "w": 128,
+      "h": 128,
+      "types": [
+        "grass",
+        "ground"
+      ],
+      "source": "sprite_sheet"
+    },
+    {
+      "dexKey": "392",
+      "dexAliases": [],
+      "nationalDex": 392,
+      "form": 0,
+      "formSuffix": null,
+      "speciesId": "infernape",
+      "speciesNameZh": "烈焰猴",
+      "speciesNameEn": "infernape",
+      "formKey": "infernape",
+      "x": 1170,
+      "y": 520,
+      "w": 128,
+      "h": 128,
+      "types": [
+        "fire",
+        "fighting"
+      ],
+      "source": "sprite_sheet"
+    },
+    {
+      "dexKey": "395",
+      "dexAliases": [],
+      "nationalDex": 395,
+      "form": 0,
+      "formSuffix": null,
+      "speciesId": "empoleon",
+      "speciesNameZh": "帝王拿波",
+      "speciesNameEn": "empoleon",
+      "formKey": "empoleon",
+      "x": 1170,
+      "y": 650,
+      "w": 128,
+      "h": 128,
+      "types": [
+        "water",
+        "steel"
+      ],
+      "source": "sprite_sheet"
+    },
+    {
+      "dexKey": "398",
+      "dexAliases": [],
+      "nationalDex": 398,
+      "form": 0,
+      "formSuffix": null,
+      "speciesId": "staraptor",
+      "speciesNameZh": "姆克鷹",
+      "speciesNameEn": "staraptor",
+      "formKey": "staraptor",
+      "x": 1170,
+      "y": 780,
+      "w": 128,
+      "h": 128,
+      "types": [
+        "normal",
+        "flying"
+      ],
+      "source": "sprite_sheet"
+    },
+    {
+      "dexKey": "405",
+      "dexAliases": [],
+      "nationalDex": 405,
+      "form": 0,
+      "formSuffix": null,
+      "speciesId": "luxray",
+      "speciesNameZh": "倫琴貓",
+      "speciesNameEn": "luxray",
+      "formKey": "luxray",
+      "x": 1170,
+      "y": 910,
+      "w": 128,
+      "h": 128,
+      "types": [
+        "electric"
+      ],
+      "source": "sprite_sheet"
+    },
+    {
+      "dexKey": "407",
+      "dexAliases": [],
+      "nationalDex": 407,
+      "form": 0,
+      "formSuffix": null,
+      "speciesId": "roserade",
+      "speciesNameZh": "羅絲雷朵",
+      "speciesNameEn": "roserade",
+      "formKey": "roserade",
+      "x": 1170,
+      "y": 1040,
+      "w": 128,
+      "h": 128,
+      "types": [
+        "grass",
+        "poison"
+      ],
+      "source": "sprite_sheet"
+    },
+    {
+      "dexKey": "409",
+      "dexAliases": [],
+      "nationalDex": 409,
+      "form": 0,
+      "formSuffix": null,
+      "speciesId": "rampardos",
+      "speciesNameZh": "戰槌龍",
+      "speciesNameEn": "rampardos",
+      "formKey": "rampardos",
+      "x": 0,
+      "y": 1170,
+      "w": 128,
+      "h": 128,
+      "types": [
+        "rock"
+      ],
+      "source": "sprite_sheet"
+    },
+    {
+      "dexKey": "411",
+      "dexAliases": [],
+      "nationalDex": 411,
+      "form": 0,
+      "formSuffix": null,
+      "speciesId": "bastiodon",
+      "speciesNameZh": "護城龍",
+      "speciesNameEn": "bastiodon",
+      "formKey": "bastiodon",
+      "x": 130,
+      "y": 1170,
+      "w": 128,
+      "h": 128,
+      "types": [
+        "rock",
+        "steel"
+      ],
+      "source": "sprite_sheet"
+    },
+    {
+      "dexKey": "428",
+      "dexAliases": [],
+      "nationalDex": 428,
+      "form": 0,
+      "formSuffix": null,
+      "speciesId": "lopunny",
+      "speciesNameZh": "長耳兔",
+      "speciesNameEn": "lopunny",
+      "formKey": "lopunny",
+      "x": 260,
+      "y": 1170,
+      "w": 128,
+      "h": 128,
+      "types": [
+        "normal"
+      ],
+      "source": "sprite_sheet"
+    },
+    {
+      "dexKey": "442",
+      "dexAliases": [],
+      "nationalDex": 442,
+      "form": 0,
+      "formSuffix": null,
+      "speciesId": "spiritomb",
+      "speciesNameZh": "花岩怪",
+      "speciesNameEn": "spiritomb",
+      "formKey": "spiritomb",
+      "x": 390,
+      "y": 1170,
+      "w": 128,
+      "h": 128,
+      "types": [
+        "ghost",
+        "dark"
+      ],
+      "source": "sprite_sheet"
+    },
+    {
+      "dexKey": "445",
+      "dexAliases": [],
+      "nationalDex": 445,
+      "form": 0,
+      "formSuffix": null,
+      "speciesId": "garchomp",
+      "speciesNameZh": "烈咬陸鯊",
+      "speciesNameEn": "garchomp",
+      "formKey": "garchomp",
+      "x": 520,
+      "y": 1170,
+      "w": 128,
+      "h": 128,
+      "types": [
+        "dragon",
+        "ground"
+      ],
+      "source": "sprite_sheet"
+    },
+    {
+      "dexKey": "448",
+      "dexAliases": [],
+      "nationalDex": 448,
+      "form": 0,
+      "formSuffix": null,
+      "speciesId": "lucario",
+      "speciesNameZh": "路卡利歐",
+      "speciesNameEn": "lucario",
+      "formKey": "lucario",
+      "x": 650,
+      "y": 1170,
+      "w": 128,
+      "h": 128,
+      "types": [
+        "fighting",
+        "steel"
+      ],
+      "source": "sprite_sheet"
+    },
+    {
+      "dexKey": "450",
+      "dexAliases": [],
+      "nationalDex": 450,
+      "form": 0,
+      "formSuffix": null,
+      "speciesId": "hippowdon",
+      "speciesNameZh": "河馬獸",
+      "speciesNameEn": "hippowdon",
+      "formKey": "hippowdon",
+      "x": 780,
+      "y": 1170,
+      "w": 128,
+      "h": 128,
+      "types": [
+        "ground"
+      ],
+      "source": "sprite_sheet"
+    },
+    {
+      "dexKey": "454",
+      "dexAliases": [],
+      "nationalDex": 454,
+      "form": 0,
+      "formSuffix": null,
+      "speciesId": "toxicroak",
+      "speciesNameZh": "毒骷蛙",
+      "speciesNameEn": "toxicroak",
+      "formKey": "toxicroak",
+      "x": 910,
+      "y": 1170,
+      "w": 128,
+      "h": 128,
+      "types": [
+        "poison",
+        "fighting"
+      ],
+      "source": "sprite_sheet"
+    },
+    {
+      "dexKey": "460",
+      "dexAliases": [],
+      "nationalDex": 460,
+      "form": 0,
+      "formSuffix": null,
+      "speciesId": "abomasnow",
+      "speciesNameZh": "暴雪王",
+      "speciesNameEn": "abomasnow",
+      "formKey": "abomasnow",
+      "x": 1040,
+      "y": 1170,
+      "w": 128,
+      "h": 128,
+      "types": [
+        "grass",
+        "ice"
+      ],
+      "source": "sprite_sheet"
+    },
+    {
+      "dexKey": "461",
+      "dexAliases": [],
+      "nationalDex": 461,
+      "form": 0,
+      "formSuffix": null,
+      "speciesId": "weavile",
+      "speciesNameZh": "瑪狃拉",
+      "speciesNameEn": "weavile",
+      "formKey": "weavile",
+      "x": 1170,
+      "y": 1170,
+      "w": 128,
+      "h": 128,
+      "types": [
+        "dark",
+        "ice"
+      ],
+      "source": "sprite_sheet"
+    },
+    {
+      "dexKey": "464",
+      "dexAliases": [],
+      "nationalDex": 464,
+      "form": 0,
+      "formSuffix": null,
+      "speciesId": "rhyperior",
+      "speciesNameZh": "超甲狂犀",
+      "speciesNameEn": "rhyperior",
+      "formKey": "rhyperior",
+      "x": 1300,
+      "y": 0,
+      "w": 128,
+      "h": 128,
+      "types": [
+        "ground",
+        "rock"
+      ],
+      "source": "sprite_sheet"
+    },
+    {
+      "dexKey": "470",
+      "dexAliases": [],
+      "nationalDex": 470,
+      "form": 0,
+      "formSuffix": null,
+      "speciesId": "leafeon",
+      "speciesNameZh": "葉伊布",
+      "speciesNameEn": "leafeon",
+      "formKey": "leafeon",
+      "x": 1300,
+      "y": 130,
+      "w": 128,
+      "h": 128,
+      "types": [
+        "grass"
+      ],
+      "source": "sprite_sheet"
+    },
+    {
+      "dexKey": "471",
+      "dexAliases": [],
+      "nationalDex": 471,
+      "form": 0,
+      "formSuffix": null,
+      "speciesId": "glaceon",
+      "speciesNameZh": "冰伊布",
+      "speciesNameEn": "glaceon",
+      "formKey": "glaceon",
+      "x": 1300,
+      "y": 260,
+      "w": 128,
+      "h": 128,
+      "types": [
+        "ice"
+      ],
+      "source": "sprite_sheet"
+    },
+    {
+      "dexKey": "472",
+      "dexAliases": [],
+      "nationalDex": 472,
+      "form": 0,
+      "formSuffix": null,
+      "speciesId": "gliscor",
+      "speciesNameZh": "天蠍王",
+      "speciesNameEn": "gliscor",
+      "formKey": "gliscor",
+      "x": 1300,
+      "y": 390,
+      "w": 128,
+      "h": 128,
+      "types": [
+        "ground",
+        "flying"
+      ],
+      "source": "sprite_sheet"
+    },
+    {
+      "dexKey": "473",
+      "dexAliases": [],
+      "nationalDex": 473,
+      "form": 0,
+      "formSuffix": null,
+      "speciesId": "mamoswine",
+      "speciesNameZh": "象牙豬",
+      "speciesNameEn": "mamoswine",
+      "formKey": "mamoswine",
+      "x": 1300,
+      "y": 520,
+      "w": 128,
+      "h": 128,
+      "types": [
+        "ice",
+        "ground"
+      ],
+      "source": "sprite_sheet"
+    },
+    {
+      "dexKey": "475",
+      "dexAliases": [],
+      "nationalDex": 475,
+      "form": 0,
+      "formSuffix": null,
+      "speciesId": "gallade",
+      "speciesNameZh": "艾路雷朵",
+      "speciesNameEn": "gallade",
+      "formKey": "gallade",
+      "x": 1300,
+      "y": 650,
+      "w": 128,
+      "h": 128,
+      "types": [
+        "psychic",
+        "fighting"
+      ],
+      "source": "sprite_sheet"
+    },
+    {
+      "dexKey": "478",
+      "dexAliases": [],
+      "nationalDex": 478,
+      "form": 0,
+      "formSuffix": null,
+      "speciesId": "froslass",
+      "speciesNameZh": "雪妖女",
+      "speciesNameEn": "froslass",
+      "formKey": "froslass",
+      "x": 1300,
+      "y": 780,
+      "w": 128,
+      "h": 128,
+      "types": [
+        "ice",
+        "ghost"
+      ],
+      "source": "sprite_sheet"
+    },
+    {
+      "dexKey": "479",
+      "dexAliases": [],
+      "nationalDex": 479,
+      "form": 0,
+      "formSuffix": null,
+      "speciesId": "rotom",
+      "speciesNameZh": "洛托姆 (洛托姆的樣子)",
+      "speciesNameEn": "rotom",
+      "formKey": "rotom",
+      "x": 1300,
+      "y": 910,
+      "w": 128,
+      "h": 128,
+      "types": [
+        "electric",
+        "ghost"
+      ],
+      "source": "sprite_sheet"
+    },
+    {
+      "dexKey": "479-1",
+      "dexAliases": [
+        "479-heat"
+      ],
+      "nationalDex": 479,
+      "form": 1,
+      "formSuffix": "heat",
+      "speciesId": "rotomheat",
+      "speciesNameZh": "洛托姆 (加熱洛托姆)",
+      "speciesNameEn": "rotom-heat",
+      "formKey": "rotom-heat",
+      "x": 1300,
+      "y": 1040,
+      "w": 128,
+      "h": 128,
+      "types": [
+        "electric",
+        "fire"
+      ],
+      "source": "sprite_sheet"
+    },
+    {
+      "dexKey": "479-2",
+      "dexAliases": [
+        "479-wash"
+      ],
+      "nationalDex": 479,
+      "form": 2,
+      "formSuffix": "wash",
+      "speciesId": "rotomwash",
+      "speciesNameZh": "洛托姆 (清洗洛托姆)",
+      "speciesNameEn": "rotom-wash",
+      "formKey": "rotom-wash",
+      "x": 1300,
+      "y": 1170,
+      "w": 128,
+      "h": 128,
+      "types": [
+        "electric",
+        "water"
+      ],
+      "source": "sprite_sheet"
+    },
+    {
+      "dexKey": "479-3",
+      "dexAliases": [
+        "479-frost"
+      ],
+      "nationalDex": 479,
+      "form": 3,
+      "formSuffix": "frost",
+      "speciesId": "rotomfrost",
+      "speciesNameZh": "洛托姆 (結冰洛托姆)",
+      "speciesNameEn": "rotom-frost",
+      "formKey": "rotom-frost",
+      "x": 0,
+      "y": 1300,
+      "w": 128,
+      "h": 128,
+      "types": [
+        "electric",
+        "ice"
+      ],
+      "source": "sprite_sheet"
+    },
+    {
+      "dexKey": "479-4",
+      "dexAliases": [
+        "479-fan"
+      ],
+      "nationalDex": 479,
+      "form": 4,
+      "formSuffix": "fan",
+      "speciesId": "rotomfan",
+      "speciesNameZh": "洛托姆 (旋轉洛托姆)",
+      "speciesNameEn": "rotom-fan",
+      "formKey": "rotom-fan",
+      "x": 130,
+      "y": 1300,
+      "w": 128,
+      "h": 128,
+      "types": [
+        "electric",
+        "flying"
+      ],
+      "source": "sprite_sheet"
+    },
+    {
+      "dexKey": "479-5",
+      "dexAliases": [
+        "479-mow"
+      ],
+      "nationalDex": 479,
+      "form": 5,
+      "formSuffix": "mow",
+      "speciesId": "rotommow",
+      "speciesNameZh": "洛托姆 (切割洛托姆)",
+      "speciesNameEn": "rotom-mow",
+      "formKey": "rotom-mow",
+      "x": 260,
+      "y": 1300,
+      "w": 128,
+      "h": 128,
+      "types": [
+        "electric",
+        "grass"
+      ],
+      "source": "sprite_sheet"
+    },
+    {
+      "dexKey": "497",
+      "dexAliases": [],
+      "nationalDex": 497,
+      "form": 0,
+      "formSuffix": null,
+      "speciesId": "serperior",
+      "speciesNameZh": "君主蛇",
+      "speciesNameEn": "serperior",
+      "formKey": "serperior",
+      "x": 390,
+      "y": 1300,
+      "w": 128,
+      "h": 128,
+      "types": [
+        "grass"
+      ],
+      "source": "sprite_sheet"
+    },
+    {
+      "dexKey": "500",
+      "dexAliases": [],
+      "nationalDex": 500,
+      "form": 0,
+      "formSuffix": null,
+      "speciesId": "emboar",
+      "speciesNameZh": "炎武王",
+      "speciesNameEn": "emboar",
+      "formKey": "emboar",
+      "x": 520,
+      "y": 1300,
+      "w": 128,
+      "h": 128,
+      "types": [
+        "fire",
+        "fighting"
+      ],
+      "source": "sprite_sheet"
+    },
+    {
+      "dexKey": "503",
+      "dexAliases": [],
+      "nationalDex": 503,
+      "form": 0,
+      "formSuffix": null,
+      "speciesId": "samurott",
+      "speciesNameZh": "大劍鬼",
+      "speciesNameEn": "samurott",
+      "formKey": "samurott",
+      "x": 650,
+      "y": 1300,
+      "w": 128,
+      "h": 128,
+      "types": [
+        "water"
+      ],
+      "source": "sprite_sheet"
+    },
+    {
+      "dexKey": "503-1",
+      "dexAliases": [
+        "503-hisui"
+      ],
+      "nationalDex": 503,
+      "form": 1,
+      "formSuffix": "hisui",
+      "speciesId": "samurotthisui",
+      "speciesNameZh": "大劍鬼 (洗翠的樣子)",
+      "speciesNameEn": "samurott-hisui",
+      "formKey": "samurott-hisui",
+      "x": 780,
+      "y": 1300,
+      "w": 128,
+      "h": 128,
+      "types": [
+        "water",
+        "dark"
+      ],
+      "source": "sprite_sheet"
+    },
+    {
+      "dexKey": "505",
+      "dexAliases": [],
+      "nationalDex": 505,
+      "form": 0,
+      "formSuffix": null,
+      "speciesId": "watchog",
+      "speciesNameZh": "步哨鼠",
+      "speciesNameEn": "watchog",
+      "formKey": "watchog",
+      "x": 910,
+      "y": 1300,
+      "w": 128,
+      "h": 128,
+      "types": [
+        "normal"
+      ],
+      "source": "sprite_sheet"
+    },
+    {
+      "dexKey": "510",
+      "dexAliases": [],
+      "nationalDex": 510,
+      "form": 0,
+      "formSuffix": null,
+      "speciesId": "liepard",
+      "speciesNameZh": "酷豹",
+      "speciesNameEn": "liepard",
+      "formKey": "liepard",
+      "x": 1040,
+      "y": 1300,
+      "w": 128,
+      "h": 128,
+      "types": [
+        "dark"
+      ],
+      "source": "sprite_sheet"
+    },
+    {
+      "dexKey": "512",
+      "dexAliases": [],
+      "nationalDex": 512,
+      "form": 0,
+      "formSuffix": null,
+      "speciesId": "simisage",
+      "speciesNameZh": "花椰猿",
+      "speciesNameEn": "simisage",
+      "formKey": "simisage",
+      "x": 1170,
+      "y": 1300,
+      "w": 128,
+      "h": 128,
+      "types": [
+        "grass"
+      ],
+      "source": "sprite_sheet"
+    },
+    {
+      "dexKey": "514",
+      "dexAliases": [],
+      "nationalDex": 514,
+      "form": 0,
+      "formSuffix": null,
+      "speciesId": "simisear",
+      "speciesNameZh": "爆香猿",
+      "speciesNameEn": "simisear",
+      "formKey": "simisear",
+      "x": 1300,
+      "y": 1300,
+      "w": 128,
+      "h": 128,
+      "types": [
+        "fire"
+      ],
+      "source": "sprite_sheet"
+    },
+    {
+      "dexKey": "516",
+      "dexAliases": [],
+      "nationalDex": 516,
+      "form": 0,
+      "formSuffix": null,
+      "speciesId": "simipour",
+      "speciesNameZh": "冷水猿",
+      "speciesNameEn": "simipour",
+      "formKey": "simipour",
+      "x": 1430,
+      "y": 0,
+      "w": 128,
+      "h": 128,
+      "types": [
+        "water"
+      ],
+      "source": "sprite_sheet"
+    },
+    {
+      "dexKey": "518",
+      "dexAliases": [],
+      "nationalDex": 518,
+      "form": 0,
+      "formSuffix": null,
+      "speciesId": "musharna",
+      "speciesNameZh": "夢夢蝕",
+      "speciesNameEn": "musharna",
+      "formKey": "musharna",
+      "x": 1430,
+      "y": 130,
+      "w": 128,
+      "h": 128,
+      "types": [
+        "psychic"
+      ],
+      "source": "sprite_sheet"
+    },
+    {
+      "dexKey": "530",
+      "dexAliases": [],
+      "nationalDex": 530,
+      "form": 0,
+      "formSuffix": null,
+      "speciesId": "excadrill",
+      "speciesNameZh": "龍頭地鼠",
+      "speciesNameEn": "excadrill",
+      "formKey": "excadrill",
+      "x": 1430,
+      "y": 260,
+      "w": 128,
+      "h": 128,
+      "types": [
+        "ground",
+        "steel"
+      ],
+      "source": "sprite_sheet"
+    },
+    {
+      "dexKey": "531",
+      "dexAliases": [],
+      "nationalDex": 531,
+      "form": 0,
+      "formSuffix": null,
+      "speciesId": "audino",
+      "speciesNameZh": "差不多娃娃",
+      "speciesNameEn": "audino",
+      "formKey": "audino",
+      "x": 1430,
+      "y": 390,
+      "w": 128,
+      "h": 128,
+      "types": [
+        "normal"
+      ],
+      "source": "sprite_sheet"
+    },
+    {
+      "dexKey": "534",
+      "dexAliases": [],
+      "nationalDex": 534,
+      "form": 0,
+      "formSuffix": null,
+      "speciesId": "conkeldurr",
+      "speciesNameZh": "修建老匠",
+      "speciesNameEn": "conkeldurr",
+      "formKey": "conkeldurr",
+      "x": 1430,
+      "y": 520,
+      "w": 128,
+      "h": 128,
+      "types": [
+        "fighting"
+      ],
+      "source": "sprite_sheet"
+    },
+    {
+      "dexKey": "545",
+      "dexAliases": [],
+      "nationalDex": 545,
+      "form": 0,
+      "formSuffix": null,
+      "speciesId": "scolipede",
+      "speciesNameZh": "蜈蚣王",
+      "speciesNameEn": "scolipede",
+      "formKey": "scolipede",
+      "x": 1430,
+      "y": 650,
+      "w": 128,
+      "h": 128,
+      "types": [
+        "bug",
+        "poison"
+      ],
+      "source": "sprite_sheet"
+    },
+    {
+      "dexKey": "547",
+      "dexAliases": [],
+      "nationalDex": 547,
+      "form": 0,
+      "formSuffix": null,
+      "speciesId": "whimsicott",
+      "speciesNameZh": "風妖精",
+      "speciesNameEn": "whimsicott",
+      "formKey": "whimsicott",
+      "x": 1430,
+      "y": 780,
+      "w": 128,
+      "h": 128,
+      "types": [
+        "grass",
+        "fairy"
+      ],
+      "source": "sprite_sheet"
+    },
+    {
+      "dexKey": "553",
+      "dexAliases": [],
+      "nationalDex": 553,
+      "form": 0,
+      "formSuffix": null,
+      "speciesId": "krookodile",
+      "speciesNameZh": "流氓鱷",
+      "speciesNameEn": "krookodile",
+      "formKey": "krookodile",
+      "x": 1430,
+      "y": 910,
+      "w": 128,
+      "h": 128,
+      "types": [
+        "ground",
+        "dark"
+      ],
+      "source": "sprite_sheet"
+    },
+    {
+      "dexKey": "560",
+      "dexAliases": [],
+      "nationalDex": 560,
+      "form": 0,
+      "formSuffix": null,
+      "speciesId": "scrafty",
+      "speciesNameZh": "頭巾混混",
+      "speciesNameEn": "scrafty",
+      "formKey": "scrafty",
+      "x": 1430,
+      "y": 1040,
+      "w": 128,
+      "h": 128,
+      "types": [
+        "dark",
+        "fighting"
+      ],
+      "source": "sprite_sheet"
+    },
+    {
+      "dexKey": "563",
+      "dexAliases": [],
+      "nationalDex": 563,
+      "form": 0,
+      "formSuffix": null,
+      "speciesId": "cofagrigus",
+      "speciesNameZh": "死神棺",
+      "speciesNameEn": "cofagrigus",
+      "formKey": "cofagrigus",
+      "x": 1430,
+      "y": 1170,
+      "w": 128,
+      "h": 128,
+      "types": [
+        "ghost"
+      ],
+      "source": "sprite_sheet"
+    },
+    {
+      "dexKey": "569",
+      "dexAliases": [],
+      "nationalDex": 569,
+      "form": 0,
+      "formSuffix": null,
+      "speciesId": "garbodor",
+      "speciesNameZh": "灰塵山",
+      "speciesNameEn": "garbodor",
+      "formKey": "garbodor",
+      "x": 1430,
+      "y": 1300,
+      "w": 128,
+      "h": 128,
+      "types": [
+        "poison"
+      ],
+      "source": "sprite_sheet"
+    },
+    {
+      "dexKey": "571",
+      "dexAliases": [],
+      "nationalDex": 571,
+      "form": 0,
+      "formSuffix": null,
+      "speciesId": "zoroark",
+      "speciesNameZh": "索羅亞克",
+      "speciesNameEn": "zoroark",
+      "formKey": "zoroark",
+      "x": 0,
+      "y": 1430,
+      "w": 128,
+      "h": 128,
+      "types": [
+        "dark"
+      ],
+      "source": "sprite_sheet"
+    },
+    {
+      "dexKey": "571-1",
+      "dexAliases": [
+        "571-hisui"
+      ],
+      "nationalDex": 571,
+      "form": 1,
+      "formSuffix": "hisui",
+      "speciesId": "zoroarkhisui",
+      "speciesNameZh": "索羅亞克 (洗翠的樣子)",
+      "speciesNameEn": "zoroark-hisui",
+      "formKey": "zoroark-hisui",
+      "x": 130,
+      "y": 1430,
+      "w": 128,
+      "h": 128,
+      "types": [
+        "normal",
+        "ghost"
+      ],
+      "source": "sprite_sheet"
+    },
+    {
+      "dexKey": "579",
+      "dexAliases": [],
+      "nationalDex": 579,
+      "form": 0,
+      "formSuffix": null,
+      "speciesId": "reuniclus",
+      "speciesNameZh": "人造細胞卵",
+      "speciesNameEn": "reuniclus",
+      "formKey": "reuniclus",
+      "x": 260,
+      "y": 1430,
+      "w": 128,
+      "h": 128,
+      "types": [
+        "psychic"
+      ],
+      "source": "sprite_sheet"
+    },
+    {
+      "dexKey": "584",
+      "dexAliases": [],
+      "nationalDex": 584,
+      "form": 0,
+      "formSuffix": null,
+      "speciesId": "vanilluxe",
+      "speciesNameZh": "雙倍多多冰",
+      "speciesNameEn": "vanilluxe",
+      "formKey": "vanilluxe",
+      "x": 390,
+      "y": 1430,
+      "w": 128,
+      "h": 128,
+      "types": [
+        "ice"
+      ],
+      "source": "sprite_sheet"
+    },
+    {
+      "dexKey": "587",
+      "dexAliases": [],
+      "nationalDex": 587,
+      "form": 0,
+      "formSuffix": null,
+      "speciesId": "emolga",
+      "speciesNameZh": "電飛鼠",
+      "speciesNameEn": "emolga",
+      "formKey": "emolga",
+      "x": 520,
+      "y": 1430,
+      "w": 128,
+      "h": 128,
+      "types": [
+        "electric",
+        "flying"
+      ],
+      "source": "sprite_sheet"
+    },
+    {
+      "dexKey": "604",
+      "dexAliases": [],
+      "nationalDex": 604,
+      "form": 0,
+      "formSuffix": null,
+      "speciesId": "eelektross",
+      "speciesNameZh": "麻麻鰻魚王",
+      "speciesNameEn": "eelektross",
+      "formKey": "eelektross",
+      "x": 650,
+      "y": 1430,
+      "w": 128,
+      "h": 128,
+      "types": [
+        "electric"
+      ],
+      "source": "sprite_sheet"
+    },
+    {
+      "dexKey": "609",
+      "dexAliases": [],
+      "nationalDex": 609,
+      "form": 0,
+      "formSuffix": null,
+      "speciesId": "chandelure",
+      "speciesNameZh": "水晶燈火靈",
+      "speciesNameEn": "chandelure",
+      "formKey": "chandelure",
+      "x": 780,
+      "y": 1430,
+      "w": 128,
+      "h": 128,
+      "types": [
+        "ghost",
+        "fire"
+      ],
+      "source": "sprite_sheet"
+    },
+    {
+      "dexKey": "614",
+      "dexAliases": [],
+      "nationalDex": 614,
+      "form": 0,
+      "formSuffix": null,
+      "speciesId": "beartic",
+      "speciesNameZh": "凍原熊",
+      "speciesNameEn": "beartic",
+      "formKey": "beartic",
+      "x": 910,
+      "y": 1430,
+      "w": 128,
+      "h": 128,
+      "types": [
+        "ice"
+      ],
+      "source": "sprite_sheet"
+    },
+    {
+      "dexKey": "618",
+      "dexAliases": [],
+      "nationalDex": 618,
+      "form": 0,
+      "formSuffix": null,
+      "speciesId": "stunfisk",
+      "speciesNameZh": "泥巴魚",
+      "speciesNameEn": "stunfisk",
+      "formKey": "stunfisk",
+      "x": 1040,
+      "y": 1430,
+      "w": 128,
+      "h": 128,
+      "types": [
+        "ground",
+        "electric"
+      ],
+      "source": "sprite_sheet"
+    },
+    {
+      "dexKey": "618-1",
+      "dexAliases": [
+        "618-galar"
+      ],
+      "nationalDex": 618,
+      "form": 1,
+      "formSuffix": "galar",
+      "speciesId": "stunfiskgalar",
+      "speciesNameZh": "泥巴魚 (伽勒爾的樣子)",
+      "speciesNameEn": "stunfisk-galar",
+      "formKey": "stunfisk-galar",
+      "x": 1170,
+      "y": 1430,
+      "w": 128,
+      "h": 128,
+      "types": [
+        "ground",
+        "steel"
+      ],
+      "source": "sprite_sheet"
+    },
+    {
+      "dexKey": "623",
+      "dexAliases": [],
+      "nationalDex": 623,
+      "form": 0,
+      "formSuffix": null,
+      "speciesId": "golurk",
+      "speciesNameZh": "泥偶巨人",
+      "speciesNameEn": "golurk",
+      "formKey": "golurk",
+      "x": 1300,
+      "y": 1430,
+      "w": 128,
+      "h": 128,
+      "types": [
+        "ground",
+        "ghost"
+      ],
+      "source": "sprite_sheet"
+    },
+    {
+      "dexKey": "635",
+      "dexAliases": [],
+      "nationalDex": 635,
+      "form": 0,
+      "formSuffix": null,
+      "speciesId": "hydreigon",
+      "speciesNameZh": "三首惡龍",
+      "speciesNameEn": "hydreigon",
+      "formKey": "hydreigon",
+      "x": 1430,
+      "y": 1430,
+      "w": 128,
+      "h": 128,
+      "types": [
+        "dark",
+        "dragon"
+      ],
+      "source": "sprite_sheet"
+    },
+    {
+      "dexKey": "637",
+      "dexAliases": [],
+      "nationalDex": 637,
+      "form": 0,
+      "formSuffix": null,
+      "speciesId": "volcarona",
+      "speciesNameZh": "火神蛾",
+      "speciesNameEn": "volcarona",
+      "formKey": "volcarona",
+      "x": 1560,
+      "y": 0,
+      "w": 128,
+      "h": 128,
+      "types": [
+        "bug",
+        "fire"
+      ],
+      "source": "sprite_sheet"
+    },
+    {
+      "dexKey": "652",
+      "dexAliases": [],
+      "nationalDex": 652,
+      "form": 0,
+      "formSuffix": null,
+      "speciesId": "chesnaught",
+      "speciesNameZh": "布里卡隆",
+      "speciesNameEn": "chesnaught",
+      "formKey": "chesnaught",
+      "x": 1560,
+      "y": 130,
+      "w": 128,
+      "h": 128,
+      "types": [
+        "grass",
+        "fighting"
+      ],
+      "source": "sprite_sheet"
+    },
+    {
+      "dexKey": "655",
+      "dexAliases": [],
+      "nationalDex": 655,
+      "form": 0,
+      "formSuffix": null,
+      "speciesId": "delphox",
+      "speciesNameZh": "妖火紅狐",
+      "speciesNameEn": "delphox",
+      "formKey": "delphox",
+      "x": 1560,
+      "y": 260,
+      "w": 128,
+      "h": 128,
+      "types": [
+        "fire",
+        "psychic"
+      ],
+      "source": "sprite_sheet"
+    },
+    {
+      "dexKey": "658",
+      "dexAliases": [],
+      "nationalDex": 658,
+      "form": 0,
+      "formSuffix": null,
+      "speciesId": "greninja",
+      "speciesNameZh": "甲賀忍蛙",
+      "speciesNameEn": "greninja",
+      "formKey": "greninja",
+      "x": 1560,
+      "y": 390,
+      "w": 128,
+      "h": 128,
+      "types": [
+        "water",
+        "dark"
+      ],
+      "source": "sprite_sheet"
+    },
+    {
+      "dexKey": "660",
+      "dexAliases": [],
+      "nationalDex": 660,
+      "form": 0,
+      "formSuffix": null,
+      "speciesId": "diggersby",
+      "speciesNameZh": "掘地兔",
+      "speciesNameEn": "diggersby",
+      "formKey": "diggersby",
+      "x": 1560,
+      "y": 520,
+      "w": 128,
+      "h": 128,
+      "types": [
+        "normal",
+        "ground"
+      ],
+      "source": "sprite_sheet"
+    },
+    {
+      "dexKey": "663",
+      "dexAliases": [],
+      "nationalDex": 663,
+      "form": 0,
+      "formSuffix": null,
+      "speciesId": "talonflame",
+      "speciesNameZh": "烈箭鷹",
+      "speciesNameEn": "talonflame",
+      "formKey": "talonflame",
+      "x": 1560,
+      "y": 650,
+      "w": 128,
+      "h": 128,
+      "types": [
+        "fire",
+        "flying"
+      ],
+      "source": "sprite_sheet"
+    },
+    {
+      "dexKey": "666-18",
+      "dexAliases": [
+        "666-fancy"
+      ],
+      "nationalDex": 666,
+      "form": 18,
+      "formSuffix": "fancy",
+      "speciesId": "vivillonfancy",
+      "speciesNameZh": "彩粉蝶",
+      "speciesNameEn": "vivillon-fancy",
+      "formKey": "vivillon-fancy",
+      "x": 1560,
+      "y": 780,
+      "w": 128,
+      "h": 128,
+      "types": [
+        "bug",
+        "flying"
+      ],
+      "source": "sprite_sheet"
+    },
+    {
+      "dexKey": "668",
+      "dexAliases": [
+        "668-male"
+      ],
+      "nationalDex": 668,
+      "form": 0,
+      "formSuffix": "male",
+      "speciesId": "pyroar",
+      "speciesNameZh": "火炎獅",
+      "speciesNameEn": "pyroar-male",
+      "formKey": "pyroar-male",
+      "x": 1560,
+      "y": 910,
+      "w": 128,
+      "h": 128,
+      "types": [
+        "fire",
+        "normal"
+      ],
+      "source": "sprite_sheet"
+    },
+    {
+      "dexKey": "670-5",
+      "dexAliases": [
+        "670-eternal"
+      ],
+      "nationalDex": 670,
+      "form": 5,
+      "formSuffix": "eternal",
+      "speciesId": "floette",
+      "speciesNameZh": "花葉蒂",
+      "speciesNameEn": "floette-eternal",
+      "formKey": "floette-eternal",
+      "x": 1560,
+      "y": 1040,
+      "w": 128,
+      "h": 128,
+      "types": [
+        "fairy"
+      ],
+      "source": "sprite_sheet"
+    },
+    {
+      "dexKey": "671",
+      "dexAliases": [
+        "671-red"
+      ],
+      "nationalDex": 671,
+      "form": 0,
+      "formSuffix": "red",
+      "speciesId": "florges",
+      "speciesNameZh": "花潔夫人",
+      "speciesNameEn": "florges-red",
+      "formKey": "florges-red",
+      "x": 1560,
+      "y": 1170,
+      "w": 128,
+      "h": 128,
+      "types": [
+        "fairy"
+      ],
+      "source": "sprite_sheet"
+    },
+    {
+      "dexKey": "673",
+      "dexAliases": [],
+      "nationalDex": 673,
+      "form": 0,
+      "formSuffix": null,
+      "speciesId": "gogoat",
+      "speciesNameZh": "坐騎山羊",
+      "speciesNameEn": "gogoat",
+      "formKey": "gogoat",
+      "x": 1560,
+      "y": 1300,
+      "w": 128,
+      "h": 128,
+      "types": [
+        "grass"
+      ],
+      "source": "sprite_sheet"
+    },
+    {
+      "dexKey": "675",
+      "dexAliases": [],
+      "nationalDex": 675,
+      "form": 0,
+      "formSuffix": null,
+      "speciesId": "pangoro",
+      "speciesNameZh": "流氓熊貓",
+      "speciesNameEn": "pangoro",
+      "formKey": "pangoro",
+      "x": 1560,
+      "y": 1430,
+      "w": 128,
+      "h": 128,
+      "types": [
+        "fighting",
+        "dark"
+      ],
+      "source": "sprite_sheet"
+    },
+    {
+      "dexKey": "676",
+      "dexAliases": [
+        "676-natural"
+      ],
+      "nationalDex": 676,
+      "form": 0,
+      "formSuffix": "natural",
+      "speciesId": "furfrou",
+      "speciesNameZh": "多麗米亞",
+      "speciesNameEn": "furfrou-natural",
+      "formKey": "furfrou-natural",
+      "x": 0,
+      "y": 1560,
+      "w": 128,
+      "h": 128,
+      "types": [
+        "normal"
+      ],
+      "source": "sprite_sheet"
+    },
+    {
+      "dexKey": "678",
+      "dexAliases": [
+        "678-male"
+      ],
+      "nationalDex": 678,
+      "form": 0,
+      "formSuffix": "male",
+      "speciesId": "meowstic",
+      "speciesNameZh": "超能妙喵 (雄性的樣子)",
+      "speciesNameEn": "meowstic-male",
+      "formKey": "meowstic-male",
+      "x": 130,
+      "y": 1560,
+      "w": 128,
+      "h": 128,
+      "types": [
+        "psychic"
+      ],
+      "source": "sprite_sheet"
+    },
+    {
+      "dexKey": "678-1",
+      "dexAliases": [
+        "678-female"
+      ],
+      "nationalDex": 678,
+      "form": 1,
+      "formSuffix": "female",
+      "speciesId": "meowsticf",
+      "speciesNameZh": "超能妙喵 (雌性的樣子)",
+      "speciesNameEn": "meowstic-female",
+      "formKey": "meowstic-female",
+      "x": 260,
+      "y": 1560,
+      "w": 128,
+      "h": 128,
+      "types": [
+        "psychic"
+      ],
+      "source": "sprite_sheet"
+    },
+    {
+      "dexKey": "681",
+      "dexAliases": [
+        "681-shield"
+      ],
+      "nationalDex": 681,
+      "form": 0,
+      "formSuffix": "shield",
+      "speciesId": "aegislash",
+      "speciesNameZh": "堅盾劍怪",
+      "speciesNameEn": "aegislash-shield",
+      "formKey": "aegislash-shield",
+      "x": 390,
+      "y": 1560,
+      "w": 128,
+      "h": 128,
+      "types": [
+        "steel",
+        "ghost"
+      ],
+      "source": "sprite_sheet"
+    },
+    {
+      "dexKey": "683",
+      "dexAliases": [],
+      "nationalDex": 683,
+      "form": 0,
+      "formSuffix": null,
+      "speciesId": "aromatisse",
+      "speciesNameZh": "芳香精",
+      "speciesNameEn": "aromatisse",
+      "formKey": "aromatisse",
+      "x": 520,
+      "y": 1560,
+      "w": 128,
+      "h": 128,
+      "types": [
+        "fairy"
+      ],
+      "source": "sprite_sheet"
+    },
+    {
+      "dexKey": "685",
+      "dexAliases": [],
+      "nationalDex": 685,
+      "form": 0,
+      "formSuffix": null,
+      "speciesId": "slurpuff",
+      "speciesNameZh": "胖甜妮",
+      "speciesNameEn": "slurpuff",
+      "formKey": "slurpuff",
+      "x": 650,
+      "y": 1560,
+      "w": 128,
+      "h": 128,
+      "types": [
+        "fairy"
+      ],
+      "source": "sprite_sheet"
+    },
+    {
+      "dexKey": "687",
+      "dexAliases": [],
+      "nationalDex": 687,
+      "form": 0,
+      "formSuffix": null,
+      "speciesId": "malamar",
+      "speciesNameZh": "烏賊王",
+      "speciesNameEn": "malamar",
+      "formKey": "malamar",
+      "x": 780,
+      "y": 1560,
+      "w": 128,
+      "h": 128,
+      "types": [
+        "dark",
+        "psychic"
+      ],
+      "source": "sprite_sheet"
+    },
+    {
+      "dexKey": "689",
+      "dexAliases": [],
+      "nationalDex": 689,
+      "form": 0,
+      "formSuffix": null,
+      "speciesId": "barbaracle",
+      "speciesNameZh": "龜足巨鎧",
+      "speciesNameEn": "barbaracle",
+      "formKey": "barbaracle",
+      "x": 910,
+      "y": 1560,
+      "w": 128,
+      "h": 128,
+      "types": [
+        "rock",
+        "water"
+      ],
+      "source": "sprite_sheet"
+    },
+    {
+      "dexKey": "691",
+      "dexAliases": [],
+      "nationalDex": 691,
+      "form": 0,
+      "formSuffix": null,
+      "speciesId": "dragalge",
+      "speciesNameZh": "毒藻龍",
+      "speciesNameEn": "dragalge",
+      "formKey": "dragalge",
+      "x": 1040,
+      "y": 1560,
+      "w": 128,
+      "h": 128,
+      "types": [
+        "poison",
+        "dragon"
+      ],
+      "source": "sprite_sheet"
+    },
+    {
+      "dexKey": "693",
+      "dexAliases": [],
+      "nationalDex": 693,
+      "form": 0,
+      "formSuffix": null,
+      "speciesId": "clawitzer",
+      "speciesNameZh": "鋼炮臂蝦",
+      "speciesNameEn": "clawitzer",
+      "formKey": "clawitzer",
+      "x": 1170,
+      "y": 1560,
+      "w": 128,
+      "h": 128,
+      "types": [
+        "water"
+      ],
+      "source": "sprite_sheet"
+    },
+    {
+      "dexKey": "695",
+      "dexAliases": [],
+      "nationalDex": 695,
+      "form": 0,
+      "formSuffix": null,
+      "speciesId": "heliolisk",
+      "speciesNameZh": "光電傘蜥",
+      "speciesNameEn": "heliolisk",
+      "formKey": "heliolisk",
+      "x": 1300,
+      "y": 1560,
+      "w": 128,
+      "h": 128,
+      "types": [
+        "electric",
+        "normal"
+      ],
+      "source": "sprite_sheet"
+    },
+    {
+      "dexKey": "697",
+      "dexAliases": [],
+      "nationalDex": 697,
+      "form": 0,
+      "formSuffix": null,
+      "speciesId": "tyrantrum",
+      "speciesNameZh": "怪顎龍",
+      "speciesNameEn": "tyrantrum",
+      "formKey": "tyrantrum",
+      "x": 1430,
+      "y": 1560,
+      "w": 128,
+      "h": 128,
+      "types": [
+        "rock",
+        "dragon"
+      ],
+      "source": "sprite_sheet"
+    },
+    {
+      "dexKey": "699",
+      "dexAliases": [],
+      "nationalDex": 699,
+      "form": 0,
+      "formSuffix": null,
+      "speciesId": "aurorus",
+      "speciesNameZh": "冰雪巨龍",
+      "speciesNameEn": "aurorus",
+      "formKey": "aurorus",
+      "x": 1560,
+      "y": 1560,
+      "w": 128,
+      "h": 128,
+      "types": [
+        "rock",
+        "ice"
+      ],
+      "source": "sprite_sheet"
+    },
+    {
+      "dexKey": "700",
+      "dexAliases": [],
+      "nationalDex": 700,
+      "form": 0,
+      "formSuffix": null,
+      "speciesId": "sylveon",
+      "speciesNameZh": "仙子伊布",
+      "speciesNameEn": "sylveon",
+      "formKey": "sylveon",
+      "x": 1690,
+      "y": 0,
+      "w": 128,
+      "h": 128,
+      "types": [
+        "fairy"
+      ],
+      "source": "sprite_sheet"
+    },
+    {
+      "dexKey": "701",
+      "dexAliases": [],
+      "nationalDex": 701,
+      "form": 0,
+      "formSuffix": null,
+      "speciesId": "hawlucha",
+      "speciesNameZh": "摔角鷹人",
+      "speciesNameEn": "hawlucha",
+      "formKey": "hawlucha",
+      "x": 1690,
+      "y": 130,
+      "w": 128,
+      "h": 128,
+      "types": [
+        "fighting",
+        "flying"
+      ],
+      "source": "sprite_sheet"
+    },
+    {
+      "dexKey": "702",
+      "dexAliases": [],
+      "nationalDex": 702,
+      "form": 0,
+      "formSuffix": null,
+      "speciesId": "dedenne",
+      "speciesNameZh": "咚咚鼠",
+      "speciesNameEn": "dedenne",
+      "formKey": "dedenne",
+      "x": 1690,
+      "y": 260,
+      "w": 128,
+      "h": 128,
+      "types": [
+        "electric",
+        "fairy"
+      ],
+      "source": "sprite_sheet"
+    },
+    {
+      "dexKey": "706",
+      "dexAliases": [],
+      "nationalDex": 706,
+      "form": 0,
+      "formSuffix": null,
+      "speciesId": "goodra",
+      "speciesNameZh": "黏美龍",
+      "speciesNameEn": "goodra",
+      "formKey": "goodra",
+      "x": 1690,
+      "y": 390,
+      "w": 128,
+      "h": 128,
+      "types": [
+        "dragon"
+      ],
+      "source": "sprite_sheet"
+    },
+    {
+      "dexKey": "706-1",
+      "dexAliases": [
+        "706-hisui"
+      ],
+      "nationalDex": 706,
+      "form": 1,
+      "formSuffix": "hisui",
+      "speciesId": "goodrahisui",
+      "speciesNameZh": "黏美龍 (洗翠的樣子)",
+      "speciesNameEn": "goodra-hisui",
+      "formKey": "goodra-hisui",
+      "x": 1690,
+      "y": 520,
+      "w": 128,
+      "h": 128,
+      "types": [
+        "steel",
+        "dragon"
+      ],
+      "source": "sprite_sheet"
+    },
+    {
+      "dexKey": "707",
+      "dexAliases": [],
+      "nationalDex": 707,
+      "form": 0,
+      "formSuffix": null,
+      "speciesId": "klefki",
+      "speciesNameZh": "鑰圈兒",
+      "speciesNameEn": "klefki",
+      "formKey": "klefki",
+      "x": 1690,
+      "y": 650,
+      "w": 128,
+      "h": 128,
+      "types": [
+        "steel",
+        "fairy"
+      ],
+      "source": "sprite_sheet"
+    },
+    {
+      "dexKey": "709",
+      "dexAliases": [],
+      "nationalDex": 709,
+      "form": 0,
+      "formSuffix": null,
+      "speciesId": "trevenant",
+      "speciesNameZh": "朽木妖",
+      "speciesNameEn": "trevenant",
+      "formKey": "trevenant",
+      "x": 1690,
+      "y": 780,
+      "w": 128,
+      "h": 128,
+      "types": [
+        "ghost",
+        "grass"
+      ],
+      "source": "sprite_sheet"
+    },
+    {
+      "dexKey": "711",
+      "dexAliases": [
+        "711-average"
+      ],
+      "nationalDex": 711,
+      "form": 0,
+      "formSuffix": "average",
+      "speciesId": "gourgeist",
+      "speciesNameZh": "南瓜怪人 (中顆種)",
+      "speciesNameEn": "gourgeist-average",
+      "formKey": "gourgeist-average",
+      "x": 1690,
+      "y": 910,
+      "w": 128,
+      "h": 128,
+      "types": [
+        "ghost",
+        "grass"
+      ],
+      "source": "sprite_sheet"
+    },
+    {
+      "dexKey": "711-1",
+      "dexAliases": [
+        "711-small"
+      ],
+      "nationalDex": 711,
+      "form": 1,
+      "formSuffix": "small",
+      "speciesId": "gourgeistsmall",
+      "speciesNameZh": "南瓜怪人 (小顆種)",
+      "speciesNameEn": "gourgeist-small",
+      "formKey": "gourgeist-small",
+      "x": 1690,
+      "y": 1040,
+      "w": 128,
+      "h": 128,
+      "types": [
+        "ghost",
+        "grass"
+      ],
+      "source": "sprite_sheet"
+    },
+    {
+      "dexKey": "711-2",
+      "dexAliases": [
+        "711-large"
+      ],
+      "nationalDex": 711,
+      "form": 2,
+      "formSuffix": "large",
+      "speciesId": "gourgeistlarge",
+      "speciesNameZh": "南瓜怪人 (大顆種)",
+      "speciesNameEn": "gourgeist-large",
+      "formKey": "gourgeist-large",
+      "x": 1690,
+      "y": 1170,
+      "w": 128,
+      "h": 128,
+      "types": [
+        "ghost",
+        "grass"
+      ],
+      "source": "sprite_sheet"
+    },
+    {
+      "dexKey": "711-3",
+      "dexAliases": [
+        "711-super"
+      ],
+      "nationalDex": 711,
+      "form": 3,
+      "formSuffix": "super",
+      "speciesId": "gourgeistsuper",
+      "speciesNameZh": "南瓜怪人 (巨顆種)",
+      "speciesNameEn": "gourgeist-super",
+      "formKey": "gourgeist-super",
+      "x": 1690,
+      "y": 1300,
+      "w": 128,
+      "h": 128,
+      "types": [
+        "ghost",
+        "grass"
+      ],
+      "source": "sprite_sheet"
+    },
+    {
+      "dexKey": "713",
+      "dexAliases": [],
+      "nationalDex": 713,
+      "form": 0,
+      "formSuffix": null,
+      "speciesId": "avalugg",
+      "speciesNameZh": "冰岩怪",
+      "speciesNameEn": "avalugg",
+      "formKey": "avalugg",
+      "x": 1690,
+      "y": 1430,
+      "w": 128,
+      "h": 128,
+      "types": [
+        "ice"
+      ],
+      "source": "sprite_sheet"
+    },
+    {
+      "dexKey": "713-1",
+      "dexAliases": [
+        "713-hisui"
+      ],
+      "nationalDex": 713,
+      "form": 1,
+      "formSuffix": "hisui",
+      "speciesId": "avalugghisui",
+      "speciesNameZh": "冰岩怪 (洗翠的樣子)",
+      "speciesNameEn": "avalugg-hisui",
+      "formKey": "avalugg-hisui",
+      "x": 1690,
+      "y": 1560,
+      "w": 128,
+      "h": 128,
+      "types": [
+        "ice",
+        "rock"
+      ],
+      "source": "sprite_sheet"
+    },
+    {
+      "dexKey": "715",
+      "dexAliases": [],
+      "nationalDex": 715,
+      "form": 0,
+      "formSuffix": null,
+      "speciesId": "noivern",
+      "speciesNameZh": "音波龍",
+      "speciesNameEn": "noivern",
+      "formKey": "noivern",
+      "x": 0,
+      "y": 1690,
+      "w": 128,
+      "h": 128,
+      "types": [
+        "flying",
+        "dragon"
+      ],
+      "source": "sprite_sheet"
+    },
+    {
+      "dexKey": "724",
+      "dexAliases": [],
+      "nationalDex": 724,
+      "form": 0,
+      "formSuffix": null,
+      "speciesId": "decidueye",
+      "speciesNameZh": "狙射樹梟",
+      "speciesNameEn": "decidueye",
+      "formKey": "decidueye",
+      "x": 130,
+      "y": 1690,
+      "w": 128,
+      "h": 128,
+      "types": [
+        "grass",
+        "ghost"
+      ],
+      "source": "sprite_sheet"
+    },
+    {
+      "dexKey": "724-1",
+      "dexAliases": [
+        "724-hisui"
+      ],
+      "nationalDex": 724,
+      "form": 1,
+      "formSuffix": "hisui",
+      "speciesId": "decidueyehisui",
+      "speciesNameZh": "狙射樹梟 (洗翠的樣子)",
+      "speciesNameEn": "decidueye-hisui",
+      "formKey": "decidueye-hisui",
+      "x": 260,
+      "y": 1690,
+      "w": 128,
+      "h": 128,
+      "types": [
+        "grass",
+        "fighting"
+      ],
+      "source": "sprite_sheet"
+    },
+    {
+      "dexKey": "727",
+      "dexAliases": [],
+      "nationalDex": 727,
+      "form": 0,
+      "formSuffix": null,
+      "speciesId": "incineroar",
+      "speciesNameZh": "熾焰咆哮虎",
+      "speciesNameEn": "incineroar",
+      "formKey": "incineroar",
+      "x": 390,
+      "y": 1690,
+      "w": 128,
+      "h": 128,
+      "types": [
+        "fire",
+        "dark"
+      ],
+      "source": "sprite_sheet"
+    },
+    {
+      "dexKey": "730",
+      "dexAliases": [],
+      "nationalDex": 730,
+      "form": 0,
+      "formSuffix": null,
+      "speciesId": "primarina",
+      "speciesNameZh": "西獅海壬",
+      "speciesNameEn": "primarina",
+      "formKey": "primarina",
+      "x": 520,
+      "y": 1690,
+      "w": 128,
+      "h": 128,
+      "types": [
+        "water",
+        "fairy"
+      ],
+      "source": "sprite_sheet"
+    },
+    {
+      "dexKey": "733",
+      "dexAliases": [],
+      "nationalDex": 733,
+      "form": 0,
+      "formSuffix": null,
+      "speciesId": "toucannon",
+      "speciesNameZh": "銃嘴大鳥",
+      "speciesNameEn": "toucannon",
+      "formKey": "toucannon",
+      "x": 650,
+      "y": 1690,
+      "w": 128,
+      "h": 128,
+      "types": [
+        "normal",
+        "flying"
+      ],
+      "source": "sprite_sheet"
+    },
+    {
+      "dexKey": "740",
+      "dexAliases": [],
+      "nationalDex": 740,
+      "form": 0,
+      "formSuffix": null,
+      "speciesId": "crabominable",
+      "speciesNameZh": "好勝毛蟹",
+      "speciesNameEn": "crabominable",
+      "formKey": "crabominable",
+      "x": 780,
+      "y": 1690,
+      "w": 128,
+      "h": 128,
+      "types": [
+        "fighting",
+        "ice"
+      ],
+      "source": "sprite_sheet"
+    },
+    {
+      "dexKey": "745",
+      "dexAliases": [
+        "745-midday"
+      ],
+      "nationalDex": 745,
+      "form": 0,
+      "formSuffix": "midday",
+      "speciesId": "lycanroc",
+      "speciesNameZh": "鬃岩狼人 (白晝的樣子)",
+      "speciesNameEn": "lycanroc-midday",
+      "formKey": "lycanroc-midday",
+      "x": 910,
+      "y": 1690,
+      "w": 128,
+      "h": 128,
+      "types": [
+        "rock"
+      ],
+      "source": "sprite_sheet"
+    },
+    {
+      "dexKey": "745-1",
+      "dexAliases": [
+        "745-midnight"
+      ],
+      "nationalDex": 745,
+      "form": 1,
+      "formSuffix": "midnight",
+      "speciesId": "lycanrocmidnight",
+      "speciesNameZh": "鬃岩狼人 (黑夜的樣子)",
+      "speciesNameEn": "lycanroc-midnight",
+      "formKey": "lycanroc-midnight",
+      "x": 1040,
+      "y": 1690,
+      "w": 128,
+      "h": 128,
+      "types": [
+        "rock"
+      ],
+      "source": "sprite_sheet"
+    },
+    {
+      "dexKey": "745-2",
+      "dexAliases": [
+        "745-dusk"
+      ],
+      "nationalDex": 745,
+      "form": 2,
+      "formSuffix": "dusk",
+      "speciesId": "lycanrocdusk",
+      "speciesNameZh": "鬃岩狼人 (黃昏的樣子)",
+      "speciesNameEn": "lycanroc-dusk",
+      "formKey": "lycanroc-dusk",
+      "x": 1170,
+      "y": 1690,
+      "w": 128,
+      "h": 128,
+      "types": [
+        "rock"
+      ],
+      "source": "sprite_sheet"
+    },
+    {
+      "dexKey": "748",
+      "dexAliases": [],
+      "nationalDex": 748,
+      "form": 0,
+      "formSuffix": null,
+      "speciesId": "toxapex",
+      "speciesNameZh": "超壞星",
+      "speciesNameEn": "toxapex",
+      "formKey": "toxapex",
+      "x": 1300,
+      "y": 1690,
+      "w": 128,
+      "h": 128,
+      "types": [
+        "poison",
+        "water"
+      ],
+      "source": "sprite_sheet"
+    },
+    {
+      "dexKey": "750",
+      "dexAliases": [],
+      "nationalDex": 750,
+      "form": 0,
+      "formSuffix": null,
+      "speciesId": "mudsdale",
+      "speciesNameZh": "重泥挽馬",
+      "speciesNameEn": "mudsdale",
+      "formKey": "mudsdale",
+      "x": 1430,
+      "y": 1690,
+      "w": 128,
+      "h": 128,
+      "types": [
+        "ground"
+      ],
+      "source": "sprite_sheet"
+    },
+    {
+      "dexKey": "752",
+      "dexAliases": [],
+      "nationalDex": 752,
+      "form": 0,
+      "formSuffix": null,
+      "speciesId": "araquanid",
+      "speciesNameZh": "滴蛛霸",
+      "speciesNameEn": "araquanid",
+      "formKey": "araquanid",
+      "x": 1560,
+      "y": 1690,
+      "w": 128,
+      "h": 128,
+      "types": [
+        "water",
+        "bug"
+      ],
+      "source": "sprite_sheet"
+    },
+    {
+      "dexKey": "758",
+      "dexAliases": [],
+      "nationalDex": 758,
+      "form": 0,
+      "formSuffix": null,
+      "speciesId": "salazzle",
+      "speciesNameZh": "焰后蜥",
+      "speciesNameEn": "salazzle",
+      "formKey": "salazzle",
+      "x": 1690,
+      "y": 1690,
+      "w": 128,
+      "h": 128,
+      "types": [
+        "poison",
+        "fire"
+      ],
+      "source": "sprite_sheet"
+    },
+    {
+      "dexKey": "763",
+      "dexAliases": [],
+      "nationalDex": 763,
+      "form": 0,
+      "formSuffix": null,
+      "speciesId": "tsareena",
+      "speciesNameZh": "甜冷美后",
+      "speciesNameEn": "tsareena",
+      "formKey": "tsareena",
+      "x": 1820,
+      "y": 0,
+      "w": 128,
+      "h": 128,
+      "types": [
+        "grass"
+      ],
+      "source": "sprite_sheet"
+    },
+    {
+      "dexKey": "765",
+      "dexAliases": [],
+      "nationalDex": 765,
+      "form": 0,
+      "formSuffix": null,
+      "speciesId": "oranguru",
+      "speciesNameZh": "智揮猩",
+      "speciesNameEn": "oranguru",
+      "formKey": "oranguru",
+      "x": 1820,
+      "y": 130,
+      "w": 128,
+      "h": 128,
+      "types": [
+        "normal",
+        "psychic"
+      ],
+      "source": "sprite_sheet"
+    },
+    {
+      "dexKey": "766",
+      "dexAliases": [],
+      "nationalDex": 766,
+      "form": 0,
+      "formSuffix": null,
+      "speciesId": "passimian",
+      "speciesNameZh": "投擲猴",
+      "speciesNameEn": "passimian",
+      "formKey": "passimian",
+      "x": 1820,
+      "y": 260,
+      "w": 128,
+      "h": 128,
+      "types": [
+        "fighting"
+      ],
+      "source": "sprite_sheet"
+    },
+    {
+      "dexKey": "768",
+      "dexAliases": [],
+      "nationalDex": 768,
+      "form": 0,
+      "formSuffix": null,
+      "speciesId": "golisopod",
+      "speciesNameZh": "具甲武者",
+      "speciesNameEn": "golisopod",
+      "formKey": "golisopod",
+      "x": 1820,
+      "y": 390,
+      "w": 128,
+      "h": 128,
+      "types": [
+        "bug",
+        "water"
+      ],
+      "source": "sprite_sheet"
+    },
+    {
+      "dexKey": "778",
+      "dexAliases": [
+        "778-disguised"
+      ],
+      "nationalDex": 778,
+      "form": 0,
+      "formSuffix": "disguised",
+      "speciesId": "mimikyu",
+      "speciesNameZh": "謎擬Ｑ",
+      "speciesNameEn": "mimikyu-disguised",
+      "formKey": "mimikyu-disguised",
+      "x": 1820,
+      "y": 520,
+      "w": 128,
+      "h": 128,
+      "types": [
+        "ghost",
+        "fairy"
+      ],
+      "source": "sprite_sheet"
+    },
+    {
+      "dexKey": "780",
+      "dexAliases": [],
+      "nationalDex": 780,
+      "form": 0,
+      "formSuffix": null,
+      "speciesId": "drampa",
+      "speciesNameZh": "老翁龍",
+      "speciesNameEn": "drampa",
+      "formKey": "drampa",
+      "x": 1820,
+      "y": 650,
+      "w": 128,
+      "h": 128,
+      "types": [
+        "normal",
+        "dragon"
+      ],
+      "source": "sprite_sheet"
+    },
+    {
+      "dexKey": "784",
+      "dexAliases": [
+        "784-o"
+      ],
+      "nationalDex": 784,
+      "form": 0,
+      "formSuffix": "o",
+      "speciesId": "kommoo",
+      "speciesNameZh": "杖尾鱗甲龍",
+      "speciesNameEn": "kommo-o",
+      "formKey": "kommo-o",
+      "x": 1820,
+      "y": 780,
+      "w": 128,
+      "h": 128,
+      "types": [
+        "dragon",
+        "fighting"
+      ],
+      "source": "sprite_sheet"
+    },
+    {
+      "dexKey": "812",
+      "dexAliases": [],
+      "nationalDex": 812,
+      "form": 0,
+      "formSuffix": null,
+      "speciesId": "rillaboom",
+      "speciesNameZh": "轟擂金剛猩",
+      "speciesNameEn": "rillaboom",
+      "formKey": "rillaboom",
+      "x": 1820,
+      "y": 910,
+      "w": 128,
+      "h": 128,
+      "types": [
+        "grass"
+      ],
+      "source": "sprite_sheet"
+    },
+    {
+      "dexKey": "815",
+      "dexAliases": [],
+      "nationalDex": 815,
+      "form": 0,
+      "formSuffix": null,
+      "speciesId": "cinderace",
+      "speciesNameZh": "閃焰王牌",
+      "speciesNameEn": "cinderace",
+      "formKey": "cinderace",
+      "x": 1820,
+      "y": 1040,
+      "w": 128,
+      "h": 128,
+      "types": [
+        "fire"
+      ],
+      "source": "sprite_sheet"
+    },
+    {
+      "dexKey": "818",
+      "dexAliases": [],
+      "nationalDex": 818,
+      "form": 0,
+      "formSuffix": null,
+      "speciesId": "inteleon",
+      "speciesNameZh": "千面避役",
+      "speciesNameEn": "inteleon",
+      "formKey": "inteleon",
+      "x": 1820,
+      "y": 1170,
+      "w": 128,
+      "h": 128,
+      "types": [
+        "water"
+      ],
+      "source": "sprite_sheet"
+    },
+    {
+      "dexKey": "823",
+      "dexAliases": [],
+      "nationalDex": 823,
+      "form": 0,
+      "formSuffix": null,
+      "speciesId": "corviknight",
+      "speciesNameZh": "鋼鎧鴉",
+      "speciesNameEn": "corviknight",
+      "formKey": "corviknight",
+      "x": 1820,
+      "y": 1300,
+      "w": 128,
+      "h": 128,
+      "types": [
+        "flying",
+        "steel"
+      ],
+      "source": "sprite_sheet"
+    },
+    {
+      "dexKey": "828",
+      "dexAliases": [],
+      "nationalDex": 828,
+      "form": 0,
+      "formSuffix": null,
+      "speciesId": "thievul",
+      "speciesNameZh": "狐大盜",
+      "speciesNameEn": "thievul",
+      "formKey": "thievul",
+      "x": 1820,
+      "y": 1430,
+      "w": 128,
+      "h": 128,
+      "types": [
+        "dark"
+      ],
+      "source": "sprite_sheet"
+    },
+    {
+      "dexKey": "841",
+      "dexAliases": [],
+      "nationalDex": 841,
+      "form": 0,
+      "formSuffix": null,
+      "speciesId": "flapple",
+      "speciesNameZh": "蘋裹龍",
+      "speciesNameEn": "flapple",
+      "formKey": "flapple",
+      "x": 1820,
+      "y": 1560,
+      "w": 128,
+      "h": 128,
+      "types": [
+        "grass",
+        "dragon"
+      ],
+      "source": "sprite_sheet"
+    },
+    {
+      "dexKey": "842",
+      "dexAliases": [],
+      "nationalDex": 842,
+      "form": 0,
+      "formSuffix": null,
+      "speciesId": "appletun",
+      "speciesNameZh": "豐蜜龍",
+      "speciesNameEn": "appletun",
+      "formKey": "appletun",
+      "x": 1820,
+      "y": 1690,
+      "w": 128,
+      "h": 128,
+      "types": [
+        "grass",
+        "dragon"
+      ],
+      "source": "sprite_sheet"
+    },
+    {
+      "dexKey": "844",
+      "dexAliases": [],
+      "nationalDex": 844,
+      "form": 0,
+      "formSuffix": null,
+      "speciesId": "sandaconda",
+      "speciesNameZh": "沙螺蟒",
+      "speciesNameEn": "sandaconda",
+      "formKey": "sandaconda",
+      "x": 0,
+      "y": 1820,
+      "w": 128,
+      "h": 128,
+      "types": [
+        "ground"
+      ],
+      "source": "sprite_sheet"
+    },
+    {
+      "dexKey": "849",
+      "dexAliases": [
+        "849-amped"
+      ],
+      "nationalDex": 849,
+      "form": 0,
+      "formSuffix": "amped",
+      "speciesId": "toxtricity",
+      "speciesNameZh": "顫弦蠑螈 (高調的樣子)",
+      "speciesNameEn": "toxtricity-amped",
+      "formKey": "toxtricity-amped",
+      "x": 130,
+      "y": 1820,
+      "w": 128,
+      "h": 128,
+      "types": [
+        "electric",
+        "poison"
+      ],
+      "source": "sprite_sheet"
+    },
+    {
+      "dexKey": "849-1",
+      "dexAliases": [
+        "849-low-key"
+      ],
+      "nationalDex": 849,
+      "form": 1,
+      "formSuffix": "low-key",
+      "speciesId": "toxtricitylowkey",
+      "speciesNameZh": "顫弦蠑螈 (低調的樣子)",
+      "speciesNameEn": "toxtricity-low-key",
+      "formKey": "toxtricity-low-key",
+      "x": 260,
+      "y": 1820,
+      "w": 128,
+      "h": 128,
+      "types": [
+        "electric",
+        "poison"
+      ],
+      "source": "sprite_sheet"
+    },
+    {
+      "dexKey": "853",
+      "dexAliases": [],
+      "nationalDex": 853,
+      "form": 0,
+      "formSuffix": null,
+      "speciesId": "grapploct",
+      "speciesNameZh": "八爪武師",
+      "speciesNameEn": "grapploct",
+      "formKey": "grapploct",
+      "x": 390,
+      "y": 1820,
+      "w": 128,
+      "h": 128,
+      "types": [
+        "fighting"
+      ],
+      "source": "sprite_sheet"
+    },
+    {
+      "dexKey": "855",
+      "dexAliases": [
+        "855-phony"
+      ],
+      "nationalDex": 855,
+      "form": 0,
+      "formSuffix": "phony",
+      "speciesId": "polteageist",
+      "speciesNameZh": "怖思壺",
+      "speciesNameEn": "polteageist-phony",
+      "formKey": "polteageist-phony",
+      "x": 520,
+      "y": 1820,
+      "w": 128,
+      "h": 128,
+      "types": [
+        "ghost"
+      ],
+      "source": "sprite_sheet"
+    },
+    {
+      "dexKey": "858",
+      "dexAliases": [],
+      "nationalDex": 858,
+      "form": 0,
+      "formSuffix": null,
+      "speciesId": "hatterene",
+      "speciesNameZh": "布莉姆溫",
+      "speciesNameEn": "hatterene",
+      "formKey": "hatterene",
+      "x": 650,
+      "y": 1820,
+      "w": 128,
+      "h": 128,
+      "types": [
+        "psychic",
+        "fairy"
+      ],
+      "source": "sprite_sheet"
+    },
+    {
+      "dexKey": "861",
+      "dexAliases": [],
+      "nationalDex": 861,
+      "form": 0,
+      "formSuffix": null,
+      "speciesId": "grimmsnarl",
+      "speciesNameZh": "長毛巨魔",
+      "speciesNameEn": "grimmsnarl",
+      "formKey": "grimmsnarl",
+      "x": 780,
+      "y": 1820,
+      "w": 128,
+      "h": 128,
+      "types": [
+        "dark",
+        "fairy"
+      ],
+      "source": "sprite_sheet"
+    },
+    {
+      "dexKey": "863",
+      "dexAliases": [],
+      "nationalDex": 863,
+      "form": 0,
+      "formSuffix": null,
+      "speciesId": "perrserker",
+      "speciesNameZh": "喵頭目",
+      "speciesNameEn": "perrserker",
+      "formKey": "perrserker",
+      "x": 910,
+      "y": 1820,
+      "w": 128,
+      "h": 128,
+      "types": [
+        "steel"
+      ],
+      "source": "sprite_sheet"
+    },
+    {
+      "dexKey": "865",
+      "dexAliases": [],
+      "nationalDex": 865,
+      "form": 0,
+      "formSuffix": null,
+      "speciesId": "sirfetchd",
+      "speciesNameZh": "蔥遊兵",
+      "speciesNameEn": "sirfetchd",
+      "formKey": "sirfetchd",
+      "x": 1040,
+      "y": 1820,
+      "w": 128,
+      "h": 128,
+      "types": [
+        "fighting"
+      ],
+      "source": "sprite_sheet"
+    },
+    {
+      "dexKey": "866",
+      "dexAliases": [
+        "866-rime"
+      ],
+      "nationalDex": 866,
+      "form": 0,
+      "formSuffix": "rime",
+      "speciesId": "mrrime",
+      "speciesNameZh": "踏冰人偶",
+      "speciesNameEn": "mr-rime",
+      "formKey": "mr-rime",
+      "x": 1170,
+      "y": 1820,
+      "w": 128,
+      "h": 128,
+      "types": [
+        "ice",
+        "psychic"
+      ],
+      "source": "sprite_sheet"
+    },
+    {
+      "dexKey": "867",
+      "dexAliases": [],
+      "nationalDex": 867,
+      "form": 0,
+      "formSuffix": null,
+      "speciesId": "runerigus",
+      "speciesNameZh": "死神板",
+      "speciesNameEn": "runerigus",
+      "formKey": "runerigus",
+      "x": 1300,
+      "y": 1820,
+      "w": 128,
+      "h": 128,
+      "types": [
+        "ground",
+        "ghost"
+      ],
+      "source": "sprite_sheet"
+    },
+    {
+      "dexKey": "869",
+      "dexAliases": [
+        "869-vanilla-cream-strawberry-sweet"
+      ],
+      "nationalDex": 869,
+      "form": 0,
+      "formSuffix": "vanilla-cream-strawberry-sweet",
+      "speciesId": "alcremie",
+      "speciesNameZh": "霜奶仙",
+      "speciesNameEn": "alcremie-vanilla-cream-strawberry-sweet",
+      "formKey": "alcremie-vanilla-cream-strawberry-sweet",
+      "x": 1430,
+      "y": 1820,
+      "w": 128,
+      "h": 128,
+      "types": [
+        "fairy"
+      ],
+      "source": "sprite_sheet"
+    },
+    {
+      "dexKey": "870",
+      "dexAliases": [],
+      "nationalDex": 870,
+      "form": 0,
+      "formSuffix": null,
+      "speciesId": "falinks",
+      "speciesNameZh": "列陣兵",
+      "speciesNameEn": "falinks",
+      "formKey": "falinks",
+      "x": 1560,
+      "y": 1820,
+      "w": 128,
+      "h": 128,
+      "types": [
+        "fighting"
+      ],
+      "source": "sprite_sheet"
+    },
+    {
+      "dexKey": "871",
+      "dexAliases": [],
+      "nationalDex": 871,
+      "form": 0,
+      "formSuffix": null,
+      "speciesId": "pincurchin",
+      "speciesNameZh": "啪嚓海膽",
+      "speciesNameEn": "pincurchin",
+      "formKey": "pincurchin",
+      "x": 1690,
+      "y": 1820,
+      "w": 128,
+      "h": 128,
+      "types": [
+        "electric"
+      ],
+      "source": "sprite_sheet"
+    },
+    {
+      "dexKey": "876",
+      "dexAliases": [
+        "876-male"
+      ],
+      "nationalDex": 876,
+      "form": 0,
+      "formSuffix": "male",
+      "speciesId": "indeedee",
+      "speciesNameZh": "愛管侍 (雄性的樣子)",
+      "speciesNameEn": "indeedee-male",
+      "formKey": "indeedee-male",
+      "x": 1820,
+      "y": 1820,
+      "w": 128,
+      "h": 128,
+      "types": [
+        "psychic",
+        "normal"
+      ],
+      "source": "sprite_sheet"
+    },
+    {
+      "dexKey": "876-1",
+      "dexAliases": [
+        "876-female"
+      ],
+      "nationalDex": 876,
+      "form": 1,
+      "formSuffix": "female",
+      "speciesId": "indeedeef",
+      "speciesNameZh": "愛管侍 (雌性的樣子)",
+      "speciesNameEn": "indeedee-female",
+      "formKey": "indeedee-female",
+      "x": 1950,
+      "y": 0,
+      "w": 128,
+      "h": 128,
+      "types": [
+        "psychic",
+        "normal"
+      ],
+      "source": "sprite_sheet"
+    },
+    {
+      "dexKey": "877",
+      "dexAliases": [
+        "877-full-belly"
+      ],
+      "nationalDex": 877,
+      "form": 0,
+      "formSuffix": "full-belly",
+      "speciesId": "morpeko",
+      "speciesNameZh": "莫魯貝可",
+      "speciesNameEn": "morpeko-full-belly",
+      "formKey": "morpeko-full-belly",
+      "x": 1950,
+      "y": 130,
+      "w": 128,
+      "h": 128,
+      "types": [
+        "electric",
+        "dark"
+      ],
+      "source": "sprite_sheet"
+    },
+    {
+      "dexKey": "887",
+      "dexAliases": [],
+      "nationalDex": 887,
+      "form": 0,
+      "formSuffix": null,
+      "speciesId": "dragapult",
+      "speciesNameZh": "多龍巴魯托",
+      "speciesNameEn": "dragapult",
+      "formKey": "dragapult",
+      "x": 1950,
+      "y": 260,
+      "w": 128,
+      "h": 128,
+      "types": [
+        "dragon",
+        "ghost"
+      ],
+      "source": "sprite_sheet"
+    },
+    {
+      "dexKey": "899",
+      "dexAliases": [],
+      "nationalDex": 899,
+      "form": 0,
+      "formSuffix": null,
+      "speciesId": "wyrdeer",
+      "speciesNameZh": "詭角鹿",
+      "speciesNameEn": "wyrdeer",
+      "formKey": "wyrdeer",
+      "x": 1950,
+      "y": 390,
+      "w": 128,
+      "h": 128,
+      "types": [
+        "normal",
+        "psychic"
+      ],
+      "source": "sprite_sheet"
+    },
+    {
+      "dexKey": "900",
+      "dexAliases": [],
+      "nationalDex": 900,
+      "form": 0,
+      "formSuffix": null,
+      "speciesId": "kleavor",
+      "speciesNameZh": "劈斧螳螂",
+      "speciesNameEn": "kleavor",
+      "formKey": "kleavor",
+      "x": 1950,
+      "y": 520,
+      "w": 128,
+      "h": 128,
+      "types": [
+        "bug",
+        "rock"
+      ],
+      "source": "sprite_sheet"
+    },
+    {
+      "dexKey": "902",
+      "dexAliases": [
+        "902-male"
+      ],
+      "nationalDex": 902,
+      "form": 0,
+      "formSuffix": "male",
+      "speciesId": "basculegion",
+      "speciesNameZh": "幽尾玄魚 (雄性的樣子)",
+      "speciesNameEn": "basculegion-male",
+      "formKey": "basculegion-male",
+      "x": 1950,
+      "y": 650,
+      "w": 128,
+      "h": 128,
+      "types": [
+        "water",
+        "ghost"
+      ],
+      "source": "sprite_sheet"
+    },
+    {
+      "dexKey": "902-1",
+      "dexAliases": [
+        "902-female"
+      ],
+      "nationalDex": 902,
+      "form": 1,
+      "formSuffix": "female",
+      "speciesId": "basculegionf",
+      "speciesNameZh": "幽尾玄魚 (雌性的樣子)",
+      "speciesNameEn": "basculegion-female",
+      "formKey": "basculegion-female",
+      "x": 1950,
+      "y": 780,
+      "w": 128,
+      "h": 128,
+      "types": [
+        "water",
+        "ghost"
+      ],
+      "source": "sprite_sheet"
+    },
+    {
+      "dexKey": "903",
+      "dexAliases": [],
+      "nationalDex": 903,
+      "form": 0,
+      "formSuffix": null,
+      "speciesId": "sneasler",
+      "speciesNameZh": "大狃拉",
+      "speciesNameEn": "sneasler",
+      "formKey": "sneasler",
+      "x": 1950,
+      "y": 910,
+      "w": 128,
+      "h": 128,
+      "types": [
+        "fighting",
+        "poison"
+      ],
+      "source": "sprite_sheet"
+    },
+    {
+      "dexKey": "904",
+      "dexAliases": [],
+      "nationalDex": 904,
+      "form": 0,
+      "formSuffix": null,
+      "speciesId": "overqwil",
+      "speciesNameZh": "萬針魚",
+      "speciesNameEn": "overqwil",
+      "formKey": "overqwil",
+      "x": 1950,
+      "y": 1040,
+      "w": 128,
+      "h": 128,
+      "types": [
+        "dark",
+        "poison"
+      ],
+      "source": "sprite_sheet"
+    },
+    {
+      "dexKey": "908",
+      "dexAliases": [],
+      "nationalDex": 908,
+      "form": 0,
+      "formSuffix": null,
+      "speciesId": "meowscarada",
+      "speciesNameZh": "魔幻假面喵",
+      "speciesNameEn": "meowscarada",
+      "formKey": "meowscarada",
+      "x": 1950,
+      "y": 1170,
+      "w": 128,
+      "h": 128,
+      "types": [
+        "grass",
+        "dark"
+      ],
+      "source": "sprite_sheet"
+    },
+    {
+      "dexKey": "911",
+      "dexAliases": [],
+      "nationalDex": 911,
+      "form": 0,
+      "formSuffix": null,
+      "speciesId": "skeledirge",
+      "speciesNameZh": "骨紋巨聲鱷",
+      "speciesNameEn": "skeledirge",
+      "formKey": "skeledirge",
+      "x": 1950,
+      "y": 1300,
+      "w": 128,
+      "h": 128,
+      "types": [
+        "fire",
+        "ghost"
+      ],
+      "source": "sprite_sheet"
+    },
+    {
+      "dexKey": "914",
+      "dexAliases": [],
+      "nationalDex": 914,
+      "form": 0,
+      "formSuffix": null,
+      "speciesId": "quaquaval",
+      "speciesNameZh": "狂歡浪舞鴨",
+      "speciesNameEn": "quaquaval",
+      "formKey": "quaquaval",
+      "x": 1950,
+      "y": 1430,
+      "w": 128,
+      "h": 128,
+      "types": [
+        "water",
+        "fighting"
+      ],
+      "source": "sprite_sheet"
+    },
+    {
+      "dexKey": "923",
+      "dexAliases": [],
+      "nationalDex": 923,
+      "form": 0,
+      "formSuffix": null,
+      "speciesId": "pawmot",
+      "speciesNameZh": "巴布土撥",
+      "speciesNameEn": "pawmot",
+      "formKey": "pawmot",
+      "x": 1950,
+      "y": 1560,
+      "w": 128,
+      "h": 128,
+      "types": [
+        "electric",
+        "fighting"
+      ],
+      "source": "sprite_sheet"
+    },
+    {
+      "dexKey": "925-1",
+      "dexAliases": [
+        "925-family-of-four"
+      ],
+      "nationalDex": 925,
+      "form": 1,
+      "formSuffix": "family-of-four",
+      "speciesId": "maushold",
+      "speciesNameZh": "一家鼠",
+      "speciesNameEn": "maushold-family-of-four",
+      "formKey": "maushold-family-of-four",
+      "x": 1950,
+      "y": 1690,
+      "w": 128,
+      "h": 128,
+      "types": [
+        "normal"
+      ],
+      "source": "sprite_sheet"
+    },
+    {
+      "dexKey": "930",
+      "dexAliases": [],
+      "nationalDex": 930,
+      "form": 0,
+      "formSuffix": null,
+      "speciesId": "arboliva",
+      "speciesNameZh": "奧利瓦",
+      "speciesNameEn": "arboliva",
+      "formKey": "arboliva",
+      "x": 1950,
+      "y": 1820,
+      "w": 128,
+      "h": 128,
+      "types": [
+        "grass",
+        "normal"
+      ],
+      "source": "sprite_sheet"
+    },
+    {
+      "dexKey": "931",
+      "dexAliases": [
+        "931-green-plumage"
+      ],
+      "nationalDex": 931,
+      "form": 0,
+      "formSuffix": "green-plumage",
+      "speciesId": "squawkabilly",
+      "speciesNameZh": "怒鸚哥",
+      "speciesNameEn": "squawkabilly-green-plumage",
+      "formKey": "squawkabilly-green-plumage",
+      "x": 0,
+      "y": 1950,
+      "w": 128,
+      "h": 128,
+      "types": [
+        "normal",
+        "flying"
+      ],
+      "source": "sprite_sheet"
+    },
+    {
+      "dexKey": "931-2",
+      "dexAliases": [
+        "931-yellow-plumage"
+      ],
+      "nationalDex": 931,
+      "form": 2,
+      "formSuffix": "yellow-plumage",
+      "speciesId": "squawkabillyyellow",
+      "speciesNameZh": "怒鸚哥",
+      "speciesNameEn": "squawkabilly-yellow-plumage",
+      "formKey": "squawkabilly-yellow-plumage",
+      "x": 260,
+      "y": 1950,
+      "w": 128,
+      "h": 128,
+      "types": [
+        "normal",
+        "flying"
+      ],
+      "source": "sprite_sheet"
+    },
+    {
+      "dexKey": "934",
+      "dexAliases": [],
+      "nationalDex": 934,
+      "form": 0,
+      "formSuffix": null,
+      "speciesId": "garganacl",
+      "speciesNameZh": "鹽石巨靈",
+      "speciesNameEn": "garganacl",
+      "formKey": "garganacl",
+      "x": 520,
+      "y": 1950,
+      "w": 128,
+      "h": 128,
+      "types": [
+        "rock"
+      ],
+      "source": "sprite_sheet"
+    },
+    {
+      "dexKey": "936",
+      "dexAliases": [],
+      "nationalDex": 936,
+      "form": 0,
+      "formSuffix": null,
+      "speciesId": "armarouge",
+      "speciesNameZh": "紅蓮鎧騎",
+      "speciesNameEn": "armarouge",
+      "formKey": "armarouge",
+      "x": 650,
+      "y": 1950,
+      "w": 128,
+      "h": 128,
+      "types": [
+        "fire",
+        "psychic"
+      ],
+      "source": "sprite_sheet"
+    },
+    {
+      "dexKey": "937",
+      "dexAliases": [],
+      "nationalDex": 937,
+      "form": 0,
+      "formSuffix": null,
+      "speciesId": "ceruledge",
+      "speciesNameZh": "蒼炎刃鬼",
+      "speciesNameEn": "ceruledge",
+      "formKey": "ceruledge",
+      "x": 780,
+      "y": 1950,
+      "w": 128,
+      "h": 128,
+      "types": [
+        "fire",
+        "ghost"
+      ],
+      "source": "sprite_sheet"
+    },
+    {
+      "dexKey": "939",
+      "dexAliases": [],
+      "nationalDex": 939,
+      "form": 0,
+      "formSuffix": null,
+      "speciesId": "bellibolt",
+      "speciesNameZh": "電肚蛙",
+      "speciesNameEn": "bellibolt",
+      "formKey": "bellibolt",
+      "x": 910,
+      "y": 1950,
+      "w": 128,
+      "h": 128,
+      "types": [
+        "electric"
+      ],
+      "source": "sprite_sheet"
+    },
+    {
+      "dexKey": "943",
+      "dexAliases": [],
+      "nationalDex": 943,
+      "form": 0,
+      "formSuffix": null,
+      "speciesId": "mabosstiff",
+      "speciesNameZh": "獒教父",
+      "speciesNameEn": "mabosstiff",
+      "formKey": "mabosstiff",
+      "x": 1040,
+      "y": 1950,
+      "w": 128,
+      "h": 128,
+      "types": [
+        "dark"
+      ],
+      "source": "sprite_sheet"
+    },
+    {
+      "dexKey": "952",
+      "dexAliases": [],
+      "nationalDex": 952,
+      "form": 0,
+      "formSuffix": null,
+      "speciesId": "scovillain",
+      "speciesNameZh": "狠辣椒",
+      "speciesNameEn": "scovillain",
+      "formKey": "scovillain",
+      "x": 1170,
+      "y": 1950,
+      "w": 128,
+      "h": 128,
+      "types": [
+        "grass",
+        "fire"
+      ],
+      "source": "sprite_sheet"
+    },
+    {
+      "dexKey": "956",
+      "dexAliases": [],
+      "nationalDex": 956,
+      "form": 0,
+      "formSuffix": null,
+      "speciesId": "espathra",
+      "speciesNameZh": "超能豔鴕",
+      "speciesNameEn": "espathra",
+      "formKey": "espathra",
+      "x": 1300,
+      "y": 1950,
+      "w": 128,
+      "h": 128,
+      "types": [
+        "psychic"
+      ],
+      "source": "sprite_sheet"
+    },
+    {
+      "dexKey": "959",
+      "dexAliases": [],
+      "nationalDex": 959,
+      "form": 0,
+      "formSuffix": null,
+      "speciesId": "tinkaton",
+      "speciesNameZh": "巨鍛匠",
+      "speciesNameEn": "tinkaton",
+      "formKey": "tinkaton",
+      "x": 1430,
+      "y": 1950,
+      "w": 128,
+      "h": 128,
+      "types": [
+        "fairy",
+        "steel"
+      ],
+      "source": "sprite_sheet"
+    },
+    {
+      "dexKey": "964",
+      "dexAliases": [
+        "964-zero"
+      ],
+      "nationalDex": 964,
+      "form": 0,
+      "formSuffix": "zero",
+      "speciesId": "palafin",
+      "speciesNameZh": "海豚俠",
+      "speciesNameEn": "palafin-zero",
+      "formKey": "palafin-zero",
+      "x": 1560,
+      "y": 1950,
+      "w": 128,
+      "h": 128,
+      "types": [
+        "water"
+      ],
+      "source": "sprite_sheet"
+    },
+    {
+      "dexKey": "968",
+      "dexAliases": [],
+      "nationalDex": 968,
+      "form": 0,
+      "formSuffix": null,
+      "speciesId": "orthworm",
+      "speciesNameZh": "拖拖蚓",
+      "speciesNameEn": "orthworm",
+      "formKey": "orthworm",
+      "x": 1690,
+      "y": 1950,
+      "w": 128,
+      "h": 128,
+      "types": [
+        "steel"
+      ],
+      "source": "sprite_sheet"
+    },
+    {
+      "dexKey": "970",
+      "dexAliases": [],
+      "nationalDex": 970,
+      "form": 0,
+      "formSuffix": null,
+      "speciesId": "glimmora",
+      "speciesNameZh": "晶光花",
+      "speciesNameEn": "glimmora",
+      "formKey": "glimmora",
+      "x": 1820,
+      "y": 1950,
+      "w": 128,
+      "h": 128,
+      "types": [
+        "rock",
+        "poison"
+      ],
+      "source": "sprite_sheet"
+    },
+    {
+      "dexKey": "972",
+      "dexAliases": [],
+      "nationalDex": 972,
+      "form": 0,
+      "formSuffix": null,
+      "speciesId": "houndstone",
+      "speciesNameZh": "墓揚犬",
+      "speciesNameEn": "houndstone",
+      "formKey": "houndstone",
+      "x": 1950,
+      "y": 1950,
+      "w": 128,
+      "h": 128,
+      "types": [
+        "ghost"
+      ],
+      "source": "sprite_sheet"
+    },
+    {
+      "dexKey": "979",
+      "dexAliases": [],
+      "nationalDex": 979,
+      "form": 0,
+      "formSuffix": null,
+      "speciesId": "annihilape",
+      "speciesNameZh": "棄世猴",
+      "speciesNameEn": "annihilape",
+      "formKey": "annihilape",
+      "x": 2080,
+      "y": 0,
+      "w": 128,
+      "h": 128,
+      "types": [
+        "fighting",
+        "ghost"
+      ],
+      "source": "sprite_sheet"
+    },
+    {
+      "dexKey": "981",
+      "dexAliases": [],
+      "nationalDex": 981,
+      "form": 0,
+      "formSuffix": null,
+      "speciesId": "farigiraf",
+      "speciesNameZh": "奇麒麟",
+      "speciesNameEn": "farigiraf",
+      "formKey": "farigiraf",
+      "x": 2080,
+      "y": 130,
+      "w": 128,
+      "h": 128,
+      "types": [
+        "normal",
+        "psychic"
+      ],
+      "source": "sprite_sheet"
+    },
+    {
+      "dexKey": "983",
+      "dexAliases": [],
+      "nationalDex": 983,
+      "form": 0,
+      "formSuffix": null,
+      "speciesId": "kingambit",
+      "speciesNameZh": "仆斬將軍",
+      "speciesNameEn": "kingambit",
+      "formKey": "kingambit",
+      "x": 2080,
+      "y": 260,
+      "w": 128,
+      "h": 128,
+      "types": [
+        "dark",
+        "steel"
+      ],
+      "source": "sprite_sheet"
+    },
+    {
+      "dexKey": "998",
+      "dexAliases": [],
+      "nationalDex": 998,
+      "form": 0,
+      "formSuffix": null,
+      "speciesId": "baxcalibur",
+      "speciesNameZh": "戟脊龍",
+      "speciesNameEn": "baxcalibur",
+      "formKey": "baxcalibur",
+      "x": 2080,
+      "y": 390,
+      "w": 128,
+      "h": 128,
+      "types": [
+        "dragon",
+        "ice"
+      ],
+      "source": "sprite_sheet"
+    },
+    {
+      "dexKey": "1000",
+      "dexAliases": [],
+      "nationalDex": 1000,
+      "form": 0,
+      "formSuffix": null,
+      "speciesId": "gholdengo",
+      "speciesNameZh": "賽富豪",
+      "speciesNameEn": "gholdengo",
+      "formKey": "gholdengo",
+      "x": 2080,
+      "y": 520,
+      "w": 128,
+      "h": 128,
+      "types": [
+        "steel",
+        "ghost"
+      ],
+      "source": "sprite_sheet"
+    },
+    {
+      "dexKey": "1013",
+      "dexAliases": [
+        "1013-unremarkable"
+      ],
+      "nationalDex": 1013,
+      "form": 0,
+      "formSuffix": "unremarkable",
+      "speciesId": "sinistcha",
+      "speciesNameZh": "來悲粗茶",
+      "speciesNameEn": "sinistcha-unremarkable",
+      "formKey": "sinistcha-unremarkable",
+      "x": 2080,
+      "y": 650,
+      "w": 128,
+      "h": 128,
+      "types": [
+        "grass",
+        "ghost"
+      ],
+      "source": "sprite_sheet"
+    },
+    {
+      "dexKey": "1018",
+      "dexAliases": [],
+      "nationalDex": 1018,
+      "form": 0,
+      "formSuffix": null,
+      "speciesId": "archaludon",
+      "speciesNameZh": "鋁鋼橋龍",
+      "speciesNameEn": "archaludon",
+      "formKey": "archaludon",
+      "x": 2080,
+      "y": 780,
+      "w": 128,
+      "h": 128,
+      "types": [
+        "steel",
+        "dragon"
+      ],
+      "source": "sprite_sheet"
+    },
+    {
+      "dexKey": "1019",
+      "dexAliases": [],
+      "nationalDex": 1019,
+      "form": 0,
+      "formSuffix": null,
+      "speciesId": "hydrapple",
+      "speciesNameZh": "蜜集大蛇",
+      "speciesNameEn": "hydrapple",
+      "formKey": "hydrapple",
+      "x": 2080,
+      "y": 910,
+      "w": 128,
+      "h": 128,
+      "types": [
+        "grass",
+        "dragon"
+      ],
+      "source": "sprite_sheet"
+    }
+  ],
+  "entryCount": 262
+}

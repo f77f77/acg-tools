@@ -1,0 +1,49 @@
+{
+  "accuracy": "6/6",
+  "correct": 6,
+  "total": 6,
+  "rows": [
+    {
+      "slot": 0,
+      "expected": "noivern",
+      "matched": "noivern",
+      "confidence": 1.0,
+      "ok": true
+    },
+    {
+      "slot": 1,
+      "expected": "lycanroc",
+      "matched": "lycanroc",
+      "confidence": 1.0,
+      "ok": true
+    },
+    {
+      "slot": 2,
+      "expected": "politoed",
+      "matched": "politoed",
+      "confidence": 1.0,
+      "ok": true
+    },
+    {
+      "slot": 3,
+      "expected": "rotom",
+      "matched": "rotom",
+      "confidence": 1.0,
+      "ok": true
+    },
+    {
+      "slot": 4,
+      "expected": "kangaskhan",
+      "matched": "kangaskhan",
+      "confidence": 1.0,
+      "ok": true
+    },
+    {
+      "slot": 5,
+      "expected": "hippowdon",
+      "matched": "hippowdon",
+      "confidence": 1.0,
+      "ok": true
+    }
+  ]
+}

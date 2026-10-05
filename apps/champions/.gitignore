@@ -1,0 +1,17 @@
+node_modules/
+dist/
+scripts/__pycache__/
+__pycache__/
+*.pyc
+dist-electron/
+release/
+*.local
+.DS_Store
+.env
+cache/
+.moves-cache/
+*.log
+
+# CBD downloaded sprites (re-fetch with scripts/fetch-cbd-templates.mjs --allowlist)
+assets/templates/preview-thumbs/*.png
+!assets/templates/preview-thumbs/.gitkeep

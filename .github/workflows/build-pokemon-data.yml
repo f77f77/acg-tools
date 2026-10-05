@@ -1,0 +1,79 @@
+name: Build Pokémon data
+
+on:
+  workflow_dispatch:
+  schedule:
+    # Daily 16:00 UTC = 00:00 HKT (Asia/Hong_Kong)
+    - cron: "0 16 * * *"
+
+permissions:
+  contents: write
+  actions: write
+
+concurrency:
+  group: build-pokemon-data
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Generate Champions pokemon/moves/meta JSON
+        working-directory: apps/champions
+        run: node scripts/build-pokemon-data.mjs --usage-only
+
+      - name: Refresh hub names index from Champions tables
+        run: node scripts/build_names_index.mjs
+
+      - name: Upload data artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: pokemon-data
+          path: |
+            apps/champions/data/pokemon.json
+            apps/champions/data/moves.json
+            apps/champions/data/meta.json
+            apps/champions/public/data/pokemon.json
+            apps/champions/public/data/moves.json
+            apps/champions/public/data/meta.json
+            data/names.json
+
+      - name: Commit updated JSON to main
+        id: commit
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add apps/champions/data/pokemon.json apps/champions/data/moves.json apps/champions/data/meta.json \
+                  apps/champions/public/data/pokemon.json apps/champions/public/data/moves.json apps/champions/public/data/meta.json \
+                  data/names.json
+          if git diff --staged --quiet; then
+            echo "No data changes to commit."
+            echo "committed=false" >> "$GITHUB_OUTPUT"
+          else
+            git commit -m "chore: daily CBD Doubles usage refresh (legal Champions allowlist)"
+            git push origin HEAD:main
+            echo "committed=true" >> "$GITHUB_OUTPUT"
+          fi
+
+      # github-actions[bot] + default GITHUB_TOKEN cannot start `on: push`
+      # workflows. Dispatch Pages so usageUpdatedAt reaches the live site.
+      - name: Dispatch Deploy GitHub Pages
+        if: steps.commit.outputs.committed == 'true'
+        uses: actions/github-script@v7
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          script: |
+            await github.rest.actions.createWorkflowDispatch({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              workflow_id: 'pages.yml',
+              ref: 'main',
+            });

@@ -1,0 +1,47 @@
+{
+  "schema": "anime-subs.v1",
+  "updatedAt": "2026-10-05",
+  "note": "種子樣本，方便對表。平台有冇繁中、香港區開唔開，以各站當日頁面為準；呢度未逐套核對。每週 Action 暫未接上抓取，只驗證 JSON。",
+  "items": [
+    {
+      "title": "藥屋少女的呢喃 第三季",
+      "titleJa": "薬屋のひとりごと 第3期",
+      "platforms": ["待核對"],
+      "subtitle": "繁中",
+      "regionNote": "香港可看性未核對",
+      "scheduleHkt": "星期五（Bangumi 放送日）",
+      "source": "https://bgm.tv/subject/568244",
+      "sample": true
+    },
+    {
+      "title": "航海王",
+      "titleJa": "ONE PIECE",
+      "platforms": ["待核對"],
+      "subtitle": "繁中",
+      "regionNote": "香港長期有中文字幕播出，平台請再核對",
+      "scheduleHkt": "星期三（Bangumi 放送日）",
+      "source": "https://bgm.tv/subject/975",
+      "sample": true
+    },
+    {
+      "title": "名偵探柯南",
+      "titleJa": "名探偵コナン",
+      "platforms": ["待核對"],
+      "subtitle": "繁中",
+      "regionNote": "香港可看性未核對",
+      "scheduleHkt": "星期六（Bangumi 放送日）",
+      "source": "https://bgm.tv/subject/899",
+      "sample": true
+    },
+    {
+      "title": "青之箱 第二季",
+      "titleJa": "アオのハコ Season 2",
+      "platforms": ["待核對"],
+      "subtitle": "繁中",
+      "regionNote": "香港可看性未核對",
+      "scheduleHkt": "星期日（Bangumi 放送日）",
+      "source": "https://bgm.tv/subject/548156",
+      "sample": true
+    }
+  ]
+}
