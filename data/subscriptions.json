@@ -1,0 +1,50 @@
+{
+  "schema": "subscriptions.v1",
+  "note": "全部係示例金額，唔係真實帳單或私人訂閱。改 data/subscriptions.json 就會反映喺呢頁。category 設為 warehouse 會顯示倉租倒數。",
+  "items": [
+    {
+      "id": "example-stream",
+      "name": "示例 · 串流",
+      "amount": 78,
+      "currency": "HKD",
+      "interval": "month",
+      "nextRenew": "2026-10-12",
+      "notes": "示例列，請換成自己嘅訂閱",
+      "category": "streaming",
+      "example": true
+    },
+    {
+      "id": "example-music",
+      "name": "示例 · 音樂",
+      "amount": 48,
+      "currency": "HKD",
+      "interval": "month",
+      "nextRenew": "2026-10-28",
+      "notes": "示例列",
+      "category": "music",
+      "example": true
+    },
+    {
+      "id": "example-annual",
+      "name": "示例 · 年費網域",
+      "amount": 120,
+      "currency": "HKD",
+      "interval": "year",
+      "nextRenew": "2027-01-15",
+      "notes": "年費會計入每月約計（金額 ÷ 12）",
+      "category": "domain",
+      "example": true
+    },
+    {
+      "id": "example-warehouse",
+      "name": "示例 · 倉庫租金",
+      "amount": 800,
+      "currency": "HKD",
+      "interval": "month",
+      "nextRenew": "2026-10-20",
+      "notes": "倉租倒數示範",
+      "category": "warehouse",
+      "example": true
+    }
+  ]
+}

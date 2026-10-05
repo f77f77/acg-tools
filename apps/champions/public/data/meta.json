@@ -1,0 +1,23 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-10-04T19:31:17.181Z",
+  "updatedAt": "2026-10-05",
+  "usageUpdatedAt": "2026-10-05",
+  "usageSourceLabel": "VGC Doubles (2v2 / 6-pick-4) · Regulation M-C · championsbattledata.com · 更新 2026-10-05",
+  "usageSeason": "M6",
+  "usageRegulation": "Regulation M-C",
+  "sources": {
+    "pokeapi": "https://pokeapi.co/api/v2",
+    "cbd": "https://championsbattledata.com/api/pokemon/{showdownId}",
+    "cbdDoublesBattle": "https://championsbattledata.com/api/battle/Doubles/{showdownId}?season=M6",
+    "cbdDoublesBattleDays": "https://championsbattledata.com/api/battle/Doubles/{showdownId}?season=M6&days=7",
+    "cbdIndex": "https://championsbattledata.com/api/index",
+    "allowlist": "data/allowlist.json",
+    "legalAllowlist": "data/legal-allowlist.json",
+    "notes": "Classic PokéAPI base stats + nationalDex + forms[] including Mega (not CBD screen-scaled). Move/item usage % from CBD VGC Doubles (2v2 / 6-pick-4) for the latest regulation folder from /api/index (battleDataFolders[0] / dailyDataFolders[0], currently M6 = Regulation M-C). Explicit ?season= on battle URLs (Current matches that folder today; M5 is Regulation M-B). Sorted highest-first; rank-1 gaps filled from newest complete daily snapshot. Locale keys: en / zh-Hant / ja. See assets/CREDITS.md."
+  },
+  "pokemonCount": 262,
+  "movesCount": 626,
+  "allowlistCount": 262,
+  "usageMode": "usage-only"
+}

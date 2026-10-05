@@ -1,0 +1,10 @@
+{
+  "deprecated": true,
+  "note": "Per-species template PNGs were removed. Recognition loads public/sprites/sprite_poke.png once and crops cells in memory from public/sprites/atlas.json (nationalDex keys).",
+  "source": "pokemon-champions-legal-roster-sprite-sheet",
+  "cell": 128,
+  "legacyCell": 64,
+  "count": 0,
+  "atlas": "/sprites/atlas.json",
+  "sheet": "/sprites/sprite_poke.png"
+}

@@ -3,9 +3,10 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-  <title>ACG Tools · 生詞本 + 新番表 + 匯率</title>
+  <title>ACG Tools</title>
   <link rel="stylesheet" href="style.css" />
   <link rel="stylesheet" href="overrides.css" />
+  <link rel="stylesheet" href="modules.css" />
   <style id="gate-critical">
     #gate { position: fixed !important; inset: 0 !important; z-index: 99999 !important; background: #0a0a0a !important; display: flex !important; align-items: center !important; justify-content: center !important; padding: 20px !important; }
     #gate.hidden { display: none !important; }
@@ -67,6 +68,12 @@
         <button class="nav-item active" data-module="vocab"><span class="nav-icon">📖</span><span class="nav-label">生詞本</span></button>
         <button class="nav-item" data-module="season"><span class="nav-icon">📺</span><span class="nav-label">新番表</span></button>
         <button class="nav-item" data-module="fx"><span class="nav-icon">💱</span><span class="nav-label">匯率計算</span></button>
+        <button class="nav-item" data-module="names"><span class="nav-icon">🔤</span><span class="nav-label">中日英名稱</span></button>
+        <button class="nav-item" data-module="codes"><span class="nav-icon">🎁</span><span class="nav-label">配送碼</span></button>
+        <button class="nav-item" data-module="events"><span class="nav-icon">📅</span><span class="nav-label">香港活動</span></button>
+        <button class="nav-item" data-module="anime"><span class="nav-icon">🎬</span><span class="nav-label">中文字幕</span></button>
+        <button class="nav-item" data-module="subs"><span class="nav-icon">🔁</span><span class="nav-label">訂閱續費</span></button>
+        <a class="nav-item nav-external" href="champions/" target="_blank" rel="noopener"><span class="nav-icon">⚔</span><span class="nav-label">對戰助手</span></a>
       </nav>
       <div class="sidebar-player collapsed" id="sidebar-player">
         <button type="button" id="btn-toggle-player" class="sidebar-player-toggle" aria-expanded="false">
@@ -168,6 +175,93 @@
           <div id="fx-error" class="empty-state hidden"><p>載入失敗</p><p class="sub" id="fx-error-msg"></p></div>
           <div class="fx-quick" id="fx-quick"><div class="fx-quick-title">常用對照</div><div class="fx-quick-grid" id="fx-quick-grid"></div></div>
         </section>
+        <section id="module-names" class="module">
+          <div class="module-toolbar">
+            <div class="season-info"><span>寶可夢／招式／特性／道具</span><span id="names-meta" class="muted"></span></div>
+          </div>
+          <div class="search-bar">
+            <input type="search" id="names-q" placeholder="搜尋繁中、日文或英文…" autocomplete="off" />
+            <span id="names-count" class="cards-count"></span>
+          </div>
+          <div class="tabs" id="names-kinds">
+            <button type="button" class="tab active" data-kind="all">全部</button>
+            <button type="button" class="tab" data-kind="pokemon">寶可夢</button>
+            <button type="button" class="tab" data-kind="move">招式</button>
+            <button type="button" class="tab" data-kind="ability">特性</button>
+            <button type="button" class="tab" data-kind="item">道具</button>
+          </div>
+          <div id="names-status" class="empty-state"><p>載入中...</p></div>
+          <div class="table-wrap hidden" id="names-wrap">
+            <table class="data-table">
+              <thead><tr><th>繁中</th><th>日文</th><th>English</th><th>種類</th></tr></thead>
+              <tbody id="names-body"></tbody>
+            </table>
+          </div>
+        </section>
+        <section id="module-codes" class="module">
+          <div class="module-toolbar">
+            <div class="season-info"><span>Mystery Gift／配送碼</span><span id="codes-meta" class="muted"></span></div>
+            <label class="fx-fee-check"><input type="checkbox" id="codes-show-expired" /><span>顯示已過期</span></label>
+          </div>
+          <p class="module-note" id="codes-note"></p>
+          <div id="codes-status" class="empty-state"><p>載入中...</p></div>
+          <div class="table-wrap hidden" id="codes-wrap">
+            <table class="data-table">
+              <thead><tr><th>代碼</th><th>內容</th><th>遊戲</th><th>到期</th><th>狀態</th></tr></thead>
+              <tbody id="codes-body"></tbody>
+            </table>
+          </div>
+        </section>
+        <section id="module-events" class="module">
+          <div class="module-toolbar">
+            <div class="tabs" id="events-tabs">
+              <button type="button" class="tab active" data-events-tab="events">活動</button>
+              <button type="button" class="tab" data-events-tab="deadlines">周邊截止</button>
+            </div>
+            <button type="button" id="btn-export-ics" class="btn btn-ghost btn-sm">匯出未結束 .ics</button>
+          </div>
+          <div class="tabs" id="events-filters">
+            <button type="button" class="tab active" data-events-filter="upcoming">即將舉行</button>
+            <button type="button" class="tab" data-events-filter="week">本週</button>
+            <button type="button" class="tab" data-events-filter="past">已結束</button>
+          </div>
+          <p class="module-note" id="events-note"></p>
+          <div id="events-status" class="empty-state"><p>載入中...</p></div>
+          <div class="table-wrap hidden" id="events-wrap">
+            <table class="data-table">
+              <thead id="events-head"></thead>
+              <tbody id="events-body"></tbody>
+            </table>
+          </div>
+        </section>
+        <section id="module-anime" class="module">
+          <div class="module-toolbar">
+            <div class="season-info"><span>中文字幕動畫播放表</span><span id="anime-meta" class="muted"></span></div>
+          </div>
+          <p class="module-note" id="anime-note"></p>
+          <div id="anime-status" class="empty-state"><p>載入中...</p></div>
+          <div class="table-wrap hidden" id="anime-wrap">
+            <table class="data-table">
+              <thead><tr><th>標題</th><th>中文字幕平台</th><th>地區</th><th>香港時間</th><th>來源</th></tr></thead>
+              <tbody id="anime-body"></tbody>
+            </table>
+          </div>
+        </section>
+        <section id="module-subs" class="module">
+          <div class="module-toolbar">
+            <div class="season-info"><span>訂閱／續費</span><span class="muted">編輯 data/subscriptions.json</span></div>
+          </div>
+          <p class="module-note" id="subs-note"></p>
+          <div id="subs-totals" class="subs-totals hidden"></div>
+          <div id="subs-warehouse" class="subs-warehouse hidden"></div>
+          <div id="subs-status" class="empty-state"><p>載入中...</p></div>
+          <div class="table-wrap hidden" id="subs-wrap">
+            <table class="data-table">
+              <thead><tr><th>名稱</th><th>金額</th><th>貨幣</th><th>下次續費</th><th>備註</th></tr></thead>
+              <tbody id="subs-body"></tbody>
+            </table>
+          </div>
+        </section>
       </main>
     </div>
   </div>
@@ -176,5 +270,6 @@
   <div id="modal-edit" class="modal hidden"><div class="modal-content"><h3>編輯卡片</h3><form id="edit-form" class="add-form"><input type="hidden" id="edit-id" /><div class="form-group"><label>日文單字 *</label><input type="text" id="edit-word" required /></div><div class="form-group"><label>讀音</label><input type="text" id="edit-reading" /></div><div class="form-group"><label>意思 *</label><input type="text" id="edit-meaning" required /></div><div class="form-group"><label>例句</label><textarea id="edit-example" rows="2"></textarea></div><div class="modal-actions"><button type="submit" class="btn btn-primary">儲存</button><button type="button" id="btn-edit-cancel" class="btn btn-ghost">取消</button></div></form></div></div>
   <script src="app.js"></script>
   <script src="app-extra.js"></script>
+  <script src="modules.js"></script>
 </body>
 </html>

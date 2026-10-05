@@ -1,0 +1,40 @@
+{
+  "name": "pokemon-champions-assistant",
+  "version": "1.3.0",
+  "description": "Pokemon Champions battle assistant Electron Vite React scaffold",
+  "main": "dist-electron/main.js",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build && tsc -p tsconfig.electron.json",
+    "preview": "vite preview",
+    "electron:dev": "concurrently -k \"vite\" \"wait-on http://localhost:5173 && tsc -p tsconfig.electron.json && electron .\"",
+    "electron:build": "VITE_BASE=./ npm run build && electron-builder",
+    "typecheck": "tsc --noEmit && tsc -p tsconfig.electron.json --noEmit",
+    "build:pokemon-data": "node scripts/build-pokemon-data.mjs",
+    "build:pokemon-data:usage": "node scripts/build-pokemon-data.mjs --usage-only",
+    "build:pokemon-data:flavor": "node scripts/build-pokemon-data.mjs --flavor-only",
+    "check:usage": "node scripts/check-usage-invariants.mjs",
+    "match:fixtures": "python3 scripts/match-test-fixtures.py",
+    "match:recognize": "node scripts/match-recognize-browser.mjs",
+    "match:seed": "python3 scripts/match-seed-templates.py",
+    "sprites:atlas": "python3 scripts/build-sprite-atlas.py",
+    "fetch:cbd": "node scripts/fetch-cbd-templates.mjs --allowlist"
+  },
+  "dependencies": {
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "@types/react": "^18.3.12",
+    "@types/react-dom": "^18.3.1",
+    "@vitejs/plugin-react": "^4.3.4",
+    "concurrently": "^9.1.0",
+    "electron": "^33.2.0",
+    "electron-builder": "^25.1.8",
+    "typescript": "^5.6.3",
+    "vite": "^5.4.11",
+    "wait-on": "^8.0.1"
+  }
+}

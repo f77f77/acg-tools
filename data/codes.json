@@ -1,0 +1,63 @@
+{
+  "schema": "codes.v1",
+  "checkedAt": "2026-10-05",
+  "note": "種子清單，整理自 2026-09 公開 Mystery Gift 列表（The Click、PokeGens、Pokétory、Dexerto）。代碼可隨時結束，兌換前請再對來源。過期列預設收起。",
+  "codes": [
+    {
+      "code": "STRACKSU1T",
+      "contentZh": "朱版訓練家運動套裝",
+      "games": ["寶可夢 朱"],
+      "expires": null,
+      "status": "active",
+      "source": "https://www.theclick.gg/pokemon-scarlet-and-violet-mystery-gift-codes/"
+    },
+    {
+      "code": "VTRACKSU1T",
+      "contentZh": "紫版訓練家運動套裝",
+      "games": ["寶可夢 紫"],
+      "expires": null,
+      "status": "active",
+      "source": "https://www.theclick.gg/pokemon-scarlet-and-violet-mystery-gift-codes/"
+    },
+    {
+      "code": "NE0R0T0MC0VER",
+      "contentZh": "北上鄉洛托姆手機殼",
+      "games": ["寶可夢 朱", "寶可夢 紫"],
+      "expires": null,
+      "status": "active",
+      "source": "https://pokegens.com/all-active-mystery-gift-codes/"
+    },
+    {
+      "code": "SB00KC0VER",
+      "contentZh": "朱紅色洛托姆手機殼",
+      "games": ["寶可夢 朱"],
+      "expires": null,
+      "status": "active",
+      "source": "https://pokegens.com/all-active-mystery-gift-codes/"
+    },
+    {
+      "code": "VB00KC0VER",
+      "contentZh": "紫羅蘭色洛托姆手機殼",
+      "games": ["寶可夢 紫"],
+      "expires": null,
+      "status": "active",
+      "source": "https://pokegens.com/all-active-mystery-gift-codes/"
+    },
+    {
+      "code": "PREPAR1NG",
+      "contentZh": "完全復活藥 ×5、全復藥 ×10、高級球 ×10",
+      "games": ["寶可夢傳說 Z-A"],
+      "expires": "2027-03-31",
+      "status": "active",
+      "source": "https://pokegens.com/all-active-mystery-gift-codes/"
+    },
+    {
+      "code": "EU1C26HEATWAVE",
+      "contentZh": "優馬的洗翠火爆獸",
+      "games": ["寶可夢 朱", "寶可夢 紫"],
+      "expires": null,
+      "status": "expired",
+      "source": "https://www.dexerto.com/pokemon/pokemon-scarlet-violet-mystery-gift-codes-rewards-1906520/"
+    }
+  ]
+}

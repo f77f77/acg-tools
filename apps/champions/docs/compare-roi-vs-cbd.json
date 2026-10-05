@@ -1,0 +1,254 @@
+{
+  "verdict": "CBD clearly worse",
+  "verdictDetail": "CBD-only scored 1/12 vs ROI-only 12/12 (11 fewer correct). CBD gap-fill is NOT worth using as primary; keep ROI crops as recognition default.",
+  "threshold": 0.55,
+  "roi": {
+    "accuracy": "12/12",
+    "correct": 12,
+    "total": 12,
+    "templateCount": 18,
+    "speciesIdCount": 17,
+    "byFixture": {
+      "team-preview-test-1": {
+        "correct": 6,
+        "total": 6
+      },
+      "team-preview-test-2": {
+        "correct": 6,
+        "total": 6
+      }
+    },
+    "distinctSpecies": [
+      "annihilape",
+      "archaludon",
+      "basculegion",
+      "bellibolt",
+      "blastoise",
+      "charizard",
+      "gengar",
+      "hippowdon",
+      "kangaskhan",
+      "lycanroc",
+      "noivern",
+      "politoed",
+      "rotom",
+      "sableye",
+      "scovillain",
+      "sinistcha",
+      "zoroark"
+    ]
+  },
+  "cbd": {
+    "accuracy": "1/12",
+    "correct": 1,
+    "total": 12,
+    "templateCount": 56,
+    "speciesIdCount": 56,
+    "byFixture": {
+      "team-preview-test-1": {
+        "correct": 0,
+        "total": 6
+      },
+      "team-preview-test-2": {
+        "correct": 1,
+        "total": 6
+      }
+    }
+  },
+  "slotTable": [
+    {
+      "fixture": "team-preview-test-1",
+      "slot": 0,
+      "expected": "gengar",
+      "roiMatch": "gengar",
+      "roiConf": 1.0,
+      "cbdMatch": "kangaskhan",
+      "cbdConf": 0.6155,
+      "roiOk": true,
+      "cbdOk": false
+    },
+    {
+      "fixture": "team-preview-test-1",
+      "slot": 1,
+      "expected": "sableye",
+      "roiMatch": "sableye",
+      "roiConf": 1.0,
+      "cbdMatch": "gengar",
+      "cbdConf": 0.5602,
+      "roiOk": true,
+      "cbdOk": false
+    },
+    {
+      "fixture": "team-preview-test-1",
+      "slot": 2,
+      "expected": "zoroark",
+      "roiMatch": "zoroark",
+      "roiConf": 1.0,
+      "cbdMatch": "kangaskhan",
+      "cbdConf": 0.5057,
+      "roiOk": true,
+      "cbdOk": false
+    },
+    {
+      "fixture": "team-preview-test-1",
+      "slot": 3,
+      "expected": "basculegion",
+      "roiMatch": "basculegion",
+      "roiConf": 1.0,
+      "cbdMatch": "kangaskhan",
+      "cbdConf": 0.6194,
+      "roiOk": true,
+      "cbdOk": false
+    },
+    {
+      "fixture": "team-preview-test-1",
+      "slot": 4,
+      "expected": "annihilape",
+      "roiMatch": "annihilape",
+      "roiConf": 1.0,
+      "cbdMatch": "kangaskhan",
+      "cbdConf": 0.5673,
+      "roiOk": true,
+      "cbdOk": false
+    },
+    {
+      "fixture": "team-preview-test-1",
+      "slot": 5,
+      "expected": "sinistcha",
+      "roiMatch": "sinistcha",
+      "roiConf": 1.0,
+      "cbdMatch": "annihilape",
+      "cbdConf": 0.5296,
+      "roiOk": true,
+      "cbdOk": false
+    },
+    {
+      "fixture": "team-preview-test-2",
+      "slot": 0,
+      "expected": "charizard",
+      "roiMatch": "charizard",
+      "roiConf": 1.0,
+      "cbdMatch": "gengar",
+      "cbdConf": 0.5608,
+      "roiOk": true,
+      "cbdOk": false
+    },
+    {
+      "fixture": "team-preview-test-2",
+      "slot": 1,
+      "expected": "bellibolt",
+      "roiMatch": "bellibolt",
+      "roiConf": 1.0,
+      "cbdMatch": "kangaskhan",
+      "cbdConf": 0.5238,
+      "roiOk": true,
+      "cbdOk": false
+    },
+    {
+      "fixture": "team-preview-test-2",
+      "slot": 2,
+      "expected": "scovillain",
+      "roiMatch": "scovillain",
+      "roiConf": 1.0,
+      "cbdMatch": "garchomp",
+      "cbdConf": 0.4019,
+      "roiOk": true,
+      "cbdOk": false
+    },
+    {
+      "fixture": "team-preview-test-2",
+      "slot": 3,
+      "expected": "archaludon",
+      "roiMatch": "archaludon",
+      "roiConf": 1.0,
+      "cbdMatch": "archaludon",
+      "cbdConf": 0.5821,
+      "roiOk": true,
+      "cbdOk": true
+    },
+    {
+      "fixture": "team-preview-test-2",
+      "slot": 4,
+      "expected": "blastoise",
+      "roiMatch": "blastoise",
+      "roiConf": 1.0,
+      "cbdMatch": "blastoise",
+      "cbdConf": 0.5207,
+      "roiOk": true,
+      "cbdOk": false
+    },
+    {
+      "fixture": "team-preview-test-2",
+      "slot": 5,
+      "expected": "sableye",
+      "roiMatch": "sableye",
+      "roiConf": 1.0,
+      "cbdMatch": "garchomp",
+      "cbdConf": 0.4889,
+      "roiOk": true,
+      "cbdOk": false
+    }
+  ],
+  "allowlist": {
+    "topN": 50,
+    "count": 50,
+    "roiDistinctCount": 17,
+    "missingFromRoiCount": 39,
+    "missingFromRoi": [
+      "kingambit",
+      "garchomp",
+      "sneasler",
+      "whimsicott",
+      "incineroar",
+      "farigiraf",
+      "staraptor",
+      "sylveon",
+      "raichu",
+      "tyranitar",
+      "pelipper",
+      "milotic",
+      "aerodactyl",
+      "venusaur",
+      "froslass",
+      "swampert",
+      "delphox",
+      "dragonite",
+      "gholdengo",
+      "grimmsnarl",
+      "torkoal",
+      "floette",
+      "mausholdfour",
+      "ninetalesalola",
+      "excadrill",
+      "glimmora",
+      "metagross",
+      "arcaninehisui",
+      "talonflame",
+      "mawile",
+      "scizor",
+      "rotomwash",
+      "tsareena",
+      "primarina",
+      "kommoo",
+      "corviknight",
+      "gardevoir",
+      "meowscarada",
+      "blaziken"
+    ]
+  },
+  "roiLocked": {
+    "ENEMY_PANEL": {
+      "left": 0.811,
+      "top": 0.143,
+      "right": 0.965,
+      "bottom": 0.832
+    },
+    "THUMB_CROP": {
+      "left": 0.2,
+      "right": 0.55,
+      "topInset": 0.25,
+      "bottomInset": 0.05
+    },
+    "TEMPLATE_SIZE": 64
+  }
+}

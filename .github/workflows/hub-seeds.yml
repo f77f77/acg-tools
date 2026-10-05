@@ -1,0 +1,22 @@
+name: Validate hub seed JSON
+
+# Stubs only. They check data/codes.json and data/anime-subs.json.
+# They do not fetch Mystery Gift codes or subtitle platforms yet.
+on:
+  workflow_dispatch:
+  schedule:
+    # Monday 00:30 HKT = Sunday 16:30 UTC
+    - cron: "30 16 * * 0"
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Codes schema
+        run: python3 scripts/refresh_codes_stub.py
+      - name: Anime subtitle schema
+        run: python3 scripts/refresh_anime_stub.py

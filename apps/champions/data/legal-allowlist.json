@@ -1,0 +1,1579 @@
+{
+  "source": "https://web-view.app.pokemonchampions.jp/battle/pages/events/rs178713870219xeaaio/tc/pokemon.html",
+  "fetchedNote": "event legal list; flag==1 only",
+  "count": 262,
+  "pokemon": [
+    {
+      "id": "0003-000",
+      "nationalDex": 3,
+      "form": 0,
+      "zhHant": "妙蛙花"
+    },
+    {
+      "id": "0006-000",
+      "nationalDex": 6,
+      "form": 0,
+      "zhHant": "噴火龍"
+    },
+    {
+      "id": "0009-000",
+      "nationalDex": 9,
+      "form": 0,
+      "zhHant": "水箭龜"
+    },
+    {
+      "id": "0015-000",
+      "nationalDex": 15,
+      "form": 0,
+      "zhHant": "大針蜂"
+    },
+    {
+      "id": "0018-000",
+      "nationalDex": 18,
+      "form": 0,
+      "zhHant": "大比鳥"
+    },
+    {
+      "id": "0024-000",
+      "nationalDex": 24,
+      "form": 0,
+      "zhHant": "阿柏怪"
+    },
+    {
+      "id": "0025-000",
+      "nationalDex": 25,
+      "form": 0,
+      "zhHant": "皮卡丘"
+    },
+    {
+      "id": "0026-000",
+      "nationalDex": 26,
+      "form": 0,
+      "zhHant": "雷丘"
+    },
+    {
+      "id": "0026-001",
+      "nationalDex": 26,
+      "form": 1,
+      "zhHant": "雷丘 (阿羅拉的樣子)"
+    },
+    {
+      "id": "0036-000",
+      "nationalDex": 36,
+      "form": 0,
+      "zhHant": "皮可西"
+    },
+    {
+      "id": "0038-000",
+      "nationalDex": 38,
+      "form": 0,
+      "zhHant": "九尾"
+    },
+    {
+      "id": "0038-001",
+      "nationalDex": 38,
+      "form": 1,
+      "zhHant": "九尾 (阿羅拉的樣子)"
+    },
+    {
+      "id": "0040-000",
+      "nationalDex": 40,
+      "form": 0,
+      "zhHant": "胖可丁"
+    },
+    {
+      "id": "0045-000",
+      "nationalDex": 45,
+      "form": 0,
+      "zhHant": "霸王花"
+    },
+    {
+      "id": "0053-000",
+      "nationalDex": 53,
+      "form": 0,
+      "zhHant": "貓老大"
+    },
+    {
+      "id": "0053-001",
+      "nationalDex": 53,
+      "form": 1,
+      "zhHant": "貓老大 (阿羅拉的樣子)"
+    },
+    {
+      "id": "0059-000",
+      "nationalDex": 59,
+      "form": 0,
+      "zhHant": "風速狗"
+    },
+    {
+      "id": "0059-001",
+      "nationalDex": 59,
+      "form": 1,
+      "zhHant": "風速狗 (洗翠的樣子)"
+    },
+    {
+      "id": "0065-000",
+      "nationalDex": 65,
+      "form": 0,
+      "zhHant": "胡地"
+    },
+    {
+      "id": "0068-000",
+      "nationalDex": 68,
+      "form": 0,
+      "zhHant": "怪力"
+    },
+    {
+      "id": "0071-000",
+      "nationalDex": 71,
+      "form": 0,
+      "zhHant": "大食花"
+    },
+    {
+      "id": "0080-000",
+      "nationalDex": 80,
+      "form": 0,
+      "zhHant": "呆殼獸"
+    },
+    {
+      "id": "0080-002",
+      "nationalDex": 80,
+      "form": 2,
+      "zhHant": "呆殼獸 (伽勒爾的樣子)"
+    },
+    {
+      "id": "0083-000",
+      "nationalDex": 83,
+      "form": 0,
+      "zhHant": "大蔥鴨"
+    },
+    {
+      "id": "0094-000",
+      "nationalDex": 94,
+      "form": 0,
+      "zhHant": "耿鬼"
+    },
+    {
+      "id": "0115-000",
+      "nationalDex": 115,
+      "form": 0,
+      "zhHant": "袋獸"
+    },
+    {
+      "id": "0121-000",
+      "nationalDex": 121,
+      "form": 0,
+      "zhHant": "寶石海星"
+    },
+    {
+      "id": "0122-000",
+      "nationalDex": 122,
+      "form": 0,
+      "zhHant": "魔牆人偶"
+    },
+    {
+      "id": "0127-000",
+      "nationalDex": 127,
+      "form": 0,
+      "zhHant": "凱羅斯"
+    },
+    {
+      "id": "0128-000",
+      "nationalDex": 128,
+      "form": 0,
+      "zhHant": "肯泰羅"
+    },
+    {
+      "id": "0128-001",
+      "nationalDex": 128,
+      "form": 1,
+      "zhHant": "肯泰羅 (帕底亞的樣子（鬥戰種）)"
+    },
+    {
+      "id": "0128-002",
+      "nationalDex": 128,
+      "form": 2,
+      "zhHant": "肯泰羅 (帕底亞的樣子（火熾種）)"
+    },
+    {
+      "id": "0128-003",
+      "nationalDex": 128,
+      "form": 3,
+      "zhHant": "肯泰羅 (帕底亞的樣子（水瀾種）)"
+    },
+    {
+      "id": "0130-000",
+      "nationalDex": 130,
+      "form": 0,
+      "zhHant": "暴鯉龍"
+    },
+    {
+      "id": "0132-000",
+      "nationalDex": 132,
+      "form": 0,
+      "zhHant": "百變怪"
+    },
+    {
+      "id": "0134-000",
+      "nationalDex": 134,
+      "form": 0,
+      "zhHant": "水伊布"
+    },
+    {
+      "id": "0135-000",
+      "nationalDex": 135,
+      "form": 0,
+      "zhHant": "雷伊布"
+    },
+    {
+      "id": "0136-000",
+      "nationalDex": 136,
+      "form": 0,
+      "zhHant": "火伊布"
+    },
+    {
+      "id": "0142-000",
+      "nationalDex": 142,
+      "form": 0,
+      "zhHant": "化石翼龍"
+    },
+    {
+      "id": "0143-000",
+      "nationalDex": 143,
+      "form": 0,
+      "zhHant": "卡比獸"
+    },
+    {
+      "id": "0149-000",
+      "nationalDex": 149,
+      "form": 0,
+      "zhHant": "快龍"
+    },
+    {
+      "id": "0154-000",
+      "nationalDex": 154,
+      "form": 0,
+      "zhHant": "大竺葵"
+    },
+    {
+      "id": "0157-000",
+      "nationalDex": 157,
+      "form": 0,
+      "zhHant": "火爆獸"
+    },
+    {
+      "id": "0157-001",
+      "nationalDex": 157,
+      "form": 1,
+      "zhHant": "火爆獸 (洗翠的樣子)"
+    },
+    {
+      "id": "0160-000",
+      "nationalDex": 160,
+      "form": 0,
+      "zhHant": "大力鱷"
+    },
+    {
+      "id": "0168-000",
+      "nationalDex": 168,
+      "form": 0,
+      "zhHant": "阿利多斯"
+    },
+    {
+      "id": "0181-000",
+      "nationalDex": 181,
+      "form": 0,
+      "zhHant": "電龍"
+    },
+    {
+      "id": "0184-000",
+      "nationalDex": 184,
+      "form": 0,
+      "zhHant": "瑪力露麗"
+    },
+    {
+      "id": "0186-000",
+      "nationalDex": 186,
+      "form": 0,
+      "zhHant": "蚊香蛙皇"
+    },
+    {
+      "id": "0196-000",
+      "nationalDex": 196,
+      "form": 0,
+      "zhHant": "太陽伊布"
+    },
+    {
+      "id": "0197-000",
+      "nationalDex": 197,
+      "form": 0,
+      "zhHant": "月亮伊布"
+    },
+    {
+      "id": "0199-000",
+      "nationalDex": 199,
+      "form": 0,
+      "zhHant": "呆呆王"
+    },
+    {
+      "id": "0199-001",
+      "nationalDex": 199,
+      "form": 1,
+      "zhHant": "呆呆王 (伽勒爾的樣子)"
+    },
+    {
+      "id": "0205-000",
+      "nationalDex": 205,
+      "form": 0,
+      "zhHant": "佛烈托斯"
+    },
+    {
+      "id": "0208-000",
+      "nationalDex": 208,
+      "form": 0,
+      "zhHant": "大鋼蛇"
+    },
+    {
+      "id": "0211-000",
+      "nationalDex": 211,
+      "form": 0,
+      "zhHant": "千針魚"
+    },
+    {
+      "id": "0212-000",
+      "nationalDex": 212,
+      "form": 0,
+      "zhHant": "巨鉗螳螂"
+    },
+    {
+      "id": "0214-000",
+      "nationalDex": 214,
+      "form": 0,
+      "zhHant": "赫拉克羅斯"
+    },
+    {
+      "id": "0227-000",
+      "nationalDex": 227,
+      "form": 0,
+      "zhHant": "盔甲鳥"
+    },
+    {
+      "id": "0229-000",
+      "nationalDex": 229,
+      "form": 0,
+      "zhHant": "黑魯加"
+    },
+    {
+      "id": "0248-000",
+      "nationalDex": 248,
+      "form": 0,
+      "zhHant": "班基拉斯"
+    },
+    {
+      "id": "0254-000",
+      "nationalDex": 254,
+      "form": 0,
+      "zhHant": "蜥蜴王"
+    },
+    {
+      "id": "0257-000",
+      "nationalDex": 257,
+      "form": 0,
+      "zhHant": "火焰雞"
+    },
+    {
+      "id": "0260-000",
+      "nationalDex": 260,
+      "form": 0,
+      "zhHant": "巨沼怪"
+    },
+    {
+      "id": "0279-000",
+      "nationalDex": 279,
+      "form": 0,
+      "zhHant": "大嘴鷗"
+    },
+    {
+      "id": "0282-000",
+      "nationalDex": 282,
+      "form": 0,
+      "zhHant": "沙奈朵"
+    },
+    {
+      "id": "0302-000",
+      "nationalDex": 302,
+      "form": 0,
+      "zhHant": "勾魂眼"
+    },
+    {
+      "id": "0303-000",
+      "nationalDex": 303,
+      "form": 0,
+      "zhHant": "大嘴娃"
+    },
+    {
+      "id": "0306-000",
+      "nationalDex": 306,
+      "form": 0,
+      "zhHant": "波士可多拉"
+    },
+    {
+      "id": "0308-000",
+      "nationalDex": 308,
+      "form": 0,
+      "zhHant": "恰雷姆"
+    },
+    {
+      "id": "0310-000",
+      "nationalDex": 310,
+      "form": 0,
+      "zhHant": "雷電獸"
+    },
+    {
+      "id": "0317-000",
+      "nationalDex": 317,
+      "form": 0,
+      "zhHant": "吞食獸"
+    },
+    {
+      "id": "0319-000",
+      "nationalDex": 319,
+      "form": 0,
+      "zhHant": "巨牙鯊"
+    },
+    {
+      "id": "0323-000",
+      "nationalDex": 323,
+      "form": 0,
+      "zhHant": "噴火駝"
+    },
+    {
+      "id": "0324-000",
+      "nationalDex": 324,
+      "form": 0,
+      "zhHant": "煤炭龜"
+    },
+    {
+      "id": "0334-000",
+      "nationalDex": 334,
+      "form": 0,
+      "zhHant": "七夕青鳥"
+    },
+    {
+      "id": "0350-000",
+      "nationalDex": 350,
+      "form": 0,
+      "zhHant": "美納斯"
+    },
+    {
+      "id": "0351-000",
+      "nationalDex": 351,
+      "form": 0,
+      "zhHant": "飄浮泡泡"
+    },
+    {
+      "id": "0354-000",
+      "nationalDex": 354,
+      "form": 0,
+      "zhHant": "詛咒娃娃"
+    },
+    {
+      "id": "0358-000",
+      "nationalDex": 358,
+      "form": 0,
+      "zhHant": "風鈴鈴"
+    },
+    {
+      "id": "0359-000",
+      "nationalDex": 359,
+      "form": 0,
+      "zhHant": "阿勃梭魯"
+    },
+    {
+      "id": "0362-000",
+      "nationalDex": 362,
+      "form": 0,
+      "zhHant": "冰鬼護"
+    },
+    {
+      "id": "0373-000",
+      "nationalDex": 373,
+      "form": 0,
+      "zhHant": "暴飛龍"
+    },
+    {
+      "id": "0376-000",
+      "nationalDex": 376,
+      "form": 0,
+      "zhHant": "巨金怪"
+    },
+    {
+      "id": "0389-000",
+      "nationalDex": 389,
+      "form": 0,
+      "zhHant": "土台龜"
+    },
+    {
+      "id": "0392-000",
+      "nationalDex": 392,
+      "form": 0,
+      "zhHant": "烈焰猴"
+    },
+    {
+      "id": "0395-000",
+      "nationalDex": 395,
+      "form": 0,
+      "zhHant": "帝王拿波"
+    },
+    {
+      "id": "0398-000",
+      "nationalDex": 398,
+      "form": 0,
+      "zhHant": "姆克鷹"
+    },
+    {
+      "id": "0405-000",
+      "nationalDex": 405,
+      "form": 0,
+      "zhHant": "倫琴貓"
+    },
+    {
+      "id": "0407-000",
+      "nationalDex": 407,
+      "form": 0,
+      "zhHant": "羅絲雷朵"
+    },
+    {
+      "id": "0409-000",
+      "nationalDex": 409,
+      "form": 0,
+      "zhHant": "戰槌龍"
+    },
+    {
+      "id": "0411-000",
+      "nationalDex": 411,
+      "form": 0,
+      "zhHant": "護城龍"
+    },
+    {
+      "id": "0428-000",
+      "nationalDex": 428,
+      "form": 0,
+      "zhHant": "長耳兔"
+    },
+    {
+      "id": "0442-000",
+      "nationalDex": 442,
+      "form": 0,
+      "zhHant": "花岩怪"
+    },
+    {
+      "id": "0445-000",
+      "nationalDex": 445,
+      "form": 0,
+      "zhHant": "烈咬陸鯊"
+    },
+    {
+      "id": "0448-000",
+      "nationalDex": 448,
+      "form": 0,
+      "zhHant": "路卡利歐"
+    },
+    {
+      "id": "0450-000",
+      "nationalDex": 450,
+      "form": 0,
+      "zhHant": "河馬獸"
+    },
+    {
+      "id": "0454-000",
+      "nationalDex": 454,
+      "form": 0,
+      "zhHant": "毒骷蛙"
+    },
+    {
+      "id": "0460-000",
+      "nationalDex": 460,
+      "form": 0,
+      "zhHant": "暴雪王"
+    },
+    {
+      "id": "0461-000",
+      "nationalDex": 461,
+      "form": 0,
+      "zhHant": "瑪狃拉"
+    },
+    {
+      "id": "0464-000",
+      "nationalDex": 464,
+      "form": 0,
+      "zhHant": "超甲狂犀"
+    },
+    {
+      "id": "0470-000",
+      "nationalDex": 470,
+      "form": 0,
+      "zhHant": "葉伊布"
+    },
+    {
+      "id": "0471-000",
+      "nationalDex": 471,
+      "form": 0,
+      "zhHant": "冰伊布"
+    },
+    {
+      "id": "0472-000",
+      "nationalDex": 472,
+      "form": 0,
+      "zhHant": "天蠍王"
+    },
+    {
+      "id": "0473-000",
+      "nationalDex": 473,
+      "form": 0,
+      "zhHant": "象牙豬"
+    },
+    {
+      "id": "0475-000",
+      "nationalDex": 475,
+      "form": 0,
+      "zhHant": "艾路雷朵"
+    },
+    {
+      "id": "0478-000",
+      "nationalDex": 478,
+      "form": 0,
+      "zhHant": "雪妖女"
+    },
+    {
+      "id": "0479-000",
+      "nationalDex": 479,
+      "form": 0,
+      "zhHant": "洛托姆 (洛托姆的樣子)"
+    },
+    {
+      "id": "0479-001",
+      "nationalDex": 479,
+      "form": 1,
+      "zhHant": "洛托姆 (加熱洛托姆)"
+    },
+    {
+      "id": "0479-002",
+      "nationalDex": 479,
+      "form": 2,
+      "zhHant": "洛托姆 (清洗洛托姆)"
+    },
+    {
+      "id": "0479-003",
+      "nationalDex": 479,
+      "form": 3,
+      "zhHant": "洛托姆 (結冰洛托姆)"
+    },
+    {
+      "id": "0479-004",
+      "nationalDex": 479,
+      "form": 4,
+      "zhHant": "洛托姆 (旋轉洛托姆)"
+    },
+    {
+      "id": "0479-005",
+      "nationalDex": 479,
+      "form": 5,
+      "zhHant": "洛托姆 (切割洛托姆)"
+    },
+    {
+      "id": "0497-000",
+      "nationalDex": 497,
+      "form": 0,
+      "zhHant": "君主蛇"
+    },
+    {
+      "id": "0500-000",
+      "nationalDex": 500,
+      "form": 0,
+      "zhHant": "炎武王"
+    },
+    {
+      "id": "0503-000",
+      "nationalDex": 503,
+      "form": 0,
+      "zhHant": "大劍鬼"
+    },
+    {
+      "id": "0503-001",
+      "nationalDex": 503,
+      "form": 1,
+      "zhHant": "大劍鬼 (洗翠的樣子)"
+    },
+    {
+      "id": "0505-000",
+      "nationalDex": 505,
+      "form": 0,
+      "zhHant": "步哨鼠"
+    },
+    {
+      "id": "0510-000",
+      "nationalDex": 510,
+      "form": 0,
+      "zhHant": "酷豹"
+    },
+    {
+      "id": "0512-000",
+      "nationalDex": 512,
+      "form": 0,
+      "zhHant": "花椰猿"
+    },
+    {
+      "id": "0514-000",
+      "nationalDex": 514,
+      "form": 0,
+      "zhHant": "爆香猿"
+    },
+    {
+      "id": "0516-000",
+      "nationalDex": 516,
+      "form": 0,
+      "zhHant": "冷水猿"
+    },
+    {
+      "id": "0518-000",
+      "nationalDex": 518,
+      "form": 0,
+      "zhHant": "夢夢蝕"
+    },
+    {
+      "id": "0530-000",
+      "nationalDex": 530,
+      "form": 0,
+      "zhHant": "龍頭地鼠"
+    },
+    {
+      "id": "0531-000",
+      "nationalDex": 531,
+      "form": 0,
+      "zhHant": "差不多娃娃"
+    },
+    {
+      "id": "0534-000",
+      "nationalDex": 534,
+      "form": 0,
+      "zhHant": "修建老匠"
+    },
+    {
+      "id": "0545-000",
+      "nationalDex": 545,
+      "form": 0,
+      "zhHant": "蜈蚣王"
+    },
+    {
+      "id": "0547-000",
+      "nationalDex": 547,
+      "form": 0,
+      "zhHant": "風妖精"
+    },
+    {
+      "id": "0553-000",
+      "nationalDex": 553,
+      "form": 0,
+      "zhHant": "流氓鱷"
+    },
+    {
+      "id": "0560-000",
+      "nationalDex": 560,
+      "form": 0,
+      "zhHant": "頭巾混混"
+    },
+    {
+      "id": "0563-000",
+      "nationalDex": 563,
+      "form": 0,
+      "zhHant": "死神棺"
+    },
+    {
+      "id": "0569-000",
+      "nationalDex": 569,
+      "form": 0,
+      "zhHant": "灰塵山"
+    },
+    {
+      "id": "0571-000",
+      "nationalDex": 571,
+      "form": 0,
+      "zhHant": "索羅亞克"
+    },
+    {
+      "id": "0571-001",
+      "nationalDex": 571,
+      "form": 1,
+      "zhHant": "索羅亞克 (洗翠的樣子)"
+    },
+    {
+      "id": "0579-000",
+      "nationalDex": 579,
+      "form": 0,
+      "zhHant": "人造細胞卵"
+    },
+    {
+      "id": "0584-000",
+      "nationalDex": 584,
+      "form": 0,
+      "zhHant": "雙倍多多冰"
+    },
+    {
+      "id": "0587-000",
+      "nationalDex": 587,
+      "form": 0,
+      "zhHant": "電飛鼠"
+    },
+    {
+      "id": "0604-000",
+      "nationalDex": 604,
+      "form": 0,
+      "zhHant": "麻麻鰻魚王"
+    },
+    {
+      "id": "0609-000",
+      "nationalDex": 609,
+      "form": 0,
+      "zhHant": "水晶燈火靈"
+    },
+    {
+      "id": "0614-000",
+      "nationalDex": 614,
+      "form": 0,
+      "zhHant": "凍原熊"
+    },
+    {
+      "id": "0618-000",
+      "nationalDex": 618,
+      "form": 0,
+      "zhHant": "泥巴魚"
+    },
+    {
+      "id": "0618-001",
+      "nationalDex": 618,
+      "form": 1,
+      "zhHant": "泥巴魚 (伽勒爾的樣子)"
+    },
+    {
+      "id": "0623-000",
+      "nationalDex": 623,
+      "form": 0,
+      "zhHant": "泥偶巨人"
+    },
+    {
+      "id": "0635-000",
+      "nationalDex": 635,
+      "form": 0,
+      "zhHant": "三首惡龍"
+    },
+    {
+      "id": "0637-000",
+      "nationalDex": 637,
+      "form": 0,
+      "zhHant": "火神蛾"
+    },
+    {
+      "id": "0652-000",
+      "nationalDex": 652,
+      "form": 0,
+      "zhHant": "布里卡隆"
+    },
+    {
+      "id": "0655-000",
+      "nationalDex": 655,
+      "form": 0,
+      "zhHant": "妖火紅狐"
+    },
+    {
+      "id": "0658-000",
+      "nationalDex": 658,
+      "form": 0,
+      "zhHant": "甲賀忍蛙"
+    },
+    {
+      "id": "0660-000",
+      "nationalDex": 660,
+      "form": 0,
+      "zhHant": "掘地兔"
+    },
+    {
+      "id": "0663-000",
+      "nationalDex": 663,
+      "form": 0,
+      "zhHant": "烈箭鷹"
+    },
+    {
+      "id": "0666-018",
+      "nationalDex": 666,
+      "form": 18,
+      "zhHant": "彩粉蝶"
+    },
+    {
+      "id": "0668-000",
+      "nationalDex": 668,
+      "form": 0,
+      "zhHant": "火炎獅"
+    },
+    {
+      "id": "0670-005",
+      "nationalDex": 670,
+      "form": 5,
+      "zhHant": "花葉蒂"
+    },
+    {
+      "id": "0671-000",
+      "nationalDex": 671,
+      "form": 0,
+      "zhHant": "花潔夫人"
+    },
+    {
+      "id": "0673-000",
+      "nationalDex": 673,
+      "form": 0,
+      "zhHant": "坐騎山羊"
+    },
+    {
+      "id": "0675-000",
+      "nationalDex": 675,
+      "form": 0,
+      "zhHant": "流氓熊貓"
+    },
+    {
+      "id": "0676-000",
+      "nationalDex": 676,
+      "form": 0,
+      "zhHant": "多麗米亞"
+    },
+    {
+      "id": "0678-000",
+      "nationalDex": 678,
+      "form": 0,
+      "zhHant": "超能妙喵 (雄性的樣子)"
+    },
+    {
+      "id": "0678-001",
+      "nationalDex": 678,
+      "form": 1,
+      "zhHant": "超能妙喵 (雌性的樣子)"
+    },
+    {
+      "id": "0681-000",
+      "nationalDex": 681,
+      "form": 0,
+      "zhHant": "堅盾劍怪"
+    },
+    {
+      "id": "0683-000",
+      "nationalDex": 683,
+      "form": 0,
+      "zhHant": "芳香精"
+    },
+    {
+      "id": "0685-000",
+      "nationalDex": 685,
+      "form": 0,
+      "zhHant": "胖甜妮"
+    },
+    {
+      "id": "0687-000",
+      "nationalDex": 687,
+      "form": 0,
+      "zhHant": "烏賊王"
+    },
+    {
+      "id": "0689-000",
+      "nationalDex": 689,
+      "form": 0,
+      "zhHant": "龜足巨鎧"
+    },
+    {
+      "id": "0691-000",
+      "nationalDex": 691,
+      "form": 0,
+      "zhHant": "毒藻龍"
+    },
+    {
+      "id": "0693-000",
+      "nationalDex": 693,
+      "form": 0,
+      "zhHant": "鋼炮臂蝦"
+    },
+    {
+      "id": "0695-000",
+      "nationalDex": 695,
+      "form": 0,
+      "zhHant": "光電傘蜥"
+    },
+    {
+      "id": "0697-000",
+      "nationalDex": 697,
+      "form": 0,
+      "zhHant": "怪顎龍"
+    },
+    {
+      "id": "0699-000",
+      "nationalDex": 699,
+      "form": 0,
+      "zhHant": "冰雪巨龍"
+    },
+    {
+      "id": "0700-000",
+      "nationalDex": 700,
+      "form": 0,
+      "zhHant": "仙子伊布"
+    },
+    {
+      "id": "0701-000",
+      "nationalDex": 701,
+      "form": 0,
+      "zhHant": "摔角鷹人"
+    },
+    {
+      "id": "0702-000",
+      "nationalDex": 702,
+      "form": 0,
+      "zhHant": "咚咚鼠"
+    },
+    {
+      "id": "0706-000",
+      "nationalDex": 706,
+      "form": 0,
+      "zhHant": "黏美龍"
+    },
+    {
+      "id": "0706-001",
+      "nationalDex": 706,
+      "form": 1,
+      "zhHant": "黏美龍 (洗翠的樣子)"
+    },
+    {
+      "id": "0707-000",
+      "nationalDex": 707,
+      "form": 0,
+      "zhHant": "鑰圈兒"
+    },
+    {
+      "id": "0709-000",
+      "nationalDex": 709,
+      "form": 0,
+      "zhHant": "朽木妖"
+    },
+    {
+      "id": "0711-000",
+      "nationalDex": 711,
+      "form": 0,
+      "zhHant": "南瓜怪人 (中顆種)"
+    },
+    {
+      "id": "0711-001",
+      "nationalDex": 711,
+      "form": 1,
+      "zhHant": "南瓜怪人 (小顆種)"
+    },
+    {
+      "id": "0711-002",
+      "nationalDex": 711,
+      "form": 2,
+      "zhHant": "南瓜怪人 (大顆種)"
+    },
+    {
+      "id": "0711-003",
+      "nationalDex": 711,
+      "form": 3,
+      "zhHant": "南瓜怪人 (巨顆種)"
+    },
+    {
+      "id": "0713-000",
+      "nationalDex": 713,
+      "form": 0,
+      "zhHant": "冰岩怪"
+    },
+    {
+      "id": "0713-001",
+      "nationalDex": 713,
+      "form": 1,
+      "zhHant": "冰岩怪 (洗翠的樣子)"
+    },
+    {
+      "id": "0715-000",
+      "nationalDex": 715,
+      "form": 0,
+      "zhHant": "音波龍"
+    },
+    {
+      "id": "0724-000",
+      "nationalDex": 724,
+      "form": 0,
+      "zhHant": "狙射樹梟"
+    },
+    {
+      "id": "0724-001",
+      "nationalDex": 724,
+      "form": 1,
+      "zhHant": "狙射樹梟 (洗翠的樣子)"
+    },
+    {
+      "id": "0727-000",
+      "nationalDex": 727,
+      "form": 0,
+      "zhHant": "熾焰咆哮虎"
+    },
+    {
+      "id": "0730-000",
+      "nationalDex": 730,
+      "form": 0,
+      "zhHant": "西獅海壬"
+    },
+    {
+      "id": "0733-000",
+      "nationalDex": 733,
+      "form": 0,
+      "zhHant": "銃嘴大鳥"
+    },
+    {
+      "id": "0740-000",
+      "nationalDex": 740,
+      "form": 0,
+      "zhHant": "好勝毛蟹"
+    },
+    {
+      "id": "0745-000",
+      "nationalDex": 745,
+      "form": 0,
+      "zhHant": "鬃岩狼人 (白晝的樣子)"
+    },
+    {
+      "id": "0745-001",
+      "nationalDex": 745,
+      "form": 1,
+      "zhHant": "鬃岩狼人 (黑夜的樣子)"
+    },
+    {
+      "id": "0745-002",
+      "nationalDex": 745,
+      "form": 2,
+      "zhHant": "鬃岩狼人 (黃昏的樣子)"
+    },
+    {
+      "id": "0748-000",
+      "nationalDex": 748,
+      "form": 0,
+      "zhHant": "超壞星"
+    },
+    {
+      "id": "0750-000",
+      "nationalDex": 750,
+      "form": 0,
+      "zhHant": "重泥挽馬"
+    },
+    {
+      "id": "0752-000",
+      "nationalDex": 752,
+      "form": 0,
+      "zhHant": "滴蛛霸"
+    },
+    {
+      "id": "0758-000",
+      "nationalDex": 758,
+      "form": 0,
+      "zhHant": "焰后蜥"
+    },
+    {
+      "id": "0763-000",
+      "nationalDex": 763,
+      "form": 0,
+      "zhHant": "甜冷美后"
+    },
+    {
+      "id": "0765-000",
+      "nationalDex": 765,
+      "form": 0,
+      "zhHant": "智揮猩"
+    },
+    {
+      "id": "0766-000",
+      "nationalDex": 766,
+      "form": 0,
+      "zhHant": "投擲猴"
+    },
+    {
+      "id": "0768-000",
+      "nationalDex": 768,
+      "form": 0,
+      "zhHant": "具甲武者"
+    },
+    {
+      "id": "0778-000",
+      "nationalDex": 778,
+      "form": 0,
+      "zhHant": "謎擬Ｑ"
+    },
+    {
+      "id": "0780-000",
+      "nationalDex": 780,
+      "form": 0,
+      "zhHant": "老翁龍"
+    },
+    {
+      "id": "0784-000",
+      "nationalDex": 784,
+      "form": 0,
+      "zhHant": "杖尾鱗甲龍"
+    },
+    {
+      "id": "0812-000",
+      "nationalDex": 812,
+      "form": 0,
+      "zhHant": "轟擂金剛猩"
+    },
+    {
+      "id": "0815-000",
+      "nationalDex": 815,
+      "form": 0,
+      "zhHant": "閃焰王牌"
+    },
+    {
+      "id": "0818-000",
+      "nationalDex": 818,
+      "form": 0,
+      "zhHant": "千面避役"
+    },
+    {
+      "id": "0823-000",
+      "nationalDex": 823,
+      "form": 0,
+      "zhHant": "鋼鎧鴉"
+    },
+    {
+      "id": "0828-000",
+      "nationalDex": 828,
+      "form": 0,
+      "zhHant": "狐大盜"
+    },
+    {
+      "id": "0841-000",
+      "nationalDex": 841,
+      "form": 0,
+      "zhHant": "蘋裹龍"
+    },
+    {
+      "id": "0842-000",
+      "nationalDex": 842,
+      "form": 0,
+      "zhHant": "豐蜜龍"
+    },
+    {
+      "id": "0844-000",
+      "nationalDex": 844,
+      "form": 0,
+      "zhHant": "沙螺蟒"
+    },
+    {
+      "id": "0849-000",
+      "nationalDex": 849,
+      "form": 0,
+      "zhHant": "顫弦蠑螈 (高調的樣子)"
+    },
+    {
+      "id": "0849-001",
+      "nationalDex": 849,
+      "form": 1,
+      "zhHant": "顫弦蠑螈 (低調的樣子)"
+    },
+    {
+      "id": "0853-000",
+      "nationalDex": 853,
+      "form": 0,
+      "zhHant": "八爪武師"
+    },
+    {
+      "id": "0855-000",
+      "nationalDex": 855,
+      "form": 0,
+      "zhHant": "怖思壺"
+    },
+    {
+      "id": "0858-000",
+      "nationalDex": 858,
+      "form": 0,
+      "zhHant": "布莉姆溫"
+    },
+    {
+      "id": "0861-000",
+      "nationalDex": 861,
+      "form": 0,
+      "zhHant": "長毛巨魔"
+    },
+    {
+      "id": "0863-000",
+      "nationalDex": 863,
+      "form": 0,
+      "zhHant": "喵頭目"
+    },
+    {
+      "id": "0865-000",
+      "nationalDex": 865,
+      "form": 0,
+      "zhHant": "蔥遊兵"
+    },
+    {
+      "id": "0866-000",
+      "nationalDex": 866,
+      "form": 0,
+      "zhHant": "踏冰人偶"
+    },
+    {
+      "id": "0867-000",
+      "nationalDex": 867,
+      "form": 0,
+      "zhHant": "死神板"
+    },
+    {
+      "id": "0869-000",
+      "nationalDex": 869,
+      "form": 0,
+      "zhHant": "霜奶仙"
+    },
+    {
+      "id": "0870-000",
+      "nationalDex": 870,
+      "form": 0,
+      "zhHant": "列陣兵"
+    },
+    {
+      "id": "0871-000",
+      "nationalDex": 871,
+      "form": 0,
+      "zhHant": "啪嚓海膽"
+    },
+    {
+      "id": "0876-000",
+      "nationalDex": 876,
+      "form": 0,
+      "zhHant": "愛管侍 (雄性的樣子)"
+    },
+    {
+      "id": "0876-001",
+      "nationalDex": 876,
+      "form": 1,
+      "zhHant": "愛管侍 (雌性的樣子)"
+    },
+    {
+      "id": "0877-000",
+      "nationalDex": 877,
+      "form": 0,
+      "zhHant": "莫魯貝可"
+    },
+    {
+      "id": "0887-000",
+      "nationalDex": 887,
+      "form": 0,
+      "zhHant": "多龍巴魯托"
+    },
+    {
+      "id": "0899-000",
+      "nationalDex": 899,
+      "form": 0,
+      "zhHant": "詭角鹿"
+    },
+    {
+      "id": "0900-000",
+      "nationalDex": 900,
+      "form": 0,
+      "zhHant": "劈斧螳螂"
+    },
+    {
+      "id": "0902-000",
+      "nationalDex": 902,
+      "form": 0,
+      "zhHant": "幽尾玄魚 (雄性的樣子)"
+    },
+    {
+      "id": "0902-001",
+      "nationalDex": 902,
+      "form": 1,
+      "zhHant": "幽尾玄魚 (雌性的樣子)"
+    },
+    {
+      "id": "0903-000",
+      "nationalDex": 903,
+      "form": 0,
+      "zhHant": "大狃拉"
+    },
+    {
+      "id": "0904-000",
+      "nationalDex": 904,
+      "form": 0,
+      "zhHant": "萬針魚"
+    },
+    {
+      "id": "0908-000",
+      "nationalDex": 908,
+      "form": 0,
+      "zhHant": "魔幻假面喵"
+    },
+    {
+      "id": "0911-000",
+      "nationalDex": 911,
+      "form": 0,
+      "zhHant": "骨紋巨聲鱷"
+    },
+    {
+      "id": "0914-000",
+      "nationalDex": 914,
+      "form": 0,
+      "zhHant": "狂歡浪舞鴨"
+    },
+    {
+      "id": "0923-000",
+      "nationalDex": 923,
+      "form": 0,
+      "zhHant": "巴布土撥"
+    },
+    {
+      "id": "0925-001",
+      "nationalDex": 925,
+      "form": 1,
+      "zhHant": "一家鼠"
+    },
+    {
+      "id": "0930-000",
+      "nationalDex": 930,
+      "form": 0,
+      "zhHant": "奧利瓦"
+    },
+    {
+      "id": "0931-000",
+      "nationalDex": 931,
+      "form": 0,
+      "zhHant": "怒鸚哥"
+    },
+    {
+      "id": "0931-002",
+      "nationalDex": 931,
+      "form": 2,
+      "zhHant": "怒鸚哥"
+    },
+    {
+      "id": "0934-000",
+      "nationalDex": 934,
+      "form": 0,
+      "zhHant": "鹽石巨靈"
+    },
+    {
+      "id": "0936-000",
+      "nationalDex": 936,
+      "form": 0,
+      "zhHant": "紅蓮鎧騎"
+    },
+    {
+      "id": "0937-000",
+      "nationalDex": 937,
+      "form": 0,
+      "zhHant": "蒼炎刃鬼"
+    },
+    {
+      "id": "0939-000",
+      "nationalDex": 939,
+      "form": 0,
+      "zhHant": "電肚蛙"
+    },
+    {
+      "id": "0943-000",
+      "nationalDex": 943,
+      "form": 0,
+      "zhHant": "獒教父"
+    },
+    {
+      "id": "0952-000",
+      "nationalDex": 952,
+      "form": 0,
+      "zhHant": "狠辣椒"
+    },
+    {
+      "id": "0956-000",
+      "nationalDex": 956,
+      "form": 0,
+      "zhHant": "超能豔鴕"
+    },
+    {
+      "id": "0959-000",
+      "nationalDex": 959,
+      "form": 0,
+      "zhHant": "巨鍛匠"
+    },
+    {
+      "id": "0964-000",
+      "nationalDex": 964,
+      "form": 0,
+      "zhHant": "海豚俠"
+    },
+    {
+      "id": "0968-000",
+      "nationalDex": 968,
+      "form": 0,
+      "zhHant": "拖拖蚓"
+    },
+    {
+      "id": "0970-000",
+      "nationalDex": 970,
+      "form": 0,
+      "zhHant": "晶光花"
+    },
+    {
+      "id": "0972-000",
+      "nationalDex": 972,
+      "form": 0,
+      "zhHant": "墓揚犬"
+    },
+    {
+      "id": "0979-000",
+      "nationalDex": 979,
+      "form": 0,
+      "zhHant": "棄世猴"
+    },
+    {
+      "id": "0981-000",
+      "nationalDex": 981,
+      "form": 0,
+      "zhHant": "奇麒麟"
+    },
+    {
+      "id": "0983-000",
+      "nationalDex": 983,
+      "form": 0,
+      "zhHant": "仆斬將軍"
+    },
+    {
+      "id": "0998-000",
+      "nationalDex": 998,
+      "form": 0,
+      "zhHant": "戟脊龍"
+    },
+    {
+      "id": "1000-000",
+      "nationalDex": 1000,
+      "form": 0,
+      "zhHant": "賽富豪"
+    },
+    {
+      "id": "1013-000",
+      "nationalDex": 1013,
+      "form": 0,
+      "zhHant": "來悲粗茶"
+    },
+    {
+      "id": "1018-000",
+      "nationalDex": 1018,
+      "form": 0,
+      "zhHant": "鋁鋼橋龍"
+    },
+    {
+      "id": "1019-000",
+      "nationalDex": 1019,
+      "form": 0,
+      "zhHant": "蜜集大蛇"
+    }
+  ]
+}

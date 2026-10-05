@@ -1,0 +1,708 @@
+{
+  "accuracy": "29/30",
+  "correct": 29,
+  "wrong": 0,
+  "null": 1,
+  "total": 30,
+  "templateCount": 262,
+  "speciesIdCount": 262,
+  "threshold": 0.54,
+  "minMargin": 0.08,
+  "ahashTopK": 40,
+  "ahashMaxHam": 18,
+  "matchCropRightExcludeFrac": 0.05,
+  "dynamicMargin": {
+    "0.75": 0.025,
+    "0.68": 0.03,
+    "0.60": 0.05,
+    "0.54": 0.055,
+    "else": 0.08
+  },
+  "scales": [
+    0.9,
+    1.0,
+    1.1,
+    1.2,
+    1.35,
+    1.55
+  ],
+  "shifts": [
+    -8,
+    -4,
+    0,
+    4,
+    8
+  ],
+  "rows": [
+    {
+      "fixture": "team-preview-live-latest",
+      "slot": 0,
+      "expected": "froslass",
+      "matched": "froslass",
+      "confidence": 0.7486,
+      "margin": 0.1917,
+      "requiredMargin": 0.03,
+      "altSpeciesId": "weavile",
+      "detectedTypes": [
+        "ice"
+      ],
+      "typeScores": [
+        {
+          "id": "ice",
+          "score": 0.6235
+        }
+      ],
+      "reason": "ok",
+      "ok": true,
+      "wrongSpecies": false
+    },
+    {
+      "fixture": "team-preview-live-latest",
+      "slot": 1,
+      "expected": "garchomp",
+      "matched": "garchomp",
+      "confidence": 0.8029,
+      "margin": 0.2099,
+      "requiredMargin": 0.025,
+      "altSpeciesId": "grimmsnarl",
+      "detectedTypes": [],
+      "typeScores": [
+        {
+          "id": "dragon",
+          "score": 0.4866
+        },
+        {
+          "id": "ground",
+          "score": 0.4823
+        }
+      ],
+      "reason": "ok",
+      "ok": true,
+      "wrongSpecies": false
+    },
+    {
+      "fixture": "team-preview-live-latest",
+      "slot": 2,
+      "expected": "basculegion",
+      "matched": "basculegion",
+      "confidence": 0.808,
+      "margin": 0.1974,
+      "requiredMargin": 0.025,
+      "altSpeciesId": "basculegionf",
+      "detectedTypes": [
+        "water"
+      ],
+      "typeScores": [
+        {
+          "id": "water",
+          "score": 0.7705
+        }
+      ],
+      "reason": "ok",
+      "ok": true,
+      "wrongSpecies": false
+    },
+    {
+      "fixture": "team-preview-live-latest",
+      "slot": 3,
+      "expected": "kingambit",
+      "matched": "kingambit",
+      "confidence": 0.7563,
+      "margin": 0.1735,
+      "requiredMargin": 0.025,
+      "altSpeciesId": "scrafty",
+      "detectedTypes": [],
+      "typeScores": [
+        {
+          "id": "dark",
+          "score": 0.4704
+        }
+      ],
+      "reason": "ok",
+      "ok": true,
+      "wrongSpecies": false
+    },
+    {
+      "fixture": "team-preview-live-latest",
+      "slot": 4,
+      "expected": "sneasler",
+      "matched": "sneasler",
+      "confidence": 0.84,
+      "margin": 0.1812,
+      "requiredMargin": 0.025,
+      "altSpeciesId": "watchog",
+      "detectedTypes": [],
+      "typeScores": [
+        {
+          "id": "poison",
+          "score": 0.5631
+        },
+        {
+          "id": "fighting",
+          "score": 0.5361
+        }
+      ],
+      "reason": "ok",
+      "ok": true,
+      "wrongSpecies": false
+    },
+    {
+      "fixture": "team-preview-live-latest",
+      "slot": 5,
+      "expected": "golisopod",
+      "matched": "golisopod",
+      "confidence": 0.9143,
+      "margin": 0.3291,
+      "requiredMargin": 0.025,
+      "altSpeciesId": "feraligatr",
+      "detectedTypes": [
+        "water"
+      ],
+      "typeScores": [
+        {
+          "id": "water",
+          "score": 0.69
+        }
+      ],
+      "reason": "ok",
+      "ok": true,
+      "wrongSpecies": false
+    },
+    {
+      "fixture": "team-preview-test-1",
+      "slot": 0,
+      "expected": "froslass",
+      "matched": "froslass",
+      "confidence": 0.7486,
+      "margin": 0.1917,
+      "requiredMargin": 0.03,
+      "altSpeciesId": "weavile",
+      "detectedTypes": [
+        "ice"
+      ],
+      "typeScores": [
+        {
+          "id": "ice",
+          "score": 0.6235
+        }
+      ],
+      "reason": "ok",
+      "ok": true,
+      "wrongSpecies": false
+    },
+    {
+      "fixture": "team-preview-test-1",
+      "slot": 1,
+      "expected": "garchomp",
+      "matched": "garchomp",
+      "confidence": 0.8029,
+      "margin": 0.2099,
+      "requiredMargin": 0.025,
+      "altSpeciesId": "grimmsnarl",
+      "detectedTypes": [],
+      "typeScores": [
+        {
+          "id": "dragon",
+          "score": 0.4866
+        },
+        {
+          "id": "ground",
+          "score": 0.4823
+        }
+      ],
+      "reason": "ok",
+      "ok": true,
+      "wrongSpecies": false
+    },
+    {
+      "fixture": "team-preview-test-1",
+      "slot": 2,
+      "expected": "basculegion",
+      "matched": "basculegion",
+      "confidence": 0.808,
+      "margin": 0.1974,
+      "requiredMargin": 0.025,
+      "altSpeciesId": "basculegionf",
+      "detectedTypes": [
+        "water"
+      ],
+      "typeScores": [
+        {
+          "id": "water",
+          "score": 0.7705
+        }
+      ],
+      "reason": "ok",
+      "ok": true,
+      "wrongSpecies": false
+    },
+    {
+      "fixture": "team-preview-test-1",
+      "slot": 3,
+      "expected": "kingambit",
+      "matched": "kingambit",
+      "confidence": 0.7563,
+      "margin": 0.1735,
+      "requiredMargin": 0.025,
+      "altSpeciesId": "scrafty",
+      "detectedTypes": [],
+      "typeScores": [
+        {
+          "id": "dark",
+          "score": 0.4704
+        }
+      ],
+      "reason": "ok",
+      "ok": true,
+      "wrongSpecies": false
+    },
+    {
+      "fixture": "team-preview-test-1",
+      "slot": 4,
+      "expected": "sneasler",
+      "matched": "sneasler",
+      "confidence": 0.84,
+      "margin": 0.1812,
+      "requiredMargin": 0.025,
+      "altSpeciesId": "watchog",
+      "detectedTypes": [],
+      "typeScores": [
+        {
+          "id": "poison",
+          "score": 0.5631
+        },
+        {
+          "id": "fighting",
+          "score": 0.5361
+        }
+      ],
+      "reason": "ok",
+      "ok": true,
+      "wrongSpecies": false
+    },
+    {
+      "fixture": "team-preview-test-1",
+      "slot": 5,
+      "expected": "golisopod",
+      "matched": "golisopod",
+      "confidence": 0.9143,
+      "margin": 0.3291,
+      "requiredMargin": 0.025,
+      "altSpeciesId": "feraligatr",
+      "detectedTypes": [
+        "water"
+      ],
+      "typeScores": [
+        {
+          "id": "water",
+          "score": 0.69
+        }
+      ],
+      "reason": "ok",
+      "ok": true,
+      "wrongSpecies": false
+    },
+    {
+      "fixture": "team-preview-test-2",
+      "slot": 0,
+      "expected": "chesnaught",
+      "matched": "chesnaught",
+      "confidence": 0.7826,
+      "margin": 0.2354,
+      "requiredMargin": 0.025,
+      "altSpeciesId": "rotomwash",
+      "detectedTypes": [],
+      "typeScores": [
+        {
+          "id": "grass",
+          "score": 0.5762
+        }
+      ],
+      "reason": "ok",
+      "ok": true,
+      "wrongSpecies": false
+    },
+    {
+      "fixture": "team-preview-test-2",
+      "slot": 1,
+      "expected": "mimikyu",
+      "matched": "mimikyu",
+      "confidence": 0.5877,
+      "margin": 0.5877,
+      "requiredMargin": 0.055,
+      "altSpeciesId": "raichu",
+      "detectedTypes": [],
+      "typeScores": [
+        {
+          "id": "ghost",
+          "score": 0.5068
+        },
+        {
+          "id": "fairy",
+          "score": 0.4638
+        }
+      ],
+      "reason": "ok",
+      "ok": true,
+      "wrongSpecies": false
+    },
+    {
+      "fixture": "team-preview-test-2",
+      "slot": 2,
+      "expected": "ninetalesalola",
+      "matched": "ninetalesalola",
+      "confidence": 0.8898,
+      "margin": 0.2852,
+      "requiredMargin": 0.025,
+      "altSpeciesId": "pelipper",
+      "detectedTypes": [],
+      "typeScores": [
+        {
+          "id": "ice",
+          "score": 0.5784
+        },
+        {
+          "id": "fairy",
+          "score": 0.4639
+        }
+      ],
+      "reason": "ok",
+      "ok": true,
+      "wrongSpecies": false
+    },
+    {
+      "fixture": "team-preview-test-2",
+      "slot": 3,
+      "expected": "swampert",
+      "matched": "swampert",
+      "confidence": 0.8793,
+      "margin": 0.2355,
+      "requiredMargin": 0.025,
+      "altSpeciesId": "feraligatr",
+      "detectedTypes": [
+        "water"
+      ],
+      "typeScores": [
+        {
+          "id": "water",
+          "score": 0.7713
+        },
+        {
+          "id": "ground",
+          "score": 0.4807
+        }
+      ],
+      "reason": "ok",
+      "ok": true,
+      "wrongSpecies": false
+    },
+    {
+      "fixture": "team-preview-test-2",
+      "slot": 4,
+      "expected": "typhlosionhisui",
+      "matched": "typhlosionhisui",
+      "confidence": 0.8474,
+      "margin": 0.2209,
+      "requiredMargin": 0.025,
+      "altSpeciesId": "typhlosion",
+      "detectedTypes": [
+        "fire"
+      ],
+      "typeScores": [
+        {
+          "id": "fire",
+          "score": 0.6725
+        }
+      ],
+      "reason": "ok",
+      "ok": true,
+      "wrongSpecies": false
+    },
+    {
+      "fixture": "team-preview-test-2",
+      "slot": 5,
+      "expected": "greninja",
+      "matched": null,
+      "confidence": 0.5802,
+      "margin": 0.0351,
+      "requiredMargin": 0.055,
+      "altSpeciesId": "samurotthisui",
+      "detectedTypes": [
+        "water"
+      ],
+      "typeScores": [
+        {
+          "id": "water",
+          "score": 0.754
+        }
+      ],
+      "reason": "MARGIN_TOO_SMALL",
+      "ok": false,
+      "wrongSpecies": false
+    },
+    {
+      "fixture": "team-preview-test-3",
+      "slot": 0,
+      "expected": "slowbrogalar",
+      "matched": "slowbrogalar",
+      "confidence": 0.7644,
+      "margin": 0.106,
+      "requiredMargin": 0.025,
+      "altSpeciesId": "snorlax",
+      "detectedTypes": [],
+      "typeScores": [
+        {
+          "id": "poison",
+          "score": 0.5613
+        }
+      ],
+      "reason": "ok",
+      "ok": true,
+      "wrongSpecies": false
+    },
+    {
+      "fixture": "team-preview-test-3",
+      "slot": 1,
+      "expected": "scizor",
+      "matched": "scizor",
+      "confidence": 0.7307,
+      "margin": 0.2379,
+      "requiredMargin": 0.03,
+      "altSpeciesId": "umbreon",
+      "detectedTypes": [],
+      "typeScores": [],
+      "reason": "ok",
+      "ok": true,
+      "wrongSpecies": false
+    },
+    {
+      "fixture": "team-preview-test-3",
+      "slot": 2,
+      "expected": "eelektross",
+      "matched": "eelektross",
+      "confidence": 0.825,
+      "margin": 0.2576,
+      "requiredMargin": 0.025,
+      "altSpeciesId": "raichualola",
+      "detectedTypes": [
+        "electric"
+      ],
+      "typeScores": [
+        {
+          "id": "electric",
+          "score": 0.6524
+        }
+      ],
+      "reason": "ok",
+      "ok": true,
+      "wrongSpecies": false
+    },
+    {
+      "fixture": "team-preview-test-3",
+      "slot": 3,
+      "expected": "salamence",
+      "matched": "salamence",
+      "confidence": 0.8499,
+      "margin": 0.2245,
+      "requiredMargin": 0.025,
+      "altSpeciesId": "vileplume",
+      "detectedTypes": [],
+      "typeScores": [
+        {
+          "id": "flying",
+          "score": 0.5705
+        },
+        {
+          "id": "dragon",
+          "score": 0.4866
+        }
+      ],
+      "reason": "ok",
+      "ok": true,
+      "wrongSpecies": false
+    },
+    {
+      "fixture": "team-preview-test-3",
+      "slot": 4,
+      "expected": "rotomwash",
+      "matched": "rotomwash",
+      "confidence": 0.8445,
+      "margin": 0.2521,
+      "requiredMargin": 0.025,
+      "altSpeciesId": "stunfisk",
+      "detectedTypes": [
+        "electric",
+        "water"
+      ],
+      "typeScores": [
+        {
+          "id": "electric",
+          "score": 0.7648
+        },
+        {
+          "id": "water",
+          "score": 0.6887
+        }
+      ],
+      "reason": "ok",
+      "ok": true,
+      "wrongSpecies": false
+    },
+    {
+      "fixture": "team-preview-test-3",
+      "slot": 5,
+      "expected": "gallade",
+      "matched": "gallade",
+      "confidence": 0.853,
+      "margin": 0.2498,
+      "requiredMargin": 0.025,
+      "altSpeciesId": "scolipede",
+      "detectedTypes": [],
+      "typeScores": [
+        {
+          "id": "fighting",
+          "score": 0.4818
+        },
+        {
+          "id": "fire",
+          "score": 0.4565
+        }
+      ],
+      "reason": "ok",
+      "ok": true,
+      "wrongSpecies": false
+    },
+    {
+      "fixture": "team-preview-test-4",
+      "slot": 0,
+      "expected": "salamence",
+      "matched": "salamence",
+      "confidence": 0.7532,
+      "margin": 0.2002,
+      "requiredMargin": 0.025,
+      "altSpeciesId": "charizard",
+      "detectedTypes": [
+        "flying"
+      ],
+      "typeScores": [
+        {
+          "id": "flying",
+          "score": 0.6204
+        },
+        {
+          "id": "dragon",
+          "score": 0.4738
+        }
+      ],
+      "reason": "ok",
+      "ok": true,
+      "wrongSpecies": false
+    },
+    {
+      "fixture": "team-preview-test-4",
+      "slot": 1,
+      "expected": "rillaboom",
+      "matched": "rillaboom",
+      "confidence": 0.7755,
+      "margin": 0.1919,
+      "requiredMargin": 0.025,
+      "altSpeciesId": "kleavor",
+      "detectedTypes": [],
+      "typeScores": [],
+      "reason": "ok",
+      "ok": true,
+      "wrongSpecies": false
+    },
+    {
+      "fixture": "team-preview-test-4",
+      "slot": 2,
+      "expected": "kingambit",
+      "matched": "kingambit",
+      "confidence": 0.7568,
+      "margin": 0.1293,
+      "requiredMargin": 0.025,
+      "altSpeciesId": "toxtricity",
+      "detectedTypes": [],
+      "typeScores": [
+        {
+          "id": "dark",
+          "score": 0.4705
+        }
+      ],
+      "reason": "ok",
+      "ok": true,
+      "wrongSpecies": false
+    },
+    {
+      "fixture": "team-preview-test-4",
+      "slot": 3,
+      "expected": "sylveon",
+      "matched": "sylveon",
+      "confidence": 0.6358,
+      "margin": 0.0038,
+      "requiredMargin": 0.05,
+      "altSpeciesId": "azumarill",
+      "detectedTypes": [],
+      "typeScores": [
+        {
+          "id": "fairy",
+          "score": 0.4628
+        }
+      ],
+      "reason": "ok",
+      "ok": true,
+      "wrongSpecies": false
+    },
+    {
+      "fixture": "team-preview-test-4",
+      "slot": 4,
+      "expected": "rotomwash",
+      "matched": "rotomwash",
+      "confidence": 0.8442,
+      "margin": 0.2436,
+      "requiredMargin": 0.025,
+      "altSpeciesId": "stunfisk",
+      "detectedTypes": [
+        "electric",
+        "water"
+      ],
+      "typeScores": [
+        {
+          "id": "electric",
+          "score": 0.7652
+        },
+        {
+          "id": "water",
+          "score": 0.6883
+        }
+      ],
+      "reason": "ok",
+      "ok": true,
+      "wrongSpecies": false
+    },
+    {
+      "fixture": "team-preview-test-4",
+      "slot": 5,
+      "expected": "sneasler",
+      "matched": "sneasler",
+      "confidence": 0.8412,
+      "margin": 0.1744,
+      "requiredMargin": 0.025,
+      "altSpeciesId": "scolipede",
+      "detectedTypes": [],
+      "typeScores": [
+        {
+          "id": "poison",
+          "score": 0.5611
+        },
+        {
+          "id": "fighting",
+          "score": 0.5362
+        }
+      ],
+      "reason": "ok",
+      "ok": true,
+      "wrongSpecies": false
+    }
+  ]
+}
