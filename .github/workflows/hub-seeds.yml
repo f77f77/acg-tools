@@ -1,7 +1,8 @@
 name: Validate hub seed JSON
 
-# Stubs only. They check data/codes.json and data/anime-subs.json.
-# They do not fetch Mystery Gift codes or subtitle platforms yet.
+# Schema checks only. They do not fetch Mystery Gift codes or subtitle platforms.
+# data/anime-subs.json is the 中文字幕 overlay merged into 新番表 (route #anime → #season/zh).
+# data/codes.json gamesCatalog includes 寶可夢 Champions even when that game has no rows.
 on:
   workflow_dispatch:
   schedule:

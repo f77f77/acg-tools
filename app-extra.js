@@ -161,7 +161,7 @@
       if (!res.ok) throw new Error('HTTP ' + res.status);
       const payload = await res.json();
       const data = Array.isArray(payload) ? payload : (payload.days || []);
-      renderSeason(data);
+      if (typeof window.renderSeason === 'function') window.renderSeason(data);
       window.__seasonLoaded = true;
       const stamp = payload && payload.updated_at ? new Date(payload.updated_at).toLocaleString('zh-HK') : new Date().toLocaleString('zh-HK');
       if ($('#season-updated')) $('#season-updated').textContent = '資料更新於 ' + stamp;

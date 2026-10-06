@@ -21,8 +21,8 @@
 │   ├── update_season.py           Bangumi → season.json（原有）
 │   ├── build-pages.sh             hub + champions → dist/
 │   ├── build_names_index.mjs      Champions 資料 → data/names.json
-│   ├── refresh_codes_stub.py      只驗證 codes schema
-│   └── refresh_anime_stub.py      只驗證 anime schema
+│   ├── refresh_codes_stub.py      只驗證 codes schema（含 gamesCatalog）
+│   └── refresh_anime_stub.py      只驗證 anime-subs schema（新番表疊加）
 └── apps/champions/                原 pokemon-champions-assistant（src、public、electron、scripts）
 ```
 
@@ -75,11 +75,24 @@ Vite `base` 係 `/acg-tools/champions/`，因為專案站本身已經帶 `/acg-t
 | --- | --- |
 | `season.json` | 原有 `.github/workflows/update-season.yml`，每日 Bangumi |
 | Champions 用法 JSON、`data/names.json` 嘅招式／寶可夢名 | `.github/workflows/build-pokemon-data.yml`（路徑已改到 `apps/champions`）。名稱索引唔會打 PokéAPI；特性同道具日文要本地 `node scripts/build_names_index.mjs --fetch` |
-| 配送碼、字幕表 | 種子 JSON。`.github/workflows/hub-seeds.yml` 每週只做 schema 檢查，未有抓取 |
+| 配送碼、字幕疊加 | 種子 JSON。`.github/workflows/hub-seeds.yml` 每週只做 schema 檢查，未有抓取。字幕表併入新番表 |
 | 香港活動、訂閱 | 種子／示例 JSON，手改 `data/`。訂閱金額全部標成示例 |
 
 Schema 見 [data/README.md](data/README.md)。
 
 ## Hub 側欄
 
-生詞本、新番表、匯率維持原樣。新增：中日英名稱、配送碼、香港活動（可匯出未結束 `.ics`）、中文字幕動畫、訂閱／續費。
+分三組，組名可以摺起（狀態記喺呢部瀏覽器）：
+
+| 組 | 項目 |
+| --- | --- |
+| 動畫／ACG | 新番表（Bangumi，中文字幕疊加喺同一頁）、香港活動看板（活動＋周邊截止） |
+| Pokémon | 中日英名稱、Mystery Gift／配送碼、對戰助手（`./champions/`，新分頁） |
+| 生活工具 | 生詞本、匯率、訂閱／續費 |
+
+深連結用 hash：`#vocab` `#season` `#fx` `#names` `#codes` `#events` `#events/deadlines` `#subs`。舊嘅 `#anime` 會轉去 `#season/zh`（新番表並且只顯示有中文字幕）。
+
+## Hub 版本
+
+- **1.1**（2026-10-06）：側欄分組；新番表合併中文字幕；配送碼加入寶可夢 Champions；活動同周邊地點連到 Google 地圖。
+- **1.0**：Monorepo hub，五個資料模組同密碼閘。

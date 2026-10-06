@@ -28,6 +28,7 @@
       "date": "2026-07-24",
       "endDate": "2026-07-28",
       "place": "香港會議展覽中心 展覽廳 1、3、5",
+      "address": "香港灣仔博覽道1號",
       "ticketUrl": "https://ani-com.hk/",
       "source": "https://centrepoint.hkcec.com/zh/%E6%B4%BB%E5%8B%95%E9%A0%90%E5%91%8A/%E9%A6%99%E6%B8%AF%E5%8B%95%E6%BC%AB%E9%9B%BB%E7%8E%A9%E7%AF%802026",
       "sample": false
@@ -39,6 +40,8 @@
       "ip": "示例作品",
       "item": "會場限定周邊預購",
       "shop": "示例商店",
+      "place": "示例商場",
+      "address": "示例地址",
       "deadline": "2026-10-18",
       "url": "https://example.com/preorder",
       "sample": true

@@ -82,37 +82,119 @@ $('#btn-open-sidebar')?.addEventListener('click', (e) => {
   }
 });
 
-// Close sidebar on mobile when clicking nav
-$$('.nav-item').forEach(btn => {
-  btn.addEventListener('click', () => {
-    if (window.innerWidth <= 768) sidebar.classList.remove('open');
+const MODULE_TITLES = {
+  vocab: '生詞本',
+  season: '新番表',
+  fx: '匯率',
+  names: '中日英名稱對照',
+  codes: 'Mystery Gift／配送碼',
+  events: '香港活動看板',
+  subs: '訂閱／續費',
+};
+const MODULE_IDS = Object.keys(MODULE_TITLES);
+
+function parseAcgHash() {
+  let raw = '';
+  try { raw = decodeURIComponent((location.hash || '').replace(/^#/, '')); }
+  catch (e) { raw = (location.hash || '').replace(/^#/, ''); }
+  raw = raw.replace(/^\/+/, '');
+  const bits = raw.split('/').filter(Boolean);
+  let head = (bits[0] || '').toLowerCase();
+  let redirect = '';
+  let zh = false;
+  if (head === 'anime' || head === 'anime-subs' || head === 'subtitle' || head === 'subtitles') {
+    head = 'season';
+    zh = true;
+    redirect = '#season/zh';
+  }
+  if (head === 'season' && (bits[1] === 'zh' || bits[1] === 'subs')) zh = true;
+  if (!MODULE_IDS.includes(head)) head = raw ? 'vocab' : 'vocab';
+  return { mod: head, sub: bits[1] || '', zh, redirect, explicit: !!raw };
+}
+
+function saveNavSections() {
+  const state = {};
+  $$('.nav-section').forEach((sec) => {
+    const id = sec.dataset.section;
+    if (!id) return;
+    state[id] = sec.classList.contains('collapsed') ? 'collapsed' : 'open';
   });
+  try { localStorage.setItem('acg_nav_sections', JSON.stringify(state)); } catch (e) {}
+}
+
+function initNavSections() {
+  let saved = {};
+  try { saved = JSON.parse(localStorage.getItem('acg_nav_sections') || '{}'); } catch (e) {}
+  $$('.nav-section').forEach((sec) => {
+    const id = sec.dataset.section;
+    const toggle = sec.querySelector('.nav-section-toggle');
+    if (saved[id] === 'collapsed') sec.classList.add('collapsed');
+    const sync = () => {
+      if (toggle) toggle.setAttribute('aria-expanded', sec.classList.contains('collapsed') ? 'false' : 'true');
+    };
+    sync();
+    toggle?.addEventListener('click', (e) => {
+      e.preventDefault();
+      sec.classList.toggle('collapsed');
+      sync();
+      saveNavSections();
+    });
+  });
+}
+
+function expandNavSection(mod) {
+  const btn = document.querySelector(`.nav-item[data-module="${mod}"]`);
+  const sec = btn?.closest('.nav-section');
+  if (sec?.classList.contains('collapsed')) {
+    sec.classList.remove('collapsed');
+    sec.querySelector('.nav-section-toggle')?.setAttribute('aria-expanded', 'true');
+    saveNavSections();
+  }
+  return btn;
+}
+
+function showModule(mod, opts) {
+  opts = opts || {};
+  if (!MODULE_IDS.includes(mod)) mod = 'vocab';
+  const btn = expandNavSection(mod);
+  $$('.nav-item').forEach((b) => b.classList.remove('active'));
+  btn?.classList.add('active');
+  $$('.module').forEach((m) => m.classList.remove('active'));
+  $(`#module-${mod}`)?.classList.add('active');
+  const title = $('#page-title');
+  if (title) title.textContent = MODULE_TITLES[mod] || mod;
+  if (mod === 'fx' && typeof loadFx === 'function') loadFx();
+  if (mod === 'season' && typeof loadSeason === 'function') loadSeason();
+  if (mod === 'vocab' && opts.explicit && typeof startReview === 'function') startReview();
+  document.dispatchEvent(new CustomEvent('acg:module', { detail: { mod, sub: opts.sub || '' } }));
+}
+
+function applyAcgRoute() {
+  const parsed = parseAcgHash();
+  if (parsed.redirect) history.replaceState(null, '', parsed.redirect);
+  if (typeof window.acgSetSeasonZhOnly === 'function') window.acgSetSeasonZhOnly(!!parsed.zh, true);
+  else window.__acgSeasonZh = !!parsed.zh;
+  showModule(parsed.mod, { sub: parsed.sub, explicit: parsed.explicit });
+}
+
+window.showModule = showModule;
+window.applyAcgRoute = applyAcgRoute;
+initNavSections();
+
+sidebar?.addEventListener('click', (e) => {
+  const item = e.target.closest('.nav-item');
+  if (!item || !sidebar.contains(item)) return;
+  if (window.innerWidth <= 768) sidebar.classList.remove('open');
+  if (item.tagName === 'A') return;
+  const mod = item.dataset.module;
+  if (!mod) return;
+  e.preventDefault();
+  const next = '#' + mod;
+  if ((location.hash || '') === next) applyAcgRoute();
+  else location.hash = next;
 });
 
-// Module switch
-$$('.nav-item').forEach(btn => {
-  btn.addEventListener('click', () => {
-    const mod = btn.dataset.module;
-    if (!mod) return;
-    $$('.nav-item').forEach(b => b.classList.remove('active'));
-    btn.classList.add('active');
-    $$('.module').forEach(m => m.classList.remove('active'));
-    $(`#module-${mod}`)?.classList.add('active');
-    $('#page-title').textContent = ({
-      vocab: '生詞本',
-      season: '新番表',
-      fx: '匯率計算',
-      names: '中日英名稱對照',
-      codes: '配送碼',
-      events: '香港活動看板',
-      anime: '中文字幕動畫',
-      subs: '訂閱／續費',
-    })[mod] || mod;
-    if (mod === 'fx') loadFx();
-    if (mod === 'season') loadSeason();
-    if (mod === 'vocab') startReview();
-  });
-});
+window.addEventListener('hashchange', () => applyAcgRoute());
 
 
 // ==================== TTS ====================

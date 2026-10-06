@@ -91,49 +91,89 @@
     return 'active';
   }
 
-  function loadCodes() {
-    var status = $('#codes-status');
+  var codesState = { data: null, game: '' };
+
+  function codeHasGame(row, game) {
+    if (!game) return true;
+    var games = Array.isArray(row.games) ? row.games : [];
+    return games.indexOf(game) !== -1;
+  }
+
+  function renderCodes() {
+    var data = codesState.data;
+    if (!data) return;
     var showExpired = $('#codes-show-expired') && $('#codes-show-expired').checked;
+    var today = todayISO();
+    var note = $('#codes-note');
+    if (note) note.textContent = data.note || '';
+    var meta = $('#codes-meta');
+    if (meta) meta.textContent = '核對 ' + (data.checkedAt || '—');
+    var catalog = [];
+    var seenGame = {};
+    function addGame(name) {
+      if (!name || seenGame[name]) return;
+      seenGame[name] = true;
+      catalog.push(name);
+    }
+    (data.gamesCatalog || []).forEach(addGame);
+    (data.codes || []).forEach(function (row) {
+      (Array.isArray(row.games) ? row.games : []).forEach(addGame);
+    });
+    var gamesNav = $('#codes-games');
+    if (gamesNav) {
+      var chips = ['<button type="button" class="tab' + (codesState.game ? '' : ' active') + '" data-game="">全部</button>'];
+      catalog.forEach(function (name) {
+        chips.push('<button type="button" class="tab' + (codesState.game === name ? ' active' : '') +
+          '" data-game="' + escapeHtml(name) + '">' + escapeHtml(name) + '</button>');
+      });
+      gamesNav.innerHTML = chips.join('');
+    }
+    var rows = (data.codes || []).map(function (row) {
+      return Object.assign({}, row, { _status: codeEffectiveStatus(row, today) });
+    });
+    rows.sort(function (a, b) {
+      if (a._status !== b._status) return a._status === 'active' ? -1 : 1;
+      var ae = a.expires || '9999-99-99';
+      var be = b.expires || '9999-99-99';
+      if (ae !== be) return ae < be ? -1 : 1;
+      return String(a.code).localeCompare(String(b.code));
+    });
+    var forGame = rows.filter(function (row) { return codeHasGame(row, codesState.game); });
+    var visible = forGame.filter(function (row) { return showExpired || row._status === 'active'; });
+    var status = $('#codes-status');
+    if (status) status.classList.add('hidden');
+    var wrap = $('#codes-wrap');
+    if (wrap) wrap.classList.remove('hidden');
+    var body = $('#codes-body');
+    if (!visible.length) {
+      var emptyMsg = (codesState.game && !forGame.length) ? '暫未有公開配送碼' : '冇符合嘅代碼';
+      body.innerHTML = '<tr><td colspan="5">' + emptyMsg + '</td></tr>';
+      return;
+    }
+    body.innerHTML = visible.map(function (row) {
+      var games = (Array.isArray(row.games) ? row.games : []).map(function (g) {
+        return '<span class="badge badge-game">' + escapeHtml(g) + '</span>';
+      }).join(' ');
+      var badge = row._status === 'active'
+        ? '<span class="badge badge-active">有效</span>'
+        : '<span class="badge badge-expired">已過期</span>';
+      var src = row.source
+        ? '<div class="muted"><a href="' + escapeHtml(row.source) + '" target="_blank" rel="noopener">來源</a></div>'
+        : '';
+      return '<tr><td><code class="gift-code">' + escapeHtml(row.code) + '</code></td><td>' +
+        escapeHtml(row.contentZh || '') + src + '</td><td>' + (games || '—') + '</td><td>' +
+        escapeHtml(row.expires || '未公開') + '</td><td>' + badge + '</td></tr>';
+    }).join('');
+  }
+
+  function loadCodes() {
+    if (codesState.data) { renderCodes(); return; }
+    var status = $('#codes-status');
     fetch('data/codes.json')
       .then(function (r) { if (!r.ok) throw new Error('HTTP ' + r.status); return r.json(); })
       .then(function (data) {
-        loaded.codes = data;
-        var today = todayISO();
-        var note = $('#codes-note');
-        if (note) note.textContent = data.note || '';
-        var meta = $('#codes-meta');
-        if (meta) meta.textContent = '核對 ' + (data.checkedAt || '—');
-        var rows = (data.codes || []).map(function (row) {
-          return Object.assign({}, row, { _status: codeEffectiveStatus(row, today) });
-        });
-        rows.sort(function (a, b) {
-          if (a._status !== b._status) return a._status === 'active' ? -1 : 1;
-          var ae = a.expires || '9999-99-99';
-          var be = b.expires || '9999-99-99';
-          if (ae !== be) return ae < be ? -1 : 1;
-          return String(a.code).localeCompare(String(b.code));
-        });
-        var visible = rows.filter(function (row) { return showExpired || row._status === 'active'; });
-        if (status) status.classList.add('hidden');
-        var wrap = $('#codes-wrap');
-        if (wrap) wrap.classList.remove('hidden');
-        var body = $('#codes-body');
-        if (!visible.length) {
-          body.innerHTML = '<tr><td colspan="5">冇符合嘅代碼</td></tr>';
-          return;
-        }
-        body.innerHTML = visible.map(function (row) {
-          var games = Array.isArray(row.games) ? row.games.join('、') : (row.games || '');
-          var badge = row._status === 'active'
-            ? '<span class="badge badge-active">有效</span>'
-            : '<span class="badge badge-expired">已過期</span>';
-          var src = row.source
-            ? '<div class="muted"><a href="' + escapeHtml(row.source) + '" target="_blank" rel="noopener">來源</a></div>'
-            : '';
-          return '<tr><td><code class="gift-code">' + escapeHtml(row.code) + '</code></td><td>' +
-            escapeHtml(row.contentZh || '') + src + '</td><td>' + escapeHtml(games) + '</td><td>' +
-            escapeHtml(row.expires || '未公開') + '</td><td>' + badge + '</td></tr>';
-        }).join('');
+        codesState.data = data;
+        renderCodes();
       })
       .catch(function (err) {
         if (status) status.innerHTML = '<p>載入失敗</p><p class="sub">' + escapeHtml(err.message) + '</p>';
@@ -157,6 +197,21 @@
     return true;
   }
 
+  function mapsHref(row) {
+    if (row.mapUrl && /^https?:\/\//i.test(String(row.mapUrl))) return String(row.mapUrl);
+    var q = [row.place, row.address].filter(Boolean).join(' ');
+    if (!q) return '';
+    return 'https://www.google.com/maps/search/?api=1&query=' + encodeURIComponent(q);
+  }
+
+  function linkedPlace(text, href) {
+    var label = text || '';
+    if (!label) return '—';
+    if (!href) return escapeHtml(label);
+    return '<a class="place-link" href="' + escapeHtml(href) + '" target="_blank" rel="noopener" title="喺 Google 地圖開啟">' +
+      escapeHtml(label) + '</a>';
+  }
+
   function renderEvents() {
     var data = eventsState.data;
     if (!data) return;
@@ -173,8 +228,9 @@
       body.innerHTML = rows.length ? rows.map(function (row) {
         var label = [row.ip, row.item].filter(Boolean).join(' · ');
         var link = row.url ? '<a href="' + escapeHtml(row.url) + '" target="_blank" rel="noopener">開啟</a>' : '—';
+        var shopHref = mapsHref(row);
         return '<tr><td>' + escapeHtml(label) + (row.sample ? ' <span class="badge badge-sample">示例</span>' : '') +
-          '</td><td>' + escapeHtml(row.shop || '') + '</td><td>' + escapeHtml(row.deadline || '') +
+          '</td><td>' + linkedPlace(row.shop || row.place || '', shopHref) + '</td><td>' + escapeHtml(row.deadline || '') +
           '</td><td>' + link + '</td></tr>';
       }).join('') : '<tr><td colspan="4">呢個篩選冇資料</td></tr>';
     } else {
@@ -185,7 +241,7 @@
         var source = row.source ? '<a href="' + escapeHtml(row.source) + '" target="_blank" rel="noopener">來源</a>' : '—';
         return '<tr><td>' + escapeHtml(when) + '</td><td>' + escapeHtml(row.title || '') +
           (row.sample ? ' <span class="badge badge-sample">示例</span>' : '') + '</td><td>' +
-          escapeHtml(row.place || '') + '</td><td>' + ticket + '</td><td>' + source + '</td></tr>';
+          linkedPlace(row.place || '', mapsHref(row)) + '</td><td>' + ticket + '</td><td>' + source + '</td></tr>';
       }).join('') : '<tr><td colspan="5">呢個篩選冇資料</td></tr>';
     }
     $('#events-status').classList.add('hidden');
@@ -246,34 +302,295 @@
       });
   }
 
-  function loadAnime() {
-    if (loaded.anime) return;
-    fetch('data/anime-subs.json')
+  var SIMP_MAP = null;
+  function tradToSimp(s) {
+    if (!SIMP_MAP) {
+      SIMP_MAP = {};
+      ('藥药 偵侦 東东 戰战 龍龙 國国 門门 長长 馬马 車车 書书 畫画 電电 視视 動动 亞亚 麗丽 夢梦 靈灵 術术 師师 鬥斗 強强 無无 雙双 與与 為为 裡里 裏里 過过 進进 達达 遠远 見见 觀观 聽听 問问 題题 義义 認认 話话 誰谁 應应 還还 個个 們们 開开 關关 時时 間间 會会 來来 這这 說说 後后 發发 對对 機机 記记 從从 麼么 鳥鸟 魚鱼 聲声 學学 歐欧 爭争 於于 該该 議议 識识 雲云 氣气 點点 體体 頭头 實实 現现 業业 經经 歷历 齊齐 齒齿 齡龄 廣广 慶庆 庫库 廳厅 廚厨 廟庙 廢废 異异 當当 網网 線线 練练 鐵铁 銀银 銅铜 錢钱 鐘钟 鍵键 鏡镜 閣阁 隊队 陽阳 陰阴 陳陈 陸陆 險险 隱隐 難难 雞鸡 離离 霧雾 頁页 順顺 須须 預预 領领 風风 飛飞 飯饭 餅饼 養养 餘余 駐驻 驗验 髮发 鬧闹 鮮鲜 黃黄 黨党 龜龟 萬万 專专 叢丛 並并 乾干 亂乱 俠侠 倉仓 倫伦 偉伟 側侧 偽伪 傑杰 傘伞 備备 傭佣 傳传 債债 傷伤 傾倾 僅仅 僑侨 僕仆 價价 儉俭 優优 內内 兩两 衝冲 決决 況况 剛刚 劇剧 勸劝 務务 勝胜 勞劳 勢势 匯汇 區区 協协 卻却 廠厂 參参 敘叙 疊叠 葉叶 號号 團团 圖图 圓圆 聖圣 場场 壞坏 塊块 堅坚 壽寿 奪夺 奮奋 孫孙 宮宫 審审 導导 層层 島岛 嶺岭 帳帐 幣币 幾几 棄弃 張张 彈弹 徑径 復复 懷怀 戀恋 戲戏 戶户 執执 掃扫 揚扬 揮挥 據据 擬拟 擊击 擋挡 擴扩 攝摄 數数 斷断 晝昼 曉晓 殺杀 雜杂 權权 條条 極极 樂乐 樓楼 歲岁 歸归 殘残 殼壳 沒没 測测 湯汤 溝沟 溫温 滅灭 燈灯 燒烧 營营 牆墙 獨独 獲获 獸兽 環环 產产 療疗 盡尽 盤盘 眾众 礙碍 礎础 禍祸 積积 穩稳 窮穷 節节 範范 簡简 紅红 純纯 級级 緊紧 緣缘 縣县 縫缝 縮缩 羅罗 習习 聞闻 聯联 職职 腸肠 膚肤 興兴 捨舍 艦舰 藝艺 蒼苍 蓋盖 處处 蟲虫 衛卫 補补 裝装 褲裤 製制 複复 規规 覽览 觸触 訂订 計计 討讨 讓让 護护 誠诚 誤误 課课 調调 談谈 請请 論论 謝谢 證证 譯译 豐丰 豬猪 貓猫 貝贝 貢贡 財财 貨货 責责 貴贵 買买 費费 賽赛 贏赢 跡迹 車车 軍军 較较 載载 輕轻 輛辆 輪轮 轉转 辦办 週周 連连 遊游 運运 違违 遙遥 適适 選选 遲迟 遺遗 鄰邻 醜丑 醫医 針针 鈴铃 錯错 錶表 鍋锅 鎖锁 鎮镇 鑄铸 閃闪 閉闭 閑闲 閘闸 類类 飄飘 飾饰 館馆 騎骑 鳴鸣 鵝鹅 齊齐').split(/\s+/).forEach(function (pair) {
+        if (pair.length === 2) SIMP_MAP[pair.charAt(0)] = pair.charAt(1);
+      });
+    }
+    return String(s || '').replace(/[\u3400-\u9fff]/g, function (ch) { return SIMP_MAP[ch] || ch; });
+  }
+
+  function decodeEntities(s) {
+    return String(s || '')
+      .replace(/&amp;/g, '&')
+      .replace(/&lt;/g, '<')
+      .replace(/&gt;/g, '>')
+      .replace(/&quot;/g, '"')
+      .replace(/&#39;/g, "'");
+  }
+
+  var CN_DIGIT = { '零': 0, '〇': 0, '一': 1, '二': 2, '三': 3, '四': 4, '五': 5, '六': 6, '七': 7, '八': 8, '九': 9 };
+  function cnToInt(raw) {
+    var s = String(raw || '');
+    if (/^[0-9]+$/.test(s)) return String(parseInt(s, 10));
+    if (s === '十') return '10';
+    var ten = s.indexOf('十');
+    if (ten === -1) {
+      if (s.length === 1 && CN_DIGIT[s] != null) return String(CN_DIGIT[s]);
+      return '';
+    }
+    var hi = ten === 0 ? 1 : CN_DIGIT[s.charAt(0)];
+    var lo = ten === s.length - 1 ? 0 : CN_DIGIT[s.charAt(ten + 1)];
+    if (hi == null || lo == null) return '';
+    return String(hi * 10 + lo);
+  }
+
+  function normTitle(s) {
+    var t = decodeEntities(s);
+    try { t = t.normalize('NFKC'); } catch (e) {}
+    t = tradToSimp(t.toLowerCase());
+    t = t.replace(/([0-9]+)\s*(?:st|nd|rd|th)\s*season/g, '第$1季');
+    t = t.replace(/season\s*([0-9]+)/g, '第$1季');
+    t = t.replace(/第\s*([0-9]+|[零〇一二三四五六七八九十]+)\s*(?:期|季|部)/g, function (_, n) {
+      var num = cnToInt(n);
+      return num ? ('s' + num) : _;
+    });
+    t = t.replace(/[\s\u3000·・･．.。、，,：:；;！!？?～〜\-–—_／/\\()（）[\]【】「」『』《》〈〉"'“”‘’#&+]+/g, '');
+    return t;
+  }
+
+  function safeHttp(url) {
+    var u = String(url || '');
+    return /^https?:\/\//i.test(u) ? u : '';
+  }
+
+  function bgmIdOf(row) {
+    if (row && row.bgmId != null && row.bgmId !== '') return String(row.bgmId);
+    var src = String((row && row.source) || '');
+    var m = src.match(/bgm\.tv\/subject\/(\d+)/);
+    return m ? m[1] : '';
+  }
+
+  function indexSubs(items) {
+    var byId = {};
+    var byName = {};
+    (items || []).forEach(function (row, i) {
+      row._i = i;
+      var id = bgmIdOf(row);
+      if (id && !byId[id]) byId[id] = row;
+      [row.title, row.titleJa].concat(Array.isArray(row.aliases) ? row.aliases : []).forEach(function (name) {
+        var key = normTitle(name);
+        if (key && !byName[key]) byName[key] = row;
+      });
+    });
+    return { byId: byId, byName: byName, items: items || [] };
+  }
+
+  function matchSub(item, index) {
+    if (!item || !index) return null;
+    if (item.id != null && index.byId[String(item.id)]) return index.byId[String(item.id)];
+    var keys = [normTitle(item.name), normTitle(item.name_cn)];
+    for (var i = 0; i < keys.length; i++) {
+      if (keys[i] && index.byName[keys[i]]) return index.byName[keys[i]];
+    }
+    return null;
+  }
+
+  function pairSeason(days, items) {
+    var index = indexSubs(items);
+    var matched = {};
+    var groups = (days || []).map(function (day) {
+      var rows = (day.items || []).map(function (item) {
+        var sub = matchSub(item, index);
+        if (sub) matched[sub._i] = true;
+        return { item: item, sub: sub };
+      });
+      return { weekday: day.weekday || {}, rows: rows };
+    });
+    var unmatched = index.items.filter(function (row) { return !matched[row._i]; });
+    return { groups: groups, unmatched: unmatched };
+  }
+
+  var seasonView = { days: null, subs: null, zhOnly: false, platform: '' };
+
+  function subPasses(sub) {
+    if (!sub) return !seasonView.zhOnly && !seasonView.platform;
+    if (seasonView.zhOnly && !sub) return false;
+    if (seasonView.platform) {
+      var platforms = Array.isArray(sub.platforms) ? sub.platforms : [];
+      if (platforms.indexOf(seasonView.platform) === -1) return false;
+    }
+    return true;
+  }
+
+  function subPanel(sub) {
+    if (!sub) return '';
+    var badges = [];
+    badges.push('<span class="badge badge-sub">' + escapeHtml(sub.subtitle || '中文字幕') + '</span>');
+    (Array.isArray(sub.platforms) ? sub.platforms : []).forEach(function (p) {
+      badges.push('<span class="badge">' + escapeHtml(p) + '</span>');
+    });
+    if (sub.sample) badges.push('<span class="badge badge-sample">樣本</span>');
+    var meta = [sub.regionNote, sub.scheduleHkt].filter(Boolean).map(escapeHtml).join(' · ');
+    var src = safeHttp(sub.source);
+    var srcHtml = src ? '<div class="anime-sub-src"><a href="' + escapeHtml(src) + '" target="_blank" rel="noopener">字幕來源</a></div>' : '';
+    return '<div class="anime-sub-panel"><div class="anime-sub-line">' + badges.join('') + '</div>' +
+      (meta ? '<div class="anime-sub-meta muted">' + meta + '</div>' : '') + srcHtml + '</div>';
+  }
+
+  function seasonCard(item, sub) {
+    var rawName = item.name_cn || item.name || sub && sub.title || '未知';
+    var name = decodeEntities(rawName);
+    var rawJa = item.name && decodeEntities(item.name) !== name ? decodeEntities(item.name) : (sub && sub.titleJa && sub.titleJa !== name ? sub.titleJa : '');
+    var cover = item.images && (item.images.common || item.images.large || item.images.medium) || '';
+    var url = safeHttp(item.url) || (item.id ? ('https://bgm.tv/subject/' + encodeURIComponent(item.id)) : '');
+    var scoreNum = item.rating && item.rating.score ? Number(item.rating.score) : 0;
+    var score = scoreNum ? scoreNum.toFixed(1) : '';
+    var air = item.air_date && item.air_date !== '0000-00-00' ? item.air_date : '';
+    var hitOpen = url ? '<a class="anime-card-hit" href="' + escapeHtml(url) + '" target="_blank" rel="noopener">' : '<div class="anime-card-hit">';
+    var hitClose = url ? '</a>' : '</div>';
+    return '<article class="anime-card' + (sub ? ' anime-card-sub' : '') + '">' + hitOpen +
+      (cover ? '<img class="anime-cover" src="' + escapeHtml(cover) + '" alt="" loading="lazy" />' : '<div class="anime-cover"></div>') +
+      '<div class="anime-info"><div class="anime-name" title="' + escapeHtml(name) + '">' + escapeHtml(name) + '</div>' +
+      (rawJa ? '<div class="muted">' + escapeHtml(rawJa) + '</div>' : '') +
+      (air ? '<div class="anime-date">' + escapeHtml(air) + '</div>' : '') +
+      (score ? '<div class="anime-score">★ ' + escapeHtml(score) + '</div>' : '') +
+      '</div>' + hitClose + subPanel(sub) + '</article>';
+  }
+
+  function fillPlatforms(items) {
+    var sel = $('#season-platform');
+    if (!sel) return;
+    var current = seasonView.platform;
+    var seen = {};
+    var names = [];
+    (items || []).forEach(function (row) {
+      (Array.isArray(row.platforms) ? row.platforms : []).forEach(function (p) {
+        if (!p || seen[p]) return;
+        seen[p] = true;
+        names.push(p);
+      });
+    });
+    names.sort();
+    sel.innerHTML = '<option value="">全部平台</option>' + names.map(function (p) {
+      return '<option value="' + escapeHtml(p) + '">' + escapeHtml(p) + '</option>';
+    }).join('');
+    if (current && seen[current]) sel.value = current;
+    else {
+      seasonView.platform = '';
+      sel.value = '';
+    }
+  }
+
+  var seasonPainting = false;
+
+  function paintSeason() {
+    if (seasonPainting) return;
+    seasonPainting = true;
+    try {
+    var container = $('#season-content');
+    if (!container || !seasonView.days) return;
+    var subs = seasonView.subs || { items: [], note: '' };
+    var note = $('#season-subs-note');
+    if (note) note.textContent = subs.note || '';
+    fillPlatforms(subs.items || []);
+    var paired = pairSeason(seasonView.days, subs.items || []);
+    var jsDay = new Date().getDay();
+    var todayBgmId = jsDay === 0 ? 7 : jsDay;
+    var groups = paired.groups.slice().sort(function (a, b) {
+      var idA = a.weekday.id || 0;
+      var idB = b.weekday.id || 0;
+      if (idA === todayBgmId && idB !== todayBgmId) return -1;
+      if (idB === todayBgmId && idA !== todayBgmId) return 1;
+      return ((idA - todayBgmId + 7) % 7) - ((idB - todayBgmId + 7) % 7);
+    });
+    var html = groups.map(function (day) {
+      var rows = day.rows.filter(function (row) { return subPasses(row.sub); });
+      if (!rows.length) return '';
+      var id = day.weekday.id || 0;
+      var isToday = id === todayBgmId;
+      var dayName = day.weekday.cn || day.weekday.ja || day.weekday.en || '其他';
+      return '<div class="weekday-section' + (isToday ? ' weekday-today' : '') + '">' +
+        '<div class="weekday-title">' + escapeHtml(dayName) + (isToday ? ' · 今日' : '') + '（' + rows.length + ' 部）</div>' +
+        '<div class="anime-grid">' + rows.map(function (row) { return seasonCard(row.item, row.sub); }).join('') + '</div></div>';
+    }).join('');
+    var extra = paired.unmatched.filter(function (row) { return subPasses(row); });
+    if (extra.length) {
+      html += '<div class="weekday-section weekday-unmatched"><div class="weekday-title">未收錄於本季 Bangumi 表（' +
+        extra.length + '）</div><div class="anime-grid">' + extra.map(function (row) {
+          return seasonCard({
+            name_cn: row.title || '',
+            name: row.titleJa || '',
+            url: safeHttp(row.source) || '',
+            images: {},
+            rating: {}
+          }, row);
+        }).join('') + '</div></div>';
+    }
+    container.innerHTML = html || '<div class="empty-state"><p>呢個篩選冇動畫</p></div>';
+    } finally {
+      seasonPainting = false;
+    }
+  }
+
+  function ensureSeasonSubs(force) {
+    if (seasonView.subs && !force) return Promise.resolve(seasonView.subs);
+    return fetch('data/anime-subs.json' + (force ? ('?t=' + Date.now()) : ''), { cache: force ? 'no-store' : 'default' })
       .then(function (r) { if (!r.ok) throw new Error('HTTP ' + r.status); return r.json(); })
       .then(function (data) {
-        loaded.anime = true;
-        var meta = $('#anime-meta');
-        if (meta) meta.textContent = data.updatedAt || '';
-        var note = $('#anime-note');
-        if (note) note.textContent = data.note || '';
-        var body = $('#anime-body');
-        var items = data.items || [];
-        body.innerHTML = items.length ? items.map(function (row) {
-          var platforms = Array.isArray(row.platforms) ? row.platforms.join('、') : (row.platforms || '');
-          var title = escapeHtml(row.title || '');
-          if (row.titleJa) title += '<div class="muted">' + escapeHtml(row.titleJa) + '</div>';
-          if (row.sample) title += ' <span class="badge badge-sample">樣本</span>';
-          var source = row.source ? '<a href="' + escapeHtml(row.source) + '" target="_blank" rel="noopener">來源</a>' : '—';
-          return '<tr><td>' + title + '</td><td>' + escapeHtml(platforms) + '</td><td>' +
-            escapeHtml(row.regionNote || '') + '</td><td>' + escapeHtml(row.scheduleHkt || '') +
-            '</td><td>' + source + '</td></tr>';
-        }).join('') : '<tr><td colspan="5">未有資料</td></tr>';
-        $('#anime-status').classList.add('hidden');
-        $('#anime-wrap').classList.remove('hidden');
+        seasonView.subs = data || { items: [] };
+        return seasonView.subs;
       })
-      .catch(function (err) {
-        $('#anime-status').innerHTML = '<p>載入失敗</p><p class="sub">' + escapeHtml(err.message) + '</p>';
+      .catch(function () {
+        if (!seasonView.subs) seasonView.subs = { items: [], note: '中文字幕資料載入失敗，放送表仍然顯示。' };
+        return seasonView.subs;
       });
+  }
+
+  window.renderSeason = function (days) {
+    seasonView.days = Array.isArray(days) ? days : [];
+    if (window.__acgSeasonZh) seasonView.zhOnly = true;
+    var box = $('#season-zh-only');
+    if (box) box.checked = !!seasonView.zhOnly;
+    paintSeason();
+    ensureSeasonSubs(false).then(function () { paintSeason(); });
+  };
+
+  window.acgSetSeasonZhOnly = function (on, fromRoute) {
+    seasonView.zhOnly = !!on;
+    window.__acgSeasonZh = !!on;
+    var box = $('#season-zh-only');
+    if (box) box.checked = seasonView.zhOnly;
+    if (!fromRoute) {
+      var next = seasonView.zhOnly ? '#season/zh' : '#season';
+      if (/^#season/.test(location.hash || '') && location.hash !== next) history.replaceState(null, '', next);
+    }
+    if (seasonView.days) paintSeason();
+  };
+
+  window.acgMatchSubs = function (days, items) {
+    var paired = pairSeason(days, items);
+    var pairs = [];
+    paired.groups.forEach(function (day) {
+      day.rows.forEach(function (row) {
+        if (row.sub) pairs.push({ id: row.item.id, title: row.item.name_cn || row.item.name, sub: row.sub.title, via: bgmIdOf(row.sub) && String(row.item.id) === bgmIdOf(row.sub) ? 'bgmId' : 'name' });
+      });
+    });
+    return {
+      pairs: pairs,
+      unmatched: paired.unmatched.map(function (row) { return row.title; })
+    };
+  };
+
+  var zhBox = $('#season-zh-only');
+  if (zhBox) zhBox.addEventListener('change', function () {
+    window.acgSetSeasonZhOnly(zhBox.checked, false);
+  });
+  var platformSel = $('#season-platform');
+  if (platformSel) platformSel.addEventListener('change', function () {
+    if (seasonPainting) return;
+    seasonView.platform = platformSel.value || '';
+    if (seasonView.days) paintSeason();
+  });
+  if (typeof window.loadSeason === 'function') {
+    var innerLoadSeason = window.loadSeason;
+    window.loadSeason = function (force) {
+      if (force) seasonView.subs = null;
+      return innerLoadSeason.apply(this, arguments);
+    };
   }
 
   function monthlyShare(row) {
@@ -338,15 +655,19 @@
       });
   }
 
-  document.querySelectorAll('.nav-item').forEach(function (btn) {
-    btn.addEventListener('click', function () {
-      var mod = btn.dataset.module;
-      if (mod === 'names') loadNames();
-      if (mod === 'codes') loadCodes();
-      if (mod === 'events') loadEvents();
-      if (mod === 'anime') loadAnime();
-      if (mod === 'subs') loadSubs();
-    });
+  document.addEventListener('acg:module', function (e) {
+    var mod = e.detail && e.detail.mod;
+    var sub = (e.detail && e.detail.sub) || '';
+    if (mod === 'names') loadNames();
+    if (mod === 'codes') loadCodes();
+    if (mod === 'events') {
+      eventsState.tab = sub === 'deadlines' ? 'deadlines' : 'events';
+      document.querySelectorAll('#events-tabs .tab').forEach(function (b) {
+        b.classList.toggle('active', (b.dataset.eventsTab || 'events') === eventsState.tab);
+      });
+      loadEvents();
+    }
+    if (mod === 'subs') loadSubs();
   });
 
   var namesQ = $('#names-q');
@@ -364,15 +685,21 @@
   });
   var expiredToggle = $('#codes-show-expired');
   if (expiredToggle) expiredToggle.addEventListener('change', function () {
-    loaded.codes = null;
-    loadCodes();
+    renderCodes();
+  });
+  var codesGames = $('#codes-games');
+  if (codesGames) codesGames.addEventListener('click', function (e) {
+    var btn = e.target.closest('[data-game]');
+    if (!btn) return;
+    codesState.game = btn.getAttribute('data-game') || '';
+    renderCodes();
   });
   document.querySelectorAll('#events-tabs .tab').forEach(function (btn) {
     btn.addEventListener('click', function () {
-      document.querySelectorAll('#events-tabs .tab').forEach(function (b) { b.classList.remove('active'); });
-      btn.classList.add('active');
-      eventsState.tab = btn.dataset.eventsTab || 'events';
-      renderEvents();
+      var tab = btn.dataset.eventsTab || 'events';
+      var next = tab === 'deadlines' ? '#events/deadlines' : '#events';
+      if ((location.hash || '') === next) return;
+      location.hash = next;
     });
   });
   document.querySelectorAll('#events-filters .tab').forEach(function (btn) {
@@ -385,4 +712,6 @@
   });
   var icsBtn = $('#btn-export-ics');
   if (icsBtn) icsBtn.addEventListener('click', exportIcs);
+
+  if (typeof window.applyAcgRoute === 'function') window.applyAcgRoute();
 })();

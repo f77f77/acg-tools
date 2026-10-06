@@ -1,8 +1,65 @@
 {
   "schema": "codes.v1",
-  "checkedAt": "2026-10-05",
-  "note": "種子清單，整理自 2026-09 公開 Mystery Gift 列表（The Click、PokeGens、Pokétory、Dexerto）。代碼可隨時結束，兌換前請再對來源。過期列預設收起。",
+  "checkedAt": "2026-10-06",
+  "note": "種子清單。朱／紫／傳說 Z-A 整理自 2026-09 公開 Mystery Gift 列表（The Click、PokeGens、Pokétory、Dexerto）。寶可夢 Champions 只收錄 Serebii 或 Bulbapedia 寫明嘅公開共用序號（2026-10-06）；單次序號同賽事獎勵冇列入。代碼可隨時結束，兌換前請再對來源。過期列預設收起。",
+  "gamesCatalog": ["寶可夢 朱", "寶可夢 紫", "寶可夢傳說 Z-A", "寶可夢 Champions"],
   "codes": [
+    {
+      "code": "10M1NTRNR",
+      "contentZh": "加速券 ×100（Blinkit 合作）",
+      "games": ["寶可夢 Champions"],
+      "expires": "2026-12-31",
+      "status": "active",
+      "source": "https://www.serebii.net/pokemonchampions/serialcode.shtml"
+    },
+    {
+      "code": "ENJ0YW0RLDS26",
+      "contentZh": "2026 世界賽紀念紅帽及紅 T 恤",
+      "games": ["寶可夢 Champions"],
+      "expires": "2026-09-05",
+      "status": "expired",
+      "source": "https://www.serebii.net/pokemonchampions/serialcode.shtml"
+    },
+    {
+      "code": "W0R1DCHAMP10NS26",
+      "contentZh": "勝利點數 ×5000",
+      "games": ["寶可夢 Champions"],
+      "expires": "2026-08-30",
+      "status": "expired",
+      "source": "https://bulbapedia.bulbagarden.net/wiki/List_of_event_distributions_in_Pok%C3%A9mon_Champions"
+    },
+    {
+      "code": "NA1CCHAMP",
+      "contentZh": "加速券 ×22（2026 NAIC）",
+      "games": ["寶可夢 Champions"],
+      "expires": "2026-07-15",
+      "status": "expired",
+      "source": "https://bulbapedia.bulbagarden.net/wiki/List_of_event_distributions_in_Pok%C3%A9mon_Champions"
+    },
+    {
+      "code": "L12ARD0NPJCS26",
+      "contentZh": "噴火龍（日本錦標賽）",
+      "games": ["寶可夢 Champions"],
+      "expires": "2026-06-14",
+      "status": "expired",
+      "source": "https://www.serebii.net/pokemonchampions/serialcode.shtml"
+    },
+    {
+      "code": "DRAG0NDANCEPTC26",
+      "contentZh": "暴鯉龍（韓國 Sports Day）",
+      "games": ["寶可夢 Champions"],
+      "expires": "2026-05-31",
+      "status": "expired",
+      "source": "https://www.serebii.net/pokemonchampions/serialcode.shtml"
+    },
+    {
+      "code": "CHAMP10N",
+      "contentZh": "怪力（任天堂通訊）",
+      "games": ["寶可夢 Champions"],
+      "expires": "2026-08-31",
+      "status": "expired",
+      "source": "https://www.serebii.net/pokemonchampions/serialcode.shtml"
+    },
     {
       "code": "STRACKSU1T",
       "contentZh": "朱版訓練家運動套裝",
