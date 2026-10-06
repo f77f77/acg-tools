@@ -1,0 +1,31 @@
+{
+  "updated_at": "2026-10-06T00:00:00Z",
+  "source": "fixture",
+  "days": [
+    {
+      "weekday": {"en": "Wed", "cn": "星期三", "id": 3},
+      "items": [
+        {"id": 975, "name": "ONE PIECE", "name_cn": "航海王", "air_date": "1999-10-20"}
+      ]
+    },
+    {
+      "weekday": {"en": "Fri", "cn": "星期五", "id": 5},
+      "items": [
+        {"id": 568244, "name": "薬屋のひとりごと 第3期", "name_cn": "药屋少女的呢喃 第三季", "air_date": "2026-10-02"}
+      ]
+    },
+    {
+      "weekday": {"en": "Sat", "cn": "星期六", "id": 6},
+      "items": [
+        {"id": 899, "name": "名探偵コナン", "name_cn": "名侦探柯南", "air_date": "1996-01-08"}
+      ]
+    },
+    {
+      "weekday": {"en": "Sun", "cn": "星期日", "id": 7},
+      "items": [
+        {"id": 548156, "name": "アオのハコ Season 2", "name_cn": "青之箱 第二季", "air_date": "2026-10-04"},
+        {"id": 555605, "name": "アオアシ Season 2", "name_cn": "青之芦苇 第二季", "air_date": "2026-10-04"}
+      ]
+    }
+  ]
+}

@@ -18,11 +18,12 @@
 ├── index.html, app.js, app-extra.js, modules.js, *.css, season.json
 ├── data/                          hub 模組 JSON（名稱、配送碼、活動、字幕、訂閱）
 ├── scripts/
-│   ├── update_season.py           Bangumi → season.json（原有）
+│   ├── update_season.py           Bangumi → season.json（原有，行為不變）
+│   ├── sync_anime_subs.py         Notion「中文字幕動畫播放表」→ data/anime-subs.json
 │   ├── build-pages.sh             hub + champions → dist/
 │   ├── build_names_index.mjs      Champions 資料 → data/names.json
 │   ├── refresh_codes_stub.py      只驗證 codes schema（含 gamesCatalog）
-│   └── refresh_anime_stub.py      只驗證 anime-subs schema（新番表疊加）
+│   └── refresh_anime_stub.py      驗證 anime-subs schema（同 bgm 快取）
 └── apps/champions/                原 pokemon-champions-assistant（src、public、electron、scripts）
 ```
 
@@ -73,9 +74,10 @@ Vite `base` 係 `/acg-tools/champions/`，因為專案站本身已經帶 `/acg-t
 
 | 資料 | 點更新 |
 | --- | --- |
-| `season.json` | 原有 `.github/workflows/update-season.yml`，每日 Bangumi |
+| `season.json` | 原有 `.github/workflows/update-season.yml`，每日 00:15 HKT Bangumi。行為冇改 |
+| `data/anime-subs.json` | `.github/workflows/sync-anime-subs.yml`，每日 06:17 HKT 由 Notion 同步。密鑰見 [data/README.md](data/README.md) |
 | Champions 用法 JSON、`data/names.json` 嘅招式／寶可夢名 | `.github/workflows/build-pokemon-data.yml`（路徑已改到 `apps/champions`）。名稱索引唔會打 PokéAPI；特性同道具日文要本地 `node scripts/build_names_index.mjs --fetch` |
-| 配送碼、字幕疊加 | 種子 JSON。`.github/workflows/hub-seeds.yml` 每週只做 schema 檢查，未有抓取。字幕表併入新番表 |
+| 配送碼 | 種子 JSON。`.github/workflows/hub-seeds.yml` 每週只做 schema 檢查，未有抓取。同一支 workflow 會用 fixture 離線跑字幕對應 |
 | 香港活動、訂閱 | 種子／示例 JSON，手改 `data/`。訂閱金額全部標成示例 |
 
 Schema 見 [data/README.md](data/README.md)。
@@ -94,6 +96,7 @@ Schema 見 [data/README.md](data/README.md)。
 
 ## Hub 版本
 
+- **1.3**（2026-10-06）：新番表中文字幕改由 Notion「中文字幕動畫播放表」每日同步；未能對上 Bangumi 嘅作品會摺起列出，等你補 `bgmId`。
 - **1.2**（2026-10-06）：深色主題連結改為可讀淺藍色，懸停才加底線；側欄圖示固定寬度對齊，對戰助手改用 ⚔️。
 - **1.1**（2026-10-06）：側欄分組；新番表合併中文字幕；配送碼加入寶可夢 Champions；活動同周邊地點連到 Google 地圖。
 - **1.0**：Monorepo hub，五個資料模組同密碼閘。

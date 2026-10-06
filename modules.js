@@ -302,6 +302,7 @@
       });
   }
 
+  // scripts/sync_anime_subs.py reads the pair list in tradToSimp. Keep that string intact.
   var SIMP_MAP = null;
   function tradToSimp(s) {
     if (!SIMP_MAP) {
@@ -420,10 +421,11 @@
     if (!sub) return '';
     var badges = [];
     badges.push('<span class="badge badge-sub">' + escapeHtml(sub.subtitle || '中文字幕') + '</span>');
+    if (sub.status) badges.push('<span class="badge">' + escapeHtml(sub.status) + '</span>');
     (Array.isArray(sub.platforms) ? sub.platforms : []).forEach(function (p) {
       badges.push('<span class="badge">' + escapeHtml(p) + '</span>');
     });
-    if (sub.sample) badges.push('<span class="badge badge-sample">樣本</span>');
+    if (sub.sample === true) badges.push('<span class="badge badge-sample">樣本</span>');
     var meta = [sub.regionNote, sub.scheduleHkt].filter(Boolean).map(escapeHtml).join(' · ');
     var src = safeHttp(sub.source);
     var srcHtml = src ? '<div class="anime-sub-src"><a href="' + escapeHtml(src) + '" target="_blank" rel="noopener">字幕來源</a></div>' : '';
@@ -449,6 +451,38 @@
       (air ? '<div class="anime-date">' + escapeHtml(air) + '</div>' : '') +
       (score ? '<div class="anime-score">★ ' + escapeHtml(score) + '</div>' : '') +
       '</div>' + hitClose + subPanel(sub) + '</article>';
+  }
+
+  function renderSubsChrome(subs) {
+    subs = subs || {};
+    var updated = $('#season-subs-updated');
+    if (updated) {
+      if (subs.updatedAt) {
+        updated.hidden = false;
+        updated.textContent = '字幕資料更新：' + subs.updatedAt;
+      } else {
+        updated.hidden = true;
+        updated.textContent = '';
+      }
+    }
+    var note = $('#season-subs-note');
+    if (note) note.textContent = subs.note || '';
+    var box = $('#season-unresolved');
+    var pending = Array.isArray(subs.unresolved) ? subs.unresolved : [];
+    if (!box) return;
+    if (!pending.length) {
+      box.hidden = true;
+      box.open = false;
+      box.innerHTML = '';
+      return;
+    }
+    box.hidden = false;
+    box.innerHTML = '<summary>有 ' + pending.length + ' 套未能自動對上 Bangumi，請在 Notion 填 bgmId</summary><ul>' +
+      pending.map(function (row) {
+        var title = row.title || row.titleJa || '未命名';
+        var ja = row.titleJa && row.titleJa !== row.title ? (' · ' + row.titleJa) : '';
+        return '<li>' + escapeHtml(title + ja) + '</li>';
+      }).join('') + '</ul>';
   }
 
   function fillPlatforms(items) {
@@ -484,8 +518,7 @@
     var container = $('#season-content');
     if (!container || !seasonView.days) return;
     var subs = seasonView.subs || { items: [], note: '' };
-    var note = $('#season-subs-note');
-    if (note) note.textContent = subs.note || '';
+    renderSubsChrome(subs);
     fillPlatforms(subs.items || []);
     var paired = pairSeason(seasonView.days, subs.items || []);
     var jsDay = new Date().getDay();
@@ -515,6 +548,7 @@
             name_cn: row.title || '',
             name: row.titleJa || '',
             url: safeHttp(row.source) || '',
+            air_date: row.premiere || '',
             images: {},
             rating: {}
           }, row);

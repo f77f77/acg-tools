@@ -30,6 +30,10 @@ a.anime-card-hit:link, a.anime-card-hit:visited, a.anime-card-hit:hover, a.anime
 .anime-sub-panel { padding: 0 12px 12px; }
 .anime-sub-line { display: flex; flex-wrap: wrap; gap: 4px; }
 .anime-sub-meta, .anime-sub-src { margin-top: 4px; line-height: 1.35; font-size: 0.8rem; }
+.anime-sub-src a:link, .anime-sub-src a:visited, .anime-sub-src a:hover, .anime-sub-src a:focus { color: var(--link); }
+.season-unresolved summary { cursor: pointer; }
+.season-unresolved ul { margin: 8px 0 0 1.2em; }
+.season-unresolved[hidden], #season-subs-updated[hidden] { display: none; }
 .badge-sub { color: #9ecbff; border-color: #2a4a6a; background: rgba(52, 152, 219, 0.12); }
 .badge-game { color: #d7c4ff; border-color: #4c3d78; }
 .weekday-unmatched .weekday-title { color: var(--text-muted); }
