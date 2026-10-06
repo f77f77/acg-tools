@@ -4,6 +4,7 @@ name: Validate hub seed JSON
 # data/anime-subs.json is the 中文字幕 overlay (route #anime → #season/zh),
 # written by scripts/sync_anime_subs.py. This job also runs that mapper
 # offline against a fixture so the Notion → JSON path stays tested without secrets.
+# The subscription job encrypts a fake fixture and decrypts it with Node WebCrypto.
 # data/codes.json gamesCatalog includes 寶可夢 Champions even when that game has no rows.
 on:
   workflow_dispatch:
@@ -31,3 +32,16 @@ jobs:
             --offline --check \
             --out /tmp/anime-subs-fixture.json \
             --cache /tmp/anime-bgm-cache-fixture.json
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+      - name: Subscription fixture round-trip
+        env:
+          SUBS_PASSPHRASE: demo-subs
+        run: |
+          python3 -m venv "$RUNNER_TEMP/subs-venv"
+          "$RUNNER_TEMP/subs-venv/bin/pip" install --disable-pip-version-check cryptography
+          "$RUNNER_TEMP/subs-venv/bin/python" scripts/sync_subscriptions.py \
+            --fixture scripts/fixtures/notion_subs_sample.json \
+            --roundtrip \
+            --out /tmp/subscriptions.enc.json
