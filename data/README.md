@@ -110,17 +110,67 @@ python3 scripts/sync_anime_subs.py \
   --cache /tmp/anime-bgm-cache-fixture.json
 ```
 
-## `subscriptions.json`（`subscriptions.v1`）
+## `subscriptions.enc.json`（`subscriptions-enc.v1`）
+
+訂閱／續費由 `scripts/sync_subscriptions.py` 每日從 Notion 資料庫「訂閱追蹤」同步。Repo 同 GitHub Pages 都係公開，hub 密碼閘只係介面，所以**唔會**把訂閱明文寫入 git、Pages、log 或 Actions 輸出。呢個檔係加密信封；頁面用 WebCrypto 解出嚟先顯示。
+
+而家入庫嘅係**假資料**示例，用測試密碼 `demo-subs` 加密，方便試頁面。第一次正式 workflow 跑完會覆蓋佢。`scripts/fixtures/notion_subs_sample.json` 都係假 fixture，`build-pages.sh` 唔會拷去網站。
+
+舊嘅明文 `data/subscriptions.json` 已刪除，唔好再加返。
+
+### 解密後先有嘅欄位（`subscriptions.v2`）
 
 | 欄位 | 說明 |
 | --- | --- |
-| `name` | 名稱 |
-| `amount` | 數字 |
-| `currency` | 例如 `HKD` |
-| `interval` | `month`（預設）、`year`（計入每月約計時 ÷ 12）、`week` |
-| `nextRenew` | `YYYY-MM-DD` |
-| `notes` | 備註 |
-| `category` | `warehouse` 會顯示倉租倒數 |
-| `example` | `true` 就標成示例。唔好寫真實私人金額當事實 |
+| `id` | Notion page id 嘅 SHA-256 前 16 個 hex，唔係原本 id |
+| `name` | `服務` |
+| `plan` | `方案` |
+| `amount` | `金額` |
+| `currency` | `幣別`，例如 `HKD`／`USD`／`JPY` |
+| `hkd` | `約港元`。如果空、而幣別係 HKD，就用金額。否則如果有 `data/rates.json`，用匯率乘金額。計唔到就 `null`，總數會跳過 |
+| `interval` | `月` → `month`；`年` → `year`；`月（30日）` → `month30`。`月（推算）` 都係 `month`，另外 `estimated: true` |
+| `nextRenew` | `下次續費`（`YYYY-MM-DD`）。狀態係使用中而且日期已過，會按週期順延到今日或之後，並加 `rolled: true` |
+| `lastCharged` | `上次扣款` |
+| `status` | `使用中`／`不確定`／`已取消` |
+| `notes` | `備註`，最多約 80 字。電郵、長數字或訂單號、卡號會剔走 |
+| `category` | 名稱或方案有「倉」就標 `warehouse`，畫面顯示倉租倒數 |
 
-現有列全部係示例。
+年費計每月約計時 ÷ 12。`month30` 當一個月。每年約計係每月 × 12。只計使用中。
+
+以下 Notion 欄位**唔會**讀入輸出：`帳戶`、`付款方式`、`來源信件`、`上次扣款原文`。`下次續費原文` 亦唔公開。
+
+### 加密
+
+`SUBS_PASSPHRASE` → PBKDF2-SHA256（600000 次，隨機 16-byte salt）→ AES-256-GCM（隨機 12-byte IV）。`mac` 係 HMAC-SHA256(衍生 key, 不含 `updatedAt` 嘅明文)，用嚟判斷內容有冇變，避免日日重新加密。`updatedAt` 係香港日期，只有內容變咗先更新。
+
+信封欄位：`schema`、`kdf`（`name`／`hash`／`iterations`／`salt`）、`cipher`（`AES-GCM`、`iv`）、`ciphertext`、`mac`、`updatedAt`。瀏覽器同一套 WebCrypto 解得開。
+
+### 密鑰
+
+| Secret | 必填 | 值 |
+| --- | --- | --- |
+| `NOTION_TOKEN` | 要 | 同字幕表嗰個 internal integration secret |
+| `SUBS_PASSPHRASE` | 要 | 訂閱解密密碼。改咗就要再跑呢個 workflow，舊密碼會開唔到新檔 |
+| `NOTION_SUBS_DB_ID` | 唔使 | 資料庫 id，預設 `0a0f4be8-8d57-4970-b3ec-a78d43235188` |
+
+資料庫「訂閱追蹤」。Data source（collection）id：`783d6077-794c-4e0c-8872-986a6734921c`（腳本用 2022-06-28 嘅 `POST /v1/databases/{id}/query`，唔使額外傳 data source id）。
+
+整合要加到呢個資料庫：打開「訂閱追蹤」→ 右上角 **…** → **Connections** → 加入讀字幕表嗰個 integration（至少要讀內容）。
+
+冇 `NOTION_TOKEN` 或 `SUBS_PASSPHRASE` 時腳本印一行說明並以 exit 0 結束，唔改檔。Log 只得行數同跳過數，唔會印訂閱內容。
+
+Workflow：`.github/workflows/sync-subscriptions.yml`，每日 **06:43 香港時間**（UTC 22:43），亦可以手動 `workflow_dispatch`。有改動先 commit `data/subscriptions.enc.json`，訊息係 `chore: sync encrypted subscriptions`，再經 `pages.yml` 嘅 `workflow_run` 重新部署。
+
+頁面「記住呢部機」預設關閉。剔咗先會把密碼放喺呢部瀏覽器嘅 localStorage。「鎖上」會清走。
+
+`data/rates.json` 可選，格式 `{ "rates": { "USD": 7.8, "JPY": 0.052 } }`，數字係 1 單位外幣兌幾多港元。冇呢個檔、又冇 `約港元`、又唔係 HKD，該列就唔會計入港元總數。
+
+本地用假 fixture 做加解密來回（要有 `cryptography` 同 Node）：
+
+```bash
+pip install cryptography
+SUBS_PASSPHRASE=demo-subs python3 scripts/sync_subscriptions.py \
+  --fixture scripts/fixtures/notion_subs_sample.json \
+  --roundtrip \
+  --out /tmp/subscriptions.enc.json
+```

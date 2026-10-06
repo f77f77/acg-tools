@@ -1,0 +1,191 @@
+{
+  "fixture": "FAKE synthetic rows for the encrypted subscription demo and round-trip. Not real bills. Not deployed to Pages.",
+  "results": [
+    {
+      "object": "page",
+      "id": "11111111-1111-4111-8111-111111111111",
+      "url": "https://example.invalid/do-not-publish-subs-1",
+      "properties": {
+        "服務": {"type": "title", "title": [{"plain_text": "示例 · 雲端筆記"}]},
+        "方案": {"type": "rich_text", "rich_text": [{"plain_text": "個人"}]},
+        "金額": {"type": "number", "number": 48},
+        "幣別": {"type": "rich_text", "rich_text": [{"plain_text": "HKD"}]},
+        "週期": {"type": "select", "select": {"name": "月"}},
+        "下次續費": {"type": "date", "date": {"start": "2026-10-08"}},
+        "下次續費原文": {"type": "rich_text", "rich_text": [{"plain_text": "RENEW-RAW-EXAMPLE-DO-NOT-PUBLISH-1"}]},
+        "上次扣款": {"type": "date", "date": {"start": "2026-09-08"}},
+        "狀態": {"type": "select", "select": {"name": "使用中"}},
+        "備註": {"type": "rich_text", "rich_text": [{"plain_text": "示例列"}]},
+        "帳戶": {"type": "rich_text", "rich_text": [{"plain_text": "EXAMPLE-ACCOUNT-DO-NOT-PUBLISH-1"}]},
+        "付款方式": {"type": "rich_text", "rich_text": [{"plain_text": "EXAMPLE-PAYMENT-DO-NOT-PUBLISH-1"}]},
+        "來源信件": {"type": "rich_text", "rich_text": [{"plain_text": "EXAMPLE-SOURCE-MAIL-DO-NOT-PUBLISH-1"}]},
+        "上次扣款原文": {"type": "rich_text", "rich_text": [{"plain_text": "EXAMPLE-CHARGE-TEXT-DO-NOT-PUBLISH-1"}]}
+      }
+    },
+    {
+      "object": "page",
+      "id": "22222222-2222-4222-8222-222222222222",
+      "url": "https://example.invalid/do-not-publish-subs-2",
+      "properties": {
+        "服務": {"type": "title", "title": [{"plain_text": "示例 · 動畫平台"}]},
+        "方案": {"type": "rich_text", "rich_text": [{"plain_text": "標準"}]},
+        "金額": {"type": "number", "number": 78},
+        "幣別": {"type": "rich_text", "rich_text": [{"plain_text": "HKD"}]},
+        "週期": {"type": "select", "select": {"name": "月"}},
+        "下次續費": {"type": "date", "date": {"start": "2026-10-06"}},
+        "上次扣款": {"type": "date", "date": {"start": "2026-09-06"}},
+        "狀態": {"type": "select", "select": {"name": "使用中"}},
+        "備註": {"type": "rich_text", "rich_text": [{"plain_text": "示例列"}]}
+      }
+    },
+    {
+      "object": "page",
+      "id": "33333333-3333-4333-8333-333333333333",
+      "url": "https://example.invalid/do-not-publish-subs-3",
+      "properties": {
+        "服務": {"type": "title", "title": [{"plain_text": "示例 · 網域"}]},
+        "方案": {"type": "rich_text", "rich_text": [{"plain_text": ".com"}]},
+        "金額": {"type": "number", "number": 120},
+        "幣別": {"type": "rich_text", "rich_text": [{"plain_text": "HKD"}]},
+        "週期": {"type": "select", "select": {"name": "年"}},
+        "下次續費": {"type": "date", "date": {"start": "2027-01-15"}},
+        "上次扣款": {"type": "date", "date": {"start": "2026-01-15"}},
+        "狀態": {"type": "select", "select": {"name": "使用中"}},
+        "備註": {"type": "rich_text", "rich_text": [{"plain_text": "年費會計入每月約計"}]}
+      }
+    },
+    {
+      "object": "page",
+      "id": "44444444-4444-4444-8444-444444444444",
+      "url": "https://example.invalid/do-not-publish-subs-4",
+      "properties": {
+        "服務": {"type": "title", "title": [{"plain_text": "示例 · 倉庫租金"}]},
+        "方案": {"type": "rich_text", "rich_text": [{"plain_text": "小倉"}]},
+        "金額": {"type": "number", "number": 800},
+        "幣別": {"type": "rich_text", "rich_text": [{"plain_text": "HKD"}]},
+        "週期": {"type": "select", "select": {"name": "月"}},
+        "下次續費": {"type": "date", "date": {"start": "2026-10-20"}},
+        "上次扣款": {"type": "date", "date": {"start": "2026-09-20"}},
+        "狀態": {"type": "select", "select": {"name": "使用中"}},
+        "備註": {"type": "rich_text", "rich_text": [{"plain_text": "示例倉租"}]}
+      }
+    },
+    {
+      "object": "page",
+      "id": "55555555-5555-4555-8555-555555555555",
+      "url": "https://example.invalid/do-not-publish-subs-5",
+      "properties": {
+        "服務": {"type": "title", "title": [{"plain_text": "示例 · 音樂"}]},
+        "方案": {"type": "rich_text", "rich_text": [{"plain_text": "家庭"}]},
+        "金額": {"type": "number", "number": 1680},
+        "幣別": {"type": "rich_text", "rich_text": [{"plain_text": "JPY"}]},
+        "約港元": {"type": "number", "number": 88},
+        "週期": {"type": "select", "select": {"name": "月（推算）"}},
+        "下次續費": {"type": "date", "date": {"start": "2026-08-15"}},
+        "上次扣款": {"type": "date", "date": {"start": "2026-07-15"}},
+        "狀態": {"type": "select", "select": {"name": "使用中"}},
+        "備註": {"type": "rich_text", "rich_text": [{"plain_text": "示例列，日期會順延"}]}
+      }
+    },
+    {
+      "object": "page",
+      "id": "66666666-6666-4666-8666-666666666666",
+      "url": "https://example.invalid/do-not-publish-subs-6",
+      "properties": {
+        "服務": {"type": "title", "title": [{"plain_text": "示例 · 外刊"}]},
+        "方案": {"type": "rich_text", "rich_text": [{"plain_text": "電子版"}]},
+        "金額": {"type": "number", "number": 10},
+        "幣別": {"type": "rich_text", "rich_text": [{"plain_text": "USD"}]},
+        "約港元": {"type": "number", "number": 78},
+        "週期": {"type": "select", "select": {"name": "月（30日）"}},
+        "下次續費": {"type": "date", "date": {"start": "2026-09-16"}},
+        "上次扣款": {"type": "date", "date": {"start": "2026-08-17"}},
+        "狀態": {"type": "select", "select": {"name": "使用中"}},
+        "備註": {"type": "rich_text", "rich_text": [{"plain_text": "示例列"}]}
+      }
+    },
+    {
+      "object": "page",
+      "id": "99999999-9999-4999-8999-999999999999",
+      "url": "https://example.invalid/do-not-publish-subs-9",
+      "properties": {
+        "服務": {"type": "title", "title": [{"plain_text": "示例 · 雲備份"}]},
+        "方案": {"type": "rich_text", "rich_text": [{"plain_text": "50 GB"}]},
+        "金額": {"type": "number", "number": 15},
+        "幣別": {"type": "rich_text", "rich_text": [{"plain_text": "HKD"}]},
+        "週期": {"type": "select", "select": {"name": "月"}},
+        "下次續費": {"type": "date", "date": {"start": "2026-10-13"}},
+        "上次扣款": {"type": "date", "date": {"start": "2026-09-13"}},
+        "狀態": {"type": "select", "select": {"name": "使用中"}},
+        "備註": {"type": "rich_text", "rich_text": [{"plain_text": "示例列"}]}
+      }
+    },
+    {
+      "object": "page",
+      "id": "77777777-7777-4777-8777-777777777777",
+      "url": "https://example.invalid/do-not-publish-subs-7",
+      "properties": {
+        "服務": {"type": "title", "title": [{"plain_text": "示例 · 試用會員"}]},
+        "方案": {"type": "rich_text", "rich_text": [{"plain_text": "試用"}]},
+        "金額": {"type": "number", "number": 30},
+        "幣別": {"type": "rich_text", "rich_text": [{"plain_text": "HKD"}]},
+        "週期": {"type": "select", "select": {"name": "月"}},
+        "下次續費": {"type": "date", "date": {"start": "2026-11-02"}},
+        "狀態": {"type": "select", "select": {"name": "不確定"}},
+        "備註": {"type": "rich_text", "rich_text": [{"plain_text": "示例備註：已移除敏感字。 nobody@example.com ABC1234567890 4242424242424242"}]},
+        "帳戶": {"type": "rich_text", "rich_text": [{"plain_text": "EXAMPLE-ACCOUNT-DO-NOT-PUBLISH-7"}]},
+        "付款方式": {"type": "rich_text", "rich_text": [{"plain_text": "Visa 4242424242424242"}]},
+        "來源信件": {"type": "rich_text", "rich_text": [{"plain_text": "EXAMPLE-SOURCE-MAIL-DO-NOT-PUBLISH-7"}]},
+        "上次扣款原文": {"type": "rich_text", "rich_text": [{"plain_text": "EXAMPLE-CHARGE-TEXT-DO-NOT-PUBLISH-7"}]}
+      }
+    },
+    {
+      "object": "page",
+      "id": "88888888-8888-4888-8888-888888888888",
+      "url": "https://example.invalid/do-not-publish-subs-8",
+      "properties": {
+        "服務": {"type": "title", "title": [{"plain_text": "示例 · 舊串流"}]},
+        "方案": {"type": "rich_text", "rich_text": [{"plain_text": "已停"}]},
+        "金額": {"type": "number", "number": 68},
+        "幣別": {"type": "rich_text", "rich_text": [{"plain_text": "HKD"}]},
+        "週期": {"type": "select", "select": {"name": "月"}},
+        "下次續費": {"type": "date", "date": {"start": "2026-04-01"}},
+        "上次扣款": {"type": "date", "date": {"start": "2026-03-01"}},
+        "狀態": {"type": "select", "select": {"name": "已取消"}},
+        "備註": {"type": "rich_text", "rich_text": [{"plain_text": "示例列，已取消唔會順延"}]}
+      }
+    },
+    {
+      "object": "page",
+      "id": "aaaaaaaa-aaaa-4aaa-8aaa-aaaaaaaaaaaa",
+      "archived": true,
+      "url": "https://example.invalid/do-not-publish-subs-archived",
+      "properties": {
+        "服務": {"type": "title", "title": [{"plain_text": "不應入表-ARCHIVED-SECRET"}]},
+        "金額": {"type": "number", "number": 9999},
+        "幣別": {"type": "rich_text", "rich_text": [{"plain_text": "HKD"}]},
+        "狀態": {"type": "select", "select": {"name": "使用中"}},
+        "帳戶": {"type": "rich_text", "rich_text": [{"plain_text": "ARCHIVED-SECRET-DO-NOT-PUBLISH"}]}
+      }
+    },
+    {
+      "object": "page",
+      "id": "bbbbbbbb-bbbb-4bbb-8bbb-bbbbbbbbbbbb",
+      "in_trash": true,
+      "url": "https://example.invalid/do-not-publish-subs-trash",
+      "properties": {
+        "服務": {"type": "title", "title": [{"plain_text": "不應入垃圾桶-TRASH-SECRET"}]},
+        "帳戶": {"type": "rich_text", "rich_text": [{"plain_text": "TRASH-SECRET-DO-NOT-PUBLISH"}]}
+      }
+    },
+    {
+      "object": "page",
+      "id": "cccccccc-cccc-4ccc-8ccc-cccccccccccc",
+      "url": "https://example.invalid/do-not-publish-subs-empty",
+      "properties": {
+        "服務": {"type": "title", "title": []},
+        "帳戶": {"type": "rich_text", "rich_text": [{"plain_text": "EMPTY-PAGE-SECRET-DO-NOT-PUBLISH"}]}
+      }
+    }
+  ]
+}

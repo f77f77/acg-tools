@@ -627,65 +627,356 @@
     };
   }
 
-  function monthlyShare(row) {
-    var n = Number(row.amount);
-    if (!isFinite(n)) return 0;
+  var SUBS_LS = 'acg_subs_passphrase';
+  var subsState = { envelope: null, plain: null };
+  var SUBS_HIDE = ['subs-note', 'subs-totals', 'subs-warehouse', 'subs-active-block', 'subs-uncertain-block', 'subs-cancelled-block'];
+
+  function readSubsPass() {
+    try { return (localStorage.getItem(SUBS_LS) || '').trim(); } catch (e) { return ''; }
+  }
+
+  function writeSubsPass(value) {
+    try {
+      if (value) localStorage.setItem(SUBS_LS, value);
+      else localStorage.removeItem(SUBS_LS);
+    } catch (e) {}
+  }
+
+  function showSubsError(msg) {
+    var err = $('#subs-gate-error');
+    if (!err) return;
+    err.textContent = msg || '密碼錯誤';
+    err.className = 'gate-error';
+  }
+
+  function hideSubsError() {
+    var err = $('#subs-gate-error');
+    if (err) err.className = 'gate-error hidden';
+  }
+
+  function clearSubsDom() {
+    SUBS_HIDE.forEach(function (id) {
+      var el = document.getElementById(id);
+      if (!el) return;
+      el.classList.add('hidden');
+      if (id === 'subs-note') el.textContent = '';
+      else if (id !== 'subs-active-block' && id !== 'subs-uncertain-block' && id !== 'subs-cancelled-block') el.innerHTML = '';
+    });
+    ['subs-body', 'subs-uncertain-body', 'subs-cancelled-body'].forEach(function (id) {
+      var el = document.getElementById(id);
+      if (el) el.innerHTML = '';
+    });
+    var updated = $('#subs-updated');
+    if (updated) updated.textContent = '';
+    var det = $('#subs-cancelled-block');
+    if (det) det.open = false;
+  }
+
+  function b64ToBytes(b64) {
+    var bin = atob(String(b64 || '').replace(/\s+/g, ''));
+    var out = new Uint8Array(bin.length);
+    for (var i = 0; i < bin.length; i++) out[i] = bin.charCodeAt(i);
+    return out;
+  }
+
+  function decryptSubs(envelope, passphrase) {
+    if (!window.crypto || !window.crypto.subtle) return Promise.reject(new Error('no-webcrypto'));
+    var kdf = envelope.kdf || {};
+    var cipher = envelope.cipher || {};
+    var iterations = Number(kdf.iterations);
+    if (!iterations || iterations < 1) return Promise.reject(new Error('kdf'));
+    var salt = b64ToBytes(kdf.salt);
+    var iv = b64ToBytes(cipher.iv);
+    var ct = b64ToBytes(envelope.ciphertext);
+    return crypto.subtle.importKey('raw', new TextEncoder().encode(passphrase), 'PBKDF2', false, ['deriveKey'])
+      .then(function (material) {
+        return crypto.subtle.deriveKey(
+          { name: 'PBKDF2', salt: salt, iterations: iterations, hash: 'SHA-256' },
+          material,
+          { name: 'AES-GCM', length: 256 },
+          false,
+          ['decrypt']
+        );
+      })
+      .then(function (key) {
+        return crypto.subtle.decrypt({ name: 'AES-GCM', iv: iv }, key, ct);
+      })
+      .then(function (buf) {
+        var data = JSON.parse(new TextDecoder().decode(new Uint8Array(buf)));
+        if (!data || data.schema !== 'subscriptions.v2' || !Array.isArray(data.items)) throw new Error('schema');
+        return data;
+      });
+  }
+
+  function formatMoneyNumber(n) {
+    if (n == null || n === '') return '';
+    var num = Number(n);
+    if (!isFinite(num)) return '';
+    if (Math.abs(num - Math.round(num)) < 0.001) return String(Math.round(num));
+    return num.toFixed(2);
+  }
+
+  function formatAmount(row) {
+    var text = formatMoneyNumber(row.amount);
+    if (!text) return '—';
+    return row.currency ? (text + ' ' + row.currency) : text;
+  }
+
+  function formatHkd(n) {
+    var rounded = Math.round(n * 100) / 100;
+    var whole = Math.abs(rounded - Math.round(rounded)) < 0.001;
+    var text = whole
+      ? Math.round(rounded).toLocaleString('zh-HK')
+      : rounded.toLocaleString('zh-HK', { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+    return 'HK$' + text;
+  }
+
+  function intervalLabel(row) {
+    if (row.interval === 'year') return '年';
+    if (row.interval === 'month30') return '月（30日）';
+    if (row.estimated) return '月（推算）';
+    if (row.interval === 'week') return '週';
+    return '月';
+  }
+
+  function monthlyHkd(row) {
+    if (row.hkd == null || row.hkd === '') return null;
+    var n = Number(row.hkd);
+    if (!isFinite(n)) return null;
     if (row.interval === 'year') return n / 12;
     if (row.interval === 'week') return (n * 52) / 12;
     return n;
   }
 
+  function dueText(iso, today) {
+    if (!iso) return '';
+    var n = daysUntil(iso, today);
+    if (n === 0) return '今日';
+    if (n > 0) return n + ' 日後';
+    return '已過 ' + Math.abs(n) + ' 日';
+  }
+
+  function byRenew(a, b) {
+    var as = a.nextRenew || '9999-99-99';
+    var bs = b.nextRenew || '9999-99-99';
+    if (as < bs) return -1;
+    if (as > bs) return 1;
+    return String(a.name || '').localeCompare(String(b.name || ''), 'zh-Hant');
+  }
+
+  function subsRow(row, today) {
+    var n = row.nextRenew ? daysUntil(row.nextRenew, today) : null;
+    var soon = row.status === '使用中' && n !== null && n >= 0 && n <= 7;
+    var renew = escapeHtml(row.nextRenew || '—');
+    var due = dueText(row.nextRenew, today);
+    if (due) renew += ' <span class="subs-due">' + escapeHtml(due) + '</span>';
+    if (row.rolled) renew += ' <span class="subs-meta">已順延</span>';
+    if (row.lastCharged) renew += '<div class="subs-meta">上次扣款 ' + escapeHtml(row.lastCharged) + '</div>';
+    var hkdText = (row.hkd == null || row.hkd === '') ? '—' : formatMoneyNumber(row.hkd);
+    return '<tr' + (soon ? ' class="subs-row-soon"' : '') + '><td>' + escapeHtml(row.name || '') +
+      '</td><td>' + escapeHtml(row.plan || '—') + '</td><td>' + escapeHtml(formatAmount(row)) +
+      '</td><td>' + escapeHtml(hkdText) + '</td><td>' + escapeHtml(intervalLabel(row)) +
+      '</td><td>' + renew + '</td><td>' + escapeHtml(row.notes || '') + '</td></tr>';
+  }
+
+  function renderSubs(data) {
+    var today = todayISO();
+    var items = data.items || [];
+    var active = items.filter(function (row) { return row.status === '使用中'; }).sort(byRenew);
+    var cancelled = items.filter(function (row) { return row.status === '已取消'; }).sort(byRenew);
+    var uncertain = items.filter(function (row) {
+      return row.status !== '使用中' && row.status !== '已取消';
+    }).sort(byRenew);
+    var note = $('#subs-note');
+    if (note) {
+      if (data.demo) {
+        note.textContent = '呢份係公開示例密文，唔係真實訂閱。正式數字由 Notion「訂閱追蹤」同步後先會覆蓋。';
+        note.classList.remove('hidden');
+      } else {
+        note.textContent = '';
+        note.classList.add('hidden');
+      }
+    }
+    var updated = $('#subs-updated');
+    var stamp = data.updatedAt || (subsState.envelope && subsState.envelope.updatedAt) || '';
+    if (updated) updated.textContent = stamp ? ('資料更新：' + stamp) : '';
+    var monthly = 0;
+    var missing = 0;
+    active.forEach(function (row) {
+      var part = monthlyHkd(row);
+      if (part == null) missing += 1;
+      else monthly += part;
+    });
+    var totalsEl = $('#subs-totals');
+    if (totalsEl) {
+      totalsEl.classList.remove('hidden');
+      var cards = '<div class="subs-card"><span class="muted">每月約計</span><strong>' + escapeHtml(formatHkd(monthly)) +
+        '</strong></div><div class="subs-card"><span class="muted">每年約計</span><strong>' +
+        escapeHtml(formatHkd(monthly * 12)) + '</strong></div>';
+      if (missing) {
+        cards += '<div class="subs-card"><span class="muted">未計入</span><strong>' + missing + ' 項未能折算港元</strong></div>';
+      }
+      totalsEl.innerHTML = cards;
+    }
+    var warehouses = active.filter(function (row) { return row.category === 'warehouse' && row.nextRenew; });
+    var wh = $('#subs-warehouse');
+    if (wh) {
+      if (warehouses.length) {
+        wh.classList.remove('hidden');
+        wh.innerHTML = warehouses.map(function (row) {
+          var n = daysUntil(row.nextRenew, today);
+          var label = n > 0 ? ('仲有 ' + n + ' 日') : (n === 0 ? '今日到期' : ('已過 ' + Math.abs(n) + ' 日'));
+          return '<div class="subs-card"><span class="muted">倉租倒數 · ' + escapeHtml(row.name) +
+            '</span><strong>' + escapeHtml(label) + '</strong><span class="muted">' +
+            escapeHtml(row.nextRenew) + '</span></div>';
+        }).join('');
+      } else {
+        wh.classList.add('hidden');
+        wh.innerHTML = '';
+      }
+    }
+    var activeBlock = $('#subs-active-block');
+    if (activeBlock) activeBlock.classList.remove('hidden');
+    var body = $('#subs-body');
+    if (body) {
+      body.innerHTML = active.length
+        ? active.map(function (row) { return subsRow(row, today); }).join('')
+        : '<tr><td colspan="7">未有使用中嘅訂閱</td></tr>';
+    }
+    var uncertainBlock = $('#subs-uncertain-block');
+    if (uncertainBlock) {
+      if (uncertain.length) {
+        uncertainBlock.classList.remove('hidden');
+        $('#subs-uncertain-body').innerHTML = uncertain.map(function (row) { return subsRow(row, today); }).join('');
+      } else {
+        uncertainBlock.classList.add('hidden');
+        $('#subs-uncertain-body').innerHTML = '';
+      }
+    }
+    var cancelledBlock = $('#subs-cancelled-block');
+    if (cancelledBlock) {
+      if (cancelled.length) {
+        cancelledBlock.classList.remove('hidden');
+        var summary = $('#subs-cancelled-summary');
+        if (summary) summary.textContent = '已取消（' + cancelled.length + '）';
+        $('#subs-cancelled-body').innerHTML = cancelled.map(function (row) { return subsRow(row, today); }).join('');
+      } else {
+        cancelledBlock.classList.add('hidden');
+        cancelledBlock.open = false;
+      }
+    }
+    var status = $('#subs-status');
+    if (status) status.classList.add('hidden');
+  }
+
+  function finishUnlock(data) {
+    subsState.plain = data;
+    var input = $('#subs-pass');
+    if (input) input.value = '';
+    hideSubsError();
+    var form = $('#subs-gate-form');
+    if (form) form.classList.add('hidden');
+    var lock = $('#subs-lock');
+    if (lock) lock.classList.remove('hidden');
+    var btn = $('#subs-unlock');
+    if (btn) { btn.disabled = false; btn.textContent = '解鎖'; }
+    var status = $('#subs-status');
+    if (status) status.classList.add('hidden');
+    renderSubs(data);
+  }
+
+  function subsFail(err) {
+    var btn = $('#subs-unlock');
+    if (btn) { btn.disabled = false; btn.textContent = '解鎖'; }
+    clearSubsDom();
+    var form = $('#subs-gate-form');
+    if (form) form.classList.remove('hidden');
+    var lock = $('#subs-lock');
+    if (lock) lock.classList.add('hidden');
+    var status = $('#subs-status');
+    if (status) status.classList.add('hidden');
+    var msg = '密碼錯誤';
+    if (err && err.message === 'schema') msg = '資料格式不符';
+    else if (err && err.message === 'no-webcrypto') msg = '呢個瀏覽器無法解密';
+    showSubsError(msg);
+    var input = $('#subs-pass');
+    if (input) { input.value = ''; input.focus(); }
+  }
+
+  function tryDecrypt(pass, remember) {
+    var btn = $('#subs-unlock');
+    if (btn) { btn.disabled = true; btn.textContent = '解密中...'; }
+    hideSubsError();
+    return decryptSubs(subsState.envelope, pass).then(function (data) {
+      writeSubsPass(remember ? pass : '');
+      finishUnlock(data);
+    }).catch(function (err) {
+      if (remember) {
+        writeSubsPass('');
+        var box = $('#subs-remember');
+        if (box) box.checked = false;
+      }
+      subsFail(err);
+    });
+  }
+
+  function lockSubs() {
+    subsState.plain = null;
+    writeSubsPass('');
+    var box = $('#subs-remember');
+    if (box) box.checked = false;
+    var input = $('#subs-pass');
+    if (input) input.value = '';
+    hideSubsError();
+    clearSubsDom();
+    var form = $('#subs-gate-form');
+    if (form) form.classList.remove('hidden');
+    var lock = $('#subs-lock');
+    if (lock) lock.classList.add('hidden');
+    var status = $('#subs-status');
+    if (status) status.classList.add('hidden');
+    if (input) input.focus();
+  }
+
   function loadSubs() {
-    fetch('data/subscriptions.json')
+    if (subsState.plain) {
+      finishUnlock(subsState.plain);
+      return;
+    }
+    var status = $('#subs-status');
+    if (status) {
+      status.classList.remove('hidden');
+      status.innerHTML = '<p>載入中...</p>';
+    }
+    var form = $('#subs-gate-form');
+    if (form) form.classList.add('hidden');
+    fetch('data/subscriptions.enc.json', { cache: 'no-store' })
       .then(function (r) { if (!r.ok) throw new Error('HTTP ' + r.status); return r.json(); })
-      .then(function (data) {
-        var today = todayISO();
-        var note = $('#subs-note');
-        if (note) note.textContent = data.note || '';
-        var items = data.items || [];
-        var totals = {};
-        items.forEach(function (row) {
-          var cur = row.currency || '';
-          totals[cur] = (totals[cur] || 0) + monthlyShare(row);
-        });
-        var totalsEl = $('#subs-totals');
-        totalsEl.classList.remove('hidden');
-        totalsEl.innerHTML = Object.keys(totals).map(function (cur) {
-          var value = totals[cur];
-          var text = Math.abs(value - Math.round(value)) < 0.05 ? String(Math.round(value)) : value.toFixed(2);
-          return '<div class="subs-card"><span class="muted">每月約計（示例）</span><strong>' +
-            escapeHtml(text + ' ' + cur) + '</strong></div>';
-        }).join('');
-        var warehouses = items.filter(function (row) { return row.category === 'warehouse' && row.nextRenew; });
-        var wh = $('#subs-warehouse');
-        if (warehouses.length) {
-          wh.classList.remove('hidden');
-          wh.innerHTML = warehouses.map(function (row) {
-            var n = daysUntil(row.nextRenew, today);
-            var label = n > 0 ? ('仲有 ' + n + ' 日') : (n === 0 ? '今日到期' : ('已過 ' + Math.abs(n) + ' 日'));
-            return '<div class="subs-card"><span class="muted">倉租倒數 · ' + escapeHtml(row.name) +
-              '</span><strong>' + escapeHtml(label) + '</strong><span class="muted">' +
-              escapeHtml(row.nextRenew) + '</span></div>';
-          }).join('');
-        } else {
-          wh.classList.add('hidden');
-          wh.innerHTML = '';
+      .then(function (env) {
+        if (!env || env.schema !== 'subscriptions-enc.v1' || !env.ciphertext || !env.kdf || !env.cipher) {
+          throw new Error('schema');
         }
-        var body = $('#subs-body');
-        var sorted = items.slice().sort(function (a, b) {
-          return String(a.nextRenew || '').localeCompare(String(b.nextRenew || ''));
-        });
-        body.innerHTML = sorted.map(function (row) {
-          return '<tr><td>' + escapeHtml(row.name || '') +
-            (row.example ? ' <span class="badge badge-sample">示例</span>' : '') + '</td><td>' +
-            escapeHtml(row.amount) + '</td><td>' + escapeHtml(row.currency || '') + '</td><td>' +
-            escapeHtml(row.nextRenew || '') + '</td><td>' + escapeHtml(row.notes || '') + '</td></tr>';
-        }).join('');
-        $('#subs-status').classList.add('hidden');
-        $('#subs-wrap').classList.remove('hidden');
+        subsState.envelope = env;
+        var stored = readSubsPass();
+        var box = $('#subs-remember');
+        if (box) box.checked = !!stored;
+        if (stored) {
+          if (status) status.innerHTML = '<p>解密中...</p>';
+          return tryDecrypt(stored, true);
+        }
+        if (status) status.classList.add('hidden');
+        if (form) form.classList.remove('hidden');
       })
       .catch(function (err) {
-        $('#subs-status').innerHTML = '<p>載入失敗</p><p class="sub">' + escapeHtml(err.message) + '</p>';
+        if (err && err.message === 'schema' && status) {
+          status.classList.remove('hidden');
+          status.innerHTML = '<p>資料格式不符</p>';
+          return;
+        }
+        if (status && !subsState.plain) {
+          status.classList.remove('hidden');
+          status.innerHTML = '<p>載入失敗</p><p class="sub">' + escapeHtml(err && err.message ? err.message : '') + '</p>';
+        }
       });
   }
 
@@ -746,6 +1037,22 @@
   });
   var icsBtn = $('#btn-export-ics');
   if (icsBtn) icsBtn.addEventListener('click', exportIcs);
+  var subsForm = $('#subs-gate-form');
+  if (subsForm) subsForm.addEventListener('submit', function (e) {
+    e.preventDefault();
+    if (!subsState.envelope) return;
+    var input = $('#subs-pass');
+    var pass = (input && input.value || '').trim();
+    if (!pass) {
+      showSubsError('輸入訂閱密碼');
+      if (input) input.focus();
+      return;
+    }
+    var box = $('#subs-remember');
+    tryDecrypt(pass, !!(box && box.checked));
+  });
+  var subsLock = $('#subs-lock');
+  if (subsLock) subsLock.addEventListener('click', lockSubs);
 
   if (typeof window.applyAcgRoute === 'function') window.applyAcgRoute();
 })();
