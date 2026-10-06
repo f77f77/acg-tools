@@ -50,7 +50,32 @@ a.anime-card-hit:link, a.anime-card-hit:visited, a.anime-card-hit:hover, a.anime
 .badge-active { color: #8fd19e; border-color: #2d6a3e; background: rgba(39, 174, 96, 0.12); }
 .badge-expired { color: #e8a0a0; border-color: #6a3030; background: rgba(231, 76, 60, 0.12); }
 .badge-sample { color: #e6c98a; border-color: #6a5a30; }
-#names-kinds, #events-filters { margin-bottom: 14px; }
+#names-kinds { margin-bottom: 14px; }
+.events-tools { display: flex; flex-direction: column; gap: 10px; margin-bottom: 14px; }
+.events-tools-row { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 14px; }
+#events-buckets { flex-wrap: wrap; }
+.events-search { max-width: 420px; margin: 0; }
+.events-updated:empty { display: none; }
+.event-section { margin: 0 0 22px; }
+.event-section h2, .events-past summary { font-size: 1.05rem; font-weight: 600; margin: 0 0 10px; }
+.events-past summary { cursor: pointer; }
+.event-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 12px; }
+.event-card { background: var(--surface); border: 1px solid var(--border); border-radius: 10px; padding: 14px; display: flex; flex-direction: column; gap: 8px; min-width: 0; }
+.event-card-head { display: flex; justify-content: space-between; align-items: flex-start; gap: 8px; }
+.event-title { font-size: 1.02rem; font-weight: 600; margin: 0; line-height: 1.35; overflow-wrap: anywhere; }
+.event-star { margin-right: 4px; }
+.event-ips { display: flex; flex-wrap: wrap; gap: 4px; }
+.event-meta, .event-notes { margin: 0; color: var(--text-muted); font-size: 0.88rem; line-height: 1.45; overflow-wrap: anywhere; }
+.event-count { color: #f0c27a; font-weight: 600; margin-left: 6px; }
+.event-actions { display: flex; flex-wrap: wrap; align-items: center; gap: 10px; margin-top: auto; }
+.events-empty { color: var(--text-muted); font-size: 0.9rem; }
+#module-events a:link, #module-events a:visited, #module-events a:hover, #module-events a:focus, #module-events a:focus-visible { color: var(--link); }
+#module-events a.event-ticket:link, #module-events a.event-ticket:visited, #module-events a.event-ticket:hover, #module-events a.event-ticket:focus, #module-events a.event-ticket:focus-visible { color: #fff; text-decoration: none; }
+#module-events a.event-ticket:hover, #module-events a.event-ticket:focus { background: var(--primary-hover); }
+@media (max-width: 720px) {
+  .event-grid { grid-template-columns: 1fr; }
+  .events-search { max-width: none; }
+}
 .subs-totals, .subs-warehouse { display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 16px; }
 .subs-card { background: var(--surface); border: 1px solid var(--border); border-radius: 10px; padding: 12px 14px; min-width: 160px; }
 .subs-card strong { display: block; font-size: 1.15rem; margin-top: 4px; }

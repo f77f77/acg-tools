@@ -12,20 +12,6 @@
     var d = new Date();
     return d.getFullYear() + '-' + pad(d.getMonth() + 1) + '-' + pad(d.getDate());
   }
-  function weekBounds(today) {
-    var parts = today.split('-');
-    var d = new Date(Number(parts[0]), Number(parts[1]) - 1, Number(parts[2]));
-    var day = d.getDay();
-    var mondayOffset = day === 0 ? -6 : 1 - day;
-    var mon = new Date(d);
-    mon.setDate(d.getDate() + mondayOffset);
-    var sun = new Date(mon);
-    sun.setDate(mon.getDate() + 6);
-    function iso(dt) {
-      return dt.getFullYear() + '-' + pad(dt.getMonth() + 1) + '-' + pad(dt.getDate());
-    }
-    return { start: iso(mon), end: iso(sun) };
-  }
   function daysUntil(iso, today) {
     var a = new Date(today + 'T00:00:00');
     var b = new Date(iso + 'T00:00:00');
@@ -180,21 +166,124 @@
       });
   }
 
-  var eventsState = { data: null, tab: 'events', filter: 'upcoming' };
+  var EVENTS_LS = 'acg_events_board';
+  var EVENT_RECENT_DAYS = 7;
+  var EVENT_BUCKETS = [
+    { id: 'shop', label: '快閃／限定店' },
+    { id: 'exhibit', label: '展覽／特展' },
+    { id: 'doujin', label: '展會／同人' },
+    { id: 'live', label: '演唱會／LIVE' },
+    { id: 'screen', label: '電影／LIVE VIEWING' },
+    { id: 'other', label: '其他' }
+  ];
+  var EVENT_CAT_BUCKET = {
+    '快閃店': 'shop',
+    '限定店': 'shop',
+    '展覽': 'exhibit',
+    '特展': 'exhibit',
+    '展會': 'doujin',
+    '同人展': 'doujin',
+    '同人': 'doujin',
+    '同人祭': 'doujin',
+    '演唱會': 'live',
+    '見面會': 'live',
+    'LIVE': 'live',
+    '電影': 'screen',
+    'LIVE VIEWING': 'screen'
+  };
 
-  function eventSpan(row) {
-    var start = row.date || row.deadline || '';
-    var end = row.endDate || row.date || row.deadline || '';
-    return { start: start, end: end };
+  function readEventFilters() {
+    var out = { bucket: 'all', featured: false, q: '' };
+    try {
+      var raw = JSON.parse(localStorage.getItem(EVENTS_LS) || '{}');
+      if (raw && (raw.bucket === 'all' || EVENT_BUCKETS.some(function (b) { return b.id === raw.bucket; }))) {
+        out.bucket = raw.bucket;
+      }
+      out.featured = !!(raw && raw.featured);
+      if (raw && typeof raw.q === 'string') out.q = raw.q.slice(0, 80);
+    } catch (e) {}
+    return out;
   }
 
-  function eventMatches(row, filter, today, week) {
-    var span = eventSpan(row);
-    if (!span.end) return filter !== 'past';
-    if (filter === 'past') return span.end < today;
-    if (span.end < today) return false;
-    if (filter === 'week') return span.start <= week.end && span.end >= week.start;
-    return true;
+  function saveEventFilters() {
+    try {
+      localStorage.setItem(EVENTS_LS, JSON.stringify({
+        bucket: eventsState.bucket,
+        featured: !!eventsState.featured,
+        q: eventsState.q || ''
+      }));
+    } catch (e) {}
+  }
+
+  var _savedEventFilters = readEventFilters();
+  var eventsState = {
+    data: null,
+    tab: 'events',
+    bucket: _savedEventFilters.bucket,
+    featured: _savedEventFilters.featured,
+    q: _savedEventFilters.q
+  };
+
+  function eventBucket(category) {
+    var cat = String(category || '').trim();
+    if (!cat) return 'other';
+    if (EVENT_CAT_BUCKET[cat]) return EVENT_CAT_BUCKET[cat];
+    var upper = cat.toUpperCase();
+    if (upper === 'LIVE VIEWING') return 'screen';
+    if (upper === 'LIVE') return 'live';
+    return 'other';
+  }
+
+  function eventPhase(row, today) {
+    var start = row.date || '';
+    var end = row.endDate || row.date || '';
+    var status = row.status;
+    if (start || end) {
+      var startD = start || end;
+      var endD = end || start;
+      if (today < startD) status = '即將開始';
+      else if (today > endD) status = '已完結';
+      else status = '進行中';
+    }
+    if (status !== '即將開始' && status !== '進行中' && status !== '已完結') return '';
+    if (status === '已完結') {
+      var endD2 = row.endDate || row.date || '';
+      if (!endD2) return '';
+      if (daysUntil(endD2, today) < -EVENT_RECENT_DAYS) return '';
+    }
+    return status;
+  }
+
+  function eventVisible(row) {
+    if (eventsState.bucket !== 'all' && eventBucket(row.category) !== eventsState.bucket) return false;
+    if (eventsState.featured && !row.featured) return false;
+    var q = String(eventsState.q || '').trim().toLowerCase();
+    if (!q) return true;
+    var ips = Array.isArray(row.ips) ? row.ips.join(' ') : '';
+    var blob = [row.title, ips, row.place].join(' ').toLowerCase();
+    return blob.indexOf(q) !== -1;
+  }
+
+  function upcomingLabel(start, today) {
+    if (!start) return '';
+    var n = daysUntil(start, today);
+    if (n <= 0) return '今日開始';
+    return n + ' 日後開始';
+  }
+
+  function ongoingLabel(end, today) {
+    if (!end) return '';
+    var n = daysUntil(end, today);
+    if (n <= 0) return '今日最後一日';
+    return '仲有 ' + n + ' 日';
+  }
+
+  function deadlineLabel(deadline, today) {
+    if (!deadline) return '';
+    var n = daysUntil(deadline, today);
+    if (n === 0) return '今日截止';
+    if (n > 0) return '仲有 ' + n + ' 日';
+    return '已過 ' + (-n) + ' 日';
   }
 
   function mapsHref(row) {
@@ -212,40 +301,137 @@
       escapeHtml(label) + '</a>';
   }
 
+  function renderBucketChips() {
+    var nav = $('#events-buckets');
+    if (!nav) return;
+    var buckets = [{ id: 'all', label: '全部' }].concat(EVENT_BUCKETS);
+    nav.innerHTML = buckets.map(function (b) {
+      return '<button type="button" class="tab' + (eventsState.bucket === b.id ? ' active' : '') +
+        '" data-event-bucket="' + b.id + '">' + escapeHtml(b.label) + '</button>';
+    }).join('');
+  }
+
+  function eventCard(row, today, phase) {
+    var star = row.featured ? '<span class="event-star" title="重點 IP">⭐</span>' : '';
+    var sample = row.sample ? ' <span class="badge badge-sample">示例</span>' : '';
+    var cat = row.category ? '<span class="badge event-cat">' + escapeHtml(row.category) + '</span>' : '';
+    var ips = (Array.isArray(row.ips) ? row.ips : []).map(function (ip) {
+      return '<span class="badge">' + escapeHtml(ip) + '</span>';
+    }).join('');
+    var when = '';
+    if (row.date) when = (row.endDate && row.endDate !== row.date) ? (row.date + ' – ' + row.endDate) : row.date;
+    if (row.timeNote) when = when ? (when + ' · ' + row.timeNote) : row.timeNote;
+    var count = '';
+    if (phase === '即將開始') count = upcomingLabel(row.date, today);
+    else if (phase === '進行中') count = ongoingLabel(row.endDate || row.date, today);
+    var countHtml = count ? '<span class="event-count">' + escapeHtml(count) + '</span>' : '';
+    var price = row.price ? '<p class="event-meta">' + escapeHtml(row.price) + '</p>' : '';
+    var ticketNote = row.ticketNote ? '<p class="event-meta">' + escapeHtml(row.ticketNote) + '</p>' : '';
+    var notes = row.notes ? '<p class="event-notes">' + escapeHtml(row.notes) + '</p>' : '';
+    var ticket = safeHttp(row.ticketUrl);
+    var source = safeHttp(row.source);
+    var actions = '';
+    if (ticket) {
+      actions += '<a class="btn btn-primary btn-sm event-ticket" href="' + escapeHtml(ticket) + '" target="_blank" rel="noopener">購票</a>';
+    }
+    if (source) {
+      actions += '<a class="event-source" href="' + escapeHtml(source) + '" target="_blank" rel="noopener">來源</a>';
+    }
+    return '<article class="event-card">' +
+      '<div class="event-card-head"><h3 class="event-title">' + star + escapeHtml(row.title || '') + sample + '</h3>' + cat + '</div>' +
+      (ips ? '<div class="event-ips">' + ips + '</div>' : '') +
+      ((when || count) ? '<p class="event-meta">' + escapeHtml(when) + countHtml + '</p>' : '') +
+      '<p class="event-meta event-place">' + linkedPlace(row.place || '', mapsHref(row)) + '</p>' +
+      price + ticketNote + notes +
+      (actions ? '<div class="event-actions">' + actions + '</div>' : '') +
+      '</article>';
+  }
+
+  function eventSection(title, rows, today, empty) {
+    var cards = rows.length
+      ? '<div class="event-grid">' + rows.map(function (row) { return eventCard(row, today, title); }).join('') + '</div>'
+      : '<p class="events-empty">' + empty + '</p>';
+    return '<section class="event-section"><h2>' + title + '（' + rows.length + '）</h2>' + cards + '</section>';
+  }
+
+  function cmpEventDate(a, b, field) {
+    var av = a[field] || a.date || '9999-99-99';
+    var bv = b[field] || b.date || '9999-99-99';
+    if (av !== bv) return av < bv ? -1 : 1;
+    return String(a.title || '').localeCompare(String(b.title || ''), 'zh-Hant');
+  }
+
+  function renderDeadlines(data, today) {
+    var rows = (data.deadlines || []).slice().sort(function (a, b) {
+      var ad = a.deadline || '9999-99-99';
+      var bd = b.deadline || '9999-99-99';
+      if (ad !== bd) return ad < bd ? -1 : 1;
+      return String(a.item || '').localeCompare(String(b.item || ''), 'zh-Hant');
+    });
+    if (!rows.length) return '<p class="events-empty">暫未有周邊截止</p>';
+    return '<div class="event-grid">' + rows.map(function (row) {
+      var label = [row.ip, row.item].filter(Boolean).join(' · ');
+      var count = deadlineLabel(row.deadline, today);
+      var sample = row.sample ? ' <span class="badge badge-sample">示例</span>' : '';
+      var link = safeHttp(row.url);
+      var linkHtml = link ? '<a href="' + escapeHtml(link) + '" target="_blank" rel="noopener">開啟</a>' : '';
+      return '<article class="event-card">' +
+        '<h3 class="event-title">' + escapeHtml(label || '截止') + sample + '</h3>' +
+        '<p class="event-meta">' + linkedPlace(row.shop || row.place || '', mapsHref(row)) + '</p>' +
+        '<p class="event-meta">截止 ' + escapeHtml(row.deadline || '—') +
+        (count ? '<span class="event-count">' + escapeHtml(count) + '</span>' : '') + '</p>' +
+        (linkHtml ? '<div class="event-actions">' + linkHtml + '</div>' : '') +
+        '</article>';
+    }).join('') + '</div>';
+  }
+
   function renderEvents() {
     var data = eventsState.data;
     if (!data) return;
     var today = todayISO();
-    var week = weekBounds(today);
     var note = $('#events-note');
     if (note) note.textContent = data.note || '';
-    var list = eventsState.tab === 'deadlines' ? (data.deadlines || []) : (data.events || []);
-    var rows = list.filter(function (row) { return eventMatches(row, eventsState.filter, today, week); });
-    var head = $('#events-head');
-    var body = $('#events-body');
-    if (eventsState.tab === 'deadlines') {
-      head.innerHTML = '<tr><th>IP／品項</th><th>商店</th><th>截止</th><th>連結</th></tr>';
-      body.innerHTML = rows.length ? rows.map(function (row) {
-        var label = [row.ip, row.item].filter(Boolean).join(' · ');
-        var link = row.url ? '<a href="' + escapeHtml(row.url) + '" target="_blank" rel="noopener">開啟</a>' : '—';
-        var shopHref = mapsHref(row);
-        return '<tr><td>' + escapeHtml(label) + (row.sample ? ' <span class="badge badge-sample">示例</span>' : '') +
-          '</td><td>' + linkedPlace(row.shop || row.place || '', shopHref) + '</td><td>' + escapeHtml(row.deadline || '') +
-          '</td><td>' + link + '</td></tr>';
-      }).join('') : '<tr><td colspan="4">呢個篩選冇資料</td></tr>';
-    } else {
-      head.innerHTML = '<tr><th>日期</th><th>活動</th><th>地點</th><th>門票</th><th>來源</th></tr>';
-      body.innerHTML = rows.length ? rows.map(function (row) {
-        var when = row.endDate && row.endDate !== row.date ? (row.date + ' – ' + row.endDate) : (row.date || '');
-        var ticket = row.ticketUrl ? '<a href="' + escapeHtml(row.ticketUrl) + '" target="_blank" rel="noopener">門票</a>' : '—';
-        var source = row.source ? '<a href="' + escapeHtml(row.source) + '" target="_blank" rel="noopener">來源</a>' : '—';
-        return '<tr><td>' + escapeHtml(when) + '</td><td>' + escapeHtml(row.title || '') +
-          (row.sample ? ' <span class="badge badge-sample">示例</span>' : '') + '</td><td>' +
-          linkedPlace(row.place || '', mapsHref(row)) + '</td><td>' + ticket + '</td><td>' + source + '</td></tr>';
-      }).join('') : '<tr><td colspan="5">呢個篩選冇資料</td></tr>';
+    var updated = $('#events-updated');
+    if (updated) {
+      var stamp = String(data.updatedAt || '');
+      updated.textContent = /^\d{4}-\d{2}-\d{2}$/.test(stamp) ? ('活動資料更新：' + stamp) : '';
     }
-    $('#events-status').classList.add('hidden');
-    $('#events-wrap').classList.remove('hidden');
+    var status = $('#events-status');
+    if (status) status.classList.add('hidden');
+    var tools = $('#events-tools');
+    var board = $('#events-board');
+    var deadlines = $('#events-deadlines');
+    if (eventsState.tab === 'deadlines') {
+      if (tools) tools.classList.add('hidden');
+      if (board) board.classList.add('hidden');
+      if (deadlines) {
+        deadlines.classList.remove('hidden');
+        deadlines.innerHTML = renderDeadlines(data, today);
+      }
+      return;
+    }
+    if (tools) tools.classList.remove('hidden');
+    if (deadlines) deadlines.classList.add('hidden');
+    if (!board) return;
+    board.classList.remove('hidden');
+    renderBucketChips();
+    var groups = { '進行中': [], '即將開始': [], '已完結': [] };
+    (data.events || []).forEach(function (row) {
+      if (!eventVisible(row)) return;
+      var phase = eventPhase(row, today);
+      if (groups[phase]) groups[phase].push(row);
+    });
+    groups['進行中'].sort(function (a, b) { return cmpEventDate(a, b, 'endDate'); });
+    groups['即將開始'].sort(function (a, b) { return cmpEventDate(a, b, 'date'); });
+    groups['已完結'].sort(function (a, b) { return cmpEventDate(b, a, 'endDate'); });
+    var pastCards = groups['已完結'].length
+      ? '<div class="event-grid">' + groups['已完結'].map(function (row) { return eventCard(row, today, '已完結'); }).join('') + '</div>'
+      : '<p class="events-empty">最近七日冇完結活動</p>';
+    board.innerHTML = [
+      eventSection('進行中', groups['進行中'], today, '暫未有進行中嘅活動'),
+      eventSection('即將開始', groups['即將開始'], today, '暫未有即將開始嘅活動'),
+      '<details class="event-section events-past"><summary>剛完結（' + groups['已完結'].length + '）</summary>' + pastCards + '</details>'
+    ].join('');
   }
 
   function icsEscape(s) {
@@ -257,8 +443,8 @@
     if (!data) return;
     var today = todayISO();
     var lines = ['BEGIN:VCALENDAR', 'VERSION:2.0', 'PRODID:-//ACG Tools//hub//ZH', 'CALSCALE:GREGORIAN'];
-    function add(uid, date, summary, location, url) {
-      if (!date || date < today) return;
+    function add(uid, date, summary, location, url, allowPastStart) {
+      if (!date || (!allowPastStart && date < today)) return;
       var stamp = today.replace(/-/g, '') + 'T000000Z';
       var day = date.replace(/-/g, '');
       lines.push('BEGIN:VEVENT');
@@ -271,7 +457,9 @@
       lines.push('END:VEVENT');
     }
     (data.events || []).forEach(function (row) {
-      add('event-' + row.id, row.date, row.title, row.place, row.ticketUrl || row.source);
+      var end = row.endDate || row.date || '';
+      if (!row.date || (end && end < today)) return;
+      add('event-' + row.id, row.date, row.title, row.place, row.ticketUrl || row.source, true);
     });
     (data.deadlines || []).forEach(function (row) {
       add('deadline-' + row.id, row.deadline, (row.ip || '') + ' ' + (row.item || '') + ' @ ' + (row.shop || ''), row.shop, row.url);
@@ -1027,14 +1215,32 @@
       location.hash = next;
     });
   });
-  document.querySelectorAll('#events-filters .tab').forEach(function (btn) {
-    btn.addEventListener('click', function () {
-      document.querySelectorAll('#events-filters .tab').forEach(function (b) { b.classList.remove('active'); });
-      btn.classList.add('active');
-      eventsState.filter = btn.dataset.eventsFilter || 'upcoming';
+  var eventBuckets = $('#events-buckets');
+  if (eventBuckets) eventBuckets.addEventListener('click', function (e) {
+    var btn = e.target.closest('[data-event-bucket]');
+    if (!btn) return;
+    eventsState.bucket = btn.getAttribute('data-event-bucket') || 'all';
+    saveEventFilters();
+    renderEvents();
+  });
+  var featuredToggle = $('#events-featured');
+  if (featuredToggle) {
+    featuredToggle.checked = !!eventsState.featured;
+    featuredToggle.addEventListener('change', function () {
+      eventsState.featured = !!featuredToggle.checked;
+      saveEventFilters();
       renderEvents();
     });
-  });
+  }
+  var eventsQ = $('#events-q');
+  if (eventsQ) {
+    eventsQ.value = eventsState.q || '';
+    eventsQ.addEventListener('input', function () {
+      eventsState.q = eventsQ.value || '';
+      saveEventFilters();
+      renderEvents();
+    });
+  }
   var icsBtn = $('#btn-export-ics');
   if (icsBtn) icsBtn.addEventListener('click', exportIcs);
   var subsForm = $('#subs-gate-form');

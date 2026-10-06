@@ -1,0 +1,1220 @@
+{
+  "object": "list",
+  "has_more": false,
+  "next_cursor": null,
+  "today": "2026-10-06",
+  "priorDeadlines": [
+    {
+      "id": "example-preorder",
+      "ip": "示例作品",
+      "item": "會場限定",
+      "shop": "示例商店",
+      "deadline": "2026-10-18",
+      "url": "https://example.com/preorder",
+      "sample": true
+    },
+    {
+      "id": "keep-badge",
+      "ip": "原神",
+      "item": "金屬徽章",
+      "shop": "動漫店",
+      "place": "旺角信和中心",
+      "deadline": "2026-11-01",
+      "url": "https://example.com/badge",
+      "sample": false
+    },
+    {
+      "id": "marked-example",
+      "example": true,
+      "sample": false,
+      "ip": "a",
+      "item": "b",
+      "shop": "c",
+      "deadline": "2026-12-01",
+      "url": "https://example.com/y"
+    },
+    {
+      "id": "keep-book",
+      "ip": "間諜家家酒",
+      "item": "畫集",
+      "shop": "書店",
+      "deadline": "2026-10-20",
+      "url": "https://example.com/book",
+      "sample": false
+    }
+  ],
+  "expect": {
+    "skippedTitles": [
+      "太舊嘅活動",
+      "已封存活動",
+      "八日前完結"
+    ],
+    "deadlines": [
+      {
+        "id": "keep-badge",
+        "ip": "原神",
+        "item": "金屬徽章",
+        "shop": "動漫店",
+        "place": "旺角信和中心",
+        "deadline": "2026-11-01",
+        "url": "https://example.com/badge",
+        "sample": false
+      },
+      {
+        "id": "keep-book",
+        "ip": "間諜家家酒",
+        "item": "畫集",
+        "shop": "書店",
+        "deadline": "2026-10-20",
+        "url": "https://example.com/book",
+        "sample": false
+      }
+    ],
+    "events": [
+      {
+        "title": "七日邊界特展",
+        "status": "已完結",
+        "notionStatus": "已完結",
+        "category": "特展",
+        "ips": [],
+        "date": "2026-09-01",
+        "endDate": "2026-09-29",
+        "place": "香港藝術館",
+        "mapUrl": "https://www.google.com/maps/search/?api=1&query=%E9%A6%99%E6%B8%AF%E8%97%9D%E8%A1%93%E9%A4%A8",
+        "source": "https://example.com/boundary",
+        "featured": false,
+        "sample": false,
+        "timeNote": "",
+        "price": "",
+        "ticketUrl": "",
+        "notes": ""
+      },
+      {
+        "title": "剛完結展覽",
+        "status": "已完結",
+        "notionStatus": "已完結",
+        "category": "展覽",
+        "ips": [
+          "咒術迴戰"
+        ],
+        "date": "2026-09-20",
+        "endDate": "2026-10-02",
+        "place": "尖沙咀 K11",
+        "mapUrl": "https://www.google.com/maps/search/?api=1&query=%E5%B0%96%E6%B2%99%E5%92%80%20K11",
+        "source": "https://example.com/jjk",
+        "featured": false,
+        "sample": false
+      },
+      {
+        "title": "標錯進行中",
+        "status": "已完結",
+        "notionStatus": "進行中",
+        "category": "展覽",
+        "date": "2026-09-28",
+        "endDate": "2026-10-03",
+        "place": "K11 MUSEA",
+        "featured": false,
+        "sample": false
+      },
+      {
+        "title": "原神快閃店",
+        "status": "進行中",
+        "notionStatus": "即將開始",
+        "category": "快閃店",
+        "ips": [
+          "原神",
+          "崩壞：星穹鐵道"
+        ],
+        "date": "2026-10-01",
+        "endDate": "2026-10-10",
+        "timeNote": "11:00–21:00",
+        "place": "銅鑼灣希慎廣場",
+        "mapUrl": "https://www.google.com/maps/search/?api=1&query=%E9%8A%85%E9%91%BC%E7%81%A3%E5%B8%8C%E6%85%8E%E5%BB%A3%E5%A0%B4",
+        "price": "免費入場",
+        "ticketUrl": "https://tickets.example/genshin",
+        "ticketNote": "需網上換票",
+        "source": "https://example.com/genshin-popup",
+        "notes": "甲甲甲甲甲甲甲甲甲甲甲甲甲甲甲甲甲甲甲甲甲甲甲甲甲甲甲甲甲甲甲甲甲甲甲甲甲甲甲甲甲甲甲甲甲甲甲甲甲甲甲甲甲甲甲甲甲甲甲甲甲甲甲甲甲甲甲甲甲甲甲甲甲甲甲甲甲甲甲甲甲甲甲甲甲甲甲甲甲甲甲甲甲甲甲甲甲甲甲甲甲甲甲甲甲甲甲甲甲甲甲甲甲甲甲甲甲甲甲…",
+        "featured": true,
+        "verifiedAt": "2026-10-05",
+        "sample": false
+      },
+      {
+        "title": "標錯已完結",
+        "status": "進行中",
+        "notionStatus": "已完結",
+        "category": "快閃店",
+        "date": "2026-10-01",
+        "endDate": "2026-10-20",
+        "place": "海運大廈",
+        "mapUrl": "https://www.google.com/maps/search/?api=1&query=%E6%B5%B7%E9%81%8B%E5%A4%A7%E5%BB%88",
+        "featured": false,
+        "sample": false,
+        "source": ""
+      },
+      {
+        "title": "店內簽售",
+        "status": "進行中",
+        "notionStatus": "進行中",
+        "category": "店內活動",
+        "ips": [
+          "間諜家家酒"
+        ],
+        "date": "2026-10-06",
+        "endDate": "2026-10-06",
+        "place": "旺角 Animate",
+        "featured": false,
+        "sample": false
+      },
+      {
+        "title": "跨日界線",
+        "status": "進行中",
+        "notionStatus": "即將開始",
+        "category": "電影",
+        "date": "2026-10-06",
+        "endDate": "2026-10-06",
+        "place": "太古廣場",
+        "source": "https://example.com/midnight",
+        "featured": false,
+        "sample": false
+      },
+      {
+        "title": "聲優見面會",
+        "status": "即將開始",
+        "notionStatus": "即將開始",
+        "category": "見面會",
+        "date": "2026-10-08",
+        "endDate": "2026-10-08",
+        "place": "麥花臣場館",
+        "price": "$380",
+        "ticketUrl": "https://tickets.example/meet",
+        "featured": false,
+        "sample": false
+      },
+      {
+        "title": "同人展會",
+        "status": "即將開始",
+        "notionStatus": "即將開始",
+        "category": "展會",
+        "date": "2026-10-11",
+        "endDate": "2026-10-11",
+        "place": "觀塘",
+        "featured": false,
+        "sample": false
+      },
+      {
+        "title": "電影LIVE VIEWING",
+        "status": "即將開始",
+        "notionStatus": "進行中",
+        "category": "LIVE VIEWING",
+        "ips": [
+          "鬼滅之刃"
+        ],
+        "date": "2026-10-12",
+        "endDate": "2026-10-12",
+        "place": "旺角百老匯",
+        "price": "$120",
+        "source": "https://example.com/kimetsu-lv",
+        "featured": true,
+        "sample": false
+      },
+      {
+        "title": "示例演唱會",
+        "status": "即將開始",
+        "notionStatus": "即將開始",
+        "category": "演唱會",
+        "ips": [
+          "初音未來"
+        ],
+        "date": "2026-10-20",
+        "endDate": "2026-10-21",
+        "timeNote": "19:00 開場",
+        "place": "亞洲國際博覽館",
+        "price": "$580 起",
+        "ticketUrl": "https://tickets.example/miku",
+        "source": "https://example.com/miku",
+        "verifiedAt": "2026-10-01",
+        "featured": false,
+        "sample": false
+      },
+      {
+        "title": "冇來源限定店",
+        "status": "即將開始",
+        "notionStatus": "即將開始",
+        "category": "限定店",
+        "date": "2026-11-01",
+        "endDate": "2026-11-03",
+        "place": "海港城",
+        "mapUrl": "https://www.google.com/maps/search/?api=1&query=%E6%B5%B7%E6%B8%AF%E5%9F%8E",
+        "source": "",
+        "ticketUrl": "",
+        "featured": false,
+        "sample": false
+      }
+    ]
+  },
+  "results": [
+    {
+      "object": "page",
+      "id": "aaaaaaaa-aaaa-4aaa-8aaa-aaaaaaaaaaaa",
+      "url": "https://www.notion.so/aaaaaaaaaaaa4aaa8aaaaaaaaaaaaaaa",
+      "archived": false,
+      "in_trash": false,
+      "properties": {
+        "活動名": {
+          "type": "title",
+          "title": [
+            {
+              "plain_text": "原神快閃店"
+            }
+          ]
+        },
+        "狀態": {
+          "type": "select",
+          "select": {
+            "name": "即將開始"
+          }
+        },
+        "類別": {
+          "type": "select",
+          "select": {
+            "name": "快閃店"
+          }
+        },
+        "IP／作品": {
+          "type": "multi_select",
+          "multi_select": [
+            {
+              "name": "原神"
+            },
+            {
+              "name": "崩壞：星穹鐵道"
+            },
+            {
+              "name": "原神"
+            }
+          ]
+        },
+        "日期": {
+          "type": "date",
+          "date": {
+            "start": "2026-10-01",
+            "end": "2026-10-10"
+          }
+        },
+        "時間備註": {
+          "type": "rich_text",
+          "rich_text": [
+            {
+              "plain_text": "11:00–21:00"
+            }
+          ]
+        },
+        "地點": {
+          "type": "rich_text",
+          "rich_text": [
+            {
+              "plain_text": "銅鑼灣希慎廣場"
+            }
+          ]
+        },
+        "票價／入場": {
+          "type": "rich_text",
+          "rich_text": [
+            {
+              "plain_text": "免費入場"
+            }
+          ]
+        },
+        "票務連結": {
+          "type": "url",
+          "url": "https://tickets.example/genshin"
+        },
+        "票務說明": {
+          "type": "rich_text",
+          "rich_text": [
+            {
+              "plain_text": "需網上換票"
+            }
+          ]
+        },
+        "來源連結": {
+          "type": "url",
+          "url": "https://example.com/genshin-popup"
+        },
+        "備註": {
+          "type": "rich_text",
+          "rich_text": [
+            {
+              "plain_text": "甲甲甲甲甲甲甲甲甲甲甲甲甲甲甲甲甲甲甲甲甲甲甲甲甲甲甲甲甲甲甲甲甲甲甲甲甲甲甲甲甲甲甲甲甲甲甲甲甲甲甲甲甲甲甲甲甲甲甲甲甲甲甲甲甲甲甲甲甲甲甲甲甲甲甲甲甲甲甲甲甲甲甲甲甲甲甲甲甲甲甲甲甲甲甲甲甲甲甲甲甲甲甲甲甲甲甲甲甲甲甲甲甲甲甲甲甲甲甲甲甲甲甲甲甲甲甲甲甲甲甲甲甲甲甲甲甲甲甲甲甲甲甲甲甲甲甲甲甲甲"
+            }
+          ]
+        },
+        "重點IP": {
+          "type": "checkbox",
+          "checkbox": true
+        },
+        "最後核實日期": {
+          "type": "date",
+          "date": {
+            "start": "2026-10-05"
+          }
+        },
+        "原狀態": {
+          "type": "rich_text",
+          "rich_text": [
+            {
+              "plain_text": "不應出現"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "object": "page",
+      "id": "bbbbbbbb-bbbb-4bbb-8bbb-bbbbbbbbbbbb",
+      "url": "https://www.notion.so/bbbbbbbbbbbb4bbb8bbbbbbbbbbbbbbb",
+      "archived": false,
+      "in_trash": false,
+      "properties": {
+        "活動名": {
+          "type": "title",
+          "title": [
+            {
+              "plain_text": "示例演唱會"
+            }
+          ]
+        },
+        "狀態": {
+          "type": "select",
+          "select": {
+            "name": "即將開始"
+          }
+        },
+        "類別": {
+          "type": "select",
+          "select": {
+            "name": "演唱會"
+          }
+        },
+        "IP／作品": {
+          "type": "multi_select",
+          "multi_select": [
+            {
+              "name": "初音未來"
+            }
+          ]
+        },
+        "日期": {
+          "type": "date",
+          "date": {
+            "start": "2026-10-20",
+            "end": "2026-10-21"
+          }
+        },
+        "時間備註": {
+          "type": "rich_text",
+          "rich_text": [
+            {
+              "plain_text": "19:00 開場"
+            }
+          ]
+        },
+        "地點": {
+          "type": "rich_text",
+          "rich_text": [
+            {
+              "plain_text": "亞洲國際博覽館"
+            }
+          ]
+        },
+        "票價／入場": {
+          "type": "rich_text",
+          "rich_text": [
+            {
+              "plain_text": "$580 起"
+            }
+          ]
+        },
+        "票務連結": {
+          "type": "url",
+          "url": "https://tickets.example/miku"
+        },
+        "票務說明": {
+          "type": "rich_text",
+          "rich_text": [
+            {
+              "plain_text": ""
+            }
+          ]
+        },
+        "來源連結": {
+          "type": "url",
+          "url": "https://example.com/miku"
+        },
+        "重點IP": {
+          "type": "checkbox",
+          "checkbox": false
+        },
+        "最後核實日期": {
+          "type": "date",
+          "date": {
+            "start": "2026-10-01"
+          }
+        }
+      }
+    },
+    {
+      "object": "page",
+      "id": "cccccccc-cccc-4ccc-8ccc-cccccccccccc",
+      "url": "https://www.notion.so/cccccccccccc4ccc8ccccccccccccccc",
+      "archived": false,
+      "in_trash": false,
+      "properties": {
+        "活動名": {
+          "type": "title",
+          "title": [
+            {
+              "plain_text": "剛完結展覽"
+            }
+          ]
+        },
+        "狀態": {
+          "type": "select",
+          "select": {
+            "name": "已完結"
+          }
+        },
+        "類別": {
+          "type": "select",
+          "select": {
+            "name": "展覽"
+          }
+        },
+        "IP／作品": {
+          "type": "multi_select",
+          "multi_select": [
+            {
+              "name": "咒術迴戰"
+            }
+          ]
+        },
+        "日期": {
+          "type": "date",
+          "date": {
+            "start": "2026-09-20",
+            "end": "2026-10-02"
+          }
+        },
+        "地點": {
+          "type": "rich_text",
+          "rich_text": [
+            {
+              "plain_text": "尖沙咀 K11"
+            }
+          ]
+        },
+        "來源連結": {
+          "type": "url",
+          "url": "https://example.com/jjk"
+        },
+        "重點IP": {
+          "type": "checkbox",
+          "checkbox": false
+        }
+      }
+    },
+    {
+      "object": "page",
+      "id": "dddddddd-dddd-4ddd-8ddd-dddddddddddd",
+      "url": "https://www.notion.so/dddddddddddd4ddd8ddddddddddddddd",
+      "archived": false,
+      "in_trash": false,
+      "properties": {
+        "活動名": {
+          "type": "title",
+          "title": [
+            {
+              "plain_text": "太舊嘅活動"
+            }
+          ]
+        },
+        "狀態": {
+          "type": "select",
+          "select": {
+            "name": "已完結"
+          }
+        },
+        "類別": {
+          "type": "select",
+          "select": {
+            "name": "特展"
+          }
+        },
+        "日期": {
+          "type": "date",
+          "date": {
+            "start": "2026-08-01",
+            "end": "2026-09-01"
+          }
+        },
+        "地點": {
+          "type": "rich_text",
+          "rich_text": [
+            {
+              "plain_text": "香港藝術館"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "object": "page",
+      "id": "eeeeeeee-eeee-4eee-8eee-eeeeeeeeeeee",
+      "url": "https://www.notion.so/eeeeeeeeeeee4eee8eeeeeeeeeeeeeee",
+      "archived": false,
+      "in_trash": false,
+      "properties": {
+        "活動名": {
+          "type": "title",
+          "title": [
+            {
+              "plain_text": "已封存活動"
+            }
+          ]
+        },
+        "狀態": {
+          "type": "select",
+          "select": {
+            "name": "封存"
+          }
+        },
+        "類別": {
+          "type": "select",
+          "select": {
+            "name": "快閃店"
+          }
+        },
+        "日期": {
+          "type": "date",
+          "date": {
+            "start": "2026-10-01",
+            "end": "2026-10-20"
+          }
+        },
+        "地點": {
+          "type": "rich_text",
+          "rich_text": [
+            {
+              "plain_text": "銅鑼灣"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "object": "page",
+      "id": "ffffffff-ffff-4fff-8fff-ffffffffffff",
+      "url": "https://www.notion.so/ffffffffffff4fff8fffffffffffffff",
+      "archived": false,
+      "in_trash": false,
+      "properties": {
+        "活動名": {
+          "type": "title",
+          "title": [
+            {
+              "plain_text": "電影LIVE VIEWING"
+            }
+          ]
+        },
+        "狀態": {
+          "type": "select",
+          "select": {
+            "name": "進行中"
+          }
+        },
+        "類別": {
+          "type": "select",
+          "select": {
+            "name": "LIVE VIEWING"
+          }
+        },
+        "IP／作品": {
+          "type": "multi_select",
+          "multi_select": [
+            {
+              "name": "鬼滅之刃"
+            }
+          ]
+        },
+        "日期": {
+          "type": "date",
+          "date": {
+            "start": "2026-10-12T18:00:00.000+08:00",
+            "end": "2026-10-12T21:00:00.000+08:00"
+          }
+        },
+        "地點": {
+          "type": "rich_text",
+          "rich_text": [
+            {
+              "plain_text": "旺角百老匯"
+            }
+          ]
+        },
+        "票價／入場": {
+          "type": "rich_text",
+          "rich_text": [
+            {
+              "plain_text": "$120"
+            }
+          ]
+        },
+        "重點IP": {
+          "type": "checkbox",
+          "checkbox": true
+        },
+        "來源連結": {
+          "type": "url",
+          "url": "https://example.com/kimetsu-lv"
+        }
+      }
+    },
+    {
+      "object": "page",
+      "id": "12121212-1212-4121-8121-121212121212",
+      "url": "https://www.notion.so/12121212121241218121121212121212",
+      "archived": false,
+      "in_trash": false,
+      "properties": {
+        "活動名": {
+          "type": "title",
+          "title": [
+            {
+              "plain_text": "店內簽售"
+            }
+          ]
+        },
+        "狀態": {
+          "type": "select",
+          "select": {
+            "name": "進行中"
+          }
+        },
+        "類別": {
+          "type": "select",
+          "select": {
+            "name": "店內活動"
+          }
+        },
+        "IP／作品": {
+          "type": "multi_select",
+          "multi_select": [
+            {
+              "name": "間諜家家酒"
+            }
+          ]
+        },
+        "日期": {
+          "type": "date",
+          "date": {
+            "start": "2026-10-06",
+            "end": "2026-10-06"
+          }
+        },
+        "地點": {
+          "type": "rich_text",
+          "rich_text": [
+            {
+              "plain_text": "旺角 Animate"
+            }
+          ]
+        },
+        "重點IP": {
+          "type": "checkbox",
+          "checkbox": false
+        }
+      }
+    },
+    {
+      "object": "page",
+      "id": "13131313-1313-4131-8131-131313131313",
+      "url": "https://www.notion.so/13131313131341318131131313131313",
+      "archived": false,
+      "in_trash": false,
+      "properties": {
+        "活動名": {
+          "type": "title",
+          "title": [
+            {
+              "plain_text": "同人展會"
+            }
+          ]
+        },
+        "狀態": {
+          "type": "select",
+          "select": {
+            "name": "即將開始"
+          }
+        },
+        "類別": {
+          "type": "select",
+          "select": {
+            "name": "展會"
+          }
+        },
+        "日期": {
+          "type": "date",
+          "date": {
+            "start": "2026-10-11"
+          }
+        },
+        "地點": {
+          "type": "rich_text",
+          "rich_text": [
+            {
+              "plain_text": "觀塘"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "object": "page",
+      "id": "14141414-1414-4141-8141-141414141414",
+      "url": "https://www.notion.so/14141414141441418141141414141414",
+      "archived": false,
+      "in_trash": false,
+      "properties": {
+        "活動名": {
+          "type": "title",
+          "title": [
+            {
+              "plain_text": "七日邊界特展"
+            }
+          ]
+        },
+        "狀態": {
+          "type": "select",
+          "select": {
+            "name": "已完結"
+          }
+        },
+        "類別": {
+          "type": "select",
+          "select": {
+            "name": "特展"
+          }
+        },
+        "日期": {
+          "type": "date",
+          "date": {
+            "start": "2026-09-01",
+            "end": "2026-09-29"
+          }
+        },
+        "地點": {
+          "type": "rich_text",
+          "rich_text": [
+            {
+              "plain_text": "香港藝術館"
+            }
+          ]
+        },
+        "來源連結": {
+          "type": "url",
+          "url": "https://example.com/boundary"
+        }
+      }
+    },
+    {
+      "object": "page",
+      "id": "15151515-1515-4151-8151-151515151515",
+      "url": "https://www.notion.so/15151515151541518151151515151515",
+      "archived": false,
+      "in_trash": false,
+      "properties": {
+        "活動名": {
+          "type": "title",
+          "title": [
+            {
+              "plain_text": "八日前完結"
+            }
+          ]
+        },
+        "狀態": {
+          "type": "select",
+          "select": {
+            "name": "已完結"
+          }
+        },
+        "類別": {
+          "type": "select",
+          "select": {
+            "name": "展覽"
+          }
+        },
+        "日期": {
+          "type": "date",
+          "date": {
+            "start": "2026-09-01",
+            "end": "2026-09-28"
+          }
+        },
+        "地點": {
+          "type": "rich_text",
+          "rich_text": [
+            {
+              "plain_text": "香港大會堂"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "object": "page",
+      "id": "16161616-1616-4161-8161-161616161616",
+      "url": "https://www.notion.so/16161616161641618161161616161616",
+      "archived": false,
+      "in_trash": false,
+      "properties": {
+        "活動名": {
+          "type": "title",
+          "title": [
+            {
+              "plain_text": "跨日界線"
+            }
+          ]
+        },
+        "狀態": {
+          "type": "select",
+          "select": {
+            "name": "即將開始"
+          }
+        },
+        "類別": {
+          "type": "select",
+          "select": {
+            "name": "電影"
+          }
+        },
+        "日期": {
+          "type": "date",
+          "date": {
+            "start": "2026-10-05T20:00:00.000Z",
+            "end": "2026-10-05T22:00:00.000Z"
+          }
+        },
+        "地點": {
+          "type": "rich_text",
+          "rich_text": [
+            {
+              "plain_text": "太古廣場"
+            }
+          ]
+        },
+        "來源連結": {
+          "type": "url",
+          "url": "https://example.com/midnight"
+        }
+      }
+    },
+    {
+      "object": "page",
+      "id": "17171717-1717-4171-8171-171717171717",
+      "url": "https://www.notion.so/should-not-publish",
+      "archived": false,
+      "in_trash": false,
+      "properties": {
+        "活動名": {
+          "type": "title",
+          "title": [
+            {
+              "plain_text": "冇來源限定店"
+            }
+          ]
+        },
+        "狀態": {
+          "type": "select",
+          "select": {
+            "name": "即將開始"
+          }
+        },
+        "類別": {
+          "type": "select",
+          "select": {
+            "name": "限定店"
+          }
+        },
+        "日期": {
+          "type": "date",
+          "date": {
+            "start": "2026-11-01",
+            "end": "2026-11-03"
+          }
+        },
+        "地點": {
+          "type": "rich_text",
+          "rich_text": [
+            {
+              "plain_text": "海港城"
+            }
+          ]
+        },
+        "來源連結": {
+          "type": "url",
+          "url": "https://www.notion.so/should-not-publish"
+        },
+        "票務連結": {
+          "type": "url",
+          "url": "javascript:alert(1)"
+        }
+      }
+    },
+    {
+      "object": "page",
+      "id": "18181818-1818-4181-8181-181818181818",
+      "url": "https://www.notion.so/18181818181841818181181818181818",
+      "archived": false,
+      "in_trash": false,
+      "properties": {
+        "活動名": {
+          "type": "title",
+          "title": [
+            {
+              "plain_text": "聲優見面會"
+            }
+          ]
+        },
+        "狀態": {
+          "type": "select",
+          "select": {
+            "name": "即將開始"
+          }
+        },
+        "類別": {
+          "type": "select",
+          "select": {
+            "name": "見面會"
+          }
+        },
+        "日期": {
+          "type": "date",
+          "date": {
+            "start": "2026-10-08"
+          }
+        },
+        "地點": {
+          "type": "rich_text",
+          "rich_text": [
+            {
+              "plain_text": "麥花臣場館"
+            }
+          ]
+        },
+        "票價／入場": {
+          "type": "rich_text",
+          "rich_text": [
+            {
+              "plain_text": "$380"
+            }
+          ]
+        },
+        "票務連結": {
+          "type": "url",
+          "url": "https://tickets.example/meet"
+        }
+      }
+    },
+    {
+      "object": "page",
+      "id": "19191919-1919-4191-8191-191919191919",
+      "url": "https://www.notion.so/19191919191941918191191919191919",
+      "archived": false,
+      "in_trash": false,
+      "properties": {
+        "活動名": {
+          "type": "title",
+          "title": [
+            {
+              "plain_text": "標錯進行中"
+            }
+          ]
+        },
+        "狀態": {
+          "type": "select",
+          "select": {
+            "name": "進行中"
+          }
+        },
+        "類別": {
+          "type": "select",
+          "select": {
+            "name": "展覽"
+          }
+        },
+        "日期": {
+          "type": "date",
+          "date": {
+            "start": "2026-09-28",
+            "end": "2026-10-03"
+          }
+        },
+        "地點": {
+          "type": "rich_text",
+          "rich_text": [
+            {
+              "plain_text": "K11 MUSEA"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "object": "page",
+      "id": "20202020-2020-4202-8202-202020202020",
+      "url": "https://www.notion.so/20202020202042028202202020202020",
+      "archived": false,
+      "in_trash": false,
+      "properties": {
+        "活動名": {
+          "type": "title",
+          "title": [
+            {
+              "plain_text": "標錯已完結"
+            }
+          ]
+        },
+        "狀態": {
+          "type": "select",
+          "select": {
+            "name": "已完結"
+          }
+        },
+        "類別": {
+          "type": "select",
+          "select": {
+            "name": "快閃店"
+          }
+        },
+        "日期": {
+          "type": "date",
+          "date": {
+            "start": "2026-10-01",
+            "end": "2026-10-20"
+          }
+        },
+        "地點": {
+          "type": "rich_text",
+          "rich_text": [
+            {
+              "plain_text": "海運大廈"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "object": "page",
+      "id": "21212121-2121-4121-8121-212121212121",
+      "url": "https://www.notion.so/21212121212141218121212121212121",
+      "archived": false,
+      "in_trash": true,
+      "properties": {
+        "活動名": {
+          "type": "title",
+          "title": [
+            {
+              "plain_text": "垃圾桶活動"
+            }
+          ]
+        },
+        "狀態": {
+          "type": "select",
+          "select": {
+            "name": "進行中"
+          }
+        },
+        "類別": {
+          "type": "select",
+          "select": {
+            "name": "展會"
+          }
+        },
+        "日期": {
+          "type": "date",
+          "date": {
+            "start": "2026-10-06",
+            "end": "2026-10-08"
+          }
+        },
+        "地點": {
+          "type": "rich_text",
+          "rich_text": [
+            {
+              "plain_text": "不應出現"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "object": "page",
+      "id": "22222222-2222-4222-8222-222222222222",
+      "url": "https://www.notion.so/22222222222242228222222222222222",
+      "archived": true,
+      "in_trash": false,
+      "properties": {
+        "活動名": {
+          "type": "title",
+          "title": [
+            {
+              "plain_text": "封存頁"
+            }
+          ]
+        },
+        "狀態": {
+          "type": "select",
+          "select": {
+            "name": "進行中"
+          }
+        },
+        "日期": {
+          "type": "date",
+          "date": {
+            "start": "2026-10-06"
+          }
+        }
+      }
+    },
+    {
+      "object": "page",
+      "id": "23232323-2323-4232-8232-232323232323",
+      "url": "https://www.notion.so/23232323232342328232232323232323",
+      "archived": false,
+      "in_trash": false,
+      "properties": {
+        "活動名": {
+          "type": "title",
+          "title": [
+            {
+              "plain_text": ""
+            }
+          ]
+        },
+        "狀態": {
+          "type": "select",
+          "select": {
+            "name": "進行中"
+          }
+        },
+        "日期": {
+          "type": "date",
+          "date": {
+            "start": "2026-10-06"
+          }
+        }
+      }
+    }
+  ]
+}

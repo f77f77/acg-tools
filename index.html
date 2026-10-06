@@ -107,7 +107,7 @@
           <iframe id="am-player" title="Apple Music" allow="autoplay *; encrypted-media *; fullscreen *; clipboard-write" frameborder="0" height="360" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation" data-src="https://embed.music.apple.com/jp/playlist/favorite-songs/pl.u-EgUD7ApZa9" src="about:blank"></iframe>
         </div>
       </div>
-      <div class="sidebar-footer"><small>個人工具 · hub 1.4</small></div>
+      <div class="sidebar-footer"><small>個人工具 · hub 1.5</small></div>
     </aside>
     <div id="main-wrap" class="main-wrap">
       <header class="topbar"><button id="btn-open-sidebar" class="btn-icon">☰</button><h1 id="page-title">生詞本</h1></header>
@@ -253,19 +253,18 @@
             </div>
             <button type="button" id="btn-export-ics" class="btn btn-ghost btn-sm">匯出未結束 .ics</button>
           </div>
-          <div class="tabs" id="events-filters">
-            <button type="button" class="tab active" data-events-filter="upcoming">即將舉行</button>
-            <button type="button" class="tab" data-events-filter="week">本週</button>
-            <button type="button" class="tab" data-events-filter="past">已結束</button>
+          <p class="module-note events-updated" id="events-updated"></p>
+          <div id="events-tools" class="events-tools">
+            <div class="events-tools-row">
+              <div class="tabs" id="events-buckets"></div>
+              <label class="fx-fee-check" for="events-featured"><input type="checkbox" id="events-featured" /><span>只睇重點 IP</span></label>
+            </div>
+            <div class="search-bar events-search"><input type="search" id="events-q" placeholder="搜尋名稱、IP 或地點" autocomplete="off" /></div>
           </div>
           <p class="module-note" id="events-note"></p>
           <div id="events-status" class="empty-state"><p>載入中...</p></div>
-          <div class="table-wrap hidden" id="events-wrap">
-            <table class="data-table">
-              <thead id="events-head"></thead>
-              <tbody id="events-body"></tbody>
-            </table>
-          </div>
+          <div id="events-board" class="hidden"></div>
+          <div id="events-deadlines" class="hidden"></div>
         </section>
         <section id="module-subs" class="module">
           <div class="module-toolbar">
