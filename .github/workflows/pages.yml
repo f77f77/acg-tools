@@ -14,7 +14,7 @@ on:
   # Bot commits pushed with GITHUB_TOKEN do not trigger `push` workflows,
   # so redeploy after the data-refresh workflows finish on main.
   workflow_run:
-    workflows: ["Sync anime subtitle table", "Update season.json", "Build Pokémon data", "Sync subscriptions"]
+    workflows: ["Sync anime subtitle table", "Update season.json", "Build Pokémon data", "Sync subscriptions", "Sync Hong Kong events"]
     types: [completed]
     branches: [main]
 

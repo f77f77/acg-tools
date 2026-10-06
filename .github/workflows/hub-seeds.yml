@@ -5,6 +5,8 @@ name: Validate hub seed JSON
 # written by scripts/sync_anime_subs.py. This job also runs that mapper
 # offline against a fixture so the Notion → JSON path stays tested without secrets.
 # The subscription job encrypts a fake fixture and decrypts it with Node WebCrypto.
+# data/events.json is events.v2, written by scripts/sync_events.py. This job
+# validates the committed file and runs the mapper offline against a fixture.
 # data/codes.json gamesCatalog includes 寶可夢 Champions even when that game has no rows.
 on:
   workflow_dispatch:
@@ -32,6 +34,13 @@ jobs:
             --offline --check \
             --out /tmp/anime-subs-fixture.json \
             --cache /tmp/anime-bgm-cache-fixture.json
+      - name: Events schema and fixture
+        run: |
+          python3 scripts/sync_events.py --validate
+          python3 scripts/sync_events.py \
+            --fixture scripts/fixtures/notion_events_sample.json \
+            --offline --check \
+            --out /tmp/events-fixture.json
       - uses: actions/setup-node@v4
         with:
           node-version: "20"

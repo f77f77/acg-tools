@@ -34,15 +34,76 @@ node scripts/build_names_index.mjs --fetch   # 再向 PokéAPI 補特性、道�
 
 `scripts/refresh_codes_stub.py` 只檢查 schema，未接遠端抓取。畫面預設收起已過期，並以遊戲徽章篩選。
 
-## `events.json`（`events.v1`）
+## `events.json`（`events.v2`）
 
-`events[]`：`id`, `title`, `date`, `endDate`, `place`, `ticketUrl`, `source`, `sample`，可選 `address`, `mapUrl`
+`events[]` 由 `scripts/sync_events.py` 每日從 Notion 資料庫「香港ACG情報看板」寫入。v1 嘅欄位仍然在（`id`, `title`, `date`, `endDate`, `place`, `ticketUrl`, `source`, `sample`），所以舊畫面讀得明。同步之後每項仲有：
 
-`deadlines[]`：`id`, `ip`, `item`, `shop`, `deadline`, `url`, `sample`，可選 `place`, `address`, `mapUrl`
+| 欄位 | 說明 |
+| --- | --- |
+| `id` | Notion page id 嘅 SHA-256 前 16 個 hex。唔係原本 id，頁面網址亦唔公開 |
+| `title` | `活動名` |
+| `status` | 按香港時間同日期重算：`即將開始`／`進行中`／`已完結`。有日期就用日期，冇日期先沿用 Notion |
+| `notionStatus` | Notion `狀態` 原值，方便對返 |
+| `category` | `類別` 原文。畫面先再歸成六個篩選 |
+| `ips` | `IP／作品` |
+| `date` / `endDate` | `日期` 嘅開始／結束，收成 `YYYY-MM-DD`（有時間就轉做香港日期） |
+| `timeNote` | `時間備註` |
+| `place` | `地點` |
+| `mapUrl` | 由 `地點` 組出嘅 Google 地圖搜尋連結 |
+| `price` | `票價／入場` |
+| `ticketUrl` / `ticketNote` | `票務連結`／`票務說明` |
+| `source` | `來源連結`。Notion 頁面網址唔會寫入 |
+| `notes` | `備註`，大約 120 字，長過就收成省略號 |
+| `featured` | `重點IP` |
+| `verifiedAt` | `最後核實日期` |
+| `sample` | 同步列一定係 `false` |
 
-日期用 `YYYY-MM-DD`。`sample: true` 會標成示例。篩選用瀏覽器本地日期：即將舉行（未結束）、本週（星期一至日，而且未結束）、已結束。`.ics` 只匯出未結束嘅活動同截止。
+`原狀態` 唔讀。只收 Notion 狀態係 `即將開始`、`進行中`，以及 `已完結` 而且結束日係香港時間今日起計 7 日內（包含第 7 日）。`封存` 唔收。Notion 寫即將開始、但開始日已經到咗而且未過結束日，會改成 `進行中`。
 
-地點會開新分頁去 Google 地圖搜尋。活動列用 `place`（有 `address` 就一併放進搜尋字）。周邊截止要有 `place`、`address` 或 `mapUrl` 先會把商店名連出去；得返商店名就當未有實體地址。`mapUrl` 如果係 `http`／`https`，會蓋過自動組出嚟嘅搜尋連結。
+`deadlines[]` 仍然手改，唔經 Notion：`id`, `ip`, `item`, `shop`, `deadline`, `url`, `sample`，可選 `place`, `address`, `mapUrl`。同步會保留現有截止，但會掉 `sample: true` 或 `example: true` 嘅列。
+
+日期用 `YYYY-MM-DD`。畫面分「進行中」「即將開始」「剛完結」（七日內），可以用類別、重點 IP、文字篩選，選擇會記喺呢部瀏覽器。`.ics` 只匯出未結束嘅活動同截止。
+
+地點會開新分頁去 Google 地圖搜尋。活動用 `place`（有 `address` 而且未有 `mapUrl` 就一併放進搜尋字）。周邊截止要有 `place`、`address` 或 `mapUrl` 先會把商店名連出去；得返商店名就當未有實體地址。`mapUrl` 如果係 `http`／`https`，會蓋過自動組出嚟嘅搜尋連結。
+
+類別歸組（對 `類別` 原文，對唔上就去「其他」，例如 `店內活動`）：
+
+| 篩選 | Notion `類別` |
+| --- | --- |
+| 快閃／限定店 | 快閃店、限定店 |
+| 展覽／特展 | 展覽、特展 |
+| 展會／同人 | 展會、同人展、同人、同人祭 |
+| 演唱會／LIVE | 演唱會、見面會、LIVE |
+| 電影／LIVE VIEWING | 電影、LIVE VIEWING |
+| 其他 | 其餘，包括店內活動 |
+
+### 密鑰同 Notion 整合
+
+Workflow：`.github/workflows/sync-events.yml`，每日 **07:19 香港時間**（UTC 23:19）。亦可以手動 `workflow_dispatch`。有改動先 commit `data/events.json`，訊息係 `chore: sync events from Notion`，再經 `pages.yml` 嘅 `workflow_run` 重新部署。
+
+| 名稱 | 必須 | 說明 |
+| --- | --- | --- |
+| `NOTION_TOKEN` | 要 | 同字幕表、訂閱表嗰個 internal integration secret。Repo 已經有呢個 Actions secret |
+| `NOTION_EVENTS_DB_ID` | 唔使 | 蓋過預設資料庫 id `2f23c58c-f253-4aa4-ad5d-3ac848727cc6`。資料來源 id `5378fc90-4211-40d6-bdac-041980476c56` 只係記錄；腳本用 2022-06-28 嘅 database query，唔會傳呢個 id |
+
+整合要加到資料庫先讀到：
+
+1. 打開 Notion「香港ACG情報看板」。
+2. 右上角 **… → Connections**，揀上面嗰個 internal integration。
+3. 如果未有 integration：Notion → **Settings → Connections**（或者 [developers integrations](https://www.notion.so/my-integrations)）→ **New integration**，類型選 internal，再做第 2 步。
+4. `NOTION_TOKEN` 已經喺 GitHub repo → **Settings → Secrets and variables → Actions**。資料庫 id 唔係預設嗰個先再加 `NOTION_EVENTS_DB_ID`。
+
+冇 `NOTION_TOKEN` 時腳本會印說明並以 exit 0 結束，唔會改檔，所以 fork 同 PR CI 唔會因此失敗。
+
+本地用 fixture 跑（唔打 Notion）：
+
+```bash
+python3 scripts/sync_events.py --validate
+python3 scripts/sync_events.py \
+  --fixture scripts/fixtures/notion_events_sample.json \
+  --offline --check \
+  --out /tmp/events-fixture.json
+```
 
 ## `anime-subs.json`（`anime-subs.v1`）
 
