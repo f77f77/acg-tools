@@ -11,12 +11,15 @@
   --hard: #e67e22;
   --good: #27ae60;
   --easy: #3498db;
+  --link: #8ab4f8;
   --sidebar-w: 320px;
   --radius: 12px;
   --shadow: 0 4px 20px rgba(0,0,0,0.4);
 }
 * { box-sizing: border-box; margin: 0; padding: 0; }
 body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans TC", "Noto Sans JP", sans-serif; background: var(--bg); color: var(--text); line-height: 1.5; min-height: 100vh; -webkit-font-smoothing: antialiased; }
+a:link, a:visited { color: var(--link); text-decoration: none; font-size: inherit; }
+a:hover, a:focus, a:focus-visible { color: var(--link); text-decoration: underline; text-underline-offset: 0.15em; }
 #app { display: flex; min-height: 100vh; }
 .sidebar { width: var(--sidebar-w); background: var(--surface); border-right: 1px solid var(--border); display: flex; flex-direction: column; position: fixed; top: 0; left: 0; bottom: 0; z-index: 50; transition: transform 0.25s ease; }
 .sidebar.collapsed { transform: translateX(-100%); }
@@ -24,10 +27,12 @@ body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans TC
 .logo { font-weight: 600; font-size: 1.05rem; }
 .sidebar-nav { flex: 1 1 auto; min-height: 0; overflow-y: auto; padding: 12px 8px; display: flex; flex-direction: column; gap: 4px; }
 .nav-item.nav-external { text-decoration: none; margin-top: 8px; border-top: 1px solid var(--border); border-radius: 0; padding-top: 14px; }
-.nav-item { display: flex; align-items: center; gap: 10px; padding: 12px 14px; background: none; border: none; border-radius: 8px; color: var(--text-muted); font-size: 0.95rem; cursor: pointer; text-align: left; transition: all 0.15s; }
-.nav-item:hover { background: var(--surface2); color: var(--text); }
-.nav-item.active { background: rgba(124,106,240,0.15); color: var(--primary); font-weight: 500; }
-.nav-icon { font-size: 1.15rem; }
+.nav-item { display: flex; align-items: center; gap: 10px; padding: 12px 14px; background: none; border: none; border-radius: 8px; color: var(--text-muted); font-family: inherit; font-size: 0.95rem; cursor: pointer; text-align: left; transition: background 0.15s, color 0.15s; }
+.nav-item:link, .nav-item:visited { color: var(--text-muted); text-decoration: none; }
+.nav-item:hover { background: var(--surface2); color: var(--text); text-decoration: none; }
+.nav-item:focus, .nav-item:focus-visible { color: var(--text); text-decoration: none; }
+.nav-item.active, .nav-item.active:link, .nav-item.active:visited, .nav-item.active:hover, .nav-item.active:focus { background: rgba(124,106,240,0.15); color: var(--primary); font-weight: 500; text-decoration: none; }
+.nav-icon { flex: 0 0 1.65em; width: 1.65em; height: 1.65em; display: inline-flex; align-items: center; justify-content: center; font-size: 1.15rem; line-height: 1; text-align: center; font-variant-emoji: emoji; }
 .sidebar-player { flex: 0 0 auto; padding: 4px 8px; display: flex; flex-direction: column; border-top: 1px solid var(--border); min-height: 0; }
 .sidebar-player-toggle { display: flex; align-items: center; justify-content: space-between; width: 100%; background: none; border: none; color: var(--text-muted); cursor: pointer; padding: 8px 6px; border-radius: 8px; }
 .sidebar-player-toggle:hover { background: var(--surface2); color: var(--text); }
@@ -111,6 +116,7 @@ body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans TC
 .weekday-title { font-size: 1.05rem; font-weight: 600; margin-bottom: 12px; padding-bottom: 6px; border-bottom: 1px solid var(--border); color: var(--primary); }
 .anime-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 16px; }
 .anime-card { background: var(--surface); border: 1px solid var(--border); border-radius: 10px; overflow: hidden; transition: transform 0.15s, border-color 0.15s; text-decoration: none; color: var(--text); }
+a.anime-card:link, a.anime-card:visited, a.anime-card:hover, a.anime-card:focus, a.anime-card:focus-visible { color: var(--text); text-decoration: none; }
 .anime-card:hover { border-color: var(--primary); transform: translateY(-2px); }
 .anime-cover { width: 100%; aspect-ratio: 3/4; object-fit: cover; background: var(--surface2); display: block; }
 .anime-info { padding: 10px 12px; }
