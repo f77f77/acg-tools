@@ -1,66 +1,897 @@
 {
   "schema": "anime-subs.v1",
   "updatedAt": "2026-10-06",
-  "note": "中文字幕資料併入新番表，唔再係獨立頁。對應先睇 bgmId（或來源網址入面嘅 Bangumi subject id），再以標題、日文名、aliases 對 season.json 嘅 name／name_cn。對唔上嘅列會附加在表尾。平台同香港可看性未逐套核對。",
+  "note": "由 Notion「中文字幕動畫播放表」同步。bgmId 以 Notion 欄位優先，其次來源網址、本季 season.json 標題、Bangumi 搜尋。未能對上嘅作品列喺 unresolved，請喺 Notion 填 bgmId。",
+  "unresolved": [
+    {
+      "title": "一覺醒來就有了最強裝備跟太空船…",
+      "titleJa": "目覚めたら最強装備と宇宙船持ちだったので、一戸建て目指して傭兵として働くことにしました",
+      "notionId": "3ef5631c-93db-8158-bd52-d0329db5c36e",
+      "status": "即將播出"
+    },
+    {
+      "title": "亂世千金倪亞‧利斯頓…",
+      "titleJa": "凶乱令嬢ニア・リストン 病弱令嬢に転生した神殺しの英雄",
+      "notionId": "3ef5631c-93db-813f-93cf-f3ca3343089f",
+      "status": "即將播出"
+    },
+    {
+      "title": "亂馬½ 第三季",
+      "titleJa": "らんま1/2 (2024) 第3期",
+      "notionId": "3ef5631c-93db-8167-9db8-cee43122bca0",
+      "status": "即將播出"
+    },
+    {
+      "title": "佐佐木與文鳥小嗶 第二季",
+      "titleJa": "佐々木とピーちゃん シーズン２",
+      "notionId": "3ef5631c-93db-811b-b230-df1181303e96",
+      "status": "即將播出"
+    },
+    {
+      "title": "學園偶像大師",
+      "titleJa": "学園アイドルマスター",
+      "notionId": "3ef5631c-93db-81e9-a315-f27fc010af26",
+      "status": "追蹤中"
+    },
+    {
+      "title": "澪",
+      "titleJa": "BLUE REFLECTION RAY",
+      "notionId": "3ef5631c-93db-819f-aacd-c80e116353f4",
+      "status": "追蹤中"
+    },
+    {
+      "title": "被放逐的作弊賦予魔術師享受隨心所欲的第二人生。",
+      "titleJa": "追放されたチート付与魔術師は気ままなセカンドライフを謳歌する。（チー付与）",
+      "notionId": "3ef5631c-93db-817d-949d-e646d0cc429d",
+      "status": "即將播出"
+    },
+    {
+      "title": "轉生就是劍 第二季",
+      "titleJa": "転生したら剣でした 第2期",
+      "notionId": "3ef5631c-93db-81f8-943f-ff730f572219",
+      "status": "即將播出"
+    },
+    {
+      "title": "電馭叛客：邊緣行者 2",
+      "titleJa": "サイバーパンク: エッジランナーズ2",
+      "notionId": "3ef5631c-93db-8138-8514-d51bc067051f",
+      "status": "即將播出"
+    }
+  ],
   "items": [
     {
-      "title": "藥屋少女的呢喃 第三季",
-      "titleJa": "薬屋のひとりごと 第3期",
-      "aliases": ["药屋少女的呢喃 第三季", "薬屋のひとりごと 第3期"],
-      "bgmId": 568244,
-      "platforms": ["待核對"],
+      "title": "FX戰士久留美",
+      "titleJa": "FX戦士くるみちゃん",
+      "aliases": [
+        "FX戦士くるみちゃん",
+        "FX戰士久留美"
+      ],
+      "bgmId": 622288,
+      "bgmIdSource": "season",
+      "platforms": [
+        "Ani-One Asia",
+        "巴哈姆特動畫瘋"
+      ],
       "subtitle": "繁中",
-      "regionNote": "香港可看性未核對",
-      "scheduleHkt": "星期五（Bangumi 放送日）",
-      "source": "https://bgm.tv/subject/568244",
-      "sample": true
+      "regionNote": "港台 · 羚邦代理；港台均標示。",
+      "scheduleHkt": "週四 20:30 HKT",
+      "premiere": "2026-10-01",
+      "status": "即將播出",
+      "source": "https://acgsecrets.hk/bangumi/202610/",
+      "notionId": "3ef5631c-93db-81bf-834e-ec267bf005ed",
+      "sample": false
     },
     {
-      "title": "航海王",
-      "titleJa": "ONE PIECE",
-      "aliases": ["ONE PIECE", "海贼王"],
-      "bgmId": 975,
-      "platforms": ["待核對"],
+      "title": "KERORO軍曹☆",
+      "titleJa": "ケロロ軍曹☆",
+      "aliases": [
+        "ケロロ軍曹☆",
+        "KERORO軍曹☆"
+      ],
+      "bgmId": 617273,
+      "bgmIdSource": "season",
+      "platforms": [
+        "巴哈姆特動畫瘋"
+      ],
       "subtitle": "繁中",
-      "regionNote": "香港長期有中文字幕播出，平台請再核對",
-      "scheduleHkt": "星期三（Bangumi 放送日）",
-      "source": "https://bgm.tv/subject/975",
-      "sample": true
+      "regionNote": "台 · 曼迪；動畫瘋授權。",
+      "scheduleHkt": "週六 08:30 HKT",
+      "premiere": "2026-10-03",
+      "status": "即將播出",
+      "source": "https://www.bn-pictures.co.jp/keroro-anime/tv/",
+      "notionId": "3ef5631c-93db-81b8-98bd-eba1f5df3cc2",
+      "sample": false
     },
     {
-      "title": "名偵探柯南",
-      "titleJa": "名探偵コナン",
-      "aliases": ["名侦探柯南", "名探偵コナン"],
-      "bgmId": 899,
-      "platforms": ["待核對"],
-      "subtitle": "繁中",
-      "regionNote": "香港可看性未核對",
-      "scheduleHkt": "星期六（Bangumi 放送日）",
-      "source": "https://bgm.tv/subject/899",
-      "sample": true
-    },
-    {
-      "title": "青之箱 第二季",
-      "titleJa": "アオのハコ Season 2",
-      "aliases": ["青之箱 第二季", "アオのハコ Season 2"],
-      "bgmId": 548156,
-      "platforms": ["待核對"],
-      "subtitle": "繁中",
-      "regionNote": "香港可看性未核對",
-      "scheduleHkt": "星期日（Bangumi 放送日）",
-      "source": "https://bgm.tv/subject/548156",
-      "sample": true
-    },
-    {
-      "title": "示例：不在本季日曆",
-      "titleJa": "サンプル未収録",
-      "aliases": ["這套唔喺 season.json"],
-      "platforms": ["待核對"],
-      "subtitle": "繁中",
-      "regionNote": "示例列。對唔上放送表時會附加在表尾",
+      "title": "トゲナシトゲアリ相關",
+      "titleJa": "ガールズバンドクライ",
+      "aliases": [
+        "ガールズバンドクライ",
+        "トゲナシトゲアリ相關"
+      ],
+      "bgmId": 431767,
+      "bgmIdSource": "search",
+      "platforms": [
+        "待核對"
+      ],
+      "subtitle": "—",
+      "regionNote": "— · 優先 IP；完全新作劇場版製作決定但公開日未定。暫無港台中文字幕串流。",
       "scheduleHkt": "—",
-      "source": "https://bgm.tv/",
-      "sample": true
+      "status": "追蹤中",
+      "source": "https://girls-band-cry.com/",
+      "notionId": "3ef5631c-93db-81a5-97fb-df8d63690007",
+      "sample": false
+    },
+    {
+      "title": "一覺醒來就有了最強裝備跟太空船…",
+      "titleJa": "目覚めたら最強装備と宇宙船持ちだったので、一戸建て目指して傭兵として働くことにしました",
+      "aliases": [
+        "目覚めたら最強装備と宇宙船持ちだったので、一戸建て目指して傭兵として働くことにしました",
+        "一覺醒來就有了最強裝備跟太空船…"
+      ],
+      "bgmIdSource": "none",
+      "platforms": [
+        "Ani-One Asia",
+        "巴哈姆特動畫瘋"
+      ],
+      "subtitle": "繁中",
+      "regionNote": "港台 · 羚邦；動畫瘋授權。",
+      "scheduleHkt": "週日 20:30–21:00 HKT",
+      "premiere": "2026-10-04",
+      "status": "即將播出",
+      "source": "https://youranimes.tw/bangumi/202610",
+      "notionId": "3ef5631c-93db-8158-bd52-d0329db5c36e",
+      "sample": false
+    },
+    {
+      "title": "世界最強的魔女，就此開始",
+      "titleJa": "世界最強の魔女、始めました",
+      "aliases": [
+        "世界最強の魔女、始めました",
+        "世界最強的魔女，就此開始"
+      ],
+      "bgmId": 646154,
+      "bgmIdSource": "season",
+      "platforms": [
+        "木棉花 YouTube",
+        "巴哈姆特動畫瘋"
+      ],
+      "subtitle": "繁中",
+      "regionNote": "台（港區待確認） · 木棉花；動畫瘋授權。",
+      "scheduleHkt": "週三 21:00 HKT",
+      "premiere": "2026-10-07",
+      "status": "即將播出",
+      "source": "https://youranimes.tw/bangumi/202610",
+      "notionId": "3ef5631c-93db-810d-85b0-cbe104752575",
+      "sample": false
+    },
+    {
+      "title": "亂世千金倪亞‧利斯頓…",
+      "titleJa": "凶乱令嬢ニア・リストン 病弱令嬢に転生した神殺しの英雄",
+      "aliases": [
+        "凶乱令嬢ニア・リストン 病弱令嬢に転生した神殺しの英雄",
+        "亂世千金倪亞‧利斯頓…"
+      ],
+      "bgmIdSource": "none",
+      "platforms": [
+        "巴哈姆特動畫瘋"
+      ],
+      "subtitle": "繁中",
+      "regionNote": "台 · 曼迪；動畫瘋授權。",
+      "scheduleHkt": "週二 20:25 HKT",
+      "premiere": "2026-10-06",
+      "status": "即將播出",
+      "source": "https://kyoranreijo-pr.com/",
+      "notionId": "3ef5631c-93db-813f-93cf-f3ca3343089f",
+      "sample": false
+    },
+    {
+      "title": "亂馬½ 第三季",
+      "titleJa": "らんま1/2 (2024) 第3期",
+      "aliases": [
+        "らんま1/2 (2024) 第3期",
+        "亂馬½ 第三季"
+      ],
+      "bgmIdSource": "none",
+      "platforms": [
+        "Netflix"
+      ],
+      "subtitle": "繁中",
+      "regionNote": "港台 · 港台 Netflix 均有標示。",
+      "scheduleHkt": "週六深夜／週日 00:00–00:55 HKT",
+      "premiere": "2026-10-03",
+      "status": "即將播出",
+      "source": "https://acgsecrets.hk/bangumi/202610/",
+      "notionId": "3ef5631c-93db-8167-9db8-cee43122bca0",
+      "sample": false
+    },
+    {
+      "title": "佐佐木與文鳥小嗶 第二季",
+      "titleJa": "佐々木とピーちゃん シーズン２",
+      "aliases": [
+        "佐々木とピーちゃん シーズン２",
+        "佐佐木與文鳥小嗶 第二季"
+      ],
+      "bgmIdSource": "none",
+      "platforms": [
+        "木棉花 YouTube",
+        "巴哈姆特動畫瘋"
+      ],
+      "subtitle": "繁中",
+      "regionNote": "台（港區待確認） · 木棉花。",
+      "scheduleHkt": "週三 21:00 HKT",
+      "premiere": "2026-10-07",
+      "status": "即將播出",
+      "source": "https://youranimes.tw/bangumi/202610",
+      "notionId": "3ef5631c-93db-811b-b230-df1181303e96",
+      "sample": false
+    },
+    {
+      "title": "借出的魔力將以【固定限額還款】強制徵收",
+      "titleJa": "貸した魔力は【リボ払い】で強制徴収",
+      "aliases": [
+        "貸した魔力は【リボ払い】で強制徴収",
+        "借出的魔力將以【固定限額還款】強制徵收"
+      ],
+      "bgmId": 606716,
+      "bgmIdSource": "season",
+      "platforms": [
+        "木棉花 YouTube",
+        "巴哈姆特動畫瘋"
+      ],
+      "subtitle": "繁中",
+      "regionNote": "台（港區待確認） · 木棉花。",
+      "scheduleHkt": "週六深夜／週日 00:30–01:00 HKT",
+      "premiere": "2026-10-03",
+      "status": "即將播出",
+      "source": "https://youranimes.tw/bangumi/202610",
+      "notionId": "3ef5631c-93db-81c9-8d08-e903d5fbf448",
+      "sample": false
+    },
+    {
+      "title": "偵探已經，死了。第二季",
+      "titleJa": "探偵はもう、死んでいる。Season2",
+      "aliases": [
+        "探偵はもう、死んでいる。Season2",
+        "偵探已經，死了。第二季"
+      ],
+      "bgmId": 393010,
+      "bgmIdSource": "season",
+      "platforms": [
+        "木棉花 YouTube",
+        "巴哈姆特動畫瘋"
+      ],
+      "subtitle": "繁中",
+      "regionNote": "台（港區 Muse／動畫瘋待確認） · 木棉花代理；動畫瘋授權。",
+      "scheduleHkt": "週三 20:30 HKT",
+      "premiere": "2026-10-07",
+      "status": "即將播出",
+      "source": "https://youranimes.tw/bangumi/202610",
+      "notionId": "3ef5631c-93db-81cd-90ea-eddd81ea42ea",
+      "sample": false
+    },
+    {
+      "title": "冰劍的魔術師將要統一世界 第二季",
+      "titleJa": "冰剣の魔術師が世界を統べるⅡ",
+      "aliases": [
+        "冰剣の魔術師が世界を統べるⅡ",
+        "冰劍的魔術師將要統一世界 第二季"
+      ],
+      "bgmId": 654294,
+      "bgmIdSource": "season",
+      "platforms": [
+        "Ani-One Asia",
+        "巴哈姆特動畫瘋"
+      ],
+      "subtitle": "繁中",
+      "regionNote": "港台 · Ani-One Asia 授權含港台。",
+      "scheduleHkt": "週四深夜／週五 00:28 HKT",
+      "premiere": "2026-10-08",
+      "status": "即將播出",
+      "source": "https://www.animenewsnetwork.com/news/2026-09-22/ani-one-asia-licenses-fall-2026-anime",
+      "notionId": "3ef5631c-93db-81c3-9ee4-f1e8f15c0d3d",
+      "sample": false
+    },
+    {
+      "title": "和沒有信徒的女神大人一起攻略異世界",
+      "titleJa": "信者ゼロの女神サマと始める異世界攻略",
+      "aliases": [
+        "信者ゼロの女神サマと始める異世界攻略",
+        "和沒有信徒的女神大人一起攻略異世界"
+      ],
+      "bgmId": 621073,
+      "bgmIdSource": "season",
+      "platforms": [
+        "巴哈姆特動畫瘋"
+      ],
+      "subtitle": "繁中",
+      "regionNote": "台 · ANIPLUS；動畫瘋授權。",
+      "scheduleHkt": "週日 22:30 HKT",
+      "premiere": "2026-10-11",
+      "status": "即將播出",
+      "source": "https://zero-believers-anime.com/",
+      "notionId": "3ef5631c-93db-8139-ae42-c6e386e975bb",
+      "sample": false
+    },
+    {
+      "title": "夜櫻家的大作戰 第二季 第二部分",
+      "titleJa": "夜桜さんちの大作戦 第2期 第2クール",
+      "aliases": [
+        "夜桜さんちの大作戦 第2期 第2クール",
+        "夜櫻家的大作戰 第二季 第二部分"
+      ],
+      "bgmId": 664389,
+      "bgmIdSource": "season",
+      "platforms": [
+        "木棉花 YouTube",
+        "巴哈姆特動畫瘋"
+      ],
+      "subtitle": "繁中",
+      "regionNote": "台（港區待確認） · 木棉花。",
+      "scheduleHkt": "週日 16:00 HKT",
+      "premiere": "2026-10-11",
+      "status": "即將播出",
+      "source": "https://youranimes.tw/bangumi/202610",
+      "notionId": "3ef5631c-93db-81ce-996b-fb29c50e35a3",
+      "sample": false
+    },
+    {
+      "title": "大叔喜歡可愛小玩意",
+      "titleJa": "おじさんはカワイイものがお好き。",
+      "aliases": [
+        "おじさんはカワイイものがお好き。",
+        "大叔喜歡可愛小玩意"
+      ],
+      "bgmId": 605533,
+      "bgmIdSource": "season",
+      "platforms": [
+        "Ani-One Asia",
+        "巴哈姆特動畫瘋"
+      ],
+      "subtitle": "繁中",
+      "regionNote": "港台 · 羚邦。",
+      "scheduleHkt": "週日 21:00 HKT",
+      "premiere": "2026-10-04",
+      "status": "即將播出",
+      "source": "https://youranimes.tw/bangumi/202610",
+      "notionId": "3ef5631c-93db-81ea-b598-d98e8239b63d",
+      "sample": false
+    },
+    {
+      "title": "學園偶像大師",
+      "titleJa": "学園アイドルマスター",
+      "aliases": [
+        "学園アイドルマスター",
+        "學園偶像大師"
+      ],
+      "bgmIdSource": "none",
+      "platforms": [
+        "待核對"
+      ],
+      "subtitle": "—",
+      "regionNote": "— · 優先 IP；暫無港台中文字幕動畫平台（目前無電視動畫，僅手遊／生放送等）。",
+      "scheduleHkt": "—",
+      "status": "追蹤中",
+      "source": "https://gakuen.idolmaster-official.jp/",
+      "notionId": "3ef5631c-93db-81e9-a315-f27fc010af26",
+      "sample": false
+    },
+    {
+      "title": "學生會也有洞！",
+      "titleJa": "生徒会にも穴はある！",
+      "aliases": [
+        "生徒会にも穴はある！",
+        "學生會也有洞！"
+      ],
+      "bgmId": 554779,
+      "bgmIdSource": "season",
+      "platforms": [
+        "巴哈姆特動畫瘋"
+      ],
+      "subtitle": "繁中",
+      "regionNote": "台 · 曼迪代理；動畫瘋授權。港區是否另有管道待確認。",
+      "scheduleHkt": "週六深夜／週日 00:00–00:30 HKT",
+      "premiere": "2026-10-03",
+      "status": "即將播出",
+      "source": "https://nama-anaru.com/",
+      "notionId": "3ef5631c-93db-8125-b037-cd56a20e4dc7",
+      "sample": false
+    },
+    {
+      "title": "彈珠汽水瓶裡的千歲同學 第二季度",
+      "titleJa": "千歳くんはラムネ瓶のなか 第2クール",
+      "aliases": [
+        "千歳くんはラムネ瓶のなか 第2クール",
+        "彈珠汽水瓶裡的千歲同學 第二季度"
+      ],
+      "bgmId": 584847,
+      "bgmIdSource": "season",
+      "platforms": [
+        "Ani-One Asia",
+        "巴哈姆特動畫瘋"
+      ],
+      "subtitle": "繁中",
+      "regionNote": "港台 · 羚邦；開播日 YourAnimes 與 ACG Secrets 記載不一。",
+      "scheduleHkt": "週六／二 待確認",
+      "premiere": "2026-10-03",
+      "status": "即將播出",
+      "source": "https://youranimes.tw/bangumi/202610",
+      "notionId": "3ef5631c-93db-81a4-a987-e02d4c20c8b7",
+      "sample": false
+    },
+    {
+      "title": "暗部共生少女",
+      "titleJa": "とある暗部の少女共棲",
+      "aliases": [
+        "とある暗部の少女共棲",
+        "暗部共生少女"
+      ],
+      "bgmId": 537738,
+      "bgmIdSource": "season",
+      "platforms": [
+        "木棉花 YouTube",
+        "巴哈姆特動畫瘋"
+      ],
+      "subtitle": "繁中",
+      "regionNote": "台（港區待確認） · 木棉花；動畫瘋授權。《魔法禁書目錄》外傳。",
+      "scheduleHkt": "週五深夜 待確認",
+      "premiere": "2026-10-03",
+      "status": "即將播出",
+      "source": "https://youranimes.tw/bangumi/202610",
+      "notionId": "3ef5631c-93db-8182-80cb-c15f32f71c09",
+      "sample": false
+    },
+    {
+      "title": "東京復仇者 三天戰爭篇",
+      "titleJa": "東京リベンジャーズ 三天戦争編",
+      "aliases": [
+        "東京リベンジャーズ 三天戦争編",
+        "東京復仇者 三天戰爭篇"
+      ],
+      "bgmId": 499474,
+      "bgmIdSource": "season",
+      "platforms": [
+        "Disney+"
+      ],
+      "subtitle": "繁中（待確認）",
+      "regionNote": "港台（待確認兩邊同開） · 台灣版權標 Disney+。",
+      "scheduleHkt": "週五 00:23 HKT",
+      "premiere": "2026-10-02",
+      "status": "即將播出",
+      "source": "https://acgsecrets.hk/bangumi/202610/",
+      "notionId": "3ef5631c-93db-81b9-8bad-dad387f376ab",
+      "sample": false
+    },
+    {
+      "title": "殺手旅店 第二季",
+      "titleJa": "ホテル・インヒューマンズ 第2期",
+      "aliases": [
+        "ホテル・インヒューマンズ 第2期",
+        "殺手旅店 第二季"
+      ],
+      "bgmId": 589775,
+      "bgmIdSource": "season",
+      "platforms": [
+        "Ani-One Asia",
+        "巴哈姆特動畫瘋"
+      ],
+      "subtitle": "繁中",
+      "regionNote": "港台 · 羚邦。",
+      "scheduleHkt": "週日 22:45 HKT",
+      "premiere": "2026-10-04",
+      "status": "即將播出",
+      "source": "https://youranimes.tw/bangumi/202610",
+      "notionId": "3ef5631c-93db-8187-a24e-dffd37cb4390",
+      "sample": false
+    },
+    {
+      "title": "澪",
+      "titleJa": "BLUE REFLECTION RAY",
+      "aliases": [
+        "BLUE REFLECTION RAY",
+        "澪"
+      ],
+      "bgmIdSource": "none",
+      "platforms": [
+        "待核對"
+      ],
+      "subtitle": "—",
+      "regionNote": "— · 優先 IP；2021年舊作。目前未見港台現播／新季中文字幕配信。",
+      "scheduleHkt": "—",
+      "status": "追蹤中",
+      "source": "https://bluereflection-ray.com/",
+      "notionId": "3ef5631c-93db-819f-aacd-c80e116353f4",
+      "sample": false
+    },
+    {
+      "title": "獸王武神丹帝拜恩",
+      "titleJa": "獣王武神ダンデヴァイン",
+      "aliases": [
+        "獣王武神ダンデヴァイン",
+        "獸王武神丹帝拜恩"
+      ],
+      "bgmId": 657778,
+      "bgmIdSource": "season",
+      "platforms": [
+        "木棉花 YouTube",
+        "巴哈姆特動畫瘋"
+      ],
+      "subtitle": "繁中",
+      "regionNote": "港台 · 木棉花；港台均標示。",
+      "scheduleHkt": "週三深夜／週四 00:00–00:30 HKT",
+      "premiere": "2026-10-07",
+      "status": "即將播出",
+      "source": "https://acgsecrets.hk/bangumi/202610/",
+      "notionId": "3ef5631c-93db-81bf-b332-e0f981c4b30e",
+      "sample": false
+    },
+    {
+      "title": "至高之力 Vertex Force",
+      "titleJa": "バーテックスフォース",
+      "aliases": [
+        "バーテックスフォース",
+        "至高之力 Vertex Force"
+      ],
+      "bgmId": 636512,
+      "bgmIdSource": "season",
+      "platforms": [
+        "Ani-One Asia",
+        "巴哈姆特動畫瘋"
+      ],
+      "subtitle": "繁中",
+      "regionNote": "港台 · 羚邦。",
+      "scheduleHkt": "週六深夜／週日 00:00 HKT",
+      "premiere": "2026-10-03",
+      "status": "即將播出",
+      "source": "https://youranimes.tw/bangumi/202610",
+      "notionId": "3ef5631c-93db-81b3-931c-c2372cbe201a",
+      "sample": false
+    },
+    {
+      "title": "藥師少女的獨語 第三季",
+      "titleJa": "薬屋のひとりごと 第3期",
+      "aliases": [
+        "薬屋のひとりごと 第3期",
+        "藥師少女的獨語 第三季"
+      ],
+      "bgmId": 568244,
+      "bgmIdSource": "season",
+      "platforms": [
+        "Netflix"
+      ],
+      "subtitle": "繁中（Netflix）",
+      "regionNote": "台（港區 Netflix 待確認） · 台灣 Netflix 獨佔標示；香港 Netflix 目錄待確認。",
+      "scheduleHkt": "週五 22:00 HKT",
+      "premiere": "2026-10-02",
+      "status": "即將播出",
+      "source": "https://youranimes.tw/bangumi/202610",
+      "notionId": "3ef5631c-93db-81f3-8778-dc93306bdff5",
+      "sample": false
+    },
+    {
+      "title": "被放逐的作弊賦予魔術師享受隨心所欲的第二人生。",
+      "titleJa": "追放されたチート付与魔術師は気ままなセカンドライフを謳歌する。（チー付与）",
+      "aliases": [
+        "追放されたチート付与魔術師は気ままなセカンドライフを謳歌する。（チー付与）",
+        "被放逐的作弊賦予魔術師享受隨心所欲的第二人生。"
+      ],
+      "bgmIdSource": "none",
+      "platforms": [
+        "Ani-One Asia",
+        "巴哈姆特動畫瘋",
+        "Crunchyroll"
+      ],
+      "subtitle": "繁中",
+      "regionNote": "港台（Ani-One Asia 授權含香港、澳門、台灣）",
+      "scheduleHkt": "日本電視：週二 23:00 HKT（テレ東 週三 00:00 JST）；Ani-One 港區上架時間待公布",
+      "premiere": "2026-10-06",
+      "status": "即將播出",
+      "source": "https://sh-anime.shochiku.co.jp/chiifuyo-anime/",
+      "notionId": "3ef5631c-93db-817d-949d-e646d0cc429d",
+      "sample": false
+    },
+    {
+      "title": "裝備仔（Overgeared）",
+      "titleJa": "テムパル～アイテムの力～",
+      "aliases": [
+        "テムパル～アイテムの力～",
+        "裝備仔（Overgeared）"
+      ],
+      "bgmId": 657656,
+      "bgmIdSource": "season",
+      "platforms": [
+        "Crunchyroll"
+      ],
+      "subtitle": "繁中（待確認字幕語言標示）",
+      "regionNote": "台",
+      "scheduleHkt": "週日 22:30 HKT",
+      "premiere": "2026-09-27",
+      "status": "播放中",
+      "source": "https://youranimes.tw/bangumi/202610",
+      "notionId": "3ef5631c-93db-8164-b224-c91715a7b9c1",
+      "sample": false
+    },
+    {
+      "title": "轉生哥布林有什麼問題嗎？",
+      "titleJa": "転生ゴブリンだけど質問ある？",
+      "aliases": [
+        "転生ゴブリンだけど質問ある？",
+        "轉生哥布林有什麼問題嗎？"
+      ],
+      "bgmId": 634587,
+      "bgmIdSource": "season",
+      "platforms": [
+        "Ani-One Asia",
+        "巴哈姆特動畫瘋"
+      ],
+      "subtitle": "繁中",
+      "regionNote": "港台 · Ani-One Asia；動畫瘋羚邦授權。",
+      "scheduleHkt": "週一 21:00 HKT",
+      "premiere": "2026-10-05",
+      "status": "即將播出",
+      "source": "https://www.animenewsnetwork.com/news/2026-09-22/ani-one-asia-licenses-fall-2026-anime",
+      "notionId": "3ef5631c-93db-8123-a2c3-d231b6b9a9ab",
+      "sample": false
+    },
+    {
+      "title": "轉生就是劍 第二季",
+      "titleJa": "転生したら剣でした 第2期",
+      "aliases": [
+        "転生したら剣でした 第2期",
+        "轉生就是劍 第二季"
+      ],
+      "bgmIdSource": "none",
+      "platforms": [
+        "Ani-One Asia",
+        "巴哈姆特動畫瘋"
+      ],
+      "subtitle": "繁中",
+      "regionNote": "港台 · 羚邦／Ani-One；ANN 確認含港台。",
+      "scheduleHkt": "週三／四 待確認",
+      "premiere": "2026-09-30",
+      "status": "即將播出",
+      "source": "https://www.animenewsnetwork.com/news/2026-09-26/ani-one-asia-licenses-more-fall-2026-anime",
+      "notionId": "3ef5631c-93db-81f8-943f-ff730f572219",
+      "sample": false
+    },
+    {
+      "title": "轉生後的大聖女，極力隱瞞聖女的身份",
+      "titleJa": "転生した大聖女は、聖女であることをひた隠す",
+      "aliases": [
+        "転生した大聖女は、聖女であることをひた隠す",
+        "轉生後的大聖女，極力隱瞞聖女的身份"
+      ],
+      "bgmId": 542007,
+      "bgmIdSource": "season",
+      "platforms": [
+        "木棉花 YouTube",
+        "巴哈姆特動畫瘋"
+      ],
+      "subtitle": "繁中",
+      "regionNote": "台（港區待確認） · 木棉花；動畫瘋授權。",
+      "scheduleHkt": "週六 20:00–21:00 HKT",
+      "premiere": "2026-10-03",
+      "status": "即將播出",
+      "source": "https://youranimes.tw/bangumi/202610",
+      "notionId": "3ef5631c-93db-81c3-b854-da4283115363",
+      "sample": false
+    },
+    {
+      "title": "轉生貴族憑鑑定技能扭轉人生 第三季",
+      "titleJa": "転生貴族、鑑定スキルで成り上がる 第3期",
+      "aliases": [
+        "転生貴族、鑑定スキルで成り上がる 第3期",
+        "轉生貴族憑鑑定技能扭轉人生 第三季"
+      ],
+      "bgmId": 530104,
+      "bgmIdSource": "search",
+      "platforms": [
+        "巴哈姆特動畫瘋",
+        "Ani-One Asia",
+        "Ani-One 中文",
+        "Crunchyroll",
+        "LINE TV"
+      ],
+      "subtitle": "繁中",
+      "regionNote": "港台 · 羚邦代理；多平台同時有繁中。",
+      "scheduleHkt": "週日 22:30 HKT",
+      "premiere": "2026-09-27",
+      "status": "播放中",
+      "source": "https://youranimes.tw/bangumi/202610",
+      "notionId": "3ef5631c-93db-8174-9173-e3385c00e5b9",
+      "sample": false
+    },
+    {
+      "title": "遭到流放的轉生重騎士憑藉遊戲知識",
+      "titleJa": "追放された転生重騎士はゲーム知識で無双する",
+      "aliases": [
+        "追放された転生重騎士はゲーム知識で無双する",
+        "遭到流放的轉生重騎士憑藉遊戲知識"
+      ],
+      "bgmId": 511177,
+      "bgmIdSource": "search",
+      "platforms": [
+        "巴哈姆特動畫瘋",
+        "木棉花 YouTube",
+        "Crunchyroll",
+        "viu"
+      ],
+      "subtitle": "繁中",
+      "regionNote": "港台 · 跨季續播。港：動畫瘋／viu；台：木棉花／動畫瘋。",
+      "scheduleHkt": "週四 待確認",
+      "status": "播放中",
+      "source": "https://ani.gamer.com.tw/seasonal.php",
+      "notionId": "3ef5631c-93db-812e-8435-dd22b7d3a3f4",
+      "sample": false
+    },
+    {
+      "title": "重生者的魔法一定要特別 第二季",
+      "titleJa": "帰還者の魔法は特別です 第2期",
+      "aliases": [
+        "帰還者の魔法は特別です 第2期",
+        "重生者的魔法一定要特別 第二季"
+      ],
+      "bgmId": 471844,
+      "bgmIdSource": "season",
+      "platforms": [
+        "木棉花 YouTube",
+        "巴哈姆特動畫瘋"
+      ],
+      "subtitle": "繁中",
+      "regionNote": "台（港區待確認） · 木棉花；動畫瘋授權。",
+      "scheduleHkt": "週三深夜／週四 00:00–00:45 HKT",
+      "premiere": "2026-10-07",
+      "status": "即將播出",
+      "source": "https://returners-magic.com/",
+      "notionId": "3ef5631c-93db-8197-95dd-f1a4358127e0",
+      "sample": false
+    },
+    {
+      "title": "野生的大魔王出現了！第二季",
+      "titleJa": "野生のラスボスが現れた！第2期",
+      "aliases": [
+        "野生のラスボスが現れた！第2期",
+        "野生的大魔王出現了！第二季"
+      ],
+      "bgmId": 616808,
+      "bgmIdSource": "season",
+      "platforms": [
+        "巴哈姆特動畫瘋"
+      ],
+      "subtitle": "繁中",
+      "regionNote": "台 · 代理：回歸線娛樂；秋番提早開播；動畫瘋已授權。",
+      "scheduleHkt": "週六 20:30 HKT",
+      "premiere": "2026-09-26",
+      "status": "播放中",
+      "source": "https://youranimes.tw/bangumi/202610",
+      "notionId": "3ef5631c-93db-8146-a26f-df0a8e1675c2",
+      "sample": false
+    },
+    {
+      "title": "電馭叛客：邊緣行者 2",
+      "titleJa": "サイバーパンク: エッジランナーズ2",
+      "aliases": [
+        "サイバーパンク: エッジランナーズ2",
+        "電馭叛客：邊緣行者 2"
+      ],
+      "bgmIdSource": "none",
+      "platforms": [
+        "Netflix"
+      ],
+      "subtitle": "繁中／多語（Netflix）",
+      "regionNote": "港台（待確認兩邊同開） · Netflix 原創 ONA；TRIGGER。",
+      "scheduleHkt": "週二 15:00 HKT",
+      "premiere": "2026-10-20",
+      "status": "即將播出",
+      "source": "https://youranimes.tw/bangumi/202610",
+      "notionId": "3ef5631c-93db-8138-8514-d51bc067051f",
+      "sample": false
+    },
+    {
+      "title": "青春之箱 第二季",
+      "titleJa": "アオのハコ Season2",
+      "aliases": [
+        "アオのハコ Season2",
+        "青春之箱 第二季"
+      ],
+      "bgmId": 548156,
+      "bgmIdSource": "season",
+      "platforms": [
+        "Netflix"
+      ],
+      "subtitle": "繁中（Netflix）",
+      "regionNote": "台（港區待確認） · 台灣 Netflix。來源時間略異。",
+      "scheduleHkt": "週日 15:00–15:30 HKT",
+      "premiere": "2026-10-04",
+      "status": "即將播出",
+      "source": "https://youranimes.tw/bangumi/202610",
+      "notionId": "3ef5631c-93db-814a-aef3-f94aa2a3f77f",
+      "sample": false
+    },
+    {
+      "title": "魔法★探險家",
+      "titleJa": "マジカル★エクスプローラー",
+      "aliases": [
+        "マジカル★エクスプローラー",
+        "魔法★探險家"
+      ],
+      "bgmId": 456078,
+      "bgmIdSource": "season",
+      "platforms": [
+        "巴哈姆特動畫瘋"
+      ],
+      "subtitle": "繁中",
+      "regionNote": "台 · 回歸線娛樂；動畫瘋授權。精確首播／更新時間待確認。",
+      "scheduleHkt": "待確認",
+      "status": "即將播出",
+      "source": "https://majieku.com/",
+      "notionId": "3ef5631c-93db-8138-916c-de4cb1ed6225",
+      "sample": false
+    },
+    {
+      "title": "魔法少女育成計畫 restart",
+      "titleJa": "魔法少女育成計画 restart",
+      "aliases": [
+        "魔法少女育成計画 restart",
+        "魔法少女育成計畫 restart"
+      ],
+      "bgmId": 418229,
+      "bgmIdSource": "season",
+      "platforms": [
+        "Ani-One Asia",
+        "巴哈姆特動畫瘋"
+      ],
+      "subtitle": "繁中",
+      "regionNote": "港台 · 羚邦；動畫瘋授權。",
+      "scheduleHkt": "週一深夜／週二 01:00 HKT",
+      "premiere": "2026-10-05",
+      "status": "即將播出",
+      "source": "https://mahoiku.com/anime/restart",
+      "notionId": "3ef5631c-93db-816e-92bd-e4e6ab3c7216",
+      "sample": false
+    },
+    {
+      "title": "魔法騎士雷阿斯（2026）",
+      "titleJa": "魔法騎士レイアース (2026)",
+      "aliases": [
+        "魔法騎士レイアース (2026)",
+        "魔法騎士雷阿斯（2026）"
+      ],
+      "bgmId": 502123,
+      "bgmIdSource": "season",
+      "platforms": [
+        "Ani-One Asia",
+        "巴哈姆特動畫瘋"
+      ],
+      "subtitle": "繁中",
+      "regionNote": "港台 · 羚邦；動畫瘋授權。",
+      "scheduleHkt": "週三 22:45 HKT",
+      "premiere": "2026-10-07",
+      "status": "即將播出",
+      "source": "https://rayearth-anime.com/",
+      "notionId": "3ef5631c-93db-8136-a1ad-e5e22f13fd20",
+      "sample": false
+    },
+    {
+      "title": "黑色五葉草 第二季",
+      "titleJa": "ブラッククローバー 2nd Season",
+      "aliases": [
+        "ブラッククローバー 2nd Season",
+        "黑色五葉草 第二季"
+      ],
+      "bgmId": 567896,
+      "bgmIdSource": "season",
+      "platforms": [
+        "巴哈姆特動畫瘋"
+      ],
+      "subtitle": "繁中",
+      "regionNote": "台 · 曼迪；動畫瘋授權。",
+      "scheduleHkt": "週六 22:00 HKT",
+      "premiere": "2026-10-03",
+      "status": "即將播出",
+      "source": "https://bclover.jp/",
+      "notionId": "3ef5631c-93db-8150-b499-eb641f3a1567",
+      "sample": false
     }
   ]
 }
