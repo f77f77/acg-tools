@@ -1,7 +1,9 @@
 name: Validate hub seed JSON
 
-# Schema checks only. They do not fetch Mystery Gift codes or subtitle platforms.
-# data/anime-subs.json is the 中文字幕 overlay merged into 新番表 (route #anime → #season/zh).
+# Schema checks only. They do not fetch Mystery Gift codes.
+# data/anime-subs.json is the 中文字幕 overlay (route #anime → #season/zh),
+# written by scripts/sync_anime_subs.py. This job also runs that mapper
+# offline against a fixture so the Notion → JSON path stays tested without secrets.
 # data/codes.json gamesCatalog includes 寶可夢 Champions even when that game has no rows.
 on:
   workflow_dispatch:
@@ -21,3 +23,11 @@ jobs:
         run: python3 scripts/refresh_codes_stub.py
       - name: Anime subtitle schema
         run: python3 scripts/refresh_anime_stub.py
+      - name: Anime subtitle fixture
+        run: |
+          python3 scripts/sync_anime_subs.py \
+            --fixture scripts/fixtures/notion_query_sample.json \
+            --season scripts/fixtures/season_sample.json \
+            --offline --check \
+            --out /tmp/anime-subs-fixture.json \
+            --cache /tmp/anime-bgm-cache-fixture.json

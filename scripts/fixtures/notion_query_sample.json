@@ -1,0 +1,219 @@
+{
+  "object": "list",
+  "has_more": false,
+  "next_cursor": null,
+  "expect": {
+    "skippedTitles": ["舊完結動畫"],
+    "unresolvedTitles": ["不存在的動畫"],
+    "items": [
+      {
+        "title": "不存在的動畫",
+        "titleJa": "存在しないアニメ",
+        "aliases": ["存在しないアニメ", "不存在的動畫"],
+        "bgmId": null,
+        "bgmIdSource": "none",
+        "platforms": ["待核對"],
+        "subtitle": "繁中",
+        "regionNote": "香港 · 待官方公布",
+        "scheduleHkt": "星期六 22:00",
+        "premiere": "2026-10-10",
+        "status": "即將播出",
+        "source": null,
+        "notionId": "66666666-6666-4666-8666-666666666666",
+        "sample": false
+      },
+      {
+        "title": "名偵探柯南",
+        "titleJa": "名探偵コナン",
+        "bgmId": 899,
+        "bgmIdSource": "url",
+        "platforms": ["木棉花 YouTube", "Ani-One 中文"],
+        "subtitle": "繁中",
+        "status": "追蹤中",
+        "source": "https://bgm.tv/subject/899",
+        "sample": false
+      },
+      {
+        "title": "青春之箱 第二季",
+        "titleJa": "アオのハコ Season2",
+        "aliases": ["アオのハコ Season2", "青春之箱 第二季"],
+        "bgmId": 548156,
+        "bgmIdSource": "season",
+        "platforms": ["Netflix"],
+        "subtitle": "繁中",
+        "regionNote": "香港／台灣 · Netflix 同步",
+        "scheduleHkt": "星期日 23:00",
+        "premiere": "2026-10-04",
+        "status": "播放中",
+        "source": "https://www.netflix.com/title/example-aono-hako",
+        "notionId": "11111111-1111-4111-8111-111111111111",
+        "sample": false
+      },
+      {
+        "title": "航海王",
+        "titleJa": "ONE PIECE",
+        "bgmId": 975,
+        "bgmIdSource": "notion",
+        "platforms": ["巴哈姆特動畫瘋"],
+        "subtitle": "繁中",
+        "status": "播放中",
+        "source": "https://ani.gamer.com.tw/",
+        "sample": false
+      },
+      {
+        "title": "藥屋少女的呢喃 第三季",
+        "titleJa": "薬屋のひとりごと 第3期",
+        "bgmId": 568244,
+        "bgmIdSource": "season",
+        "platforms": ["Netflix"],
+        "subtitle": "繁中",
+        "regionNote": "台灣",
+        "status": "已完結",
+        "sample": false
+      }
+    ]
+  },
+  "results": [
+    {
+      "object": "page",
+      "id": "11111111-1111-4111-8111-111111111111",
+      "url": "https://www.notion.so/11111111111141118111111111111111",
+      "archived": false,
+      "properties": {
+        "作品": {
+          "type": "title",
+          "title": [{"type": "text", "plain_text": "アオのハコ Season2／青春之箱 第二季"}]
+        },
+        "平台": {"type": "multi_select", "multi_select": [{"name": "Netflix"}]},
+        "字幕": {"type": "rich_text", "rich_text": [{"type": "text", "plain_text": "繁中"}]},
+        "地區": {"type": "rich_text", "rich_text": [{"type": "text", "plain_text": "香港／台灣"}]},
+        "每週更新時間（HKT）": {"type": "rich_text", "rich_text": [{"type": "text", "plain_text": "星期日 23:00"}]},
+        "狀態": {"type": "select", "select": {"name": "播放中"}},
+        "首播日期": {"type": "date", "date": {"start": "2026-10-04"}},
+        "首播（原文）": {"type": "rich_text", "rich_text": [{"type": "text", "plain_text": "2026年10月4日"}]},
+        "官方來源連結": {"type": "url", "url": "https://www.netflix.com/title/example-aono-hako"},
+        "備註": {"type": "rich_text", "rich_text": [{"type": "text", "plain_text": "Netflix 同步"}]},
+        "bgmId": {"type": "number", "number": null}
+      }
+    },
+    {
+      "object": "page",
+      "id": "22222222-2222-4222-8222-222222222222",
+      "url": "https://www.notion.so/22222222222242228222222222222222",
+      "archived": false,
+      "properties": {
+        "作品": {
+          "type": "title",
+          "title": [{"type": "text", "plain_text": "ONE PIECE／航海王"}]
+        },
+        "平台": {"type": "multi_select", "multi_select": [{"name": "巴哈姆特動畫瘋"}]},
+        "字幕": {"type": "rich_text", "rich_text": [{"type": "text", "plain_text": "繁中"}]},
+        "地區": {"type": "rich_text", "rich_text": [{"type": "text", "plain_text": "香港／台灣"}]},
+        "每週更新時間（HKT）": {"type": "rich_text", "rich_text": [{"type": "text", "plain_text": "星期三"}]},
+        "狀態": {"type": "select", "select": {"name": "播放中"}},
+        "首播日期": {"type": "date", "date": {"start": "1999-10-20"}},
+        "首播（原文）": {"type": "rich_text", "rich_text": []},
+        "官方來源連結": {"type": "url", "url": "https://ani.gamer.com.tw/"},
+        "備註": {"type": "rich_text", "rich_text": []},
+        "bgmId": {"type": "number", "number": 975}
+      }
+    },
+    {
+      "object": "page",
+      "id": "33333333-3333-4333-8333-333333333333",
+      "url": "https://www.notion.so/33333333333343338333333333333333",
+      "archived": false,
+      "properties": {
+        "作品": {
+          "type": "title",
+          "title": [{"type": "text", "plain_text": "名探偵コナン／名偵探柯南"}]
+        },
+        "平台": {
+          "type": "multi_select",
+          "multi_select": [{"name": "木棉花 YouTube"}, {"name": "Ani-One 中文"}]
+        },
+        "字幕": {"type": "rich_text", "rich_text": [{"type": "text", "plain_text": "繁中"}]},
+        "地區": {"type": "rich_text", "rich_text": [{"type": "text", "plain_text": "香港"}]},
+        "每週更新時間（HKT）": {"type": "rich_text", "rich_text": [{"type": "text", "plain_text": "星期六"}]},
+        "狀態": {"type": "select", "select": {"name": "追蹤中"}},
+        "首播日期": {"type": "date", "date": {"start": "1996-01-08"}},
+        "首播（原文）": {"type": "rich_text", "rich_text": []},
+        "官方來源連結": {"type": "url", "url": "https://bgm.tv/subject/899"},
+        "備註": {"type": "rich_text", "rich_text": []},
+        "bgmId": {"type": "number", "number": null}
+      }
+    },
+    {
+      "object": "page",
+      "id": "44444444-4444-4444-8444-444444444444",
+      "url": "https://www.notion.so/44444444444444448444444444444444",
+      "archived": false,
+      "properties": {
+        "作品": {
+          "type": "title",
+          "title": [{"type": "text", "plain_text": "薬屋のひとりごと 第3期／藥屋少女的呢喃 第三季"}]
+        },
+        "平台": {"type": "multi_select", "multi_select": [{"name": "Netflix"}]},
+        "字幕": {"type": "rich_text", "rich_text": [{"type": "text", "plain_text": "繁中"}]},
+        "地區": {"type": "rich_text", "rich_text": [{"type": "text", "plain_text": "台灣"}]},
+        "每週更新時間（HKT）": {"type": "rich_text", "rich_text": [{"type": "text", "plain_text": "星期五"}]},
+        "狀態": {"type": "select", "select": {"name": "已完結"}},
+        "首播日期": {"type": "date", "date": {"start": "2026-10-02"}},
+        "首播（原文）": {"type": "rich_text", "rich_text": []},
+        "官方來源連結": {"type": "url", "url": "https://www.netflix.com/title/example-kusuriya"},
+        "備註": {
+          "type": "rich_text",
+          "rich_text": [{
+            "type": "text",
+            "plain_text": "這段備註故意寫得比較長，超過四十個字，所以不應該併進地區欄，畫面上只保留地區。（測試）"
+          }]
+        },
+        "bgmId": {"type": "number", "number": null}
+      }
+    },
+    {
+      "object": "page",
+      "id": "55555555-5555-4555-8555-555555555555",
+      "url": "https://www.notion.so/55555555555545558555555555555555",
+      "archived": false,
+      "properties": {
+        "作品": {
+          "type": "title",
+          "title": [{"type": "text", "plain_text": "古い完結アニメ／舊完結動畫"}]
+        },
+        "平台": {"type": "multi_select", "multi_select": [{"name": "viu"}]},
+        "字幕": {"type": "rich_text", "rich_text": [{"type": "text", "plain_text": "繁中"}]},
+        "地區": {"type": "rich_text", "rich_text": [{"type": "text", "plain_text": "香港"}]},
+        "每週更新時間（HKT）": {"type": "rich_text", "rich_text": []},
+        "狀態": {"type": "select", "select": {"name": "已完結"}},
+        "首播日期": {"type": "date", "date": null},
+        "首播（原文）": {"type": "rich_text", "rich_text": []},
+        "官方來源連結": {"type": "url", "url": null},
+        "備註": {"type": "rich_text", "rich_text": []},
+        "bgmId": {"type": "number", "number": null}
+      }
+    },
+    {
+      "object": "page",
+      "id": "66666666-6666-4666-8666-666666666666",
+      "url": "https://www.notion.so/66666666666646668666666666666666",
+      "archived": false,
+      "properties": {
+        "作品": {
+          "type": "title",
+          "title": [{"type": "text", "plain_text": "存在しないアニメ／不存在的動畫"}]
+        },
+        "平台": {"type": "multi_select", "multi_select": []},
+        "字幕": {"type": "rich_text", "rich_text": [{"type": "text", "plain_text": "繁中"}]},
+        "地區": {"type": "rich_text", "rich_text": [{"type": "text", "plain_text": "香港"}]},
+        "每週更新時間（HKT）": {"type": "rich_text", "rich_text": [{"type": "text", "plain_text": "星期六 22:00"}]},
+        "狀態": {"type": "select", "select": {"name": "即將播出"}},
+        "首播日期": {"type": "date", "date": {"start": "2026-10-10"}},
+        "首播（原文）": {"type": "rich_text", "rich_text": []},
+        "官方來源連結": {"type": "url", "url": null},
+        "備註": {"type": "rich_text", "rich_text": [{"type": "text", "plain_text": "待官方公布"}]},
+        "bgmId": {"type": "number", "number": null}
+      }
+    }
+  ]
+}
