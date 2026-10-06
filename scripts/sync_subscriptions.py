@@ -412,8 +412,26 @@ def notion_query(token, db_id):
     return results
 
 
+ISO_DATE_RE = re.compile(r"^\d{4}-\d{2}-\d{2}$")
+
+
+def is_plain_date(text):
+    # A bare YYYY-MM-DD (e.g. 上次扣款原文 copied from the date column) is not private.
+    return bool(ISO_DATE_RE.match(str(text or "").strip()))
+
+
+def redact_dropped(notes, props):
+    for key in DROPPED:
+        value = prop_text(props.get(key)).strip()
+        if len(value) >= 4 and not is_plain_date(value) and value in notes:
+            notes = notes.replace(value, "（已隱藏）")
+    return notes
+
+
 def collect_secret(secrets, value):
     text = str(value or "").strip()
+    if is_plain_date(text):
+        return
     if len(text) >= 8 and text not in secrets:
         secrets.append(text)
 
@@ -436,7 +454,12 @@ def map_pages(pages, today, rates):
         collect_secret(secrets, pid.replace("-", ""))
         collect_secret(secrets, page.get("url"))
         for key in DROPPED:
-            collect_secret(secrets, prop_text(props.get(key)))
+            value = prop_text(props.get(key))
+            # A digit-free 付款方式 (e.g. a store name like Google Play) is generic
+            # and may legitimately appear in another row's plan; card numbers are not.
+            if key == "付款方式" and not re.search(r"\d", value):
+                continue
+            collect_secret(secrets, value)
         archived = bool(page.get("archived") or page.get("in_trash"))
         name = prop_text(props.get("服務"))
         if archived or not name:
@@ -457,7 +480,7 @@ def map_pages(pages, today, rates):
         if status == ACTIVE and original and original < today:
             next_day, rolled = roll_forward(original, interval, today)
         last = parse_iso(prop_text(props.get("上次扣款")))
-        notes = scrub_notes(prop_text(props.get("備註")))
+        notes = scrub_notes(redact_dropped(prop_text(props.get("備註")), props))
         category = infer_category(name, plan)
         item = {
             "id": page_hash(pid),
@@ -493,6 +516,7 @@ def map_pages(pages, today, rates):
                 prop_text(props.get(key)) in blob
                 for key in DROPPED
                 if len(prop_text(props.get(key))) >= 8
+                and not is_plain_date(prop_text(props.get(key)))
             ),
             "dropped field",
         )
@@ -502,6 +526,16 @@ def map_pages(pages, today, rates):
             check(raw_renew not in blob, "renew raw published")
         items.append(item)
     items.sort(key=lambda row: row["id"])
+    # Cross-row safety: never let one row's private value surface in another row's text.
+    for item in items:
+        for field in ("name", "plan", "notes"):
+            text = item.get(field)
+            if not isinstance(text, str):
+                continue
+            for secret in secrets:
+                if secret and secret in text:
+                    text = text.replace(secret, "（已隱藏）")
+            item[field] = text
     return items, secrets, skipped
 
 
