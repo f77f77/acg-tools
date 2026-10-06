@@ -1,11 +1,13 @@
 {
   "schema": "anime-subs.v1",
-  "updatedAt": "2026-10-05",
-  "note": "種子樣本，方便對表。平台有冇繁中、香港區開唔開，以各站當日頁面為準；呢度未逐套核對。每週 Action 暫未接上抓取，只驗證 JSON。",
+  "updatedAt": "2026-10-06",
+  "note": "中文字幕資料併入新番表，唔再係獨立頁。對應先睇 bgmId（或來源網址入面嘅 Bangumi subject id），再以標題、日文名、aliases 對 season.json 嘅 name／name_cn。對唔上嘅列會附加在表尾。平台同香港可看性未逐套核對。",
   "items": [
     {
       "title": "藥屋少女的呢喃 第三季",
       "titleJa": "薬屋のひとりごと 第3期",
+      "aliases": ["药屋少女的呢喃 第三季", "薬屋のひとりごと 第3期"],
+      "bgmId": 568244,
       "platforms": ["待核對"],
       "subtitle": "繁中",
       "regionNote": "香港可看性未核對",
@@ -16,6 +18,8 @@
     {
       "title": "航海王",
       "titleJa": "ONE PIECE",
+      "aliases": ["ONE PIECE", "海贼王"],
+      "bgmId": 975,
       "platforms": ["待核對"],
       "subtitle": "繁中",
       "regionNote": "香港長期有中文字幕播出，平台請再核對",
@@ -26,6 +30,8 @@
     {
       "title": "名偵探柯南",
       "titleJa": "名探偵コナン",
+      "aliases": ["名侦探柯南", "名探偵コナン"],
+      "bgmId": 899,
       "platforms": ["待核對"],
       "subtitle": "繁中",
       "regionNote": "香港可看性未核對",
@@ -36,11 +42,24 @@
     {
       "title": "青之箱 第二季",
       "titleJa": "アオのハコ Season 2",
+      "aliases": ["青之箱 第二季", "アオのハコ Season 2"],
+      "bgmId": 548156,
       "platforms": ["待核對"],
       "subtitle": "繁中",
       "regionNote": "香港可看性未核對",
       "scheduleHkt": "星期日（Bangumi 放送日）",
       "source": "https://bgm.tv/subject/548156",
+      "sample": true
+    },
+    {
+      "title": "示例：不在本季日曆",
+      "titleJa": "サンプル未収録",
+      "aliases": ["這套唔喺 season.json"],
+      "platforms": ["待核對"],
+      "subtitle": "繁中",
+      "regionNote": "示例列。對唔上放送表時會附加在表尾",
+      "scheduleHkt": "—",
+      "source": "https://bgm.tv/",
       "sample": true
     }
   ]

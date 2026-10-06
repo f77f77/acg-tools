@@ -64,16 +64,39 @@
   <div id="app" class="app-locked">
     <aside id="sidebar" class="sidebar">
       <div class="sidebar-header"><span class="logo">ACG Tools</span><button id="btn-toggle-sidebar" class="btn-icon">☰</button></div>
-      <nav class="sidebar-nav">
-        <button class="nav-item active" data-module="vocab"><span class="nav-icon">📖</span><span class="nav-label">生詞本</span></button>
-        <button class="nav-item" data-module="season"><span class="nav-icon">📺</span><span class="nav-label">新番表</span></button>
-        <button class="nav-item" data-module="fx"><span class="nav-icon">💱</span><span class="nav-label">匯率計算</span></button>
-        <button class="nav-item" data-module="names"><span class="nav-icon">🔤</span><span class="nav-label">中日英名稱</span></button>
-        <button class="nav-item" data-module="codes"><span class="nav-icon">🎁</span><span class="nav-label">配送碼</span></button>
-        <button class="nav-item" data-module="events"><span class="nav-icon">📅</span><span class="nav-label">香港活動</span></button>
-        <button class="nav-item" data-module="anime"><span class="nav-icon">🎬</span><span class="nav-label">中文字幕</span></button>
-        <button class="nav-item" data-module="subs"><span class="nav-icon">🔁</span><span class="nav-label">訂閱續費</span></button>
-        <a class="nav-item nav-external" href="champions/" target="_blank" rel="noopener"><span class="nav-icon">⚔</span><span class="nav-label">對戰助手</span></a>
+      <nav class="sidebar-nav" id="sidebar-nav">
+        <div class="nav-section" data-section="acg">
+          <button type="button" class="nav-section-toggle" aria-expanded="true">
+            <span>動畫／ACG</span>
+            <span class="nav-section-chevron" aria-hidden="true">▾</span>
+          </button>
+          <div class="nav-section-items">
+            <button type="button" class="nav-item" data-module="season"><span class="nav-icon">📺</span><span class="nav-label">新番表</span></button>
+            <button type="button" class="nav-item" data-module="events"><span class="nav-icon">📅</span><span class="nav-label">香港活動看板</span></button>
+          </div>
+        </div>
+        <div class="nav-section" data-section="pokemon">
+          <button type="button" class="nav-section-toggle" aria-expanded="true">
+            <span>Pokémon</span>
+            <span class="nav-section-chevron" aria-hidden="true">▾</span>
+          </button>
+          <div class="nav-section-items">
+            <button type="button" class="nav-item" data-module="names"><span class="nav-icon">🔤</span><span class="nav-label">中日英名稱</span></button>
+            <button type="button" class="nav-item" data-module="codes"><span class="nav-icon">🎁</span><span class="nav-label">配送碼</span></button>
+            <a class="nav-item nav-external" href="./champions/" target="_blank" rel="noopener"><span class="nav-icon">⚔</span><span class="nav-label">對戰助手</span></a>
+          </div>
+        </div>
+        <div class="nav-section" data-section="life">
+          <button type="button" class="nav-section-toggle" aria-expanded="true">
+            <span>生活工具</span>
+            <span class="nav-section-chevron" aria-hidden="true">▾</span>
+          </button>
+          <div class="nav-section-items">
+            <button type="button" class="nav-item active" data-module="vocab"><span class="nav-icon">📖</span><span class="nav-label">生詞本</span></button>
+            <button type="button" class="nav-item" data-module="fx"><span class="nav-icon">💱</span><span class="nav-label">匯率</span></button>
+            <button type="button" class="nav-item" data-module="subs"><span class="nav-icon">🔁</span><span class="nav-label">訂閱／續費</span></button>
+          </div>
+        </div>
       </nav>
       <div class="sidebar-player collapsed" id="sidebar-player">
         <button type="button" id="btn-toggle-player" class="sidebar-player-toggle" aria-expanded="false">
@@ -84,7 +107,7 @@
           <iframe id="am-player" title="Apple Music" allow="autoplay *; encrypted-media *; fullscreen *; clipboard-write" frameborder="0" height="360" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation" data-src="https://embed.music.apple.com/jp/playlist/favorite-songs/pl.u-EgUD7ApZa9" src="about:blank"></iframe>
         </div>
       </div>
-      <div class="sidebar-footer"><small>個人工具</small></div>
+      <div class="sidebar-footer"><small>個人工具 · hub 1.1</small></div>
     </aside>
     <div id="main-wrap" class="main-wrap">
       <header class="topbar"><button id="btn-open-sidebar" class="btn-icon">☰</button><h1 id="page-title">生詞本</h1></header>
@@ -150,7 +173,14 @@
           </div>
         </section>
         <section id="module-season" class="module">
-          <div class="module-toolbar"><div class="season-info"><span id="season-label">本季放送表（Bangumi · 每日自動更新）</span><span id="season-updated" class="muted"></span></div><button id="btn-refresh-season" class="btn btn-ghost btn-sm">重新整理</button></div>
+          <div class="module-toolbar"><div class="season-info"><span id="season-label">本季放送表（Bangumi · 中文字幕已併入 · 每日自動更新）</span><span id="season-updated" class="muted"></span></div><button id="btn-refresh-season" class="btn btn-ghost btn-sm">重新整理</button></div>
+          <div class="season-filters" id="season-filters">
+            <label class="fx-fee-check"><input type="checkbox" id="season-zh-only" /><span>只顯示有中文字幕</span></label>
+            <label class="season-platform-label">平台
+              <select id="season-platform"><option value="">全部平台</option></select>
+            </label>
+          </div>
+          <p class="module-note" id="season-subs-note"></p>
           <div id="season-loading" class="empty-state"><p>載入中...</p></div>
           <div id="season-error" class="empty-state hidden"><p>載入失敗</p><p class="sub" id="season-error-msg"></p><button id="btn-retry-season" class="btn btn-secondary">重試</button></div>
           <div id="season-content" class="hidden"></div>
@@ -203,6 +233,7 @@
             <div class="season-info"><span>Mystery Gift／配送碼</span><span id="codes-meta" class="muted"></span></div>
             <label class="fx-fee-check"><input type="checkbox" id="codes-show-expired" /><span>顯示已過期</span></label>
           </div>
+          <div class="tabs" id="codes-games"></div>
           <p class="module-note" id="codes-note"></p>
           <div id="codes-status" class="empty-state"><p>載入中...</p></div>
           <div class="table-wrap hidden" id="codes-wrap">
@@ -231,19 +262,6 @@
             <table class="data-table">
               <thead id="events-head"></thead>
               <tbody id="events-body"></tbody>
-            </table>
-          </div>
-        </section>
-        <section id="module-anime" class="module">
-          <div class="module-toolbar">
-            <div class="season-info"><span>中文字幕動畫播放表</span><span id="anime-meta" class="muted"></span></div>
-          </div>
-          <p class="module-note" id="anime-note"></p>
-          <div id="anime-status" class="empty-state"><p>載入中...</p></div>
-          <div class="table-wrap hidden" id="anime-wrap">
-            <table class="data-table">
-              <thead><tr><th>標題</th><th>中文字幕平台</th><th>地區</th><th>香港時間</th><th>來源</th></tr></thead>
-              <tbody id="anime-body"></tbody>
             </table>
           </div>
         </section>
