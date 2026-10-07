@@ -1,6 +1,6 @@
 {
   "schema": "events.v2",
-  "updatedAt": "2026-10-06",
+  "updatedAt": "2026-10-07",
   "note": "活動由 Notion「香港ACG情報看板」每日同步（香港時間）。狀態會按日期重算：開始至結束當日係進行中，未開始係即將開始，完結七日內先保留。周邊截止仍然手改 deadlines[]；標成示例嘅截止唔會保留。",
   "events": [
     {
@@ -25,6 +25,29 @@
       "notes": "與時代廣場期間限定店分開；主題可麗餅店場景＋打卡",
       "featured": false,
       "verifiedAt": "2026-10-02",
+      "sample": false
+    },
+    {
+      "id": "8a14a94226b0c8ba",
+      "title": "T.O.Y.C. Infinity × TAMASHII NATIONS LIVE ACTION FIGURE EXPO 2026（特攝限定展）",
+      "status": "進行中",
+      "notionStatus": "進行中",
+      "category": "特展",
+      "ips": [
+        "特攝"
+      ],
+      "date": "2026-09-22",
+      "endDate": "2026-10-19",
+      "timeNote": "09-22～10-19 每日 11:00–21:00",
+      "place": "中環閣麟街 8 號 T.O.Y.C. INFINITY G/F & M/F",
+      "mapUrl": "https://www.google.com/maps/search/?api=1&query=%E4%B8%AD%E7%92%B0%E9%96%A3%E9%BA%9F%E8%A1%97%208%20%E8%99%9F%20T.O.Y.C.%20INFINITY%20G%2FF%20%26%20M%2FF",
+      "price": "未公布（店舖限定展區）",
+      "ticketUrl": "",
+      "ticketNote": "無／現場",
+      "source": "https://www.pcmarket.com.hk/toyc-infinity-tamashii-nations-in-central/",
+      "notes": "幪面超人／ULTRAMAN／Project R.E.D.／哥斯拉；全港首見 SHF 幪面超人 MY-TH 立像；會場限定 SHF 真骨彫 FAIZ（夜光版）、SHF BAKE（曲奇裝甲）",
+      "featured": false,
+      "verifiedAt": "2026-10-06",
       "sample": false
     },
     {
@@ -242,15 +265,15 @@
     {
       "id": "418eda5b3f5b25e3",
       "title": "IRyS 1st Concert HOPE ||: Beyond the Stars LIVE VIEWING（香港）",
-      "status": "進行中",
-      "notionStatus": "即將開始",
+      "status": "已完結",
+      "notionStatus": "進行中",
       "category": "LIVE VIEWING",
       "ips": [
         "IRyS"
       ],
       "date": "2026-10-06",
       "endDate": "2026-10-06",
-      "timeNote": "2026-10-06　日本開演 18:30 JST＝17:30 HKT；銅鑼灣場次約 17:15 開映",
+      "timeNote": "10-06（二）17:15 英皇銅鑼灣時代廣場（全港只此一場）",
       "place": "英皇戲院 銅鑼灣時代廣場（另有澳門場不入表）",
       "mapUrl": "https://www.google.com/maps/search/?api=1&query=%E8%8B%B1%E7%9A%87%E6%88%B2%E9%99%A2%20%E9%8A%85%E9%91%BC%E7%81%A3%E6%99%82%E4%BB%A3%E5%BB%A3%E5%A0%B4%EF%BC%88%E5%8F%A6%E6%9C%89%E6%BE%B3%E9%96%80%E5%A0%B4%E4%B8%8D%E5%85%A5%E8%A1%A8%EF%BC%89",
       "price": "約 HK$360（英皇銅鑼灣；場次見戲院）",
@@ -259,7 +282,7 @@
       "source": "https://www.liveviewing.com/events/irys-1st-concert/",
       "notes": "hololive English；嘉賓 MOTSU、不知火フレア；約 150 分",
       "featured": false,
-      "verifiedAt": "2026-10-01",
+      "verifiedAt": "2026-10-06",
       "sample": false
     },
     {
@@ -352,6 +375,48 @@
       "notes": "SEGA×animate 全球企劃",
       "featured": false,
       "verifiedAt": "2026-09-29",
+      "sample": false
+    },
+    {
+      "id": "40c2d4205bb777b3",
+      "title": "劍持刀也 Real Solo Live【KOKU FES.】LIVE VIEWING（香港）",
+      "status": "即將開始",
+      "notionStatus": "即將開始",
+      "category": "LIVE VIEWING",
+      "ips": [],
+      "date": "2026-10-11",
+      "endDate": "2026-10-11",
+      "timeNote": "10-11（日）16:45 英皇尖沙咀 iSQUARE IMAX（直播；全港只此一場）",
+      "place": "英皇戲院 尖沙咀 iSQUARE（IMAX）（另有澳門場不入表）",
+      "mapUrl": "https://www.google.com/maps/search/?api=1&query=%E8%8B%B1%E7%9A%87%E6%88%B2%E9%99%A2%20%E5%B0%96%E6%B2%99%E5%92%80%20iSQUARE%EF%BC%88IMAX%EF%BC%89%EF%BC%88%E5%8F%A6%E6%9C%89%E6%BE%B3%E9%96%80%E5%A0%B4%E4%B8%8D%E5%85%A5%E8%A1%A8%EF%BC%89",
+      "price": "HK$310（英皇 iSQUARE IMAX；附入場特典）",
+      "ticketUrl": "https://amccinemas.com.hk/movies/kenmochi-toya-real-solo-livekoku-fes-live-viewing/",
+      "ticketNote": "院線購票（9/28 13:00 開售）",
+      "source": "https://www.liveviewing.com/events/kenmochitoya/",
+      "notes": "にじさんじ VTuber；剣持刀也リアルソロライブ【虚空狂宴】；K-Arena 橫濱；嘉賓 葛葉、花生君、星街すいせい",
+      "featured": false,
+      "verifiedAt": "2026-10-06",
+      "sample": false
+    },
+    {
+      "id": "05ef68eedf8344a2",
+      "title": "葛葉 Kuzuha One-Man Live \"Bloody Alexandrite\" LIVE VIEWING（香港）",
+      "status": "即將開始",
+      "notionStatus": "即將開始",
+      "category": "LIVE VIEWING",
+      "ips": [],
+      "date": "2026-10-12",
+      "endDate": "2026-10-12",
+      "timeNote": "10-12（一）18:45 英皇銅鑼灣時代廣場（延時轉播；全港只此一場）",
+      "place": "英皇戲院 銅鑼灣時代廣場（另有澳門場不入表）",
+      "mapUrl": "https://www.google.com/maps/search/?api=1&query=%E8%8B%B1%E7%9A%87%E6%88%B2%E9%99%A2%20%E9%8A%85%E9%91%BC%E7%81%A3%E6%99%82%E4%BB%A3%E5%BB%A3%E5%A0%B4%EF%BC%88%E5%8F%A6%E6%9C%89%E6%BE%B3%E9%96%80%E5%A0%B4%E4%B8%8D%E5%85%A5%E8%A1%A8%EF%BC%89",
+      "price": "HK$310（英皇銅鑼灣；附入場特典）",
+      "ticketUrl": "https://amccinemas.com.hk/zh/電影/kuzuha-one-man-live-bloody-alexandrite-live-viewing/",
+      "ticketNote": "院線購票（9/28 13:00 開售）",
+      "source": "https://www.liveviewing.com/events/kuzuha/",
+      "notes": "にじさんじ VTuber；K-Arena 橫濱；嘉賓 劍持刀也、不破湊、Ibrahim、Lauren Iroas",
+      "featured": false,
+      "verifiedAt": "2026-10-06",
       "sample": false
     },
     {
@@ -801,6 +866,27 @@
       "sample": false
     },
     {
+      "id": "e2b3f676a69b53d9",
+      "title": "名偵探光之美少女電影：不可思議庭園與2人的秘密",
+      "status": "即將開始",
+      "notionStatus": "即將開始",
+      "category": "電影",
+      "ips": [],
+      "date": "2026-11-19",
+      "endDate": "2026-11-19",
+      "timeNote": "2026-11-19（四）香港上映",
+      "place": "全港院線（場次未公布）",
+      "mapUrl": "https://www.google.com/maps/search/?api=1&query=%E5%85%A8%E6%B8%AF%E9%99%A2%E7%B7%9A%EF%BC%88%E5%A0%B4%E6%AC%A1%E6%9C%AA%E5%85%AC%E5%B8%83%EF%BC%89",
+      "price": "未公布",
+      "ticketUrl": "",
+      "ticketNote": "院線／未公布",
+      "source": "https://wmoov.com/movie/details/73723",
+      "notes": "光之美少女系列第 35 部劇場版；約 71 分鐘；日語",
+      "featured": false,
+      "verifiedAt": "2026-10-06",
+      "sample": false
+    },
+    {
       "id": "d66d5b2a50b7a626",
       "title": "佐々木李子 Sasaki Rico HongKong Fanmeeting 2026～香港・李好～",
       "status": "即將開始",
@@ -867,6 +953,27 @@
       "notes": "",
       "featured": false,
       "verifiedAt": "2026-09-29",
+      "sample": false
+    },
+    {
+      "id": "d30409f473d8c029",
+      "title": "青春豬頭少年不會夢到親愛好朋友（劇場版）",
+      "status": "即將開始",
+      "notionStatus": "即將開始",
+      "category": "電影",
+      "ips": [],
+      "date": "2026-11-26",
+      "endDate": "2026-11-26",
+      "timeNote": "2026-11-26（四）港澳上映",
+      "place": "港澳各大院線（場次未公布）　發行：木棉花香港",
+      "mapUrl": "https://www.google.com/maps/search/?api=1&query=%E6%B8%AF%E6%BE%B3%E5%90%84%E5%A4%A7%E9%99%A2%E7%B7%9A%EF%BC%88%E5%A0%B4%E6%AC%A1%E6%9C%AA%E5%85%AC%E5%B8%83%EF%BC%89%E3%80%80%E7%99%BC%E8%A1%8C%EF%BC%9A%E6%9C%A8%E6%A3%89%E8%8A%B1%E9%A6%99%E6%B8%AF",
+      "price": "未公布",
+      "ticketUrl": "",
+      "ticketNote": "院線／未公布",
+      "source": "https://wmoov.com/movie/details/73598",
+      "notes": "系列大學篇完結篇；日語原聲、中英文字幕；CloverWorks",
+      "featured": false,
+      "verifiedAt": "2026-10-06",
       "sample": false
     },
     {
@@ -965,6 +1072,27 @@
       "sample": false
     },
     {
+      "id": "085a4a9936a46c7e",
+      "title": "劇場版 百變小櫻之再見MAGIC咭（首次香港戲院上映）",
+      "status": "即將開始",
+      "notionStatus": "即將開始",
+      "category": "電影",
+      "ips": [],
+      "date": "2026-12-10",
+      "endDate": "2026-12-10",
+      "timeNote": "2026-12-10（四）暫定上映（WMOOV）",
+      "place": "全港院線（未公布）　發行：木棉花香港",
+      "mapUrl": "https://www.google.com/maps/search/?api=1&query=%E5%85%A8%E6%B8%AF%E9%99%A2%E7%B7%9A%EF%BC%88%E6%9C%AA%E5%85%AC%E5%B8%83%EF%BC%89%E3%80%80%E7%99%BC%E8%A1%8C%EF%BC%9A%E6%9C%A8%E6%A3%89%E8%8A%B1%E9%A6%99%E6%B8%AF",
+      "price": "未公布",
+      "ticketUrl": "",
+      "ticketNote": "未公布（院線／hkmovie6）",
+      "source": "https://m.wmoov.com/movie/details/73499",
+      "notes": "2000 年第二部劇場版；香港以前只曾喺翡翠台播放，從未上映戲院；10-06 WMOOV 標暫定 12-10 上映，戲院未公布；木棉花預告見 https://acgevent.com/archives/40040",
+      "featured": false,
+      "verifiedAt": "2026-10-06",
+      "sample": false
+    },
+    {
       "id": "bfee4ce61784b1ba",
       "title": "ITO MIKU 10th ANNIVERSARY LIVE TOUR「39rpm」IN HONG KONG",
       "status": "即將開始",
@@ -1036,6 +1164,29 @@
       "sample": false
     },
     {
+      "id": "d905aee0b729f43f",
+      "title": "EIR AOI LIVE TOUR 2026-2027 “UNBOUND” in HONG KONG（藍井エイル）",
+      "status": "即將開始",
+      "notionStatus": "即將開始",
+      "category": "演唱會",
+      "ips": [
+        "anisong"
+      ],
+      "date": "2027-01-09",
+      "endDate": "2027-01-09",
+      "timeNote": "2027-01-09（六）19:00 開場／20:00 開演",
+      "place": "TIDES　紅磡",
+      "mapUrl": "https://www.google.com/maps/search/?api=1&query=TIDES%E3%80%80%E7%B4%85%E7%A3%A1",
+      "price": "TIDES HALL VIP $1,080（VIP PASS、優先入場、簽名海報）／TIDES HALL GA $780／MEZZ/F GA $680",
+      "ticketUrl": "https://www.tickets.neon-lit.com",
+      "ticketNote": "09-02 13:00 起公開發售（主辦 NEON LIT）",
+      "source": "https://www.anisnap.hk/articles/eir-aoi-live-tour-2026-2027-unbound/",
+      "notes": "海外巡演首站；《Fate/Zero》《刀劍神域》主題曲歌手",
+      "featured": false,
+      "verifiedAt": "2026-10-06",
+      "sample": false
+    },
+    {
       "id": "670f4e808a77da1a",
       "title": "milet Asia Tour 2027 - Hong Kong",
       "status": "即將開始",
@@ -1102,27 +1253,6 @@
       "notes": "不可把官網其他城市日期當成香港日",
       "featured": false,
       "verifiedAt": "2026-09-29",
-      "sample": false
-    },
-    {
-      "id": "085a4a9936a46c7e",
-      "title": "劇場版 百變小櫻之再見MAGIC咭（首次香港戲院上映）",
-      "status": "即將開始",
-      "notionStatus": "即將開始",
-      "category": "電影",
-      "ips": [],
-      "date": "",
-      "endDate": "",
-      "timeNote": "上映日期未公布（hkmovie6 標「未知上映日期」）；片長 80 分鐘",
-      "place": "全港院線（未公布）　發行：木棉花香港",
-      "mapUrl": "https://www.google.com/maps/search/?api=1&query=%E5%85%A8%E6%B8%AF%E9%99%A2%E7%B7%9A%EF%BC%88%E6%9C%AA%E5%85%AC%E5%B8%83%EF%BC%89%E3%80%80%E7%99%BC%E8%A1%8C%EF%BC%9A%E6%9C%A8%E6%A3%89%E8%8A%B1%E9%A6%99%E6%B8%AF",
-      "price": "未公布",
-      "ticketUrl": "",
-      "ticketNote": "未公布（院線／hkmovie6）",
-      "source": "https://acgevent.com/archives/40040",
-      "notes": "2000 年第二部劇場版；香港以前只曾喺翡翠台播放，從未上映戲院",
-      "featured": false,
-      "verifiedAt": "2026-10-05",
       "sample": false
     },
     {
