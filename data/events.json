@@ -1,6 +1,6 @@
 {
   "schema": "events.v2",
-  "updatedAt": "2026-10-07",
+  "updatedAt": "2026-10-08",
   "note": "活動由 Notion「香港ACG情報看板」每日同步（香港時間）。狀態會按日期重算：開始至結束當日係進行中，未開始係即將開始，完結七日內先保留。周邊截止仍然手改 deadlines[]；標成示例嘅截止唔會保留。",
   "events": [
     {
@@ -263,32 +263,9 @@
       "sample": false
     },
     {
-      "id": "418eda5b3f5b25e3",
-      "title": "IRyS 1st Concert HOPE ||: Beyond the Stars LIVE VIEWING（香港）",
-      "status": "已完結",
-      "notionStatus": "進行中",
-      "category": "LIVE VIEWING",
-      "ips": [
-        "IRyS"
-      ],
-      "date": "2026-10-06",
-      "endDate": "2026-10-06",
-      "timeNote": "10-06（二）17:15 英皇銅鑼灣時代廣場（全港只此一場）",
-      "place": "英皇戲院 銅鑼灣時代廣場（另有澳門場不入表）",
-      "mapUrl": "https://www.google.com/maps/search/?api=1&query=%E8%8B%B1%E7%9A%87%E6%88%B2%E9%99%A2%20%E9%8A%85%E9%91%BC%E7%81%A3%E6%99%82%E4%BB%A3%E5%BB%A3%E5%A0%B4%EF%BC%88%E5%8F%A6%E6%9C%89%E6%BE%B3%E9%96%80%E5%A0%B4%E4%B8%8D%E5%85%A5%E8%A1%A8%EF%BC%89",
-      "price": "約 HK$360（英皇銅鑼灣；場次見戲院）",
-      "ticketUrl": "https://thegrandcinema.com.hk/movies/irys-1st-concert-hope-beyond-the-stars-live-viewing-in-cinemas/",
-      "ticketNote": "院線購票",
-      "source": "https://www.liveviewing.com/events/irys-1st-concert/",
-      "notes": "hololive English；嘉賓 MOTSU、不知火フレア；約 150 分",
-      "featured": false,
-      "verifiedAt": "2026-10-06",
-      "sample": false
-    },
-    {
       "id": "7768460bab8cf616",
       "title": "劇場版 魔法少女小圓〈瓦爾普吉斯的迴天〉",
-      "status": "即將開始",
+      "status": "進行中",
       "notionStatus": "即將開始",
       "category": "電影",
       "ips": [
@@ -311,7 +288,7 @@
     {
       "id": "5b8379329e7fdc3c",
       "title": "動畫版電影《Look Back 驀然回首》香港重映",
-      "status": "即將開始",
+      "status": "進行中",
       "notionStatus": "即將開始",
       "category": "電影",
       "ips": [
