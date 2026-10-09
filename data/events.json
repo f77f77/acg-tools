@@ -1,6 +1,6 @@
 {
   "schema": "events.v2",
-  "updatedAt": "2026-10-08",
+  "updatedAt": "2026-10-09",
   "note": "活動由 Notion「香港ACG情報看板」每日同步（香港時間）。狀態會按日期重算：開始至結束當日係進行中，未開始係即將開始，完結七日內先保留。周邊截止仍然手改 deadlines[]；標成示例嘅截止唔會保留。",
   "events": [
     {
@@ -115,9 +115,9 @@
       "ticketUrl": "https://www.klook.com/zh-HK/activity/233689-girls-band-cry-pop-up-store-in-hong-kong/",
       "ticketNote": "",
       "source": "https://acgevent.com/archives/40055",
-      "notes": "香港限定打卡、CUBE X、票根抽簽名色紙（全期 100 名）；09-29 18:00–19:00 理名／夕莉／朱李限定簽名會（預購滿 $1,580 抽 30 名；登記已截止）",
+      "notes": "至 10-11；重點IP；Klook 仍列進行中",
       "featured": true,
-      "verifiedAt": "2026-10-01",
+      "verifiedAt": "2026-10-08",
       "sample": false
     },
     {
@@ -157,16 +157,16 @@
       ],
       "date": "2026-09-29",
       "endDate": "2026-10-17",
-      "timeNote": "2026-09-29～10-17　11:00–21:00（09-29 開幕日 17:00–21:00；CON-CON 其他樓層至 10-11）",
+      "timeNote": "Ani-One POP：2026-09-29～10-17　11:00–21:00；CON-CON THE MIX 主場（1/F・5/F 等）：至 10-11",
       "place": "銅鑼灣希慎廣場 B1 B113–B115（CON-CON：1/F・5/F 等）",
       "mapUrl": "https://www.google.com/maps/search/?api=1&query=%E9%8A%85%E9%91%BC%E7%81%A3%E5%B8%8C%E6%85%8E%E5%BB%A3%E5%A0%B4%20B1%20B113%E2%80%93B115%EF%BC%88CON-CON%EF%BC%9A1%2FF%E3%83%BB5%2FF%20%E7%AD%89%EF%BC%89",
       "price": "免費入場；凛音の理演唱會周邊須出示香港公演門票",
       "ticketUrl": "",
       "ticketNote": "無／現場自由入場",
-      "source": "https://acgevent.com/archives/39955",
-      "notes": "【NEW】09-29 11:00 理名／夕莉／朱李現身 1/F；GBC 日本直送及香港限定；現場亦有排球少年／咒術等但不作主推",
+      "source": "https://konggokhk.com/concon_the_mix_hysan_place_2026/",
+      "notes": "希慎廣場兩段：CON-CON THE MIX 主活動至 10-11；地庫 Ani-One POP 至 10-17。想逛主場聯乘宜 10-11 前",
       "featured": true,
-      "verifiedAt": "2026-10-01",
+      "verifiedAt": "2026-10-08",
       "sample": false
     },
     {
@@ -265,8 +265,8 @@
     {
       "id": "7768460bab8cf616",
       "title": "劇場版 魔法少女小圓〈瓦爾普吉斯的迴天〉",
-      "status": "進行中",
-      "notionStatus": "即將開始",
+      "status": "已完結",
+      "notionStatus": "進行中",
       "category": "電影",
       "ips": [
         "魔法少女小圓"
@@ -282,14 +282,14 @@
       "source": "https://www.e-muse.com.hk/hk/news/394",
       "notes": "",
       "featured": false,
-      "verifiedAt": "2026-09-29",
+      "verifiedAt": "2026-10-08",
       "sample": false
     },
     {
       "id": "5b8379329e7fdc3c",
       "title": "動畫版電影《Look Back 驀然回首》香港重映",
-      "status": "進行中",
-      "notionStatus": "即將開始",
+      "status": "已完結",
+      "notionStatus": "進行中",
       "category": "電影",
       "ips": [
         "Look Back（動畫版）"
@@ -305,7 +305,7 @@
       "source": "https://acgevent.com/archives/40080",
       "notes": "動畫版重映（不收真人版）",
       "featured": false,
-      "verifiedAt": "2026-09-29",
+      "verifiedAt": "2026-10-08",
       "sample": false
     },
     {
@@ -1187,6 +1187,29 @@
       "sample": false
     },
     {
+      "id": "577daeb80a01ff01",
+      "title": "CON-CON HONG KONG 2027",
+      "status": "即將開始",
+      "notionStatus": "即將開始",
+      "category": "展會",
+      "ips": [
+        "多 IP"
+      ],
+      "date": "2027-05-07",
+      "endDate": "2027-05-09",
+      "timeNote": "2027-05-07～09",
+      "place": "亞洲國際博覽館（亞博）",
+      "mapUrl": "https://www.google.com/maps/search/?api=1&query=%E4%BA%9E%E6%B4%B2%E5%9C%8B%E9%9A%9B%E5%8D%9A%E8%A6%BD%E9%A4%A8%EF%BC%88%E4%BA%9E%E5%8D%9A%EF%BC%89",
+      "price": "未公布",
+      "ticketUrl": "",
+      "ticketNote": "未公布",
+      "source": "https://www.edigest.hk/news/medialink-con-con-the-mix-ip-economy-hysan-place-2027-asiaworld-expo-%e5%8d%b3%e6%99%82%e8%b2%a1%e7%b6%93-2043063/",
+      "notes": "羚邦旗艦；主題 Super Charged／IP×運動；與希慎 CON-CON THE MIX 同期宣佈",
+      "featured": false,
+      "verifiedAt": "2026-10-08",
+      "sample": false
+    },
+    {
       "id": "6f375af4b3b56aa7",
       "title": "Hong Kong Comic Con 2027",
       "status": "即將開始",
@@ -1207,6 +1230,27 @@
       "notes": "",
       "featured": false,
       "verifiedAt": "2026-09-29",
+      "sample": false
+    },
+    {
+      "id": "0e7196dd663d92b0",
+      "title": "Pokémon Center 香港期間限定店 @ 又一城",
+      "status": "即將開始",
+      "notionStatus": "即將開始",
+      "category": "快閃店",
+      "ips": [],
+      "date": "",
+      "endDate": "",
+      "timeNote": "2026-11（日未公布）",
+      "place": "九龍塘又一城（達之路 80 號）",
+      "mapUrl": "https://www.google.com/maps/search/?api=1&query=%E4%B9%9D%E9%BE%8D%E5%A1%98%E5%8F%88%E4%B8%80%E5%9F%8E%EF%BC%88%E9%81%94%E4%B9%8B%E8%B7%AF%2080%20%E8%99%9F%EF%BC%89",
+      "price": "未公布",
+      "ticketUrl": "",
+      "ticketNote": "未公布",
+      "source": "https://www.timeout.com.hk/hong-kong/hk/%E6%9C%80%E6%96%B0%E6%83%85%E5%A0%B1/pokemon-center-%E9%A6%99%E6%B8%AF%E6%9C%9F%E9%96%93%E9%99%90%E5%AE%9A%E5%BA%9711%E6%9C%88%E7%99%BB%E9%99%B8%E5%8F%88%E4%B8%80%E5%9F%8E-082426",
+      "notes": "首個香港 Pokémon Center 期間限定店；寶可夢 30 週年；開幕日／入場安排待官方公布",
+      "featured": false,
+      "verifiedAt": "2026-10-08",
       "sample": false
     },
     {
