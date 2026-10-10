@@ -1,6 +1,6 @@
 {
   "schema": "events.v2",
-  "updatedAt": "2026-10-09",
+  "updatedAt": "2026-10-10",
   "note": "活動由 Notion「香港ACG情報看板」每日同步（香港時間）。狀態會按日期重算：開始至結束當日係進行中，未開始係即將開始，完結七日內先保留。周邊截止仍然手改 deadlines[]；標成示例嘅截止唔會保留。",
   "events": [
     {
@@ -45,9 +45,9 @@
       "ticketUrl": "",
       "ticketNote": "無／現場",
       "source": "https://www.pcmarket.com.hk/toyc-infinity-tamashii-nations-in-central/",
-      "notes": "幪面超人／ULTRAMAN／Project R.E.D.／哥斯拉；全港首見 SHF 幪面超人 MY-TH 立像；會場限定 SHF 真骨彫 FAIZ（夜光版）、SHF BAKE（曲奇裝甲）",
+      "notes": "至 10-19；10-09 核實仍進行中",
       "featured": false,
-      "verifiedAt": "2026-10-06",
+      "verifiedAt": "2026-10-09",
       "sample": false
     },
     {
@@ -115,9 +115,32 @@
       "ticketUrl": "https://www.klook.com/zh-HK/activity/233689-girls-band-cry-pop-up-store-in-hong-kong/",
       "ticketNote": "",
       "source": "https://acgevent.com/archives/40055",
-      "notes": "至 10-11；重點IP；Klook 仍列進行中",
+      "notes": "至 10-11；重點IP；Klook 仍列進行中（10-09 核實）",
       "featured": true,
-      "verifiedAt": "2026-10-08",
+      "verifiedAt": "2026-10-09",
+      "sample": false
+    },
+    {
+      "id": "401915590f3282ac",
+      "title": "《數碼暴龍》香港期間限定店 @ 朗豪坊",
+      "status": "進行中",
+      "notionStatus": "進行中",
+      "category": "快閃店",
+      "ips": [
+        "多 IP"
+      ],
+      "date": "2026-09-26",
+      "endDate": "2026-10-11",
+      "timeNote": "2026-09-26～10-11；平日 11:00–20:00、週末 11:00–21:00",
+      "place": "旺角朗豪坊 12 樓 13 號舖（亞皆老街 8 號）",
+      "mapUrl": "https://www.google.com/maps/search/?api=1&query=%E6%97%BA%E8%A7%92%E6%9C%97%E8%B1%AA%E5%9D%8A%2012%20%E6%A8%93%2013%20%E8%99%9F%E8%88%96%EF%BC%88%E4%BA%9E%E7%9A%86%E8%80%81%E8%A1%97%208%20%E8%99%9F%EF%BC%89",
+      "price": "免費入場；周邊約 HK$38–218；滿 $150 送特典插畫卡",
+      "ticketUrl": "",
+      "ticketNote": "現場自由入場",
+      "source": "https://konggokhk.com/digimon_langham_popup/",
+      "notes": "和風摩登主題；11 月同址預告另一活動（詳情未公布）；至 10-11",
+      "featured": false,
+      "verifiedAt": "2026-10-09",
       "sample": false
     },
     {
@@ -166,7 +189,7 @@
       "source": "https://konggokhk.com/concon_the_mix_hysan_place_2026/",
       "notes": "希慎廣場兩段：CON-CON THE MIX 主活動至 10-11；地庫 Ani-One POP 至 10-17。想逛主場聯乘宜 10-11 前",
       "featured": true,
-      "verifiedAt": "2026-10-08",
+      "verifiedAt": "2026-10-09",
       "sample": false
     },
     {
@@ -239,30 +262,6 @@
       "sample": false
     },
     {
-      "id": "e455c27ab75b4b03",
-      "title": "誠品動漫 eslite Anime 試營運／開幕＋《八重知行》主題展覽",
-      "status": "已完結",
-      "notionStatus": "進行中",
-      "category": "店舖／展覽",
-      "ips": [
-        "誠品動漫",
-        "八重知行"
-      ],
-      "date": "2026-10-02",
-      "endDate": "2026-10-02",
-      "timeNote": "2026-10-02 試營運；2026-10-06 正式開幕；營業 11:30–20:00",
-      "place": "觀塘巧明街98號 The ANGLE L1 110／112 號舖",
-      "mapUrl": "https://www.google.com/maps/search/?api=1&query=%E8%A7%80%E5%A1%98%E5%B7%A7%E6%98%8E%E8%A1%9798%E8%99%9F%20The%20ANGLE%20L1%20110%EF%BC%8F112%20%E8%99%9F%E8%88%96",
-      "price": "免費入場（店舖）；開幕優惠至約 10-31",
-      "ticketUrl": "",
-      "ticketNote": "無／未公布",
-      "source": "https://acgevent.com/archives/40021",
-      "notes": "全港首間誠品動漫概念店；10-02試營運已開始；10-06正式開幕／剪綵；開幕主題展《八重知行》",
-      "featured": false,
-      "verifiedAt": "2026-10-02",
-      "sample": false
-    },
-    {
       "id": "7768460bab8cf616",
       "title": "劇場版 魔法少女小圓〈瓦爾普吉斯的迴天〉",
       "status": "已完結",
@@ -282,7 +281,7 @@
       "source": "https://www.e-muse.com.hk/hk/news/394",
       "notes": "",
       "featured": false,
-      "verifiedAt": "2026-10-08",
+      "verifiedAt": "2026-10-09",
       "sample": false
     },
     {
@@ -305,13 +304,34 @@
       "source": "https://acgevent.com/archives/40080",
       "notes": "動畫版重映（不收真人版）",
       "featured": false,
-      "verifiedAt": "2026-10-08",
+      "verifiedAt": "2026-10-09",
+      "sample": false
+    },
+    {
+      "id": "b2f1afe4916a3a14",
+      "title": "MECHATU-A 1st LIVE “Over Drive!” LIVE VIEWING（香港）",
+      "status": "進行中",
+      "notionStatus": "即將開始",
+      "category": "LIVE VIEWING",
+      "ips": [],
+      "date": "2026-10-10",
+      "endDate": "2026-10-10",
+      "timeNote": "2026-10-10（六）16:45 HKT（英皇戲院尖沙咀 iSQUARE）",
+      "place": "英皇戲院 尖沙咀 iSQUARE（另有澳門場不入表）",
+      "mapUrl": "https://www.google.com/maps/search/?api=1&query=%E8%8B%B1%E7%9A%87%E6%88%B2%E9%99%A2%20%E5%B0%96%E6%B2%99%E5%92%80%20iSQUARE%EF%BC%88%E5%8F%A6%E6%9C%89%E6%BE%B3%E9%96%80%E5%A0%B4%E4%B8%8D%E5%85%A5%E8%A1%A8%EF%BC%89",
+      "price": "HK$310",
+      "ticketUrl": "https://amccinemas.com.hk/zh/%E9%9B%BB%E5%BD%B1/mechatu-a-1st-live-over-drive-live-viewing/",
+      "ticketNote": "英皇戲院購票；9/28 開售",
+      "source": "https://amccinemas.com.hk/zh/%E9%9B%BB%E5%BD%B1/mechatu-a-1st-live-over-drive-live-viewing/",
+      "notes": "NIJISANJI MECHATU-A 1st LIVE；香港大銀幕直播；先前因規則未入表，2026-10-09 補入",
+      "featured": false,
+      "verifiedAt": "2026-10-09",
       "sample": false
     },
     {
       "id": "b4f7543f6a6061b3",
       "title": "鈴木このみ Asia Tour 2026 in Hong Kong",
-      "status": "即將開始",
+      "status": "進行中",
       "notionStatus": "即將開始",
       "category": "演唱會",
       "ips": [
@@ -332,9 +352,34 @@
       "sample": false
     },
     {
+      "id": "bcbb08fe54141a96",
+      "title": "Toys Assemble 玩具集結 @ 黃埔天地",
+      "status": "進行中",
+      "notionStatus": "即將開始",
+      "category": "展覽",
+      "ips": [
+        "爆旋陀螺 X",
+        "我係小忌廉",
+        "多 IP"
+      ],
+      "date": "2026-10-10",
+      "endDate": "2026-11-01",
+      "timeNote": "2026-10-10～11-01；變裝少女珍藏展 10/23–30；週末市集／試玩 10/31–11/1；爆旋陀螺對戰區同期",
+      "place": "紅磡黃埔天地時尚坊 MTR 層（爆旋陀螺：聚寶坊 B1）",
+      "mapUrl": "https://www.google.com/maps/search/?api=1&query=%E7%B4%85%E7%A3%A1%E9%BB%83%E5%9F%94%E5%A4%A9%E5%9C%B0%E6%99%82%E5%B0%9A%E5%9D%8A%20MTR%20%E5%B1%A4%EF%BC%88%E7%88%86%E6%97%8B%E9%99%80%E8%9E%BA%EF%BC%9A%E8%81%9A%E5%AF%B6%E5%9D%8A%20B1%EF%BC%89",
+      "price": "免費入場（正規比賽另見 ArenaSpot 報名）",
+      "ticketUrl": "",
+      "ticketNote": "現場自由入場；比賽報名見 ArenaSpot",
+      "source": "https://timable.com/hk/en/event/6ac4a165a075997c8aef946f/ToysAssemble-%E7%8E%A9%E5%85%B7%E9%9B%86%E7%B5%90-%E9%BB%83%E5%9F%94%E5%A4%A9%E5%9C%B0",
+      "notes": "含美少女戰士／小忌廉等珍藏展＋玩具市集＋爆旋陀螺活動",
+      "featured": false,
+      "verifiedAt": "2026-10-09",
+      "sample": false
+    },
+    {
       "id": "e8a35126c07d65d5",
       "title": "暗喻幻想：ReFantazio 主題活動＋Gratte @ animate 香港",
-      "status": "即將開始",
+      "status": "進行中",
       "notionStatus": "即將開始",
       "category": "店內活動",
       "ips": [
@@ -372,7 +417,7 @@
       "source": "https://www.liveviewing.com/events/kenmochitoya/",
       "notes": "にじさんじ VTuber；剣持刀也リアルソロライブ【虚空狂宴】；K-Arena 橫濱；嘉賓 葛葉、花生君、星街すいせい",
       "featured": false,
-      "verifiedAt": "2026-10-06",
+      "verifiedAt": "2026-10-09",
       "sample": false
     },
     {
@@ -388,12 +433,12 @@
       "place": "英皇戲院 銅鑼灣時代廣場（另有澳門場不入表）",
       "mapUrl": "https://www.google.com/maps/search/?api=1&query=%E8%8B%B1%E7%9A%87%E6%88%B2%E9%99%A2%20%E9%8A%85%E9%91%BC%E7%81%A3%E6%99%82%E4%BB%A3%E5%BB%A3%E5%A0%B4%EF%BC%88%E5%8F%A6%E6%9C%89%E6%BE%B3%E9%96%80%E5%A0%B4%E4%B8%8D%E5%85%A5%E8%A1%A8%EF%BC%89",
       "price": "HK$310（英皇銅鑼灣；附入場特典）",
-      "ticketUrl": "https://amccinemas.com.hk/zh/電影/kuzuha-one-man-live-bloody-alexandrite-live-viewing/",
+      "ticketUrl": "https://amccinemas.com.hk/zh/%E9%9B%BB%E5%BD%B1/kuzuha-one-man-live-bloody-alexandrite-live-viewing/",
       "ticketNote": "院線購票（9/28 13:00 開售）",
       "source": "https://www.liveviewing.com/events/kuzuha/",
       "notes": "にじさんじ VTuber；K-Arena 橫濱；嘉賓 劍持刀也、不破湊、Ibrahim、Lauren Iroas",
       "featured": false,
-      "verifiedAt": "2026-10-06",
+      "verifiedAt": "2026-10-09",
       "sample": false
     },
     {
@@ -1160,7 +1205,7 @@
       "source": "https://www.anisnap.hk/articles/eir-aoi-live-tour-2026-2027-unbound/",
       "notes": "海外巡演首站；《Fate/Zero》《刀劍神域》主題曲歌手",
       "featured": false,
-      "verifiedAt": "2026-10-06",
+      "verifiedAt": "2026-10-09",
       "sample": false
     },
     {
@@ -1206,7 +1251,7 @@
       "source": "https://www.edigest.hk/news/medialink-con-con-the-mix-ip-economy-hysan-place-2027-asiaworld-expo-%e5%8d%b3%e6%99%82%e8%b2%a1%e7%b6%93-2043063/",
       "notes": "羚邦旗艦；主題 Super Charged／IP×運動；與希慎 CON-CON THE MIX 同期宣佈",
       "featured": false,
-      "verifiedAt": "2026-10-08",
+      "verifiedAt": "2026-10-09",
       "sample": false
     },
     {
@@ -1248,9 +1293,9 @@
       "ticketUrl": "",
       "ticketNote": "未公布",
       "source": "https://www.timeout.com.hk/hong-kong/hk/%E6%9C%80%E6%96%B0%E6%83%85%E5%A0%B1/pokemon-center-%E9%A6%99%E6%B8%AF%E6%9C%9F%E9%96%93%E9%99%90%E5%AE%9A%E5%BA%9711%E6%9C%88%E7%99%BB%E9%99%B8%E5%8F%88%E4%B8%80%E5%9F%8E-082426",
-      "notes": "首個香港 Pokémon Center 期間限定店；寶可夢 30 週年；開幕日／入場安排待官方公布",
+      "notes": "2026-11 又一城；詳細開幕日／預約／商品未公布（10-09 核實）",
       "featured": false,
-      "verifiedAt": "2026-10-08",
+      "verifiedAt": "2026-10-09",
       "sample": false
     },
     {
