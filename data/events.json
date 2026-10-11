@@ -1,6 +1,6 @@
 {
   "schema": "events.v2",
-  "updatedAt": "2026-10-10",
+  "updatedAt": "2026-10-11",
   "note": "活動由 Notion「香港ACG情報看板」每日同步（香港時間）。狀態會按日期重算：開始至結束當日係進行中，未開始係即將開始，完結七日內先保留。周邊截止仍然手改 deadlines[]；標成示例嘅截止唔會保留。",
   "events": [
     {
@@ -310,7 +310,7 @@
     {
       "id": "b2f1afe4916a3a14",
       "title": "MECHATU-A 1st LIVE “Over Drive!” LIVE VIEWING（香港）",
-      "status": "進行中",
+      "status": "已完結",
       "notionStatus": "即將開始",
       "category": "LIVE VIEWING",
       "ips": [],
@@ -331,7 +331,7 @@
     {
       "id": "b4f7543f6a6061b3",
       "title": "鈴木このみ Asia Tour 2026 in Hong Kong",
-      "status": "進行中",
+      "status": "已完結",
       "notionStatus": "即將開始",
       "category": "演唱會",
       "ips": [
@@ -402,7 +402,7 @@
     {
       "id": "40c2d4205bb777b3",
       "title": "劍持刀也 Real Solo Live【KOKU FES.】LIVE VIEWING（香港）",
-      "status": "即將開始",
+      "status": "進行中",
       "notionStatus": "即將開始",
       "category": "LIVE VIEWING",
       "ips": [],
