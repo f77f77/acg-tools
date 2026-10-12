@@ -1,6 +1,6 @@
 {
   "schema": "events.v2",
-  "updatedAt": "2026-10-11",
+  "updatedAt": "2026-10-12",
   "note": "活動由 Notion「香港ACG情報看板」每日同步（香港時間）。狀態會按日期重算：開始至結束當日係進行中，未開始係即將開始，完結七日內先保留。周邊截止仍然手改 deadlines[]；標成示例嘅截止唔會保留。",
   "events": [
     {
@@ -99,7 +99,7 @@
     {
       "id": "8552617e20ec108b",
       "title": "《GIRLS BAND CRY》POP UP STORE 香港站",
-      "status": "進行中",
+      "status": "已完結",
       "notionStatus": "進行中",
       "category": "快閃店",
       "ips": [
@@ -123,7 +123,7 @@
     {
       "id": "401915590f3282ac",
       "title": "《數碼暴龍》香港期間限定店 @ 朗豪坊",
-      "status": "進行中",
+      "status": "已完結",
       "notionStatus": "進行中",
       "category": "快閃店",
       "ips": [
@@ -402,7 +402,7 @@
     {
       "id": "40c2d4205bb777b3",
       "title": "劍持刀也 Real Solo Live【KOKU FES.】LIVE VIEWING（香港）",
-      "status": "進行中",
+      "status": "已完結",
       "notionStatus": "即將開始",
       "category": "LIVE VIEWING",
       "ips": [],
@@ -423,7 +423,7 @@
     {
       "id": "05ef68eedf8344a2",
       "title": "葛葉 Kuzuha One-Man Live \"Bloody Alexandrite\" LIVE VIEWING（香港）",
-      "status": "即將開始",
+      "status": "進行中",
       "notionStatus": "即將開始",
       "category": "LIVE VIEWING",
       "ips": [],
