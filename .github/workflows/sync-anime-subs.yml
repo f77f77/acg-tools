@@ -1,12 +1,13 @@
 name: Sync anime subtitle table
 
 # Notion「中文字幕動畫播放表」→ data/anime-subs.json.
-# Runs after the 00:15 HKT season.json update. A push to main retriggers pages.yml.
+# Runs after 毒撚 ~09:00 Notion daily update (and after 00:15 HKT season.json).
+# A push to main retriggers pages.yml.
 # Missing NOTION_TOKEN exits 0 and leaves the JSON untouched (forks / PR CI).
 on:
   schedule:
-    # 每日 06:17 香港時間（UTC 22:17）
-    - cron: "17 22 * * *"
+    # 每日 10:17 香港時間（UTC 02:17）
+    - cron: "17 2 * * *"
   workflow_dispatch:
 
 permissions:
