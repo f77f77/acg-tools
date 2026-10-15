@@ -1,58 +1,37 @@
 {
   "schema": "anime-subs.v1",
-  "updatedAt": "2026-10-07",
+  "updatedAt": "2026-10-15",
   "note": "由 Notion「中文字幕動畫播放表」同步。bgmId 以 Notion 欄位優先，其次來源網址、本季 season.json 標題、Bangumi 搜尋。未能對上嘅作品列喺 unresolved，請喺 Notion 填 bgmId。",
   "unresolved": [
-    {
-      "title": "一覺醒來就有了最強裝備跟太空船…",
-      "titleJa": "目覚めたら最強装備と宇宙船持ちだったので、一戸建て目指して傭兵として働くことにしました",
-      "notionId": "3ef5631c-93db-8158-bd52-d0329db5c36e",
-      "status": "播放中"
-    },
-    {
-      "title": "亂世千金倪亞‧利斯頓…",
-      "titleJa": "凶乱令嬢ニア・リストン 病弱令嬢に転生した神殺しの英雄",
-      "notionId": "3ef5631c-93db-813f-93cf-f3ca3343089f",
-      "status": "即將播出"
-    },
-    {
-      "title": "佐佐木與文鳥小嗶 第二季",
-      "titleJa": "佐々木とピーちゃん シーズン２",
-      "notionId": "3ef5631c-93db-811b-b230-df1181303e96",
-      "status": "即將播出"
-    },
     {
       "title": "學園偶像大師",
       "titleJa": "学園アイドルマスター",
       "notionId": "3ef5631c-93db-81e9-a315-f27fc010af26",
       "status": "追蹤中"
-    },
-    {
-      "title": "澪",
-      "titleJa": "BLUE REFLECTION RAY",
-      "notionId": "3ef5631c-93db-819f-aacd-c80e116353f4",
-      "status": "追蹤中"
-    },
-    {
-      "title": "被放逐的作弊賦予魔術師享受隨心所欲的第二人生。",
-      "titleJa": "追放されたチート付与魔術師は気ままなセカンドライフを謳歌する。（チー付与）",
-      "notionId": "3ef5631c-93db-817d-949d-e646d0cc429d",
-      "status": "即將播出"
-    },
-    {
-      "title": "轉生就是劍 第二季",
-      "titleJa": "転生したら剣でした 第2期",
-      "notionId": "3ef5631c-93db-81f8-943f-ff730f572219",
-      "status": "播放中"
-    },
-    {
-      "title": "電馭叛客：邊緣行者 2",
-      "titleJa": "サイバーパンク: エッジランナーズ2",
-      "notionId": "3ef5631c-93db-8138-8514-d51bc067051f",
-      "status": "即將播出"
     }
   ],
   "items": [
+    {
+      "title": "DARK MACHINE THE ANIMATION",
+      "titleJa": "闇機 DARK MACHINE",
+      "aliases": [
+        "闇機 DARK MACHINE",
+        "DARK MACHINE THE ANIMATION"
+      ],
+      "bgmId": 505550,
+      "bgmIdSource": "season",
+      "platforms": [
+        "巴哈姆特動畫瘋"
+      ],
+      "subtitle": "繁中",
+      "regionNote": "台 · 動畫瘋可見；第1集。日本首播 10/13 深夜。2026-10-15 新增。",
+      "scheduleHkt": "週三（動畫瘋週期表）",
+      "premiere": "2026-10-13",
+      "status": "播放中",
+      "source": "https://playdarkmachine.com/",
+      "notionId": "3fa5631c-93db-8103-86ea-e25e8e588250",
+      "sample": false
+    },
     {
       "title": "FX戰士久留美",
       "titleJa": "FX戦士くるみちゃん",
@@ -97,6 +76,48 @@
       "sample": false
     },
     {
+      "title": "てつりょー！meet with 鉄道むすめ",
+      "titleJa": "鐵旅！meet with 鐵道少女",
+      "aliases": [
+        "鐵旅！meet with 鐵道少女",
+        "てつりょー！meet with 鉄道むすめ"
+      ],
+      "bgmId": 590553,
+      "bgmIdSource": "season",
+      "platforms": [
+        "巴哈姆特動畫瘋"
+      ],
+      "subtitle": "繁中",
+      "regionNote": "台 · 動畫瘋可見；第1集。日本首播 10/8。2026-10-15 新增。",
+      "scheduleHkt": "週五（動畫瘋週期表）",
+      "premiere": "2026-10-08",
+      "status": "播放中",
+      "source": "https://tetsuryo-anime.com/",
+      "notionId": "3fa5631c-93db-8128-8a48-e5840436eab7",
+      "sample": false
+    },
+    {
+      "title": "どうも、好きな人に惚れ薬を依頼された魔女です。",
+      "titleJa": "你好，身為魔女的我，被心上人委託製作迷情藥",
+      "aliases": [
+        "你好，身為魔女的我，被心上人委託製作迷情藥",
+        "どうも、好きな人に惚れ薬を依頼された魔女です。"
+      ],
+      "bgmId": 624923,
+      "bgmIdSource": "season",
+      "platforms": [
+        "巴哈姆特動畫瘋"
+      ],
+      "subtitle": "繁中",
+      "regionNote": "台 · 動畫瘋可見；約第2集。日本首播 10/5。2026-10-15 新增。",
+      "scheduleHkt": "週一（動畫瘋週期表）",
+      "premiere": "2026-10-05",
+      "status": "播放中",
+      "source": "https://horemajo-anime.com/",
+      "notionId": "3fa5631c-93db-8192-bedb-e6c0514d3ae1",
+      "sample": false
+    },
+    {
       "title": "アオアシ Season2",
       "titleJa": "青之蘆葦 第二季",
       "aliases": [
@@ -107,7 +128,8 @@
       "bgmIdSource": "season",
       "platforms": [
         "Ani-One Asia",
-        "Ani-One 中文"
+        "Ani-One 中文",
+        "巴哈姆特動畫瘋"
       ],
       "subtitle": "繁中",
       "regionNote": "港台（Ani-One 播放地區含香港、澳門、台灣）",
@@ -134,7 +156,7 @@
       "regionNote": "港台",
       "scheduleHkt": "週日 17:00 HKT（Muse木棉花-HK 公佈；日本播出＝16:30 HKT）",
       "premiere": "2026-10-11",
-      "status": "即將播出",
+      "status": "播放中",
       "source": "https://www.youtube.com/watch?v=13A3TnHLwEs",
       "notionId": "3f15631c-93db-81be-b724-e197673dba77",
       "sample": false
@@ -160,13 +182,35 @@
       "sample": false
     },
     {
+      "title": "ホタルの嫁入り",
+      "titleJa": "螢火蟲的出嫁",
+      "aliases": [
+        "螢火蟲的出嫁",
+        "ホタルの嫁入り"
+      ],
+      "bgmId": 621108,
+      "bgmIdSource": "season",
+      "platforms": [
+        "巴哈姆特動畫瘋"
+      ],
+      "subtitle": "繁中",
+      "regionNote": "台 · 動畫瘋可見；第1集。日本首播 10/9。2026-10-15 新增。",
+      "scheduleHkt": "週六（動畫瘋週期表）",
+      "premiere": "2026-10-09",
+      "status": "播放中",
+      "source": "https://hotaru-anime.com/",
+      "notionId": "3fa5631c-93db-8142-b23f-fa1241d87607",
+      "sample": false
+    },
+    {
       "title": "一覺醒來就有了最強裝備跟太空船…",
       "titleJa": "目覚めたら最強装備と宇宙船持ちだったので、一戸建て目指して傭兵として働くことにしました",
       "aliases": [
         "目覚めたら最強装備と宇宙船持ちだったので、一戸建て目指して傭兵として働くことにしました",
         "一覺醒來就有了最強裝備跟太空船…"
       ],
-      "bgmIdSource": "none",
+      "bgmId": 536270,
+      "bgmIdSource": "notion",
       "platforms": [
         "Ani-One Asia",
         "巴哈姆特動畫瘋"
@@ -197,7 +241,7 @@
       "regionNote": "港台",
       "scheduleHkt": "週三 21:00 HKT（Muse木棉花-HK 公佈）",
       "premiere": "2026-10-07",
-      "status": "即將播出",
+      "status": "播放中",
       "source": "https://www.youtube.com/watch?v=y90j1FU1ZCA",
       "notionId": "3ef5631c-93db-810d-85b0-cbe104752575",
       "sample": false
@@ -209,7 +253,8 @@
         "凶乱令嬢ニア・リストン 病弱令嬢に転生した神殺しの英雄",
         "亂世千金倪亞‧利斯頓…"
       ],
-      "bgmIdSource": "none",
+      "bgmId": 624085,
+      "bgmIdSource": "notion",
       "platforms": [
         "巴哈姆特動畫瘋"
       ],
@@ -217,7 +262,7 @@
       "regionNote": "台",
       "scheduleHkt": "週二 20:25 HKT",
       "premiere": "2026-10-06",
-      "status": "即將播出",
+      "status": "播放中",
       "source": "https://kyoranreijo-pr.com/",
       "notionId": "3ef5631c-93db-813f-93cf-f3ca3343089f",
       "sample": false
@@ -229,7 +274,8 @@
         "佐々木とピーちゃん シーズン２",
         "佐佐木與文鳥小嗶 第二季"
       ],
-      "bgmIdSource": "none",
+      "bgmId": 486456,
+      "bgmIdSource": "notion",
       "platforms": [
         "木棉花 YouTube",
         "巴哈姆特動畫瘋"
@@ -238,7 +284,7 @@
       "regionNote": "港台",
       "scheduleHkt": "週三 21:00 HKT（Muse木棉花-HK 公佈）",
       "premiere": "2026-10-07",
-      "status": "即將播出",
+      "status": "播放中",
       "source": "https://www.youtube.com/watch?v=veLwauAmm3s",
       "notionId": "3ef5631c-93db-811b-b230-df1181303e96",
       "sample": false
@@ -282,9 +328,30 @@
       "regionNote": "港台",
       "scheduleHkt": "週三 21:30 HKT（Muse木棉花-HK 公佈）",
       "premiere": "2026-10-07",
-      "status": "即將播出",
+      "status": "播放中",
       "source": "https://www.youtube.com/playlist?list=PLLQ9h7qLmFKA",
       "notionId": "3ef5631c-93db-81cd-90ea-eddd81ea42ea",
+      "sample": false
+    },
+    {
+      "title": "傷だらけ聖女より報復をこめて Season2",
+      "titleJa": "黑化吧！聖女大人 第二季",
+      "aliases": [
+        "黑化吧！聖女大人 第二季",
+        "傷だらけ聖女より報復をこめて Season2"
+      ],
+      "bgmId": 650428,
+      "bgmIdSource": "season",
+      "platforms": [
+        "巴哈姆特動畫瘋"
+      ],
+      "subtitle": "繁中",
+      "regionNote": "台 · 動畫瘋可見；約第2集。日本首播 10/1。2026-10-15 新增。",
+      "scheduleHkt": "週五（動畫瘋週期表）",
+      "premiere": "2026-10-01",
+      "status": "播放中",
+      "source": "https://animationid.com/kizudarakeseijo2/",
+      "notionId": "3fa5631c-93db-81de-ae71-c9bc3e906ba6",
       "sample": false
     },
     {
@@ -304,7 +371,7 @@
       "regionNote": "港台",
       "scheduleHkt": "週五 01:00 HKT（即週四深夜；Ani-One Asia 跟播上架）",
       "premiere": "2026-10-09",
-      "status": "即將播出",
+      "status": "播放中",
       "source": "https://www.youtube.com/watch?v=a3dC1jTi_oc",
       "notionId": "3ef5631c-93db-81c3-9ee4-f1e8f15c0d3d",
       "sample": false
@@ -325,9 +392,30 @@
       "regionNote": "台 · ANIPLUS；動畫瘋授權。",
       "scheduleHkt": "週日 22:30 HKT",
       "premiere": "2026-10-11",
-      "status": "即將播出",
+      "status": "播放中",
       "source": "https://zero-believers-anime.com/",
       "notionId": "3ef5631c-93db-8139-ae42-c6e386e975bb",
+      "sample": false
+    },
+    {
+      "title": "塩対応の佐藤さんが俺にだけ甘い",
+      "titleJa": "冷淡的佐藤同學只對我撒嬌",
+      "aliases": [
+        "冷淡的佐藤同學只對我撒嬌",
+        "塩対応の佐藤さんが俺にだけ甘い"
+      ],
+      "bgmId": 634708,
+      "bgmIdSource": "season",
+      "platforms": [
+        "巴哈姆特動畫瘋"
+      ],
+      "subtitle": "繁中",
+      "regionNote": "台 · 動畫瘋可見；約第2集。日本首播 10/6。2026-10-15 新增。",
+      "scheduleHkt": "週二（動畫瘋週期表）",
+      "premiere": "2026-10-06",
+      "status": "播放中",
+      "source": "https://shioama-anime.com/",
+      "notionId": "3fa5631c-93db-81bd-b9f8-f6fa654847ad",
       "sample": false
     },
     {
@@ -347,7 +435,7 @@
       "regionNote": "台（港區待確認）",
       "scheduleHkt": "週日 16:00 HKT",
       "premiere": "2026-10-11",
-      "status": "即將播出",
+      "status": "播放中",
       "source": "https://mission-yozakura-family.com/",
       "notionId": "3ef5631c-93db-81ce-996b-fb29c50e35a3",
       "sample": false
@@ -425,7 +513,8 @@
       "bgmIdSource": "season",
       "platforms": [
         "Ani-One Asia",
-        "Ani-One 中文"
+        "Ani-One 中文",
+        "巴哈姆特動畫瘋"
       ],
       "subtitle": "繁中",
       "regionNote": "港台（Ani-One 播放地區含香港、澳門、台灣）",
@@ -453,9 +542,30 @@
       "regionNote": "港台",
       "scheduleHkt": "週二 22:00 HKT（AT-X 日本最速播出換算；Ani-One 上架時間待公佈）",
       "premiere": "2026-10-13",
-      "status": "即將播出",
+      "status": "播放中",
       "source": "https://chiramune.com/onair/index.html",
       "notionId": "3ef5631c-93db-81a4-a987-e02d4c20c8b7",
+      "sample": false
+    },
+    {
+      "title": "彼方から",
+      "titleJa": "來自遠方",
+      "aliases": [
+        "來自遠方",
+        "彼方から"
+      ],
+      "bgmId": 636058,
+      "bgmIdSource": "season",
+      "platforms": [
+        "巴哈姆特動畫瘋"
+      ],
+      "subtitle": "繁中",
+      "regionNote": "台 · 動畫瘋可見；約第2集。日本首播 10/4。2026-10-15 新增。",
+      "scheduleHkt": "週一（動畫瘋週期表）",
+      "premiere": "2026-10-04",
+      "status": "播放中",
+      "source": "https://www.kanatakara-anime.com/",
+      "notionId": "3fa5631c-93db-8168-8dea-e2a608138f20",
       "sample": false
     },
     {
@@ -475,9 +585,29 @@
       "regionNote": "台（港區待確認）",
       "scheduleHkt": "週五 23:30 HKT（日本播出換算；木棉花上架時間未公佈）",
       "premiere": "2026-10-09",
-      "status": "即將播出",
+      "status": "播放中",
       "source": "https://toaru-project.com/item/",
       "notionId": "3ef5631c-93db-8182-80cb-c15f32f71c09",
+      "sample": false
+    },
+    {
+      "title": "朱色の仮面",
+      "titleJa": "朱色假面",
+      "aliases": [
+        "朱色假面",
+        "朱色の仮面"
+      ],
+      "bgmId": 568525,
+      "bgmIdSource": "season",
+      "platforms": [
+        "巴哈姆特動畫瘋"
+      ],
+      "subtitle": "繁中",
+      "regionNote": "台 · 動畫瘋可見；第1集。日本首播 10/10。2026-10-15 新增。",
+      "scheduleHkt": "週六（動畫瘋週期表）",
+      "premiere": "2026-10-10",
+      "status": "播放中",
+      "notionId": "3fa5631c-93db-8159-ae0f-dde34cd551f2",
       "sample": false
     },
     {
@@ -509,7 +639,8 @@
         "BLUE REFLECTION RAY",
         "澪"
       ],
-      "bgmIdSource": "none",
+      "bgmId": 328032,
+      "bgmIdSource": "notion",
       "platforms": [
         "待核對"
       ],
@@ -538,7 +669,7 @@
       "regionNote": "港台",
       "scheduleHkt": "週三 23:30 HKT（日本播出週三深夜24:30 JST 換算；木棉花上架時間未公佈）",
       "premiere": "2026-10-07",
-      "status": "即將播出",
+      "status": "播放中",
       "source": "https://gattaishin.com/dandivine/",
       "notionId": "3ef5631c-93db-81bf-b332-e0f981c4b30e",
       "sample": false
@@ -593,7 +724,8 @@
         "追放されたチート付与魔術師は気ままなセカンドライフを謳歌する。（チー付与）",
         "被放逐的作弊賦予魔術師享受隨心所欲的第二人生。"
       ],
-      "bgmIdSource": "none",
+      "bgmId": 625799,
+      "bgmIdSource": "notion",
       "platforms": [
         "Ani-One Asia",
         "巴哈姆特動畫瘋",
@@ -603,7 +735,7 @@
       "regionNote": "港台（待 Ani-One 上架核實）",
       "scheduleHkt": "週二 23:00 HKT（日本播出週二深夜24:00 JST 換算）；Ani-One 港區上架時間待公佈",
       "premiere": "2026-10-06",
-      "status": "即將播出",
+      "status": "播放中",
       "source": "https://sh-anime.shochiku.co.jp/chiifuyo-anime/",
       "notionId": "3ef5631c-93db-817d-949d-e646d0cc429d",
       "sample": false
@@ -627,6 +759,27 @@
       "status": "播放中",
       "source": "https://tempal-anime.net/",
       "notionId": "3ef5631c-93db-8164-b224-c91715a7b9c1",
+      "sample": false
+    },
+    {
+      "title": "超巡！超条先輩",
+      "titleJa": "超巡！超條前輩",
+      "aliases": [
+        "超巡！超條前輩",
+        "超巡！超条先輩"
+      ],
+      "bgmId": 593565,
+      "bgmIdSource": "season",
+      "platforms": [
+        "巴哈姆特動畫瘋"
+      ],
+      "subtitle": "繁中",
+      "regionNote": "台 · 動畫瘋可見；約第2集。日本首播 10/6。2026-10-15 新增。",
+      "scheduleHkt": "週二（動畫瘋週期表）",
+      "premiere": "2026-10-06",
+      "status": "播放中",
+      "source": "https://chojun-anime.com/",
+      "notionId": "3fa5631c-93db-81c5-ae33-d84132e09a20",
       "sample": false
     },
     {
@@ -658,7 +811,8 @@
         "転生したら剣でした 第2期",
         "轉生就是劍 第二季"
       ],
-      "bgmIdSource": "none",
+      "bgmId": 412008,
+      "bgmIdSource": "notion",
       "platforms": [
         "Ani-One Asia",
         "巴哈姆特動畫瘋"
@@ -759,7 +913,7 @@
       "regionNote": "港台",
       "scheduleHkt": "週四 01:15 HKT（即週三深夜；Muse木棉花-HK 公佈）",
       "premiere": "2026-10-08",
-      "status": "即將播出",
+      "status": "播放中",
       "source": "https://www.youtube.com/watch?v=sxD3MpM50QM",
       "notionId": "3ef5631c-93db-8197-95dd-f1a4358127e0",
       "sample": false
@@ -792,7 +946,8 @@
         "サイバーパンク: エッジランナーズ2",
         "電馭叛客：邊緣行者 2"
       ],
-      "bgmIdSource": "none",
+      "bgmId": 513878,
+      "bgmIdSource": "notion",
       "platforms": [
         "Netflix"
       ],
@@ -857,7 +1012,8 @@
       "bgmId": 634210,
       "bgmIdSource": "season",
       "platforms": [
-        "Ani-One 中文"
+        "Ani-One 中文",
+        "巴哈姆特動畫瘋"
       ],
       "subtitle": "繁中",
       "regionNote": "港澳台（Ani-One 中文頻道）",
@@ -907,7 +1063,7 @@
       "regionNote": "港台",
       "scheduleHkt": "週三 23:15 HKT（Ani-One Asia 跟播上架）",
       "premiere": "2026-10-07",
-      "status": "即將播出",
+      "status": "播放中",
       "source": "https://www.youtube.com/watch?v=ZsY0d2y0WFI",
       "notionId": "3ef5631c-93db-8136-a1ad-e5e22f13fd20",
       "sample": false
