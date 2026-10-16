@@ -1,6 +1,6 @@
 {
   "schema": "events.v2",
-  "updatedAt": "2026-10-15",
+  "updatedAt": "2026-10-16",
   "note": "活動由 Notion「香港ACG情報看板」每日同步（香港時間）。狀態會按日期重算：開始至結束當日係進行中，未開始係即將開始，完結七日內先保留。周邊截止仍然手改 deadlines[]；標成示例嘅截止唔會保留。",
   "events": [
     {
@@ -100,7 +100,7 @@
       "id": "8552617e20ec108b",
       "title": "《GIRLS BAND CRY》POP UP STORE 香港站",
       "status": "已完結",
-      "notionStatus": "進行中",
+      "notionStatus": "已完結",
       "category": "快閃店",
       "ips": [
         "GIRLS BAND CRY",
@@ -117,14 +117,14 @@
       "source": "https://acgevent.com/archives/40055",
       "notes": "至 10-11；重點IP；Klook 仍列進行中（10-09 核實）",
       "featured": true,
-      "verifiedAt": "2026-10-09",
+      "verifiedAt": "2026-10-15",
       "sample": false
     },
     {
       "id": "401915590f3282ac",
       "title": "《數碼暴龍》香港期間限定店 @ 朗豪坊",
       "status": "已完結",
-      "notionStatus": "進行中",
+      "notionStatus": "已完結",
       "category": "快閃店",
       "ips": [
         "多 IP"
@@ -140,14 +140,14 @@
       "source": "https://konggokhk.com/digimon_langham_popup/",
       "notes": "和風摩登主題；11 月同址預告另一活動（詳情未公布）；至 10-11",
       "featured": false,
-      "verifiedAt": "2026-10-09",
+      "verifiedAt": "2026-10-15",
       "sample": false
     },
     {
       "id": "ae8ff4adc24014b0",
       "title": "《我係小忌廉》魔法企劃期間限定店",
       "status": "已完結",
-      "notionStatus": "進行中",
+      "notionStatus": "已完結",
       "category": "快閃店",
       "ips": [
         "我係小忌廉",
@@ -164,7 +164,7 @@
       "source": "https://jetsobear.com/cream-mami-pop-up-2026-p331864/",
       "notes": "逾 50 款周邊；後台化妝間打卡；預約期至今日 10-01，明日起自由入場",
       "featured": false,
-      "verifiedAt": "2026-10-01",
+      "verifiedAt": "2026-10-15",
       "sample": false
     },
     {
@@ -196,7 +196,7 @@
       "id": "dda9f634d274cd1d",
       "title": "SUNRISEPOP｜動漫聯動祭",
       "status": "已完結",
-      "notionStatus": "進行中",
+      "notionStatus": "已完結",
       "category": "快閃／店舖",
       "ips": [
         "多 IP（小圓／藥師少女／DAN DA DAN／中村同學等）"
@@ -212,7 +212,7 @@
       "source": "https://www.microworksacg.com/blogs/popup/macgf2026",
       "notes": "現場亦有咒術周邊但不作主推",
       "featured": false,
-      "verifiedAt": "2026-10-01",
+      "verifiedAt": "2026-10-15",
       "sample": false
     },
     {
@@ -262,56 +262,10 @@
       "sample": false
     },
     {
-      "id": "7768460bab8cf616",
-      "title": "劇場版 魔法少女小圓〈瓦爾普吉斯的迴天〉",
-      "status": "已完結",
-      "notionStatus": "進行中",
-      "category": "電影",
-      "ips": [
-        "魔法少女小圓"
-      ],
-      "date": "2026-10-08",
-      "endDate": "2026-10-08",
-      "timeNote": "2026-10-08　港澳　日語中文字幕",
-      "place": "全港院線（場次陸續出）",
-      "mapUrl": "https://www.google.com/maps/search/?api=1&query=%E5%85%A8%E6%B8%AF%E9%99%A2%E7%B7%9A%EF%BC%88%E5%A0%B4%E6%AC%A1%E9%99%B8%E7%BA%8C%E5%87%BA%EF%BC%89",
-      "price": "未公布",
-      "ticketUrl": "https://hkmovie6.com/movie/b6eb0e1a-4e7a-4ba4-a038-69e59a58cff6",
-      "ticketNote": "",
-      "source": "https://www.e-muse.com.hk/hk/news/394",
-      "notes": "",
-      "featured": false,
-      "verifiedAt": "2026-10-09",
-      "sample": false
-    },
-    {
-      "id": "5b8379329e7fdc3c",
-      "title": "動畫版電影《Look Back 驀然回首》香港重映",
-      "status": "已完結",
-      "notionStatus": "進行中",
-      "category": "電影",
-      "ips": [
-        "Look Back（動畫版）"
-      ],
-      "date": "2026-10-08",
-      "endDate": "2026-10-08",
-      "timeNote": "2026-10-08",
-      "place": "全港院線（場次陸續出）　發行：新映影片",
-      "mapUrl": "https://www.google.com/maps/search/?api=1&query=%E5%85%A8%E6%B8%AF%E9%99%A2%E7%B7%9A%EF%BC%88%E5%A0%B4%E6%AC%A1%E9%99%B8%E7%BA%8C%E5%87%BA%EF%BC%89%E3%80%80%E7%99%BC%E8%A1%8C%EF%BC%9A%E6%96%B0%E6%98%A0%E5%BD%B1%E7%89%87",
-      "price": "未公布；重映限定特典稍後公布",
-      "ticketUrl": "",
-      "ticketNote": "院線／未公布",
-      "source": "https://acgevent.com/archives/40080",
-      "notes": "動畫版重映（不收真人版）",
-      "featured": false,
-      "verifiedAt": "2026-10-09",
-      "sample": false
-    },
-    {
       "id": "b2f1afe4916a3a14",
       "title": "MECHATU-A 1st LIVE “Over Drive!” LIVE VIEWING（香港）",
       "status": "已完結",
-      "notionStatus": "即將開始",
+      "notionStatus": "已完結",
       "category": "LIVE VIEWING",
       "ips": [],
       "date": "2026-10-10",
@@ -325,14 +279,14 @@
       "source": "https://amccinemas.com.hk/zh/%E9%9B%BB%E5%BD%B1/mechatu-a-1st-live-over-drive-live-viewing/",
       "notes": "NIJISANJI MECHATU-A 1st LIVE；香港大銀幕直播；先前因規則未入表，2026-10-09 補入",
       "featured": false,
-      "verifiedAt": "2026-10-09",
+      "verifiedAt": "2026-10-15",
       "sample": false
     },
     {
       "id": "b4f7543f6a6061b3",
       "title": "鈴木このみ Asia Tour 2026 in Hong Kong",
       "status": "已完結",
-      "notionStatus": "即將開始",
+      "notionStatus": "已完結",
       "category": "演唱會",
       "ips": [
         "鈴木このみ"
@@ -348,14 +302,14 @@
       "source": "https://edproduction.kktix.cc/events/konomi-suzuki-hk-2026",
       "notes": "",
       "featured": false,
-      "verifiedAt": "2026-09-29",
+      "verifiedAt": "2026-10-15",
       "sample": false
     },
     {
       "id": "bcbb08fe54141a96",
       "title": "Toys Assemble 玩具集結 @ 黃埔天地",
       "status": "進行中",
-      "notionStatus": "即將開始",
+      "notionStatus": "進行中",
       "category": "展覽",
       "ips": [
         "爆旋陀螺 X",
@@ -373,14 +327,14 @@
       "source": "https://timable.com/hk/en/event/6ac4a165a075997c8aef946f/ToysAssemble-%E7%8E%A9%E5%85%B7%E9%9B%86%E7%B5%90-%E9%BB%83%E5%9F%94%E5%A4%A9%E5%9C%B0",
       "notes": "含美少女戰士／小忌廉等珍藏展＋玩具市集＋爆旋陀螺活動",
       "featured": false,
-      "verifiedAt": "2026-10-09",
+      "verifiedAt": "2026-10-15",
       "sample": false
     },
     {
       "id": "e8a35126c07d65d5",
       "title": "暗喻幻想：ReFantazio 主題活動＋Gratte @ animate 香港",
       "status": "進行中",
-      "notionStatus": "即將開始",
+      "notionStatus": "進行中",
       "category": "店內活動",
       "ips": [
         "暗喻幻想：ReFantazio"
@@ -396,14 +350,14 @@
       "source": "https://prtimes.jp/main/html/rd/p/000007362.000005397.html",
       "notes": "SEGA×animate 全球企劃",
       "featured": false,
-      "verifiedAt": "2026-09-29",
+      "verifiedAt": "2026-10-15",
       "sample": false
     },
     {
       "id": "40c2d4205bb777b3",
       "title": "劍持刀也 Real Solo Live【KOKU FES.】LIVE VIEWING（香港）",
       "status": "已完結",
-      "notionStatus": "即將開始",
+      "notionStatus": "已完結",
       "category": "LIVE VIEWING",
       "ips": [],
       "date": "2026-10-11",
@@ -417,14 +371,14 @@
       "source": "https://www.liveviewing.com/events/kenmochitoya/",
       "notes": "にじさんじ VTuber；剣持刀也リアルソロライブ【虚空狂宴】；K-Arena 橫濱；嘉賓 葛葉、花生君、星街すいせい",
       "featured": false,
-      "verifiedAt": "2026-10-09",
+      "verifiedAt": "2026-10-15",
       "sample": false
     },
     {
       "id": "05ef68eedf8344a2",
       "title": "葛葉 Kuzuha One-Man Live \"Bloody Alexandrite\" LIVE VIEWING（香港）",
       "status": "已完結",
-      "notionStatus": "即將開始",
+      "notionStatus": "已完結",
       "category": "LIVE VIEWING",
       "ips": [],
       "date": "2026-10-12",
@@ -438,7 +392,53 @@
       "source": "https://www.liveviewing.com/events/kuzuha/",
       "notes": "にじさんじ VTuber；K-Arena 橫濱；嘉賓 劍持刀也、不破湊、Ibrahim、Lauren Iroas",
       "featured": false,
-      "verifiedAt": "2026-10-09",
+      "verifiedAt": "2026-10-15",
+      "sample": false
+    },
+    {
+      "id": "3dd86d162a8b2724",
+      "title": "Ani-One POP 偶像祭 2.0 期間限定店 @ 朗豪坊（NIJISANJI EN／我推的孩子／hololive 等）",
+      "status": "進行中",
+      "notionStatus": "進行中",
+      "category": "快閃店",
+      "ips": [
+        "多 IP"
+      ],
+      "date": "2026-10-15",
+      "endDate": "2026-11-07",
+      "timeNote": "第一階段 10/15–10/25（NIJISANJI EN「Welcome home, Boys!」、【我推的孩子】、Kpop 獵魔女團）；第二階段 10/26–11/07（含 hololive – It’s holo-tea time!）；11:00–21:00",
+      "place": "旺角朗豪坊 12 樓 K1202",
+      "mapUrl": "https://www.google.com/maps/search/?api=1&query=%E6%97%BA%E8%A7%92%E6%9C%97%E8%B1%AA%E5%9D%8A%2012%20%E6%A8%93%20K1202",
+      "price": "免費入場",
+      "ticketUrl": "",
+      "ticketNote": "",
+      "source": "https://www.langhamplace.com.hk/zh-hk/happenings/1008",
+      "notes": "NIJISANJI EN 海外首站，香港限定 BIG 壓克力展示板；VTuber 唔分男女照收",
+      "featured": false,
+      "verifiedAt": "2026-10-15",
+      "sample": false
+    },
+    {
+      "id": "409a4bbf421665df",
+      "title": "哥斯拉-1.0（香港首度大銀幕上映）",
+      "status": "即將開始",
+      "notionStatus": "即將開始",
+      "category": "電影",
+      "ips": [
+        "哥斯拉"
+      ],
+      "date": "2026-10-17",
+      "endDate": "2026-10-17",
+      "timeNote": "",
+      "place": "全港院線（限量場次）",
+      "mapUrl": "https://www.google.com/maps/search/?api=1&query=%E5%85%A8%E6%B8%AF%E9%99%A2%E7%B7%9A%EF%BC%88%E9%99%90%E9%87%8F%E5%A0%B4%E6%AC%A1%EF%BC%89",
+      "price": "",
+      "ticketUrl": "",
+      "ticketNote": "",
+      "source": "https://blog.enjoymovie.net/godzilla-minus-one-hk-cinema-release/",
+      "notes": "《哥斯拉-0.0》11/05 上映前嘅首度港戲院上映",
+      "featured": false,
+      "verifiedAt": "2026-10-15",
       "sample": false
     },
     {
@@ -607,6 +607,27 @@
       "sample": false
     },
     {
+      "id": "9c6645c39c36fa0c",
+      "title": "星夢學園×星光樂園 THE MOVIE -相遇的奇蹟！-",
+      "status": "即將開始",
+      "notionStatus": "即將開始",
+      "category": "電影",
+      "ips": [],
+      "date": "2026-10-29",
+      "endDate": "2026-10-29",
+      "timeNote": "",
+      "place": "B+ cinema MOKO、PREMIERE ELEMENTS 等（場次陸續出）",
+      "mapUrl": "https://www.google.com/maps/search/?api=1&query=B%2B%20cinema%20MOKO%E3%80%81PREMIERE%20ELEMENTS%20%E7%AD%89%EF%BC%88%E5%A0%B4%E6%AC%A1%E9%99%B8%E7%BA%8C%E5%87%BA%EF%BC%89",
+      "price": "約 HK$100–110",
+      "ticketUrl": "",
+      "ticketNote": "",
+      "source": "https://wmoov.com/movie/showtimes/73933",
+      "notes": "アイカツ！×プリパラ 劇場版；片長約 75 分鐘；已開預售",
+      "featured": false,
+      "verifiedAt": "2026-10-15",
+      "sample": false
+    },
+    {
       "id": "7391086f30bc4c10",
       "title": "中島由貴 Fan Meeting in Hong Kong",
       "status": "即將開始",
@@ -675,6 +696,30 @@
       "notes": "票價／場地待公布",
       "featured": false,
       "verifiedAt": "2026-09-29",
+      "sample": false
+    },
+    {
+      "id": "07870a454cab94aa",
+      "title": "哥斯拉-0.0",
+      "status": "即將開始",
+      "notionStatus": "即將開始",
+      "category": "電影",
+      "ips": [
+        "哥斯拉",
+        "特攝"
+      ],
+      "date": "2026-11-05",
+      "endDate": "2026-11-05",
+      "timeNote": "2026-11-05 香港上映（WMOOV 即將上映；場次未出）",
+      "place": "未公布　發行：洲立　IMAX",
+      "mapUrl": "https://www.google.com/maps/search/?api=1&query=%E6%9C%AA%E5%85%AC%E5%B8%83%E3%80%80%E7%99%BC%E8%A1%8C%EF%BC%9A%E6%B4%B2%E7%AB%8B%E3%80%80IMAX",
+      "price": "未公布",
+      "ticketUrl": "",
+      "ticketNote": "無／未公布",
+      "source": "https://blog.enjoymovie.net/godzilla-minus-zero-hong-kong-november/",
+      "notes": "",
+      "featured": false,
+      "verifiedAt": "2026-10-15",
       "sample": false
     },
     {
@@ -783,15 +828,15 @@
       "date": "2026-11-12",
       "endDate": "2026-11-12",
       "timeNote": "2026-11-12　日本福岡最終場生中繼；日本開演 19:00 JST＝香港 18:00 HKT（本地戲院／開演時間待公布）",
-      "place": "香港戲院（院線未公布）",
-      "mapUrl": "https://www.google.com/maps/search/?api=1&query=%E9%A6%99%E6%B8%AF%E6%88%B2%E9%99%A2%EF%BC%88%E9%99%A2%E7%B7%9A%E6%9C%AA%E5%85%AC%E5%B8%83%EF%BC%89",
-      "price": "未公布（日本場 ¥5,000 連 A3 海報特典；海外票價待公布）",
+      "place": "英皇戲院 尖沙咀 iSQUARE（IMAX）（另有澳門場不入表）",
+      "mapUrl": "https://www.google.com/maps/search/?api=1&query=%E8%8B%B1%E7%9A%87%E6%88%B2%E9%99%A2%20%E5%B0%96%E6%B2%99%E5%92%80%20iSQUARE%EF%BC%88IMAX%EF%BC%89%EF%BC%88%E5%8F%A6%E6%9C%89%E6%BE%B3%E9%96%80%E5%A0%B4%E4%B8%8D%E5%85%A5%E8%A1%A8%EF%BC%89",
+      "price": "HK$350",
       "ticketUrl": "",
-      "ticketNote": "海外門票即將開賣；香港戲院及票價待公布",
+      "ticketNote": "2026-10-14 14:00 HKT 開售；入場特典數量有限",
       "source": "https://acgevent.com/archives/40062",
       "notes": "海外頁：https://www.liveviewing.com/events/hoshimachisuisei_lv_overseas/ ；日本頁：https://liveviewing.jp/hoshimachi-suisei-2026/",
       "featured": false,
-      "verifiedAt": "2026-09-30",
+      "verifiedAt": "2026-10-15",
       "sample": false
     },
     {
@@ -1232,6 +1277,27 @@
       "sample": false
     },
     {
+      "id": "353ad185d83d35ed",
+      "title": "劇場版 藥師少女的獨語 亡妃的秘寶",
+      "status": "即將開始",
+      "notionStatus": "即將開始",
+      "category": "電影",
+      "ips": [],
+      "date": "2027-02-25",
+      "endDate": "2027-02-25",
+      "timeNote": "",
+      "place": "全港院線（未公布）",
+      "mapUrl": "https://www.google.com/maps/search/?api=1&query=%E5%85%A8%E6%B8%AF%E9%99%A2%E7%B7%9A%EF%BC%88%E6%9C%AA%E5%85%AC%E5%B8%83%EF%BC%89",
+      "price": "",
+      "ticketUrl": "",
+      "ticketNote": "",
+      "source": "https://wmoov.com/trailer/upcoming",
+      "notes": "日本 2026-12-11 上映；香港檔期據 WMOOV",
+      "featured": false,
+      "verifiedAt": "2026-10-15",
+      "sample": false
+    },
+    {
       "id": "577daeb80a01ff01",
       "title": "CON-CON HONG KONG 2027",
       "status": "即將開始",
@@ -1317,30 +1383,6 @@
       "ticketNote": "無／未公布",
       "source": "https://www.yoasobi-music.jp/",
       "notes": "不可把官網其他城市日期當成香港日",
-      "featured": false,
-      "verifiedAt": "2026-09-29",
-      "sample": false
-    },
-    {
-      "id": "07870a454cab94aa",
-      "title": "哥斯拉-0.0",
-      "status": "即將開始",
-      "notionStatus": "即將開始",
-      "category": "電影",
-      "ips": [
-        "哥斯拉",
-        "特攝"
-      ],
-      "date": "",
-      "endDate": "",
-      "timeNote": "2026-11（日未公布）",
-      "place": "未公布　發行：洲立　IMAX",
-      "mapUrl": "https://www.google.com/maps/search/?api=1&query=%E6%9C%AA%E5%85%AC%E5%B8%83%E3%80%80%E7%99%BC%E8%A1%8C%EF%BC%9A%E6%B4%B2%E7%AB%8B%E3%80%80IMAX",
-      "price": "未公布",
-      "ticketUrl": "",
-      "ticketNote": "無／未公布",
-      "source": "https://blog.enjoymovie.net/godzilla-minus-zero-hong-kong-november/",
-      "notes": "",
       "featured": false,
       "verifiedAt": "2026-09-29",
       "sample": false
