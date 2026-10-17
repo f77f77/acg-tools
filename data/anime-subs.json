@@ -1,6 +1,6 @@
 {
   "schema": "anime-subs.v1",
-  "updatedAt": "2026-10-16",
+  "updatedAt": "2026-10-17",
   "note": "由 Notion「中文字幕動畫播放表」同步。bgmId 以 Notion 欄位優先，其次來源網址、本季 season.json 標題、Bangumi 搜尋。未能對上嘅作品列喺 unresolved，請喺 Notion 填 bgmId。",
   "unresolved": [
     {
@@ -68,7 +68,7 @@
       ],
       "subtitle": "繁中",
       "regionNote": "台",
-      "scheduleHkt": "週六 08:30 HKT",
+      "scheduleHkt": "週六 09:00 HKT（動畫瘋）",
       "premiere": "2026-10-03",
       "status": "播放中",
       "source": "https://www.bn-pictures.co.jp/keroro-anime/tv/",
@@ -260,7 +260,7 @@
       ],
       "subtitle": "繁中",
       "regionNote": "台",
-      "scheduleHkt": "週二 20:25 HKT",
+      "scheduleHkt": "週二 20:55 HKT（動畫瘋；GNN 2026-10-01）",
       "premiere": "2026-10-06",
       "status": "播放中",
       "source": "https://kyoranreijo-pr.com/",
@@ -668,7 +668,7 @@
       ],
       "subtitle": "繁中",
       "regionNote": "港台",
-      "scheduleHkt": "週三 23:30 HKT（日本播出週三深夜24:30 JST 換算；木棉花上架時間未公佈）",
+      "scheduleHkt": "週四 01:00 HKT（動畫瘋；GNN 2026-10-01）",
       "premiere": "2026-10-07",
       "status": "播放中",
       "source": "https://gattaishin.com/dandivine/",
@@ -734,7 +734,7 @@
       ],
       "subtitle": "繁中",
       "regionNote": "港台（待 Ani-One 上架核實）",
-      "scheduleHkt": "週二 23:00 HKT（日本播出週二深夜24:00 JST 換算）；Ani-One 港區上架時間待公佈",
+      "scheduleHkt": "週二 23:30 HKT（動畫瘋；GNN 2026-10-01）",
       "premiere": "2026-10-06",
       "status": "播放中",
       "source": "https://sh-anime.shochiku.co.jp/chiifuyo-anime/",
