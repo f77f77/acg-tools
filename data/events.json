@@ -1,6 +1,6 @@
 {
   "schema": "events.v2",
-  "updatedAt": "2026-10-16",
+  "updatedAt": "2026-10-17",
   "note": "活動由 Notion「香港ACG情報看板」每日同步（香港時間）。狀態會按日期重算：開始至結束當日係進行中，未開始係即將開始，完結七日內先保留。周邊截止仍然手改 deadlines[]；標成示例嘅截止唔會保留。",
   "events": [
     {
@@ -421,7 +421,7 @@
     {
       "id": "409a4bbf421665df",
       "title": "哥斯拉-1.0（香港首度大銀幕上映）",
-      "status": "即將開始",
+      "status": "進行中",
       "notionStatus": "即將開始",
       "category": "電影",
       "ips": [
@@ -444,7 +444,7 @@
     {
       "id": "edcc1600963bb2c8",
       "title": "櫻川めぐ香港見面會2026",
-      "status": "即將開始",
+      "status": "進行中",
       "notionStatus": "即將開始",
       "category": "見面會",
       "ips": [
