@@ -1,6 +1,6 @@
 {
   "schema": "events.v2",
-  "updatedAt": "2026-10-17",
+  "updatedAt": "2026-10-18",
   "note": "活動由 Notion「香港ACG情報看板」每日同步（香港時間）。狀態會按日期重算：開始至結束當日係進行中，未開始係即將開始，完結七日內先保留。周邊截止仍然手改 deadlines[]；標成示例嘅截止唔會保留。",
   "events": [
     {
@@ -170,7 +170,7 @@
     {
       "id": "6ebd445a13f825b7",
       "title": "Ani-One POP 期間限定店（CON-CON THE MIX @ 希慎廣場）",
-      "status": "進行中",
+      "status": "已完結",
       "notionStatus": "進行中",
       "category": "快閃店",
       "ips": [
@@ -259,50 +259,6 @@
       "notes": "1:1 角色立牌／打卡牆；香港獨家集章套裝；滿額送明信片／紙袋／海報亞克力座",
       "featured": false,
       "verifiedAt": "2026-10-01",
-      "sample": false
-    },
-    {
-      "id": "b2f1afe4916a3a14",
-      "title": "MECHATU-A 1st LIVE “Over Drive!” LIVE VIEWING（香港）",
-      "status": "已完結",
-      "notionStatus": "已完結",
-      "category": "LIVE VIEWING",
-      "ips": [],
-      "date": "2026-10-10",
-      "endDate": "2026-10-10",
-      "timeNote": "2026-10-10（六）16:45 HKT（英皇戲院尖沙咀 iSQUARE）",
-      "place": "英皇戲院 尖沙咀 iSQUARE（另有澳門場不入表）",
-      "mapUrl": "https://www.google.com/maps/search/?api=1&query=%E8%8B%B1%E7%9A%87%E6%88%B2%E9%99%A2%20%E5%B0%96%E6%B2%99%E5%92%80%20iSQUARE%EF%BC%88%E5%8F%A6%E6%9C%89%E6%BE%B3%E9%96%80%E5%A0%B4%E4%B8%8D%E5%85%A5%E8%A1%A8%EF%BC%89",
-      "price": "HK$310",
-      "ticketUrl": "https://amccinemas.com.hk/zh/%E9%9B%BB%E5%BD%B1/mechatu-a-1st-live-over-drive-live-viewing/",
-      "ticketNote": "英皇戲院購票；9/28 開售",
-      "source": "https://amccinemas.com.hk/zh/%E9%9B%BB%E5%BD%B1/mechatu-a-1st-live-over-drive-live-viewing/",
-      "notes": "NIJISANJI MECHATU-A 1st LIVE；香港大銀幕直播；先前因規則未入表，2026-10-09 補入",
-      "featured": false,
-      "verifiedAt": "2026-10-15",
-      "sample": false
-    },
-    {
-      "id": "b4f7543f6a6061b3",
-      "title": "鈴木このみ Asia Tour 2026 in Hong Kong",
-      "status": "已完結",
-      "notionStatus": "已完結",
-      "category": "演唱會",
-      "ips": [
-        "鈴木このみ"
-      ],
-      "date": "2026-10-10",
-      "endDate": "2026-10-10",
-      "timeNote": "2026-10-10　19:30",
-      "place": "PORTAL　新蒲崗",
-      "mapUrl": "https://www.google.com/maps/search/?api=1&query=PORTAL%E3%80%80%E6%96%B0%E8%92%B2%E5%B4%97",
-      "price": "VIP $980／GA $780",
-      "ticketUrl": "https://edproduction.kktix.cc/events/konomi-suzuki-hk-2026",
-      "ticketNote": "",
-      "source": "https://edproduction.kktix.cc/events/konomi-suzuki-hk-2026",
-      "notes": "",
-      "featured": false,
-      "verifiedAt": "2026-10-15",
       "sample": false
     },
     {
@@ -421,7 +377,7 @@
     {
       "id": "409a4bbf421665df",
       "title": "哥斯拉-1.0（香港首度大銀幕上映）",
-      "status": "進行中",
+      "status": "已完結",
       "notionStatus": "即將開始",
       "category": "電影",
       "ips": [
@@ -444,7 +400,7 @@
     {
       "id": "edcc1600963bb2c8",
       "title": "櫻川めぐ香港見面會2026",
-      "status": "進行中",
+      "status": "已完結",
       "notionStatus": "即將開始",
       "category": "見面會",
       "ips": [
