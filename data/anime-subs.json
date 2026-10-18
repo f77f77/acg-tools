@@ -1,6 +1,6 @@
 {
   "schema": "anime-subs.v1",
-  "updatedAt": "2026-10-17",
+  "updatedAt": "2026-10-18",
   "note": "由 Notion「中文字幕動畫播放表」同步。bgmId 以 Notion 欄位優先，其次來源網址、本季 season.json 標題、Bangumi 搜尋。未能對上嘅作品列喺 unresolved，請喺 Notion 填 bgmId。",
   "unresolved": [
     {
@@ -21,10 +21,11 @@
       "bgmId": 505550,
       "bgmIdSource": "season",
       "platforms": [
-        "巴哈姆特動畫瘋"
+        "巴哈姆特動畫瘋",
+        "Ani-One Asia"
       ],
       "subtitle": "繁中",
-      "regionNote": "台 · 動畫瘋可見；第1集。日本首播 10/13 深夜。2026-10-15 新增。",
+      "regionNote": "港台",
       "scheduleHkt": "週三 02:15 HKT（動畫瘋；GNN 標 10/14 起，GNN 2026-10-01）",
       "premiere": "2026-10-13",
       "status": "播放中",
@@ -85,10 +86,11 @@
       "bgmId": 590553,
       "bgmIdSource": "season",
       "platforms": [
-        "巴哈姆特動畫瘋"
+        "巴哈姆特動畫瘋",
+        "Ani-One Asia"
       ],
       "subtitle": "繁中",
-      "regionNote": "台 · 動畫瘋可見；第1集。日本首播 10/8。2026-10-15 新增。",
+      "regionNote": "港台",
       "scheduleHkt": "週五 00:00 HKT（動畫瘋；GNN 2026-10-01）",
       "premiere": "2026-10-08",
       "status": "播放中",
@@ -191,10 +193,13 @@
       "bgmId": 621108,
       "bgmIdSource": "season",
       "platforms": [
-        "巴哈姆特動畫瘋"
+        "巴哈姆特動畫瘋",
+        "木棉花 YouTube",
+        "viu",
+        "Crunchyroll"
       ],
       "subtitle": "繁中",
-      "regionNote": "台 · 動畫瘋可見；第1集。日本首播 10/9。2026-10-15 新增。",
+      "regionNote": "港台",
       "scheduleHkt": "週六 00:00 HKT（動畫瘋；GNN 2026-10-01）",
       "premiere": "2026-10-09",
       "status": "播放中",
@@ -217,7 +222,7 @@
       ],
       "subtitle": "繁中",
       "regionNote": "台（港區待確認）",
-      "scheduleHkt": "週日 20:30 HKT（日本播出 21:30 JST 換算）",
+      "scheduleHkt": "週日 22:00 HKT（動畫瘋；GNN 2026-10-01）",
       "premiere": "2026-10-04",
       "status": "播放中",
       "source": "https://saikyosoubi.com/",
@@ -235,7 +240,9 @@
       "bgmIdSource": "season",
       "platforms": [
         "木棉花 YouTube",
-        "巴哈姆特動畫瘋"
+        "巴哈姆特動畫瘋",
+        "viu",
+        "Crunchyroll"
       ],
       "subtitle": "繁中",
       "regionNote": "港台",
@@ -343,10 +350,11 @@
       "bgmId": 650428,
       "bgmIdSource": "season",
       "platforms": [
-        "巴哈姆特動畫瘋"
+        "巴哈姆特動畫瘋",
+        "Ani-One Asia"
       ],
       "subtitle": "繁中",
-      "regionNote": "台 · 動畫瘋可見；約第2集。日本首播 10/1。2026-10-15 新增。",
+      "regionNote": "港台",
       "scheduleHkt": "週五 00:15 HKT（動畫瘋；GNN 2026-10-01）",
       "premiere": "2026-10-01",
       "status": "播放中",
@@ -429,11 +437,12 @@
       "bgmIdSource": "season",
       "platforms": [
         "木棉花 YouTube",
-        "巴哈姆特動畫瘋"
+        "巴哈姆特動畫瘋",
+        "viu"
       ],
       "subtitle": "繁中",
-      "regionNote": "台（港區待確認）",
-      "scheduleHkt": "週日 16:00 HKT",
+      "regionNote": "港台",
+      "scheduleHkt": "週日 16:30 HKT（動畫瘋；GNN 2026-10-01）",
       "premiere": "2026-10-11",
       "status": "播放中",
       "source": "https://mission-yozakura-family.com/",
@@ -540,7 +549,7 @@
       ],
       "subtitle": "繁中",
       "regionNote": "港台",
-      "scheduleHkt": "週二 22:00 HKT（AT-X 日本最速播出換算；Ani-One 上架時間待公佈）",
+      "scheduleHkt": "週三 00:30 HKT（動畫瘋；GNN 2026-10-01）",
       "premiere": "2026-10-13",
       "status": "播放中",
       "source": "https://chiramune.com/onair/index.html",
@@ -600,10 +609,11 @@
       "bgmId": 568525,
       "bgmIdSource": "season",
       "platforms": [
-        "巴哈姆特動畫瘋"
+        "巴哈姆特動畫瘋",
+        "Ani-One Asia"
       ],
       "subtitle": "繁中",
-      "regionNote": "台",
+      "regionNote": "港台",
       "scheduleHkt": "週六 17:30 HKT（動畫瘋；GNN 2026-10-01）",
       "premiere": "2026-10-10",
       "status": "播放中",
@@ -690,7 +700,7 @@
       ],
       "subtitle": "繁中",
       "regionNote": "台（港區待確認）",
-      "scheduleHkt": "週六 22:30 HKT（日本播出 23:30 JST 換算）",
+      "scheduleHkt": "週日 00:00 HKT（動畫瘋；GNN 2026-10-01）",
       "premiere": "2026-10-03",
       "status": "播放中",
       "source": "https://vertexforce.jp/",
@@ -772,10 +782,11 @@
       "bgmId": 593565,
       "bgmIdSource": "season",
       "platforms": [
-        "巴哈姆特動畫瘋"
+        "巴哈姆特動畫瘋",
+        "Ani-One Asia"
       ],
       "subtitle": "繁中",
-      "regionNote": "台 · 動畫瘋可見；約第2集。日本首播 10/6。2026-10-15 新增。",
+      "regionNote": "港台",
       "scheduleHkt": "週二 22:30 HKT（動畫瘋；第2集起，GNN 2026-10-01）",
       "premiere": "2026-10-06",
       "status": "播放中",
@@ -891,7 +902,7 @@
       ],
       "subtitle": "繁中",
       "regionNote": "港台",
-      "scheduleHkt": "週四 23:26 HKT（日本播出 週四深夜24:26 JST 換算；viu／動畫瘋上架時間未核實）",
+      "scheduleHkt": "週四 23:56 HKT（動畫瘋；GNN 2026-10-01）",
       "status": "播放中",
       "source": "https://www.youtube.com/watch?v=l1bDWqyG0gA",
       "notionId": "3ef5631c-93db-812e-8435-dd22b7d3a3f4",
@@ -996,7 +1007,7 @@
       ],
       "subtitle": "繁中",
       "regionNote": "台",
-      "scheduleHkt": "週六 23:00 HKT（日本播出換算；動畫瘋上架時間未核實）",
+      "scheduleHkt": "週日 00:30 HKT（動畫瘋；GNN 2026-10-01）",
       "premiere": "2026-10-03",
       "status": "播放中",
       "source": "https://majieku.com/",
