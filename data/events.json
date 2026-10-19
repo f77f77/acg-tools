@@ -1238,7 +1238,7 @@
       "notionStatus": "即將開始",
       "category": "快閃店",
       "ips": [],
-      "date": "",
+      "date": "2026-11-01",
       "endDate": "",
       "timeNote": "2026-11（日未公布）",
       "place": "九龍塘又一城（達之路 80 號）",
@@ -1250,29 +1250,6 @@
       "notes": "2026-11 又一城；詳細開幕日／預約／商品未公布（10-09 核實）",
       "featured": false,
       "verifiedAt": "2026-10-09",
-      "sample": false
-    },
-    {
-      "id": "042c4246ac1a9cf9",
-      "title": "YOASOBI Asia 10-City Dome & Stadium Tour 2026–2027 香港站",
-      "status": "即將開始",
-      "notionStatus": "即將開始",
-      "category": "演唱會",
-      "ips": [
-        "YOASOBI"
-      ],
-      "date": "",
-      "endDate": "",
-      "timeNote": "日期未公布",
-      "place": "未公布",
-      "mapUrl": "https://www.google.com/maps/search/?api=1&query=%E6%9C%AA%E5%85%AC%E5%B8%83",
-      "price": "未公布",
-      "ticketUrl": "",
-      "ticketNote": "無／未公布",
-      "source": "https://www.yoasobi-music.jp/",
-      "notes": "不可把官網其他城市日期當成香港日",
-      "featured": false,
-      "verifiedAt": "2026-09-29",
       "sample": false
     }
   ],
