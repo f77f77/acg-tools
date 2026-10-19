@@ -1,6 +1,6 @@
 {
   "schema": "anime-subs.v1",
-  "updatedAt": "2026-10-18",
+  "updatedAt": "2026-10-19",
   "note": "由 Notion「中文字幕動畫播放表」同步。bgmId 以 Notion 欄位優先，其次來源網址、本季 season.json 標題、Bangumi 搜尋。未能對上嘅作品列喺 unresolved，請喺 Notion 填 bgmId。",
   "unresolved": [
     {
@@ -152,11 +152,12 @@
       "bgmId": 664395,
       "bgmIdSource": "season",
       "platforms": [
-        "木棉花 YouTube"
+        "木棉花 YouTube",
+        "巴哈姆特動畫瘋"
       ],
       "subtitle": "繁中",
       "regionNote": "港台",
-      "scheduleHkt": "週日 17:00 HKT（Muse木棉花-HK 公佈；日本播出＝16:30 HKT）",
+      "scheduleHkt": "週日 16:30 HKT（動畫瘋；GNN／動畫瘋首頁；Muse 公佈 17:00）",
       "premiere": "2026-10-11",
       "status": "播放中",
       "source": "https://www.youtube.com/watch?v=13A3TnHLwEs",
@@ -360,6 +361,27 @@
       "status": "播放中",
       "source": "https://animationid.com/kizudarakeseijo2/",
       "notionId": "3fa5631c-93db-81de-ae71-c9bc3e906ba6",
+      "sample": false
+    },
+    {
+      "title": "冰之城牆 第二季",
+      "titleJa": "氷の城壁 第2期",
+      "aliases": [
+        "氷の城壁 第2期",
+        "冰之城牆 第二季"
+      ],
+      "bgmId": 665390,
+      "bgmIdSource": "season",
+      "platforms": [
+        "Netflix"
+      ],
+      "subtitle": "繁中／簡中（Netflix）",
+      "regionNote": "港台",
+      "scheduleHkt": "週四 23:30 HKT 後（台 YourAnimes；Netflix）",
+      "premiere": "2026-10-01",
+      "status": "播放中",
+      "source": "https://korinojoheki-pr.com/",
+      "notionId": "3fe5631c-93db-81ad-bf35-ed89fd17a991",
       "sample": false
     },
     {
@@ -964,8 +986,8 @@
         "Netflix"
       ],
       "subtitle": "繁中／多語（Netflix）",
-      "regionNote": "台已確認 Netflix；港區待確認",
-      "scheduleHkt": "10-20 起 Netflix 上線（是否一次全上或逐週未核實；官方／Netflix 標 10-20）",
+      "regionNote": "港台（Netflix 全球獨家）",
+      "scheduleHkt": "10-20 16:00 HKT 起 Netflix（台 YourAnimes；全季 10 集；是否一次全上未官方逐集確認）",
       "premiere": "2026-10-20",
       "status": "即將播出",
       "source": "https://www.cyberpunk.net/zh-tw/edgerunners2",
