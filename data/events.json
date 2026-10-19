@@ -1,6 +1,6 @@
 {
   "schema": "events.v2",
-  "updatedAt": "2026-10-18",
+  "updatedAt": "2026-10-19",
   "note": "活動由 Notion「香港ACG情報看板」每日同步（香港時間）。狀態會按日期重算：開始至結束當日係進行中，未開始係即將開始，完結七日內先保留。周邊截止仍然手改 deadlines[]；標成示例嘅截止唔會保留。",
   "events": [
     {
@@ -94,53 +94,6 @@
       "notes": "日本 EVA STORE／RADIO EVA 及香港限定、重映限定抽卡機",
       "featured": false,
       "verifiedAt": "2026-09-29",
-      "sample": false
-    },
-    {
-      "id": "8552617e20ec108b",
-      "title": "《GIRLS BAND CRY》POP UP STORE 香港站",
-      "status": "已完結",
-      "notionStatus": "已完結",
-      "category": "快閃店",
-      "ips": [
-        "GIRLS BAND CRY",
-        "トゲナシトゲアリ"
-      ],
-      "date": "2026-09-26",
-      "endDate": "2026-10-11",
-      "timeNote": "2026-09-26～10-11　12:00–21:00（最後入場約 20:00）",
-      "place": "旺角創興廣場地庫 INCUBASE Arena B1",
-      "mapUrl": "https://www.google.com/maps/search/?api=1&query=%E6%97%BA%E8%A7%92%E5%89%B5%E8%88%88%E5%BB%A3%E5%A0%B4%E5%9C%B0%E5%BA%AB%20INCUBASE%20Arena%20B1",
-      "price": "單人約 $50（Klook；含入場禮＋實體紀念票＋QR）",
-      "ticketUrl": "https://www.klook.com/zh-HK/activity/233689-girls-band-cry-pop-up-store-in-hong-kong/",
-      "ticketNote": "",
-      "source": "https://acgevent.com/archives/40055",
-      "notes": "至 10-11；重點IP；Klook 仍列進行中（10-09 核實）",
-      "featured": true,
-      "verifiedAt": "2026-10-15",
-      "sample": false
-    },
-    {
-      "id": "401915590f3282ac",
-      "title": "《數碼暴龍》香港期間限定店 @ 朗豪坊",
-      "status": "已完結",
-      "notionStatus": "已完結",
-      "category": "快閃店",
-      "ips": [
-        "多 IP"
-      ],
-      "date": "2026-09-26",
-      "endDate": "2026-10-11",
-      "timeNote": "2026-09-26～10-11；平日 11:00–20:00、週末 11:00–21:00",
-      "place": "旺角朗豪坊 12 樓 13 號舖（亞皆老街 8 號）",
-      "mapUrl": "https://www.google.com/maps/search/?api=1&query=%E6%97%BA%E8%A7%92%E6%9C%97%E8%B1%AA%E5%9D%8A%2012%20%E6%A8%93%2013%20%E8%99%9F%E8%88%96%EF%BC%88%E4%BA%9E%E7%9A%86%E8%80%81%E8%A1%97%208%20%E8%99%9F%EF%BC%89",
-      "price": "免費入場；周邊約 HK$38–218；滿 $150 送特典插畫卡",
-      "ticketUrl": "",
-      "ticketNote": "現場自由入場",
-      "source": "https://konggokhk.com/digimon_langham_popup/",
-      "notes": "和風摩登主題；11 月同址預告另一活動（詳情未公布）；至 10-11",
-      "featured": false,
-      "verifiedAt": "2026-10-15",
       "sample": false
     },
     {
@@ -305,27 +258,6 @@
       "ticketNote": "",
       "source": "https://prtimes.jp/main/html/rd/p/000007362.000005397.html",
       "notes": "SEGA×animate 全球企劃",
-      "featured": false,
-      "verifiedAt": "2026-10-15",
-      "sample": false
-    },
-    {
-      "id": "40c2d4205bb777b3",
-      "title": "劍持刀也 Real Solo Live【KOKU FES.】LIVE VIEWING（香港）",
-      "status": "已完結",
-      "notionStatus": "已完結",
-      "category": "LIVE VIEWING",
-      "ips": [],
-      "date": "2026-10-11",
-      "endDate": "2026-10-11",
-      "timeNote": "10-11（日）16:45 英皇尖沙咀 iSQUARE IMAX（直播；全港只此一場）",
-      "place": "英皇戲院 尖沙咀 iSQUARE（IMAX）（另有澳門場不入表）",
-      "mapUrl": "https://www.google.com/maps/search/?api=1&query=%E8%8B%B1%E7%9A%87%E6%88%B2%E9%99%A2%20%E5%B0%96%E6%B2%99%E5%92%80%20iSQUARE%EF%BC%88IMAX%EF%BC%89%EF%BC%88%E5%8F%A6%E6%9C%89%E6%BE%B3%E9%96%80%E5%A0%B4%E4%B8%8D%E5%85%A5%E8%A1%A8%EF%BC%89",
-      "price": "HK$310（英皇 iSQUARE IMAX；附入場特典）",
-      "ticketUrl": "https://amccinemas.com.hk/movies/kenmochi-toya-real-solo-livekoku-fes-live-viewing/",
-      "ticketNote": "院線購票（9/28 13:00 開售）",
-      "source": "https://www.liveviewing.com/events/kenmochitoya/",
-      "notes": "にじさんじ VTuber；剣持刀也リアルソロライブ【虚空狂宴】；K-Arena 橫濱；嘉賓 葛葉、花生君、星街すいせい",
       "featured": false,
       "verifiedAt": "2026-10-15",
       "sample": false
