@@ -1,6 +1,6 @@
 {
   "schema": "events.v2",
-  "updatedAt": "2026-10-19",
+  "updatedAt": "2026-10-20",
   "note": "活動由 Notion「香港ACG情報看板」每日同步（香港時間）。狀態會按日期重算：開始至結束當日係進行中，未開始係即將開始，完結七日內先保留。周邊截止仍然手改 deadlines[]；標成示例嘅截止唔會保留。",
   "events": [
     {
@@ -30,7 +30,7 @@
     {
       "id": "8a14a94226b0c8ba",
       "title": "T.O.Y.C. Infinity × TAMASHII NATIONS LIVE ACTION FIGURE EXPO 2026（特攝限定展）",
-      "status": "進行中",
+      "status": "已完結",
       "notionStatus": "進行中",
       "category": "特展",
       "ips": [
@@ -146,29 +146,6 @@
       "sample": false
     },
     {
-      "id": "dda9f634d274cd1d",
-      "title": "SUNRISEPOP｜動漫聯動祭",
-      "status": "已完結",
-      "notionStatus": "已完結",
-      "category": "快閃／店舖",
-      "ips": [
-        "多 IP（小圓／藥師少女／DAN DA DAN／中村同學等）"
-      ],
-      "date": "2026-09-30",
-      "endDate": "2026-10-12",
-      "timeNote": "2026-09-30～10-12　12:00–21:00（10-12 至 18:00）",
-      "place": "銅鑼灣皇室堡地下中庭",
-      "mapUrl": "https://www.google.com/maps/search/?api=1&query=%E9%8A%85%E9%91%BC%E7%81%A3%E7%9A%87%E5%AE%A4%E5%A0%A1%E5%9C%B0%E4%B8%8B%E4%B8%AD%E5%BA%AD",
-      "price": "免費入場（店舖）",
-      "ticketUrl": "",
-      "ticketNote": "無／未公布",
-      "source": "https://www.microworksacg.com/blogs/popup/macgf2026",
-      "notes": "現場亦有咒術周邊但不作主推",
-      "featured": false,
-      "verifiedAt": "2026-10-15",
-      "sample": false
-    },
-    {
       "id": "511badb9a7bcac79",
       "title": "EVANGELION 30th Hong Kong Movie Fest（其餘五部）",
       "status": "進行中",
@@ -258,27 +235,6 @@
       "ticketNote": "",
       "source": "https://prtimes.jp/main/html/rd/p/000007362.000005397.html",
       "notes": "SEGA×animate 全球企劃",
-      "featured": false,
-      "verifiedAt": "2026-10-15",
-      "sample": false
-    },
-    {
-      "id": "05ef68eedf8344a2",
-      "title": "葛葉 Kuzuha One-Man Live \"Bloody Alexandrite\" LIVE VIEWING（香港）",
-      "status": "已完結",
-      "notionStatus": "已完結",
-      "category": "LIVE VIEWING",
-      "ips": [],
-      "date": "2026-10-12",
-      "endDate": "2026-10-12",
-      "timeNote": "10-12（一）18:45 英皇銅鑼灣時代廣場（延時轉播；全港只此一場）",
-      "place": "英皇戲院 銅鑼灣時代廣場（另有澳門場不入表）",
-      "mapUrl": "https://www.google.com/maps/search/?api=1&query=%E8%8B%B1%E7%9A%87%E6%88%B2%E9%99%A2%20%E9%8A%85%E9%91%BC%E7%81%A3%E6%99%82%E4%BB%A3%E5%BB%A3%E5%A0%B4%EF%BC%88%E5%8F%A6%E6%9C%89%E6%BE%B3%E9%96%80%E5%A0%B4%E4%B8%8D%E5%85%A5%E8%A1%A8%EF%BC%89",
-      "price": "HK$310（英皇銅鑼灣；附入場特典）",
-      "ticketUrl": "https://amccinemas.com.hk/zh/%E9%9B%BB%E5%BD%B1/kuzuha-one-man-live-bloody-alexandrite-live-viewing/",
-      "ticketNote": "院線購票（9/28 13:00 開售）",
-      "source": "https://www.liveviewing.com/events/kuzuha/",
-      "notes": "にじさんじ VTuber；K-Arena 橫濱；嘉賓 劍持刀也、不破湊、Ibrahim、Lauren Iroas",
       "featured": false,
       "verifiedAt": "2026-10-15",
       "sample": false
@@ -1238,7 +1194,7 @@
       "notionStatus": "即將開始",
       "category": "快閃店",
       "ips": [],
-      "date": "2026-11-01",
+      "date": "",
       "endDate": "",
       "timeNote": "2026-11（日未公布）",
       "place": "九龍塘又一城（達之路 80 號）",
@@ -1250,6 +1206,29 @@
       "notes": "2026-11 又一城；詳細開幕日／預約／商品未公布（10-09 核實）",
       "featured": false,
       "verifiedAt": "2026-10-09",
+      "sample": false
+    },
+    {
+      "id": "042c4246ac1a9cf9",
+      "title": "YOASOBI Asia 10-City Dome & Stadium Tour 2026–2027 香港站",
+      "status": "即將開始",
+      "notionStatus": "即將開始",
+      "category": "演唱會",
+      "ips": [
+        "YOASOBI"
+      ],
+      "date": "",
+      "endDate": "",
+      "timeNote": "日期未公布",
+      "place": "未公布",
+      "mapUrl": "https://www.google.com/maps/search/?api=1&query=%E6%9C%AA%E5%85%AC%E5%B8%83",
+      "price": "未公布",
+      "ticketUrl": "",
+      "ticketNote": "無／未公布",
+      "source": "https://www.yoasobi-music.jp/",
+      "notes": "不可把官網其他城市日期當成香港日",
+      "featured": false,
+      "verifiedAt": "2026-09-29",
       "sample": false
     }
   ],
