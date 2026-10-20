@@ -1,6 +1,6 @@
 {
   "schema": "anime-subs.v1",
-  "updatedAt": "2026-10-19",
+  "updatedAt": "2026-10-20",
   "note": "由 Notion「中文字幕動畫播放表」同步。bgmId 以 Notion 欄位優先，其次來源網址、本季 season.json 標題、Bangumi 搜尋。未能對上嘅作品列喺 unresolved，請喺 Notion 填 bgmId。",
   "unresolved": [
     {
@@ -987,7 +987,7 @@
       ],
       "subtitle": "繁中／多語（Netflix）",
       "regionNote": "港台（Netflix 全球獨家）",
-      "scheduleHkt": "10-20 16:00 HKT 起 Netflix（台 YourAnimes；全季 10 集；是否一次全上未官方逐集確認）",
+      "scheduleHkt": "10-20 16:00 HKT Netflix 一次全上（台 YourAnimes／微笑動漫；全季 10 集）",
       "premiere": "2026-10-20",
       "status": "即將播出",
       "source": "https://www.cyberpunk.net/zh-tw/edgerunners2",

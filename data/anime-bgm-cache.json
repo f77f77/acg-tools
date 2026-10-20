@@ -1,6 +1,6 @@
 {
   "schema": "anime-bgm-cache.v1",
-  "updatedAt": "2026-10-13",
+  "updatedAt": "2026-10-20",
   "entries": {
     "bluereflectionray": {
       "keyword": "BLUE REFLECTION RAY",
@@ -35,7 +35,7 @@
     "学園アイドルマスター": {
       "keyword": "学園アイドルマスター",
       "bgmId": null,
-      "checkedAt": "2026-10-13"
+      "checkedAt": "2026-10-20"
     },
     "目覚めたら最强装备と宇宙船持ちだったので一戸建て目指して佣兵として働くことにしました": {
       "keyword": "目覚めたら最強装備と宇宙船持ちだったので、一戸建て目指して傭兵として働くことにしました",
