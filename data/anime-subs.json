@@ -1,6 +1,6 @@
 {
   "schema": "anime-subs.v1",
-  "updatedAt": "2026-10-21",
+  "updatedAt": "2026-10-22",
   "note": "由 Notion「中文字幕動畫播放表」同步。bgmId 以 Notion 欄位優先，其次來源網址、本季 season.json 標題、Bangumi 搜尋。未能對上嘅作品列喺 unresolved，請喺 Notion 填 bgmId。",
   "unresolved": [
     {
@@ -597,6 +597,27 @@
       "status": "播放中",
       "source": "https://www.kanatakara-anime.com/",
       "notionId": "3fa5631c-93db-8168-8dea-e2a608138f20",
+      "sample": false
+    },
+    {
+      "title": "愚者之夜",
+      "titleJa": "フールナイト",
+      "aliases": [
+        "フールナイト",
+        "愚者之夜"
+      ],
+      "bgmId": 661692,
+      "bgmIdSource": "notion",
+      "platforms": [
+        "Netflix"
+      ],
+      "subtitle": "繁中（Netflix 港台預期；以實際上架為準）",
+      "regionNote": "港台（Netflix 全球獨佔）",
+      "scheduleHkt": "一次全上（預定 2026-11-26 Netflix 全球獨佔全季）",
+      "premiere": "2026-11-26",
+      "status": "即將播出",
+      "source": "https://www.foolnight.com/",
+      "notionId": "4015631c-93db-81e1-8af9-f065fed4e0bd",
       "sample": false
     },
     {
