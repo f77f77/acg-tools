@@ -1,6 +1,6 @@
 {
   "schema": "events.v2",
-  "updatedAt": "2026-10-20",
+  "updatedAt": "2026-10-22",
   "note": "活動由 Notion「香港ACG情報看板」每日同步（香港時間）。狀態會按日期重算：開始至結束當日係進行中，未開始係即將開始，完結七日內先保留。周邊截止仍然手改 deadlines[]；標成示例嘅截止唔會保留。",
   "events": [
     {
@@ -94,30 +94,6 @@
       "notes": "日本 EVA STORE／RADIO EVA 及香港限定、重映限定抽卡機",
       "featured": false,
       "verifiedAt": "2026-09-29",
-      "sample": false
-    },
-    {
-      "id": "ae8ff4adc24014b0",
-      "title": "《我係小忌廉》魔法企劃期間限定店",
-      "status": "已完結",
-      "notionStatus": "已完結",
-      "category": "快閃店",
-      "ips": [
-        "我係小忌廉",
-        "Creamy Mami"
-      ],
-      "date": "2026-09-27",
-      "endDate": "2026-10-14",
-      "timeNote": "2026-09-27～10-14　11:30–21:00",
-      "place": "銅鑼灣時代廣場地庫 1 樓",
-      "mapUrl": "https://www.google.com/maps/search/?api=1&query=%E9%8A%85%E9%91%BC%E7%81%A3%E6%99%82%E4%BB%A3%E5%BB%A3%E5%A0%B4%E5%9C%B0%E5%BA%AB%201%20%E6%A8%93",
-      "price": "免費；09-27～10-01 只接受預約入場；10-02 起自由入場（見來源／山下菓子）",
-      "ticketUrl": "https://kingsleycafe.com/",
-      "ticketNote": "",
-      "source": "https://jetsobear.com/cream-mami-pop-up-2026-p331864/",
-      "notes": "逾 50 款周邊；後台化妝間打卡；預約期至今日 10-01，明日起自由入場",
-      "featured": false,
-      "verifiedAt": "2026-10-15",
       "sample": false
     },
     {
@@ -313,7 +289,7 @@
     {
       "id": "4859cce35801594b",
       "title": "劇場版 BanG Dream! Ave Mujica prima aurora",
-      "status": "即將開始",
+      "status": "進行中",
       "notionStatus": "即將開始",
       "category": "電影",
       "ips": [
@@ -492,6 +468,29 @@
       "notes": "",
       "featured": false,
       "verifiedAt": "2026-09-29",
+      "sample": false
+    },
+    {
+      "id": "86d899b8ae0d9f97",
+      "title": "安齋由香里 2026 香港粉絲見面會",
+      "status": "即將開始",
+      "notionStatus": "即將開始",
+      "category": "見面會",
+      "ips": [
+        "偶像大師灰姑娘女孩等"
+      ],
+      "date": "2026-11-01",
+      "endDate": "2026-11-01",
+      "timeNote": "2026年11月1日（星期日），第一場 12:30 入場 / 13:00 開演",
+      "place": "香港荃灣帝盛酒店宴會廳 A",
+      "mapUrl": "https://www.google.com/maps/search/?api=1&query=%E9%A6%99%E6%B8%AF%E8%8D%83%E7%81%A3%E5%B8%9D%E7%9B%9B%E9%85%92%E5%BA%97%E5%AE%B4%E6%9C%83%E5%BB%B3%20A",
+      "price": "",
+      "ticketUrl": "https://www.art-mate.net/doc/100569",
+      "ticketNote": "",
+      "source": "https://www.art-mate.net/doc/100569",
+      "notes": "嘉賓：安齋由香里（《月影特工 RELEASE THE SPYCE》源桃／《偶像大師 灰姑娘女孩》西園寺琴歌）。對照 Drive Doc「香港與日本動畫活動及演唱會／電影紀錄」2026-10-21。",
+      "featured": false,
+      "verifiedAt": "2026-10-21",
       "sample": false
     },
     {
@@ -681,6 +680,27 @@
       "notes": "海外頁：https://www.liveviewing.com/events/hoshimachisuisei_lv_overseas/ ；日本頁：https://liveviewing.jp/hoshimachi-suisei-2026/",
       "featured": false,
       "verifiedAt": "2026-10-15",
+      "sample": false
+    },
+    {
+      "id": "4d6dda032e7523a6",
+      "title": "《孤獨搖滾！》動畫展 香港站",
+      "status": "即將開始",
+      "notionStatus": "即將開始",
+      "category": "展覽",
+      "ips": [],
+      "date": "2026-11-13",
+      "endDate": "2026-12-13",
+      "timeNote": "2026.11.13 Fri～2026.12.13 Sun；預售票 10/23 起於 Klook、Trip.com、香港01",
+      "place": "九龍啟德雙子匯1期9樓",
+      "mapUrl": "https://www.google.com/maps/search/?api=1&query=%E4%B9%9D%E9%BE%8D%E5%95%9F%E5%BE%B7%E9%9B%99%E5%AD%90%E5%8C%AF1%E6%9C%9F9%E6%A8%93",
+      "price": "",
+      "ticketUrl": "",
+      "ticketNote": "預售 10/23 起 Klook／Trip.com／香港01；台北口碑特典壓克力色紙限量；現場 4 款角色紀念票",
+      "source": "https://forum.gamer.com.tw/C.php?bsn=70624&snA=2534",
+      "notes": "主辦曼迪傳播；九大展區（含小孤獨的衣櫥、STARRY、渴望被肯定的怪物）；日本空運限量周邊",
+      "featured": false,
+      "verifiedAt": "2026-10-21",
       "sample": false
     },
     {
@@ -1229,6 +1249,30 @@
       "notes": "不可把官網其他城市日期當成香港日",
       "featured": false,
       "verifiedAt": "2026-09-29",
+      "sample": false
+    },
+    {
+      "id": "861f01df7fb74849",
+      "title": "《Project Sekai》及《BanG Dream! Ave Mujica》animate 海外限定快閃與立牌展",
+      "status": "進行中",
+      "notionStatus": "進行中",
+      "category": "店內活動",
+      "ips": [
+        "Project Sekai",
+        "BanG Dream! Ave Mujica"
+      ],
+      "date": "",
+      "endDate": "",
+      "timeNote": "進行中（Doc 未列明確結束日）；特設 Ave Mujica 豐川祥子及若葉睦等身大立牌與免費明信片領取",
+      "place": "animate 香港店（旺角 T.O.P 4樓）",
+      "mapUrl": "https://www.google.com/maps/search/?api=1&query=animate%20%E9%A6%99%E6%B8%AF%E5%BA%97%EF%BC%88%E6%97%BA%E8%A7%92%20T.O.P%204%E6%A8%93%EF%BC%89",
+      "price": "",
+      "ticketUrl": "",
+      "ticketNote": "",
+      "source": "https://www.facebook.com/animateHongKong/",
+      "notes": "animate 海外限定快閃與立牌展。對照 Drive Doc「香港與日本動畫活動及演唱會／電影紀錄」2026-10-21；結束日待官方確認。",
+      "featured": false,
+      "verifiedAt": "2026-10-21",
       "sample": false
     }
   ],
