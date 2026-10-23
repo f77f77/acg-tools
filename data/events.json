@@ -1,6 +1,6 @@
 {
   "schema": "events.v2",
-  "updatedAt": "2026-10-22",
+  "updatedAt": "2026-10-23",
   "note": "活動由 Notion「香港ACG情報看板」每日同步（香港時間）。狀態會按日期重算：開始至結束當日係進行中，未開始係即將開始，完結七日內先保留。周邊截止仍然手改 deadlines[]；標成示例嘅截止唔會保留。",
   "events": [
     {
@@ -25,29 +25,6 @@
       "notes": "與時代廣場期間限定店分開；主題可麗餅店場景＋打卡",
       "featured": false,
       "verifiedAt": "2026-10-02",
-      "sample": false
-    },
-    {
-      "id": "8a14a94226b0c8ba",
-      "title": "T.O.Y.C. Infinity × TAMASHII NATIONS LIVE ACTION FIGURE EXPO 2026（特攝限定展）",
-      "status": "已完結",
-      "notionStatus": "進行中",
-      "category": "特展",
-      "ips": [
-        "特攝"
-      ],
-      "date": "2026-09-22",
-      "endDate": "2026-10-19",
-      "timeNote": "09-22～10-19 每日 11:00–21:00",
-      "place": "中環閣麟街 8 號 T.O.Y.C. INFINITY G/F & M/F",
-      "mapUrl": "https://www.google.com/maps/search/?api=1&query=%E4%B8%AD%E7%92%B0%E9%96%A3%E9%BA%9F%E8%A1%97%208%20%E8%99%9F%20T.O.Y.C.%20INFINITY%20G%2FF%20%26%20M%2FF",
-      "price": "未公布（店舖限定展區）",
-      "ticketUrl": "",
-      "ticketNote": "無／現場",
-      "source": "https://www.pcmarket.com.hk/toyc-infinity-tamashii-nations-in-central/",
-      "notes": "至 10-19；10-09 核實仍進行中",
-      "featured": false,
-      "verifiedAt": "2026-10-09",
       "sample": false
     },
     {
@@ -97,31 +74,6 @@
       "sample": false
     },
     {
-      "id": "6ebd445a13f825b7",
-      "title": "Ani-One POP 期間限定店（CON-CON THE MIX @ 希慎廣場）",
-      "status": "已完結",
-      "notionStatus": "進行中",
-      "category": "快閃店",
-      "ips": [
-        "GIRLS BAND CRY",
-        "トゲナシトゲアリ",
-        "多 IP"
-      ],
-      "date": "2026-09-29",
-      "endDate": "2026-10-17",
-      "timeNote": "Ani-One POP：2026-09-29～10-17　11:00–21:00；CON-CON THE MIX 主場（1/F・5/F 等）：至 10-11",
-      "place": "銅鑼灣希慎廣場 B1 B113–B115（CON-CON：1/F・5/F 等）",
-      "mapUrl": "https://www.google.com/maps/search/?api=1&query=%E9%8A%85%E9%91%BC%E7%81%A3%E5%B8%8C%E6%85%8E%E5%BB%A3%E5%A0%B4%20B1%20B113%E2%80%93B115%EF%BC%88CON-CON%EF%BC%9A1%2FF%E3%83%BB5%2FF%20%E7%AD%89%EF%BC%89",
-      "price": "免費入場；凛音の理演唱會周邊須出示香港公演門票",
-      "ticketUrl": "",
-      "ticketNote": "無／現場自由入場",
-      "source": "https://konggokhk.com/concon_the_mix_hysan_place_2026/",
-      "notes": "希慎廣場兩段：CON-CON THE MIX 主活動至 10-11；地庫 Ani-One POP 至 10-17。想逛主場聯乘宜 10-11 前",
-      "featured": true,
-      "verifiedAt": "2026-10-09",
-      "sample": false
-    },
-    {
       "id": "511badb9a7bcac79",
       "title": "EVANGELION 30th Hong Kong Movie Fest（其餘五部）",
       "status": "進行中",
@@ -139,9 +91,9 @@
       "ticketUrl": "https://hkmovie6.com/movie/c992ab7e-51f2-4f80-8e64-eaf7acd0991d",
       "ticketNote": "院線／hkmovie6",
       "source": "https://acgevent.com/archives/39869",
-      "notes": "順序：10-01 Air／真心為你／10-08 序／10-15 破／10-22 Q／10-29 終；hkmovie6 標 10-01 起映",
+      "notes": "順序：10-01 Air／真心為你／10-08 序／10-15 破／10-22 Q／10-29 終。2026-10-22 核實：Q 今日開映；破仍有場次（唔跟 Doc「今日先破」標籤）。死與新生已另列封存。",
       "featured": false,
-      "verifiedAt": "2026-10-01",
+      "verifiedAt": "2026-10-22",
       "sample": false
     },
     {
@@ -242,7 +194,7 @@
       "id": "409a4bbf421665df",
       "title": "哥斯拉-1.0（香港首度大銀幕上映）",
       "status": "已完結",
-      "notionStatus": "即將開始",
+      "notionStatus": "進行中",
       "category": "電影",
       "ips": [
         "哥斯拉"
@@ -258,39 +210,14 @@
       "source": "https://blog.enjoymovie.net/godzilla-minus-one-hk-cinema-release/",
       "notes": "《哥斯拉-0.0》11/05 上映前嘅首度港戲院上映",
       "featured": false,
-      "verifiedAt": "2026-10-15",
-      "sample": false
-    },
-    {
-      "id": "edcc1600963bb2c8",
-      "title": "櫻川めぐ香港見面會2026",
-      "status": "已完結",
-      "notionStatus": "即將開始",
-      "category": "見面會",
-      "ips": [
-        "櫻川めぐ",
-        "BanG Dream!",
-        "Love Live!"
-      ],
-      "date": "2026-10-17",
-      "endDate": "2026-10-17",
-      "timeNote": "2026-10-17　日場 14:00（13:30 入場）／夜場 18:30（18:00 入場）",
-      "place": "石門鄉議局大樓演奏廳",
-      "mapUrl": "https://www.google.com/maps/search/?api=1&query=%E7%9F%B3%E9%96%80%E9%84%89%E8%AD%B0%E5%B1%80%E5%A4%A7%E6%A8%93%E6%BC%94%E5%A5%8F%E5%BB%B3",
-      "price": "VIP $800／A $500",
-      "ticketUrl": "https://www.art-mate.net/doc/100036",
-      "ticketNote": "",
-      "source": "https://www.art-mate.net/doc/100036",
-      "notes": "入場紀念鐳射票；09-21 已開售",
-      "featured": false,
-      "verifiedAt": "2026-09-29",
+      "verifiedAt": "2026-10-22",
       "sample": false
     },
     {
       "id": "4859cce35801594b",
       "title": "劇場版 BanG Dream! Ave Mujica prima aurora",
-      "status": "進行中",
-      "notionStatus": "即將開始",
+      "status": "已完結",
+      "notionStatus": "進行中",
       "category": "電影",
       "ips": [
         "BanG Dream! Ave Mujica"
@@ -306,7 +233,7 @@
       "source": "https://www.anisnap.hk/articles/avemujica-movie/",
       "notes": "",
       "featured": false,
-      "verifiedAt": "2026-09-29",
+      "verifiedAt": "2026-10-22",
       "sample": false
     },
     {
