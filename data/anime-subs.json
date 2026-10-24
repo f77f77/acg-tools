@@ -1,6 +1,6 @@
 {
   "schema": "anime-subs.v1",
-  "updatedAt": "2026-10-22",
+  "updatedAt": "2026-10-24",
   "note": "由 Notion「中文字幕動畫播放表」同步。bgmId 以 Notion 欄位優先，其次來源網址、本季 season.json 標題、Bangumi 搜尋。未能對上嘅作品列喺 unresolved，請喺 Notion 填 bgmId。",
   "unresolved": [
     {
@@ -662,6 +662,27 @@
       "status": "播放中",
       "source": "https://the-vermilion-mask.com/",
       "notionId": "3fa5631c-93db-8159-ae0f-dde34cd551f2",
+      "sample": false
+    },
+    {
+      "title": "極致軟弱千金小姐，不小心答應了精明未婚夫的賭局",
+      "titleJa": "弱気MAX令嬢なのに、辣腕婚約者様の賭けに乗ってしまった",
+      "aliases": [
+        "弱気MAX令嬢なのに、辣腕婚約者様の賭けに乗ってしまった",
+        "極致軟弱千金小姐，不小心答應了精明未婚夫的賭局"
+      ],
+      "bgmId": 596771,
+      "bgmIdSource": "notion",
+      "platforms": [
+        "巴哈姆特動畫瘋"
+      ],
+      "subtitle": "繁中",
+      "regionNote": "台",
+      "scheduleHkt": "週日 22:30 HKT（動畫瘋；限付費會員；GNN 2026-10-01）",
+      "premiere": "2026-10-04",
+      "status": "播放中",
+      "source": "https://yowaki-max-anime.com/",
+      "notionId": "4035631c-93db-8190-ad38-f57e29c9d8c0",
       "sample": false
     },
     {
