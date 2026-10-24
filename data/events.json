@@ -1,6 +1,6 @@
 {
   "schema": "events.v2",
-  "updatedAt": "2026-10-23",
+  "updatedAt": "2026-10-24",
   "note": "活動由 Notion「香港ACG情報看板」每日同步（香港時間）。狀態會按日期重算：開始至結束當日係進行中，未開始係即將開始，完結七日內先保留。周邊截止仍然手改 deadlines[]；標成示例嘅截止唔會保留。",
   "events": [
     {
@@ -47,7 +47,7 @@
       "source": "https://blog.enjoymovie.net/eva-kaworu-exhibition-hong-kong-2026/",
       "notes": "09-25 已開展",
       "featured": false,
-      "verifiedAt": "2026-09-29",
+      "verifiedAt": "2026-10-23",
       "sample": false
     },
     {
@@ -88,12 +88,12 @@
       "place": "院線陸續上檔　發行：新映影片",
       "mapUrl": "https://www.google.com/maps/search/?api=1&query=%E9%99%A2%E7%B7%9A%E9%99%B8%E7%BA%8C%E4%B8%8A%E6%AA%94%E3%80%80%E7%99%BC%E8%A1%8C%EF%BC%9A%E6%96%B0%E6%98%A0%E5%BD%B1%E7%89%87",
       "price": "約見院線；每部設香港限定主視覺典藏卡入場特典",
-      "ticketUrl": "https://hkmovie6.com/movie/c992ab7e-51f2-4f80-8e64-eaf7acd0991d",
+      "ticketUrl": "https://m.wmoov.com/movie/showtimes/20359",
       "ticketNote": "院線／hkmovie6",
       "source": "https://acgevent.com/archives/39869",
-      "notes": "順序：10-01 Air／真心為你／10-08 序／10-15 破／10-22 Q／10-29 終。2026-10-22 核實：Q 今日開映；破仍有場次（唔跟 Doc「今日先破」標籤）。死與新生已另列封存。",
+      "notes": "順序：10-01 Air／真心為你／10-08 序／10-15 破／10-22 Q／10-29 終。2026-10-23 核實：Q 今日多院有場；破 今日仍有場次（唔跟 Doc「第四週先破」標籤）。死與新生已另列封存。",
       "featured": false,
-      "verifiedAt": "2026-10-22",
+      "verifiedAt": "2026-10-23",
       "sample": false
     },
     {
@@ -116,7 +116,7 @@
       "source": "https://www.am730.com.hk/article/1054368",
       "notes": "1:1 角色立牌／打卡牆；香港獨家集章套裝；滿額送明信片／紙袋／海報亞克力座",
       "featured": false,
-      "verifiedAt": "2026-10-01",
+      "verifiedAt": "2026-10-23",
       "sample": false
     },
     {
@@ -139,9 +139,9 @@
       "ticketUrl": "",
       "ticketNote": "現場自由入場；比賽報名見 ArenaSpot",
       "source": "https://timable.com/hk/en/event/6ac4a165a075997c8aef946f/ToysAssemble-%E7%8E%A9%E5%85%B7%E9%9B%86%E7%B5%90-%E9%BB%83%E5%9F%94%E5%A4%A9%E5%9C%B0",
-      "notes": "含美少女戰士／小忌廉等珍藏展＋玩具市集＋爆旋陀螺活動",
+      "notes": "含美少女戰士／小忌廉等珍藏展＋玩具市集＋爆旋陀螺活動。2026-10-23 起變裝少女珍藏展（至10/30）；週末市集／試玩 10/31–11/1；爆旋陀螺對戰區同期。",
       "featured": false,
-      "verifiedAt": "2026-10-15",
+      "verifiedAt": "2026-10-23",
       "sample": false
     },
     {
@@ -185,9 +185,9 @@
       "ticketUrl": "",
       "ticketNote": "",
       "source": "https://www.langhamplace.com.hk/zh-hk/happenings/1008",
-      "notes": "NIJISANJI EN 海外首站，香港限定 BIG 壓克力展示板；VTuber 唔分男女照收",
+      "notes": "NIJISANJI EN 海外首站，香港限定 BIG 壓克力展示板；VTuber 唔分男女照收。2026-10-23 核實：第一階段至 10/25（NIJISANJI EN／【我推的孩子】／獵魔女團），第二階段 10/26–11/07（含…",
       "featured": false,
-      "verifiedAt": "2026-10-15",
+      "verifiedAt": "2026-10-23",
       "sample": false
     },
     {
@@ -205,12 +205,12 @@
       "place": "全港院線（限量場次）",
       "mapUrl": "https://www.google.com/maps/search/?api=1&query=%E5%85%A8%E6%B8%AF%E9%99%A2%E7%B7%9A%EF%BC%88%E9%99%90%E9%87%8F%E5%A0%B4%E6%AC%A1%EF%BC%89",
       "price": "",
-      "ticketUrl": "",
+      "ticketUrl": "https://m.wmoov.com/movie/showtimes/73739",
       "ticketNote": "",
       "source": "https://blog.enjoymovie.net/godzilla-minus-one-hk-cinema-release/",
-      "notes": "《哥斯拉-0.0》11/05 上映前嘅首度港戲院上映",
+      "notes": "《哥斯拉-0.0》11/05 上映前嘅首度港戲院上映。2026-10-23 核實：wmoov 仍有場次（例 10/25 GALA／AIRSIDE／影藝銅鑼灣／PREMIERE／英皇圍方）。",
       "featured": false,
-      "verifiedAt": "2026-10-22",
+      "verifiedAt": "2026-10-23",
       "sample": false
     },
     {
@@ -225,21 +225,21 @@
       "date": "2026-10-22",
       "endDate": "2026-10-22",
       "timeNote": "2026-10-22",
-      "place": "未公布",
-      "mapUrl": "https://www.google.com/maps/search/?api=1&query=%E6%9C%AA%E5%85%AC%E5%B8%83",
+      "place": "MCL 長沙灣／德福／AIRSIDE／STAR／K11 Art House 等",
+      "mapUrl": "https://www.google.com/maps/search/?api=1&query=MCL%20%E9%95%B7%E6%B2%99%E7%81%A3%EF%BC%8F%E5%BE%B7%E7%A6%8F%EF%BC%8FAIRSIDE%EF%BC%8FSTAR%EF%BC%8FK11%20Art%20House%20%E7%AD%89",
       "price": "未公布　發行：木棉花香港",
-      "ticketUrl": "",
+      "ticketUrl": "https://m.wmoov.com/movie/showtimes/73980",
       "ticketNote": "無／未公布",
-      "source": "https://www.anisnap.hk/articles/avemujica-movie/",
-      "notes": "",
+      "source": "https://m.wmoov.com/movie/showtimes/73980",
+      "notes": "2026-10-23 核實：今日多 MCL 場次（10:30–21:25）",
       "featured": false,
-      "verifiedAt": "2026-10-22",
+      "verifiedAt": "2026-10-23",
       "sample": false
     },
     {
       "id": "52aa1cc386617b96",
       "title": "加速世界 INFINITE BURST（特典場）",
-      "status": "即將開始",
+      "status": "進行中",
       "notionStatus": "即將開始",
       "category": "電影",
       "ips": [
@@ -262,7 +262,7 @@
     {
       "id": "cb3b79c484e77c12",
       "title": "玉置成實 Nami Tamaki LIVE 2026 -STARBOUND TOUR-",
-      "status": "即將開始",
+      "status": "進行中",
       "notionStatus": "即將開始",
       "category": "演唱會",
       "ips": [
@@ -285,7 +285,7 @@
     {
       "id": "b2736e6562bef7c9",
       "title": "聲聲不息 Vol.05 田中有紀 香港粉絲見面會",
-      "status": "即將開始",
+      "status": "進行中",
       "notionStatus": "即將開始",
       "category": "見面會",
       "ips": [
@@ -408,16 +408,16 @@
       ],
       "date": "2026-11-01",
       "endDate": "2026-11-01",
-      "timeNote": "2026年11月1日（星期日），第一場 12:30 入場 / 13:00 開演",
-      "place": "香港荃灣帝盛酒店宴會廳 A",
-      "mapUrl": "https://www.google.com/maps/search/?api=1&query=%E9%A6%99%E6%B8%AF%E8%8D%83%E7%81%A3%E5%B8%9D%E7%9B%9B%E9%85%92%E5%BA%97%E5%AE%B4%E6%9C%83%E5%BB%B3%20A",
+      "timeNote": "2026.11.13～12.13；平日11:00–20:00、六日及假期11:00–21:00；預售10/23 12:00～11/12",
+      "place": "SOGO 啟德店 The Twins 1期9樓（九龍啟德雙子匯）",
+      "mapUrl": "https://www.google.com/maps/search/?api=1&query=SOGO%20%E5%95%9F%E5%BE%B7%E5%BA%97%20The%20Twins%201%E6%9C%9F9%E6%A8%93%EF%BC%88%E4%B9%9D%E9%BE%8D%E5%95%9F%E5%BE%B7%E9%9B%99%E5%AD%90%E5%8C%AF%EF%BC%89",
       "price": "",
-      "ticketUrl": "https://www.art-mate.net/doc/100569",
+      "ticketUrl": "https://space.hk01.com/event/6ad864932d997e4b9a219154",
       "ticketNote": "",
-      "source": "https://www.art-mate.net/doc/100569",
-      "notes": "嘉賓：安齋由香里（《月影特工 RELEASE THE SPYCE》源桃／《偶像大師 灰姑娘女孩》西園寺琴歌）。對照 Drive Doc「香港與日本動畫活動及演唱會／電影紀錄」2026-10-21。",
+      "source": "https://www.mightymedia.co.jp/bocchi.rocks-exhibition.hk",
+      "notes": "主辦曼迪傳播；九大展區。2026-10-23 核實：預售今日 12:00 起於 Klook、Trip.com、香港01；預售單人票HK$98／特典票HK$138（至11/12）；入場須另約 https://inline.app/booki…",
       "featured": false,
-      "verifiedAt": "2026-10-21",
+      "verifiedAt": "2026-10-23",
       "sample": false
     },
     {
