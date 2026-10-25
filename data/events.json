@@ -1,6 +1,6 @@
 {
   "schema": "events.v2",
-  "updatedAt": "2026-10-24",
+  "updatedAt": "2026-10-25",
   "note": "活動由 Notion「香港ACG情報看板」每日同步（香港時間）。狀態會按日期重算：開始至結束當日係進行中，未開始係即將開始，完結七日內先保留。周邊截止仍然手改 deadlines[]；標成示例嘅截止唔會保留。",
   "events": [
     {
@@ -91,9 +91,9 @@
       "ticketUrl": "https://m.wmoov.com/movie/showtimes/20359",
       "ticketNote": "院線／hkmovie6",
       "source": "https://acgevent.com/archives/39869",
-      "notes": "順序：10-01 Air／真心為你／10-08 序／10-15 破／10-22 Q／10-29 終。2026-10-23 核實：Q 今日多院有場；破 今日仍有場次（唔跟 Doc「第四週先破」標籤）。死與新生已另列封存。",
+      "notes": "順序：10-01 Air／真心為你／10-08 序／10-15 破／10-22 Q／10-29 終。2026-10-24 核實：Q 今日多院有場；破 今日 STAR／Festival Grand／AIRSIDE／K11／MOVIE TOW…",
       "featured": false,
-      "verifiedAt": "2026-10-23",
+      "verifiedAt": "2026-10-24",
       "sample": false
     },
     {
@@ -168,6 +168,29 @@
       "sample": false
     },
     {
+      "id": "1ab4c706e1183f03",
+      "title": "動漫「墨」搏——《香港街頭漫畫》",
+      "status": "進行中",
+      "notionStatus": "進行中",
+      "category": "展覽",
+      "ips": [
+        "香港動漫"
+      ],
+      "date": "2026-10-15",
+      "endDate": "2026-10-28",
+      "timeNote": "2026.10.15–10.28　08:00–23:00",
+      "place": "香港藝術中心2樓動漫基地（灣仔港灣道2號）",
+      "mapUrl": "https://www.google.com/maps/search/?api=1&query=%E9%A6%99%E6%B8%AF%E8%97%9D%E8%A1%93%E4%B8%AD%E5%BF%832%E6%A8%93%E5%8B%95%E6%BC%AB%E5%9F%BA%E5%9C%B0%EF%BC%88%E7%81%A3%E4%BB%94%E6%B8%AF%E7%81%A3%E9%81%932%E8%99%9F%EF%BC%89",
+      "price": "免費",
+      "ticketUrl": "https://www.hkac.org.hk/tc/calendar_detail/?u=10heBDTSa4g",
+      "ticketNote": "",
+      "source": "https://www.hkac.org.hk/tc/calendar_detail/?u=10heBDTSa4g",
+      "notes": "主辦香港藝術中心動漫基地／Dan ARCHER；現場速寫與非虛構漫畫展。2026-10-24 新建。",
+      "featured": false,
+      "verifiedAt": "2026-10-24",
+      "sample": false
+    },
+    {
       "id": "3dd86d162a8b2724",
       "title": "Ani-One POP 偶像祭 2.0 期間限定店 @ 朗豪坊（NIJISANJI EN／我推的孩子／hololive 等）",
       "status": "進行中",
@@ -191,29 +214,6 @@
       "sample": false
     },
     {
-      "id": "409a4bbf421665df",
-      "title": "哥斯拉-1.0（香港首度大銀幕上映）",
-      "status": "已完結",
-      "notionStatus": "進行中",
-      "category": "電影",
-      "ips": [
-        "哥斯拉"
-      ],
-      "date": "2026-10-17",
-      "endDate": "2026-10-17",
-      "timeNote": "",
-      "place": "全港院線（限量場次）",
-      "mapUrl": "https://www.google.com/maps/search/?api=1&query=%E5%85%A8%E6%B8%AF%E9%99%A2%E7%B7%9A%EF%BC%88%E9%99%90%E9%87%8F%E5%A0%B4%E6%AC%A1%EF%BC%89",
-      "price": "",
-      "ticketUrl": "https://m.wmoov.com/movie/showtimes/73739",
-      "ticketNote": "",
-      "source": "https://blog.enjoymovie.net/godzilla-minus-one-hk-cinema-release/",
-      "notes": "《哥斯拉-0.0》11/05 上映前嘅首度港戲院上映。2026-10-23 核實：wmoov 仍有場次（例 10/25 GALA／AIRSIDE／影藝銅鑼灣／PREMIERE／英皇圍方）。",
-      "featured": false,
-      "verifiedAt": "2026-10-23",
-      "sample": false
-    },
-    {
       "id": "4859cce35801594b",
       "title": "劇場版 BanG Dream! Ave Mujica prima aurora",
       "status": "已完結",
@@ -231,39 +231,39 @@
       "ticketUrl": "https://m.wmoov.com/movie/showtimes/73980",
       "ticketNote": "無／未公布",
       "source": "https://m.wmoov.com/movie/showtimes/73980",
-      "notes": "2026-10-23 核實：今日多 MCL 場次（10:30–21:25）",
+      "notes": "2026-10-24 核實：wmoov 今日多 MCL 場次（德福／K11／STAR／長沙灣／AIRSIDE 約 11:20–22:00）。",
       "featured": false,
-      "verifiedAt": "2026-10-23",
+      "verifiedAt": "2026-10-24",
       "sample": false
     },
     {
       "id": "52aa1cc386617b96",
       "title": "加速世界 INFINITE BURST（特典場）",
-      "status": "進行中",
-      "notionStatus": "即將開始",
+      "status": "已完結",
+      "notionStatus": "進行中",
       "category": "電影",
       "ips": [
         "加速世界"
       ],
       "date": "2026-10-24",
       "endDate": "2026-10-24",
-      "timeNote": "2026-10-24",
-      "place": "未公布",
-      "mapUrl": "https://www.google.com/maps/search/?api=1&query=%E6%9C%AA%E5%85%AC%E5%B8%83",
+      "timeNote": "2026-10-24 公映；首週特典場（黑雪公主 A3 海報）；今日例：K11 13:55、圍方／屯門 14:05、德福 19:50、荃新天地 20:15",
+      "place": "MCL K11 Art House／德福；英皇圍方／屯門新都／荃新天地等（特典場）",
+      "mapUrl": "https://www.google.com/maps/search/?api=1&query=MCL%20K11%20Art%20House%EF%BC%8F%E5%BE%B7%E7%A6%8F%EF%BC%9B%E8%8B%B1%E7%9A%87%E5%9C%8D%E6%96%B9%EF%BC%8F%E5%B1%AF%E9%96%80%E6%96%B0%E9%83%BD%EF%BC%8F%E8%8D%83%E6%96%B0%E5%A4%A9%E5%9C%B0%E7%AD%89%EF%BC%88%E7%89%B9%E5%85%B8%E5%A0%B4%EF%BC%89",
       "price": "未公布　發行：木棉花香港",
-      "ticketUrl": "",
+      "ticketUrl": "https://wmoov.com/movie/showtimes/73934",
       "ticketNote": "無／未公布",
-      "source": "https://blog.enjoymovie.net/accel-world-infinite-burst-hk/",
-      "notes": "",
+      "source": "https://wmoov.com/movie/post/73934",
+      "notes": "十周年紀念上映；發行木棉花；片長約82–83分；IIA。2026-10-24 核實：KinoHK／英皇／MCL 有特典場。",
       "featured": false,
-      "verifiedAt": "2026-09-29",
+      "verifiedAt": "2026-10-24",
       "sample": false
     },
     {
       "id": "cb3b79c484e77c12",
       "title": "玉置成實 Nami Tamaki LIVE 2026 -STARBOUND TOUR-",
-      "status": "進行中",
-      "notionStatus": "即將開始",
+      "status": "已完結",
+      "notionStatus": "進行中",
       "category": "演唱會",
       "ips": [
         "玉置成實"
@@ -279,14 +279,14 @@
       "source": "https://www.uutix.com/detail?pId=3823",
       "notes": "",
       "featured": false,
-      "verifiedAt": "2026-09-29",
+      "verifiedAt": "2026-10-24",
       "sample": false
     },
     {
       "id": "b2736e6562bef7c9",
       "title": "聲聲不息 Vol.05 田中有紀 香港粉絲見面會",
-      "status": "進行中",
-      "notionStatus": "即將開始",
+      "status": "已完結",
+      "notionStatus": "進行中",
       "category": "見面會",
       "ips": [
         "田中有紀",
@@ -303,13 +303,13 @@
       "source": "https://acgevent.com/archives/40116",
       "notes": "公開發售中；不設歌唱；VIP To簽用預簽色紙當日加寫稱呼",
       "featured": false,
-      "verifiedAt": "2026-09-29",
+      "verifiedAt": "2026-10-24",
       "sample": false
     },
     {
       "id": "8338d504ecf5eaad",
       "title": "East Of Eden Live in Hong Kong 2026",
-      "status": "即將開始",
+      "status": "進行中",
       "notionStatus": "即將開始",
       "category": "演唱會",
       "ips": [
@@ -332,7 +332,7 @@
     {
       "id": "bf84d819d9b36551",
       "title": "宇治清高 香港粉絲見面會",
-      "status": "即將開始",
+      "status": "進行中",
       "notionStatus": "即將開始",
       "category": "見面會",
       "ips": [
@@ -408,16 +408,16 @@
       ],
       "date": "2026-11-01",
       "endDate": "2026-11-01",
-      "timeNote": "2026.11.13～12.13；平日11:00–20:00、六日及假期11:00–21:00；預售10/23 12:00～11/12",
-      "place": "SOGO 啟德店 The Twins 1期9樓（九龍啟德雙子匯）",
-      "mapUrl": "https://www.google.com/maps/search/?api=1&query=SOGO%20%E5%95%9F%E5%BE%B7%E5%BA%97%20The%20Twins%201%E6%9C%9F9%E6%A8%93%EF%BC%88%E4%B9%9D%E9%BE%8D%E5%95%9F%E5%BE%B7%E9%9B%99%E5%AD%90%E5%8C%AF%EF%BC%89",
-      "price": "",
-      "ticketUrl": "https://space.hk01.com/event/6ad864932d997e4b9a219154",
+      "timeNote": "2026-11-01　日場 12:30入場／13:00開演；夜場 16:30入場／17:00開演",
+      "place": "荃灣帝盛酒店宴會廳A",
+      "mapUrl": "https://www.google.com/maps/search/?api=1&query=%E8%8D%83%E7%81%A3%E5%B8%9D%E7%9B%9B%E9%85%92%E5%BA%97%E5%AE%B4%E6%9C%83%E5%BB%B3A",
+      "price": "S席 HKD880／普通票 HKD480",
+      "ticketUrl": "https://www.art-mate.net/doc/100569",
       "ticketNote": "",
-      "source": "https://www.mightymedia.co.jp/bocchi.rocks-exhibition.hk",
-      "notes": "主辦曼迪傳播；九大展區。2026-10-23 核實：預售今日 12:00 起於 Klook、Trip.com、香港01；預售單人票HK$98／特典票HK$138（至11/12）；入場須另約 https://inline.app/booki…",
+      "source": "https://www.art-mate.net/doc/100569",
+      "notes": "主辦閃景燈火／Takumi Production／Cosplay Galerie；S票手渡TO簽＋印簽生寫；普通票見送會＋印簽生寫。2026-10-24 修正：此列先前誤填孤獨搖滾動畫展內容，已還原為安齋見面會（Doc／art-mate）…",
       "featured": false,
-      "verifiedAt": "2026-10-23",
+      "verifiedAt": "2026-10-24",
       "sample": false
     },
     {
@@ -432,16 +432,16 @@
       ],
       "date": "2026-11-01",
       "endDate": "2026-11-01",
-      "timeNote": "2026-11-01　12:30 入場／13:00 開演",
+      "timeNote": "2026-11-01　14:30 開演（art-mate／Ticketflap）",
       "place": "銅鑼灣智選假日酒店 2樓 新福記豫園",
       "mapUrl": "https://www.google.com/maps/search/?api=1&query=%E9%8A%85%E9%91%BC%E7%81%A3%E6%99%BA%E9%81%B8%E5%81%87%E6%97%A5%E9%85%92%E5%BA%97%202%E6%A8%93%20%E6%96%B0%E7%A6%8F%E8%A8%98%E8%B1%AB%E5%9C%92",
-      "price": "未公布",
-      "ticketUrl": "",
+      "price": "HKD 980／680",
+      "ticketUrl": "https://www.ticketflap.com/zh-hant/ssbxvol6",
       "ticketNote": "無／未公布",
-      "source": "https://acgevent.com/archives/40072",
-      "notes": "票價／購票待公布；當日或有特別嘉賓",
+      "source": "https://www.art-mate.net/doc/100888",
+      "notes": "當日或有特別嘉賓。2026-10-24 核實：art-mate 標 14:30（先前看板 12:30／13:00 已更正）；Ticketflap 開售。",
       "featured": false,
-      "verifiedAt": "2026-09-29",
+      "verifiedAt": "2026-10-24",
       "sample": false
     },
     {
@@ -618,16 +618,16 @@
       "ips": [],
       "date": "2026-11-13",
       "endDate": "2026-12-13",
-      "timeNote": "2026.11.13 Fri～2026.12.13 Sun；預售票 10/23 起於 Klook、Trip.com、香港01",
+      "timeNote": "2026.11.13～12.13；平日11:00–20:00、六日及假期11:00–21:00；預售10/23 12:00～11/12",
       "place": "九龍啟德雙子匯1期9樓",
       "mapUrl": "https://www.google.com/maps/search/?api=1&query=%E4%B9%9D%E9%BE%8D%E5%95%9F%E5%BE%B7%E9%9B%99%E5%AD%90%E5%8C%AF1%E6%9C%9F9%E6%A8%93",
-      "price": "",
-      "ticketUrl": "",
+      "price": "預售單人票HK$98／特典票HK$138（至11/12）；入場須另約",
+      "ticketUrl": "https://space.hk01.com/event/6ad864932d997e4b9a219154",
       "ticketNote": "預售 10/23 起 Klook／Trip.com／香港01；台北口碑特典壓克力色紙限量；現場 4 款角色紀念票",
-      "source": "https://forum.gamer.com.tw/C.php?bsn=70624&snA=2534",
-      "notes": "主辦曼迪傳播；九大展區（含小孤獨的衣櫥、STARRY、渴望被肯定的怪物）；日本空運限量周邊",
+      "source": "https://www.mightymedia.co.jp/bocchi.rocks-exhibition.hk",
+      "notes": "主辦曼迪傳播；九大展區。2026-10-24：預售已於 Klook、Trip.com、香港01 開跑；預售單人票HK$98／特典票HK$138（至11/12）；入場須另約 https://inline.app/booking/bocchi…",
       "featured": false,
-      "verifiedAt": "2026-10-21",
+      "verifiedAt": "2026-10-24",
       "sample": false
     },
     {
@@ -874,12 +874,12 @@
       "place": "觀塘 茶豆 CHAMAME LIVEHOUSE",
       "mapUrl": "https://www.google.com/maps/search/?api=1&query=%E8%A7%80%E5%A1%98%20%E8%8C%B6%E8%B1%86%20CHAMAME%20LIVEHOUSE",
       "price": "VIP HK$880（優先入場＋簽名海報＋演後攝影）／GA HK$580（附海報）；另加 HK$20 Drink Ticket",
-      "ticketUrl": "",
+      "ticketUrl": "https://www.tickets.neon-lit.com/zh-hant/fhana-worldlines2026",
       "ticketNote": "09-23 13:00 起公開發售：tickets.neon-lit.com（主辦 NEON LIT）",
-      "source": "https://acgevent.com/archives/40032",
+      "source": "https://www.tickets.neon-lit.com/zh-hant/fhana-worldlines2026",
       "notes": "《小林家的龍女僕》《有頂天家族》主題曲樂隊",
       "featured": false,
-      "verifiedAt": "2026-10-05",
+      "verifiedAt": "2026-10-24",
       "sample": false
     },
     {
