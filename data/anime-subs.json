@@ -1,6 +1,6 @@
 {
   "schema": "anime-subs.v1",
-  "updatedAt": "2026-10-24",
+  "updatedAt": "2026-10-26",
   "note": "由 Notion「中文字幕動畫播放表」同步。bgmId 以 Notion 欄位優先，其次來源網址、本季 season.json 標題、Bangumi 搜尋。未能對上嘅作品列喺 unresolved，請喺 Notion 填 bgmId。",
   "unresolved": [
     {
@@ -747,6 +747,27 @@
       "status": "播放中",
       "source": "https://gattaishin.com/dandivine/",
       "notionId": "3ef5631c-93db-81bf-b332-e0f981c4b30e",
+      "sample": false
+    },
+    {
+      "title": "羅梅莉亞戰記",
+      "titleJa": "ロメリア戦記～魔王を倒した後も人類やばそうだから軍隊組織した～",
+      "aliases": [
+        "ロメリア戦記～魔王を倒した後も人類やばそうだから軍隊組織した～",
+        "羅梅莉亞戰記"
+      ],
+      "bgmId": 511936,
+      "bgmIdSource": "notion",
+      "platforms": [
+        "Crunchyroll"
+      ],
+      "subtitle": "繁中（Crunchyroll）",
+      "regionNote": "台（港區待確認）",
+      "scheduleHkt": "週六約 20:00–21:00 HKT（日本網路先行 21:00 JST；Crunchyroll 實際上架時間未核實）",
+      "premiere": "2026-10-03",
+      "status": "播放中",
+      "source": "https://romelia-senki.com/",
+      "notionId": "4055631c-93db-814a-806a-c4127c21485e",
       "sample": false
     },
     {
