@@ -1,6 +1,6 @@
 {
   "schema": "anime-subs.v1",
-  "updatedAt": "2026-10-26",
+  "updatedAt": "2026-10-27",
   "note": "由 Notion「中文字幕動畫播放表」同步。bgmId 以 Notion 欄位優先，其次來源網址、本季 season.json 標題、Bangumi 搜尋。未能對上嘅作品列喺 unresolved，請喺 Notion 填 bgmId。",
   "unresolved": [
     {
@@ -621,6 +621,53 @@
       "sample": false
     },
     {
+      "title": "我家的弟弟們真是讓您費心了",
+      "titleJa": "うちの弟どもがすみません",
+      "aliases": [
+        "うちの弟どもがすみません",
+        "我家的弟弟們真是讓您費心了"
+      ],
+      "bgmId": 613438,
+      "bgmIdSource": "notion",
+      "platforms": [
+        "Ani-One Asia",
+        "Ani-One 中文",
+        "巴哈姆特動畫瘋",
+        "Crunchyroll",
+        "LINE TV",
+        "MyVideo"
+      ],
+      "subtitle": "繁中",
+      "regionNote": "港台（Ani-One／動畫瘋）",
+      "scheduleHkt": "週六 00:30 HKT（動畫瘋／Ani-One；YourAnimes／Medialink）",
+      "premiere": "2026-07-04",
+      "status": "播放中",
+      "source": "https://uchi-otouto-anime.com/",
+      "notionId": "4065631c-93db-81a9-8b34-eb3da682b429",
+      "sample": false
+    },
+    {
+      "title": "我的幸福婚約 特別篇",
+      "titleJa": "わたしの幸せな結婚 特別篇",
+      "aliases": [
+        "わたしの幸せな結婚 特別篇",
+        "我的幸福婚約 特別篇"
+      ],
+      "bgmId": 551304,
+      "bgmIdSource": "notion",
+      "platforms": [
+        "Netflix"
+      ],
+      "subtitle": "繁中（Netflix）",
+      "regionNote": "港台（Netflix 全球配信）",
+      "scheduleHkt": "一次全上已完結（2026-10-25 Netflix 全3話）",
+      "premiere": "2026-10-25",
+      "status": "已完結",
+      "source": "https://watakon-anime.com/",
+      "notionId": "4065631c-93db-8178-807b-e8514e98a165",
+      "sample": false
+    },
+    {
       "title": "暗部共生少女",
       "titleJa": "とある暗部の少女共棲",
       "aliases": [
@@ -762,8 +809,8 @@
         "Crunchyroll"
       ],
       "subtitle": "繁中（Crunchyroll）",
-      "regionNote": "台（港區待確認）",
-      "scheduleHkt": "週六約 20:00–21:00 HKT（日本網路先行 21:00 JST；Crunchyroll 實際上架時間未核實）",
+      "regionNote": "港台",
+      "scheduleHkt": "週六約 20:00–21:00 HKT（日本網路先行 21:00 JST；ACG Secrets.HK 標香港 Crunchyroll 21:00）",
       "premiere": "2026-10-03",
       "status": "播放中",
       "source": "https://romelia-senki.com/",
