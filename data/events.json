@@ -1,6 +1,6 @@
 {
   "schema": "events.v2",
-  "updatedAt": "2026-10-28",
+  "updatedAt": "2026-10-29",
   "note": "活動由 Notion「香港ACG情報看板」每日同步（香港時間）。狀態會按日期重算：開始至結束當日係進行中，未開始係即將開始，完結七日內先保留。周邊截止仍然手改 deadlines[]；標成示例嘅截止唔會保留。",
   "events": [
     {
@@ -91,9 +91,9 @@
       "ticketUrl": "https://m.wmoov.com/movie/showtimes/20359",
       "ticketNote": "院線／hkmovie6",
       "source": "https://acgevent.com/archives/39869",
-      "notes": "順序：10-01 Air／真心為你／10-08 序／10-15 破／10-22 Q／10-29 終。2026-10-27 核實：wmoov 終 10-29 仍有多院場。Doc 檔期滯後時以院線為準。死與新生已另列封存。",
+      "notes": "順序：10-01 Air／真心為你／10-08 序／10-15 破／10-22 Q／10-29 終。2026-10-29 核實：wmoov／kinohk《終》今日仍多院場（約21場）。Doc 檔期滯後時以院線為準。死與新生已另列封存。早晨…",
       "featured": false,
-      "verifiedAt": "2026-10-28",
+      "verifiedAt": "2026-10-29",
       "sample": false
     },
     {
@@ -116,7 +116,7 @@
       "source": "https://www.am730.com.hk/article/1054368",
       "notes": "1:1 角色立牌／打卡牆；香港獨家集章套裝；滿額送明信片／紙袋／海報亞克力座",
       "featured": false,
-      "verifiedAt": "2026-10-28",
+      "verifiedAt": "2026-10-29",
       "sample": false
     },
     {
@@ -129,18 +129,18 @@
         "誠品動漫",
         "八重知行"
       ],
-      "date": "2026-10-02",
-      "endDate": "2026-11-01",
+      "date": "2026-10-06",
+      "endDate": "2026-10-31",
       "timeNote": "2026-10-02 試營運；2026-10-06 正式開幕；營業 11:30–20:00",
       "place": "觀塘巧明街98號 The ANGLE L1 110／112 號舖",
       "mapUrl": "https://www.google.com/maps/search/?api=1&query=%E8%A7%80%E5%A1%98%E5%B7%A7%E6%98%8E%E8%A1%9798%E8%99%9F%20The%20ANGLE%20L1%20110%EF%BC%8F112%20%E8%99%9F%E8%88%96",
       "price": "免費入場（店舖）；開幕優惠至約 10-31",
       "ticketUrl": "",
       "ticketNote": "無／未公布",
-      "source": "https://meet.eslite.com/hk/tc/artshow/202610250001",
-      "notes": "全港首間誠品動漫概念店；10-02試營運已開始；10-06正式開幕／剪綵；開幕主題展《八重知行》。2026-10-26 核實：迷誠品公告 11-01 為展覽閉幕日（加開閉幕感謝簽繪會 15:00–18:00）；AsiaPopups／熊生活…",
+      "source": "https://asiapopups.com/hongkong/events/eslite-anime-hatch-festival/",
+      "notes": "全港首間誠品動漫概念店；10-02試營運；10-06正式開幕／剪綵；開幕主題展《八重知行》。日期已按來源（AsiaPopups／熊生活）改正為 10/6–10/31（看板原先 10/2–11/1；迷誠品另有 11-01 閉幕感謝簽繪會）。",
       "featured": false,
-      "verifiedAt": "2026-10-26",
+      "verifiedAt": "2026-10-28",
       "sample": false
     },
     {
@@ -207,32 +207,9 @@
       "ticketUrl": "",
       "ticketNote": "",
       "source": "https://www.airside.com.hk/zh-hk/happenings/airside-x-kuromi-starlit-sweet-party",
-      "notes": "6米高 Kuromi 裝置＋期間限定店（香港首發夢幻甜品系列）＋Sanrio 烘焙工房體驗。看板先前缺項；2026-10-27 新建。",
+      "notes": "6米高 Kuromi 裝置＋期間限定店（香港首發夢幻甜品系列）＋Sanrio 烘焙工房體驗。看板先前缺項；2026-10-27 新建。2026-10-29 核實：AIRSIDE 官網仍標 10/14–11/08 進行中。",
       "featured": false,
-      "verifiedAt": "2026-10-28",
-      "sample": false
-    },
-    {
-      "id": "1ab4c706e1183f03",
-      "title": "動漫「墨」搏——《香港街頭漫畫》",
-      "status": "進行中",
-      "notionStatus": "進行中",
-      "category": "展覽",
-      "ips": [
-        "香港動漫"
-      ],
-      "date": "2026-10-15",
-      "endDate": "2026-10-28",
-      "timeNote": "2026.10.15–10.28　08:00–23:00",
-      "place": "香港藝術中心2樓動漫基地（灣仔港灣道2號）",
-      "mapUrl": "https://www.google.com/maps/search/?api=1&query=%E9%A6%99%E6%B8%AF%E8%97%9D%E8%A1%93%E4%B8%AD%E5%BF%832%E6%A8%93%E5%8B%95%E6%BC%AB%E5%9F%BA%E5%9C%B0%EF%BC%88%E7%81%A3%E4%BB%94%E6%B8%AF%E7%81%A3%E9%81%932%E8%99%9F%EF%BC%89",
-      "price": "免費",
-      "ticketUrl": "https://www.hkac.org.hk/tc/calendar_detail/?u=10heBDTSa4g",
-      "ticketNote": "",
-      "source": "https://www.hkac.org.hk/tc/calendar_detail/?u=10heBDTSa4g",
-      "notes": "主辦香港藝術中心動漫基地／Dan ARCHER；現場速寫與非虛構漫畫展。2026-10-27 核實仍進行中（至10-28）。",
-      "featured": false,
-      "verifiedAt": "2026-10-28",
+      "verifiedAt": "2026-10-29",
       "sample": false
     },
     {
@@ -253,9 +230,9 @@
       "ticketUrl": "",
       "ticketNote": "",
       "source": "https://www.langhamplace.com.hk/zh-hk/happenings/1008",
-      "notes": "NIJISANJI EN 海外首站，香港限定 BIG 壓克力展示板；VTuber 唔分男女照收。2026-10-25 核實：第一階段今日仍進行中（日末先完），第二階段 10/26–11/07（含 hololive）。唔提早封存。",
+      "notes": "NIJISANJI EN 海外首站，香港限定 BIG 壓克力展示板；VTuber 唔分男女照收。第一階段（NIJISANJI EN）10/15–10/25 已完；第二階段 10/26–11/07（含 hololive）仍進行中至 11/7…",
       "featured": false,
-      "verifiedAt": "2026-10-28",
+      "verifiedAt": "2026-10-29",
       "sample": false
     },
     {
@@ -322,9 +299,9 @@
       "ticketUrl": "https://m.wmoov.com/movie/showtimes/73980",
       "ticketNote": "無／未公布",
       "source": "https://m.wmoov.com/movie/showtimes/73980",
-      "notes": "2026-10-27 核實：kinohk 今日 MCL 等仍有場（約109場／5院）。",
+      "notes": "2026-10-29 核實：kinohk 今日 MCL 等仍有場。維持進行中。",
       "featured": false,
-      "verifiedAt": "2026-10-27",
+      "verifiedAt": "2026-10-29",
       "sample": false
     },
     {
@@ -345,16 +322,16 @@
       "ticketUrl": "https://wmoov.com/movie/showtimes/73934",
       "ticketNote": "無／未公布",
       "source": "https://wmoov.com/movie/post/73934",
-      "notes": "十周年紀念上映；發行木棉花；片長約82–83分；IIA。2026-10-27 核實：wmoov／kinohk 仍有場，並顯示 10-31 場次。",
+      "notes": "十周年紀念上映；發行木棉花；片長約82–83分；IIA。2026-10-29 核實：cinemas.hk／AMC 仍有特典場（圍方／荃新／屯門等週末場）。維持進行中。",
       "featured": false,
-      "verifiedAt": "2026-10-27",
+      "verifiedAt": "2026-10-29",
       "sample": false
     },
     {
       "id": "a92b9b697fd85a78",
       "title": "Sakura Miko 2nd Live \"Blooming Parade!!\" LIVE VIEWING（香港）",
-      "status": "即將開始",
-      "notionStatus": "即將開始",
+      "status": "進行中",
+      "notionStatus": "進行中",
       "category": "LIVE VIEWING",
       "ips": [],
       "date": "2026-10-29",
@@ -366,16 +343,16 @@
       "ticketUrl": "",
       "ticketNote": "10-15 起開售；購票送 A3 海報；英皇 VIP 9 折＋Photocard",
       "source": "https://hkmovie6.com/movie/e7c7edb2-e5f7-458a-8be4-27188398eeb5/Sakura_Miko_2nd_Live_%22Blooming_Parade!!%22_Live_Viewing_in_Cinemas",
-      "notes": "hololive さくらみこ（IP 欄無對應選項，未加新選項）。官方 LV 公告 https://blooming-parade.hololivepro.com/news/04/ 。2026-10-26 新建。",
+      "notes": "hololive さくらみこ（IP 欄無對應選項，未加新選項）。官方 LV 公告 https://blooming-parade.hololivepro.com/news/04/ 。2026-10-26 新建。2026-10-29 日更：…",
       "featured": false,
-      "verifiedAt": "2026-10-26",
+      "verifiedAt": "2026-10-29",
       "sample": false
     },
     {
       "id": "9c6645c39c36fa0c",
       "title": "星夢學園×星光樂園 THE MOVIE -相遇的奇蹟！-",
-      "status": "即將開始",
-      "notionStatus": "即將開始",
+      "status": "進行中",
+      "notionStatus": "進行中",
       "category": "電影",
       "ips": [],
       "date": "2026-10-29",
@@ -389,7 +366,7 @@
       "source": "https://wmoov.com/movie/showtimes/73933",
       "notes": "2026-10-28 修正備註（舊文誤貼哥斯拉-0.0 內容）。星夢學園×星光樂園劇場版，10/29 香港上映；KinoHK／cinemas.hk 10/29 場次：MOViE MOViE 太古城 15:50／17:25／20:05、PR…",
       "featured": false,
-      "verifiedAt": "2026-10-28",
+      "verifiedAt": "2026-10-29",
       "sample": false
     },
     {
@@ -436,29 +413,6 @@
       "notes": "hololive 全員祭延遲上映（非直播；IP 欄暫用「星街すいせい」，無 hololive 選項）。2026-10-26 新建。",
       "featured": false,
       "verifiedAt": "2026-10-26",
-      "sample": false
-    },
-    {
-      "id": "192f1e08bff77b18",
-      "title": "萬聖魔女同人祭 Halloween Witch Festival @ The ANGLE",
-      "status": "即將開始",
-      "notionStatus": "即將開始",
-      "category": "展會",
-      "ips": [
-        "香港動漫"
-      ],
-      "date": "2026-10-31",
-      "endDate": "2026-11-01",
-      "timeNote": "2026-10-31～11-01　市集 11:00–20:00；動漫舞台 14:00–20:00；10-31 L9 另有寵物任務",
-      "place": "觀塘巧明街98號 The ANGLE L1 中庭",
-      "mapUrl": "https://www.google.com/maps/search/?api=1&query=%E8%A7%80%E5%A1%98%E5%B7%A7%E6%98%8E%E8%A1%9798%E8%99%9F%20The%20ANGLE%20L1%20%E4%B8%AD%E5%BA%AD",
-      "price": "免費入場",
-      "ticketUrl": "",
-      "ticketNote": "",
-      "source": "https://acgevent.com/archives/40237",
-      "notes": "Nomad 動漫企劃；逾20同人攤位＋舞台（poketto／Prizm KiSS／DJ緒音等）＋漫畫工作坊。2026-10-27 新建。",
-      "featured": false,
-      "verifiedAt": "2026-10-27",
       "sample": false
     },
     {
@@ -920,29 +874,6 @@
       "sample": false
     },
     {
-      "id": "fdc4d6fbdc9375bd",
-      "title": "霜月式・淬鏡 2026",
-      "status": "即將開始",
-      "notionStatus": "即將開始",
-      "category": "展會",
-      "ips": [
-        "香港動漫"
-      ],
-      "date": "2026-11-15",
-      "endDate": "2026-11-15",
-      "timeNote": "2026-11-15　12:00–20:00（最後入場 19:00）",
-      "place": "Aquabeat 觀塘海濱活動空間 03",
-      "mapUrl": "https://www.google.com/maps/search/?api=1&query=Aquabeat%20%E8%A7%80%E5%A1%98%E6%B5%B7%E6%BF%B1%E6%B4%BB%E5%8B%95%E7%A9%BA%E9%96%93%2003",
-      "price": "早鳥 $40／正價 $50",
-      "ticketUrl": "https://anihk.com/events/shimotsuki-2026",
-      "ticketNote": "港大動漫聯盟第十五屆同人祭；早鳥至 10/18 已過→正價",
-      "source": "https://anihk.com/events/shimotsuki-2026",
-      "notes": "同人攤位／舞台表演／隨舞。來源 anihk。2026-10-25 新建。",
-      "featured": false,
-      "verifiedAt": "2026-10-25",
-      "sample": false
-    },
-    {
       "id": "e2b3f676a69b53d9",
       "title": "名偵探光之美少女電影：不可思議庭園與2人的秘密",
       "status": "即將開始",
@@ -1125,29 +1056,6 @@
       "sample": false
     },
     {
-      "id": "91bdb56d3756db0c",
-      "title": "凝夢祭 Dreamer Fiesta SP 02",
-      "status": "即將開始",
-      "notionStatus": "即將開始",
-      "category": "展會",
-      "ips": [
-        "多 IP"
-      ],
-      "date": "2026-11-28",
-      "endDate": "2026-11-29",
-      "timeNote": "2026-11-28～11-29　12:00–20:00",
-      "place": "觀塘巧明街98號 The ANGLE L1／L8／L9",
-      "mapUrl": "https://www.google.com/maps/search/?api=1&query=%E8%A7%80%E5%A1%98%E5%B7%A7%E6%98%8E%E8%A1%9798%E8%99%9F%20The%20ANGLE%20L1%EF%BC%8FL8%EF%BC%8FL9",
-      "price": "免費入場",
-      "ticketUrl": "",
-      "ticketNote": "",
-      "source": "https://anihk.com/events/dreamer-fiesta-sp-02",
-      "notes": "同人／展會。2026-10-26 新建。",
-      "featured": false,
-      "verifiedAt": "2026-10-26",
-      "sample": false
-    },
-    {
       "id": "bb04b626e197c7e4",
       "title": "fhána 15th Anniversary Tour 2026 “Worldlines” in HongKong",
       "status": "即將開始",
@@ -1236,29 +1144,6 @@
       "notes": "JUNON SUPERBOY 出身演員模特見面會。2026-10-25 新建。",
       "featured": false,
       "verifiedAt": "2026-10-25",
-      "sample": false
-    },
-    {
-      "id": "77e6aacaaecf1784",
-      "title": "Uki-Uki 同人盛會",
-      "status": "即將開始",
-      "notionStatus": "即將開始",
-      "category": "展會",
-      "ips": [
-        "多 IP"
-      ],
-      "date": "2026-12-05",
-      "endDate": "2026-12-06",
-      "timeNote": "2026-12-05～12-06　12:00–19:00",
-      "place": "啟德雙子匯 10/F TT Hall",
-      "mapUrl": "https://www.google.com/maps/search/?api=1&query=%E5%95%9F%E5%BE%B7%E9%9B%99%E5%AD%90%E5%8C%AF%2010%2FF%20TT%20Hall",
-      "price": "待公布",
-      "ticketUrl": "",
-      "ticketNote": "",
-      "source": "https://anihk.com/events/uki-uki-2026",
-      "notes": "同人展。2026-10-26 新建。",
-      "featured": false,
-      "verifiedAt": "2026-10-26",
       "sample": false
     },
     {
@@ -1377,29 +1262,6 @@
       "sample": false
     },
     {
-      "id": "a0bf67b4113ec8fa",
-      "title": "Rainbow Gala 34",
-      "status": "即將開始",
-      "notionStatus": "即將開始",
-      "category": "展會",
-      "ips": [
-        "多 IP"
-      ],
-      "date": "2026-12-25",
-      "endDate": "2026-12-26",
-      "timeNote": "2026-12-25～12-26　12:00–19:00",
-      "place": "亞洲國際博覽館 Hall 6／8（Hall 2 cosplay）",
-      "mapUrl": "https://www.google.com/maps/search/?api=1&query=%E4%BA%9E%E6%B4%B2%E5%9C%8B%E9%9A%9B%E5%8D%9A%E8%A6%BD%E9%A4%A8%20Hall%206%EF%BC%8F8%EF%BC%88Hall%202%20cosplay%EF%BC%89",
-      "price": "",
-      "ticketUrl": "",
-      "ticketNote": "",
-      "source": "https://www.rainbow-gala.com/34/main.html",
-      "notes": "同人展。2026-10-26 新建。",
-      "featured": false,
-      "verifiedAt": "2026-10-26",
-      "sample": false
-    },
-    {
       "id": "d905aee0b729f43f",
       "title": "EIR AOI LIVE TOUR 2026-2027 “UNBOUND” in HONG KONG（藍井エイル）",
       "status": "即將開始",
@@ -1443,6 +1305,27 @@
       "notes": "MYTH & ROID（Re:ゼロ／OVERLORD／幼女戰記 主題曲）。2026-10-26 新建。",
       "featured": false,
       "verifiedAt": "2026-10-26",
+      "sample": false
+    },
+    {
+      "id": "d9ecbed274efec39",
+      "title": "Pokémon RUN 30 香港",
+      "status": "即將開始",
+      "notionStatus": "即將開始",
+      "category": "展會",
+      "ips": [],
+      "date": "2027-01-23",
+      "endDate": "2027-01-24",
+      "timeNote": "2027-01-23～01-24；嘉年華特區開放 09:00–16:00",
+      "place": "香港科學園",
+      "mapUrl": "https://www.google.com/maps/search/?api=1&query=%E9%A6%99%E6%B8%AF%E7%A7%91%E5%AD%B8%E5%9C%92",
+      "price": "路跑：個人 HK$600／二人組或家庭二人組 HK$1,150；嘉年華特區免費入場",
+      "ticketUrl": "https://r-aces.hk/pokemon-run-30",
+      "ticketNote": "路跑報名已額滿；嘉年華特區無需報名、免費入場",
+      "source": "https://hk.portal-pokemon.com/30th/topics/20260603_01/",
+      "notes": "官方（Pokémon Asia 30th Anniversary）。2km 趣味跑；報名 2026-09-01 15:00 開放後約5小時額滿，09-02 補額亦迅即售罄——路跑名額已賣晒。嘉年華特區（Festival Zone）免費入場…",
+      "featured": false,
+      "verifiedAt": "2026-10-28",
       "sample": false
     },
     {
