@@ -1,6 +1,6 @@
 {
   "schema": "events.v2",
-  "updatedAt": "2026-10-29",
+  "updatedAt": "2026-10-30",
   "note": "活動由 Notion「香港ACG情報看板」每日同步（香港時間）。狀態會按日期重算：開始至結束當日係進行中，未開始係即將開始，完結七日內先保留。周邊截止仍然手改 deadlines[]；標成示例嘅截止唔會保留。",
   "events": [
     {
@@ -76,7 +76,7 @@
     {
       "id": "511badb9a7bcac79",
       "title": "EVANGELION 30th Hong Kong Movie Fest（其餘五部）",
-      "status": "進行中",
+      "status": "已完結",
       "notionStatus": "進行中",
       "category": "電影系列",
       "ips": [
@@ -91,9 +91,9 @@
       "ticketUrl": "https://m.wmoov.com/movie/showtimes/20359",
       "ticketNote": "院線／hkmovie6",
       "source": "https://acgevent.com/archives/39869",
-      "notes": "順序：10-01 Air／真心為你／10-08 序／10-15 破／10-22 Q／10-29 終。2026-10-29 核實：wmoov／kinohk《終》今日仍多院場（約21場）。Doc 檔期滯後時以院線為準。死與新生已另列封存。早晨…",
+      "notes": "順序：10-01 Air／真心為你／10-08 序／10-15 破／10-22 Q／10-29 終。2026-10-30 核實：kinohk 今日上映列表仍有《終》同《Q》場次（《終》附香港限定典藏卡）。Doc 檔期滯後時以院線為準。死與…",
       "featured": false,
-      "verifiedAt": "2026-10-29",
+      "verifiedAt": "2026-10-30",
       "sample": false
     },
     {
@@ -282,29 +282,6 @@
       "sample": false
     },
     {
-      "id": "4859cce35801594b",
-      "title": "劇場版 BanG Dream! Ave Mujica prima aurora",
-      "status": "已完結",
-      "notionStatus": "進行中",
-      "category": "電影",
-      "ips": [
-        "BanG Dream! Ave Mujica"
-      ],
-      "date": "2026-10-22",
-      "endDate": "2026-10-22",
-      "timeNote": "2026-10-22",
-      "place": "MCL 長沙灣／德福／AIRSIDE／STAR／K11 Art House 等",
-      "mapUrl": "https://www.google.com/maps/search/?api=1&query=MCL%20%E9%95%B7%E6%B2%99%E7%81%A3%EF%BC%8F%E5%BE%B7%E7%A6%8F%EF%BC%8FAIRSIDE%EF%BC%8FSTAR%EF%BC%8FK11%20Art%20House%20%E7%AD%89",
-      "price": "未公布　發行：木棉花香港",
-      "ticketUrl": "https://m.wmoov.com/movie/showtimes/73980",
-      "ticketNote": "無／未公布",
-      "source": "https://m.wmoov.com/movie/showtimes/73980",
-      "notes": "2026-10-29 核實：kinohk 今日 MCL 等仍有場。維持進行中。",
-      "featured": false,
-      "verifiedAt": "2026-10-29",
-      "sample": false
-    },
-    {
       "id": "52aa1cc386617b96",
       "title": "加速世界 INFINITE BURST（特典場）",
       "status": "已完結",
@@ -330,7 +307,7 @@
     {
       "id": "a92b9b697fd85a78",
       "title": "Sakura Miko 2nd Live \"Blooming Parade!!\" LIVE VIEWING（香港）",
-      "status": "進行中",
+      "status": "已完結",
       "notionStatus": "進行中",
       "category": "LIVE VIEWING",
       "ips": [],
@@ -351,7 +328,7 @@
     {
       "id": "9c6645c39c36fa0c",
       "title": "星夢學園×星光樂園 THE MOVIE -相遇的奇蹟！-",
-      "status": "進行中",
+      "status": "已完結",
       "notionStatus": "進行中",
       "category": "電影",
       "ips": [],
@@ -380,16 +357,16 @@
       ],
       "date": "2026-10-31",
       "endDate": "2026-10-31",
-      "timeNote": "2026-10-31　13:00 加場／18:00 原場",
+      "timeNote": "2026-10-31（六）午場 13:00／晚場 18:00",
       "place": "荃灣帝盛酒店 荃福樓宴會廳",
       "mapUrl": "https://www.google.com/maps/search/?api=1&query=%E8%8D%83%E7%81%A3%E5%B8%9D%E7%9B%9B%E9%85%92%E5%BA%97%20%E8%8D%83%E7%A6%8F%E6%A8%93%E5%AE%B4%E6%9C%83%E5%BB%B3",
       "price": "VIP $999／普通 $699　晚場完売",
       "ticketUrl": "https://www.uutix.com/detail?pId=3789",
       "ticketNote": "",
       "source": "https://www.art-mate.net/doc/97599",
-      "notes": "",
+      "notes": "2026-10-30 依 Drive Doc／art-mate（https://www.art-mate.net/doc/97599）補兩場時間；明日舉行。",
       "featured": false,
-      "verifiedAt": "2026-10-28",
+      "verifiedAt": "2026-10-30",
       "sample": false
     },
     {
@@ -495,16 +472,16 @@
       ],
       "date": "2026-11-01",
       "endDate": "2026-11-01",
-      "timeNote": "2026-11-01　17:00 入場／17:30 開演",
-      "place": "未公布（同日系列；場地待主辦確認）",
-      "mapUrl": "https://www.google.com/maps/search/?api=1&query=%E6%9C%AA%E5%85%AC%E5%B8%83%EF%BC%88%E5%90%8C%E6%97%A5%E7%B3%BB%E5%88%97%EF%BC%9B%E5%A0%B4%E5%9C%B0%E5%BE%85%E4%B8%BB%E8%BE%A6%E7%A2%BA%E8%AA%8D%EF%BC%89",
+      "timeNote": "2026-11-01（日）17:30 開演",
+      "place": "銅鑼灣霎東街33號智選假日酒店2樓 新福記豫園（接續同場天野聰美見面會）",
+      "mapUrl": "https://www.google.com/maps/search/?api=1&query=%E9%8A%85%E9%91%BC%E7%81%A3%E9%9C%8E%E6%9D%B1%E8%A1%9733%E8%99%9F%E6%99%BA%E9%81%B8%E5%81%87%E6%97%A5%E9%85%92%E5%BA%972%E6%A8%93%20%E6%96%B0%E7%A6%8F%E8%A8%98%E8%B1%AB%E5%9C%92%EF%BC%88%E6%8E%A5%E7%BA%8C%E5%90%8C%E5%A0%B4%E5%A4%A9%E9%87%8E%E8%81%B0%E7%BE%8E%E8%A6%8B%E9%9D%A2%E6%9C%83%EF%BC%89",
       "price": "未公布",
-      "ticketUrl": "",
+      "ticketUrl": "https://www.ticketflap.com/zh-hant/ssbxvol7",
       "ticketNote": "無／未公布",
       "source": "https://acgevent.com/archives/40072",
-      "notes": "票價／場地待公布",
+      "notes": "2026-10-30 依 Drive Doc／art-mate（https://www.art-mate.net/doc/100892）補場地、17:30 開演同 Ticketflap 購票連結；同日 14:30 天野聰美場同一場地。",
       "featured": false,
-      "verifiedAt": "2026-09-29",
+      "verifiedAt": "2026-10-30",
       "sample": false
     },
     {
