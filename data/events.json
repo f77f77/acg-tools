@@ -1,6 +1,6 @@
 {
   "schema": "events.v2",
-  "updatedAt": "2026-10-30",
+  "updatedAt": "2026-10-31",
   "note": "活動由 Notion「香港ACG情報看板」每日同步（香港時間）。狀態會按日期重算：開始至結束當日係進行中，未開始係即將開始，完結七日內先保留。周邊截止仍然手改 deadlines[]；標成示例嘅截止唔會保留。",
   "events": [
     {
@@ -349,8 +349,8 @@
     {
       "id": "7391086f30bc4c10",
       "title": "中島由貴 Fan Meeting in Hong Kong",
-      "status": "即將開始",
-      "notionStatus": "即將開始",
+      "status": "進行中",
+      "notionStatus": "進行中",
       "category": "見面會",
       "ips": [
         "中島由貴"
@@ -364,16 +364,16 @@
       "ticketUrl": "https://www.uutix.com/detail?pId=3789",
       "ticketNote": "",
       "source": "https://www.art-mate.net/doc/97599",
-      "notes": "2026-10-30 依 Drive Doc／art-mate（https://www.art-mate.net/doc/97599）補兩場時間；明日舉行。",
+      "notes": "2026-10-30 依 Drive Doc／art-mate（https://www.art-mate.net/doc/97599）補兩場時間。2026-10-31 今日舉行→進行中（Doc 10/31 版同）。",
       "featured": false,
-      "verifiedAt": "2026-10-30",
+      "verifiedAt": "2026-10-31",
       "sample": false
     },
     {
       "id": "27f11b6e83bc1a51",
       "title": "hololive 7th fes. \"Ridin' on Dream\" 延遲上映（香港）",
-      "status": "即將開始",
-      "notionStatus": "即將開始",
+      "status": "進行中",
+      "notionStatus": "進行中",
       "category": "LIVE VIEWING",
       "ips": [
         "星街すいせい"
@@ -387,9 +387,9 @@
       "ticketUrl": "",
       "ticketNote": "",
       "source": "https://hololive.hololivepro.com/en/news/20261016-01-238/",
-      "notes": "hololive 全員祭延遲上映（非直播；IP 欄暫用「星街すいせい」，無 hololive 選項）。2026-10-26 新建。",
+      "notes": "hololive 全員祭延遲上映（非直播；IP 欄暫用「星街すいせい」，無 hololive 選項）。2026-10-26 新建。2026-10-31 首日（STAGE1／2）→進行中，11-01 STAGE3／4。",
       "featured": false,
-      "verifiedAt": "2026-10-26",
+      "verifiedAt": "2026-10-31",
       "sample": false
     },
     {
