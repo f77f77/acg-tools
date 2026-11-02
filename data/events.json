@@ -1,6 +1,6 @@
 {
   "schema": "events.v2",
-  "updatedAt": "2026-11-01",
+  "updatedAt": "2026-11-02",
   "note": "活動由 Notion「香港ACG情報看板」每日同步（香港時間）。狀態會按日期重算：開始至結束當日係進行中，未開始係即將開始，完結七日內先保留。周邊截止仍然手改 deadlines[]；標成示例嘅截止唔會保留。",
   "events": [
     {
@@ -25,29 +25,6 @@
       "notes": "與時代廣場期間限定店分開；主題可麗餅店場景＋打卡",
       "featured": false,
       "verifiedAt": "2026-10-28",
-      "sample": false
-    },
-    {
-      "id": "8970113e1052ef56",
-      "title": "《EVANGELION》系列30th紀念「最後的使者 渚薰展」香港站（海外首展）",
-      "status": "進行中",
-      "notionStatus": "進行中",
-      "category": "展覽",
-      "ips": [
-        "EVANGELION"
-      ],
-      "date": "2026-09-25",
-      "endDate": "2026-11-01",
-      "timeNote": "2026-09-25～11-01　11:00–21:00（最後入場 20:15）",
-      "place": "啟德雙子匯1期10樓 TT SITE　協調道 12 號",
-      "mapUrl": "https://www.google.com/maps/search/?api=1&query=%E5%95%9F%E5%BE%B7%E9%9B%99%E5%AD%90%E5%8C%AF1%E6%9C%9F10%E6%A8%93%20TT%20SITE%E3%80%80%E5%8D%94%E8%AA%BF%E9%81%93%2012%20%E8%99%9F",
-      "price": "展期 $120／優惠 $100（早鳥已截止）；KLOOK／HK01 Space 須選日時段",
-      "ticketUrl": "https://space.hk01.com/event/6a90f429885dd977b8fe01de",
-      "ticketNote": "",
-      "source": "https://blog.enjoymovie.net/eva-kaworu-exhibition-hong-kong-2026/",
-      "notes": "海外首展；MUSE×TRAILBLAZER；同樓 EVANGELION 30th 重映期間限定店至 11/12。2026-11-01：Doc／官宣今日最後一日→維持進行中；聽日可封存。",
-      "featured": false,
-      "verifiedAt": "2026-11-01",
       "sample": false
     },
     {
@@ -92,78 +69,6 @@
       "ticketNote": "院線／hkmovie6",
       "source": "https://acgevent.com/archives/39869",
       "notes": "順序：10-01 Air／真心為你／10-08 序／10-15 破／10-22 Q／10-29 終。2026-11-01 核實：wmoov／院線今日仍有《終》多場同《Q》場次（另見《破》零星）。Doc 檔期滯後時以院線為準。死與新生已另列…",
-      "featured": false,
-      "verifiedAt": "2026-11-01",
-      "sample": false
-    },
-    {
-      "id": "e455c27ab75b4b03",
-      "title": "誠品動漫 eslite Anime 試營運／開幕＋《八重知行》主題展覽",
-      "status": "進行中",
-      "notionStatus": "進行中",
-      "category": "店舖／展覽",
-      "ips": [
-        "誠品動漫",
-        "八重知行"
-      ],
-      "date": "2026-10-06",
-      "endDate": "2026-11-01",
-      "timeNote": "2026-10-02 試營運；2026-10-06 正式開幕；主題展《八重知行》原標至 10/31；閉幕感謝簽繪會 11/1 15:00–18:00",
-      "place": "觀塘巧明街98號 The ANGLE L1 110／112 號舖",
-      "mapUrl": "https://www.google.com/maps/search/?api=1&query=%E8%A7%80%E5%A1%98%E5%B7%A7%E6%98%8E%E8%A1%9798%E8%99%9F%20The%20ANGLE%20L1%20110%EF%BC%8F112%20%E8%99%9F%E8%88%96",
-      "price": "免費入場（店舖）；開幕優惠至約 10-31",
-      "ticketUrl": "",
-      "ticketNote": "無／未公布",
-      "source": "https://asiapopups.com/hongkong/events/eslite-anime-hatch-festival/",
-      "notes": "全港首間誠品動漫概念店；開幕主題展《八重知行》。主題展官方標 10/6–10/31；迷誠品另有 11/1 閉幕感謝簽繪會（Mi-chi live drawing 15:00–18:00）。2026-11-01：今日最後相關活動日→維持進行…",
-      "featured": false,
-      "verifiedAt": "2026-11-01",
-      "sample": false
-    },
-    {
-      "id": "bcbb08fe54141a96",
-      "title": "Toys Assemble 玩具集結 @ 黃埔天地",
-      "status": "進行中",
-      "notionStatus": "進行中",
-      "category": "展覽",
-      "ips": [
-        "爆旋陀螺 X",
-        "我係小忌廉",
-        "多 IP"
-      ],
-      "date": "2026-10-10",
-      "endDate": "2026-11-01",
-      "timeNote": "2026-10-10～11-01；變裝少女珍藏展 10/23–30；週末市集／試玩 10/31–11/1；爆旋陀螺對戰區同期",
-      "place": "紅磡黃埔天地時尚坊 MTR 層（爆旋陀螺：聚寶坊 B1）",
-      "mapUrl": "https://www.google.com/maps/search/?api=1&query=%E7%B4%85%E7%A3%A1%E9%BB%83%E5%9F%94%E5%A4%A9%E5%9C%B0%E6%99%82%E5%B0%9A%E5%9D%8A%20MTR%20%E5%B1%A4%EF%BC%88%E7%88%86%E6%97%8B%E9%99%80%E8%9E%BA%EF%BC%9A%E8%81%9A%E5%AF%B6%E5%9D%8A%20B1%EF%BC%89",
-      "price": "免費入場（正規比賽另見 ArenaSpot 報名）",
-      "ticketUrl": "",
-      "ticketNote": "現場自由入場；比賽報名見 ArenaSpot",
-      "source": "https://timable.com/hk/en/event/6ac4a165a075997c8aef946f/ToysAssemble-%E7%8E%A9%E5%85%B7%E9%9B%86%E7%B5%90-%E9%BB%83%E5%9F%94%E5%A4%A9%E5%9C%B0",
-      "notes": "黃埔天地玩具集結。2026-11-01：標示至今日最後一日→維持進行中；聽日可封存。",
-      "featured": false,
-      "verifiedAt": "2026-11-01",
-      "sample": false
-    },
-    {
-      "id": "e8a35126c07d65d5",
-      "title": "暗喻幻想：ReFantazio 主題活動＋Gratte @ animate 香港",
-      "status": "進行中",
-      "notionStatus": "進行中",
-      "category": "店內活動",
-      "ips": [
-        "暗喻幻想：ReFantazio"
-      ],
-      "date": "2026-10-10",
-      "endDate": "2026-11-01",
-      "timeNote": "2026-10-10～11-01　フェア；Gratte 10-11～11-01",
-      "place": "旺角 T.O.P 4樓 animate 香港",
-      "mapUrl": "https://www.google.com/maps/search/?api=1&query=%E6%97%BA%E8%A7%92%20T.O.P%204%E6%A8%93%20animate%20%E9%A6%99%E6%B8%AF",
-      "price": "免費入場（店內活動／飲品）",
-      "ticketUrl": "https://www.animate.co.jp/zh-tc/shop/hongkong/",
-      "ticketNote": "",
-      "source": "https://prtimes.jp/main/html/rd/p/000007362.000005397.html",
-      "notes": "animate 香港《暗喻幻想》主題活動＋Gratte。2026-11-01：標示至今日最後一日→維持進行中；聽日可封存。",
       "featured": false,
       "verifiedAt": "2026-11-01",
       "sample": false
@@ -236,29 +141,6 @@
       "sample": false
     },
     {
-      "id": "eb363211f2849a05",
-      "title": "「在海的間隙裡」約克漫畫原稿展",
-      "status": "進行中",
-      "notionStatus": "進行中",
-      "category": "展覽",
-      "ips": [
-        "香港動漫"
-      ],
-      "date": "2026-10-21",
-      "endDate": "2026-11-01",
-      "timeNote": "2026-10-21～11-01　每日 09:00–18:00；約克本人 10-25／11-01 到場",
-      "place": "西營盤 ztoryhome（皇后大道西118號1樓）",
-      "mapUrl": "https://www.google.com/maps/search/?api=1&query=%E8%A5%BF%E7%87%9F%E7%9B%A4%20ztoryhome%EF%BC%88%E7%9A%87%E5%90%8E%E5%A4%A7%E9%81%93%E8%A5%BF118%E8%99%9F1%E6%A8%93%EF%BC%89",
-      "price": "免費",
-      "ticketUrl": "",
-      "ticketNote": "",
-      "source": "https://www.art-mate.net/doc/101199",
-      "notes": "「在海的間隙裡」約克漫畫原稿展。2026-11-01：標示至今日最後一日→維持進行中；聽日可封存。",
-      "featured": false,
-      "verifiedAt": "2026-11-01",
-      "sample": false
-    },
-    {
       "id": "9c6645c39c36fa0c",
       "title": "星夢學園×星光樂園 THE MOVIE -相遇的奇蹟！-",
       "status": "已完結",
@@ -277,121 +159,6 @@
       "notes": "2026-10-28 修正備註（舊文誤貼哥斯拉-0.0 內容）。星夢學園×星光樂園劇場版，10/29 香港上映；KinoHK／cinemas.hk 10/29 場次：MOViE MOViE 太古城 15:50／17:25／20:05、PR…",
       "featured": false,
       "verifiedAt": "2026-10-29",
-      "sample": false
-    },
-    {
-      "id": "27f11b6e83bc1a51",
-      "title": "hololive 7th fes. \"Ridin' on Dream\" 延遲上映（香港）",
-      "status": "進行中",
-      "notionStatus": "進行中",
-      "category": "LIVE VIEWING",
-      "ips": [
-        "星街すいせい"
-      ],
-      "date": "2026-10-31",
-      "endDate": "2026-11-01",
-      "timeNote": "10-31 STAGE1／2　11:50／15:10；11-01 STAGE3／4　11:50／15:10",
-      "place": "英皇戲院 銅鑼灣時代廣場",
-      "mapUrl": "https://www.google.com/maps/search/?api=1&query=%E8%8B%B1%E7%9A%87%E6%88%B2%E9%99%A2%20%E9%8A%85%E9%91%BC%E7%81%A3%E6%99%82%E4%BB%A3%E5%BB%A3%E5%A0%B4",
-      "price": "",
-      "ticketUrl": "",
-      "ticketNote": "",
-      "source": "https://hololive.hololivepro.com/en/news/20261016-01-238/",
-      "notes": "hololive 全員祭延遲上映（非直播；IP 欄暫用「星街すいせい」，無 hololive 選項）。2026-10-26 新建。2026-11-01：今日 STAGE3／4 最後一日→維持進行中；聽日可封存。",
-      "featured": false,
-      "verifiedAt": "2026-11-01",
-      "sample": false
-    },
-    {
-      "id": "73706ac24faeaa01",
-      "title": "《進擊的巨人》— Symphony from Paradis — 官方管弦音樂會（香港站）",
-      "status": "進行中",
-      "notionStatus": "進行中",
-      "category": "演唱會",
-      "ips": [],
-      "date": "2026-11-01",
-      "endDate": "2026-11-01",
-      "timeNote": "2026-11-01（日）20:00",
-      "place": "亞洲國際博覽館 AsiaWorld-Arena（一號展館）　赤鱲角",
-      "mapUrl": "https://www.google.com/maps/search/?api=1&query=%E4%BA%9E%E6%B4%B2%E5%9C%8B%E9%9A%9B%E5%8D%9A%E8%A6%BD%E9%A4%A8%20AsiaWorld-Arena%EF%BC%88%E4%B8%80%E8%99%9F%E5%B1%95%E9%A4%A8%EF%BC%89%E3%80%80%E8%B5%A4%E9%B1%B2%E8%A7%92",
-      "price": "HK$980／880／680；13歲以上",
-      "ticketUrl": "https://www.hkticketing.com/",
-      "ticketNote": "",
-      "source": "https://zh.ccohk.com/events/2026-2027/attack-on-titan-symphony-from-paradis",
-      "notes": "澤野弘之／山本康太監修官方管弦樂；100+樂手及合唱團＋HD動畫影像。2026-5-7 快達票已開售。看板先前缺項；2026-10-27 新建。2026-11-01 今日 20:00 AsiaWorld-Arena→進行中。",
-      "featured": false,
-      "verifiedAt": "2026-11-01",
-      "sample": false
-    },
-    {
-      "id": "86d899b8ae0d9f97",
-      "title": "安齋由香里 2026 香港粉絲見面會",
-      "status": "進行中",
-      "notionStatus": "進行中",
-      "category": "見面會",
-      "ips": [
-        "偶像大師灰姑娘女孩等"
-      ],
-      "date": "2026-11-01",
-      "endDate": "2026-11-01",
-      "timeNote": "2026-11-01　日場 12:30入場／13:00開演；夜場 16:30入場／17:00開演",
-      "place": "荃灣帝盛酒店宴會廳A",
-      "mapUrl": "https://www.google.com/maps/search/?api=1&query=%E8%8D%83%E7%81%A3%E5%B8%9D%E7%9B%9B%E9%85%92%E5%BA%97%E5%AE%B4%E6%9C%83%E5%BB%B3A",
-      "price": "S席 HKD880／普通票 HKD480",
-      "ticketUrl": "https://www.art-mate.net/doc/100569",
-      "ticketNote": "",
-      "source": "https://www.art-mate.net/doc/100569",
-      "notes": "主辦閃景燈火／Takumi Production／Cosplay Galerie；S票手渡TO簽＋印簽生寫；普通票見送會＋印簽生寫。2026-10-24 修正：此列先前誤填孤獨搖滾動畫展內容，已還原為安齋見面會。2026-11-01 今日…",
-      "featured": false,
-      "verifiedAt": "2026-11-01",
-      "sample": false
-    },
-    {
-      "id": "018a8fcd5a8e5f00",
-      "title": "聲聲不息 Vol.06 天野聰美 香港粉絲見面會",
-      "status": "進行中",
-      "notionStatus": "進行中",
-      "category": "見面會",
-      "ips": [
-        "天野聰美",
-        "偶像大師灰姑娘女孩等"
-      ],
-      "date": "2026-11-01",
-      "endDate": "2026-11-01",
-      "timeNote": "2026-11-01　14:30 開演（art-mate／Ticketflap）",
-      "place": "銅鑼灣智選假日酒店 2樓 新福記豫園",
-      "mapUrl": "https://www.google.com/maps/search/?api=1&query=%E9%8A%85%E9%91%BC%E7%81%A3%E6%99%BA%E9%81%B8%E5%81%87%E6%97%A5%E9%85%92%E5%BA%97%202%E6%A8%93%20%E6%96%B0%E7%A6%8F%E8%A8%98%E8%B1%AB%E5%9C%92",
-      "price": "HKD 980／680",
-      "ticketUrl": "https://www.ticketflap.com/zh-hant/ssbxvol6",
-      "ticketNote": "無／未公布",
-      "source": "https://www.art-mate.net/doc/100888",
-      "notes": "當日或有特別嘉賓。2026-10-24 核實：art-mate 標 14:30；Ticketflap 開售。2026-11-01 今日舉行→進行中。",
-      "featured": false,
-      "verifiedAt": "2026-11-01",
-      "sample": false
-    },
-    {
-      "id": "ec38012c772ab7e7",
-      "title": "聲聲不息 Vol.07 結名美月 香港粉絲見面會",
-      "status": "進行中",
-      "notionStatus": "進行中",
-      "category": "見面會",
-      "ips": [
-        "結名美月",
-        "偶像大師閃耀色彩等"
-      ],
-      "date": "2026-11-01",
-      "endDate": "2026-11-01",
-      "timeNote": "2026-11-01（日）17:30 開演",
-      "place": "銅鑼灣霎東街33號智選假日酒店2樓 新福記豫園（接續同場天野聰美見面會）",
-      "mapUrl": "https://www.google.com/maps/search/?api=1&query=%E9%8A%85%E9%91%BC%E7%81%A3%E9%9C%8E%E6%9D%B1%E8%A1%9733%E8%99%9F%E6%99%BA%E9%81%B8%E5%81%87%E6%97%A5%E9%85%92%E5%BA%972%E6%A8%93%20%E6%96%B0%E7%A6%8F%E8%A8%98%E8%B1%AB%E5%9C%92%EF%BC%88%E6%8E%A5%E7%BA%8C%E5%90%8C%E5%A0%B4%E5%A4%A9%E9%87%8E%E8%81%B0%E7%BE%8E%E8%A6%8B%E9%9D%A2%E6%9C%83%EF%BC%89",
-      "price": "未公布",
-      "ticketUrl": "https://www.ticketflap.com/zh-hant/ssbxvol7",
-      "ticketNote": "無／未公布",
-      "source": "https://acgevent.com/archives/40072",
-      "notes": "2026-10-30 依 Drive Doc／art-mate（https://www.art-mate.net/doc/100892）補場地、17:30 開演同 Ticketflap 購票連結；同日 14:30 天野聰美場同一場地。20…",
-      "featured": false,
-      "verifiedAt": "2026-11-01",
       "sample": false
     },
     {
