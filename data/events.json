@@ -1,6 +1,6 @@
 {
   "schema": "events.v2",
-  "updatedAt": "2026-11-02",
+  "updatedAt": "2026-11-03",
   "note": "活動由 Notion「香港ACG情報看板」每日同步（香港時間）。狀態會按日期重算：開始至結束當日係進行中，未開始係即將開始，完結七日內先保留。周邊截止仍然手改 deadlines[]；標成示例嘅截止唔會保留。",
   "events": [
     {
@@ -68,9 +68,9 @@
       "ticketUrl": "https://m.wmoov.com/movie/showtimes/57029",
       "ticketNote": "院線／hkmovie6",
       "source": "https://acgevent.com/archives/39869",
-      "notes": "順序：10-01 Air／真心為你／10-08 序／10-15 破／10-22 Q／10-29 終。2026-11-01 核實：wmoov／院線今日仍有《終》多場同《Q》場次（另見《破》零星）。Doc 檔期滯後時以院線為準。死與新生已另列…",
+      "notes": "順序：10-01 Air／真心為你／10-08 序／10-15 破／10-22 Q／10-29 終。2026-11-03 核實：wmoov《終》今日仍多院有場。Doc 檔期滯後時以院線為準。死與新生已另列封存。",
       "featured": false,
-      "verifiedAt": "2026-11-01",
+      "verifiedAt": "2026-11-03",
       "sample": false
     },
     {
@@ -138,27 +138,6 @@
       "notes": "2026-10-28 新建。M+ 特別展覽，第三章「從《哥斯拉》到《攻殼機動隊》」聚焦戰後日本漫畫／動畫（小飛俠阿童木、哥斯拉、百變小櫻、攻殼機動隊背景畫等）；第四章講動漫美學對藝術／遊戲／數碼文化影響。M+ 戲院另有《攻殼機動隊》《攻殼…",
       "featured": false,
       "verifiedAt": "2026-10-28",
-      "sample": false
-    },
-    {
-      "id": "9c6645c39c36fa0c",
-      "title": "星夢學園×星光樂園 THE MOVIE -相遇的奇蹟！-",
-      "status": "已完結",
-      "notionStatus": "進行中",
-      "category": "電影",
-      "ips": [],
-      "date": "2026-10-29",
-      "endDate": "2026-10-29",
-      "timeNote": "",
-      "place": "MOViE MOViE 太古城、PREMIERE ELEMENTS、B+ cinema MOKO（約 3 間）",
-      "mapUrl": "https://www.google.com/maps/search/?api=1&query=MOViE%20MOViE%20%E5%A4%AA%E5%8F%A4%E5%9F%8E%E3%80%81PREMIERE%20ELEMENTS%E3%80%81B%2B%20cinema%20MOKO%EF%BC%88%E7%B4%84%203%20%E9%96%93%EF%BC%89",
-      "price": "約 HK$100–110",
-      "ticketUrl": "",
-      "ticketNote": "",
-      "source": "https://wmoov.com/movie/showtimes/73933",
-      "notes": "2026-10-28 修正備註（舊文誤貼哥斯拉-0.0 內容）。星夢學園×星光樂園劇場版，10/29 香港上映；KinoHK／cinemas.hk 10/29 場次：MOViE MOViE 太古城 15:50／17:25／20:05、PR…",
-      "featured": false,
-      "verifiedAt": "2026-10-29",
       "sample": false
     },
     {
@@ -364,7 +343,7 @@
       "source": "https://www.microworksacg.com/en/blogs/news/muse-pop-fest-powered-by-%e5%8b%95%e6%bc%ab%e8%81%af%e5%8b%95-%e5%8d%b3%e5%b0%87%e7%99%bb%e9%99%b8%e5%9c%8d%e6%96%b9",
       "notes": "動漫聯動 Pop Fest；來源 Microworks／asiapopups／timable。2026-10-25 新建。",
       "featured": false,
-      "verifiedAt": "2026-10-28",
+      "verifiedAt": "2026-11-03",
       "sample": false
     },
     {
@@ -476,7 +455,7 @@
       "source": "https://acgevent.com/archives/40077",
       "notes": "晝夜兩場；同日對上堀海登",
       "featured": false,
-      "verifiedAt": "2026-10-05",
+      "verifiedAt": "2026-11-03",
       "sample": false
     },
     {
