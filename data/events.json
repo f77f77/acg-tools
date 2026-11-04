@@ -1,6 +1,6 @@
 {
   "schema": "events.v2",
-  "updatedAt": "2026-11-03",
+  "updatedAt": "2026-11-04",
   "note": "活動由 Notion「香港ACG情報看板」每日同步（香港時間）。狀態會按日期重算：開始至結束當日係進行中，未開始係即將開始，完結七日內先保留。周邊截止仍然手改 deadlines[]；標成示例嘅截止唔會保留。",
   "events": [
     {
@@ -70,7 +70,7 @@
       "source": "https://acgevent.com/archives/39869",
       "notes": "順序：10-01 Air／真心為你／10-08 序／10-15 破／10-22 Q／10-29 終。2026-11-03 核實：wmoov《終》今日仍多院有場。Doc 檔期滯後時以院線為準。死與新生已另列封存。",
       "featured": false,
-      "verifiedAt": "2026-11-03",
+      "verifiedAt": "2026-11-04",
       "sample": false
     },
     {
@@ -435,6 +435,27 @@
       "sample": false
     },
     {
+      "id": "e383e1ecda2d63eb",
+      "title": "天野浩成香港見面會2026（Japanese Artist Series 16）",
+      "status": "即將開始",
+      "notionStatus": "即將開始",
+      "category": "見面會",
+      "ips": [],
+      "date": "2026-11-14",
+      "endDate": "2026-11-14",
+      "timeNote": "第一場 11:30入場／12:00開演；第二場 17:00入場／17:30開演",
+      "place": "尖沙咀 海景嘉福洲際酒店 Picasso Room",
+      "mapUrl": "https://www.google.com/maps/search/?api=1&query=%E5%B0%96%E6%B2%99%E5%92%80%20%E6%B5%B7%E6%99%AF%E5%98%89%E7%A6%8F%E6%B4%B2%E9%9A%9B%E9%85%92%E5%BA%97%20Picasso%20Room",
+      "price": "SVIP HK$1,380／VIP HK$1,180／A席 HK$880",
+      "ticketUrl": "https://monsterkingent.com/p/jpas16",
+      "ticketNote": "怪獸王娛樂官網（08-27 起發售）",
+      "source": "https://monsterkingent.com/p/jpas16",
+      "notes": "2026-11-04 新建；特攝演員（假面騎士劍 橘朔也）；主辦怪獸王娛樂。",
+      "featured": false,
+      "verifiedAt": "2026-11-04",
+      "sample": false
+    },
+    {
       "id": "423b48ab5317d3b2",
       "title": "近藤玲奈 FanMeeting in Hong Kong",
       "status": "即將開始",
@@ -706,6 +727,48 @@
       "sample": false
     },
     {
+      "id": "16ccab17251a193e",
+      "title": "反田葉月 香港粉絲見面會 2026",
+      "status": "即將開始",
+      "notionStatus": "即將開始",
+      "category": "見面會",
+      "ips": [],
+      "date": "2026-11-28",
+      "endDate": "2026-11-28",
+      "timeNote": "第1部 12:00入場／12:30開演；第2部 18:00入場／18:30開演",
+      "place": "荃灣帝盛酒店 荃福樓宴會廳",
+      "mapUrl": "https://www.google.com/maps/search/?api=1&query=%E8%8D%83%E7%81%A3%E5%B8%9D%E7%9B%9B%E9%85%92%E5%BA%97%20%E8%8D%83%E7%A6%8F%E6%A8%93%E5%AE%B4%E6%9C%83%E5%BB%B3",
+      "price": "VIP HK$1,128／普通 HK$670",
+      "ticketUrl": "",
+      "ticketNote": "uutix／bilibili 會員購（07-13 起發售）",
+      "source": "https://ugo-hk.com/concert/17729/",
+      "notes": "2026-11-04 新建；聲優反田葉月第二次香港見面會；VIP 已售罄、普通票餘少量（據報道）。",
+      "featured": false,
+      "verifiedAt": "2026-11-04",
+      "sample": false
+    },
+    {
+      "id": "7d128e84b3e97766",
+      "title": "犬飼貴丈香港見面會2026（Japanese Artist Series 17）",
+      "status": "即將開始",
+      "notionStatus": "即將開始",
+      "category": "見面會",
+      "ips": [],
+      "date": "2026-11-28",
+      "endDate": "2026-11-28",
+      "timeNote": "第一場 11:15入場／12:00開演；第二場 16:45入場／17:30開演",
+      "place": "悅來酒店 宴會廳",
+      "mapUrl": "https://www.google.com/maps/search/?api=1&query=%E6%82%85%E4%BE%86%E9%85%92%E5%BA%97%20%E5%AE%B4%E6%9C%83%E5%BB%B3",
+      "price": "VIP HK$1,180／A席 HK$880",
+      "ticketUrl": "https://monsterkingent.com/p/jpas17",
+      "ticketNote": "怪獸王娛樂官網、UUTIX（10-23 起發售）",
+      "source": "https://monsterkingent.com/p/jpas17",
+      "notes": "2026-11-04 新建；特攝演員（假面騎士Build 桐生戰兔）；主辦怪獸王娛樂。註：EventCollection 標麗豪航天城酒店，以主辦官網「悅來酒店」為準。",
+      "featured": false,
+      "verifiedAt": "2026-11-04",
+      "sample": false
+    },
+    {
       "id": "29f430f052d227a9",
       "title": "紡木吏佐2026香港粉絲見面會",
       "status": "即將開始",
@@ -774,6 +837,27 @@
       "notes": "",
       "featured": false,
       "verifiedAt": "2026-09-29",
+      "sample": false
+    },
+    {
+      "id": "15332904557f04a9",
+      "title": "少女與戰車 最終章 ～第5話～（香港上映）",
+      "status": "即將開始",
+      "notionStatus": "即將開始",
+      "category": "電影",
+      "ips": [],
+      "date": "2026-12-03",
+      "endDate": "2026-12-03",
+      "timeNote": "2026-12-03（四）香港公映",
+      "place": "全港院線（戲院／場次未公布）",
+      "mapUrl": "https://www.google.com/maps/search/?api=1&query=%E5%85%A8%E6%B8%AF%E9%99%A2%E7%B7%9A%EF%BC%88%E6%88%B2%E9%99%A2%EF%BC%8F%E5%A0%B4%E6%AC%A1%E6%9C%AA%E5%85%AC%E5%B8%83%EF%BC%89",
+      "price": "未公布",
+      "ticketUrl": "",
+      "ticketNote": "院線／未公布",
+      "source": "https://wmoov.com/movie/details/74196",
+      "notes": "2026-11-04 新建；發行新映影片；日語；約55分鐘；2D／4DX／MX4D。日本 2026-10-09 上映。",
+      "featured": false,
+      "verifiedAt": "2026-11-04",
       "sample": false
     },
     {
@@ -937,6 +1021,27 @@
       "sample": false
     },
     {
+      "id": "152945d3d87c85a0",
+      "title": "久保田未夢 香港 Fan Meeting 2026",
+      "status": "即將開始",
+      "notionStatus": "即將開始",
+      "category": "見面會",
+      "ips": [],
+      "date": "2026-12-19",
+      "endDate": "2026-12-19",
+      "timeNote": "2026-12-19（六）；時間未公布",
+      "place": "尖沙咀 香港諾富特世紀酒店 Plaza Room",
+      "mapUrl": "https://www.google.com/maps/search/?api=1&query=%E5%B0%96%E6%B2%99%E5%92%80%20%E9%A6%99%E6%B8%AF%E8%AB%BE%E5%AF%8C%E7%89%B9%E4%B8%96%E7%B4%80%E9%85%92%E5%BA%97%20Plaza%20Room",
+      "price": "未公布",
+      "ticketUrl": "",
+      "ticketNote": "未公布（11月上旬公布）",
+      "source": "https://iris.dive2ent.com/news/detail.php?id=1136921",
+      "notes": "2026-11-04 新建；i☆Ris 成員；主辦黑眼圈文化（@PandaE_C）／NonStop Hong Kong；票務詳情官方稱11月上旬公布。",
+      "featured": false,
+      "verifiedAt": "2026-11-04",
+      "sample": false
+    },
+    {
       "id": "d905aee0b729f43f",
       "title": "EIR AOI LIVE TOUR 2026-2027 “UNBOUND” in HONG KONG（藍井エイル）",
       "status": "即將開始",
@@ -1068,6 +1173,29 @@
       "notes": "羚邦旗艦；主題 Super Charged／IP×運動；與希慎 CON-CON THE MIX 同期宣佈",
       "featured": false,
       "verifiedAt": "2026-10-09",
+      "sample": false
+    },
+    {
+      "id": "51d3d73221d1aab9",
+      "title": "結束バンド ASIA TOUR 2027 “To Asia.” in Hong Kong",
+      "status": "即將開始",
+      "notionStatus": "即將開始",
+      "category": "演唱會",
+      "ips": [
+        "anisong"
+      ],
+      "date": "2027-05-22",
+      "endDate": "2027-05-22",
+      "timeNote": "2027-05-22（六）19:00（Flytix 標示）",
+      "place": "亞洲國際博覽館 AsiaWorld-Expo",
+      "mapUrl": "https://www.google.com/maps/search/?api=1&query=%E4%BA%9E%E6%B4%B2%E5%9C%8B%E9%9A%9B%E5%8D%9A%E8%A6%BD%E9%A4%A8%20AsiaWorld-Expo",
+      "price": "未公布",
+      "ticketUrl": "https://flytix.live/concerts/24B57E6B-F39F-4231-844A-39F3A38D6AAC",
+      "ticketNote": "香港站售票資訊官方稍後公布（Flytix 已上架活動頁）",
+      "source": "https://news.aniplex.co.jp/detail.html?id=71601",
+      "notes": "2026-11-04 新建；《孤獨搖滾！》結束バンド首次亞巡（大阪3/13–14、首爾5/8、香港5/22）；出演青山吉能、鈴代紗弓、水野朔、長谷川育美。",
+      "featured": false,
+      "verifiedAt": "2026-11-04",
       "sample": false
     },
     {
