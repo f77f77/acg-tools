@@ -1,6 +1,6 @@
 {
   "schema": "events.v2",
-  "updatedAt": "2026-11-04",
+  "updatedAt": "2026-11-05",
   "note": "活動由 Notion「香港ACG情報看板」每日同步（香港時間）。狀態會按日期重算：開始至結束當日係進行中，未開始係即將開始，完結七日內先保留。周邊截止仍然手改 deadlines[]；標成示例嘅截止唔會保留。",
   "events": [
     {
@@ -68,9 +68,9 @@
       "ticketUrl": "https://m.wmoov.com/movie/showtimes/57029",
       "ticketNote": "院線／hkmovie6",
       "source": "https://acgevent.com/archives/39869",
-      "notes": "順序：10-01 Air／真心為你／10-08 序／10-15 破／10-22 Q／10-29 終。2026-11-03 核實：wmoov《終》今日仍多院有場。Doc 檔期滯後時以院線為準。死與新生已另列封存。",
+      "notes": "順序：10-01 Air／真心為你／10-08 序／10-15 破／10-22 Q／10-29 終。2026-11-05 核實：wmoov《終》showtimes/57029 今日仍多院有場。Doc 檔期滯後時以院線為準。死與新生已另列封…",
       "featured": false,
-      "verifiedAt": "2026-11-04",
+      "verifiedAt": "2026-11-05",
       "sample": false
     },
     {
@@ -114,7 +114,7 @@
       "source": "https://www.langhamplace.com.hk/zh-hk/happenings/1008",
       "notes": "NIJISANJI EN 海外首站，香港限定 BIG 壓克力展示板；VTuber 唔分男女照收。第一階段（NIJISANJI EN）10/15–10/25 已完；第二階段 10/26–11/07（含 hololive）仍進行中至 11/7…",
       "featured": false,
-      "verifiedAt": "2026-10-29",
+      "verifiedAt": "2026-11-05",
       "sample": false
     },
     {
@@ -143,29 +143,29 @@
     {
       "id": "edf04eb78a21acef",
       "title": "《致遙不可及彼方的你》香港上映",
-      "status": "即將開始",
-      "notionStatus": "即將開始",
+      "status": "進行中",
+      "notionStatus": "進行中",
       "category": "電影",
       "ips": [],
       "date": "2026-11-05",
       "endDate": "2026-11-05",
-      "timeNote": "2026-11-05 上映；116 分鐘；日語原聲中文字幕",
+      "timeNote": "2026-11-05 起上映；116 分鐘；日語原聲中文字幕",
       "place": "香港各大戲院",
       "mapUrl": "https://www.google.com/maps/search/?api=1&query=%E9%A6%99%E6%B8%AF%E5%90%84%E5%A4%A7%E6%88%B2%E9%99%A2",
       "price": "",
-      "ticketUrl": "",
+      "ticketUrl": "https://m.wmoov.com/movie/showtimes/73979",
       "ticketNote": "",
       "source": "https://kinohk.com/movie/to-you-in-the-beyond-2026",
-      "notes": "日本原創動畫電影（To You in the Beyond），導演和田純一；聲演石橋陽彩／永瀬安娜／上坂すみれ。興趣度未確定（原創奇幻，非少女向），先收備考。另見 https://m.wmoov.com/movie/details/739…",
+      "notes": "日本原創動畫電影（To You in the Beyond），導演和田純一；聲演石橋陽彩／永瀬安娜／上坂すみれ。興趣度未確定（原創奇幻，非少女向），先收備考。wmoov：https://m.wmoov.com/movie/showtime…",
       "featured": false,
-      "verifiedAt": "2026-10-26",
+      "verifiedAt": "2026-11-05",
       "sample": false
     },
     {
       "id": "07870a454cab94aa",
       "title": "哥斯拉-0.0",
-      "status": "即將開始",
-      "notionStatus": "即將開始",
+      "status": "進行中",
+      "notionStatus": "進行中",
       "category": "電影",
       "ips": [
         "哥斯拉",
@@ -173,16 +173,16 @@
       ],
       "date": "2026-11-05",
       "endDate": "2026-11-05",
-      "timeNote": "2026-11-05 香港上映（WMOOV 即將上映；場次未出）",
-      "place": "未公布　發行：洲立　IMAX",
-      "mapUrl": "https://www.google.com/maps/search/?api=1&query=%E6%9C%AA%E5%85%AC%E5%B8%83%E3%80%80%E7%99%BC%E8%A1%8C%EF%BC%9A%E6%B4%B2%E7%AB%8B%E3%80%80IMAX",
-      "price": "未公布",
-      "ticketUrl": "",
-      "ticketNote": "無／未公布",
+      "timeNote": "2026-11-05 香港上映；wmoov 今日多院有場",
+      "place": "全港院線（英皇、MCL、百老匯、影藝等）　發行：洲立　IMAX",
+      "mapUrl": "https://www.google.com/maps/search/?api=1&query=%E5%85%A8%E6%B8%AF%E9%99%A2%E7%B7%9A%EF%BC%88%E8%8B%B1%E7%9A%87%E3%80%81MCL%E3%80%81%E7%99%BE%E8%80%81%E5%8C%AF%E3%80%81%E5%BD%B1%E8%97%9D%E7%AD%89%EF%BC%89%E3%80%80%E7%99%BC%E8%A1%8C%EF%BC%9A%E6%B4%B2%E7%AB%8B%E3%80%80IMAX",
+      "price": "約見院線",
+      "ticketUrl": "https://m.wmoov.com/movie/showtimes/72940",
+      "ticketNote": "院線／wmoov",
       "source": "https://blog.enjoymovie.net/godzilla-minus-zero-hong-kong-november/",
-      "notes": "",
+      "notes": "2026-11-05 核實：wmoov showtimes/72940 今日多院有場→即將開始改進行中。",
       "featured": false,
-      "verifiedAt": "2026-10-15",
+      "verifiedAt": "2026-11-05",
       "sample": false
     },
     {
