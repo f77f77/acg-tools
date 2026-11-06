@@ -1,6 +1,6 @@
 {
   "schema": "events.v2",
-  "updatedAt": "2026-11-05",
+  "updatedAt": "2026-11-06",
   "note": "活動由 Notion「香港ACG情報看板」每日同步（香港時間）。狀態會按日期重算：開始至結束當日係進行中，未開始係即將開始，完結七日內先保留。周邊截止仍然手改 deadlines[]；標成示例嘅截止唔會保留。",
   "events": [
     {
@@ -51,29 +51,6 @@
       "sample": false
     },
     {
-      "id": "511badb9a7bcac79",
-      "title": "EVANGELION 30th Hong Kong Movie Fest（其餘五部）",
-      "status": "已完結",
-      "notionStatus": "進行中",
-      "category": "電影系列",
-      "ips": [
-        "EVANGELION"
-      ],
-      "date": "2026-10-01",
-      "endDate": "2026-10-29",
-      "timeNote": "2026-10-01～10-29　每週四接力",
-      "place": "院線陸續上檔　發行：新映影片",
-      "mapUrl": "https://www.google.com/maps/search/?api=1&query=%E9%99%A2%E7%B7%9A%E9%99%B8%E7%BA%8C%E4%B8%8A%E6%AA%94%E3%80%80%E7%99%BC%E8%A1%8C%EF%BC%9A%E6%96%B0%E6%98%A0%E5%BD%B1%E7%89%87",
-      "price": "約見院線；每部設香港限定主視覺典藏卡入場特典",
-      "ticketUrl": "https://m.wmoov.com/movie/showtimes/57029",
-      "ticketNote": "院線／hkmovie6",
-      "source": "https://acgevent.com/archives/39869",
-      "notes": "順序：10-01 Air／真心為你／10-08 序／10-15 破／10-22 Q／10-29 終。2026-11-05 核實：wmoov《終》showtimes/57029 今日仍多院有場。Doc 檔期滯後時以院線為準。死與新生已另列封…",
-      "featured": false,
-      "verifiedAt": "2026-11-05",
-      "sample": false
-    },
-    {
       "id": "ae49689233c1513c",
       "title": "AIRSIDE × Kuromi 魔幻烘焙所（Starlit Sweet Party）",
       "status": "進行中",
@@ -114,7 +91,7 @@
       "source": "https://www.langhamplace.com.hk/zh-hk/happenings/1008",
       "notes": "NIJISANJI EN 海外首站，香港限定 BIG 壓克力展示板；VTuber 唔分男女照收。第一階段（NIJISANJI EN）10/15–10/25 已完；第二階段 10/26–11/07（含 hololive）仍進行中至 11/7…",
       "featured": false,
-      "verifiedAt": "2026-11-05",
+      "verifiedAt": "2026-11-06",
       "sample": false
     },
     {
@@ -141,9 +118,30 @@
       "sample": false
     },
     {
+      "id": "12ba0b1ef3ee4411",
+      "title": "意志薄弱狗 Ishiyowa-chan 期間限定店 @ C.T.A by GOK SIK",
+      "status": "進行中",
+      "notionStatus": "進行中",
+      "category": "快閃店",
+      "ips": [],
+      "date": "2026-11-02",
+      "endDate": "2026-11-29",
+      "timeNote": "2026-11-02～11-29　每日 11:00–21:00；見面會 11/7、8、14、21 15:30–18:40",
+      "place": "中環威靈頓街30號 C.T.A by GOK SIK 4樓全層",
+      "mapUrl": "https://www.google.com/maps/search/?api=1&query=%E4%B8%AD%E7%92%B0%E5%A8%81%E9%9D%88%E9%A0%93%E8%A1%9730%E8%99%9F%20C.T.A%20by%20GOK%20SIK%204%E6%A8%93%E5%85%A8%E5%B1%A4",
+      "price": "",
+      "ticketUrl": "",
+      "ticketNote": "",
+      "source": "https://www.weekendhk.com/lifestyle/%e6%96%b0%e5%81%87%e6%9c%9f%e5%90%83%e5%96%9d%e7%8e%a9%e6%a8%82-%e7%8e%a9%e6%a8%82%e9%80%9f%e5%a0%b1-ishiyowachan-ig%e7%b2%be%e9%81%b8-ww01-3536805/",
+      "notes": "2026-11-06 補建漏報。日本 IG 角色意志薄弱狗香港限定店；藍蝴蝶結造型周邊＋打卡；合照需追蹤官方／GOK SIK IG／FB。IP 欄無對應選項，未加新選項。",
+      "featured": false,
+      "verifiedAt": "2026-11-06",
+      "sample": false
+    },
+    {
       "id": "edf04eb78a21acef",
       "title": "《致遙不可及彼方的你》香港上映",
-      "status": "進行中",
+      "status": "已完結",
       "notionStatus": "進行中",
       "category": "電影",
       "ips": [],
@@ -156,15 +154,15 @@
       "ticketUrl": "https://m.wmoov.com/movie/showtimes/73979",
       "ticketNote": "",
       "source": "https://kinohk.com/movie/to-you-in-the-beyond-2026",
-      "notes": "日本原創動畫電影（To You in the Beyond），導演和田純一；聲演石橋陽彩／永瀬安娜／上坂すみれ。興趣度未確定（原創奇幻，非少女向），先收備考。wmoov：https://m.wmoov.com/movie/showtime…",
+      "notes": "日本原創動畫電影（To You in the Beyond），導演和田純一。2026-11-06 核實：wmoov／KinoHK／AMC 今日仍多院有場。維持進行中。",
       "featured": false,
-      "verifiedAt": "2026-11-05",
+      "verifiedAt": "2026-11-06",
       "sample": false
     },
     {
       "id": "07870a454cab94aa",
       "title": "哥斯拉-0.0",
-      "status": "進行中",
+      "status": "已完結",
       "notionStatus": "進行中",
       "category": "電影",
       "ips": [
@@ -180,16 +178,37 @@
       "ticketUrl": "https://m.wmoov.com/movie/showtimes/72940",
       "ticketNote": "院線／wmoov",
       "source": "https://blog.enjoymovie.net/godzilla-minus-zero-hong-kong-november/",
-      "notes": "2026-11-05 核實：wmoov showtimes/72940 今日多院有場→即將開始改進行中。",
+      "notes": "2026-11-06 核實：wmoov showtimes/72940 今日多院有場（含 IMAX）。維持進行中。",
       "featured": false,
-      "verifiedAt": "2026-11-05",
+      "verifiedAt": "2026-11-06",
+      "sample": false
+    },
+    {
+      "id": "6cdf985e74a4bc5e",
+      "title": "名偵探柯南 第30號殺人事件",
+      "status": "進行中",
+      "notionStatus": "進行中",
+      "category": "電影",
+      "ips": [],
+      "date": "2026-11-06",
+      "endDate": "2026-11-06",
+      "timeNote": "2026-11-06 港澳戲院上映；約93分鐘；IIA；日語",
+      "place": "全港院線（英皇、MCL、百老匯、影藝等）　發行：曼迪傳播",
+      "mapUrl": "https://www.google.com/maps/search/?api=1&query=%E5%85%A8%E6%B8%AF%E9%99%A2%E7%B7%9A%EF%BC%88%E8%8B%B1%E7%9A%87%E3%80%81MCL%E3%80%81%E7%99%BE%E8%80%81%E5%8C%AF%E3%80%81%E5%BD%B1%E8%97%9D%E7%AD%89%EF%BC%89%E3%80%80%E7%99%BC%E8%A1%8C%EF%BC%9A%E6%9B%BC%E8%BF%AA%E5%82%B3%E6%92%AD",
+      "price": "",
+      "ticketUrl": "https://m.wmoov.com/movie/showtimes/73659",
+      "ticketNote": "",
+      "source": "https://wmoov.com/movie/details/73659",
+      "notes": "2026-11-06 新建。柯南動畫30週年特別篇戲院聯映（日本電視首播後港澳戲院同步）；曼迪傳播；wmoov showtimes/73659 今日多院有場。IP 欄無「名偵探柯南」選項，未加新選項。",
+      "featured": false,
+      "verifiedAt": "2026-11-06",
       "sample": false
     },
     {
       "id": "ed5cc6823d38aaba",
       "title": "《都市傳說解體中心》世界大巡迴－香港",
-      "status": "即將開始",
-      "notionStatus": "即將開始",
+      "status": "進行中",
+      "notionStatus": "進行中",
       "category": "展覽",
       "ips": [],
       "date": "2026-11-06",
@@ -198,19 +217,19 @@
       "place": "旺角 INCUBASE Arena B1",
       "mapUrl": "https://www.google.com/maps/search/?api=1&query=%E6%97%BA%E8%A7%92%20INCUBASE%20Arena%20B1",
       "price": "HK$50（入場 QR＋入場紀念品）",
-      "ticketUrl": "",
+      "ticketUrl": "https://www.klook.com/zh-HK/activity/245145-urban-myth-dissolution-center-world-tour-hong-kong/",
       "ticketNote": "2026-10-30（五）11:00 開售",
       "source": "https://www.horipro-international.com/information/post-4695/",
-      "notes": "2026-10-28 新建。遊戲《都市伝説解体センター》首個海外巡迴展：角色／墓場文庫製作資料展示、需答合言葉嘅禁拍禁劇透區「口に出しても存在しない部屋」、原創周邊販售（與日本全國巡迴同款）。主辦 HoriPro Internationa…",
+      "notes": "2026-10-28 新建。遊戲《都市伝説解体センター》首個海外巡迴展。2026-11-06：今日開幕（11/6–11/22 INCUBASE Arena；HoriPro／Klook／Timable 確認）→即將開始改進行中。主辦 Hor…",
       "featured": false,
-      "verifiedAt": "2026-10-28",
+      "verifiedAt": "2026-11-06",
       "sample": false
     },
     {
       "id": "3fafe8e0f62bd7f9",
       "title": "藍色監獄展 EGOIST EXHIBITION the animation 香港站",
-      "status": "即將開始",
-      "notionStatus": "即將開始",
+      "status": "進行中",
+      "notionStatus": "進行中",
       "category": "展覽",
       "ips": [
         "多 IP"
@@ -224,9 +243,9 @@
       "ticketUrl": "https://www.klook.com/zh-TW/activity/240042-blue-lock-egoist-exhibition-the-animation-hong-kong/",
       "ticketNote": "Klook 須選日時段",
       "source": "https://anihk.com/events/blue-lock-hong-kong-2026",
-      "notes": "沉浸式展區／原畫／限定店。來源 anihk／Klook／官方。2026-10-25 新建。",
+      "notes": "沉浸式展區／原畫／限定店。來源 anihk／Klook／官方／AIRSIDE。2026-10-25 新建。2026-11-06：今日開幕（11/6–11/24 AIRSIDE；Klook／官網／AIRSIDE 確認）→即將開始改進行中。",
       "featured": false,
-      "verifiedAt": "2026-10-28",
+      "verifiedAt": "2026-11-06",
       "sample": false
     },
     {
