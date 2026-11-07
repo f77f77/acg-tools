@@ -1,6 +1,6 @@
 {
   "schema": "events.v2",
-  "updatedAt": "2026-11-06",
+  "updatedAt": "2026-11-07",
   "note": "活動由 Notion「香港ACG情報看板」每日同步（香港時間）。狀態會按日期重算：開始至結束當日係進行中，未開始係即將開始，完結七日內先保留。周邊截止仍然手改 deadlines[]；標成示例嘅截止唔會保留。",
   "events": [
     {
@@ -45,9 +45,9 @@
       "ticketUrl": "",
       "ticketNote": "無／未公布",
       "source": "https://acgevent.com/archives/39869",
-      "notes": "日本 EVA STORE／RADIO EVA 及香港限定、重映限定抽卡機",
+      "notes": "日本 EVA STORE／RADIO EVA 及香港限定、重映限定抽卡機。2026-11-07 核實：Doc／ACGEvent 仍標至 11/12，維持進行中。",
       "featured": false,
-      "verifiedAt": "2026-10-28",
+      "verifiedAt": "2026-11-07",
       "sample": false
     },
     {
@@ -66,9 +66,9 @@
       "ticketUrl": "",
       "ticketNote": "",
       "source": "https://www.airside.com.hk/zh-hk/happenings/airside-x-kuromi-starlit-sweet-party",
-      "notes": "6米高 Kuromi 裝置＋期間限定店（香港首發夢幻甜品系列）＋Sanrio 烘焙工房體驗。看板先前缺項；2026-10-27 新建。2026-10-29 核實：AIRSIDE 官網仍標 10/14–11/08 進行中。",
+      "notes": "6米高 Kuromi 裝置＋期間限定店（香港首發夢幻甜品系列）＋Sanrio 烘焙工房體驗。2026-11-07 核實：官網檔期仍至 11/08，維持進行中。",
       "featured": false,
-      "verifiedAt": "2026-10-29",
+      "verifiedAt": "2026-11-07",
       "sample": false
     },
     {
@@ -89,9 +89,9 @@
       "ticketUrl": "",
       "ticketNote": "",
       "source": "https://www.langhamplace.com.hk/zh-hk/happenings/1008",
-      "notes": "NIJISANJI EN 海外首站，香港限定 BIG 壓克力展示板；VTuber 唔分男女照收。第一階段（NIJISANJI EN）10/15–10/25 已完；第二階段 10/26–11/07（含 hololive）仍進行中至 11/7…",
+      "notes": "NIJISANJI EN 海外首站，香港限定 BIG 壓克力展示板；VTuber 唔分男女照收。第一階段（NIJISANJI EN）10/15–10/25 已完；第二階段 10/26–11/07（含 hololive）。2026-11-0…",
       "featured": false,
-      "verifiedAt": "2026-11-06",
+      "verifiedAt": "2026-11-07",
       "sample": false
     },
     {
@@ -133,9 +133,30 @@
       "ticketUrl": "",
       "ticketNote": "",
       "source": "https://www.weekendhk.com/lifestyle/%e6%96%b0%e5%81%87%e6%9c%9f%e5%90%83%e5%96%9d%e7%8e%a9%e6%a8%82-%e7%8e%a9%e6%a8%82%e9%80%9f%e5%a0%b1-ishiyowachan-ig%e7%b2%be%e9%81%b8-ww01-3536805/",
-      "notes": "2026-11-06 補建漏報。日本 IG 角色意志薄弱狗香港限定店；藍蝴蝶結造型周邊＋打卡；合照需追蹤官方／GOK SIK IG／FB。IP 欄無對應選項，未加新選項。",
+      "notes": "2026-11-06 補建漏報；2026-11-07 核實：新假期／報導仍標 11/2–29 中環 CTA，今日亦有合照場次。日本 IG 角色意志薄弱狗香港限定店；藍蝴蝶結造型周邊＋打卡。IP 欄無對應選項，未加新選項。",
       "featured": false,
-      "verifiedAt": "2026-11-06",
+      "verifiedAt": "2026-11-07",
+      "sample": false
+    },
+    {
+      "id": "68f08d32affe3bec",
+      "title": "Pop-up Fest 2026（Banpresto／Candy Toy／萬代原創潮玩）@ 希慎廣場",
+      "status": "進行中",
+      "notionStatus": "進行中",
+      "category": "快閃店",
+      "ips": [],
+      "date": "2026-11-03",
+      "endDate": "2026-11-22",
+      "timeNote": "",
+      "place": "銅鑼灣希慎廣場地庫一樓 B113及B115號舖",
+      "mapUrl": "https://www.google.com/maps/search/?api=1&query=%E9%8A%85%E9%91%BC%E7%81%A3%E5%B8%8C%E6%85%8E%E5%BB%A3%E5%A0%B4%E5%9C%B0%E5%BA%AB%E4%B8%80%E6%A8%93%20B113%E5%8F%8AB115%E8%99%9F%E8%88%96",
+      "price": "",
+      "ticketUrl": "",
+      "ticketNote": "",
+      "source": "https://www.hk01.com/%E6%95%B8%E7%A2%BC%E7%94%9F%E6%B4%BB/60406828/%E6%B5%B7%E8%B3%8A%E7%8E%8Bnba-%E9%AB%98%E9%81%94fw30-smsp%E6%82%9F%E7%A9%BA%E9%99%90%E5%AE%9A%E7%89%88-%E5%B8%8C%E6%85%8E%E8%90%AC%E4%BB%A3%E5%BF%AB%E9%96%83%E5%BA%97%E6%8E%83%E8%B2%A8%E6%94%BB%E7%95%A5",
+      "notes": "2026-11-07 補建漏報。HK01／Lifenews：11/3 17:00起、11/4–22 11:00–22:00；ONE PIECE×NBA、龍珠會場限定 SMSP、Tamagotchi Friends、Yurugun 渣古打卡。",
+      "featured": false,
+      "verifiedAt": "2026-11-07",
       "sample": false
     },
     {
@@ -154,9 +175,9 @@
       "ticketUrl": "https://m.wmoov.com/movie/showtimes/73979",
       "ticketNote": "",
       "source": "https://kinohk.com/movie/to-you-in-the-beyond-2026",
-      "notes": "日本原創動畫電影（To You in the Beyond），導演和田純一。2026-11-06 核實：wmoov／KinoHK／AMC 今日仍多院有場。維持進行中。",
+      "notes": "日本原創動畫電影（To You in the Beyond），導演和田純一。2026-11-07 核實：wmoov showtimes/73979 今日仍多院有場。維持進行中。",
       "featured": false,
-      "verifiedAt": "2026-11-06",
+      "verifiedAt": "2026-11-07",
       "sample": false
     },
     {
@@ -178,15 +199,15 @@
       "ticketUrl": "https://m.wmoov.com/movie/showtimes/72940",
       "ticketNote": "院線／wmoov",
       "source": "https://blog.enjoymovie.net/godzilla-minus-zero-hong-kong-november/",
-      "notes": "2026-11-06 核實：wmoov showtimes/72940 今日多院有場（含 IMAX）。維持進行中。",
+      "notes": "2026-11-07 核實：wmoov showtimes/72940 今日仍多院有場（含 IMAX）。維持進行中。",
       "featured": false,
-      "verifiedAt": "2026-11-06",
+      "verifiedAt": "2026-11-07",
       "sample": false
     },
     {
       "id": "6cdf985e74a4bc5e",
       "title": "名偵探柯南 第30號殺人事件",
-      "status": "進行中",
+      "status": "已完結",
       "notionStatus": "進行中",
       "category": "電影",
       "ips": [],
@@ -199,9 +220,9 @@
       "ticketUrl": "https://m.wmoov.com/movie/showtimes/73659",
       "ticketNote": "",
       "source": "https://wmoov.com/movie/details/73659",
-      "notes": "2026-11-06 新建。柯南動畫30週年特別篇戲院聯映（日本電視首播後港澳戲院同步）；曼迪傳播；wmoov showtimes/73659 今日多院有場。IP 欄無「名偵探柯南」選項，未加新選項。",
+      "notes": "2026-11-07 核實：wmoov showtimes/73659 今日仍多院有場。維持進行中。柯南動畫30週年特別篇戲院聯映；曼迪傳播。IP 欄無「名偵探柯南」選項，未加新選項。",
       "featured": false,
-      "verifiedAt": "2026-11-06",
+      "verifiedAt": "2026-11-07",
       "sample": false
     },
     {
@@ -220,9 +241,9 @@
       "ticketUrl": "https://www.klook.com/zh-HK/activity/245145-urban-myth-dissolution-center-world-tour-hong-kong/",
       "ticketNote": "2026-10-30（五）11:00 開售",
       "source": "https://www.horipro-international.com/information/post-4695/",
-      "notes": "2026-10-28 新建。遊戲《都市伝説解体センター》首個海外巡迴展。2026-11-06：今日開幕（11/6–11/22 INCUBASE Arena；HoriPro／Klook／Timable 確認）→即將開始改進行中。主辦 Hor…",
+      "notes": "遊戲《都市伝説解体センター》首個海外巡迴展。2026-11-07 核實：展期 11/6–11/22 INCUBASE Arena，維持進行中。主辦 HoriPro International／HT Entertainment／INCUBA…",
       "featured": false,
-      "verifiedAt": "2026-11-06",
+      "verifiedAt": "2026-11-07",
       "sample": false
     },
     {
@@ -243,16 +264,16 @@
       "ticketUrl": "https://www.klook.com/zh-TW/activity/240042-blue-lock-egoist-exhibition-the-animation-hong-kong/",
       "ticketNote": "Klook 須選日時段",
       "source": "https://anihk.com/events/blue-lock-hong-kong-2026",
-      "notes": "沉浸式展區／原畫／限定店。來源 anihk／Klook／官方／AIRSIDE。2026-10-25 新建。2026-11-06：今日開幕（11/6–11/24 AIRSIDE；Klook／官網／AIRSIDE 確認）→即將開始改進行中。",
+      "notes": "沉浸式展區／原畫／限定店。來源 anihk／Klook／官方／AIRSIDE。2026-11-07 核實：anihk 仍標 11/6–24 AIRSIDE，維持進行中。",
       "featured": false,
-      "verifiedAt": "2026-11-06",
+      "verifiedAt": "2026-11-07",
       "sample": false
     },
     {
       "id": "b38ff28501840470",
       "title": "岩田陽葵 2026 FAN MEETING in HONG KONG",
-      "status": "即將開始",
-      "notionStatus": "即將開始",
+      "status": "進行中",
+      "notionStatus": "進行中",
       "category": "見面會",
       "ips": [
         "岩田陽葵"
@@ -266,16 +287,16 @@
       "ticketUrl": "",
       "ticketNote": "無／未公布",
       "source": "https://ugo-hk.com/concert/18369/岩田陽葵香港見面會",
-      "notes": "",
+      "notes": "2026-11-07：今日舉行（單日見面會）→即將開始改進行中。完場後明日封存。同日另有細貝圭（場地不同）。",
       "featured": false,
-      "verifiedAt": "2026-09-29",
+      "verifiedAt": "2026-11-07",
       "sample": false
     },
     {
       "id": "f2056cbd9ed92981",
       "title": "細貝圭香港見面會",
-      "status": "即將開始",
-      "notionStatus": "即將開始",
+      "status": "進行中",
+      "notionStatus": "進行中",
       "category": "見面會",
       "ips": [
         "細貝圭",
@@ -290,16 +311,16 @@
       "ticketUrl": "https://www.art-mate.net/doc/99546",
       "ticketNote": "",
       "source": "https://www.art-mate.net/doc/99546",
-      "notes": "同日對上岩田陽葵，場地不同",
+      "notes": "同日對上岩田陽葵，場地不同。2026-11-07：今日舉行（單日見面會）→即將開始改進行中。完場後明日封存。",
       "featured": false,
-      "verifiedAt": "2026-09-29",
+      "verifiedAt": "2026-11-07",
       "sample": false
     },
     {
       "id": "0aea43733ed4c2ab",
       "title": "學園偶像大師 LIVE TOUR -標- Final公演 LIVE VIEWING（香港）",
-      "status": "即將開始",
-      "notionStatus": "即將開始",
+      "status": "進行中",
+      "notionStatus": "進行中",
       "category": "LIVE VIEWING",
       "ips": [
         "學園偶像大師"
@@ -313,9 +334,9 @@
       "ticketUrl": "",
       "ticketNote": "10-03 12:00 起發售：戲院票房、星達院線網站／App、HKMovie 網站／App",
       "source": "https://idolmaster-official.jp/news/01_20064",
-      "notes": "主辦：宝島制作委員會、EUPHORIC PRODUCTION；另有台灣場不入表",
+      "notes": "主辦：宝島制作委員會、EUPHORIC PRODUCTION；另有台灣場不入表。2026-11-07：今日至11/8 LIVE VIEWING →即將開始改進行中。",
       "featured": true,
-      "verifiedAt": "2026-10-05",
+      "verifiedAt": "2026-11-07",
       "sample": false
     },
     {
