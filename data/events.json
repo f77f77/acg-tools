@@ -1,6 +1,6 @@
 {
   "schema": "events.v2",
-  "updatedAt": "2026-11-08",
+  "updatedAt": "2026-11-09",
   "note": "活動由 Notion「香港ACG情報看板」每日同步（香港時間）。狀態會按日期重算：開始至結束當日係進行中，未開始係即將開始，完結七日內先保留。周邊截止仍然手改 deadlines[]；標成示例嘅截止唔會保留。",
   "events": [
     {
@@ -24,7 +24,7 @@
       "source": "https://ugo-hk.com/event/19130/%E3%80%8A%E6%88%91%E4%BF%82%E5%B0%8F%E5%BF%8C%E5%BB%89%E3%80%8B%E6%9C%9F%E9%96%93%E9%99%90%E5%AE%9ACaf%C3%A9",
       "notes": "與時代廣場期間限定店分開；主題可麗餅店場景＋打卡。2026-11-08 核實：ugo-hk 仍標 9/2–11/15 第二階段進行中。維持進行中。",
       "featured": false,
-      "verifiedAt": "2026-11-08",
+      "verifiedAt": "2026-11-09",
       "sample": false
     },
     {
@@ -47,28 +47,7 @@
       "source": "https://acgevent.com/archives/39869",
       "notes": "日本 EVA STORE／RADIO EVA 及香港限定、重映限定抽卡機。2026-11-08 核實：檔期仍標至 11/12，維持進行中。",
       "featured": false,
-      "verifiedAt": "2026-11-08",
-      "sample": false
-    },
-    {
-      "id": "ae49689233c1513c",
-      "title": "AIRSIDE × Kuromi 魔幻烘焙所（Starlit Sweet Party）",
-      "status": "進行中",
-      "notionStatus": "進行中",
-      "category": "快閃店",
-      "ips": [],
-      "date": "2026-10-14",
-      "endDate": "2026-11-08",
-      "timeNote": "裝置 10:00–22:00；期間限定店 11:00–21:00；烘焙工房指定日 11:30–18:45",
-      "place": "啟德 AIRSIDE 2樓中庭",
-      "mapUrl": "https://www.google.com/maps/search/?api=1&query=%E5%95%9F%E5%BE%B7%20AIRSIDE%202%E6%A8%93%E4%B8%AD%E5%BA%AD",
-      "price": "裝置免費參觀；期間限定店／烘焙體驗另計",
-      "ticketUrl": "",
-      "ticketNote": "",
-      "source": "https://www.airside.com.hk/zh-hk/happenings/airside-x-kuromi-starlit-sweet-party",
-      "notes": "6米高 Kuromi 裝置＋期間限定店（香港首發夢幻甜品系列）＋Sanrio 烘焙工房體驗。2026-11-08 核實：檔期仍至 11/08，今日最後一日。維持進行中（明日封存）。",
-      "featured": false,
-      "verifiedAt": "2026-11-08",
+      "verifiedAt": "2026-11-09",
       "sample": false
     },
     {
@@ -91,7 +70,7 @@
       "source": "https://www.mplus.org.hk/tc/exhibitions/myths-and-monsters-the-art-of-fantasy-in-asia/",
       "notes": "2026-10-28 新建。M+ 特別展覽，第三章「從《哥斯拉》到《攻殼機動隊》」聚焦戰後日本漫畫／動畫（小飛俠阿童木、哥斯拉、百變小櫻、攻殼機動隊背景畫等）；第四章講動漫美學對藝術／遊戲／數碼文化影響。M+ 戲院另有《攻殼機動隊》《攻殼…",
       "featured": false,
-      "verifiedAt": "2026-10-28",
+      "verifiedAt": "2026-11-09",
       "sample": false
     },
     {
@@ -114,7 +93,7 @@
       "source": "https://www.harbourcity.com.hk/tc/article/takada-akemi-world-masterpiece-exhibition-2026/",
       "notes": "2026-11-08 補建漏報。海港城官網：展期 10/28–11/29；逾60幅原畫／版畫輪換展出（《我係小忌廉》、《機動警察》、《世界樹》等）；全球首發紀念商品；藝術家或出席簽名會與創作講座（確實時間以官方公布為準）。",
       "featured": false,
-      "verifiedAt": "2026-11-08",
+      "verifiedAt": "2026-11-09",
       "sample": false
     },
     {
@@ -135,7 +114,7 @@
       "source": "https://www.weekendhk.com/lifestyle/%e6%96%b0%e5%81%87%e6%9c%9f%e5%90%83%e5%96%9d%e7%8e%a9%e6%a8%82-%e7%8e%a9%e6%a8%82%e9%80%9f%e5%a0%b1-ishiyowachan-ig%e7%b2%be%e9%81%b8-ww01-3536805/",
       "notes": "2026-11-06 補建漏報；2026-11-08 核實：新假期／報導仍標 11/2–29 中環 CTA（11/8、14、21 仍有合照場次）。日本 IG 角色意志薄弱狗香港限定店；藍蝴蝶結造型周邊＋打卡。IP 欄無對應選項，未加新選項。",
       "featured": false,
-      "verifiedAt": "2026-11-08",
+      "verifiedAt": "2026-11-09",
       "sample": false
     },
     {
@@ -156,7 +135,7 @@
       "source": "https://www.hk01.com/%E6%95%B8%E7%A2%BC%E7%94%9F%E6%B4%BB/60406828/%E6%B5%B7%E8%B3%8A%E7%8E%8Bnba-%E9%AB%98%E9%81%94fw30-smsp%E6%82%9F%E7%A9%BA%E9%99%90%E5%AE%9A%E7%89%88-%E5%B8%8C%E6%85%8E%E8%90%AC%E4%BB%A3%E5%BF%AB%E9%96%83%E5%BA%97%E6%8E%83%E8%B2%A8%E6%94%BB%E7%95%A5",
       "notes": "2026-11-07 補建漏報。2026-11-08 核實：PCM／HK01 仍標 11/3–22 希慎廣場 B113及B115；ONE PIECE×NBA、龍珠會場限定 SMSP、Tamagotchi Friends、Yurugun 渣…",
       "featured": false,
-      "verifiedAt": "2026-11-08",
+      "verifiedAt": "2026-11-09",
       "sample": false
     },
     {
@@ -177,7 +156,7 @@
       "source": "https://kinohk.com/movie/to-you-in-the-beyond-2026",
       "notes": "日本原創動畫電影（To You in the Beyond），導演和田純一。2026-11-08 核實：wmoov showtimes/73979 今日仍多院有場。維持進行中。",
       "featured": false,
-      "verifiedAt": "2026-11-08",
+      "verifiedAt": "2026-11-09",
       "sample": false
     },
     {
@@ -201,7 +180,7 @@
       "source": "https://blog.enjoymovie.net/godzilla-minus-zero-hong-kong-november/",
       "notes": "2026-11-08 核實：wmoov showtimes/72940 今日仍多院有場（含 IMAX）。維持進行中。",
       "featured": false,
-      "verifiedAt": "2026-11-08",
+      "verifiedAt": "2026-11-09",
       "sample": false
     },
     {
@@ -222,7 +201,7 @@
       "source": "https://wmoov.com/movie/details/73659",
       "notes": "2026-11-08 核實：wmoov showtimes/73659 今日仍多院有場。維持進行中。柯南動畫30週年特別篇戲院聯映；曼迪傳播。IP 欄無「名偵探柯南」選項，未加新選項。",
       "featured": false,
-      "verifiedAt": "2026-11-08",
+      "verifiedAt": "2026-11-09",
       "sample": false
     },
     {
@@ -243,7 +222,7 @@
       "source": "https://www.horipro-international.com/information/post-4695/",
       "notes": "遊戲《都市伝説解体センター》首個海外巡迴展。2026-11-08 核實：展期 11/6–11/22 INCUBASE Arena，維持進行中。主辦 HoriPro International／HT Entertainment／INCUBA…",
       "featured": false,
-      "verifiedAt": "2026-11-08",
+      "verifiedAt": "2026-11-09",
       "sample": false
     },
     {
@@ -266,54 +245,7 @@
       "source": "https://anihk.com/events/blue-lock-hong-kong-2026",
       "notes": "沉浸式展區／原畫／限定店。來源 anihk／Klook／官方／AIRSIDE。2026-11-08 核實：檔期仍為 11/6–24 AIRSIDE，維持進行中。",
       "featured": false,
-      "verifiedAt": "2026-11-08",
-      "sample": false
-    },
-    {
-      "id": "0aea43733ed4c2ab",
-      "title": "學園偶像大師 LIVE TOUR -標- Final公演 LIVE VIEWING（香港）",
-      "status": "進行中",
-      "notionStatus": "進行中",
-      "category": "LIVE VIEWING",
-      "ips": [
-        "學園偶像大師"
-      ],
-      "date": "2026-11-07",
-      "endDate": "2026-11-08",
-      "timeNote": "11-07（六）、11-08（日）各一場：15:30 入場／16:00 開始（HKT）",
-      "place": "the sky（奧海城）",
-      "mapUrl": "https://www.google.com/maps/search/?api=1&query=the%20sky%EF%BC%88%E5%A5%A7%E6%B5%B7%E5%9F%8E%EF%BC%89",
-      "price": "HK$330；限定特典：Final公演 LIVE VIEWING 官方紀念票卡",
-      "ticketUrl": "",
-      "ticketNote": "10-03 12:00 起發售：戲院票房、星達院線網站／App、HKMovie 網站／App",
-      "source": "https://idolmaster-official.jp/news/01_20064",
-      "notes": "主辦：宝島制作委員會、EUPHORIC PRODUCTION；另有台灣場不入表。2026-11-07：今日至11/8 LIVE VIEWING →即將開始改進行中。2026-11-08 核實：官方仍標香港 11/7–11/8 the sk…",
-      "featured": true,
-      "verifiedAt": "2026-11-08",
-      "sample": false
-    },
-    {
-      "id": "534aebcc89271c01",
-      "title": "三川華月香港粉絲見面會 2026",
-      "status": "進行中",
-      "notionStatus": "進行中",
-      "category": "見面會",
-      "ips": [
-        "三川華月",
-        "閃耀色彩 鈴木羽那"
-      ],
-      "date": "2026-11-08",
-      "endDate": "2026-11-08",
-      "timeNote": "2026-11-08　12:30（12:00 入場）／18:00（17:30 入場）",
-      "place": "香港逸東酒店 MICHELLE 紫",
-      "mapUrl": "https://www.google.com/maps/search/?api=1&query=%E9%A6%99%E6%B8%AF%E9%80%B8%E6%9D%B1%E9%85%92%E5%BA%97%20MICHELLE%20%E7%B4%AB",
-      "price": "VIP $880／普通 $580　合影券 $300",
-      "ticketUrl": "https://www.uutix.com/detail?pId=3846",
-      "ticketNote": "",
-      "source": "https://www.art-mate.net/doc/99178",
-      "notes": "不是學マス。2026-11-08：今日舉行（日場 12:30／夜場 18:00，逸東酒店 MICHELLE 紫）→即將開始改進行中。完場後明日封存。",
-      "featured": false,
-      "verifiedAt": "2026-11-08",
+      "verifiedAt": "2026-11-09",
       "sample": false
     },
     {
@@ -536,9 +468,9 @@
       "ticketUrl": "https://edproduction.kktix.cc/events/yuki-kajiura-hk-2026",
       "ticketNote": "",
       "source": "https://www.ed-production.com.hk/yuki-kajiura-live-vol22-in-hk",
-      "notes": "公售已開",
+      "notes": "公售已開。2026-11-09：ACGEvent 11/8 報當日 14:30 起麥花臣場館 1 樓物販。每次限購 1 件：方巾 HK$80／肩背包 HK$380／玻璃杯 HK$130／眼鏡盒 HK$130／貼紙 Set HK$80／漁夫…",
       "featured": false,
-      "verifiedAt": "2026-09-29",
+      "verifiedAt": "2026-11-09",
       "sample": false
     },
     {
@@ -728,16 +660,16 @@
       "ips": [],
       "date": "2026-11-28",
       "endDate": "2026-11-28",
-      "timeNote": "見面會 13:00 開演；簽名會 14:30 開始",
+      "timeNote": "見面會 12:30 入場／13:00 開演；簽名會 14:30 開始",
       "place": "牛頭角 茶豆 CHAMAME LIVEHOUSE",
       "mapUrl": "https://www.google.com/maps/search/?api=1&query=%E7%89%9B%E9%A0%AD%E8%A7%92%20%E8%8C%B6%E8%B1%86%20CHAMAME%20LIVEHOUSE",
       "price": "HK$680（現場親筆簽名板 To 簽）",
-      "ticketUrl": "",
-      "ticketNote": "11/9 10:00 起 art-mate 發售",
+      "ticketUrl": "https://www.art-mate.net/doc/101407",
+      "ticketNote": "11/9 10:00 起 art-mate 發售；每次限2位、每電郵限購一次",
       "source": "https://acgevent.com/archives/40345",
-      "notes": "2026-11-08 新建。原定隨已取消的 Sub-Cult Xpo 04 出席，現獨立移師至茶豆（不重建 Sub-Cult Xpo）。票價由 HK$580 改為 HK$680。",
+      "notes": "2026-11-08 新建。原定隨已取消的 Sub-Cult Xpo 04 出席，現獨立移師至茶豆（不重建 Sub-Cult Xpo）。票價由 HK$580 改為 HK$680。2026-11-09：art-mate 活動頁已改列 CHA…",
       "featured": false,
-      "verifiedAt": "2026-11-08",
+      "verifiedAt": "2026-11-09",
       "sample": false
     },
     {
@@ -872,6 +804,27 @@
       "notes": "2026-11-04 新建；發行新映影片；日語；約55分鐘；2D／4DX／MX4D。日本 2026-10-09 上映。",
       "featured": false,
       "verifiedAt": "2026-11-04",
+      "sample": false
+    },
+    {
+      "id": "a7c065915fc069ac",
+      "title": "《小魔女DoReMi》25週年紀念展香港站",
+      "status": "即將開始",
+      "notionStatus": "即將開始",
+      "category": "特展",
+      "ips": [],
+      "date": "2026-12-04",
+      "endDate": "2027-01-03",
+      "timeNote": "平日 12:00–22:00（21:30 最後入場）；週末及公眾假期 11:00–22:00",
+      "place": "旺角創興廣場地庫 INCUBASE Arena B1（彌敦道 601 號）",
+      "mapUrl": "https://www.google.com/maps/search/?api=1&query=%E6%97%BA%E8%A7%92%E5%89%B5%E8%88%88%E5%BB%A3%E5%A0%B4%E5%9C%B0%E5%BA%AB%20INCUBASE%20Arena%20B1%EF%BC%88%E5%BD%8C%E6%95%A6%E9%81%93%20601%20%E8%99%9F%EF%BC%89",
+      "price": "早鳥二人 HK$138（原價$148）；早鳥特典 HK$210（原價$230）；單人 HK$78；二人 HK$148；特典 HK$230。門票附隨機壓克力立牌＋展覽紀念卡；特典票另附馬越嘉彥特繪插圖相框",
+      "ticketUrl": "https://space.hk01.com/event/6adedaaf1a33ece4b4cfc4b7",
+      "ticketNote": "01空間早鳥 10/30 10:00–12/3 23:59",
+      "source": "https://acgevent.com/archives/40431",
+      "notes": "2026-11-09 新建。ACGEvent 11/7、HK01／01空間：日本巡迴展香港站，主題「魔法珠，你還留著嗎？」；重現美空第一小學課室、魔女界、原畫及變身器立體裝置。角色見面會 12/12–13、12/19–20（消費滿額換領見…",
+      "featured": false,
+      "verifiedAt": "2026-11-09",
       "sample": false
     },
     {
@@ -1125,6 +1078,27 @@
       "sample": false
     },
     {
+      "id": "1b7b42315c8e5af8",
+      "title": "川久保拓司見面會 2027",
+      "status": "即將開始",
+      "notionStatus": "即將開始",
+      "category": "見面會",
+      "ips": [],
+      "date": "2027-01-10",
+      "endDate": "2027-01-10",
+      "timeNote": "2027-01-10　13:00 入場／13:30 開演",
+      "place": "Excellent Global Business Centre（荔枝角長沙灣道 833 號長沙灣廣場一期 9 樓 10 室）",
+      "mapUrl": "https://www.google.com/maps/search/?api=1&query=Excellent%20Global%20Business%20Centre%EF%BC%88%E8%8D%94%E6%9E%9D%E8%A7%92%E9%95%B7%E6%B2%99%E7%81%A3%E9%81%93%20833%20%E8%99%9F%E9%95%B7%E6%B2%99%E7%81%A3%E5%BB%A3%E5%A0%B4%E4%B8%80%E6%9C%9F%209%20%E6%A8%93%2010%20%E5%AE%A4%EF%BC%89",
+      "price": "SVIP HK$1,180（限購2張）／VIP HK$880（限購4張）／A席 HK$480（限購4張）",
+      "ticketUrl": "https://www.art-mate.net/doc/101835",
+      "ticketNote": "art-mate；2026-11-06 起發售",
+      "source": "https://www.art-mate.net/doc/101835",
+      "notes": "2026-11-09 新建。主辦緣聚會有限公司。特攝演員（《超人力斯》孤門一輝）。SVIP 含合照券＋簽名券＋限定寫真＋入場特典＋前兩行座位＋優先特典會；VIP 含合照券＋簽名券＋入場特典；A席含入場特典。6歲以下不受理；7–12歲須監護…",
+      "featured": false,
+      "verifiedAt": "2026-11-09",
+      "sample": false
+    },
+    {
       "id": "4833f58463d0b3a1",
       "title": "礒部花凜香港粉絲見面會",
       "status": "即將開始",
@@ -1168,6 +1142,27 @@
       "notes": "MYTH & ROID（Re:ゼロ／OVERLORD／幼女戰記 主題曲）。2026-10-26 新建。",
       "featured": false,
       "verifiedAt": "2026-10-26",
+      "sample": false
+    },
+    {
+      "id": "a2a716b714fa60b6",
+      "title": "樋口幸平 Fan Meeting in 香港",
+      "status": "即將開始",
+      "notionStatus": "即將開始",
+      "category": "見面會",
+      "ips": [],
+      "date": "2027-01-23",
+      "endDate": "2027-01-23",
+      "timeNote": "午場 10:00入場／11:00開演；晚場 15:00入場／16:00開演",
+      "place": "荃灣悅來酒店 5樓宴會廳 Panda Grand Ballroom（荃華街 3 號）",
+      "mapUrl": "https://www.google.com/maps/search/?api=1&query=%E8%8D%83%E7%81%A3%E6%82%85%E4%BE%86%E9%85%92%E5%BA%97%205%E6%A8%93%E5%AE%B4%E6%9C%83%E5%BB%B3%20Panda%20Grand%20Ballroom%EF%BC%88%E8%8D%83%E8%8F%AF%E8%A1%97%203%20%E8%99%9F%EF%BC%89",
+      "price": "SVIP HK$1,350／VIP HK$1,100／一般 HK$750（另加平台費 HK$12）",
+      "ticketUrl": "https://takkiasia.kktix.cc/events/higuchi-kohei-fm-hk-2027",
+      "ticketNote": "KKTIX 實名制；SVIP 11/11 18:00 開售；VIP／一般票 11/13 18:00 開售",
+      "source": "https://takkiasia.kktix.cc/events/higuchi-kohei-fm-hk-2027",
+      "notes": "2026-11-09 新建。特攝演員（仮面ライダーリバイス／美 少年）。SVIP 含合照＋寫名簽名明信片＋擊掌；VIP 含合照＋簽名明信片＋擊掌；一般票含簽名明信片＋擊掌。7歲或以上；未滿15歲須監護人陪同。",
+      "featured": false,
+      "verifiedAt": "2026-11-09",
       "sample": false
     },
     {
