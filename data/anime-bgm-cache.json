@@ -1,6 +1,6 @@
 {
   "schema": "anime-bgm-cache.v1",
-  "updatedAt": "2026-11-03",
+  "updatedAt": "2026-11-10",
   "entries": {
     "bluereflectionray": {
       "keyword": "BLUE REFLECTION RAY",
@@ -35,7 +35,7 @@
     "学園アイドルマスター": {
       "keyword": "学園アイドルマスター",
       "bgmId": null,
-      "checkedAt": "2026-11-03"
+      "checkedAt": "2026-11-10"
     },
     "目覚めたら最强装备と宇宙船持ちだったので一戸建て目指して佣兵として働くことにしました": {
       "keyword": "目覚めたら最強装備と宇宙船持ちだったので、一戸建て目指して傭兵として働くことにしました",
@@ -66,6 +66,11 @@
       "keyword": "魔法少女リリカルなのは EXCEEDS Gu",
       "bgmId": null,
       "checkedAt": "2026-10-13"
+    },
+    "黑化吧圣女大人s2": {
+      "keyword": "黑化吧！聖女大人 第二季",
+      "bgmId": 650428,
+      "checkedAt": "2026-11-10"
     }
   }
 }

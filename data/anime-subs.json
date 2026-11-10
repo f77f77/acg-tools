@@ -1,6 +1,6 @@
 {
   "schema": "anime-subs.v1",
-  "updatedAt": "2026-10-27",
+  "updatedAt": "2026-11-10",
   "note": "由 Notion「中文字幕動畫播放表」同步。bgmId 以 Notion 欄位優先，其次來源網址、本季 season.json 標題、Bangumi 搜尋。未能對上嘅作品列喺 unresolved，請喺 Notion 填 bgmId。",
   "unresolved": [
     {
@@ -349,7 +349,7 @@
         "傷だらけ聖女より報復をこめて Season2"
       ],
       "bgmId": 650428,
-      "bgmIdSource": "season",
+      "bgmIdSource": "search",
       "platforms": [
         "巴哈姆特動畫瘋",
         "Ani-One Asia"
