@@ -1,6 +1,6 @@
 {
   "schema": "events.v2",
-  "updatedAt": "2026-11-09",
+  "updatedAt": "2026-11-10",
   "note": "活動由 Notion「香港ACG情報看板」每日同步（香港時間）。狀態會按日期重算：開始至結束當日係進行中，未開始係即將開始，完結七日內先保留。周邊截止仍然手改 deadlines[]；標成示例嘅截止唔會保留。",
   "events": [
     {
@@ -313,6 +313,29 @@
       "notes": "海外頁：https://www.liveviewing.com/events/hoshimachisuisei_lv_overseas/ ；日本頁：https://liveviewing.jp/hoshimachi-suisei-2026/",
       "featured": false,
       "verifiedAt": "2026-10-15",
+      "sample": false
+    },
+    {
+      "id": "6ffd2a4529e0c601",
+      "title": "鋼之鍊金術師 - 森巴拉的征服者（anifest動画藝術祭2026）",
+      "status": "即將開始",
+      "notionStatus": "即將開始",
+      "category": "影展",
+      "ips": [
+        "anifest"
+      ],
+      "date": "2026-11-12",
+      "endDate": "2026-11-13",
+      "timeNote": "2026-11-12～11-13　日語　約105分　anifest動画藝術祭2026 4K重映加場",
+      "place": "百老匯院線（YOHO／嘉湖銀座／GALA／太古城／apm 等）",
+      "mapUrl": "https://www.google.com/maps/search/?api=1&query=%E7%99%BE%E8%80%81%E5%8C%AF%E9%99%A2%E7%B7%9A%EF%BC%88YOHO%EF%BC%8F%E5%98%89%E6%B9%96%E9%8A%80%E5%BA%A7%EF%BC%8FGALA%EF%BC%8F%E5%A4%AA%E5%8F%A4%E5%9F%8E%EF%BC%8Fapm%20%E7%AD%89%EF%BC%89",
+      "price": "約 $80–$100",
+      "ticketUrl": "https://m.wmoov.com/movie/showtimes/73177",
+      "ticketNote": "百老匯院線／wmoov",
+      "source": "https://wmoov.com/movie/details/73177",
+      "notes": "2026-11-10 新建。wmoov 資料更新日 11/10；百老匯標 anifest動画藝術祭2026。原 8/30 起重映檔期後再加 11/12–13 場次（今日尚未開映，故標即將開始）。同系《嘆息之丘的聖星》未見 11 月場次，未…",
+      "featured": false,
+      "verifiedAt": "2026-11-10",
       "sample": false
     },
     {
@@ -1145,6 +1168,29 @@
       "sample": false
     },
     {
+      "id": "042c4246ac1a9cf9",
+      "title": "YOASOBI 11-CITY ASIA-OCEANIA TOUR 2026–2027「超惑星」香港站",
+      "status": "即將開始",
+      "notionStatus": "即將開始",
+      "category": "演唱會",
+      "ips": [
+        "YOASOBI"
+      ],
+      "date": "2027-01-21",
+      "endDate": "2027-01-22",
+      "timeNote": "2027-01-21（四）、2027-01-22（五）",
+      "place": "亞洲國際博覽館 AsiaWorld-Arena（赤鱲角）",
+      "mapUrl": "https://www.google.com/maps/search/?api=1&query=%E4%BA%9E%E6%B4%B2%E5%9C%8B%E9%9A%9B%E5%8D%9A%E8%A6%BD%E9%A4%A8%20AsiaWorld-Arena%EF%BC%88%E8%B5%A4%E9%B1%B2%E8%A7%92%EF%BC%89",
+      "price": "未公布",
+      "ticketUrl": "",
+      "ticketNote": "門票價錢／發售安排尚未公布",
+      "source": "https://www.yoasobi-music.jp/news/588376",
+      "notes": "2026-11-10 核實：官方 11/9 公布香港場 2027/1/21–1/22 AsiaWorld-Arena；巡演名由「10-CITY DOME & STADIUM TOUR」改為「11-CITY ASIA-OCEANIA TOU…",
+      "featured": false,
+      "verifiedAt": "2026-11-10",
+      "sample": false
+    },
+    {
       "id": "a2a716b714fa60b6",
       "title": "樋口幸平 Fan Meeting in 香港",
       "status": "即將開始",
@@ -1343,29 +1389,6 @@
       "notes": "2026-11-08 新建。亞巡日程：2027-05-01 台北、2027-06-05 香港、2027-06-19 東京、2027-07-03 首爾。場地／票務未公布。另有 2027-04-10 香港粉絲見面會分列。",
       "featured": false,
       "verifiedAt": "2026-11-08",
-      "sample": false
-    },
-    {
-      "id": "042c4246ac1a9cf9",
-      "title": "YOASOBI Asia 10-City Dome & Stadium Tour 2026–2027 香港站",
-      "status": "即將開始",
-      "notionStatus": "即將開始",
-      "category": "演唱會",
-      "ips": [
-        "YOASOBI"
-      ],
-      "date": "",
-      "endDate": "",
-      "timeNote": "日期未公布",
-      "place": "未公布",
-      "mapUrl": "https://www.google.com/maps/search/?api=1&query=%E6%9C%AA%E5%85%AC%E5%B8%83",
-      "price": "未公布",
-      "ticketUrl": "",
-      "ticketNote": "無／未公布",
-      "source": "https://www.yoasobi-music.jp/",
-      "notes": "不可把官網其他城市日期當成香港日",
-      "featured": false,
-      "verifiedAt": "2026-09-29",
       "sample": false
     },
     {
