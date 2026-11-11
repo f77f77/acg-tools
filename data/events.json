@@ -1,6 +1,6 @@
 {
   "schema": "events.v2",
-  "updatedAt": "2026-11-10",
+  "updatedAt": "2026-11-11",
   "note": "活動由 Notion「香港ACG情報看板」每日同步（香港時間）。狀態會按日期重算：開始至結束當日係進行中，未開始係即將開始，完結七日內先保留。周邊截止仍然手改 deadlines[]；標成示例嘅截止唔會保留。",
   "events": [
     {
@@ -154,9 +154,9 @@
       "ticketUrl": "https://m.wmoov.com/movie/showtimes/73979",
       "ticketNote": "",
       "source": "https://kinohk.com/movie/to-you-in-the-beyond-2026",
-      "notes": "日本原創動畫電影（To You in the Beyond），導演和田純一。2026-11-08 核實：wmoov showtimes/73979 今日仍多院有場。維持進行中。",
+      "notes": "日本原創動畫電影（To You in the Beyond），導演和田純一。2026-11-08 核實：wmoov showtimes/73979 今日仍多院有場。維持進行中。2026-11-11 核實：wmoov showtimes/7…",
       "featured": false,
-      "verifiedAt": "2026-11-09",
+      "verifiedAt": "2026-11-11",
       "sample": false
     },
     {
@@ -178,9 +178,9 @@
       "ticketUrl": "https://m.wmoov.com/movie/showtimes/72940",
       "ticketNote": "院線／wmoov",
       "source": "https://blog.enjoymovie.net/godzilla-minus-zero-hong-kong-november/",
-      "notes": "2026-11-08 核實：wmoov showtimes/72940 今日仍多院有場（含 IMAX）。維持進行中。",
+      "notes": "2026-11-08 核實：wmoov showtimes/72940 今日仍多院有場（含 IMAX）。維持進行中。2026-11-11 核實：wmoov showtimes/72940 今日仍多院有場（含後續日期至 11/20）。維持進…",
       "featured": false,
-      "verifiedAt": "2026-11-09",
+      "verifiedAt": "2026-11-11",
       "sample": false
     },
     {
@@ -199,9 +199,9 @@
       "ticketUrl": "https://m.wmoov.com/movie/showtimes/73659",
       "ticketNote": "",
       "source": "https://wmoov.com/movie/details/73659",
-      "notes": "2026-11-08 核實：wmoov showtimes/73659 今日仍多院有場。維持進行中。柯南動畫30週年特別篇戲院聯映；曼迪傳播。IP 欄無「名偵探柯南」選項，未加新選項。",
+      "notes": "2026-11-08 核實：wmoov showtimes/73659 今日仍多院有場。維持進行中。柯南動畫30週年特別篇戲院聯映；曼迪傳播。IP 欄無「名偵探柯南」選項，未加新選項。2026-11-11 核實：wmoov showtim…",
       "featured": false,
-      "verifiedAt": "2026-11-09",
+      "verifiedAt": "2026-11-11",
       "sample": false
     },
     {
@@ -251,8 +251,8 @@
     {
       "id": "0d5453625d67f312",
       "title": "MUSE Pop Fest powered by 動漫聯動＠圍方",
-      "status": "即將開始",
-      "notionStatus": "即將開始",
+      "status": "進行中",
+      "notionStatus": "進行中",
       "category": "展會",
       "ips": [
         "多 IP"
@@ -265,17 +265,17 @@
       "price": "免費入場（以主辦最新為準）",
       "ticketUrl": "",
       "ticketNote": "",
-      "source": "https://www.microworksacg.com/en/blogs/news/muse-pop-fest-powered-by-%e5%8b%95%e6%bc%ab%e8%81%af%e5%8b%95-%e5%8d%b3%e5%b0%87%e7%99%bb%e9%99%b8%e5%9c%8d%e6%96%b9",
-      "notes": "動漫聯動 Pop Fest；來源 Microworks／asiapopups／timable。2026-10-25 新建。",
+      "source": "https://www.microworksacg.com/blogs/popup/muse-pop-fest-2026",
+      "notes": "動漫聯動 Pop Fest；來源 Microworks／asiapopups／timable。2026-10-25 新建。2026-11-11：今日開幕（11/11–23，圍方 L2 中庭，12:00–21:00，11/23 至 18:0…",
       "featured": false,
-      "verifiedAt": "2026-11-03",
+      "verifiedAt": "2026-11-11",
       "sample": false
     },
     {
       "id": "0e7196dd663d92b0",
       "title": "Pokémon Center 香港期間限定店 @ 又一城",
-      "status": "即將開始",
-      "notionStatus": "即將開始",
+      "status": "進行中",
+      "notionStatus": "進行中",
       "category": "快閃店",
       "ips": [],
       "date": "2026-11-11",
@@ -286,10 +286,10 @@
       "price": "未公布",
       "ticketUrl": "",
       "ticketNote": "未公布",
-      "source": "https://konggokhk.com/festival_walk_pokemon_30th_anniversary_2026/",
+      "source": "https://www.festivalwalk.com.hk/zh-hk/happenings/pokemons-30-years-of-joy-at-festival-walk",
       "notes": "POKÉMON's 30 YEARS OF JOY AT FESTIVAL WALK；香港首個官方 Pokémon Center Pop-Up。2026-11-01 核：konggokhk／ma.to 確認 11/11–1/3；11/11…",
       "featured": false,
-      "verifiedAt": "2026-11-01",
+      "verifiedAt": "2026-11-11",
       "sample": false
     },
     {
@@ -303,16 +303,16 @@
       ],
       "date": "2026-11-12",
       "endDate": "2026-11-12",
-      "timeNote": "2026-11-12　日本福岡最終場生中繼；日本開演 19:00 JST＝香港 18:00 HKT（本地戲院／開演時間待公布）",
-      "place": "英皇戲院 尖沙咀 iSQUARE（IMAX）（另有澳門場不入表）",
-      "mapUrl": "https://www.google.com/maps/search/?api=1&query=%E8%8B%B1%E7%9A%87%E6%88%B2%E9%99%A2%20%E5%B0%96%E6%B2%99%E5%92%80%20iSQUARE%EF%BC%88IMAX%EF%BC%89%EF%BC%88%E5%8F%A6%E6%9C%89%E6%BE%B3%E9%96%80%E5%A0%B4%E4%B8%8D%E5%85%A5%E8%A1%A8%EF%BC%89",
-      "price": "HK$350",
+      "timeNote": "2026-11-12（四）17:45；日本福岡最終場生中繼（日本開演 19:00 JST）；片長約 180 分鐘",
+      "place": "英皇戲院 銅鑼灣時代廣場、尖沙咀 iSQUARE（IMAX）（另有澳門葡京人場不入表）",
+      "mapUrl": "https://www.google.com/maps/search/?api=1&query=%E8%8B%B1%E7%9A%87%E6%88%B2%E9%99%A2%20%E9%8A%85%E9%91%BC%E7%81%A3%E6%99%82%E4%BB%A3%E5%BB%A3%E5%A0%B4%E3%80%81%E5%B0%96%E6%B2%99%E5%92%80%20iSQUARE%EF%BC%88IMAX%EF%BC%89%EF%BC%88%E5%8F%A6%E6%9C%89%E6%BE%B3%E9%96%80%E8%91%A1%E4%BA%AC%E4%BA%BA%E5%A0%B4%E4%B8%8D%E5%85%A5%E8%A1%A8%EF%BC%89",
+      "price": "HK$360（香港場）",
       "ticketUrl": "",
       "ticketNote": "2026-10-14 14:00 HKT 開售；入場特典數量有限",
       "source": "https://acgevent.com/archives/40062",
-      "notes": "海外頁：https://www.liveviewing.com/events/hoshimachisuisei_lv_overseas/ ；日本頁：https://liveviewing.jp/hoshimachi-suisei-2026/",
+      "notes": "海外頁：https://www.liveviewing.com/events/hoshimachisuisei_lv_overseas/ ；日本頁：https://liveviewing.jp/hoshimachi-suisei-2026…",
       "featured": false,
-      "verifiedAt": "2026-10-15",
+      "verifiedAt": "2026-11-11",
       "sample": false
     },
     {
@@ -1178,16 +1178,16 @@
       ],
       "date": "2027-01-21",
       "endDate": "2027-01-22",
-      "timeNote": "2027-01-21（四）、2027-01-22（五）",
+      "timeNote": "2027-01-21（四）、2027-01-22（五）；報導寫 20:00，待官方確認",
       "place": "亞洲國際博覽館 AsiaWorld-Arena（赤鱲角）",
       "mapUrl": "https://www.google.com/maps/search/?api=1&query=%E4%BA%9E%E6%B4%B2%E5%9C%8B%E9%9A%9B%E5%8D%9A%E8%A6%BD%E9%A4%A8%20AsiaWorld-Arena%EF%BC%88%E8%B5%A4%E9%B1%B2%E8%A7%92%EF%BC%89",
-      "price": "未公布",
-      "ticketUrl": "",
-      "ticketNote": "門票價錢／發售安排尚未公布",
+      "price": "HK$980–$1,880（星島頭條 11/10 報）",
+      "ticketUrl": "https://www.ticketflap.com/yoasobi2027",
+      "ticketNote": "滙豐 Mastercard 優先預售 2026-11-16 10:00–22:00；Ticketflap 公開發售 11/17 15:00 起（星島頭條 11/10 報；官方站本輪未登售票日程）",
       "source": "https://www.yoasobi-music.jp/news/588376",
       "notes": "2026-11-10 核實：官方 11/9 公布香港場 2027/1/21–1/22 AsiaWorld-Arena；巡演名由「10-CITY DOME & STADIUM TOUR」改為「11-CITY ASIA-OCEANIA TOU…",
       "featured": false,
-      "verifiedAt": "2026-11-10",
+      "verifiedAt": "2026-11-11",
       "sample": false
     },
     {
@@ -1389,6 +1389,29 @@
       "notes": "2026-11-08 新建。亞巡日程：2027-05-01 台北、2027-06-05 香港、2027-06-19 東京、2027-07-03 首爾。場地／票務未公布。另有 2027-04-10 香港粉絲見面會分列。",
       "featured": false,
       "verifiedAt": "2026-11-08",
+      "sample": false
+    },
+    {
+      "id": "6dc6beffece5abf5",
+      "title": "第28屆香港動漫電玩節（ACGHK 2027）",
+      "status": "即將開始",
+      "notionStatus": "即將開始",
+      "category": "展會",
+      "ips": [
+        "ACGHK"
+      ],
+      "date": "2027-07-23",
+      "endDate": "2027-07-27",
+      "timeNote": "2027-07-23～27；Timable 標每日 10:30–21:00（待官方確認）",
+      "place": "灣仔香港會議展覽中心展覽廳 1（Timable 另列 1、3、5，廳數待官網確認）",
+      "mapUrl": "https://www.google.com/maps/search/?api=1&query=%E7%81%A3%E4%BB%94%E9%A6%99%E6%B8%AF%E6%9C%83%E8%AD%B0%E5%B1%95%E8%A6%BD%E4%B8%AD%E5%BF%83%E5%B1%95%E8%A6%BD%E5%BB%B3%201%EF%BC%88Timable%20%E5%8F%A6%E5%88%97%201%E3%80%813%E3%80%815%EF%BC%8C%E5%BB%B3%E6%95%B8%E5%BE%85%E5%AE%98%E7%B6%B2%E7%A2%BA%E8%AA%8D%EF%BC%89",
+      "price": "未公布",
+      "ticketUrl": "",
+      "ticketNote": "",
+      "source": "https://acgevent.com/archives/40425",
+      "notes": "2026-11-11 補建。ACGEvent 11/7 報第28屆將於 2027/7/23–27 灣仔會展 Hall 1 舉行。Timable 列會展展覽廳 1、3、5，每日 10:30–21:00。官方 ani-com.hk 本輪仍為…",
+      "featured": false,
+      "verifiedAt": "2026-11-11",
       "sample": false
     },
     {
