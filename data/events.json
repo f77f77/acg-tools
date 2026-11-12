@@ -1,6 +1,6 @@
 {
   "schema": "events.v2",
-  "updatedAt": "2026-11-11",
+  "updatedAt": "2026-11-12",
   "note": "活動由 Notion「香港ACG情報看板」每日同步（香港時間）。狀態會按日期重算：開始至結束當日係進行中，未開始係即將開始，完結七日內先保留。周邊截止仍然手改 deadlines[]；標成示例嘅截止唔會保留。",
   "events": [
     {
@@ -45,9 +45,9 @@
       "ticketUrl": "",
       "ticketNote": "無／未公布",
       "source": "https://acgevent.com/archives/39869",
-      "notes": "日本 EVA STORE／RADIO EVA 及香港限定、重映限定抽卡機。2026-11-08 核實：檔期仍標至 11/12，維持進行中。",
+      "notes": "日本 EVA STORE／RADIO EVA 及香港限定、重映限定抽卡機。2026-11-08 核實：檔期仍標至 11/12，維持進行中。 2026-11-12 核實：檔期最後一日（至 11/12），維持進行中。",
       "featured": false,
-      "verifiedAt": "2026-11-09",
+      "verifiedAt": "2026-11-12",
       "sample": false
     },
     {
@@ -156,7 +156,7 @@
       "source": "https://kinohk.com/movie/to-you-in-the-beyond-2026",
       "notes": "日本原創動畫電影（To You in the Beyond），導演和田純一。2026-11-08 核實：wmoov showtimes/73979 今日仍多院有場。維持進行中。2026-11-11 核實：wmoov showtimes/7…",
       "featured": false,
-      "verifiedAt": "2026-11-11",
+      "verifiedAt": "2026-11-12",
       "sample": false
     },
     {
@@ -180,7 +180,7 @@
       "source": "https://blog.enjoymovie.net/godzilla-minus-zero-hong-kong-november/",
       "notes": "2026-11-08 核實：wmoov showtimes/72940 今日仍多院有場（含 IMAX）。維持進行中。2026-11-11 核實：wmoov showtimes/72940 今日仍多院有場（含後續日期至 11/20）。維持進…",
       "featured": false,
-      "verifiedAt": "2026-11-11",
+      "verifiedAt": "2026-11-12",
       "sample": false
     },
     {
@@ -201,7 +201,7 @@
       "source": "https://wmoov.com/movie/details/73659",
       "notes": "2026-11-08 核實：wmoov showtimes/73659 今日仍多院有場。維持進行中。柯南動畫30週年特別篇戲院聯映；曼迪傳播。IP 欄無「名偵探柯南」選項，未加新選項。2026-11-11 核實：wmoov showtim…",
       "featured": false,
-      "verifiedAt": "2026-11-11",
+      "verifiedAt": "2026-11-12",
       "sample": false
     },
     {
@@ -295,8 +295,8 @@
     {
       "id": "9525e133cf9f8bc6",
       "title": "HOSHIMACHI SUISEI ARENA TOUR 2026 Once Upon a Stellar LIVE VIEWING（香港）",
-      "status": "即將開始",
-      "notionStatus": "即將開始",
+      "status": "進行中",
+      "notionStatus": "進行中",
       "category": "LIVE VIEWING",
       "ips": [
         "星街すいせい"
@@ -312,14 +312,14 @@
       "source": "https://acgevent.com/archives/40062",
       "notes": "海外頁：https://www.liveviewing.com/events/hoshimachisuisei_lv_overseas/ ；日本頁：https://liveviewing.jp/hoshimachi-suisei-2026…",
       "featured": false,
-      "verifiedAt": "2026-11-11",
+      "verifiedAt": "2026-11-12",
       "sample": false
     },
     {
       "id": "6ffd2a4529e0c601",
       "title": "鋼之鍊金術師 - 森巴拉的征服者（anifest動画藝術祭2026）",
-      "status": "即將開始",
-      "notionStatus": "即將開始",
+      "status": "進行中",
+      "notionStatus": "進行中",
       "category": "影展",
       "ips": [
         "anifest"
@@ -333,9 +333,9 @@
       "ticketUrl": "https://m.wmoov.com/movie/showtimes/73177",
       "ticketNote": "百老匯院線／wmoov",
       "source": "https://wmoov.com/movie/details/73177",
-      "notes": "2026-11-10 新建。wmoov 資料更新日 11/10；百老匯標 anifest動画藝術祭2026。原 8/30 起重映檔期後再加 11/12–13 場次（今日尚未開映，故標即將開始）。同系《嘆息之丘的聖星》未見 11 月場次，未…",
+      "notes": "2026-11-10 新建。wmoov 資料更新日 11/10；百老匯標 anifest動画藝術祭2026。原 8/30 起重映檔期後再加 11/12–13 場次。同系《嘆息之丘的聖星》未見 11 月場次，未並列。IP 欄無「鋼之鍊金術師…",
       "featured": false,
-      "verifiedAt": "2026-11-10",
+      "verifiedAt": "2026-11-12",
       "sample": false
     },
     {
@@ -505,16 +505,16 @@
       "ips": [],
       "date": "2026-11-19",
       "endDate": "2026-11-19",
-      "timeNote": "2026-11-19（四）香港上映",
-      "place": "全港院線（場次未公布）",
-      "mapUrl": "https://www.google.com/maps/search/?api=1&query=%E5%85%A8%E6%B8%AF%E9%99%A2%E7%B7%9A%EF%BC%88%E5%A0%B4%E6%AC%A1%E6%9C%AA%E5%85%AC%E5%B8%83%EF%BC%89",
-      "price": "未公布",
-      "ticketUrl": "",
-      "ticketNote": "院線／未公布",
+      "timeNote": "2026-11-19（四）香港公映；11/15（日）優先場",
+      "place": "優先場：MCL AIRSIDE、the sky（公映場次未公布）",
+      "mapUrl": "https://www.google.com/maps/search/?api=1&query=%E5%84%AA%E5%85%88%E5%A0%B4%EF%BC%9AMCL%20AIRSIDE%E3%80%81the%20sky%EF%BC%88%E5%85%AC%E6%98%A0%E5%A0%B4%E6%AC%A1%E6%9C%AA%E5%85%AC%E5%B8%83%EF%BC%89",
+      "price": "優先場約 $90；公映票價未公布",
+      "ticketUrl": "https://m.wmoov.com/movie/showtimes/73723",
+      "ticketNote": "院線／wmoov（優先場已開售）",
       "source": "https://wmoov.com/movie/details/73723",
       "notes": "光之美少女系列第 35 部劇場版；約 71 分鐘；日語。2026-11-08 核實：ACGEvent 11/7 報港澳 2D／4DX 同步上映；2D 特典日本直送角色光柵收藏卡（全3款隨機）、4DX 特典名片風收藏卡（全5款隨機）。發行新…",
       "featured": false,
-      "verifiedAt": "2026-11-08",
+      "verifiedAt": "2026-11-12",
       "sample": false
     },
     {
@@ -669,9 +669,9 @@
       "ticketUrl": "",
       "ticketNote": "院線／未公布",
       "source": "https://wmoov.com/movie/details/73598",
-      "notes": "系列大學篇完結篇；日語原聲、中英文字幕；CloverWorks",
+      "notes": "系列大學篇完結篇；日語原聲、中英文字幕；CloverWorks。2026-11-12 核實：wmoov showtimes/73598 仍無場次；片長／級別仍待定。",
       "featured": false,
-      "verifiedAt": "2026-10-06",
+      "verifiedAt": "2026-11-12",
       "sample": false
     },
     {
@@ -799,13 +799,13 @@
       "timeNote": "2026-12-03",
       "place": "全港院線（場次陸續出）　發行：木棉花香港",
       "mapUrl": "https://www.google.com/maps/search/?api=1&query=%E5%85%A8%E6%B8%AF%E9%99%A2%E7%B7%9A%EF%BC%88%E5%A0%B4%E6%AC%A1%E9%99%B8%E7%BA%8C%E5%87%BA%EF%BC%89%E3%80%80%E7%99%BC%E8%A1%8C%EF%BC%9A%E6%9C%A8%E6%A3%89%E8%8A%B1%E9%A6%99%E6%B8%AF",
-      "price": "未公布；特典稍後公布",
-      "ticketUrl": "",
-      "ticketNote": "院線／未公布",
+      "price": "木棉花前賣券套票組 HK$110（換票證＋主視覺 PVC 小卡；不適用特典場）；戲院票價未公布",
+      "ticketUrl": "https://www.musehk.shop/product-page/%E5%8A%87%E5%A0%B4%E7%89%88-%E4%BE%86%E8%87%AA%E6%B7%B1%E6%B7%B5-%E8%A6%BA%E9%86%92%E7%9A%84%E7%A5%9E%E7%A7%98-%E9%9B%BB%E5%BD%B1%E5%89%8D%E8%B3%A3%E5%88%B8%E5%A5%97%E7%A5%A8%E7%B5%84-2026%E5%B9%B411%E6%9C%88%E4%B8%8B%E6%97%AC%E9%96%8B%E5%A7%8B%E9%85%8D%E9%80%81",
+      "ticketNote": "Muse HK shop 前賣券；戲院場次未公布",
       "source": "https://acgevent.com/archives/40059",
-      "notes": "",
+      "notes": "2026-11-12 核實：Muse HK shop 已開售前賣券套票組 HK$110（換票證 1 張＋特製主視覺 PVC 小卡；每人限 4 套；11 月中下旬起配送；不適用特典場）。wmoov 現時未見專頁／場次。特典場資訊仍待公布。",
       "featured": false,
-      "verifiedAt": "2026-09-29",
+      "verifiedAt": "2026-11-12",
       "sample": false
     },
     {
@@ -824,9 +824,9 @@
       "ticketUrl": "",
       "ticketNote": "院線／未公布",
       "source": "https://wmoov.com/movie/details/74196",
-      "notes": "2026-11-04 新建；發行新映影片；日語；約55分鐘；2D／4DX／MX4D。日本 2026-10-09 上映。",
+      "notes": "2026-11-04 新建；發行新映影片；日語；約55分鐘；2D／4DX／MX4D。日本 2026-10-09 上映。2026-11-12 核實：wmoov showtimes/74196 仍無場次；片長／級別仍待定。",
       "featured": false,
-      "verifiedAt": "2026-11-04",
+      "verifiedAt": "2026-11-12",
       "sample": false
     },
     {
@@ -911,9 +911,9 @@
       "ticketUrl": "",
       "ticketNote": "未公布（院線／hkmovie6）",
       "source": "https://m.wmoov.com/movie/details/73499",
-      "notes": "2000 年第二部劇場版；香港以前只曾喺翡翠台播放，從未上映戲院；10-06 WMOOV 標暫定 12-10 上映，戲院未公布；木棉花預告見 https://acgevent.com/archives/40040",
+      "notes": "2000 年第二部劇場版；香港以前只曾喺翡翠台播放，從未上映戲院；10-06 WMOOV 標暫定 12-10 上映，戲院未公布；木棉花預告見 https://acgevent.com/archives/40040。2026-11-12 核…",
       "featured": false,
-      "verifiedAt": "2026-10-06",
+      "verifiedAt": "2026-11-12",
       "sample": false
     },
     {
