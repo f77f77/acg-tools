@@ -1,6 +1,6 @@
 {
   "schema": "events.v2",
-  "updatedAt": "2026-11-12",
+  "updatedAt": "2026-11-13",
   "note": "活動由 Notion「香港ACG情報看板」每日同步（香港時間）。狀態會按日期重算：開始至結束當日係進行中，未開始係即將開始，完結七日內先保留。周邊截止仍然手改 deadlines[]；標成示例嘅截止唔會保留。",
   "events": [
     {
@@ -30,8 +30,8 @@
     {
       "id": "56176dafc294b614",
       "title": "EVANGELION 30th 重映期間限定店",
-      "status": "進行中",
-      "notionStatus": "進行中",
+      "status": "已完結",
+      "notionStatus": "已完結",
       "category": "限定店",
       "ips": [
         "EVANGELION"
@@ -47,7 +47,7 @@
       "source": "https://acgevent.com/archives/39869",
       "notes": "日本 EVA STORE／RADIO EVA 及香港限定、重映限定抽卡機。2026-11-08 核實：檔期仍標至 11/12，維持進行中。 2026-11-12 核實：檔期最後一日（至 11/12），維持進行中。",
       "featured": false,
-      "verifiedAt": "2026-11-12",
+      "verifiedAt": "2026-11-13",
       "sample": false
     },
     {
@@ -136,51 +136,6 @@
       "notes": "2026-11-07 補建漏報。2026-11-08 核實：PCM／HK01 仍標 11/3–22 希慎廣場 B113及B115；ONE PIECE×NBA、龍珠會場限定 SMSP、Tamagotchi Friends、Yurugun 渣…",
       "featured": false,
       "verifiedAt": "2026-11-09",
-      "sample": false
-    },
-    {
-      "id": "edf04eb78a21acef",
-      "title": "《致遙不可及彼方的你》香港上映",
-      "status": "已完結",
-      "notionStatus": "進行中",
-      "category": "電影",
-      "ips": [],
-      "date": "2026-11-05",
-      "endDate": "2026-11-05",
-      "timeNote": "2026-11-05 起上映；116 分鐘；日語原聲中文字幕",
-      "place": "香港各大戲院",
-      "mapUrl": "https://www.google.com/maps/search/?api=1&query=%E9%A6%99%E6%B8%AF%E5%90%84%E5%A4%A7%E6%88%B2%E9%99%A2",
-      "price": "",
-      "ticketUrl": "https://m.wmoov.com/movie/showtimes/73979",
-      "ticketNote": "",
-      "source": "https://kinohk.com/movie/to-you-in-the-beyond-2026",
-      "notes": "日本原創動畫電影（To You in the Beyond），導演和田純一。2026-11-08 核實：wmoov showtimes/73979 今日仍多院有場。維持進行中。2026-11-11 核實：wmoov showtimes/7…",
-      "featured": false,
-      "verifiedAt": "2026-11-12",
-      "sample": false
-    },
-    {
-      "id": "07870a454cab94aa",
-      "title": "哥斯拉-0.0",
-      "status": "已完結",
-      "notionStatus": "進行中",
-      "category": "電影",
-      "ips": [
-        "哥斯拉",
-        "特攝"
-      ],
-      "date": "2026-11-05",
-      "endDate": "2026-11-05",
-      "timeNote": "2026-11-05 香港上映；wmoov 今日多院有場",
-      "place": "全港院線（英皇、MCL、百老匯、影藝等）　發行：洲立　IMAX",
-      "mapUrl": "https://www.google.com/maps/search/?api=1&query=%E5%85%A8%E6%B8%AF%E9%99%A2%E7%B7%9A%EF%BC%88%E8%8B%B1%E7%9A%87%E3%80%81MCL%E3%80%81%E7%99%BE%E8%80%81%E5%8C%AF%E3%80%81%E5%BD%B1%E8%97%9D%E7%AD%89%EF%BC%89%E3%80%80%E7%99%BC%E8%A1%8C%EF%BC%9A%E6%B4%B2%E7%AB%8B%E3%80%80IMAX",
-      "price": "約見院線",
-      "ticketUrl": "https://m.wmoov.com/movie/showtimes/72940",
-      "ticketNote": "院線／wmoov",
-      "source": "https://blog.enjoymovie.net/godzilla-minus-zero-hong-kong-november/",
-      "notes": "2026-11-08 核實：wmoov showtimes/72940 今日仍多院有場（含 IMAX）。維持進行中。2026-11-11 核實：wmoov showtimes/72940 今日仍多院有場（含後續日期至 11/20）。維持進…",
-      "featured": false,
-      "verifiedAt": "2026-11-12",
       "sample": false
     },
     {
@@ -295,8 +250,8 @@
     {
       "id": "9525e133cf9f8bc6",
       "title": "HOSHIMACHI SUISEI ARENA TOUR 2026 Once Upon a Stellar LIVE VIEWING（香港）",
-      "status": "進行中",
-      "notionStatus": "進行中",
+      "status": "已完結",
+      "notionStatus": "已完結",
       "category": "LIVE VIEWING",
       "ips": [
         "星街すいせい"
@@ -312,7 +267,7 @@
       "source": "https://acgevent.com/archives/40062",
       "notes": "海外頁：https://www.liveviewing.com/events/hoshimachisuisei_lv_overseas/ ；日本頁：https://liveviewing.jp/hoshimachi-suisei-2026…",
       "featured": false,
-      "verifiedAt": "2026-11-12",
+      "verifiedAt": "2026-11-13",
       "sample": false
     },
     {
@@ -341,8 +296,8 @@
     {
       "id": "4d6dda032e7523a6",
       "title": "《孤獨搖滾！》動畫展 香港站",
-      "status": "即將開始",
-      "notionStatus": "即將開始",
+      "status": "進行中",
+      "notionStatus": "進行中",
       "category": "展覽",
       "ips": [],
       "date": "2026-11-13",
@@ -356,7 +311,7 @@
       "source": "https://www.mightymedia.co.jp/bocchi.rocks-exhibition.hk",
       "notes": "主辦曼迪傳播；九大展區。2026-10-24：預售已於 Klook、Trip.com、香港01 開跑；預售單人票HK$98／特典票HK$138（至11/12）；入場須另約 https://inline.app/booking/bocchi…",
       "featured": false,
-      "verifiedAt": "2026-10-28",
+      "verifiedAt": "2026-11-13",
       "sample": false
     },
     {
