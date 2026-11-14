@@ -1,6 +1,6 @@
 {
   "schema": "events.v2",
-  "updatedAt": "2026-11-13",
+  "updatedAt": "2026-11-14",
   "note": "活動由 Notion「香港ACG情報看板」每日同步（香港時間）。狀態會按日期重算：開始至結束當日係進行中，未開始係即將開始，完結七日內先保留。周邊截止仍然手改 deadlines[]；標成示例嘅截止唔會保留。",
   "events": [
     {
@@ -139,27 +139,6 @@
       "sample": false
     },
     {
-      "id": "6cdf985e74a4bc5e",
-      "title": "名偵探柯南 第30號殺人事件",
-      "status": "已完結",
-      "notionStatus": "進行中",
-      "category": "電影",
-      "ips": [],
-      "date": "2026-11-06",
-      "endDate": "2026-11-06",
-      "timeNote": "2026-11-06 港澳戲院上映；約93分鐘；IIA；日語",
-      "place": "全港院線（英皇、MCL、百老匯、影藝等）　發行：曼迪傳播",
-      "mapUrl": "https://www.google.com/maps/search/?api=1&query=%E5%85%A8%E6%B8%AF%E9%99%A2%E7%B7%9A%EF%BC%88%E8%8B%B1%E7%9A%87%E3%80%81MCL%E3%80%81%E7%99%BE%E8%80%81%E5%8C%AF%E3%80%81%E5%BD%B1%E8%97%9D%E7%AD%89%EF%BC%89%E3%80%80%E7%99%BC%E8%A1%8C%EF%BC%9A%E6%9B%BC%E8%BF%AA%E5%82%B3%E6%92%AD",
-      "price": "",
-      "ticketUrl": "https://m.wmoov.com/movie/showtimes/73659",
-      "ticketNote": "",
-      "source": "https://wmoov.com/movie/details/73659",
-      "notes": "2026-11-08 核實：wmoov showtimes/73659 今日仍多院有場。維持進行中。柯南動畫30週年特別篇戲院聯映；曼迪傳播。IP 欄無「名偵探柯南」選項，未加新選項。2026-11-11 核實：wmoov showtim…",
-      "featured": false,
-      "verifiedAt": "2026-11-12",
-      "sample": false
-    },
-    {
       "id": "ed5cc6823d38aaba",
       "title": "《都市傳說解體中心》世界大巡迴－香港",
       "status": "進行中",
@@ -273,7 +252,7 @@
     {
       "id": "6ffd2a4529e0c601",
       "title": "鋼之鍊金術師 - 森巴拉的征服者（anifest動画藝術祭2026）",
-      "status": "進行中",
+      "status": "已完結",
       "notionStatus": "進行中",
       "category": "影展",
       "ips": [
@@ -317,8 +296,8 @@
     {
       "id": "ac7e4514ddf7b8d4",
       "title": "堀海登香港見面會",
-      "status": "即將開始",
-      "notionStatus": "即將開始",
+      "status": "進行中",
+      "notionStatus": "進行中",
       "category": "見面會",
       "ips": [
         "堀海登"
@@ -332,15 +311,15 @@
       "ticketUrl": "https://www.art-mate.net/doc/99554",
       "ticketNote": "",
       "source": "https://www.art-mate.net/doc/99554",
-      "notes": "同日對上近藤玲奈，場地不同",
+      "notes": "同日對上近藤玲奈，場地不同。2026-11-14：今日舉行→即將開始改進行中，完場後明日封存。",
       "featured": false,
-      "verifiedAt": "2026-09-29",
+      "verifiedAt": "2026-11-14",
       "sample": false
     },
     {
       "id": "e383e1ecda2d63eb",
       "title": "天野浩成香港見面會2026（Japanese Artist Series 16）",
-      "status": "即將開始",
+      "status": "進行中",
       "notionStatus": "即將開始",
       "category": "見面會",
       "ips": [],
@@ -361,8 +340,8 @@
     {
       "id": "423b48ab5317d3b2",
       "title": "近藤玲奈 FanMeeting in Hong Kong",
-      "status": "即將開始",
-      "notionStatus": "即將開始",
+      "status": "進行中",
+      "notionStatus": "進行中",
       "category": "見面會",
       "ips": [
         "近藤玲奈",
@@ -377,9 +356,9 @@
       "ticketUrl": "",
       "ticketNote": "UUTIX 09-25 16:00 起公開發售（晝場 16:00、夜場 16:10）；晝場 12:30 入場／13:00 開演，夜場 17:00 入場／17:30 開演",
       "source": "https://acgevent.com/archives/40077",
-      "notes": "晝夜兩場；同日對上堀海登",
+      "notes": "晝夜兩場；同日對上堀海登。2026-11-14：今日舉行→即將開始改進行中，完場後明日封存。",
       "featured": false,
-      "verifiedAt": "2026-11-03",
+      "verifiedAt": "2026-11-14",
       "sample": false
     },
     {
