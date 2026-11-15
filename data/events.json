@@ -1,6 +1,6 @@
 {
   "schema": "events.v2",
-  "updatedAt": "2026-11-14",
+  "updatedAt": "2026-11-15",
   "note": "活動由 Notion「香港ACG情報看板」每日同步（香港時間）。狀態會按日期重算：開始至結束當日係進行中，未開始係即將開始，完結七日內先保留。周邊截止仍然手改 deadlines[]；標成示例嘅截止唔會保留。",
   "events": [
     {
@@ -22,9 +22,9 @@
       "ticketUrl": "",
       "ticketNote": "Kingsley Café 網站訂座／WhatsApp 查詢（見來源）",
       "source": "https://ugo-hk.com/event/19130/%E3%80%8A%E6%88%91%E4%BF%82%E5%B0%8F%E5%BF%8C%E5%BB%89%E3%80%8B%E6%9C%9F%E9%96%93%E9%99%90%E5%AE%9ACaf%C3%A9",
-      "notes": "與時代廣場期間限定店分開；主題可麗餅店場景＋打卡。2026-11-08 核實：ugo-hk 仍標 9/2–11/15 第二階段進行中。維持進行中。",
+      "notes": "與時代廣場期間限定店分開；主題可麗餅店場景＋打卡。2026-11-08 核實：ugo-hk 仍標 9/2–11/15 第二階段進行中。維持進行中。 2026-11-15 核實：ugo-hk 仍標 9/2–11/15 進行中，今日為第二階段…",
       "featured": false,
-      "verifiedAt": "2026-11-09",
+      "verifiedAt": "2026-11-15",
       "sample": false
     },
     {
@@ -252,15 +252,15 @@
     {
       "id": "6ffd2a4529e0c601",
       "title": "鋼之鍊金術師 - 森巴拉的征服者（anifest動画藝術祭2026）",
-      "status": "已完結",
+      "status": "進行中",
       "notionStatus": "進行中",
       "category": "影展",
       "ips": [
         "anifest"
       ],
       "date": "2026-11-12",
-      "endDate": "2026-11-13",
-      "timeNote": "2026-11-12～11-13　日語　約105分　anifest動画藝術祭2026 4K重映加場",
+      "endDate": "2026-11-18",
+      "timeNote": "2026-11-12 起加場；wmoov 場次頁現列至 11/18；日語　約105分　anifest動画藝術祭2026 4K重映",
       "place": "百老匯院線（YOHO／嘉湖銀座／GALA／太古城／apm 等）",
       "mapUrl": "https://www.google.com/maps/search/?api=1&query=%E7%99%BE%E8%80%81%E5%8C%AF%E9%99%A2%E7%B7%9A%EF%BC%88YOHO%EF%BC%8F%E5%98%89%E6%B9%96%E9%8A%80%E5%BA%A7%EF%BC%8FGALA%EF%BC%8F%E5%A4%AA%E5%8F%A4%E5%9F%8E%EF%BC%8Fapm%20%E7%AD%89%EF%BC%89",
       "price": "約 $80–$100",
@@ -269,7 +269,7 @@
       "source": "https://wmoov.com/movie/details/73177",
       "notes": "2026-11-10 新建。wmoov 資料更新日 11/10；百老匯標 anifest動画藝術祭2026。原 8/30 起重映檔期後再加 11/12–13 場次。同系《嘆息之丘的聖星》未見 11 月場次，未並列。IP 欄無「鋼之鍊金術師…",
       "featured": false,
-      "verifiedAt": "2026-11-12",
+      "verifiedAt": "2026-11-15",
       "sample": false
     },
     {
@@ -284,88 +284,20 @@
       "timeNote": "2026.11.13～12.13；平日11:00–20:00、六日及假期11:00–21:00；預售10/23 12:00～11/12",
       "place": "九龍啟德雙子匯1期9樓",
       "mapUrl": "https://www.google.com/maps/search/?api=1&query=%E4%B9%9D%E9%BE%8D%E5%95%9F%E5%BE%B7%E9%9B%99%E5%AD%90%E5%8C%AF1%E6%9C%9F9%E6%A8%93",
-      "price": "預售單人票HK$98／特典票HK$138（至11/12）；入場須另約",
+      "price": "預售單人票HK$98／特典票HK$138（至11/12，已完）；入場須另約",
       "ticketUrl": "https://space.hk01.com/event/6ad864932d997e4b9a219154",
-      "ticketNote": "預售 10/23 起 Klook／Trip.com／香港01；台北口碑特典壓克力色紙限量；現場 4 款角色紀念票",
+      "ticketNote": "預售已完；Klook／Trip.com／香港01 等仍可見票；入場須另約 INLINE；現場 4 款角色紀念票",
       "source": "https://www.mightymedia.co.jp/bocchi.rocks-exhibition.hk",
       "notes": "主辦曼迪傳播；九大展區。2026-10-24：預售已於 Klook、Trip.com、香港01 開跑；預售單人票HK$98／特典票HK$138（至11/12）；入場須另約 https://inline.app/booking/bocchi…",
       "featured": false,
-      "verifiedAt": "2026-11-13",
-      "sample": false
-    },
-    {
-      "id": "ac7e4514ddf7b8d4",
-      "title": "堀海登香港見面會",
-      "status": "進行中",
-      "notionStatus": "進行中",
-      "category": "見面會",
-      "ips": [
-        "堀海登"
-      ],
-      "date": "2026-11-14",
-      "endDate": "2026-11-14",
-      "timeNote": "2026-11-14　12:00（11:00 入場）／17:00（16:00 入場）",
-      "place": "荃灣帝盛酒店宴會廳",
-      "mapUrl": "https://www.google.com/maps/search/?api=1&query=%E8%8D%83%E7%81%A3%E5%B8%9D%E7%9B%9B%E9%85%92%E5%BA%97%E5%AE%B4%E6%9C%83%E5%BB%B3",
-      "price": "SVIP $1,380／VIP $1,080／A $880",
-      "ticketUrl": "https://www.art-mate.net/doc/99554",
-      "ticketNote": "",
-      "source": "https://www.art-mate.net/doc/99554",
-      "notes": "同日對上近藤玲奈，場地不同。2026-11-14：今日舉行→即將開始改進行中，完場後明日封存。",
-      "featured": false,
-      "verifiedAt": "2026-11-14",
-      "sample": false
-    },
-    {
-      "id": "e383e1ecda2d63eb",
-      "title": "天野浩成香港見面會2026（Japanese Artist Series 16）",
-      "status": "進行中",
-      "notionStatus": "即將開始",
-      "category": "見面會",
-      "ips": [],
-      "date": "2026-11-14",
-      "endDate": "2026-11-14",
-      "timeNote": "第一場 11:30入場／12:00開演；第二場 17:00入場／17:30開演",
-      "place": "尖沙咀 海景嘉福洲際酒店 Picasso Room",
-      "mapUrl": "https://www.google.com/maps/search/?api=1&query=%E5%B0%96%E6%B2%99%E5%92%80%20%E6%B5%B7%E6%99%AF%E5%98%89%E7%A6%8F%E6%B4%B2%E9%9A%9B%E9%85%92%E5%BA%97%20Picasso%20Room",
-      "price": "SVIP HK$1,380／VIP HK$1,180／A席 HK$880",
-      "ticketUrl": "https://monsterkingent.com/p/jpas16",
-      "ticketNote": "怪獸王娛樂官網（08-27 起發售）",
-      "source": "https://monsterkingent.com/p/jpas16",
-      "notes": "2026-11-04 新建；特攝演員（假面騎士劍 橘朔也）；主辦怪獸王娛樂。",
-      "featured": false,
-      "verifiedAt": "2026-11-04",
-      "sample": false
-    },
-    {
-      "id": "423b48ab5317d3b2",
-      "title": "近藤玲奈 FanMeeting in Hong Kong",
-      "status": "進行中",
-      "notionStatus": "進行中",
-      "category": "見面會",
-      "ips": [
-        "近藤玲奈",
-        "偶像大師閃耀色彩等"
-      ],
-      "date": "2026-11-14",
-      "endDate": "2026-11-14",
-      "timeNote": "2026-11-14",
-      "place": "將軍澳數據科技中心（Data Technology Hub）",
-      "mapUrl": "https://www.google.com/maps/search/?api=1&query=%E5%B0%87%E8%BB%8D%E6%BE%B3%E6%95%B8%E6%93%9A%E7%A7%91%E6%8A%80%E4%B8%AD%E5%BF%83%EF%BC%88Data%20Technology%20Hub%EF%BC%89",
-      "price": "$1,088／$788／$388",
-      "ticketUrl": "",
-      "ticketNote": "UUTIX 09-25 16:00 起公開發售（晝場 16:00、夜場 16:10）；晝場 12:30 入場／13:00 開演，夜場 17:00 入場／17:30 開演",
-      "source": "https://acgevent.com/archives/40077",
-      "notes": "晝夜兩場；同日對上堀海登。2026-11-14：今日舉行→即將開始改進行中，完場後明日封存。",
-      "featured": false,
-      "verifiedAt": "2026-11-14",
+      "verifiedAt": "2026-11-15",
       "sample": false
     },
     {
       "id": "3cd7df79afcfb9b8",
       "title": "AIMI ASIA TOUR 2026 STAR RISING in Hong Kong",
-      "status": "即將開始",
-      "notionStatus": "即將開始",
+      "status": "進行中",
+      "notionStatus": "進行中",
       "category": "演唱會",
       "ips": [
         "AIMI"
@@ -379,16 +311,16 @@
       "ticketUrl": "https://euphoric.kktix.cc/events/aimi-star-rising-2026-hk",
       "ticketNote": "",
       "source": "https://euphoric.kktix.cc/events/aimi-star-rising-2026-hk",
-      "notes": "同日對上梶浦由記，場地不同",
+      "notes": "同日對上梶浦由記，場地不同。2026-11-15：今日舉行→即將開始改進行中，完場後明日封存。",
       "featured": false,
-      "verifiedAt": "2026-09-29",
+      "verifiedAt": "2026-11-15",
       "sample": false
     },
     {
       "id": "00d44f9ddf1635ef",
       "title": "Shoose Live in Hong Kong 2026 〜Signal〜",
-      "status": "即將開始",
-      "notionStatus": "即將開始",
+      "status": "進行中",
+      "notionStatus": "進行中",
       "category": "演唱會",
       "ips": [
         "anisong"
@@ -402,16 +334,16 @@
       "ticketUrl": "https://www.art-mate.net/doc/99905",
       "ticketNote": "art-mate；主辦 WAKUWAKU／IRIS PICTURES／多祺文化",
       "source": "https://www.art-mate.net/doc/99905",
-      "notes": "唱見 shoose 香港首演；VIP 含 1V1 即影即有＋親簽明信片。2026-10-25 新建。",
+      "notes": "唱見 shoose 香港首演；VIP 含 1V1 即影即有＋親簽明信片。2026-10-25 新建。 2026-11-15：今日舉行→即將開始改進行中，完場後明日封存。",
       "featured": false,
-      "verifiedAt": "2026-10-25",
+      "verifiedAt": "2026-11-15",
       "sample": false
     },
     {
       "id": "9485b56edcf2a263",
       "title": "Yuki Kajiura LIVE vol.#22 ~precious pieces~ in Hong Kong —SPECIAL SETLIST—",
-      "status": "即將開始",
-      "notionStatus": "即將開始",
+      "status": "進行中",
+      "notionStatus": "進行中",
       "category": "演唱會",
       "ips": [
         "梶浦由記"
@@ -427,19 +359,19 @@
       "source": "https://www.ed-production.com.hk/yuki-kajiura-live-vol22-in-hk",
       "notes": "公售已開。2026-11-09：ACGEvent 11/8 報當日 14:30 起麥花臣場館 1 樓物販。每次限購 1 件：方巾 HK$80／肩背包 HK$380／玻璃杯 HK$130／眼鏡盒 HK$130／貼紙 Set HK$80／漁夫…",
       "featured": false,
-      "verifiedAt": "2026-11-09",
+      "verifiedAt": "2026-11-15",
       "sample": false
     },
     {
       "id": "e2b3f676a69b53d9",
       "title": "名偵探光之美少女電影：不可思議庭園與2人的秘密",
-      "status": "即將開始",
-      "notionStatus": "即將開始",
+      "status": "進行中",
+      "notionStatus": "進行中",
       "category": "電影",
       "ips": [],
-      "date": "2026-11-19",
-      "endDate": "2026-11-19",
-      "timeNote": "2026-11-19（四）香港公映；11/15（日）優先場",
+      "date": "2026-11-15",
+      "endDate": "2026-11-15",
+      "timeNote": "2026-11-15（日）優先場起；2026-11-19（四）香港公映",
       "place": "優先場：MCL AIRSIDE、the sky（公映場次未公布）",
       "mapUrl": "https://www.google.com/maps/search/?api=1&query=%E5%84%AA%E5%85%88%E5%A0%B4%EF%BC%9AMCL%20AIRSIDE%E3%80%81the%20sky%EF%BC%88%E5%85%AC%E6%98%A0%E5%A0%B4%E6%AC%A1%E6%9C%AA%E5%85%AC%E5%B8%83%EF%BC%89",
       "price": "優先場約 $90；公映票價未公布",
@@ -448,7 +380,7 @@
       "source": "https://wmoov.com/movie/details/73723",
       "notes": "光之美少女系列第 35 部劇場版；約 71 分鐘；日語。2026-11-08 核實：ACGEvent 11/7 報港澳 2D／4DX 同步上映；2D 特典日本直送角色光柵收藏卡（全3款隨機）、4DX 特典名片風收藏卡（全5款隨機）。發行新…",
       "featured": false,
-      "verifiedAt": "2026-11-12",
+      "verifiedAt": "2026-11-15",
       "sample": false
     },
     {
@@ -838,7 +770,7 @@
       "ips": [],
       "date": "2026-12-10",
       "endDate": "2026-12-10",
-      "timeNote": "2026-12-10（四）暫定上映（WMOOV）",
+      "timeNote": "2026-12-10（四）港澳上映；粵語重新配音；映後加映《包喺基路仔身上！》",
       "place": "全港院線（未公布）　發行：木棉花香港",
       "mapUrl": "https://www.google.com/maps/search/?api=1&query=%E5%85%A8%E6%B8%AF%E9%99%A2%E7%B7%9A%EF%BC%88%E6%9C%AA%E5%85%AC%E5%B8%83%EF%BC%89%E3%80%80%E7%99%BC%E8%A1%8C%EF%BC%9A%E6%9C%A8%E6%A3%89%E8%8A%B1%E9%A6%99%E6%B8%AF",
       "price": "未公布",
@@ -847,7 +779,7 @@
       "source": "https://m.wmoov.com/movie/details/73499",
       "notes": "2000 年第二部劇場版；香港以前只曾喺翡翠台播放，從未上映戲院；10-06 WMOOV 標暫定 12-10 上映，戲院未公布；木棉花預告見 https://acgevent.com/archives/40040。2026-11-12 核…",
       "featured": false,
-      "verifiedAt": "2026-11-12",
+      "verifiedAt": "2026-11-15",
       "sample": false
     },
     {
@@ -1367,9 +1299,9 @@
       "ticketUrl": "",
       "ticketNote": "",
       "source": "https://www.facebook.com/animateHongKong/",
-      "notes": "animate 海外限定快閃與立牌展。對照 Drive Doc「香港與日本動畫活動及演唱會／電影紀錄」2026-10-21；結束日待官方確認。",
+      "notes": "animate 海外限定快閃與立牌展。對照 Drive Doc「香港與日本動畫活動及演唱會／電影紀錄」2026-10-21；結束日待官方確認。 2026-11-15 核實：animate 香港官網 News 未見結束公告，亦未列明確結束日…",
       "featured": false,
-      "verifiedAt": "2026-10-21",
+      "verifiedAt": "2026-11-15",
       "sample": false
     }
   ],
