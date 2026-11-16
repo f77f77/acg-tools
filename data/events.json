@@ -1,55 +1,8 @@
 {
   "schema": "events.v2",
-  "updatedAt": "2026-11-15",
+  "updatedAt": "2026-11-16",
   "note": "活動由 Notion「香港ACG情報看板」每日同步（香港時間）。狀態會按日期重算：開始至結束當日係進行中，未開始係即將開始，完結七日內先保留。周邊截止仍然手改 deadlines[]；標成示例嘅截止唔會保留。",
   "events": [
-    {
-      "id": "d0fb84bfbc632c82",
-      "title": "《我係小忌廉》期間限定Café @ Kingsley Café",
-      "status": "進行中",
-      "notionStatus": "進行中",
-      "category": "快閃店",
-      "ips": [
-        "我係小忌廉",
-        "Creamy Mami"
-      ],
-      "date": "2026-09-02",
-      "endDate": "2026-11-15",
-      "timeNote": "第一階段 09-02～09-30；第二階段 10-01～11-15（餐單／紀念品有別）",
-      "place": "旺角彌敦道 700 號 T.O.P 商場 3 樓 315 號 Kingsley Café",
-      "mapUrl": "https://www.google.com/maps/search/?api=1&query=%E6%97%BA%E8%A7%92%E5%BD%8C%E6%95%A6%E9%81%93%20700%20%E8%99%9F%20T.O.P%20%E5%95%86%E5%A0%B4%203%20%E6%A8%93%20315%20%E8%99%9F%20Kingsley%20Caf%C3%A9",
-      "price": "堂食消費（主題主食／飲品另有限定特典）；可網上訂座",
-      "ticketUrl": "",
-      "ticketNote": "Kingsley Café 網站訂座／WhatsApp 查詢（見來源）",
-      "source": "https://ugo-hk.com/event/19130/%E3%80%8A%E6%88%91%E4%BF%82%E5%B0%8F%E5%BF%8C%E5%BB%89%E3%80%8B%E6%9C%9F%E9%96%93%E9%99%90%E5%AE%9ACaf%C3%A9",
-      "notes": "與時代廣場期間限定店分開；主題可麗餅店場景＋打卡。2026-11-08 核實：ugo-hk 仍標 9/2–11/15 第二階段進行中。維持進行中。 2026-11-15 核實：ugo-hk 仍標 9/2–11/15 進行中，今日為第二階段…",
-      "featured": false,
-      "verifiedAt": "2026-11-15",
-      "sample": false
-    },
-    {
-      "id": "56176dafc294b614",
-      "title": "EVANGELION 30th 重映期間限定店",
-      "status": "已完結",
-      "notionStatus": "已完結",
-      "category": "限定店",
-      "ips": [
-        "EVANGELION"
-      ],
-      "date": "2026-09-25",
-      "endDate": "2026-11-12",
-      "timeNote": "2026-09-25～11-12",
-      "place": "尖沙咀 iSQUARE 7樓英皇戲院售票處旁",
-      "mapUrl": "https://www.google.com/maps/search/?api=1&query=%E5%B0%96%E6%B2%99%E5%92%80%20iSQUARE%207%E6%A8%93%E8%8B%B1%E7%9A%87%E6%88%B2%E9%99%A2%E5%94%AE%E7%A5%A8%E8%99%95%E6%97%81",
-      "price": "免費入場／店舖取貨",
-      "ticketUrl": "",
-      "ticketNote": "無／未公布",
-      "source": "https://acgevent.com/archives/39869",
-      "notes": "日本 EVA STORE／RADIO EVA 及香港限定、重映限定抽卡機。2026-11-08 核實：檔期仍標至 11/12，維持進行中。 2026-11-12 核實：檔期最後一日（至 11/12），維持進行中。",
-      "featured": false,
-      "verifiedAt": "2026-11-13",
-      "sample": false
-    },
     {
       "id": "adbd069e65c48030",
       "title": "M+「神話與怪獸：亞洲的奇幻異境」（含戰後日本漫畫／動畫章節）",
@@ -227,29 +180,6 @@
       "sample": false
     },
     {
-      "id": "9525e133cf9f8bc6",
-      "title": "HOSHIMACHI SUISEI ARENA TOUR 2026 Once Upon a Stellar LIVE VIEWING（香港）",
-      "status": "已完結",
-      "notionStatus": "已完結",
-      "category": "LIVE VIEWING",
-      "ips": [
-        "星街すいせい"
-      ],
-      "date": "2026-11-12",
-      "endDate": "2026-11-12",
-      "timeNote": "2026-11-12（四）17:45；日本福岡最終場生中繼（日本開演 19:00 JST）；片長約 180 分鐘",
-      "place": "英皇戲院 銅鑼灣時代廣場、尖沙咀 iSQUARE（IMAX）（另有澳門葡京人場不入表）",
-      "mapUrl": "https://www.google.com/maps/search/?api=1&query=%E8%8B%B1%E7%9A%87%E6%88%B2%E9%99%A2%20%E9%8A%85%E9%91%BC%E7%81%A3%E6%99%82%E4%BB%A3%E5%BB%A3%E5%A0%B4%E3%80%81%E5%B0%96%E6%B2%99%E5%92%80%20iSQUARE%EF%BC%88IMAX%EF%BC%89%EF%BC%88%E5%8F%A6%E6%9C%89%E6%BE%B3%E9%96%80%E8%91%A1%E4%BA%AC%E4%BA%BA%E5%A0%B4%E4%B8%8D%E5%85%A5%E8%A1%A8%EF%BC%89",
-      "price": "HK$360（香港場）",
-      "ticketUrl": "",
-      "ticketNote": "2026-10-14 14:00 HKT 開售；入場特典數量有限",
-      "source": "https://acgevent.com/archives/40062",
-      "notes": "海外頁：https://www.liveviewing.com/events/hoshimachisuisei_lv_overseas/ ；日本頁：https://liveviewing.jp/hoshimachi-suisei-2026…",
-      "featured": false,
-      "verifiedAt": "2026-11-13",
-      "sample": false
-    },
-    {
       "id": "6ffd2a4529e0c601",
       "title": "鋼之鍊金術師 - 森巴拉的征服者（anifest動画藝術祭2026）",
       "status": "進行中",
@@ -269,7 +199,7 @@
       "source": "https://wmoov.com/movie/details/73177",
       "notes": "2026-11-10 新建。wmoov 資料更新日 11/10；百老匯標 anifest動画藝術祭2026。原 8/30 起重映檔期後再加 11/12–13 場次。同系《嘆息之丘的聖星》未見 11 月場次，未並列。IP 欄無「鋼之鍊金術師…",
       "featured": false,
-      "verifiedAt": "2026-11-15",
+      "verifiedAt": "2026-11-16",
       "sample": false
     },
     {
@@ -294,93 +224,24 @@
       "sample": false
     },
     {
-      "id": "3cd7df79afcfb9b8",
-      "title": "AIMI ASIA TOUR 2026 STAR RISING in Hong Kong",
-      "status": "進行中",
-      "notionStatus": "進行中",
-      "category": "演唱會",
-      "ips": [
-        "AIMI"
-      ],
-      "date": "2026-11-15",
-      "endDate": "2026-11-15",
-      "timeNote": "2026-11-15　17:00（16:00 開場）",
-      "place": "TIDES　紅磡",
-      "mapUrl": "https://www.google.com/maps/search/?api=1&query=TIDES%E3%80%80%E7%B4%85%E7%A3%A1",
-      "price": "SVIP $1,080／VIP $780／GA $580",
-      "ticketUrl": "https://euphoric.kktix.cc/events/aimi-star-rising-2026-hk",
-      "ticketNote": "",
-      "source": "https://euphoric.kktix.cc/events/aimi-star-rising-2026-hk",
-      "notes": "同日對上梶浦由記，場地不同。2026-11-15：今日舉行→即將開始改進行中，完場後明日封存。",
-      "featured": false,
-      "verifiedAt": "2026-11-15",
-      "sample": false
-    },
-    {
-      "id": "00d44f9ddf1635ef",
-      "title": "Shoose Live in Hong Kong 2026 〜Signal〜",
-      "status": "進行中",
-      "notionStatus": "進行中",
-      "category": "演唱會",
-      "ips": [
-        "anisong"
-      ],
-      "date": "2026-11-15",
-      "endDate": "2026-11-15",
-      "timeNote": "2026-11-15　VIP 16:00 優先入場／一般 16:30；全企位",
-      "place": "PORTAL　新蒲崗",
-      "mapUrl": "https://www.google.com/maps/search/?api=1&query=PORTAL%E3%80%80%E6%96%B0%E8%92%B2%E5%B4%97",
-      "price": "VIP $980／A $680",
-      "ticketUrl": "https://www.art-mate.net/doc/99905",
-      "ticketNote": "art-mate；主辦 WAKUWAKU／IRIS PICTURES／多祺文化",
-      "source": "https://www.art-mate.net/doc/99905",
-      "notes": "唱見 shoose 香港首演；VIP 含 1V1 即影即有＋親簽明信片。2026-10-25 新建。 2026-11-15：今日舉行→即將開始改進行中，完場後明日封存。",
-      "featured": false,
-      "verifiedAt": "2026-11-15",
-      "sample": false
-    },
-    {
-      "id": "9485b56edcf2a263",
-      "title": "Yuki Kajiura LIVE vol.#22 ~precious pieces~ in Hong Kong —SPECIAL SETLIST—",
-      "status": "進行中",
-      "notionStatus": "進行中",
-      "category": "演唱會",
-      "ips": [
-        "梶浦由記"
-      ],
-      "date": "2026-11-15",
-      "endDate": "2026-11-15",
-      "timeNote": "2026-11-15　19:30",
-      "place": "旺角麥花臣場館（奶路臣街 38 號）",
-      "mapUrl": "https://www.google.com/maps/search/?api=1&query=%E6%97%BA%E8%A7%92%E9%BA%A5%E8%8A%B1%E8%87%A3%E5%A0%B4%E9%A4%A8%EF%BC%88%E5%A5%B6%E8%B7%AF%E8%87%A3%E8%A1%97%2038%20%E8%99%9F%EF%BC%89",
-      "price": "VIP $1,580／$1,380／$1,180（連手續費約 $1,612／$1,412／$1,212）　全指定席　12歲+　實名制",
-      "ticketUrl": "https://edproduction.kktix.cc/events/yuki-kajiura-hk-2026",
-      "ticketNote": "",
-      "source": "https://www.ed-production.com.hk/yuki-kajiura-live-vol22-in-hk",
-      "notes": "公售已開。2026-11-09：ACGEvent 11/8 報當日 14:30 起麥花臣場館 1 樓物販。每次限購 1 件：方巾 HK$80／肩背包 HK$380／玻璃杯 HK$130／眼鏡盒 HK$130／貼紙 Set HK$80／漁夫…",
-      "featured": false,
-      "verifiedAt": "2026-11-15",
-      "sample": false
-    },
-    {
       "id": "e2b3f676a69b53d9",
       "title": "名偵探光之美少女電影：不可思議庭園與2人的秘密",
-      "status": "進行中",
+      "status": "已完結",
       "notionStatus": "進行中",
       "category": "電影",
       "ips": [],
       "date": "2026-11-15",
       "endDate": "2026-11-15",
-      "timeNote": "2026-11-15（日）優先場起；2026-11-19（四）香港公映",
-      "place": "優先場：MCL AIRSIDE、the sky（公映場次未公布）",
-      "mapUrl": "https://www.google.com/maps/search/?api=1&query=%E5%84%AA%E5%85%88%E5%A0%B4%EF%BC%9AMCL%20AIRSIDE%E3%80%81the%20sky%EF%BC%88%E5%85%AC%E6%98%A0%E5%A0%B4%E6%AC%A1%E6%9C%AA%E5%85%AC%E5%B8%83%EF%BC%89",
-      "price": "優先場約 $90；公映票價未公布",
+      "timeNote": "2026-11-15（日）優先場起；wmoov 資料頁仍標 2026-11-19（四）公映；11/16 起已有更多院線場次",
+      "place": "今日場次：CGV D2 Place、影藝 MegaBox、MCL K11 Art House（官方仍標 11/19 公映）",
+      "mapUrl": "https://www.google.com/maps/search/?api=1&query=%E4%BB%8A%E6%97%A5%E5%A0%B4%E6%AC%A1%EF%BC%9ACGV%20D2%20Place%E3%80%81%E5%BD%B1%E8%97%9D%20MegaBox%E3%80%81MCL%20K11%20Art%20House%EF%BC%88%E5%AE%98%E6%96%B9%E4%BB%8D%E6%A8%99%2011%2F19%20%E5%85%AC%E6%98%A0%EF%BC%89",
+      "price": "今日約 $50–$110；官方仍標 11/19 公映",
       "ticketUrl": "https://m.wmoov.com/movie/showtimes/73723",
       "ticketNote": "院線／wmoov（優先場已開售）",
       "source": "https://wmoov.com/movie/details/73723",
       "notes": "光之美少女系列第 35 部劇場版；約 71 分鐘；日語。2026-11-08 核實：ACGEvent 11/7 報港澳 2D／4DX 同步上映；2D 特典日本直送角色光柵收藏卡（全3款隨機）、4DX 特典名片風收藏卡（全5款隨機）。發行新…",
       "featured": false,
-      "verifiedAt": "2026-11-15",
+      "verifiedAt": "2026-11-16",
       "sample": false
     },
     {
