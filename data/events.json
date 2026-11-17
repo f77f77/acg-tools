@@ -1,6 +1,6 @@
 {
   "schema": "events.v2",
-  "updatedAt": "2026-11-16",
+  "updatedAt": "2026-11-17",
   "note": "活動由 Notion「香港ACG情報看板」每日同步（香港時間）。狀態會按日期重算：開始至結束當日係進行中，未開始係即將開始，完結七日內先保留。周邊截止仍然手改 deadlines[]；標成示例嘅截止唔會保留。",
   "events": [
     {
@@ -199,7 +199,7 @@
       "source": "https://wmoov.com/movie/details/73177",
       "notes": "2026-11-10 新建。wmoov 資料更新日 11/10；百老匯標 anifest動画藝術祭2026。原 8/30 起重映檔期後再加 11/12–13 場次。同系《嘆息之丘的聖星》未見 11 月場次，未並列。IP 欄無「鋼之鍊金術師…",
       "featured": false,
-      "verifiedAt": "2026-11-16",
+      "verifiedAt": "2026-11-17",
       "sample": false
     },
     {
@@ -227,21 +227,21 @@
       "id": "e2b3f676a69b53d9",
       "title": "名偵探光之美少女電影：不可思議庭園與2人的秘密",
       "status": "已完結",
-      "notionStatus": "進行中",
+      "notionStatus": "即將開始",
       "category": "電影",
       "ips": [],
       "date": "2026-11-15",
       "endDate": "2026-11-15",
-      "timeNote": "2026-11-15（日）優先場起；wmoov 資料頁仍標 2026-11-19（四）公映；11/16 起已有更多院線場次",
-      "place": "今日場次：CGV D2 Place、影藝 MegaBox、MCL K11 Art House（官方仍標 11/19 公映）",
-      "mapUrl": "https://www.google.com/maps/search/?api=1&query=%E4%BB%8A%E6%97%A5%E5%A0%B4%E6%AC%A1%EF%BC%9ACGV%20D2%20Place%E3%80%81%E5%BD%B1%E8%97%9D%20MegaBox%E3%80%81MCL%20K11%20Art%20House%EF%BC%88%E5%AE%98%E6%96%B9%E4%BB%8D%E6%A8%99%2011%2F19%20%E5%85%AC%E6%98%A0%EF%BC%89",
-      "price": "今日約 $50–$110；官方仍標 11/19 公映",
+      "timeNote": "優先場 11/15、加場 11/16 已過；11/17–18 無場；wmoov 標 2026-11-19（四）公映，場次頁已列 11/19–22",
+      "place": "11/19 公映場次已出：影藝荷里活／MegaBox、MCL AIRSIDE／STAR／MOVIE TOWN／Festival Grand／K11／德福等（目前見 2D）　發行：新映影片",
+      "mapUrl": "https://www.google.com/maps/search/?api=1&query=11%2F19%20%E5%85%AC%E6%98%A0%E5%A0%B4%E6%AC%A1%E5%B7%B2%E5%87%BA%EF%BC%9A%E5%BD%B1%E8%97%9D%E8%8D%B7%E9%87%8C%E6%B4%BB%EF%BC%8FMegaBox%E3%80%81MCL%20AIRSIDE%EF%BC%8FSTAR%EF%BC%8FMOVIE%20TOWN%EF%BC%8FFestival%20Grand%EF%BC%8FK11%EF%BC%8F%E5%BE%B7%E7%A6%8F%E7%AD%89%EF%BC%88%E7%9B%AE%E5%89%8D%E8%A6%8B%202D%EF%BC%89%E3%80%80%E7%99%BC%E8%A1%8C%EF%BC%9A%E6%96%B0%E6%98%A0%E5%BD%B1%E7%89%87",
+      "price": "11/19 公映場次約 $40–$110（2D）；4DX 場次頁暫未見",
       "ticketUrl": "https://m.wmoov.com/movie/showtimes/73723",
       "ticketNote": "院線／wmoov（優先場已開售）",
       "source": "https://wmoov.com/movie/details/73723",
       "notes": "光之美少女系列第 35 部劇場版；約 71 分鐘；日語。2026-11-08 核實：ACGEvent 11/7 報港澳 2D／4DX 同步上映；2D 特典日本直送角色光柵收藏卡（全3款隨機）、4DX 特典名片風收藏卡（全5款隨機）。發行新…",
       "featured": false,
-      "verifiedAt": "2026-11-16",
+      "verifiedAt": "2026-11-17",
       "sample": false
     },
     {
@@ -396,9 +396,9 @@
       "ticketUrl": "",
       "ticketNote": "院線／未公布",
       "source": "https://wmoov.com/movie/details/73598",
-      "notes": "系列大學篇完結篇；日語原聲、中英文字幕；CloverWorks。2026-11-12 核實：wmoov showtimes/73598 仍無場次；片長／級別仍待定。",
+      "notes": "系列大學篇完結篇；日語原聲、中英文字幕；CloverWorks。2026-11-12 核實：wmoov showtimes/73598 仍無場次；片長／級別仍待定。 2026-11-17 核實：wmoov showtimes/73598…",
       "featured": false,
-      "verifiedAt": "2026-11-12",
+      "verifiedAt": "2026-11-17",
       "sample": false
     },
     {
@@ -523,16 +523,16 @@
       ],
       "date": "2026-12-03",
       "endDate": "2026-12-03",
-      "timeNote": "2026-12-03",
+      "timeNote": "2026-12-03；wmoov 已開專頁 details/74350（2026-11-16 晚新增），片長 1 小時 11 分，級別待定；場次仍未公布",
       "place": "全港院線（場次陸續出）　發行：木棉花香港",
       "mapUrl": "https://www.google.com/maps/search/?api=1&query=%E5%85%A8%E6%B8%AF%E9%99%A2%E7%B7%9A%EF%BC%88%E5%A0%B4%E6%AC%A1%E9%99%B8%E7%BA%8C%E5%87%BA%EF%BC%89%E3%80%80%E7%99%BC%E8%A1%8C%EF%BC%9A%E6%9C%A8%E6%A3%89%E8%8A%B1%E9%A6%99%E6%B8%AF",
       "price": "木棉花前賣券套票組 HK$110（換票證＋主視覺 PVC 小卡；不適用特典場）；戲院票價未公布",
       "ticketUrl": "https://www.musehk.shop/product-page/%E5%8A%87%E5%A0%B4%E7%89%88-%E4%BE%86%E8%87%AA%E6%B7%B1%E6%B7%B5-%E8%A6%BA%E9%86%92%E7%9A%84%E7%A5%9E%E7%A7%98-%E9%9B%BB%E5%BD%B1%E5%89%8D%E8%B3%A3%E5%88%B8%E5%A5%97%E7%A5%A8%E7%B5%84-2026%E5%B9%B411%E6%9C%88%E4%B8%8B%E6%97%AC%E9%96%8B%E5%A7%8B%E9%85%8D%E9%80%81",
       "ticketNote": "Muse HK shop 前賣券；戲院場次未公布",
       "source": "https://acgevent.com/archives/40059",
-      "notes": "2026-11-12 核實：Muse HK shop 已開售前賣券套票組 HK$110（換票證 1 張＋特製主視覺 PVC 小卡；每人限 4 套；11 月中下旬起配送；不適用特典場）。wmoov 現時未見專頁／場次。特典場資訊仍待公布。",
+      "notes": "2026-11-12 核實：Muse HK shop 已開售前賣券套票組 HK$110（換票證 1 張＋特製主視覺 PVC 小卡；每人限 4 套；11 月中下旬起配送；不適用特典場）。wmoov 現時未見專頁／場次。特典場資訊仍待公布。…",
       "featured": false,
-      "verifiedAt": "2026-11-12",
+      "verifiedAt": "2026-11-17",
       "sample": false
     },
     {
@@ -544,16 +544,16 @@
       "ips": [],
       "date": "2026-12-03",
       "endDate": "2026-12-03",
-      "timeNote": "2026-12-03（四）香港公映",
+      "timeNote": "2026-12-03（四）香港公映；wmoov 片長 55 分，級別待定；場次仍未公布",
       "place": "全港院線（戲院／場次未公布）",
       "mapUrl": "https://www.google.com/maps/search/?api=1&query=%E5%85%A8%E6%B8%AF%E9%99%A2%E7%B7%9A%EF%BC%88%E6%88%B2%E9%99%A2%EF%BC%8F%E5%A0%B4%E6%AC%A1%E6%9C%AA%E5%85%AC%E5%B8%83%EF%BC%89",
       "price": "未公布",
       "ticketUrl": "",
       "ticketNote": "院線／未公布",
       "source": "https://wmoov.com/movie/details/74196",
-      "notes": "2026-11-04 新建；發行新映影片；日語；約55分鐘；2D／4DX／MX4D。日本 2026-10-09 上映。2026-11-12 核實：wmoov showtimes/74196 仍無場次；片長／級別仍待定。",
+      "notes": "2026-11-04 新建；發行新映影片；日語；約55分鐘；2D／4DX／MX4D。日本 2026-10-09 上映。2026-11-12 核實：wmoov showtimes/74196 仍無場次；片長／級別仍待定。 2026-11-1…",
       "featured": false,
-      "verifiedAt": "2026-11-12",
+      "verifiedAt": "2026-11-17",
       "sample": false
     },
     {
