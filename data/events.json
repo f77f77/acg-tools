@@ -1,6 +1,6 @@
 {
   "schema": "events.v2",
-  "updatedAt": "2026-11-17",
+  "updatedAt": "2026-11-18",
   "note": "活動由 Notion「香港ACG情報看板」每日同步（香港時間）。狀態會按日期重算：開始至結束當日係進行中，未開始係即將開始，完結七日內先保留。周邊截止仍然手改 deadlines[]；標成示例嘅截止唔會保留。",
   "events": [
     {
@@ -190,7 +190,7 @@
       ],
       "date": "2026-11-12",
       "endDate": "2026-11-18",
-      "timeNote": "2026-11-12 起加場；wmoov 場次頁現列至 11/18；日語　約105分　anifest動画藝術祭2026 4K重映",
+      "timeNote": "2026-11-12 起加場；今日 11/18 為 wmoov 場次頁所列最後一日；日語　約105分　anifest動画藝術祭2026 4K重映",
       "place": "百老匯院線（YOHO／嘉湖銀座／GALA／太古城／apm 等）",
       "mapUrl": "https://www.google.com/maps/search/?api=1&query=%E7%99%BE%E8%80%81%E5%8C%AF%E9%99%A2%E7%B7%9A%EF%BC%88YOHO%EF%BC%8F%E5%98%89%E6%B9%96%E9%8A%80%E5%BA%A7%EF%BC%8FGALA%EF%BC%8F%E5%A4%AA%E5%8F%A4%E5%9F%8E%EF%BC%8Fapm%20%E7%AD%89%EF%BC%89",
       "price": "約 $80–$100",
@@ -199,7 +199,7 @@
       "source": "https://wmoov.com/movie/details/73177",
       "notes": "2026-11-10 新建。wmoov 資料更新日 11/10；百老匯標 anifest動画藝術祭2026。原 8/30 起重映檔期後再加 11/12–13 場次。同系《嘆息之丘的聖星》未見 11 月場次，未並列。IP 欄無「鋼之鍊金術師…",
       "featured": false,
-      "verifiedAt": "2026-11-17",
+      "verifiedAt": "2026-11-18",
       "sample": false
     },
     {
@@ -232,16 +232,16 @@
       "ips": [],
       "date": "2026-11-15",
       "endDate": "2026-11-15",
-      "timeNote": "優先場 11/15、加場 11/16 已過；11/17–18 無場；wmoov 標 2026-11-19（四）公映，場次頁已列 11/19–22",
-      "place": "11/19 公映場次已出：影藝荷里活／MegaBox、MCL AIRSIDE／STAR／MOVIE TOWN／Festival Grand／K11／德福等（目前見 2D）　發行：新映影片",
-      "mapUrl": "https://www.google.com/maps/search/?api=1&query=11%2F19%20%E5%85%AC%E6%98%A0%E5%A0%B4%E6%AC%A1%E5%B7%B2%E5%87%BA%EF%BC%9A%E5%BD%B1%E8%97%9D%E8%8D%B7%E9%87%8C%E6%B4%BB%EF%BC%8FMegaBox%E3%80%81MCL%20AIRSIDE%EF%BC%8FSTAR%EF%BC%8FMOVIE%20TOWN%EF%BC%8FFestival%20Grand%EF%BC%8FK11%EF%BC%8F%E5%BE%B7%E7%A6%8F%E7%AD%89%EF%BC%88%E7%9B%AE%E5%89%8D%E8%A6%8B%202D%EF%BC%89%E3%80%80%E7%99%BC%E8%A1%8C%EF%BC%9A%E6%96%B0%E6%98%A0%E5%BD%B1%E7%89%87",
-      "price": "11/19 公映場次約 $40–$110（2D）；4DX 場次頁暫未見",
+      "timeNote": "優先場 11/15、加場 11/16 已過；11/17–18 無場；wmoov 標 2026-11-19（四）公映，場次頁已列 11/19–22（含 2D／百老匯 apm／GALA 4DX）",
+      "place": "11/19 公映場次已出（2D／4DX）：影藝荷里活／MegaBox、MCL AIRSIDE／STAR／MOVIE TOWN／Festival Grand／K11／德福、百老匯 apm／GALA（含 4DX）、太古城／MOKO／YOHO／葵芳／嘉湖／ELEMENTS、CGV、the sky、StagE、Candy Park 等　發行：新映影片",
+      "mapUrl": "https://www.google.com/maps/search/?api=1&query=11%2F19%20%E5%85%AC%E6%98%A0%E5%A0%B4%E6%AC%A1%E5%B7%B2%E5%87%BA%EF%BC%882D%EF%BC%8F4DX%EF%BC%89%EF%BC%9A%E5%BD%B1%E8%97%9D%E8%8D%B7%E9%87%8C%E6%B4%BB%EF%BC%8FMegaBox%E3%80%81MCL%20AIRSIDE%EF%BC%8FSTAR%EF%BC%8FMOVIE%20TOWN%EF%BC%8FFestival%20Grand%EF%BC%8FK11%EF%BC%8F%E5%BE%B7%E7%A6%8F%E3%80%81%E7%99%BE%E8%80%81%E5%8C%AF%20apm%EF%BC%8FGALA%EF%BC%88%E5%90%AB%204DX%EF%BC%89%E3%80%81%E5%A4%AA%E5%8F%A4%E5%9F%8E%EF%BC%8FMOKO%EF%BC%8FYOHO%EF%BC%8F%E8%91%B5%E8%8A%B3%EF%BC%8F%E5%98%89%E6%B9%96%EF%BC%8FELEMENTS%E3%80%81CGV%E3%80%81the%20sky%E3%80%81StagE%E3%80%81Candy%20Park%20%E7%AD%89%E3%80%80%E7%99%BC%E8%A1%8C%EF%BC%9A%E6%96%B0%E6%98%A0%E5%BD%B1%E7%89%87",
+      "price": "11/19 公映場次 2D 約 $40–$110；4DX 約 $150–$170（百老匯 apm／GALA）",
       "ticketUrl": "https://m.wmoov.com/movie/showtimes/73723",
-      "ticketNote": "院線／wmoov（優先場已開售）",
+      "ticketNote": "院線／wmoov（11/19 公映場次已開售，含 4DX）",
       "source": "https://wmoov.com/movie/details/73723",
       "notes": "光之美少女系列第 35 部劇場版；約 71 分鐘；日語。2026-11-08 核實：ACGEvent 11/7 報港澳 2D／4DX 同步上映；2D 特典日本直送角色光柵收藏卡（全3款隨機）、4DX 特典名片風收藏卡（全5款隨機）。發行新…",
       "featured": false,
-      "verifiedAt": "2026-11-17",
+      "verifiedAt": "2026-11-18",
       "sample": false
     },
     {
@@ -398,7 +398,7 @@
       "source": "https://wmoov.com/movie/details/73598",
       "notes": "系列大學篇完結篇；日語原聲、中英文字幕；CloverWorks。2026-11-12 核實：wmoov showtimes/73598 仍無場次；片長／級別仍待定。 2026-11-17 核實：wmoov showtimes/73598…",
       "featured": false,
-      "verifiedAt": "2026-11-17",
+      "verifiedAt": "2026-11-18",
       "sample": false
     },
     {
@@ -532,7 +532,7 @@
       "source": "https://acgevent.com/archives/40059",
       "notes": "2026-11-12 核實：Muse HK shop 已開售前賣券套票組 HK$110（換票證 1 張＋特製主視覺 PVC 小卡；每人限 4 套；11 月中下旬起配送；不適用特典場）。wmoov 現時未見專頁／場次。特典場資訊仍待公布。…",
       "featured": false,
-      "verifiedAt": "2026-11-17",
+      "verifiedAt": "2026-11-18",
       "sample": false
     },
     {
@@ -553,7 +553,7 @@
       "source": "https://wmoov.com/movie/details/74196",
       "notes": "2026-11-04 新建；發行新映影片；日語；約55分鐘；2D／4DX／MX4D。日本 2026-10-09 上映。2026-11-12 核實：wmoov showtimes/74196 仍無場次；片長／級別仍待定。 2026-11-1…",
       "featured": false,
-      "verifiedAt": "2026-11-17",
+      "verifiedAt": "2026-11-18",
       "sample": false
     },
     {
@@ -746,16 +746,16 @@
       "ips": [],
       "date": "2026-12-19",
       "endDate": "2026-12-19",
-      "timeNote": "2026-12-19（六）；時間未公布",
+      "timeNote": "2026-12-19（六）；第1部 10:20入場／11:00開演；第2部 15:50入場／16:30開演",
       "place": "尖沙咀 香港諾富特世紀酒店 Plaza Room",
       "mapUrl": "https://www.google.com/maps/search/?api=1&query=%E5%B0%96%E6%B2%99%E5%92%80%20%E9%A6%99%E6%B8%AF%E8%AB%BE%E5%AF%8C%E7%89%B9%E4%B8%96%E7%B4%80%E9%85%92%E5%BA%97%20Plaza%20Room",
-      "price": "未公布",
-      "ticketUrl": "",
-      "ticketNote": "未公布（11月上旬公布）",
+      "price": "VIP HK$980（2shot 即影即有合照＋手寫簽名生寫＋紀念票根＋印簽明信片）／普通 HK$580（紀念票根＋印簽明信片＋見送會）；共通特典心形徽章；購兩場可視為全通另有限定全通特典。不設 Mini Live。",
+      "ticketUrl": "https://www.uutix.com/detail?pId=4058",
+      "ticketNote": "uutix 先到先得；第1部今日 12:00 HKT、第2部 12:10 HKT 開售；每個帳號每場最多 2 張",
       "source": "https://iris.dive2ent.com/news/detail.php?id=1136921",
-      "notes": "2026-11-04 新建；i☆Ris 成員；主辦黑眼圈文化（@PandaE_C）／NonStop Hong Kong；票務詳情官方稱11月上旬公布。",
+      "notes": "2026-11-04 新建；i☆Ris 成員；主辦黑眼圈文化（@PandaE_C）／NonStop Hong Kong；票務詳情官方稱11月上旬公布。 2026-11-18 核實：主辦 @PandaE_C 11/17 公布票務，uutix…",
       "featured": false,
-      "verifiedAt": "2026-11-04",
+      "verifiedAt": "2026-11-18",
       "sample": false
     },
     {
@@ -779,6 +779,29 @@
       "notes": "2026-11-08 新建。主辦喜樂現場。內容含現場訪談、遊戲互動、Mini Live及TO簽。IP 欄用既有「Love Live!」選項（Aqours 松浦果南）。",
       "featured": false,
       "verifiedAt": "2026-11-08",
+      "sample": false
+    },
+    {
+      "id": "bbed07e57da030bd",
+      "title": "MyGO!!!!! 9th LIVE「つなぎ目の向こうに」- 香港還想編 -",
+      "status": "即將開始",
+      "notionStatus": "即將開始",
+      "category": "演唱會",
+      "ips": [
+        "BanG Dream!"
+      ],
+      "date": "2027-01-03",
+      "endDate": "2027-01-03",
+      "timeNote": "2027-01-03（日）19:00 開演（預定）；入場時間待主辦公布",
+      "place": "亞洲國際博覽館 5號展館（AsiaWorld-Expo Hall 5）",
+      "mapUrl": "https://www.google.com/maps/search/?api=1&query=%E4%BA%9E%E6%B4%B2%E5%9C%8B%E9%9A%9B%E5%8D%9A%E8%A6%BD%E9%A4%A8%205%E8%99%9F%E5%B1%95%E9%A4%A8%EF%BC%88AsiaWorld-Expo%20Hall%205%EF%BC%89",
+      "price": "HK$1,788（A）／HK$1,488（B）／HK$988（C）／HK$788（D）；全場企位；另加平台費 HK$12。企位限 12 歲或以上且身高 140cm 或以上。",
+      "ticketUrl": "https://asiaworld-expo.kktix.cc/events/mygo-9th-live-2027",
+      "ticketNote": "KKTIX 實名制抽選已完結（11/4 12:00–11/8 23:59 HKT 登記；11/13 12:00 起派彩；11/15 23:59 付款截止）。主辦稱視情況公告下一階段購票。",
+      "source": "https://bang-dream.com/events/mygo_9th_hongkong/",
+      "notes": "2026-11-18 補建漏報（官方 10 月下旬宣布、ACGEvent 11/6 報抽選已開；抽選／付款期已過）。主辦 EUPHORIC PRODUCTION HK／Neon Lit Music，特別協力 Bushiroad Music…",
+      "featured": false,
+      "verifiedAt": "2026-11-18",
       "sample": false
     },
     {
