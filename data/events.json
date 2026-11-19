@@ -1,6 +1,6 @@
 {
   "schema": "events.v2",
-  "updatedAt": "2026-11-18",
+  "updatedAt": "2026-11-19",
   "note": "活動由 Notion「香港ACG情報看板」每日同步（香港時間）。狀態會按日期重算：開始至結束當日係進行中，未開始係即將開始，完結七日內先保留。周邊截止仍然手改 deadlines[]；標成示例嘅截止唔會保留。",
   "events": [
     {
@@ -180,29 +180,6 @@
       "sample": false
     },
     {
-      "id": "6ffd2a4529e0c601",
-      "title": "鋼之鍊金術師 - 森巴拉的征服者（anifest動画藝術祭2026）",
-      "status": "進行中",
-      "notionStatus": "進行中",
-      "category": "影展",
-      "ips": [
-        "anifest"
-      ],
-      "date": "2026-11-12",
-      "endDate": "2026-11-18",
-      "timeNote": "2026-11-12 起加場；今日 11/18 為 wmoov 場次頁所列最後一日；日語　約105分　anifest動画藝術祭2026 4K重映",
-      "place": "百老匯院線（YOHO／嘉湖銀座／GALA／太古城／apm 等）",
-      "mapUrl": "https://www.google.com/maps/search/?api=1&query=%E7%99%BE%E8%80%81%E5%8C%AF%E9%99%A2%E7%B7%9A%EF%BC%88YOHO%EF%BC%8F%E5%98%89%E6%B9%96%E9%8A%80%E5%BA%A7%EF%BC%8FGALA%EF%BC%8F%E5%A4%AA%E5%8F%A4%E5%9F%8E%EF%BC%8Fapm%20%E7%AD%89%EF%BC%89",
-      "price": "約 $80–$100",
-      "ticketUrl": "https://m.wmoov.com/movie/showtimes/73177",
-      "ticketNote": "百老匯院線／wmoov",
-      "source": "https://wmoov.com/movie/details/73177",
-      "notes": "2026-11-10 新建。wmoov 資料更新日 11/10；百老匯標 anifest動画藝術祭2026。原 8/30 起重映檔期後再加 11/12–13 場次。同系《嘆息之丘的聖星》未見 11 月場次，未並列。IP 欄無「鋼之鍊金術師…",
-      "featured": false,
-      "verifiedAt": "2026-11-18",
-      "sample": false
-    },
-    {
       "id": "4d6dda032e7523a6",
       "title": "《孤獨搖滾！》動畫展 香港站",
       "status": "進行中",
@@ -227,21 +204,21 @@
       "id": "e2b3f676a69b53d9",
       "title": "名偵探光之美少女電影：不可思議庭園與2人的秘密",
       "status": "已完結",
-      "notionStatus": "即將開始",
+      "notionStatus": "進行中",
       "category": "電影",
       "ips": [],
       "date": "2026-11-15",
       "endDate": "2026-11-15",
-      "timeNote": "優先場 11/15、加場 11/16 已過；11/17–18 無場；wmoov 標 2026-11-19（四）公映，場次頁已列 11/19–22（含 2D／百老匯 apm／GALA 4DX）",
-      "place": "11/19 公映場次已出（2D／4DX）：影藝荷里活／MegaBox、MCL AIRSIDE／STAR／MOVIE TOWN／Festival Grand／K11／德福、百老匯 apm／GALA（含 4DX）、太古城／MOKO／YOHO／葵芳／嘉湖／ELEMENTS、CGV、the sky、StagE、Candy Park 等　發行：新映影片",
-      "mapUrl": "https://www.google.com/maps/search/?api=1&query=11%2F19%20%E5%85%AC%E6%98%A0%E5%A0%B4%E6%AC%A1%E5%B7%B2%E5%87%BA%EF%BC%882D%EF%BC%8F4DX%EF%BC%89%EF%BC%9A%E5%BD%B1%E8%97%9D%E8%8D%B7%E9%87%8C%E6%B4%BB%EF%BC%8FMegaBox%E3%80%81MCL%20AIRSIDE%EF%BC%8FSTAR%EF%BC%8FMOVIE%20TOWN%EF%BC%8FFestival%20Grand%EF%BC%8FK11%EF%BC%8F%E5%BE%B7%E7%A6%8F%E3%80%81%E7%99%BE%E8%80%81%E5%8C%AF%20apm%EF%BC%8FGALA%EF%BC%88%E5%90%AB%204DX%EF%BC%89%E3%80%81%E5%A4%AA%E5%8F%A4%E5%9F%8E%EF%BC%8FMOKO%EF%BC%8FYOHO%EF%BC%8F%E8%91%B5%E8%8A%B3%EF%BC%8F%E5%98%89%E6%B9%96%EF%BC%8FELEMENTS%E3%80%81CGV%E3%80%81the%20sky%E3%80%81StagE%E3%80%81Candy%20Park%20%E7%AD%89%E3%80%80%E7%99%BC%E8%A1%8C%EF%BC%9A%E6%96%B0%E6%98%A0%E5%BD%B1%E7%89%87",
+      "timeNote": "優先場 11/15、加場 11/16 已過；今日 11/19 公映，wmoov 場次頁列至 11/22（含 2D／百老匯 apm／GALA 4DX）",
+      "place": "今日公映多院有場（2D／4DX）：影藝荷里活／MegaBox、MCL AIRSIDE／STAR／MOVIE TOWN／Festival Grand／K11／德福、百老匯 apm／GALA（含 4DX）、太古城／MOKO／YOHO／葵芳／嘉湖／ELEMENTS、CGV、the sky、StagE、Candy Park 等　發行：新映影片",
+      "mapUrl": "https://www.google.com/maps/search/?api=1&query=%E4%BB%8A%E6%97%A5%E5%85%AC%E6%98%A0%E5%A4%9A%E9%99%A2%E6%9C%89%E5%A0%B4%EF%BC%882D%EF%BC%8F4DX%EF%BC%89%EF%BC%9A%E5%BD%B1%E8%97%9D%E8%8D%B7%E9%87%8C%E6%B4%BB%EF%BC%8FMegaBox%E3%80%81MCL%20AIRSIDE%EF%BC%8FSTAR%EF%BC%8FMOVIE%20TOWN%EF%BC%8FFestival%20Grand%EF%BC%8FK11%EF%BC%8F%E5%BE%B7%E7%A6%8F%E3%80%81%E7%99%BE%E8%80%81%E5%8C%AF%20apm%EF%BC%8FGALA%EF%BC%88%E5%90%AB%204DX%EF%BC%89%E3%80%81%E5%A4%AA%E5%8F%A4%E5%9F%8E%EF%BC%8FMOKO%EF%BC%8FYOHO%EF%BC%8F%E8%91%B5%E8%8A%B3%EF%BC%8F%E5%98%89%E6%B9%96%EF%BC%8FELEMENTS%E3%80%81CGV%E3%80%81the%20sky%E3%80%81StagE%E3%80%81Candy%20Park%20%E7%AD%89%E3%80%80%E7%99%BC%E8%A1%8C%EF%BC%9A%E6%96%B0%E6%98%A0%E5%BD%B1%E7%89%87",
       "price": "11/19 公映場次 2D 約 $40–$110；4DX 約 $150–$170（百老匯 apm／GALA）",
       "ticketUrl": "https://m.wmoov.com/movie/showtimes/73723",
-      "ticketNote": "院線／wmoov（11/19 公映場次已開售，含 4DX）",
+      "ticketNote": "院線／wmoov（11/19 公映進行中，含 4DX）",
       "source": "https://wmoov.com/movie/details/73723",
       "notes": "光之美少女系列第 35 部劇場版；約 71 分鐘；日語。2026-11-08 核實：ACGEvent 11/7 報港澳 2D／4DX 同步上映；2D 特典日本直送角色光柵收藏卡（全3款隨機）、4DX 特典名片風收藏卡（全5款隨機）。發行新…",
       "featured": false,
-      "verifiedAt": "2026-11-18",
+      "verifiedAt": "2026-11-19",
       "sample": false
     },
     {
@@ -393,12 +370,12 @@
       "place": "港澳各大院線（場次未公布）　發行：木棉花香港",
       "mapUrl": "https://www.google.com/maps/search/?api=1&query=%E6%B8%AF%E6%BE%B3%E5%90%84%E5%A4%A7%E9%99%A2%E7%B7%9A%EF%BC%88%E5%A0%B4%E6%AC%A1%E6%9C%AA%E5%85%AC%E5%B8%83%EF%BC%89%E3%80%80%E7%99%BC%E8%A1%8C%EF%BC%9A%E6%9C%A8%E6%A3%89%E8%8A%B1%E9%A6%99%E6%B8%AF",
       "price": "未公布",
-      "ticketUrl": "",
+      "ticketUrl": "https://m.wmoov.com/movie/showtimes/73598",
       "ticketNote": "院線／未公布",
       "source": "https://wmoov.com/movie/details/73598",
       "notes": "系列大學篇完結篇；日語原聲、中英文字幕；CloverWorks。2026-11-12 核實：wmoov showtimes/73598 仍無場次；片長／級別仍待定。 2026-11-17 核實：wmoov showtimes/73598…",
       "featured": false,
-      "verifiedAt": "2026-11-18",
+      "verifiedAt": "2026-11-19",
       "sample": false
     },
     {
@@ -532,7 +509,7 @@
       "source": "https://acgevent.com/archives/40059",
       "notes": "2026-11-12 核實：Muse HK shop 已開售前賣券套票組 HK$110（換票證 1 張＋特製主視覺 PVC 小卡；每人限 4 套；11 月中下旬起配送；不適用特典場）。wmoov 現時未見專頁／場次。特典場資訊仍待公布。…",
       "featured": false,
-      "verifiedAt": "2026-11-18",
+      "verifiedAt": "2026-11-19",
       "sample": false
     },
     {
@@ -548,12 +525,12 @@
       "place": "全港院線（戲院／場次未公布）",
       "mapUrl": "https://www.google.com/maps/search/?api=1&query=%E5%85%A8%E6%B8%AF%E9%99%A2%E7%B7%9A%EF%BC%88%E6%88%B2%E9%99%A2%EF%BC%8F%E5%A0%B4%E6%AC%A1%E6%9C%AA%E5%85%AC%E5%B8%83%EF%BC%89",
       "price": "未公布",
-      "ticketUrl": "",
+      "ticketUrl": "https://m.wmoov.com/movie/showtimes/74196",
       "ticketNote": "院線／未公布",
       "source": "https://wmoov.com/movie/details/74196",
       "notes": "2026-11-04 新建；發行新映影片；日語；約55分鐘；2D／4DX／MX4D。日本 2026-10-09 上映。2026-11-12 核實：wmoov showtimes/74196 仍無場次；片長／級別仍待定。 2026-11-1…",
       "featured": false,
-      "verifiedAt": "2026-11-18",
+      "verifiedAt": "2026-11-19",
       "sample": false
     },
     {
@@ -631,16 +608,16 @@
       "ips": [],
       "date": "2026-12-10",
       "endDate": "2026-12-10",
-      "timeNote": "2026-12-10（四）港澳上映；粵語重新配音；映後加映《包喺基路仔身上！》",
+      "timeNote": "2026-12-10（四）港澳上映；粵語重新配音（百老匯官頁已確認粵語／中文字幕，片長 89 分）；映後加映《包喺基路仔身上！》（院線頁未寫，仍以木棉花公告為準）；場次仍未公布",
       "place": "全港院線（未公布）　發行：木棉花香港",
       "mapUrl": "https://www.google.com/maps/search/?api=1&query=%E5%85%A8%E6%B8%AF%E9%99%A2%E7%B7%9A%EF%BC%88%E6%9C%AA%E5%85%AC%E5%B8%83%EF%BC%89%E3%80%80%E7%99%BC%E8%A1%8C%EF%BC%9A%E6%9C%A8%E6%A3%89%E8%8A%B1%E9%A6%99%E6%B8%AF",
       "price": "未公布",
-      "ticketUrl": "",
+      "ticketUrl": "https://m.wmoov.com/movie/showtimes/73499",
       "ticketNote": "未公布（院線／hkmovie6）",
       "source": "https://m.wmoov.com/movie/details/73499",
       "notes": "2000 年第二部劇場版；香港以前只曾喺翡翠台播放，從未上映戲院；10-06 WMOOV 標暫定 12-10 上映，戲院未公布；木棉花預告見 https://acgevent.com/archives/40040。2026-11-12 核…",
       "featured": false,
-      "verifiedAt": "2026-11-15",
+      "verifiedAt": "2026-11-19",
       "sample": false
     },
     {
@@ -828,6 +805,27 @@
       "sample": false
     },
     {
+      "id": "688fd11deb74274a",
+      "title": "高橋大翔香港粉絲見面會",
+      "status": "即將開始",
+      "notionStatus": "即將開始",
+      "category": "見面會",
+      "ips": [],
+      "date": "2027-01-09",
+      "endDate": "2027-01-09",
+      "timeNote": "2027-01-09　第一場 11:00 入場／12:00 開場；第二場 16:00 入場／17:00 開場",
+      "place": "旺角希爾頓花園酒店宴會廳（豉油街2號）",
+      "mapUrl": "https://www.google.com/maps/search/?api=1&query=%E6%97%BA%E8%A7%92%E5%B8%8C%E7%88%BE%E9%A0%93%E8%8A%B1%E5%9C%92%E9%85%92%E5%BA%97%E5%AE%B4%E6%9C%83%E5%BB%B3%EF%BC%88%E8%B1%89%E6%B2%B9%E8%A1%972%E8%99%9F%EF%BC%89",
+      "price": "SVIP $1,380／VIP $1,080／A $880",
+      "ticketUrl": "https://www.art-mate.net/doc/101761",
+      "ticketNote": "art-mate 現正發售（11/15 12:00 開售）；另有哔哩哔哩會員購",
+      "source": "https://www.sma.co.jp/s/sma/news/detail/115450",
+      "notes": "2026-11-19 補建漏報。索尼音樂藝人（SMA）2026-10-29 官方宣布 2027/1/9 香港見面會。日本演員／模特，實寫作品包括《我的幸福婚約》、《青春之旅》（アオハライド）、《彌留之國的愛麗絲》第三季等。主辦 wakuw…",
+      "featured": false,
+      "verifiedAt": "2026-11-19",
+      "sample": false
+    },
+    {
       "id": "ec341a76bfbb0dfc",
       "title": "Spileben Special Event in Hong Kong（大熊和奏）",
       "status": "即將開始",
@@ -931,13 +929,13 @@
       "timeNote": "2027-01-21（四）、2027-01-22（五）；報導寫 20:00，待官方確認",
       "place": "亞洲國際博覽館 AsiaWorld-Arena（赤鱲角）",
       "mapUrl": "https://www.google.com/maps/search/?api=1&query=%E4%BA%9E%E6%B4%B2%E5%9C%8B%E9%9A%9B%E5%8D%9A%E8%A6%BD%E9%A4%A8%20AsiaWorld-Arena%EF%BC%88%E8%B5%A4%E9%B1%B2%E8%A7%92%EF%BC%89",
-      "price": "HK$980–$1,880（星島頭條 11/10 報）",
+      "price": "Priority Entry 企位 $1,880；企位 $1,580／$1,380；座位 $1,580／$1,380／$1,180／$980（已售罄）",
       "ticketUrl": "https://www.ticketflap.com/yoasobi2027",
-      "ticketNote": "滙豐 Mastercard 優先預售 2026-11-16 10:00–22:00；Ticketflap 公開發售 11/17 15:00 起（星島頭條 11/10 報；官方站本輪未登售票日程）",
+      "ticketNote": "滙豐 Mastercard 優先預售 11/16 10:00–22:00、Ticketflap 公售 11/17 15:00；香港主辦 NEON LIT MUSIC 約 11/18 宣布售罄（日本官網仍未登售票／售罄專文）",
       "source": "https://www.yoasobi-music.jp/news/588376",
       "notes": "2026-11-10 核實：官方 11/9 公布香港場 2027/1/21–1/22 AsiaWorld-Arena；巡演名由「10-CITY DOME & STADIUM TOUR」改為「11-CITY ASIA-OCEANIA TOU…",
       "featured": false,
-      "verifiedAt": "2026-11-11",
+      "verifiedAt": "2026-11-19",
       "sample": false
     },
     {
