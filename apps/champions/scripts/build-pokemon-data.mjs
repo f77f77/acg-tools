@@ -38,6 +38,61 @@ const SCHEMA_VERSION = 2;
 const POKEAPI = 'https://pokeapi.co/api/v2';
 const CBD_ORIGIN = 'https://championsbattledata.com';
 const RATE_LIMIT_MS = 350;
+
+/**
+ * Champions game v1.3 battle-balance move accuracies (official news 877).
+ * Takes effect at system maintenance on 2026-12-02 and applies to all regulations.
+ *   https://news.pokemon-home.com/tc/page/877.html
+ *   https://news.pokemon-home.com/en/page/877.html
+ *   https://www.pokemon.com/us/news/pokemon-champions-balance-patch-update-december-2026
+ *
+ * Keyed by existing moves.json `id` slugs (PokéAPI name with hyphens removed).
+ * Rock Slide flinch 30%→20% has no structured field in this app; flavor text is unchanged.
+ *
+ * Date-gated so builds before 2026-12-02 keep PokéAPI accuracies in committed
+ * data/moves.json. After the effective date, both a full PokéAPI rebuild
+ * (buildMoveRecord) and --usage-only (cached moves.json) apply these values.
+ *
+ * Gate is a date-only compare of YYYY-MM-DD in Asia/Hong_Kong (UTC+8). That
+ * becomes true at 2026-12-02 00:00 HKT, when it is already 01:00 on 2026-12-02
+ * in Asia/Tokyo, and stays false throughout 2026-12-01 in both zones. A Tokyo
+ * midnight gate would turn on at 2026-12-01 23:00 HKT.
+ */
+const CHAMPIONS_V13_MOVE_ACCURACY_EFFECTIVE_FROM = '2026-12-02';
+const CHAMPIONS_V13_MOVE_ACCURACY_TIME_ZONE = 'Asia/Hong_Kong';
+const CHAMPIONS_V13_MOVE_ACCURACY = {
+  screech: 100, // 刺耳聲 85 → 100
+  steelwing: 100, // 鋼翼 90 → 100
+  metalsound: 100, // 金屬音 85 → 100
+  frostbreath: 100, // 冰息 90 → 100
+  rockslide: 95, // 岩崩 90 → 95
+};
+
+function calendarDateInTimeZone(date, timeZone) {
+  const parts = new Intl.DateTimeFormat('en-CA', {
+    timeZone,
+    year: 'numeric',
+    month: '2-digit',
+    day: '2-digit',
+  }).formatToParts(date);
+  const pick = (type) => parts.find((p) => p.type === type)?.value;
+  return `${pick('year')}-${pick('month')}-${pick('day')}`;
+}
+
+export function isChampionsV13MoveAccuracyActive(now = new Date()) {
+  return (
+    calendarDateInTimeZone(now, CHAMPIONS_V13_MOVE_ACCURACY_TIME_ZONE) >=
+    CHAMPIONS_V13_MOVE_ACCURACY_EFFECTIVE_FROM
+  );
+}
+
+export function applyChampionsV13MoveAccuracy(rec, now = new Date()) {
+  if (!rec?.id || !isChampionsV13MoveAccuracyActive(now)) return rec;
+  const accuracy = CHAMPIONS_V13_MOVE_ACCURACY[rec.id];
+  if (accuracy == null || rec.accuracy === accuracy) return rec;
+  return { ...rec, accuracy };
+}
+
 const UA = 'pokemon-champions-assistant-data-build/0.1 (+https://github.com/f77f77/pokemon-champions-assistant)';
 
 /** Explicit showdownId → PokéAPI species + default form pokemon endpoint. */
@@ -955,11 +1010,11 @@ async function buildMoveRecord(displayOrSlug, cache) {
       ? toShowdownMoveId(displayOrSlug)
       : slug.replace(/-/g, '');
 
-  if (cache.has(moveId)) return cache.get(moveId);
+  if (cache.has(moveId)) return applyChampionsV13MoveAccuracy(cache.get(moveId));
 
   try {
     const data = await rateLimitedJson(`${POKEAPI}/move/${encodeURIComponent(slug)}`);
-    const rec = {
+    const rec = applyChampionsV13MoveAccuracy({
       id: data.name.replace(/-/g, ''),
       pokeapiId: data.id,
       names: pickNames(data.names),
@@ -969,12 +1024,12 @@ async function buildMoveRecord(displayOrSlug, cache) {
       accuracy: data.accuracy,
       pp: data.pp,
       flavor: pickFlavor(data.flavor_text_entries),
-    };
+    });
     cache.set(rec.id, rec);
     return rec;
   } catch (err) {
     console.warn(`  move miss ${slug}: ${err.message || err}`);
-    const rec = {
+    const rec = applyChampionsV13MoveAccuracy({
       id: moveId,
       pokeapiId: null,
       names: { en: displayOrSlug, 'zh-Hant': null, ja: null },
@@ -984,7 +1039,7 @@ async function buildMoveRecord(displayOrSlug, cache) {
       accuracy: null,
       pp: null,
       flavor: { en: null, 'zh-Hant': null, ja: null },
-    };
+    });
     cache.set(rec.id, rec);
     return rec;
   }
@@ -1062,8 +1117,15 @@ async function refreshUsageOnly({ dryRun, allowlistPath }) {
   const pokemonPath = path.join(ROOT, 'data/pokemon.json');
   const movesPath = path.join(ROOT, 'data/moves.json');
   const pokemon = JSON.parse(fs.readFileSync(pokemonPath, 'utf8'));
-  const existingMoves = JSON.parse(fs.readFileSync(movesPath, 'utf8'));
+  const existingMoves = JSON.parse(fs.readFileSync(movesPath, 'utf8')).map((m) =>
+    applyChampionsV13MoveAccuracy(m),
+  );
   console.log(`usage-only: ${pokemon.length} pokemon from ${path.relative(ROOT, pokemonPath)}`);
+  if (isChampionsV13MoveAccuracyActive()) {
+    console.log(
+      `usage-only: applied Champions v1.3 move accuracy overlay (news 877, effective ${CHAMPIONS_V13_MOVE_ACCURACY_EFFECTIVE_FROM} ${CHAMPIONS_V13_MOVE_ACCURACY_TIME_ZONE})`,
+    );
+  }
   await ensureCbdSeason();
   const doublesCache = new Map();
   const speciesCache = new Map();
@@ -1260,7 +1322,11 @@ async function main() {
   console.log(`Done. pokemon=${pokemon.length} moves=${moves.length} allowlist=${showdownIds.length}`);
 }
 
-main().catch((err) => {
-  console.error(err);
-  process.exit(1);
-});
+const isDirectRun =
+  Boolean(process.argv[1]) && path.resolve(process.argv[1]) === fileURLToPath(import.meta.url);
+if (isDirectRun) {
+  main().catch((err) => {
+    console.error(err);
+    process.exit(1);
+  });
+}
