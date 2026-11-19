@@ -1,6 +1,6 @@
 {
   "schema": "anime-subs.v1",
-  "updatedAt": "2026-11-10",
+  "updatedAt": "2026-11-19",
   "note": "由 Notion「中文字幕動畫播放表」同步。bgmId 以 Notion 欄位優先，其次來源網址、本季 season.json 標題、Bangumi 搜尋。未能對上嘅作品列喺 unresolved，請喺 Notion 填 bgmId。",
   "unresolved": [
     {
@@ -8,6 +8,12 @@
       "titleJa": "学園アイドルマスター",
       "notionId": "3ef5631c-93db-81e9-a315-f27fc010af26",
       "status": "追蹤中"
+    },
+    {
+      "title": "魔法騎士雷阿斯（2026）",
+      "titleJa": "魔法騎士レイアース (2026)",
+      "notionId": "3ef5631c-93db-8136-a1ad-e5e22f13fd20",
+      "status": "播放中"
     }
   ],
   "items": [
@@ -1197,8 +1203,7 @@
         "魔法騎士レイアース (2026)",
         "魔法騎士雷阿斯（2026）"
       ],
-      "bgmId": 502123,
-      "bgmIdSource": "season",
+      "bgmIdSource": "none",
       "platforms": [
         "Ani-One Asia",
         "巴哈姆特動畫瘋"
