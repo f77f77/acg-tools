@@ -1,6 +1,6 @@
 {
   "schema": "events.v2",
-  "updatedAt": "2026-11-19",
+  "updatedAt": "2026-11-20",
   "note": "活動由 Notion「香港ACG情報看板」每日同步（香港時間）。狀態會按日期重算：開始至結束當日係進行中，未開始係即將開始，完結七日內先保留。周邊截止仍然手改 deadlines[]；標成示例嘅截止唔會保留。",
   "events": [
     {
@@ -209,16 +209,16 @@
       "ips": [],
       "date": "2026-11-15",
       "endDate": "2026-11-15",
-      "timeNote": "優先場 11/15、加場 11/16 已過；今日 11/19 公映，wmoov 場次頁列至 11/22（含 2D／百老匯 apm／GALA 4DX）",
+      "timeNote": "優先場 11/15、加場 11/16 已過；11/19 起公映進行中，wmoov 今日仍多院有場（含 2D／百老匯 apm／GALA 4DX），場次頁列至 11/22",
       "place": "今日公映多院有場（2D／4DX）：影藝荷里活／MegaBox、MCL AIRSIDE／STAR／MOVIE TOWN／Festival Grand／K11／德福、百老匯 apm／GALA（含 4DX）、太古城／MOKO／YOHO／葵芳／嘉湖／ELEMENTS、CGV、the sky、StagE、Candy Park 等　發行：新映影片",
       "mapUrl": "https://www.google.com/maps/search/?api=1&query=%E4%BB%8A%E6%97%A5%E5%85%AC%E6%98%A0%E5%A4%9A%E9%99%A2%E6%9C%89%E5%A0%B4%EF%BC%882D%EF%BC%8F4DX%EF%BC%89%EF%BC%9A%E5%BD%B1%E8%97%9D%E8%8D%B7%E9%87%8C%E6%B4%BB%EF%BC%8FMegaBox%E3%80%81MCL%20AIRSIDE%EF%BC%8FSTAR%EF%BC%8FMOVIE%20TOWN%EF%BC%8FFestival%20Grand%EF%BC%8FK11%EF%BC%8F%E5%BE%B7%E7%A6%8F%E3%80%81%E7%99%BE%E8%80%81%E5%8C%AF%20apm%EF%BC%8FGALA%EF%BC%88%E5%90%AB%204DX%EF%BC%89%E3%80%81%E5%A4%AA%E5%8F%A4%E5%9F%8E%EF%BC%8FMOKO%EF%BC%8FYOHO%EF%BC%8F%E8%91%B5%E8%8A%B3%EF%BC%8F%E5%98%89%E6%B9%96%EF%BC%8FELEMENTS%E3%80%81CGV%E3%80%81the%20sky%E3%80%81StagE%E3%80%81Candy%20Park%20%E7%AD%89%E3%80%80%E7%99%BC%E8%A1%8C%EF%BC%9A%E6%96%B0%E6%98%A0%E5%BD%B1%E7%89%87",
       "price": "11/19 公映場次 2D 約 $40–$110；4DX 約 $150–$170（百老匯 apm／GALA）",
       "ticketUrl": "https://m.wmoov.com/movie/showtimes/73723",
-      "ticketNote": "院線／wmoov（11/19 公映進行中，含 4DX）",
+      "ticketNote": "院線／wmoov（11/19 起公映進行中，含 4DX）",
       "source": "https://wmoov.com/movie/details/73723",
       "notes": "光之美少女系列第 35 部劇場版；約 71 分鐘；日語。2026-11-08 核實：ACGEvent 11/7 報港澳 2D／4DX 同步上映；2D 特典日本直送角色光柵收藏卡（全3款隨機）、4DX 特典名片風收藏卡（全5款隨機）。發行新…",
       "featured": false,
-      "verifiedAt": "2026-11-19",
+      "verifiedAt": "2026-11-20",
       "sample": false
     },
     {
@@ -375,7 +375,7 @@
       "source": "https://wmoov.com/movie/details/73598",
       "notes": "系列大學篇完結篇；日語原聲、中英文字幕；CloverWorks。2026-11-12 核實：wmoov showtimes/73598 仍無場次；片長／級別仍待定。 2026-11-17 核實：wmoov showtimes/73598…",
       "featured": false,
-      "verifiedAt": "2026-11-19",
+      "verifiedAt": "2026-11-20",
       "sample": false
     },
     {
@@ -509,7 +509,7 @@
       "source": "https://acgevent.com/archives/40059",
       "notes": "2026-11-12 核實：Muse HK shop 已開售前賣券套票組 HK$110（換票證 1 張＋特製主視覺 PVC 小卡；每人限 4 套；11 月中下旬起配送；不適用特典場）。wmoov 現時未見專頁／場次。特典場資訊仍待公布。…",
       "featured": false,
-      "verifiedAt": "2026-11-19",
+      "verifiedAt": "2026-11-20",
       "sample": false
     },
     {
@@ -530,7 +530,7 @@
       "source": "https://wmoov.com/movie/details/74196",
       "notes": "2026-11-04 新建；發行新映影片；日語；約55分鐘；2D／4DX／MX4D。日本 2026-10-09 上映。2026-11-12 核實：wmoov showtimes/74196 仍無場次；片長／級別仍待定。 2026-11-1…",
       "featured": false,
-      "verifiedAt": "2026-11-19",
+      "verifiedAt": "2026-11-20",
       "sample": false
     },
     {
@@ -552,6 +552,31 @@
       "notes": "2026-11-09 新建。ACGEvent 11/7、HK01／01空間：日本巡迴展香港站，主題「魔法珠，你還留著嗎？」；重現美空第一小學課室、魔女界、原畫及變身器立體裝置。角色見面會 12/12–13、12/19–20（消費滿額換領見…",
       "featured": false,
       "verifiedAt": "2026-11-09",
+      "sample": false
+    },
+    {
+      "id": "65abdf570d5e920d",
+      "title": "Ensemble Traversée「Mecha vs Kaiju - A Symphonic Tribute」（怪獸 × 機甲 史詩交響大戰）",
+      "status": "即將開始",
+      "notionStatus": "即將開始",
+      "category": "演唱會",
+      "ips": [
+        "多 IP",
+        "哥斯拉",
+        "超人"
+      ],
+      "date": "2026-12-05",
+      "endDate": "2026-12-05",
+      "timeNote": "2026-12-05　20:00（Timable 標至 22:30）",
+      "place": "荃灣大會堂演奏廳（大河道72號）",
+      "mapUrl": "https://www.google.com/maps/search/?api=1&query=%E8%8D%83%E7%81%A3%E5%A4%A7%E6%9C%83%E5%A0%82%E6%BC%94%E5%A5%8F%E5%BB%B3%EF%BC%88%E5%A4%A7%E6%B2%B3%E9%81%9372%E8%99%9F%EF%BC%89",
+      "price": "正價 HK$680／$580／$480／$380；特惠 $580／$480／$380／$280（全日制學生、60歲或以上、殘疾人士及看護人、綜援受惠人士）",
+      "ticketUrl": "https://www.art-mate.net/doc/101866",
+      "ticketNote": "art-mate 公開發售中（Timable 標 11/11 17:00 起）",
+      "source": "https://www.art-mate.net/doc/101866",
+      "notes": "2026-11-20 新建。Ensemble Traversée 主辦、冼宏基指揮、鑄台製作支持。以交響樂演奏高達／哥斯拉／超人系列配樂（伊福部昭、鷺巢詩郎、澤野弘之、田中公平等；曲目含 G高達、SEED、F91、逆襲的夏亞、UC、God…",
+      "featured": false,
+      "verifiedAt": "2026-11-20",
       "sample": false
     },
     {
@@ -617,7 +642,7 @@
       "source": "https://m.wmoov.com/movie/details/73499",
       "notes": "2000 年第二部劇場版；香港以前只曾喺翡翠台播放，從未上映戲院；10-06 WMOOV 標暫定 12-10 上映，戲院未公布；木棉花預告見 https://acgevent.com/archives/40040。2026-11-12 核…",
       "featured": false,
-      "verifiedAt": "2026-11-19",
+      "verifiedAt": "2026-11-20",
       "sample": false
     },
     {
