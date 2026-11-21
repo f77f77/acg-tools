@@ -1,6 +1,6 @@
 {
   "schema": "events.v2",
-  "updatedAt": "2026-11-20",
+  "updatedAt": "2026-11-21",
   "note": "活動由 Notion「香港ACG情報看板」每日同步（香港時間）。狀態會按日期重算：開始至結束當日係進行中，未開始係即將開始，完結七日內先保留。周邊截止仍然手改 deadlines[]；標成示例嘅截止唔會保留。",
   "events": [
     {
@@ -209,7 +209,7 @@
       "ips": [],
       "date": "2026-11-15",
       "endDate": "2026-11-15",
-      "timeNote": "優先場 11/15、加場 11/16 已過；11/19 起公映進行中，wmoov 今日仍多院有場（含 2D／百老匯 apm／GALA 4DX），場次頁列至 11/22",
+      "timeNote": "優先場 11/15、加場 11/16 已過；11/19 起公映進行中，wmoov 今日仍多院有場（含 2D／百老匯 apm／GALA 4DX），場次頁列至 11/25",
       "place": "今日公映多院有場（2D／4DX）：影藝荷里活／MegaBox、MCL AIRSIDE／STAR／MOVIE TOWN／Festival Grand／K11／德福、百老匯 apm／GALA（含 4DX）、太古城／MOKO／YOHO／葵芳／嘉湖／ELEMENTS、CGV、the sky、StagE、Candy Park 等　發行：新映影片",
       "mapUrl": "https://www.google.com/maps/search/?api=1&query=%E4%BB%8A%E6%97%A5%E5%85%AC%E6%98%A0%E5%A4%9A%E9%99%A2%E6%9C%89%E5%A0%B4%EF%BC%882D%EF%BC%8F4DX%EF%BC%89%EF%BC%9A%E5%BD%B1%E8%97%9D%E8%8D%B7%E9%87%8C%E6%B4%BB%EF%BC%8FMegaBox%E3%80%81MCL%20AIRSIDE%EF%BC%8FSTAR%EF%BC%8FMOVIE%20TOWN%EF%BC%8FFestival%20Grand%EF%BC%8FK11%EF%BC%8F%E5%BE%B7%E7%A6%8F%E3%80%81%E7%99%BE%E8%80%81%E5%8C%AF%20apm%EF%BC%8FGALA%EF%BC%88%E5%90%AB%204DX%EF%BC%89%E3%80%81%E5%A4%AA%E5%8F%A4%E5%9F%8E%EF%BC%8FMOKO%EF%BC%8FYOHO%EF%BC%8F%E8%91%B5%E8%8A%B3%EF%BC%8F%E5%98%89%E6%B9%96%EF%BC%8FELEMENTS%E3%80%81CGV%E3%80%81the%20sky%E3%80%81StagE%E3%80%81Candy%20Park%20%E7%AD%89%E3%80%80%E7%99%BC%E8%A1%8C%EF%BC%9A%E6%96%B0%E6%98%A0%E5%BD%B1%E7%89%87",
       "price": "11/19 公映場次 2D 約 $40–$110；4DX 約 $150–$170（百老匯 apm／GALA）",
@@ -218,14 +218,35 @@
       "source": "https://wmoov.com/movie/details/73723",
       "notes": "光之美少女系列第 35 部劇場版；約 71 分鐘；日語。2026-11-08 核實：ACGEvent 11/7 報港澳 2D／4DX 同步上映；2D 特典日本直送角色光柵收藏卡（全3款隨機）、4DX 特典名片風收藏卡（全5款隨機）。發行新…",
       "featured": false,
-      "verifiedAt": "2026-11-20",
+      "verifiedAt": "2026-11-21",
+      "sample": false
+    },
+    {
+      "id": "8f676a4a7a70d1f1",
+      "title": "《藥師少女的獨語》夏日園遊會2026 Shop in Shop @ 動漫聯動 The ANGLE",
+      "status": "已完結",
+      "notionStatus": "進行中",
+      "category": "店內活動",
+      "ips": [],
+      "date": "2026-11-20",
+      "endDate": "2026-11-20",
+      "timeNote": "2026-11-20～2027年1月（官方未寫確切結束日）；門市平日 12:00–21:00、六日及假期 11:00–21:00",
+      "place": "觀塘巧明街98號 The ANGLE 7樓 707及709號鋪（動漫聯動）",
+      "mapUrl": "https://www.google.com/maps/search/?api=1&query=%E8%A7%80%E5%A1%98%E5%B7%A7%E6%98%8E%E8%A1%9798%E8%99%9F%20The%20ANGLE%207%E6%A8%93%20707%E5%8F%8A709%E8%99%9F%E9%8B%AA%EF%BC%88%E5%8B%95%E6%BC%AB%E8%81%AF%E5%8B%95%EF%BC%89",
+      "price": "免費入場；購買夏日園遊會2026周邊單筆滿 HK$200 隨機送香港特典明信片（全4款，立體塗層，送完即止）",
+      "ticketUrl": "",
+      "ticketNote": "免費入場（店舖）",
+      "source": "https://www.microworksacg.com/blogs/shop-in-shop/angle-tad-20261120",
+      "notes": "2026-11-21 新建。動漫聯動官方 Shop in Shop：官方授權《藥師少女的獨語》夏日園遊會2026 周邊登陸觀塘 The ANGLE 店，並設特色打卡位。檔期 11/20 起至 2027 年 1 月（確切結束日未公布）。IP…",
+      "featured": false,
+      "verifiedAt": "2026-11-21",
       "sample": false
     },
     {
       "id": "d66d5b2a50b7a626",
       "title": "佐々木李子 Sasaki Rico HongKong Fanmeeting 2026～香港・李好～",
-      "status": "即將開始",
-      "notionStatus": "即將開始",
+      "status": "進行中",
+      "notionStatus": "進行中",
       "category": "見面會",
       "ips": [
         "佐々木李子"
@@ -239,16 +260,16 @@
       "ticketUrl": "https://cityvoice.kktix.cc/events/sasakirico-2026",
       "ticketNote": "",
       "source": "https://cityvoice.kktix.cc/events/sasakirico-2026",
-      "notes": "",
+      "notes": "2026-11-21：今日舉行→即將開始改進行中，完場後明日封存。",
       "featured": false,
-      "verifiedAt": "2026-09-29",
+      "verifiedAt": "2026-11-21",
       "sample": false
     },
     {
       "id": "5f296203938111d2",
       "title": "谷口賢志&俊藤光利香港見面會2026",
-      "status": "即將開始",
-      "notionStatus": "即將開始",
+      "status": "進行中",
+      "notionStatus": "進行中",
       "category": "見面會",
       "ips": [
         "特攝"
@@ -262,9 +283,9 @@
       "ticketUrl": "https://www.art-mate.net/doc/101242",
       "ticketNote": "art-mate；10-21 12:00 已開售；主辦 waku waku／IRIS／多祺",
       "source": "https://www.art-mate.net/doc/101242",
-      "notes": "特攝（GoGoV／Amazons／Nexus／GEATS）；入場特典限定生寫。2026-10-25 新建。",
+      "notes": "特攝（GoGoV／Amazons／Nexus／GEATS）；入場特典限定生寫。2026-10-25 新建。 2026-11-21：今日舉行→即將開始改進行中，完場後明日封存。",
       "featured": false,
-      "verifiedAt": "2026-10-25",
+      "verifiedAt": "2026-11-21",
       "sample": false
     },
     {
@@ -375,7 +396,7 @@
       "source": "https://wmoov.com/movie/details/73598",
       "notes": "系列大學篇完結篇；日語原聲、中英文字幕；CloverWorks。2026-11-12 核實：wmoov showtimes/73598 仍無場次；片長／級別仍待定。 2026-11-17 核實：wmoov showtimes/73598…",
       "featured": false,
-      "verifiedAt": "2026-11-20",
+      "verifiedAt": "2026-11-21",
       "sample": false
     },
     {
@@ -509,7 +530,7 @@
       "source": "https://acgevent.com/archives/40059",
       "notes": "2026-11-12 核實：Muse HK shop 已開售前賣券套票組 HK$110（換票證 1 張＋特製主視覺 PVC 小卡；每人限 4 套；11 月中下旬起配送；不適用特典場）。wmoov 現時未見專頁／場次。特典場資訊仍待公布。…",
       "featured": false,
-      "verifiedAt": "2026-11-20",
+      "verifiedAt": "2026-11-21",
       "sample": false
     },
     {
@@ -530,7 +551,7 @@
       "source": "https://wmoov.com/movie/details/74196",
       "notes": "2026-11-04 新建；發行新映影片；日語；約55分鐘；2D／4DX／MX4D。日本 2026-10-09 上映。2026-11-12 核實：wmoov showtimes/74196 仍無場次；片長／級別仍待定。 2026-11-1…",
       "featured": false,
-      "verifiedAt": "2026-11-20",
+      "verifiedAt": "2026-11-21",
       "sample": false
     },
     {
@@ -642,7 +663,7 @@
       "source": "https://m.wmoov.com/movie/details/73499",
       "notes": "2000 年第二部劇場版；香港以前只曾喺翡翠台播放，從未上映戲院；10-06 WMOOV 標暫定 12-10 上映，戲院未公布；木棉花預告見 https://acgevent.com/archives/40040。2026-11-12 核…",
       "featured": false,
-      "verifiedAt": "2026-11-20",
+      "verifiedAt": "2026-11-21",
       "sample": false
     },
     {
@@ -804,6 +825,27 @@
       "notes": "2026-11-18 補建漏報（官方 10 月下旬宣布、ACGEvent 11/6 報抽選已開；抽選／付款期已過）。主辦 EUPHORIC PRODUCTION HK／Neon Lit Music，特別協力 Bushiroad Music…",
       "featured": false,
       "verifiedAt": "2026-11-18",
+      "sample": false
+    },
+    {
+      "id": "e589ba23bc7aca99",
+      "title": "樂園追放 心之共鳴",
+      "status": "即將開始",
+      "notionStatus": "即將開始",
+      "category": "電影",
+      "ips": [],
+      "date": "2027-01-07",
+      "endDate": "2027-01-07",
+      "timeNote": "2027-01-07（四）香港公映；片長／級別待定；日語中文字幕；場次未公布",
+      "place": "全港院線（場次未公布）",
+      "mapUrl": "https://www.google.com/maps/search/?api=1&query=%E5%85%A8%E6%B8%AF%E9%99%A2%E7%B7%9A%EF%BC%88%E5%A0%B4%E6%AC%A1%E6%9C%AA%E5%85%AC%E5%B8%83%EF%BC%89",
+      "price": "未公布",
+      "ticketUrl": "https://m.wmoov.com/movie/showtimes/74418",
+      "ticketNote": "院線／未公布",
+      "source": "https://wmoov.com/movie/details/74418",
+      "notes": "2026-11-21 新建。wmoov details/74418（資料更新 11/20）標 2027/1/7 公映，片長／級別待定，日語中文字幕；showtimes/74418 仍無場次。2014 年《樂園追放》完全新作續篇，水島精二執…",
+      "featured": false,
+      "verifiedAt": "2026-11-21",
       "sample": false
     },
     {
@@ -1047,6 +1089,27 @@
       "notes": "日本 2026-12-11 上映；香港檔期據 WMOOV",
       "featured": false,
       "verifiedAt": "2026-10-15",
+      "sample": false
+    },
+    {
+      "id": "4b09e5d4a506958b",
+      "title": "魔法使之夜",
+      "status": "即將開始",
+      "notionStatus": "即將開始",
+      "category": "電影",
+      "ips": [],
+      "date": "2027-03-18",
+      "endDate": "2027-03-18",
+      "timeNote": "2027-03-18（四）香港公映；片長 2 小時 9 分；級別待定；日語中文字幕；場次未公布",
+      "place": "全港院線（場次未公布）　發行：木棉花香港",
+      "mapUrl": "https://www.google.com/maps/search/?api=1&query=%E5%85%A8%E6%B8%AF%E9%99%A2%E7%B7%9A%EF%BC%88%E5%A0%B4%E6%AC%A1%E6%9C%AA%E5%85%AC%E5%B8%83%EF%BC%89%E3%80%80%E7%99%BC%E8%A1%8C%EF%BC%9A%E6%9C%A8%E6%A3%89%E8%8A%B1%E9%A6%99%E6%B8%AF",
+      "price": "未公布",
+      "ticketUrl": "https://m.wmoov.com/movie/showtimes/74414",
+      "ticketNote": "院線／未公布",
+      "source": "https://wmoov.com/movie/details/74414",
+      "notes": "2026-11-21 新建。wmoov details/74414（資料更新 11/20）標 2027/3/18 公映，片長 2 小時 9 分（129 分），級別待定，日語中文字幕；showtimes/74414 仍無場次。TYPE-MO…",
+      "featured": false,
+      "verifiedAt": "2026-11-21",
       "sample": false
     },
     {
