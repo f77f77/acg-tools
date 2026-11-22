@@ -1,6 +1,6 @@
 {
   "schema": "events.v2",
-  "updatedAt": "2026-11-21",
+  "updatedAt": "2026-11-22",
   "note": "活動由 Notion「香港ACG情報看板」每日同步（香港時間）。狀態會按日期重算：開始至結束當日係進行中，未開始係即將開始，完結七日內先保留。周邊截止仍然手改 deadlines[]；標成示例嘅截止唔會保留。",
   "events": [
     {
@@ -88,7 +88,7 @@
       "source": "https://www.hk01.com/%E6%95%B8%E7%A2%BC%E7%94%9F%E6%B4%BB/60406828/%E6%B5%B7%E8%B3%8A%E7%8E%8Bnba-%E9%AB%98%E9%81%94fw30-smsp%E6%82%9F%E7%A9%BA%E9%99%90%E5%AE%9A%E7%89%88-%E5%B8%8C%E6%85%8E%E8%90%AC%E4%BB%A3%E5%BF%AB%E9%96%83%E5%BA%97%E6%8E%83%E8%B2%A8%E6%94%BB%E7%95%A5",
       "notes": "2026-11-07 補建漏報。2026-11-08 核實：PCM／HK01 仍標 11/3–22 希慎廣場 B113及B115；ONE PIECE×NBA、龍珠會場限定 SMSP、Tamagotchi Friends、Yurugun 渣…",
       "featured": false,
-      "verifiedAt": "2026-11-09",
+      "verifiedAt": "2026-11-22",
       "sample": false
     },
     {
@@ -109,7 +109,7 @@
       "source": "https://www.horipro-international.com/information/post-4695/",
       "notes": "遊戲《都市伝説解体センター》首個海外巡迴展。2026-11-08 核實：展期 11/6–11/22 INCUBASE Arena，維持進行中。主辦 HoriPro International／HT Entertainment／INCUBA…",
       "featured": false,
-      "verifiedAt": "2026-11-09",
+      "verifiedAt": "2026-11-22",
       "sample": false
     },
     {
@@ -243,56 +243,10 @@
       "sample": false
     },
     {
-      "id": "d66d5b2a50b7a626",
-      "title": "佐々木李子 Sasaki Rico HongKong Fanmeeting 2026～香港・李好～",
-      "status": "進行中",
-      "notionStatus": "進行中",
-      "category": "見面會",
-      "ips": [
-        "佐々木李子"
-      ],
-      "date": "2026-11-21",
-      "endDate": "2026-11-21",
-      "timeNote": "2026-11-21　14:30／19:00",
-      "place": "TIDES　紅磡",
-      "mapUrl": "https://www.google.com/maps/search/?api=1&query=TIDES%E3%80%80%E7%B4%85%E7%A3%A1",
-      "price": "SVIP $1,198／VIP $898／普通 $668",
-      "ticketUrl": "https://cityvoice.kktix.cc/events/sasakirico-2026",
-      "ticketNote": "",
-      "source": "https://cityvoice.kktix.cc/events/sasakirico-2026",
-      "notes": "2026-11-21：今日舉行→即將開始改進行中，完場後明日封存。",
-      "featured": false,
-      "verifiedAt": "2026-11-21",
-      "sample": false
-    },
-    {
-      "id": "5f296203938111d2",
-      "title": "谷口賢志&俊藤光利香港見面會2026",
-      "status": "進行中",
-      "notionStatus": "進行中",
-      "category": "見面會",
-      "ips": [
-        "特攝"
-      ],
-      "date": "2026-11-21",
-      "endDate": "2026-11-21",
-      "timeNote": "2026-11-21　第一場 11:00／12:00；第二場 15:30／16:30",
-      "place": "The LU+　觀塘榮業街2號振萬廣場3樓",
-      "mapUrl": "https://www.google.com/maps/search/?api=1&query=The%20LU%2B%E3%80%80%E8%A7%80%E5%A1%98%E6%A6%AE%E6%A5%AD%E8%A1%972%E8%99%9F%E6%8C%AF%E8%90%AC%E5%BB%A3%E5%A0%B43%E6%A8%93",
-      "price": "SVIP $1380／VIP-A $880／VIP-B $880",
-      "ticketUrl": "https://www.art-mate.net/doc/101242",
-      "ticketNote": "art-mate；10-21 12:00 已開售；主辦 waku waku／IRIS／多祺",
-      "source": "https://www.art-mate.net/doc/101242",
-      "notes": "特攝（GoGoV／Amazons／Nexus／GEATS）；入場特典限定生寫。2026-10-25 新建。 2026-11-21：今日舉行→即將開始改進行中，完場後明日封存。",
-      "featured": false,
-      "verifiedAt": "2026-11-21",
-      "sample": false
-    },
-    {
       "id": "e22c153532e56410",
       "title": "AKANE YONEZAWA \"Black Pasta\" TOUR in Hong Kong",
-      "status": "即將開始",
-      "notionStatus": "即將開始",
+      "status": "進行中",
+      "notionStatus": "進行中",
       "category": "演唱會",
       "ips": [
         "米澤茜"
@@ -306,16 +260,16 @@
       "ticketUrl": "https://www.tickets.neon-lit.com/zh-hant/akaneyonezawa-blackpasta",
       "ticketNote": "",
       "source": "https://akaneyonezawa.com/news/30209",
-      "notes": "08-28 已開售",
+      "notes": "08-28 已開售 2026-11-22：今日舉行→即將開始改進行中，完場後明日封存。",
       "featured": false,
-      "verifiedAt": "2026-09-29",
+      "verifiedAt": "2026-11-22",
       "sample": false
     },
     {
       "id": "e951ef5895c0a407",
       "title": "湊みや 香港粉絲見面會 2026",
-      "status": "即將開始",
-      "notionStatus": "即將開始",
+      "status": "進行中",
+      "notionStatus": "進行中",
       "category": "見面會",
       "ips": [
         "學園偶像大師"
@@ -329,9 +283,51 @@
       "ticketUrl": "https://cosmospro.zaiko.io/zh-hant/e/minatohkfm",
       "ticketNote": "ZAIKO；10-26 查看顯示無票可購（疑已售罄）",
       "source": "https://acgevent.com/archives/40208",
-      "notes": "湊みや（學マス 紫雲清夏役）。2026-10-26 新建。",
+      "notes": "湊みや（學マス 紫雲清夏役）。2026-10-26 新建。 2026-11-22：今日舉行→即將開始改進行中，完場後明日封存。",
       "featured": false,
-      "verifiedAt": "2026-10-26",
+      "verifiedAt": "2026-11-22",
+      "sample": false
+    },
+    {
+      "id": "8ccdd061ced1784b",
+      "title": "WINDSOR × BUCKET MAN【A BUCKETFUL OF XMAS】＋《櫻桃小丸子》聯乘選物所 @ 皇室堡",
+      "status": "進行中",
+      "notionStatus": "進行中",
+      "category": "快閃店",
+      "ips": [],
+      "date": "2026-11-22",
+      "endDate": "2026-12-29",
+      "timeNote": "2026-11-22～12-29；聖誕裝置 10:00–22:00，BUCKET LAB選物所 11:00–20:00",
+      "place": "銅鑼灣皇室堡地下中庭",
+      "mapUrl": "https://www.google.com/maps/search/?api=1&query=%E9%8A%85%E9%91%BC%E7%81%A3%E7%9A%87%E5%AE%A4%E5%A0%A1%E5%9C%B0%E4%B8%8B%E4%B8%AD%E5%BA%AD",
+      "price": "免費入場；聯乘模型公仔全球限量 100 隻 HK$1,480；吊飾約 HK$98／$128 起",
+      "ticketUrl": "https://konggokhk.com/windsor_bucket_man_maruko_christmas_2026/",
+      "ticketNote": "免費入場（商場裝置／選物所）",
+      "source": "https://hk.ulifestyle.com.hk/activity/detail/20118385/%E7%9A%87%E5%AE%A4%E5%A0%A1%E8%81%96%E8%AA%95%E5%91%88%E7%8D%BB-bucket-man-%E7%99%BB%E9%99%B8%E9%8A%85%E9%91%BC%E7%81%A3-%E8%81%AF%E4%B9%98%E6%AB%BB%E6%A1%83%E5%B0%8F%E4%B8%B8%E5%AD%90%E9%99%90%E5%AE%9A%E5%BA%97%E7%99%BB%E5%A0%B4",
+      "notes": "2026-11-22 新建。皇室堡聯乘馮德倫原創動漫《BUCKET MAN》聖誕主題裝置（7 大打卡位、1:1 傑仔），並設【BUCKET LAB選物所】首度推出《櫻桃小丸子》聯乘周邊。文章引述皇室堡公布，檔期 11/22–12/29。I…",
+      "featured": false,
+      "verifiedAt": "2026-11-22",
+      "sample": false
+    },
+    {
+      "id": "734471ab180e0957",
+      "title": "《數碼暴龍馴獸師之王》×《數碼暴龍拯救隊》快閃店＠朗豪坊（第二彈）",
+      "status": "即將開始",
+      "notionStatus": "即將開始",
+      "category": "快閃店",
+      "ips": [],
+      "date": "2026-11-23",
+      "endDate": "2026-11-30",
+      "timeNote": "2026-11-23～11-30；周一至四 11:00–20:00，周五至日 11:00–21:00（首日及最後一日均為周一）",
+      "place": "旺角朗豪坊 L12 Live Stage（亞皆老街 8 號）",
+      "mapUrl": "https://www.google.com/maps/search/?api=1&query=%E6%97%BA%E8%A7%92%E6%9C%97%E8%B1%AA%E5%9D%8A%20L12%20Live%20Stage%EF%BC%88%E4%BA%9E%E7%9A%86%E8%80%81%E8%A1%97%208%20%E8%99%9F%EF%BC%89",
+      "price": "免費入場；指定商品單一發票每滿 HK$150 送隨機特典插畫卡 1 張（全 9 款，送完即止）",
+      "ticketUrl": "https://timable.com/hk/zh/event/6b01fa42c659b857e5da3629/%E6%95%B8%E7%A2%BC%E6%9A%B4%E9%BE%8D%E9%A6%B4%E7%8D%B8%E5%B8%AB%E4%B9%8B%E7%8E%8B-%E6%95%B8%E7%A2%BC%E6%9A%B4%E9%BE%8D%E6%8B%AF%E6%95%91%E9%9A%8A-%E5%BF%AB%E9%96%83%E5%BA%97-%E6%9C%97%E8%B1%AA%E5%9D%8A",
+      "ticketNote": "免費入場（快閃店）",
+      "source": "https://konggokhk.com/digimon_langham_place_popup_wave_2_2026/",
+      "notes": "2026-11-22 新建。朗豪坊數碼暴龍快閃店第二彈，紀念《馴獸師之王》25 周年及《拯救隊》20 周年；設「英倫下午茶會」打卡區及主題盲抽相卡機。第一彈（9/26–10/11，朗豪坊 12 樓 13 號舖，和風摩登）已完結並刪除，本期…",
+      "featured": false,
+      "verifiedAt": "2026-11-22",
       "sample": false
     },
     {
@@ -396,7 +392,7 @@
       "source": "https://wmoov.com/movie/details/73598",
       "notes": "系列大學篇完結篇；日語原聲、中英文字幕；CloverWorks。2026-11-12 核實：wmoov showtimes/73598 仍無場次；片長／級別仍待定。 2026-11-17 核實：wmoov showtimes/73598…",
       "featured": false,
-      "verifiedAt": "2026-11-21",
+      "verifiedAt": "2026-11-22",
       "sample": false
     },
     {
@@ -530,7 +526,7 @@
       "source": "https://acgevent.com/archives/40059",
       "notes": "2026-11-12 核實：Muse HK shop 已開售前賣券套票組 HK$110（換票證 1 張＋特製主視覺 PVC 小卡；每人限 4 套；11 月中下旬起配送；不適用特典場）。wmoov 現時未見專頁／場次。特典場資訊仍待公布。…",
       "featured": false,
-      "verifiedAt": "2026-11-21",
+      "verifiedAt": "2026-11-22",
       "sample": false
     },
     {
@@ -551,7 +547,7 @@
       "source": "https://wmoov.com/movie/details/74196",
       "notes": "2026-11-04 新建；發行新映影片；日語；約55分鐘；2D／4DX／MX4D。日本 2026-10-09 上映。2026-11-12 核實：wmoov showtimes/74196 仍無場次；片長／級別仍待定。 2026-11-1…",
       "featured": false,
-      "verifiedAt": "2026-11-21",
+      "verifiedAt": "2026-11-22",
       "sample": false
     },
     {
@@ -663,7 +659,7 @@
       "source": "https://m.wmoov.com/movie/details/73499",
       "notes": "2000 年第二部劇場版；香港以前只曾喺翡翠台播放，從未上映戲院；10-06 WMOOV 標暫定 12-10 上映，戲院未公布；木棉花預告見 https://acgevent.com/archives/40040。2026-11-12 核…",
       "featured": false,
-      "verifiedAt": "2026-11-21",
+      "verifiedAt": "2026-11-22",
       "sample": false
     },
     {
