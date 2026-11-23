@@ -1,6 +1,6 @@
 {
   "schema": "events.v2",
-  "updatedAt": "2026-11-22",
+  "updatedAt": "2026-11-23",
   "note": "活動由 Notion「香港ACG情報看板」每日同步（香港時間）。狀態會按日期重算：開始至結束當日係進行中，未開始係即將開始，完結七日內先保留。周邊截止仍然手改 deadlines[]；標成示例嘅截止唔會保留。",
   "events": [
     {
@@ -71,48 +71,6 @@
       "sample": false
     },
     {
-      "id": "68f08d32affe3bec",
-      "title": "Pop-up Fest 2026（Banpresto／Candy Toy／萬代原創潮玩）@ 希慎廣場",
-      "status": "進行中",
-      "notionStatus": "進行中",
-      "category": "快閃店",
-      "ips": [],
-      "date": "2026-11-03",
-      "endDate": "2026-11-22",
-      "timeNote": "",
-      "place": "銅鑼灣希慎廣場地庫一樓 B113及B115號舖",
-      "mapUrl": "https://www.google.com/maps/search/?api=1&query=%E9%8A%85%E9%91%BC%E7%81%A3%E5%B8%8C%E6%85%8E%E5%BB%A3%E5%A0%B4%E5%9C%B0%E5%BA%AB%E4%B8%80%E6%A8%93%20B113%E5%8F%8AB115%E8%99%9F%E8%88%96",
-      "price": "",
-      "ticketUrl": "",
-      "ticketNote": "",
-      "source": "https://www.hk01.com/%E6%95%B8%E7%A2%BC%E7%94%9F%E6%B4%BB/60406828/%E6%B5%B7%E8%B3%8A%E7%8E%8Bnba-%E9%AB%98%E9%81%94fw30-smsp%E6%82%9F%E7%A9%BA%E9%99%90%E5%AE%9A%E7%89%88-%E5%B8%8C%E6%85%8E%E8%90%AC%E4%BB%A3%E5%BF%AB%E9%96%83%E5%BA%97%E6%8E%83%E8%B2%A8%E6%94%BB%E7%95%A5",
-      "notes": "2026-11-07 補建漏報。2026-11-08 核實：PCM／HK01 仍標 11/3–22 希慎廣場 B113及B115；ONE PIECE×NBA、龍珠會場限定 SMSP、Tamagotchi Friends、Yurugun 渣…",
-      "featured": false,
-      "verifiedAt": "2026-11-22",
-      "sample": false
-    },
-    {
-      "id": "ed5cc6823d38aaba",
-      "title": "《都市傳說解體中心》世界大巡迴－香港",
-      "status": "進行中",
-      "notionStatus": "進行中",
-      "category": "展覽",
-      "ips": [],
-      "date": "2026-11-06",
-      "endDate": "2026-11-22",
-      "timeNote": "12:00–21:00（最後入場 20:00）",
-      "place": "旺角 INCUBASE Arena B1",
-      "mapUrl": "https://www.google.com/maps/search/?api=1&query=%E6%97%BA%E8%A7%92%20INCUBASE%20Arena%20B1",
-      "price": "HK$50（入場 QR＋入場紀念品）",
-      "ticketUrl": "https://www.klook.com/zh-HK/activity/245145-urban-myth-dissolution-center-world-tour-hong-kong/",
-      "ticketNote": "2026-10-30（五）11:00 開售",
-      "source": "https://www.horipro-international.com/information/post-4695/",
-      "notes": "遊戲《都市伝説解体センター》首個海外巡迴展。2026-11-08 核實：展期 11/6–11/22 INCUBASE Arena，維持進行中。主辦 HoriPro International／HT Entertainment／INCUBA…",
-      "featured": false,
-      "verifiedAt": "2026-11-22",
-      "sample": false
-    },
-    {
       "id": "3fafe8e0f62bd7f9",
       "title": "藍色監獄展 EGOIST EXHIBITION the animation 香港站",
       "status": "進行中",
@@ -130,9 +88,9 @@
       "ticketUrl": "https://www.klook.com/zh-TW/activity/240042-blue-lock-egoist-exhibition-the-animation-hong-kong/",
       "ticketNote": "Klook 須選日時段",
       "source": "https://anihk.com/events/blue-lock-hong-kong-2026",
-      "notes": "沉浸式展區／原畫／限定店。來源 anihk／Klook／官方／AIRSIDE。2026-11-08 核實：檔期仍為 11/6–24 AIRSIDE，維持進行中。",
+      "notes": "沉浸式展區／原畫／限定店。來源 anihk／Klook／官方／AIRSIDE。2026-11-08 核實：檔期仍為 11/6–24 AIRSIDE，維持進行中。 2026-11-23 核實：AIRSIDE 活動頁今日仍公布進行中（11/6…",
       "featured": false,
-      "verifiedAt": "2026-11-09",
+      "verifiedAt": "2026-11-23",
       "sample": false
     },
     {
@@ -155,7 +113,7 @@
       "source": "https://www.microworksacg.com/blogs/popup/muse-pop-fest-2026",
       "notes": "動漫聯動 Pop Fest；來源 Microworks／asiapopups／timable。2026-10-25 新建。2026-11-11：今日開幕（11/11–23，圍方 L2 中庭，12:00–21:00，11/23 至 18:0…",
       "featured": false,
-      "verifiedAt": "2026-11-11",
+      "verifiedAt": "2026-11-23",
       "sample": false
     },
     {
@@ -201,27 +159,6 @@
       "sample": false
     },
     {
-      "id": "e2b3f676a69b53d9",
-      "title": "名偵探光之美少女電影：不可思議庭園與2人的秘密",
-      "status": "已完結",
-      "notionStatus": "進行中",
-      "category": "電影",
-      "ips": [],
-      "date": "2026-11-15",
-      "endDate": "2026-11-15",
-      "timeNote": "優先場 11/15、加場 11/16 已過；11/19 起公映進行中，wmoov 今日仍多院有場（含 2D／百老匯 apm／GALA 4DX），場次頁列至 11/25",
-      "place": "今日公映多院有場（2D／4DX）：影藝荷里活／MegaBox、MCL AIRSIDE／STAR／MOVIE TOWN／Festival Grand／K11／德福、百老匯 apm／GALA（含 4DX）、太古城／MOKO／YOHO／葵芳／嘉湖／ELEMENTS、CGV、the sky、StagE、Candy Park 等　發行：新映影片",
-      "mapUrl": "https://www.google.com/maps/search/?api=1&query=%E4%BB%8A%E6%97%A5%E5%85%AC%E6%98%A0%E5%A4%9A%E9%99%A2%E6%9C%89%E5%A0%B4%EF%BC%882D%EF%BC%8F4DX%EF%BC%89%EF%BC%9A%E5%BD%B1%E8%97%9D%E8%8D%B7%E9%87%8C%E6%B4%BB%EF%BC%8FMegaBox%E3%80%81MCL%20AIRSIDE%EF%BC%8FSTAR%EF%BC%8FMOVIE%20TOWN%EF%BC%8FFestival%20Grand%EF%BC%8FK11%EF%BC%8F%E5%BE%B7%E7%A6%8F%E3%80%81%E7%99%BE%E8%80%81%E5%8C%AF%20apm%EF%BC%8FGALA%EF%BC%88%E5%90%AB%204DX%EF%BC%89%E3%80%81%E5%A4%AA%E5%8F%A4%E5%9F%8E%EF%BC%8FMOKO%EF%BC%8FYOHO%EF%BC%8F%E8%91%B5%E8%8A%B3%EF%BC%8F%E5%98%89%E6%B9%96%EF%BC%8FELEMENTS%E3%80%81CGV%E3%80%81the%20sky%E3%80%81StagE%E3%80%81Candy%20Park%20%E7%AD%89%E3%80%80%E7%99%BC%E8%A1%8C%EF%BC%9A%E6%96%B0%E6%98%A0%E5%BD%B1%E7%89%87",
-      "price": "11/19 公映場次 2D 約 $40–$110；4DX 約 $150–$170（百老匯 apm／GALA）",
-      "ticketUrl": "https://m.wmoov.com/movie/showtimes/73723",
-      "ticketNote": "院線／wmoov（11/19 起公映進行中，含 4DX）",
-      "source": "https://wmoov.com/movie/details/73723",
-      "notes": "光之美少女系列第 35 部劇場版；約 71 分鐘；日語。2026-11-08 核實：ACGEvent 11/7 報港澳 2D／4DX 同步上映；2D 特典日本直送角色光柵收藏卡（全3款隨機）、4DX 特典名片風收藏卡（全5款隨機）。發行新…",
-      "featured": false,
-      "verifiedAt": "2026-11-21",
-      "sample": false
-    },
-    {
       "id": "8f676a4a7a70d1f1",
       "title": "《藥師少女的獨語》夏日園遊會2026 Shop in Shop @ 動漫聯動 The ANGLE",
       "status": "已完結",
@@ -243,49 +180,24 @@
       "sample": false
     },
     {
-      "id": "e22c153532e56410",
-      "title": "AKANE YONEZAWA \"Black Pasta\" TOUR in Hong Kong",
-      "status": "進行中",
+      "id": "3a4781d1c5247be9",
+      "title": "《藥師少女的獨語》夏日園遊會2026＠動漫聯動 The ANGLE 店",
+      "status": "已完結",
       "notionStatus": "進行中",
-      "category": "演唱會",
-      "ips": [
-        "米澤茜"
-      ],
-      "date": "2026-11-22",
-      "endDate": "2026-11-22",
-      "timeNote": "2026-11-22　18:00（17:00 開場）",
-      "place": "PORTAL　新蒲崗",
-      "mapUrl": "https://www.google.com/maps/search/?api=1&query=PORTAL%E3%80%80%E6%96%B0%E8%92%B2%E5%B4%97",
-      "price": "VIP $980／GA $680",
-      "ticketUrl": "https://www.tickets.neon-lit.com/zh-hant/akaneyonezawa-blackpasta",
-      "ticketNote": "",
-      "source": "https://akaneyonezawa.com/news/30209",
-      "notes": "08-28 已開售 2026-11-22：今日舉行→即將開始改進行中，完場後明日封存。",
+      "category": "店內活動",
+      "ips": [],
+      "date": "2026-11-20",
+      "endDate": "2026-11-20",
+      "timeNote": "2026-11-20 起至 2027 年 1 月（官方未寫確切結束日）；店舖周一至五 12:00–21:00，周六日及假期 11:00–21:00",
+      "place": "觀塘 The ANGLE 7 樓 707 及 709 號鋪（巧明街 98 號）",
+      "mapUrl": "https://www.google.com/maps/search/?api=1&query=%E8%A7%80%E5%A1%98%20The%20ANGLE%207%20%E6%A8%93%20707%20%E5%8F%8A%20709%20%E8%99%9F%E9%8B%AA%EF%BC%88%E5%B7%A7%E6%98%8E%E8%A1%97%2098%20%E8%99%9F%EF%BC%89",
+      "price": "免費入場（店內活動）；買「夏日園遊會2026」周邊單筆滿 HK$200 送香港特典明信片 1 張（全 4 款隨機，送完即止）",
+      "ticketUrl": "",
+      "ticketNote": "免費入場（動漫聯動門市店中店）",
+      "source": "https://www.microworksacg.com/blogs/shop-in-shop/angle-tad-20261120",
+      "notes": "2026-11-23 補建漏報。動漫聯動 The ANGLE 店店中店，展出《藥師少女的獨語》夏日園遊會2026 系列周邊及打卡位。官方只寫檔期至 2027 年 1 月，確切結束日待確認。IP 欄無單獨「藥師少女的獨語」選項，未加新選項。",
       "featured": false,
-      "verifiedAt": "2026-11-22",
-      "sample": false
-    },
-    {
-      "id": "e951ef5895c0a407",
-      "title": "湊みや 香港粉絲見面會 2026",
-      "status": "進行中",
-      "notionStatus": "進行中",
-      "category": "見面會",
-      "ips": [
-        "學園偶像大師"
-      ],
-      "date": "2026-11-22",
-      "endDate": "2026-11-22",
-      "timeNote": "2026-11-22　12:00／16:00 兩場",
-      "place": "P'Artiste（旺角奶路臣街38號地庫）",
-      "mapUrl": "https://www.google.com/maps/search/?api=1&query=P'Artiste%EF%BC%88%E6%97%BA%E8%A7%92%E5%A5%B6%E8%B7%AF%E8%87%A3%E8%A1%9738%E8%99%9F%E5%9C%B0%E5%BA%AB%EF%BC%89",
-      "price": "VIP HK$880／GA HK$480",
-      "ticketUrl": "https://cosmospro.zaiko.io/zh-hant/e/minatohkfm",
-      "ticketNote": "ZAIKO；10-26 查看顯示無票可購（疑已售罄）",
-      "source": "https://acgevent.com/archives/40208",
-      "notes": "湊みや（學マス 紫雲清夏役）。2026-10-26 新建。 2026-11-22：今日舉行→即將開始改進行中，完場後明日封存。",
-      "featured": false,
-      "verifiedAt": "2026-11-22",
+      "verifiedAt": "2026-11-23",
       "sample": false
     },
     {
@@ -312,8 +224,8 @@
     {
       "id": "734471ab180e0957",
       "title": "《數碼暴龍馴獸師之王》×《數碼暴龍拯救隊》快閃店＠朗豪坊（第二彈）",
-      "status": "即將開始",
-      "notionStatus": "即將開始",
+      "status": "進行中",
+      "notionStatus": "進行中",
       "category": "快閃店",
       "ips": [],
       "date": "2026-11-23",
@@ -327,7 +239,7 @@
       "source": "https://konggokhk.com/digimon_langham_place_popup_wave_2_2026/",
       "notes": "2026-11-22 新建。朗豪坊數碼暴龍快閃店第二彈，紀念《馴獸師之王》25 周年及《拯救隊》20 周年；設「英倫下午茶會」打卡區及主題盲抽相卡機。第一彈（9/26–10/11，朗豪坊 12 樓 13 號舖，和風摩登）已完結並刪除，本期…",
       "featured": false,
-      "verifiedAt": "2026-11-22",
+      "verifiedAt": "2026-11-23",
       "sample": false
     },
     {
@@ -348,7 +260,7 @@
       "source": "https://acgevent.com/archives/40280",
       "notes": "2026-11-01 Doc／ACGEvent／art-mate 新建。木棉花授權、Trendic 主辦；5 大沉浸式主題展區（半世紀流星／蒼月草／斷頭台阿烏拉／鏡蓮華／零落的王墓＋寶箱怪打卡）；香港首發限定周邊。早鳥 10/30–11/…",
       "featured": true,
-      "verifiedAt": "2026-11-01",
+      "verifiedAt": "2026-11-23",
       "sample": false
     },
     {
@@ -392,7 +304,7 @@
       "source": "https://wmoov.com/movie/details/73598",
       "notes": "系列大學篇完結篇；日語原聲、中英文字幕；CloverWorks。2026-11-12 核實：wmoov showtimes/73598 仍無場次；片長／級別仍待定。 2026-11-17 核實：wmoov showtimes/73598…",
       "featured": false,
-      "verifiedAt": "2026-11-22",
+      "verifiedAt": "2026-11-23",
       "sample": false
     },
     {
@@ -526,7 +438,7 @@
       "source": "https://acgevent.com/archives/40059",
       "notes": "2026-11-12 核實：Muse HK shop 已開售前賣券套票組 HK$110（換票證 1 張＋特製主視覺 PVC 小卡；每人限 4 套；11 月中下旬起配送；不適用特典場）。wmoov 現時未見專頁／場次。特典場資訊仍待公布。…",
       "featured": false,
-      "verifiedAt": "2026-11-22",
+      "verifiedAt": "2026-11-23",
       "sample": false
     },
     {
@@ -547,7 +459,7 @@
       "source": "https://wmoov.com/movie/details/74196",
       "notes": "2026-11-04 新建；發行新映影片；日語；約55分鐘；2D／4DX／MX4D。日本 2026-10-09 上映。2026-11-12 核實：wmoov showtimes/74196 仍無場次；片長／級別仍待定。 2026-11-1…",
       "featured": false,
-      "verifiedAt": "2026-11-22",
+      "verifiedAt": "2026-11-23",
       "sample": false
     },
     {
@@ -659,7 +571,28 @@
       "source": "https://m.wmoov.com/movie/details/73499",
       "notes": "2000 年第二部劇場版；香港以前只曾喺翡翠台播放，從未上映戲院；10-06 WMOOV 標暫定 12-10 上映，戲院未公布；木棉花預告見 https://acgevent.com/archives/40040。2026-11-12 核…",
       "featured": false,
-      "verifiedAt": "2026-11-22",
+      "verifiedAt": "2026-11-23",
+      "sample": false
+    },
+    {
+      "id": "3d88992b2b319baf",
+      "title": "MegaHouse X'mas Festival @ 東港城",
+      "status": "即將開始",
+      "notionStatus": "即將開始",
+      "category": "快閃店",
+      "ips": [],
+      "date": "2026-12-10",
+      "endDate": "2027-01-10",
+      "timeNote": "2026-12-10～2027-01-10；每日 11:00–21:00（12/10 由 17:00 起；聖誕公眾假期及元旦延至 22:00）",
+      "place": "將軍澳東港城 1 樓中庭（坑口重華路 8 號）",
+      "mapUrl": "https://www.google.com/maps/search/?api=1&query=%E5%B0%87%E8%BB%8D%E6%BE%B3%E6%9D%B1%E6%B8%AF%E5%9F%8E%201%20%E6%A8%93%E4%B8%AD%E5%BA%AD%EF%BC%88%E5%9D%91%E5%8F%A3%E9%87%8D%E8%8F%AF%E8%B7%AF%208%20%E8%99%9F%EF%BC%89",
+      "price": "免費入場；會場限量發售「[CFC]《高智能方程式》超級雷神 NEON ver.」（售價未公布）",
+      "ticketUrl": "https://asiapopups.com/hongkong/events/megahouse-xmas-eastpoint-2026/",
+      "ticketNote": "免費入場（商場展覽／快閃）",
+      "source": "https://konggokhk.com/eastpoint_city_winter_rally_2026/",
+      "notes": "2026-11-23 新建。東港城「超次元冬幻祭」第三階段；以《新世紀 GPX 高智能方程式》35 週年及 MegaHobby EXPO 2026 香港站為主題，香港首次展出 1:1.6「Zenith Asurada AKF-0/G」，並…",
+      "featured": false,
+      "verifiedAt": "2026-11-23",
       "sample": false
     },
     {
