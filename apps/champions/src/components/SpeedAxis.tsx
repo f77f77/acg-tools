@@ -11,7 +11,11 @@ import {
 import { placeSpeedMarkers, speedTickValues } from '../lib/speedAxisLayout';
 import { sheetSpriteDataUrl } from '../lib/spriteSheet';
 
+import { AllyIconStrip } from './AllyIconStrip';
+import type { EnemyFocus } from '../lib/enemyFocus';
+
 interface Props {
+  enemyFocus: EnemyFocus;
   myTeam: PokemonSet[];
   enemyTeam: PokemonSet[];
   selectedAllyIndex: number | null;
@@ -37,7 +41,7 @@ function SpeedSprite({ pokemon }: { pokemon: PokemonSet }) {
     : <span aria-hidden="true">{species.slice(0, 1)}</span>;
 }
 
-export function SpeedAxis({ myTeam, enemyTeam, selectedAllyIndex, onSelectAlly }: Props) {
+export function SpeedAxis({ enemyFocus, myTeam, enemyTeam, selectedAllyIndex, onSelectAlly }: Props) {
   const [allyTailwind, setAllyTailwind] = useState(false);
   const [enemyTailwind, setEnemyTailwind] = useState(false);
   const plot = useRef<HTMLDivElement>(null);
@@ -58,8 +62,9 @@ export function SpeedAxis({ myTeam, enemyTeam, selectedAllyIndex, onSelectAlly }
     if (!pokemon.identified || !Number.isFinite(speed) || speed <= 0) return [];
     return [{ pokemon, index, speed: applyTailwind(speed, allyTailwind) }];
   });
-  const enemies = enemyTeam.slice(0, 6).map((pokemon) => ({
+  const enemies = enemyTeam.slice(0, 6).map((pokemon, slot) => ({
     pokemon,
+    slot,
     bands: pokemon.identified && pokemon.baseStats.spe > 0
       ? enemySpeedBands(pokemon.baseStats.spe).map((band) => ({
           ...band,
@@ -77,22 +82,37 @@ export function SpeedAxis({ myTeam, enemyTeam, selectedAllyIndex, onSelectAlly }
   const selected = allies.find(({ index }) => index === selectedAllyIndex);
 
   function enemyRows(rows: typeof enemies) {
-    return rows.map(({ pokemon, bands }) => {
+    return rows.map(({ pokemon, bands, slot }) => {
       const label = formatSpeciesLabel(pokemon);
       if (!bands.length) {
         return <div className="speed-chart__enemy is-empty" key={pokemon.id}>未識別</div>;
       }
 
       const [slow, neutralMin, neutralMax, fast] = bands;
+      let comparison = '';
+      if (selected) {
+        if (selected.speed < slow.value) comparison = '敵方全段較快';
+        else if (selected.speed > fast.value) comparison = '敵方全段較慢';
+        else if (selected.speed === slow.value || selected.speed === fast.value) comparison = '端點可同速';
+        else comparison = '範圍重疊';
+      }
       const left = position(slow.value);
       const right = position(fast.value);
       const details = bands.map(({ label: bandLabel, value }) => `${bandLabel} ${value}`).join('、');
       return (
-        <div className="speed-chart__enemy" key={pokemon.id}>
-          <div
+        <div
+          className={`speed-chart__enemy${enemyFocus.active === slot ? ' is-linked' : ''}`}
+          key={pokemon.id}
+          onPointerEnter={e => { if (e.pointerType === 'mouse') enemyFocus.hover(slot); }}
+          onPointerLeave={() => enemyFocus.hover(null)}
+        >
+          {comparison && <span className="speed-chart__comparison">{comparison}</span>}
+          <button
+            type="button"
             className="speed-chart__range"
-            role="img"
-            aria-label={`${label}，${details}`}
+            aria-pressed={enemyFocus.pinned === slot}
+            onClick={() => enemyFocus.pin(slot)}
+            aria-label={`${label}，${details} ${comparison}`}
             title={`${label} · ${details}`}
             style={{ left: `${left}%`, width: `${right - left}%` }}
           >
@@ -109,7 +129,7 @@ export function SpeedAxis({ myTeam, enemyTeam, selectedAllyIndex, onSelectAlly }
             <span className="speed-chart__enemy-sprite" aria-hidden="true">
               <SpeedSprite pokemon={pokemon} />
             </span>
-          </div>
+          </button>
         </div>
       );
     });
@@ -119,26 +139,32 @@ export function SpeedAxis({ myTeam, enemyTeam, selectedAllyIndex, onSelectAlly }
     <section className="panel panel--speed">
       <header className="panel__header panel__header--row panel__header--speed">
         <h2>速度軸</h2>
-        <span className="panel__hint">我方實速 · 敵方減速 0 至加速 32</span>
+        <div className="speed-team">
+          <span>目前載入隊伍</span>
+          <AllyIconStrip team={myTeam} selectedIndex={selectedAllyIndex} onSelect={onSelectAlly} />
+        </div>
+        <p className="speed-context">
+          {selected ? `對照 ${selected.pokemon.species} · 我方實速 ${selected.speed}` : '我方實速'} · 敵方減速 0 至加速 32
+        </p>
         <div className="speed-axis__toggles">
           <label className="speed-axis__tw">
             <input type="checkbox" checked={allyTailwind} onChange={(e) => setAllyTailwind(e.target.checked)} />
-            我方順風
+            我方順風{allyTailwind && ' ×2'}
           </label>
           <label className="speed-axis__tw">
             <input type="checkbox" checked={enemyTailwind} onChange={(e) => setEnemyTailwind(e.target.checked)} />
-            敵方順風
+            敵方順風{enemyTailwind && ' ×2'}
           </label>
         </div>
       </header>
-      <div className="speed-chart">
+      <div className={`speed-chart${selected ? ' speed-chart--compare' : ''}`}>
         <div className="speed-chart__plot" ref={plot}>
           {selected && (
             <div className="speed-chart__guide" style={{ left: `${position(selected.speed)}%` }} aria-hidden="true" />
           )}
           {enemyRows(enemies.slice(0, 3))}
           <div className="speed-chart__scale">
-            <div className="speed-chart__allies" style={{ height: laneCount * 36 }}>
+            <div className="speed-chart__allies" style={{ height: laneCount * 28 }}>
               {markers.map(({ index: markerIndex, lane }) => {
                 const { pokemon, index, speed } = allies[markerIndex];
                 const label = `${formatSpeciesLabel(pokemon)} · Spe ${speed}`;
@@ -151,7 +177,7 @@ export function SpeedAxis({ myTeam, enemyTeam, selectedAllyIndex, onSelectAlly }
                     aria-label={label}
                     aria-pressed={selectedAllyIndex === index}
                     onClick={() => onSelectAlly(index)}
-                    style={{ left: `${position(speed)}%`, bottom: lane * 36 }}
+                    style={{ left: `${position(speed)}%`, bottom: lane * 28 }}
                   >
                     <SpeedSprite pokemon={pokemon} />
                     <span>{speed}</span>

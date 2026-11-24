@@ -203,6 +203,14 @@ export default function App() {
   const [fineTune, setFineTune] = useState<RoiFineTune>(() => loadFineTune());
   const [debugOverlay, setDebugOverlay] = useState(() => loadDebugOverlay());
   /** 速度軸對照用：目前選中的我方隊員 index */
+  const [hoveredEnemy, setHoveredEnemy] = useState<number | null>(null);
+  const [pinnedEnemy, setPinnedEnemy] = useState<number | null>(null);
+  const enemyFocus = {
+    active: hoveredEnemy ?? pinnedEnemy,
+    pinned: pinnedEnemy,
+    hover: setHoveredEnemy,
+    pin: (index: number) => setPinnedEnemy(previous => previous === index ? null : index),
+  };
   const [selectedAllyIndex, setSelectedAllyIndex] = useState<number | null>(null);
   const [teamOpen, setTeamOpen] = useState(() => loadTeamPanelOpen());
   const [showAvControls, setShowAvControls] = useState(() => loadBoolPref(SHOW_AV_CONTROLS_KEY, true));
@@ -479,6 +487,8 @@ export default function App() {
           );
         }
         setEnemyTeam(next);
+        setPinnedEnemy(null);
+        setHoveredEnemy(null);
         const hit = results.filter(
           (r) => (r.speciesId || r.species) && r.confidence >= CONFIDENCE_THRESHOLD,
         ).length;
@@ -628,32 +638,30 @@ export default function App() {
             statusText={status}
             fineTune={fineTune}
             debugOverlay={debugOverlay}
-            allyTeam={myTeam}
-            selectedAllyIndex={selectedAllyIndex}
-            onSelectAlly={onSelectAlly}
+            enemyTeam={enemyTeam}
+            enemyFocus={enemyFocus}
             showAvControls={showAvControls}
             onShowAvControlsChange={toggleAvControls}
             autoRecognize={autoRecognize}
             saveRecognizeFrames={saveRecognizeFrames}
           />
           <SpeedAxis
+            enemyFocus={enemyFocus}
             myTeam={myTeam}
             enemyTeam={enemyTeam}
             selectedAllyIndex={selectedAllyIndex}
             onSelectAlly={onSelectAlly}
           />
-          <p className="usage-source-global" title={MOVES_SOURCE_LABEL}>
-            使用率來源：{MOVES_SOURCE_LABEL}
-          </p>
         </div>
         <EnemyPanel
+          enemyFocus={enemyFocus}
           team={enemyTeam}
           onSpeciesOverride={onSpeciesOverride}
           onFormChange={onEnemyFormChange}
         />
       </main>
 
-      <footer className="app-footer">{busy ? '辨認中…' : status}</footer>
+      <footer className="app-footer">使用率來源：{MOVES_SOURCE_LABEL}</footer>
     </div>
   );
 }

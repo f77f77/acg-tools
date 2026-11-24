@@ -41,7 +41,7 @@ import {
   currentFixtureLabel,
   type RoiFineTune,
 } from '../lib/recognize';
-import { AllyIconStrip } from './AllyIconStrip';
+import type { EnemyFocus } from '../lib/enemyFocus';
 import type { PokemonSet } from '../types';
 import {
   AUTO_RECOGNIZE_TICK_MS,
@@ -62,9 +62,8 @@ interface Props {
   statusText: string;
   fineTune: RoiFineTune;
   debugOverlay: boolean;
-  allyTeam?: PokemonSet[];
-  selectedAllyIndex?: number | null;
-  onSelectAlly?: (index: number) => void;
+  enemyTeam: PokemonSet[];
+  enemyFocus: EnemyFocus;
   showAvControls?: boolean;
   onShowAvControlsChange?: (show: boolean) => void;
   autoRecognize?: boolean;
@@ -83,9 +82,8 @@ export const CapturePanel = forwardRef<CapturePanelHandle, Props>(function Captu
     statusText,
     fineTune,
     debugOverlay,
-    allyTeam,
-    selectedAllyIndex = null,
-    onSelectAlly,
+    enemyTeam,
+    enemyFocus,
     showAvControls = true,
     onShowAvControlsChange,
     autoRecognize = false,
@@ -631,6 +629,23 @@ export const CapturePanel = forwardRef<CapturePanelHandle, Props>(function Captu
               <p className="muted">軌道已開啟；收到非零解析度後會顯示擷取預覽（唔當無訊號）</p>
             </div>
           )}
+          {hasValidFrames && enemyTeam.map((pokemon, slot) => {
+            if (!pokemon.identified) return null;
+            const box = cardCssPercent(panel, slot);
+            return (
+              <button
+                key={pokemon.id}
+                type="button"
+                className={`capture-slot${enemyFocus.active === slot ? ' is-linked' : ''}`}
+                aria-label={`對照敵方 ${pokemon.species}`}
+                aria-pressed={enemyFocus.pinned === slot}
+                onPointerEnter={e => { if (e.pointerType === 'mouse') enemyFocus.hover(slot); }}
+                onPointerLeave={() => enemyFocus.hover(null)}
+                onClick={() => enemyFocus.pin(slot)}
+                style={{ left: `${box.left}%`, top: `${box.top}%`, width: `${box.width}%`, height: `${box.height}%` }}
+              />
+            );
+          })}
           {/* ROI 除錯疊加：綠面板／紅槽／黃縮圖（關閉時全部隱藏，含綠框）；座標相對 16:9 __frame */}
           {debugOverlay && (
             <>
@@ -674,9 +689,6 @@ export const CapturePanel = forwardRef<CapturePanelHandle, Props>(function Captu
             </>
           )}
         </div>
-        {allyTeam && onSelectAlly ? (
-          <AllyIconStrip team={allyTeam} selectedIndex={selectedAllyIndex} onSelect={onSelectAlly} />
-        ) : null}
         {dragOver && (
           <div className="capture-preview__drop-hint" aria-hidden>
             放開以載入靜態選隊圖
