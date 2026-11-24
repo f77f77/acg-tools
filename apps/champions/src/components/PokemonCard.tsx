@@ -414,7 +414,7 @@ export function PokemonCard({
     <div className="pkmn-card__meta">
       {megaStones.length ? (
         <span className="pkmn-card__items" title={`${formatItemUsageLine(megaStones, '')} · ${MOVES_SOURCE_LABEL}`}>
-          進化石使用率：{formatItemUsageLine(megaStones, '—')}
+          進化石 · {formatItemUsageLine(megaStones, '—')}
         </span>
       ) : null}
       <span
@@ -428,7 +428,7 @@ export function PokemonCard({
         }
       >
         {variant === 'enemy'
-          ? `道具使用率：${formatItemUsageLine(held, '—')}`
+          ? `道具 · ${formatItemUsageLine(held, '—')}`
           : held.length
             ? `道具：${formatItemUsageLine(held, pokemon.item || '無道具')}`
             : pokemon.item || '無道具'}
@@ -476,6 +476,15 @@ export function PokemonCard({
       })}
     </div>
   );
+
+  if (variant === 'enemy' && !pokemon.identified) {
+    return (
+      <article className="pkmn-card pkmn-card--enemy enemy-slot-empty">
+        {pokemon.thumbnailDataUrl && spriteEl}
+        {speciesEl}
+      </article>
+    );
+  }
 
   const identityCol = (
     <div className="pkmn-card__col pkmn-card__col--identity">
@@ -544,10 +553,13 @@ export function PokemonCard({
             <div className="pkmn-card__dense-info">
               {speciesEl}
               {formEl}
-              {matchups && <MatchupRows matchups={matchups} />}
             </div>
-            {statsEl}
+            <details className="card-stats">
+              <summary aria-label={`${pokemon.species}能力值`}>能力</summary>
+              {statsEl}
+            </details>
           </div>
+          {matchups && <MatchupRows matchups={matchups} />}
           {metaEl}
           {movesEl}
         </div>

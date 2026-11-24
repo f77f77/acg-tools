@@ -52,9 +52,6 @@ import {
   type AutoRecognizeState,
 } from '../lib/previewAnchors';
 
-const LIVE_OK_STATUS =
-  '已連接 · 實機訊號正常（若盒上仍顯示 Signal Out of Range，多為 passthrough/EDID，唔影響擷取）';
-
 interface Props {
   busy: boolean;
   /** 單幀 canvas（鏡頭或靜態選隊圖），走同一套 ROI → thumb → recognize */
@@ -64,8 +61,6 @@ interface Props {
   debugOverlay: boolean;
   enemyTeam: PokemonSet[];
   enemyFocus: EnemyFocus;
-  showAvControls?: boolean;
-  onShowAvControlsChange?: (show: boolean) => void;
   autoRecognize?: boolean;
   /** When on, manual and automatic 辨認敵方隊伍 download the capture frame. */
   saveRecognizeFrames?: boolean;
@@ -84,13 +79,14 @@ export const CapturePanel = forwardRef<CapturePanelHandle, Props>(function Captu
     debugOverlay,
     enemyTeam,
     enemyFocus,
-    showAvControls = true,
-    onShowAvControlsChange,
     autoRecognize = false,
     saveRecognizeFrames = false,
   }: Props,
   ref,
 ) {
+  const sourceMenu = useRef<HTMLDetailsElement>(null);
+  const closeSources = () => { if (sourceMenu.current) sourceMenu.current.open = false; };
+
   const videoRef = useRef<HTMLVideoElement>(null);
   const audioRef = useRef<HTMLAudioElement>(null);
   const stillImgRef = useRef<HTMLImageElement>(null);
@@ -226,6 +222,7 @@ export const CapturePanel = forwardRef<CapturePanelHandle, Props>(function Captu
     const url = URL.createObjectURL(file);
     stillUrlRef.current = url;
     setStillUrl(url);
+    closeSources();
     setStillReady(false);
     setError(null);
   }
@@ -242,6 +239,7 @@ export const CapturePanel = forwardRef<CapturePanelHandle, Props>(function Captu
     // 非 blob URL，revokeStill 不會誤撤銷
     const label = currentFixtureLabel();
     setStillUrl(fixtureTeamPreviewUrl(true));
+    closeSources();
     setStillReady(false);
     setError(null);
     console.info('[fixtures] loaded', label);
@@ -278,6 +276,7 @@ export const CapturePanel = forwardRef<CapturePanelHandle, Props>(function Captu
       }
       if (deviceId) saveDeviceId(deviceId);
       setLive(true);
+      closeSources();
       // 連線後再 enumerate，補齊 label／groupId；probe:false 以免搶走 live track。
       try {
         const videoList = await listVideoDevices({ probe: false });
@@ -464,42 +463,105 @@ export const CapturePanel = forwardRef<CapturePanelHandle, Props>(function Captu
   const statusLabel = stillUrl && stillReady
     ? '靜態圖'
     : trackLive && framesOk
-      ? LIVE_OK_STATUS
+      ? '擷取中'
       : trackLive
-        ? '已連接 · 等待畫面…'
-        : '無訊號';
+        ? '連接中'
+        : '未連接';
   const statusOn = hasValidFrames || trackLive;
 
   return (
     <section className="panel panel--capture">
-      <header className="panel__header panel__header--row">
-        <h2>擷取預覽</h2>
-        <div className="capture-actions">
-          <span className={`status-pill ${statusOn ? 'is-on' : ''}`}>{statusLabel}</span>
-          <button
-            type="button"
-            className="btn btn--ghost"
-            onClick={() => onShowAvControlsChange?.(!showAvControls)}
-            aria-pressed={showAvControls}
-            title={
-              showAvControls
-                ? '隱藏來源選單、開啟鏡頭、擷取音訊，以及載入靜態選隊圖／載入測試圖'
-                : '顯示來源選單、開啟鏡頭、擷取音訊，以及載入靜態選隊圖／載入測試圖'
+      <header className="capture-bar">
+        <span className={`status-pill ${statusOn ? 'is-on' : ''}`} title={signalMeta || statusLabel}>{statusLabel}</span>
+        <span className="capture-result" role="status" title={autoRecognize ? autoRecognizePhaseLabel(autoPhase) : undefined}>
+          {busy ? '辨認中…' : statusText}
+        </span>
+        <details ref={sourceMenu} className="capture-sources"
+          onKeyDown={e => {
+            if (e.key === 'Escape') {
+              closeSources();
+              sourceMenu.current?.querySelector('summary')?.focus();
             }
-          >
-            {showAvControls ? '隱藏鏡頭／音訊' : '顯示鏡頭／音訊'}
-          </button>
-          <button
-            type="button"
-            className="btn btn--primary"
-            disabled={busy || !hasValidFrames}
-            onClick={handleRecognize}
-          >
-            {busy ? '辨認中…' : '辨認敵方隊伍'}
-          </button>
-        </div>
-      </header>
+          }}
+          onBlur={e => { if (e.relatedTarget && !e.currentTarget.contains(e.relatedTarget)) closeSources(); }}
+        >
+          <summary className="btn btn--ghost">來源</summary>
+          <div className="capture-sources__menu">
+            <div className="capture-toolbar">
+              <select
+                value={deviceId}
+                onChange={(e) => onDeviceChange(e.target.value)}
+                aria-label="選擇攝影機（優先 GC551／AVerMedia）"
+              >
+                <option value="">自動（GC551 → OBS → 預設）</option>
+                {devices.map((d) => (
+                  <option key={d.deviceId} value={d.deviceId}>
+                    {isPreferredCaptureDevice(d.label) ? `★ ${d.label}` : d.label}
+                  </option>
+                ))}
+              </select>
+              {!live ? (
+                <button type="button" className="btn btn--ghost" onClick={() => void connect()}>
+                  開啟鏡頭
+                </button>
+              ) : (
+                <button type="button" className="btn btn--ghost" onClick={disconnect}>
+                  關閉鏡頭
+                </button>
+              )}
+              <button
+                type="button"
+                className="btn btn--ghost"
+                disabled={busy}
+                onClick={() => fileInputRef.current?.click()}
+              >
+                載入靜態選隊圖
+              </button>
+              <button
+                type="button"
+                className="btn btn--ghost"
+                disabled={busy}
+                onClick={loadFixtureStill}
+                title="循環載入 public/fixtures/team-preview-test-1.jpg～test-4.jpg"
+              >
+                載入測試圖
+              </button>
+            </div>
 
+            {audioDevices.length > 0 ? (
+              <div className="capture-toolbar capture-toolbar--audio">
+                <label className="capture-audio-label" htmlFor="capture-audio-select">
+                  擷取音訊
+                </label>
+                <select
+                  id="capture-audio-select"
+                  value={audioDeviceId}
+                  onChange={(e) => void onAudioSelect(e.target.value)}
+                  aria-label="擷取音訊"
+                >
+                  {audioDevices.map((d) => (
+                    <option key={d.deviceId} value={d.deviceId}>
+                      {isPreferredCaptureDevice(d.label) ? `★ ${d.label}` : d.label}
+                    </option>
+                  ))}
+                </select>
+                <label className="capture-listen">
+                  <input
+                    type="checkbox"
+                    checked={listen}
+                    onChange={(e) => void onListenChange(e.target.checked)}
+                  />
+                  監聽擷取音訊
+                </label>
+              </div>
+            ) : null}
+            {signalMeta && <p className="capture-signal">{signalMeta}</p>}
+          </div>
+        </details>
+        <button type="button" className="btn btn--primary" disabled={busy || !hasValidFrames} onClick={handleRecognize}>
+          辨認
+        </button>
+      </header>
       <input
         ref={fileInputRef}
         type="file"
@@ -510,76 +572,6 @@ export const CapturePanel = forwardRef<CapturePanelHandle, Props>(function Captu
           e.target.value = '';
         }}
       />
-      {showAvControls ? (
-        <div className="capture-toolbar">
-          <select
-            value={deviceId}
-            onChange={(e) => onDeviceChange(e.target.value)}
-            aria-label="選擇攝影機（優先 GC551／AVerMedia）"
-          >
-            <option value="">自動（GC551 → OBS → 預設）</option>
-            {devices.map((d) => (
-              <option key={d.deviceId} value={d.deviceId}>
-                {isPreferredCaptureDevice(d.label) ? `★ ${d.label}` : d.label}
-              </option>
-            ))}
-          </select>
-          {!live ? (
-            <button type="button" className="btn btn--ghost" onClick={() => void connect()}>
-              開啟鏡頭
-            </button>
-          ) : (
-            <button type="button" className="btn btn--ghost" onClick={disconnect}>
-              關閉鏡頭
-            </button>
-          )}
-          <button
-            type="button"
-            className="btn btn--ghost"
-            disabled={busy}
-            onClick={() => fileInputRef.current?.click()}
-          >
-            載入靜態選隊圖
-          </button>
-          <button
-            type="button"
-            className="btn btn--ghost"
-            disabled={busy}
-            onClick={loadFixtureStill}
-            title="循環載入 public/fixtures/team-preview-test-1.jpg～test-4.jpg"
-          >
-            載入測試圖
-          </button>
-        </div>
-      ) : null}
-
-      {showAvControls && audioDevices.length > 0 ? (
-        <div className="capture-toolbar capture-toolbar--audio">
-          <label className="capture-audio-label" htmlFor="capture-audio-select">
-            擷取音訊
-          </label>
-          <select
-            id="capture-audio-select"
-            value={audioDeviceId}
-            onChange={(e) => void onAudioSelect(e.target.value)}
-            aria-label="擷取音訊"
-          >
-            {audioDevices.map((d) => (
-              <option key={d.deviceId} value={d.deviceId}>
-                {isPreferredCaptureDevice(d.label) ? `★ ${d.label}` : d.label}
-              </option>
-            ))}
-          </select>
-          <label className="capture-listen">
-            <input
-              type="checkbox"
-              checked={listen}
-              onChange={(e) => void onListenChange(e.target.checked)}
-            />
-            監聽擷取音訊
-          </label>
-        </div>
-      ) : null}
 
       <audio ref={audioRef} hidden playsInline />
 
@@ -614,19 +606,12 @@ export const CapturePanel = forwardRef<CapturePanelHandle, Props>(function Captu
           )}
           {!hasValidFrames && !trackLive && (
             <div className="capture-preview__placeholder">
-              <p>無訊號／裝置不可用</p>
-              <p className="muted">請選擇 AverMedia GC551 或 OBS Virtual Camera 後按「開啟鏡頭」</p>
-              <p className="muted">或按「載入靜態選隊圖」／拖放截圖到此預覽區（無 GC551 亦可驗收）</p>
-              <p className="muted">
-                ROI 敵方面板 ({panel.left.toFixed(3)},{panel.top.toFixed(3)})–
-                ({panel.right.toFixed(3)},{panel.bottom.toFixed(3)}) · 相對 16:9 內容區
-              </p>
+              <p>從「來源」開啟鏡頭，或拖入截圖</p>
             </div>
           )}
           {trackLive && !framesOk && !stillUrl && (
             <div className="capture-preview__placeholder">
               <p>已連接 · 等待畫面…</p>
-              <p className="muted">軌道已開啟；收到非零解析度後會顯示擷取預覽（唔當無訊號）</p>
             </div>
           )}
           {hasValidFrames && enemyTeam.map((pokemon, slot) => {
@@ -707,11 +692,6 @@ export const CapturePanel = forwardRef<CapturePanelHandle, Props>(function Captu
       </div>
       {error && <p className="error-text">{error}</p>}
       {audioStatus && <p className="error-text">{audioStatus}</p>}
-      {signalMeta ? <p className="capture-signal">{signalMeta}</p> : null}
-      <p className="status-line">
-        {busy ? '辨認中…' : statusText}
-        {autoRecognize ? ` · 自動辨認：${autoRecognizePhaseLabel(autoPhase)}` : ''}
-      </p>
     </section>
   );
 });
