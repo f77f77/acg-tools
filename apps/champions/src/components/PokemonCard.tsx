@@ -139,7 +139,7 @@ function MoveTooltip({
   const effect = note?.[2] ?? rec?.flavor?.['zh-Hant'];
   const category = rec?.category === 'physical' ? '物理' : rec?.category === 'special' ? '特殊' : rec?.category === 'status' ? '變化' : '';
   const priority = note?.[1] || 0;
-  const mechanics = [note?.[0], priority ? `優先度 ${priority > 0 ? '+' : ''}${priority}` : ''].filter(Boolean);
+  const summary = [note?.[0], priority ? `優先度 ${priority > 0 ? '+' : ''}${priority}` : '', note?.[2]].filter(Boolean).join(' · ');
   const stats = [typeLabel, category, power != null ? `威力 ${power}` : '', acc != null ? `命中 ${acc}%` : ''].filter(Boolean);
   const empty = name === '—' || name === '未載入';
 
@@ -177,8 +177,8 @@ function MoveTooltip({
       }}
     >
       <strong>{zh}</strong>
-      {mechanics.length > 0 && <span>{mechanics.join(' · ')}</span>}
-      {effect && <span className="move-tooltip__flavor">{effect}</span>}
+      {summary && <span>{summary}</span>}
+      {note?.[2] == null && effect && <span className="move-tooltip__flavor">{effect}</span>}
       <small>{stats.join(' · ')}{usageLabel && ` · 使用率 ${usageLabel}`}</small>
     </div>,
     document.body,
