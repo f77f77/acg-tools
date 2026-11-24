@@ -1,4 +1,4 @@
-import { useMemo, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import type { PokemonSet } from '../types';
 import { formatSpeciesLabel } from '../lib/species';
 import {
@@ -7,263 +7,166 @@ import {
   SPEED_AXIS_MIN,
   applyTailwind,
   enemySpeedBands,
-  mySpeedPoint,
-  speedFromInvestment,
 } from '../lib/speedCalc';
+import { placeSpeedMarkers, speedTickValues } from '../lib/speedAxisLayout';
+import { sheetSpriteDataUrl } from '../lib/spriteSheet';
 
 interface Props {
   myTeam: PokemonSet[];
   enemyTeam: PokemonSet[];
-  /** 我方選中欄位 index；null = 未選 */
   selectedAllyIndex: number | null;
+  onSelectAlly: (index: number) => void;
 }
 
-/** Fixed reference Spe values. Do not add 0-EV +10% nature (加速0) marks here. */
-const BASE_TICKS = [50, 80, 100, 106, 113, 130, 169, 172, 200];
-const TAILWIND_TICKS = [...BASE_TICKS, 250, 300, 344, 400];
+function SpeedSprite({ pokemon }: { pokemon: PokemonSet }) {
+  const { speciesKey, formKey, nationalDex, species } = pokemon;
+  const [url, setUrl] = useState<string | null>(null);
 
-function pct(value: number, axisMax: number): number {
-  const clamped = Math.min(axisMax, Math.max(SPEED_AXIS_MIN, value));
-  return ((clamped - SPEED_AXIS_MIN) / (axisMax - SPEED_AXIS_MIN)) * 100;
+  useEffect(() => {
+    let active = true;
+    setUrl(null);
+    void sheetSpriteDataUrl({ speciesId: speciesKey, formKey, nationalDex })
+      .then((next) => { if (active) setUrl(next); })
+      .catch(() => { if (active) setUrl(null); });
+
+    return () => { active = false; };
+  }, [speciesKey, formKey, nationalDex]);
+
+  return url
+    ? <img className="speed-chart__sprite" src={url} alt="" />
+    : <span aria-hidden="true">{species.slice(0, 1)}</span>;
 }
 
-function scaleTicks(axisMax: number): number[] {
-  const base = axisMax > SPEED_AXIS_MAX ? TAILWIND_TICKS : BASE_TICKS;
-  const ticks = base.filter((t) => t > SPEED_AXIS_MIN && t < axisMax);
-  ticks.push(axisMax);
-  return [...new Set(ticks)].sort((a, b) => a - b);
-}
-
-function allyEffectiveSpe(pokemon: PokemonSet, tailwind: boolean): number {
-  const raw = mySpeedPoint(
-    pokemon.baseStats.spe,
-    pokemon.speed || undefined,
-    0,
-    1,
-  );
-  const fallback = speedFromInvestment(pokemon.baseStats.spe, pokemon, true);
-  return applyTailwind(raw || fallback, tailwind);
-}
-
-function GuideMark({ spe, axisMax }: { spe: number | null; axisMax: number }) {
-  if (spe == null || spe <= 0) return null;
-  return (
-    <span
-      className="speed-axis__guide"
-      style={{ left: `${pct(spe, axisMax)}%` }}
-      aria-hidden
-    />
-  );
-}
-
-function EnemySpeedRow({
-  pokemon,
-  tailwind,
-  axisMax,
-  guideSpe,
-}: {
-  pokemon: PokemonSet;
-  tailwind: boolean;
-  axisMax: number;
-  guideSpe: number | null;
-}) {
-  const label = formatSpeciesLabel(pokemon);
-  if (!pokemon.identified || !pokemon.baseStats.spe) {
-    return (
-      <div className="speed-row speed-row--empty">
-        <span className="speed-row__label">{label}</span>
-        <div className="speed-row__track">
-          <GuideMark spe={guideSpe} axisMax={axisMax} />
-        </div>
-      </div>
-    );
-  }
-  const bands = enemySpeedBands(pokemon.baseStats.spe).map((b) => ({
-    ...b,
-    value: applyTailwind(b.value, tailwind),
-  }));
-  const slow = bands[0].value;
-  const fast = bands[3].value;
-  const n0 = bands[1].value;
-  const n32 = bands[2].value;
-  return (
-    <div className="speed-row">
-      <span className="speed-row__label" title={label}>
-        {label}
-      </span>
-      <div className="speed-row__track">
-        <div
-          className="speed-band speed-band--slow"
-          style={{ left: `${pct(slow, axisMax)}%`, width: `${Math.max(1, pct(n0, axisMax) - pct(slow, axisMax))}%` }}
-          title={`減速0–中性0：${slow}–${n0}${tailwind ? '（順風 ×2）' : ''}`}
-        />
-        <div
-          className="speed-band speed-band--mid"
-          style={{ left: `${pct(n0, axisMax)}%`, width: `${Math.max(1, pct(n32, axisMax) - pct(n0, axisMax))}%` }}
-          title={`中性0–中性32：${n0}–${n32}${tailwind ? '（順風 ×2）' : ''}`}
-        />
-        <div
-          className="speed-band speed-band--fast"
-          style={{ left: `${pct(n32, axisMax)}%`, width: `${Math.max(1, pct(fast, axisMax) - pct(n32, axisMax))}%` }}
-          title={`中性32–加速32：${n32}–${fast}${tailwind ? '（順風 ×2）' : ''}`}
-        />
-        {bands.map((b) => (
-          <span
-            key={b.id}
-            className={`speed-mark speed-mark--${b.kind}`}
-            style={{ left: `${pct(b.value, axisMax)}%` }}
-            title={`${b.label}: ${b.value}${tailwind ? '（順風 ×2）' : ''}`}
-          />
-        ))}
-        <GuideMark spe={guideSpe} axisMax={axisMax} />
-      </div>
-    </div>
-  );
-}
-
-function AllySpeedRow({
-  pokemon,
-  tailwind,
-  axisMax,
-  guideSpe,
-}: {
-  pokemon: PokemonSet;
-  tailwind: boolean;
-  axisMax: number;
-  guideSpe: number | null;
-}) {
-  const spe = allyEffectiveSpe(pokemon, tailwind);
-  const entered = pokemon.speed != null && pokemon.speed > 0;
-  const label = formatSpeciesLabel(pokemon);
-  return (
-    <div className="speed-row speed-row--mine speed-row--selected-ally">
-      <span className="speed-row__label" title={label}>
-        {label}
-      </span>
-      <div className="speed-row__track">
-        <GuideMark spe={guideSpe} axisMax={axisMax} />
-        {entered && spe > 0 && (
-          <span
-            className="speed-point"
-            style={{ left: `${pct(spe, axisMax)}%` }}
-            title={`${pokemon.species} Spe ${spe}${tailwind ? '（順風 ×2）' : ''}`}
-          >
-            ◆
-          </span>
-        )}
-        <span className="speed-row__value speed-row__value--overlay" aria-label="Spe">
-          {entered ? spe : '—'}
-        </span>
-      </div>
-    </div>
-  );
-}
-
-export function SpeedAxis({ myTeam, enemyTeam, selectedAllyIndex }: Props) {
+export function SpeedAxis({ myTeam, enemyTeam, selectedAllyIndex, onSelectAlly }: Props) {
   const [allyTailwind, setAllyTailwind] = useState(false);
   const [enemyTailwind, setEnemyTailwind] = useState(false);
-  const axisMax = allyTailwind || enemyTailwind ? SPEED_AXIS_MAX_TAILWIND : SPEED_AXIS_MAX;
-  const ticks = useMemo(() => scaleTicks(axisMax), [axisMax]);
-  const enemies = enemyTeam.slice(0, 6);
-  const enemyTop = enemies.slice(0, 3);
-  const enemyBottom = enemies.slice(3, 6);
-  const selectedAlly =
-    selectedAllyIndex != null && selectedAllyIndex >= 0 && selectedAllyIndex < myTeam.length
-      ? myTeam[selectedAllyIndex]
-      : null;
-  const guideSpe =
-    selectedAlly && selectedAlly.identified
-      ? allyEffectiveSpe(selectedAlly, allyTailwind)
-      : null;
+  const plot = useRef<HTMLDivElement>(null);
+  const [plotWidth, setPlotWidth] = useState(0);
+
+  useEffect(() => {
+    const element = plot.current;
+    if (!element) return;
+    const measure = () => setPlotWidth(element.clientWidth);
+    measure();
+    const observer = new ResizeObserver(measure);
+    observer.observe(element);
+    return () => observer.disconnect();
+  }, []);
+
+  const allies = myTeam.slice(0, 6).flatMap((pokemon, index) => {
+    const speed = pokemon.speed ?? 0;
+    if (!pokemon.identified || !Number.isFinite(speed) || speed <= 0) return [];
+    return [{ pokemon, index, speed: applyTailwind(speed, allyTailwind) }];
+  });
+  const enemies = enemyTeam.slice(0, 6).map((pokemon) => ({
+    pokemon,
+    bands: pokemon.identified && pokemon.baseStats.spe > 0
+      ? enemySpeedBands(pokemon.baseStats.spe).map((band) => ({
+          ...band,
+          value: applyTailwind(band.value, enemyTailwind),
+        }))
+      : [],
+  }));
+  const speeds = [...allies.map(({ speed }) => speed), ...enemies.flatMap(({ bands }) => bands.map(({ value }) => value))];
+  const min = Math.min(SPEED_AXIS_MIN, ...speeds);
+  const defaultMax = allyTailwind || enemyTailwind ? SPEED_AXIS_MAX_TAILWIND : SPEED_AXIS_MAX;
+  const max = Math.max(defaultMax, ...speeds);
+  const position = (speed: number) => ((speed - min) / (max - min)) * 100;
+  const markers = placeSpeedMarkers(allies.map(({ speed }) => speed), min, max, plotWidth);
+  const laneCount = Math.max(1, ...markers.map(({ lane }) => lane + 1));
+  const selected = allies.find(({ index }) => index === selectedAllyIndex);
+
+  function enemyRows(rows: typeof enemies) {
+    return rows.map(({ pokemon, bands }) => {
+      const label = formatSpeciesLabel(pokemon);
+      if (!bands.length) {
+        return <div className="speed-chart__enemy is-empty" key={pokemon.id}>未識別</div>;
+      }
+
+      const [slow, neutralMin, neutralMax, fast] = bands;
+      const left = position(slow.value);
+      const right = position(fast.value);
+      const details = bands.map(({ label: bandLabel, value }) => `${bandLabel} ${value}`).join('、');
+      return (
+        <div className="speed-chart__enemy" key={pokemon.id}>
+          <div
+            className="speed-chart__range"
+            role="img"
+            aria-label={`${label}，${details}`}
+            title={`${label} · ${details}`}
+            style={{ left: `${left}%`, width: `${right - left}%` }}
+          >
+            <span className="speed-chart__endpoint is-min" aria-hidden="true">{slow.value}</span>
+            <span className="speed-chart__endpoint is-max" aria-hidden="true">{fast.value}</span>
+            {[neutralMin, neutralMax].map(({ id, value }) => (
+              <span
+                className="speed-chart__nature"
+                key={id}
+                aria-hidden="true"
+                style={{ left: `${100 * (value - slow.value) / (fast.value - slow.value)}%` }}
+              />
+            ))}
+            <span className="speed-chart__enemy-sprite" aria-hidden="true">
+              <SpeedSprite pokemon={pokemon} />
+            </span>
+          </div>
+        </div>
+      );
+    });
+  }
 
   return (
     <section className="panel panel--speed">
       <header className="panel__header panel__header--row panel__header--speed">
         <h2>速度軸</h2>
-        <span className="panel__hint">
-          敵方雙色帶：減速0／中性0／中性32／加速32 · 我方單點（點選隊員 · 手填 Spe）
-          {allyTailwind || enemyTailwind ? ' · 順風 Spe ×2' : ''}
-        </span>
+        <span className="panel__hint">我方實速 · 敵方減速 0 至加速 32</span>
         <div className="speed-axis__toggles">
-          <label className={`speed-axis__tw ${allyTailwind ? 'is-on' : ''}`}>
-            <input
-              type="checkbox"
-              checked={allyTailwind}
-              onChange={(e) => setAllyTailwind(e.target.checked)}
-            />
+          <label className="speed-axis__tw">
+            <input type="checkbox" checked={allyTailwind} onChange={(e) => setAllyTailwind(e.target.checked)} />
             我方順風
           </label>
-          <label className={`speed-axis__tw ${enemyTailwind ? 'is-on' : ''}`}>
-            <input
-              type="checkbox"
-              checked={enemyTailwind}
-              onChange={(e) => setEnemyTailwind(e.target.checked)}
-            />
+          <label className="speed-axis__tw">
+            <input type="checkbox" checked={enemyTailwind} onChange={(e) => setEnemyTailwind(e.target.checked)} />
             敵方順風
           </label>
         </div>
       </header>
-      <div className="speed-axis">
-        <div className="speed-axis__scale speed-row" aria-hidden="true">
-          <span className="speed-row__label" />
-          <div className="speed-row__track speed-axis__scale-track">
-            {ticks.map((t) => (
-              <span
-                key={t}
-                className={t === axisMax ? 'is-max' : undefined}
-                style={{ left: `${pct(t, axisMax)}%` }}
-              >
-                <i className="speed-axis__tick" />
-                {t}
-              </span>
-            ))}
-            <GuideMark spe={guideSpe} axisMax={axisMax} />
-          </div>
-        </div>
-
-        {selectedAlly ? (
-          <>
-            {enemyTop.map((p) => (
-              <EnemySpeedRow
-                key={p.id}
-                pokemon={p}
-                tailwind={enemyTailwind}
-                axisMax={axisMax}
-                guideSpe={guideSpe}
-              />
-            ))}
-            <AllySpeedRow
-              pokemon={selectedAlly}
-              tailwind={allyTailwind}
-              axisMax={axisMax}
-              guideSpe={guideSpe}
-            />
-            {enemyBottom.map((p) => (
-              <EnemySpeedRow
-                key={p.id}
-                pokemon={p}
-                tailwind={enemyTailwind}
-                axisMax={axisMax}
-                guideSpe={guideSpe}
-              />
-            ))}
-          </>
-        ) : (
-          <>
-            {enemies.map((p) => (
-              <EnemySpeedRow
-                key={p.id}
-                pokemon={p}
-                tailwind={enemyTailwind}
-                axisMax={axisMax}
-                guideSpe={null}
-              />
-            ))}
-            <div className="speed-ally-prompt" role="status">
-              點選我方隊員
+      <div className="speed-chart">
+        <div className="speed-chart__plot" ref={plot}>
+          {selected && (
+            <div className="speed-chart__guide" style={{ left: `${position(selected.speed)}%` }} aria-hidden="true" />
+          )}
+          {enemyRows(enemies.slice(0, 3))}
+          <div className="speed-chart__scale">
+            <div className="speed-chart__allies" style={{ height: laneCount * 36 }}>
+              {markers.map(({ index: markerIndex, lane }) => {
+                const { pokemon, index, speed } = allies[markerIndex];
+                const label = `${formatSpeciesLabel(pokemon)} · Spe ${speed}`;
+                return (
+                  <button
+                    className="speed-chart__ally"
+                    key={pokemon.id}
+                    type="button"
+                    title={label}
+                    aria-label={label}
+                    aria-pressed={selectedAllyIndex === index}
+                    onClick={() => onSelectAlly(index)}
+                    style={{ left: `${position(speed)}%`, bottom: lane * 36 }}
+                  >
+                    <SpeedSprite pokemon={pokemon} />
+                    <span>{speed}</span>
+                  </button>
+                );
+              })}
             </div>
-          </>
-        )}
+            <div className="speed-chart__ticks" aria-hidden="true">
+              {speedTickValues(min, max, plotWidth).map((tick) => (
+                <span key={tick} style={{ left: `${position(tick)}%` }}>{tick}</span>
+              ))}
+            </div>
+          </div>
+          {enemyRows(enemies.slice(3))}
+        </div>
       </div>
     </section>
   );

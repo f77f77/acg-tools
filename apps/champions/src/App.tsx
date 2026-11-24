@@ -636,7 +636,12 @@ export default function App() {
             autoRecognize={autoRecognize}
             saveRecognizeFrames={saveRecognizeFrames}
           />
-          <SpeedAxis myTeam={myTeam} enemyTeam={enemyTeam} selectedAllyIndex={selectedAllyIndex} />
+          <SpeedAxis
+            myTeam={myTeam}
+            enemyTeam={enemyTeam}
+            selectedAllyIndex={selectedAllyIndex}
+            onSelectAlly={onSelectAlly}
+          />
           <p className="usage-source-global" title={MOVES_SOURCE_LABEL}>
             使用率來源：{MOVES_SOURCE_LABEL}
           </p>
