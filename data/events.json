@@ -1,6 +1,6 @@
 {
   "schema": "events.v2",
-  "updatedAt": "2026-11-23",
+  "updatedAt": "2026-11-24",
   "note": "活動由 Notion「香港ACG情報看板」每日同步（香港時間）。狀態會按日期重算：開始至結束當日係進行中，未開始係即將開始，完結七日內先保留。周邊截止仍然手改 deadlines[]；標成示例嘅截止唔會保留。",
   "events": [
     {
@@ -81,7 +81,7 @@
       ],
       "date": "2026-11-06",
       "endDate": "2026-11-24",
-      "timeNote": "2026-11-06～11-24　11:00–21:00（最後入場 20:00）",
+      "timeNote": "2026-11-06～11-24　11:00–21:00（最後入場 20:00）；今日為最後一日",
       "place": "啟德 AIRSIDE",
       "mapUrl": "https://www.google.com/maps/search/?api=1&query=%E5%95%9F%E5%BE%B7%20AIRSIDE",
       "price": "早鳥 $78／單人 $98／雙人 $188／家庭 $219",
@@ -90,30 +90,7 @@
       "source": "https://anihk.com/events/blue-lock-hong-kong-2026",
       "notes": "沉浸式展區／原畫／限定店。來源 anihk／Klook／官方／AIRSIDE。2026-11-08 核實：檔期仍為 11/6–24 AIRSIDE，維持進行中。 2026-11-23 核實：AIRSIDE 活動頁今日仍公布進行中（11/6…",
       "featured": false,
-      "verifiedAt": "2026-11-23",
-      "sample": false
-    },
-    {
-      "id": "0d5453625d67f312",
-      "title": "MUSE Pop Fest powered by 動漫聯動＠圍方",
-      "status": "進行中",
-      "notionStatus": "進行中",
-      "category": "展會",
-      "ips": [
-        "多 IP"
-      ],
-      "date": "2026-11-11",
-      "endDate": "2026-11-23",
-      "timeNote": "2026-11-11～11-23　每日 12:00–21:00（11-23 至 18:00）",
-      "place": "圍方（THE WAI）L2 中庭　大圍車公廟路18號",
-      "mapUrl": "https://www.google.com/maps/search/?api=1&query=%E5%9C%8D%E6%96%B9%EF%BC%88THE%20WAI%EF%BC%89L2%20%E4%B8%AD%E5%BA%AD%E3%80%80%E5%A4%A7%E5%9C%8D%E8%BB%8A%E5%85%AC%E5%BB%9F%E8%B7%AF18%E8%99%9F",
-      "price": "免費入場（以主辦最新為準）",
-      "ticketUrl": "",
-      "ticketNote": "",
-      "source": "https://www.microworksacg.com/blogs/popup/muse-pop-fest-2026",
-      "notes": "動漫聯動 Pop Fest；來源 Microworks／asiapopups／timable。2026-10-25 新建。2026-11-11：今日開幕（11/11–23，圍方 L2 中庭，12:00–21:00，11/23 至 18:0…",
-      "featured": false,
-      "verifiedAt": "2026-11-23",
+      "verifiedAt": "2026-11-24",
       "sample": false
     },
     {
@@ -125,7 +102,7 @@
       "ips": [],
       "date": "2026-11-11",
       "endDate": "2027-01-03",
-      "timeNote": "2026-11-11～2027-01-03　每日 11:00–21:00；首輪預約 11/4 15:00",
+      "timeNote": "2026-11-11～2027-01-03　每日 11:00–21:00。今日為第一階段（11/11–24）純預約最後一日；11/25 起第二階段（11/25–12/8）可即場輪候",
       "place": "九龍塘又一城 LG2／G 層（達之路 80 號）",
       "mapUrl": "https://www.google.com/maps/search/?api=1&query=%E4%B9%9D%E9%BE%8D%E5%A1%98%E5%8F%88%E4%B8%80%E5%9F%8E%20LG2%EF%BC%8FG%20%E5%B1%A4%EF%BC%88%E9%81%94%E4%B9%8B%E8%B7%AF%2080%20%E8%99%9F%EF%BC%89",
       "price": "未公布",
@@ -134,7 +111,7 @@
       "source": "https://www.festivalwalk.com.hk/zh-hk/happenings/pokemons-30-years-of-joy-at-festival-walk",
       "notes": "POKÉMON's 30 YEARS OF JOY AT FESTIVAL WALK；香港首個官方 Pokémon Center Pop-Up。2026-11-01 核：konggokhk／ma.to 確認 11/11–1/3；11/11…",
       "featured": false,
-      "verifiedAt": "2026-11-11",
+      "verifiedAt": "2026-11-24",
       "sample": false
     },
     {
@@ -245,22 +222,22 @@
     {
       "id": "46fb157fa3cd4e26",
       "title": "《葬送的芙莉蓮特展》香港站",
-      "status": "即將開始",
-      "notionStatus": "即將開始",
+      "status": "進行中",
+      "notionStatus": "進行中",
       "category": "特展",
       "ips": [],
       "date": "2026-11-24",
       "endDate": "2027-01-03",
-      "timeNote": "2026-11-24～2027-01-03；平日 12:00–22:00；六日及公眾假期 11:00–22:00",
+      "timeNote": "2026-11-24～2027-01-03；平日 12:00–21:00（最後入場 20:00）；六日及公眾假期 11:00–22:00（最後入場 21:00）。Klook 另列平日至 22:00／最後入場 21:00，以較早的官方時間為準",
       "place": "旺角創興廣場 B2 樓 INCUBASE Arena（彌敦道 601 號）",
       "mapUrl": "https://www.google.com/maps/search/?api=1&query=%E6%97%BA%E8%A7%92%E5%89%B5%E8%88%88%E5%BB%A3%E5%A0%B4%20B2%20%E6%A8%93%20INCUBASE%20Arena%EF%BC%88%E5%BD%8C%E6%95%A6%E9%81%93%20601%20%E8%99%9F%EF%BC%89",
-      "price": "早鳥二人同行 HK$218；早鳥特典套裝 HK$198；普通 HK$128；優待 HK$108",
+      "price": "正價單人 HK$128；正價雙人 HK$228；正價特典 HK$218（附隨機魔法書透光海報）；優待 HK$108（3–11歲／60歲或以上／殘疾人士）。早鳥已於 11/23 結束",
       "ticketUrl": "https://www.klook.com/zh-HK/activity/243010-frieren-beyond-journey-s-end-exhibition-in-hong-kong/",
       "ticketNote": "",
       "source": "https://acgevent.com/archives/40280",
       "notes": "2026-11-01 Doc／ACGEvent／art-mate 新建。木棉花授權、Trendic 主辦；5 大沉浸式主題展區（半世紀流星／蒼月草／斷頭台阿烏拉／鏡蓮華／零落的王墓＋寶箱怪打卡）；香港首發限定周邊。早鳥 10/30–11/…",
       "featured": true,
-      "verifiedAt": "2026-11-23",
+      "verifiedAt": "2026-11-24",
       "sample": false
     },
     {
@@ -295,16 +272,16 @@
       "ips": [],
       "date": "2026-11-26",
       "endDate": "2026-11-26",
-      "timeNote": "2026-11-26（四）港澳上映",
-      "place": "港澳各大院線（場次未公布）　發行：木棉花香港",
-      "mapUrl": "https://www.google.com/maps/search/?api=1&query=%E6%B8%AF%E6%BE%B3%E5%90%84%E5%A4%A7%E9%99%A2%E7%B7%9A%EF%BC%88%E5%A0%B4%E6%AC%A1%E6%9C%AA%E5%85%AC%E5%B8%83%EF%BC%89%E3%80%80%E7%99%BC%E8%A1%8C%EF%BC%9A%E6%9C%A8%E6%A3%89%E8%8A%B1%E9%A6%99%E6%B8%AF",
-      "price": "未公布",
+      "timeNote": "2026-11-26（四）港澳上映；wmoov／院線場次已出。11/24 德福另有 MCL 會員優先場。「青春終章場」11/28 德福 15:10、K11 17:15，11/29 AIRSIDE 13:00（HK$160，11/23 11:00 開賣，據 ANIHK 當晚已滿座）",
+      "place": "港澳各大院線（場次已出）　發行：木棉花香港",
+      "mapUrl": "https://www.google.com/maps/search/?api=1&query=%E6%B8%AF%E6%BE%B3%E5%90%84%E5%A4%A7%E9%99%A2%E7%B7%9A%EF%BC%88%E5%A0%B4%E6%AC%A1%E5%B7%B2%E5%87%BA%EF%BC%89%E3%80%80%E7%99%BC%E8%A1%8C%EF%BC%9A%E6%9C%A8%E6%A3%89%E8%8A%B1%E9%A6%99%E6%B8%AF",
+      "price": "一般場見院線（約 $50–$110）；「青春終章場」HK$160（據報 11/23 已滿座）",
       "ticketUrl": "https://m.wmoov.com/movie/showtimes/73598",
       "ticketNote": "院線／未公布",
       "source": "https://wmoov.com/movie/details/73598",
       "notes": "系列大學篇完結篇；日語原聲、中英文字幕；CloverWorks。2026-11-12 核實：wmoov showtimes/73598 仍無場次；片長／級別仍待定。 2026-11-17 核實：wmoov showtimes/73598…",
       "featured": false,
-      "verifiedAt": "2026-11-23",
+      "verifiedAt": "2026-11-24",
       "sample": false
     },
     {
@@ -438,7 +415,7 @@
       "source": "https://acgevent.com/archives/40059",
       "notes": "2026-11-12 核實：Muse HK shop 已開售前賣券套票組 HK$110（換票證 1 張＋特製主視覺 PVC 小卡；每人限 4 套；11 月中下旬起配送；不適用特典場）。wmoov 現時未見專頁／場次。特典場資訊仍待公布。…",
       "featured": false,
-      "verifiedAt": "2026-11-23",
+      "verifiedAt": "2026-11-24",
       "sample": false
     },
     {
@@ -459,7 +436,7 @@
       "source": "https://wmoov.com/movie/details/74196",
       "notes": "2026-11-04 新建；發行新映影片；日語；約55分鐘；2D／4DX／MX4D。日本 2026-10-09 上映。2026-11-12 核實：wmoov showtimes/74196 仍無場次；片長／級別仍待定。 2026-11-1…",
       "featured": false,
-      "verifiedAt": "2026-11-23",
+      "verifiedAt": "2026-11-24",
       "sample": false
     },
     {
@@ -571,7 +548,7 @@
       "source": "https://m.wmoov.com/movie/details/73499",
       "notes": "2000 年第二部劇場版；香港以前只曾喺翡翠台播放，從未上映戲院；10-06 WMOOV 標暫定 12-10 上映，戲院未公布；木棉花預告見 https://acgevent.com/archives/40040。2026-11-12 核…",
       "featured": false,
-      "verifiedAt": "2026-11-23",
+      "verifiedAt": "2026-11-24",
       "sample": false
     },
     {
@@ -932,6 +909,29 @@
       "notes": "2026-11-10 核實：官方 11/9 公布香港場 2027/1/21–1/22 AsiaWorld-Arena；巡演名由「10-CITY DOME & STADIUM TOUR」改為「11-CITY ASIA-OCEANIA TOU…",
       "featured": false,
       "verifiedAt": "2026-11-19",
+      "sample": false
+    },
+    {
+      "id": "6e0e98bddf1d2863",
+      "title": "Nagi Salon 2027 〜青山渚 MINI LIVE & FAN MEETING in Hong Kong〜",
+      "status": "即將開始",
+      "notionStatus": "即將開始",
+      "category": "見面會",
+      "ips": [
+        "Love Live!"
+      ],
+      "date": "2027-01-23",
+      "endDate": "2027-01-23",
+      "timeNote": "2027-01-23（六）；日場 12:30 入場／13:00 開演（終演約 15:00）；夜場 17:30 入場／18:00 開演（終演約 20:00）",
+      "place": "新蒲崗 PORTAL（九龍新蒲崗彩虹道 212 號 The Burrow 1 樓）",
+      "mapUrl": "https://www.google.com/maps/search/?api=1&query=%E6%96%B0%E8%92%B2%E5%B4%97%20PORTAL%EF%BC%88%E4%B9%9D%E9%BE%8D%E6%96%B0%E8%92%B2%E5%B4%97%E5%BD%A9%E8%99%B9%E9%81%93%20212%20%E8%99%9F%20The%20Burrow%201%20%E6%A8%93%EF%BC%89",
+      "price": "VIP HK$999／普通 HK$699／普通（視線不佳區）HK$599；門票即將發售",
+      "ticketUrl": "",
+      "ticketNote": "",
+      "source": "https://www.eventernote.com/events/500987",
+      "notes": "2026-11-24 補建漏報（海日娛樂約 11/21 宣布）。聲優青山なぎさ（Love Live! Superstar!! 葉月戀／SYNDUALITY Noir 夏爾）首次香港 Mini Live 兼見面會。主辦海日娛樂。門票即將發售…",
+      "featured": false,
+      "verifiedAt": "2026-11-24",
       "sample": false
     },
     {
