@@ -1,3 +1,4 @@
+import { moveNotes } from '../lib/moveNotes';
 import { useEffect, useLayoutEffect, useRef, useState, type RefObject } from 'react';
 import { createPortal } from 'react-dom';
 import type { HeldItemSlot, PokemonFormOption, PokemonSet, PokemonType, StatKey } from '../types';
@@ -134,7 +135,12 @@ function MoveTooltip({
   const zh = rec?.names?.['zh-Hant'] || name;
   const power = rec?.power;
   const acc = rec?.accuracy;
-  const flavor = rec?.flavor?.['zh-Hant'] || null;
+  const note = rec ? moveNotes[rec.id] : undefined;
+  const effect = note?.[2] ?? rec?.flavor?.['zh-Hant'];
+  const category = rec?.category === 'physical' ? '物理' : rec?.category === 'special' ? '特殊' : rec?.category === 'status' ? '變化' : '';
+  const priority = note?.[1] || 0;
+  const mechanics = [note?.[0], priority ? `優先度 ${priority > 0 ? '+' : ''}${priority}` : ''].filter(Boolean);
+  const stats = [typeLabel, category, power != null ? `威力 ${power}` : '', acc != null ? `命中 ${acc}%` : ''].filter(Boolean);
   const empty = name === '—' || name === '未載入';
 
   useLayoutEffect(() => {
@@ -156,7 +162,7 @@ function MoveTooltip({
       window.removeEventListener('scroll', update, true);
       window.removeEventListener('resize', update);
     };
-  }, [open, empty, name, flavor, anchorRef]);
+  }, [open, empty, name, effect, anchorRef]);
 
   if (empty || !open || typeof document === 'undefined') return null;
   return createPortal(
@@ -171,11 +177,9 @@ function MoveTooltip({
       }}
     >
       <strong>{zh}</strong>
-      <span>屬性：{typeLabel}</span>
-      <span>威力：{power == null ? '—' : power}</span>
-      <span>命中：{acc == null ? '—' : acc}</span>
-      {usageLabel ? <span>使用率：{usageLabel}</span> : null}
-      {flavor ? <span className="move-tooltip__flavor">{flavor}</span> : null}
+      {mechanics.length > 0 && <span>{mechanics.join(' · ')}</span>}
+      {effect && <span className="move-tooltip__flavor">{effect}</span>}
+      <small>{stats.join(' · ')}{usageLabel && ` · 使用率 ${usageLabel}`}</small>
     </div>,
     document.body,
   );
