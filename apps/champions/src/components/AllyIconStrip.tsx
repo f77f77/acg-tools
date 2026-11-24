@@ -43,6 +43,7 @@ function AllyIcon({
     <button
       type="button"
       className={`ally-icon-strip__btn${selected ? ' is-selected' : ''}${pokemon.identified ? '' : ' is-empty'}`}
+      disabled={!pokemon.identified || !(pokemon.speed && pokemon.speed > 0)}
       onClick={onSelect}
       title={selected ? `${label}（取消選取）` : `${label}（選取以對照速度軸）`}
       aria-pressed={selected}
@@ -53,7 +54,7 @@ function AllyIcon({
   );
 }
 
-/** Slim left column of 6 ally sheet sprites. Does not replace 我方隊伍 overlay. */
+/** Loaded ally slots in team order, independent of the capture image. */
 export function AllyIconStrip({ team, selectedIndex, onSelect }: Props) {
   const slots = Array.from({ length: 6 }, (_, i) => team[i] || null);
   return (

@@ -25,6 +25,8 @@ interface Props {
   onFormChange?: (formKey: string) => void;
   speciesOptions?: { key: string; label: string }[];
   /** 我方卡片：是否為速度軸選中對象 */
+  linked?: boolean;
+  onHover?: (inside: boolean) => void;
   selected?: boolean;
   onSelect?: () => void;
 }
@@ -310,6 +312,8 @@ export function PokemonCard({
   onFormChange,
   speciesOptions,
   selected,
+  linked,
+  onHover,
   onSelect,
 }: Props) {
   const stats = calcAllStats(pokemon.baseStats, pokemon.evs, pokemon.nature, pokemon.evsArePts);
@@ -345,6 +349,7 @@ export function PokemonCard({
     variant === 'enemy' ? 'pkmn-card--dense' : '',
     pokemon.identified ? '' : 'is-unidentified',
     selected ? 'is-selected' : '',
+    linked ? 'is-linked' : '',
     selectable ? 'is-selectable' : '',
   ]
     .filter(Boolean)
@@ -423,12 +428,12 @@ export function PokemonCard({
         }
       >
         {variant === 'enemy'
-          ? `道具：${formatItemUsageLine(held, '—')}`
+          ? `道具使用率：${formatItemUsageLine(held, '—')}`
           : held.length
             ? `道具：${formatItemUsageLine(held, pokemon.item || '無道具')}`
             : pokemon.item || '無道具'}
       </span>
-      <span>{pokemon.ability || '—'}</span>
+      {(pokemon.ability || variant === 'my') && <span>{pokemon.ability || '—'}</span>}
     </div>
   );
 
@@ -511,6 +516,8 @@ export function PokemonCard({
   return (
     <article
       className={cardClass}
+      onPointerEnter={e => { if (e.pointerType === 'mouse') onHover?.(true); }}
+      onPointerLeave={() => onHover?.(false)}
       onClick={selectable ? onSelect : undefined}
       onKeyDown={
         selectable
@@ -537,11 +544,11 @@ export function PokemonCard({
             <div className="pkmn-card__dense-info">
               {speciesEl}
               {formEl}
-              {metaEl}
               {matchups && <MatchupRows matchups={matchups} />}
             </div>
             {statsEl}
           </div>
+          {metaEl}
           {movesEl}
         </div>
       ) : (
