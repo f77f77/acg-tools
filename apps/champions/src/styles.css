@@ -159,8 +159,7 @@ button, input, select, textarea {
 .panel__header--row { flex-wrap: wrap; }
 .panel__hint { color: var(--muted); font-size: 0.75rem; }
 .panel__header--speed .panel__hint {
-  flex: 1 1 100%;
-  order: 3;
+  flex: 1 1 auto;
 }
 .panel__cards {
   display: flex;
@@ -655,153 +654,154 @@ button, input, select, textarea {
 .status-line, .error-text { font-size: 0.8rem; margin: 0.4rem 0 0; }
 .error-text { color: var(--danger); }
 
-.speed-axis {
-  flex: 0 0 auto;
-  height: auto;
-  min-height: auto;
-  overflow: visible;
-  padding: 0.25rem 0.2rem 0.5rem;
-}
-.panel__header--speed .speed-axis__toggles {
-  margin-left: auto;
-}
 .speed-axis__toggles {
   display: flex;
   flex-wrap: wrap;
-  gap: 0.4rem;
-  align-items: center;
-  flex-shrink: 0;
+  gap: 0.35rem;
+  margin-left: auto;
 }
 .speed-axis__tw {
   display: inline-flex;
   align-items: center;
   gap: 0.3rem;
-  font-size: 0.75rem;
-  color: var(--muted);
+  padding: 0.15rem 0.45rem;
   border: 1px solid var(--border);
-  border-radius: 999px;
-  padding: 0.15rem 0.55rem 0.15rem 0.4rem;
-  cursor: pointer;
-  user-select: none;
-}
-.speed-axis__tw.is-on {
-  color: var(--accent);
-  border-color: #4a6b2a;
-  background: rgba(182, 255, 74, 0.08);
-}
-.speed-axis__tw input { margin: 0; }
-.speed-axis__scale {
-  /* Shares .speed-row grid so tick positions match track % exactly */
-  margin: 0 0 0.35rem; color: var(--muted); font-size: 0.65rem; height: auto;
-}
-.speed-axis__scale-track {
-  height: 1.35rem; background: transparent; border-color: transparent;
-}
-.speed-axis__scale-track span {
-  position: absolute; top: 0; transform: translateX(-50%);
-  display: flex; flex-direction: column; align-items: center; gap: 0.05rem;
-}
-.speed-axis__scale-track span.is-max { transform: translateX(-100%); align-items: flex-end; }
-.speed-axis__tick {
-  display: block;
-  width: 1px;
-  height: 7px;
-  background: #8b93a7;
-  box-shadow: 0 0 0 0.5px rgba(139, 147, 167, 0.4);
-}
-.speed-axis__guide {
-  position: absolute;
-  top: -10px;
-  bottom: -10px;
-  width: 2px;
-  transform: translateX(-1px);
-  background: var(--accent);
-  box-shadow: 0 0 8px rgba(182, 255, 74, 0.65);
-  z-index: 6;
-  pointer-events: none;
-  opacity: 0.9;
-}
-.speed-row {
-  /* Label + track only — Spe value overlays inside track so all tracks share width */
-  display: grid;
-  grid-template-columns: minmax(8.75rem, 11.5rem) minmax(0, 1fr);
-  gap: 0.35rem;
-  align-items: center;
-  margin-bottom: 0.35rem;
-}
-.speed-row__label {
+  border-radius: 0.4rem;
   font-size: 0.72rem;
-  white-space: normal;
-  overflow: visible;
-  text-overflow: unset;
-  overflow-wrap: anywhere;
-  line-height: 1.2;
+  color: var(--text);
+  cursor: pointer;
+}
+.speed-axis__tw:has(input:checked) {
+  color: var(--accent);
+  border-color: var(--accent);
+}
+.speed-axis__tw input {
+  margin: 0;
+  accent-color: var(--accent);
+}
+.speed-chart {
   color: var(--muted);
-}
-.speed-row__track {
-  position: relative; height: 18px; width: 100%; min-width: 0;
-  background: #0e1118; border-radius: 6px; border: 1px solid #222838;
-}
-.speed-row__value {
-  font-size: 0.72rem; min-width: 2rem; text-align: right;
-}
-.speed-row__value--overlay {
-  position: absolute; right: 6px; top: 50%; transform: translateY(-50%);
-  z-index: 2; min-width: 0; pointer-events: none;
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: 0.5rem;
+  margin: 0.25rem 0 0.15rem;
+  padding: 0.45rem clamp(1.65rem, 4%, 2.25rem);
   font-variant-numeric: tabular-nums;
-  text-shadow: 0 0 4px rgba(0, 0, 0, 0.9), 0 1px 2px rgba(0, 0, 0, 0.8);
 }
-/* Four anchors: 減速0 / 中性0 / 中性32 / 加速32 — high-contrast on dark navy */
-.speed-band { position: absolute; top: 2px; bottom: 2px; border-radius: 3px; opacity: 1; }
-.speed-band--slow { background: rgba(64, 196, 255, 0.72); box-shadow: inset 0 0 0 1px rgba(120, 220, 255, 0.45); }
-.speed-band--mid { background: rgba(230, 236, 255, 0.38); box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.28); }
-.speed-band--fast { background: rgba(255, 72, 148, 0.72); box-shadow: inset 0 0 0 1px rgba(255, 140, 190, 0.45); }
-.speed-mark {
-  position: absolute; top: 0; bottom: 0; width: 2px; transform: translateX(-1px); z-index: 1;
-  background: #fff; box-shadow: 0 0 4px rgba(255, 255, 255, 0.55);
+.speed-chart__plot {
+  position: relative;
+  isolation: isolate;
 }
-.speed-mark--slow { background: #5ad0ff; }
-.speed-mark--neutral0 { background: #e8eefc; }
-.speed-mark--neutral32 { background: #ffe566; }
-.speed-mark--fast { background: #ff5a9e; }
-.speed-point {
-  position: absolute; top: 50%; transform: translate(-50%, -50%); color: var(--accent); font-size: 0.85rem;
-  text-shadow: 0 0 6px rgba(182, 255, 74, 0.8); z-index: 3;
+.speed-chart__enemy {
+  position: relative;
+  height: 23px;
+  font-size: 0.7rem;
 }
-.speed-divider {
-  margin: 0.55rem 0 0.35rem; font-size: 0.75rem; color: var(--accent); border-top: 1px dashed var(--border);
-  padding-top: 0.35rem;
+.speed-chart__enemy.is-empty {
+  display: grid;
+  place-items: center;
 }
-.speed-row--selected-ally {
-  /* Outline/background only — no horizontal padding/border so track width matches enemies */
-  margin: 0.45rem 0;
-  padding: 0.3rem 0;
-  border-radius: 8px;
-  background: rgba(182, 255, 74, 0.08);
-  outline: 1px dashed rgba(182, 255, 74, 0.5);
-  outline-offset: 2px;
+.speed-chart__range {
+  position: absolute;
+  top: 50%;
+  height: 5px;
+  margin-top: -2px;
+  border-radius: 4px;
+  color: #f5a494;
+  background: #bd786b;
 }
-.speed-row--selected-ally .speed-row__label {
+.speed-chart__endpoint,
+.speed-chart__nature,
+.speed-chart__enemy-sprite {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.speed-chart__endpoint.is-min { right: calc(100% + 0.25rem); }
+.speed-chart__endpoint.is-max { left: calc(100% + 0.25rem); }
+.speed-chart__nature {
+  height: 9px;
+  width: 1px;
+  background: #ffddca;
+}
+.speed-chart__enemy-sprite {
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: grid;
+  place-items: center;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background: var(--bg);
+}
+.speed-chart__sprite {
+  display: block;
+  width: 22px;
+  height: 22px;
+  object-fit: contain;
+}
+.speed-chart__scale {
+  margin: 0.1rem 0 0.25rem;
+}
+.speed-chart__allies,
+.speed-chart__ticks {
+  position: relative;
+}
+.speed-chart__ally {
+  position: absolute;
+  transform: translateX(-50%);
+  display: grid;
+  justify-items: center;
+  align-content: end;
+  min-width: 34px;
+  height: 36px;
+  padding: 0 0.2rem 1px;
+  border: 1px solid transparent;
+  border-radius: 0.35rem;
+  color: #8be7d7;
+  background: var(--bg);
+  font-size: 0.7rem;
+  line-height: 1;
+  cursor: pointer;
+  z-index: 1;
+}
+.speed-chart__ally:hover,
+.speed-chart__ally:focus-visible {
+  border-color: currentColor;
+}
+.speed-chart__ally[aria-pressed="true"] {
   color: var(--accent);
-  font-weight: 600;
+  border-color: currentColor;
+  z-index: 2;
 }
-.speed-row--selected-ally .speed-row__track {
-  border-color: rgba(182, 255, 74, 0.45);
-  background: #12180e;
+.speed-chart__ticks {
+  height: 17px;
+  border-top: 1px solid var(--muted);
+  font-size: 0.65rem;
 }
-.speed-row--selected-ally .speed-row__value {
-  color: var(--accent);
-  font-weight: 600;
+.speed-chart__ticks span {
+  position: absolute;
+  transform: translateX(-50%);
+  padding-top: 4px;
 }
-.speed-ally-prompt {
-  margin-top: 0.45rem;
-  padding: 0.45rem 0.6rem;
-  text-align: center;
-  font-size: 0.8rem;
-  color: var(--accent);
-  border: 1px dashed rgba(182, 255, 74, 0.4);
-  border-radius: 8px;
-  background: rgba(182, 255, 74, 0.06);
+.speed-chart__ticks span::before {
+  content: '';
+  position: absolute;
+  left: 50%;
+  top: 0;
+  width: 1px;
+  height: 3px;
+  background: var(--muted);
+}
+.speed-chart__guide {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 1px;
+  background: var(--accent);
+  opacity: 0.62;
+  z-index: 1;
+  pointer-events: none;
 }
 .panel__hint--inline {
   margin: 0 0 0.4rem;
