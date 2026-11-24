@@ -198,6 +198,20 @@ export default function App() {
   const [myTeam, setMyTeam] = useState<PokemonSet[]>(() => restoredAlly ?? buildSyncDemoTeam());
   const [enemyTeam, setEnemyTeam] = useState<PokemonSet[]>(() => buildEmptyEnemy());
   const [status, setStatus] = useState('');
+  const requestId = useRef(0);
+  const [scarfSlot, setScarfSlot] = useState<number | null>(null);
+  const [round, setRound] = useState(0);
+  const nextRound = useCallback(() => {
+    requestId.current++;
+    setScarfSlot(null);
+    setRound(n => n + 1);
+    setEnemyTeam(buildEmptyEnemy());
+    setSelectedAllyIndex(null);
+    setPinnedEnemy(null);
+    setHoveredEnemy(null);
+    setBusy(false);
+    setStatus('');
+  }, []);
   const [busy, setBusy] = useState(false);
   const [fineTune, setFineTune] = useState<RoiFineTune>(() => loadFineTune());
   const [debugOverlay, setDebugOverlay] = useState(() => loadDebugOverlay());
@@ -205,6 +219,8 @@ export default function App() {
   const [hoveredEnemy, setHoveredEnemy] = useState<number | null>(null);
   const [pinnedEnemy, setPinnedEnemy] = useState<number | null>(null);
   const enemyFocus = {
+    scarfSlot,
+    toggleScarf: (slot: number) => setScarfSlot(prev => prev === slot ? null : slot),
     active: hoveredEnemy ?? pinnedEnemy,
     pinned: pinnedEnemy,
     hover: setHoveredEnemy,
@@ -285,6 +301,7 @@ export default function App() {
   }, []);
 
   const onEnemyFormChange = useCallback((index: number, formKey: string) => {
+    setScarfSlot(prev => prev === index ? null : prev);
     setEnemyTeam((prev) => {
       const cur = prev[index];
       if (!cur) return prev;
@@ -295,7 +312,9 @@ export default function App() {
     const meta = resolveFormMoveIds(formKey);
     setStatus(`敵方形態：${meta?.label || formKey}`);
     void (async () => {
+      const id = requestId.current;
       const { moves, items } = await fetchMovesForForm(formKey, 6);
+      if (id !== requestId.current) return;
       setEnemyTeam((prev) =>
         prev.map((p, i) => (i === index && p.formKey === formKey ? { ...p, moves, items } : p)),
       );
@@ -330,6 +349,7 @@ export default function App() {
   }, []);
 
   const onSpeciesOverride = useCallback((index: number, speciesKey: string) => {
+    setScarfSlot(prev => prev === index ? null : prev);
     if (!speciesKey) {
       setEnemyTeam((prev) =>
         prev.map((p, i) => (i === index ? { ...emptySlot(index, 'enemy'), thumbnailDataUrl: p.thumbnailDataUrl } : p)),
@@ -358,8 +378,10 @@ export default function App() {
     );
     setStatus(`已手動覆寫：${sp.nameZh}（弱點／速度軸已更新）`);
     void (async () => {
+      const id = requestId.current;
       const moves = top6ForCard(await fetchTopMoves(sp.key));
       const items = await fetchTopItems(sp.key, 8);
+      if (id !== requestId.current) return;
       setEnemyTeam((prev) =>
         prev.map((p, i) => (i === index && p.speciesKey === sp.key ? { ...p, moves, items } : p)),
       );
@@ -439,7 +461,9 @@ export default function App() {
   }, [onSelectAlly]);
 
   const onRecognize = useCallback(
-    async (canvas: HTMLCanvasElement) => {
+    async (canvas: HTMLCanvasElement, fresh = false) => {
+      if (fresh) nextRound();
+      const id = ++requestId.current;
       setBusy(true);
       setStatus('辨認中… 擷取單幀並裁切右側 6 縮圖');
       try {
@@ -479,7 +503,9 @@ export default function App() {
             }),
           );
         }
+        if (id !== requestId.current) return;
         setEnemyTeam(next);
+        setScarfSlot(null);
         setPinnedEnemy(null);
         setHoveredEnemy(null);
         const hit = results.filter(
@@ -491,12 +517,12 @@ export default function App() {
             : '辨認 0/6',
         );
       } catch {
-        setStatus('辨認失敗');
+        if (id === requestId.current) setStatus('辨認失敗');
       } finally {
-        setBusy(false);
+        if (id === requestId.current) setBusy(false);
       }
     },
-    [fineTune],
+    [fineTune, nextRound],
   );
 
   return (
@@ -617,6 +643,7 @@ export default function App() {
             ref={captureRef}
             busy={busy}
             onRecognize={onRecognize}
+            onSourceChange={nextRound}
             statusText={status}
             fineTune={fineTune}
             debugOverlay={debugOverlay}
@@ -625,7 +652,7 @@ export default function App() {
             autoRecognize={autoRecognize}
             saveRecognizeFrames={saveRecognizeFrames}
           />
-          <SpeedAxis
+          <SpeedAxis key={round}
             enemyFocus={enemyFocus}
             myTeam={myTeam}
             enemyTeam={enemyTeam}
@@ -633,7 +660,7 @@ export default function App() {
             onSelectAlly={onSelectAlly}
           />
         </div>
-        <EnemyPanel
+        <EnemyPanel key={round} onNextRound={nextRound}
           enemyFocus={enemyFocus}
           team={enemyTeam}
           onSpeciesOverride={onSpeciesOverride}

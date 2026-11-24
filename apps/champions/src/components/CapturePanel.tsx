@@ -53,9 +53,10 @@ import {
 } from '../lib/previewAnchors';
 
 interface Props {
+  onSourceChange: () => void;
   busy: boolean;
   /** 單幀 canvas（鏡頭或靜態選隊圖），走同一套 ROI → thumb → recognize */
-  onRecognize: (canvas: HTMLCanvasElement) => void;
+  onRecognize: (canvas: HTMLCanvasElement, fresh?: boolean) => void;
   statusText: string;
   fineTune: RoiFineTune;
   debugOverlay: boolean;
@@ -74,6 +75,7 @@ export const CapturePanel = forwardRef<CapturePanelHandle, Props>(function Captu
   {
     busy,
     onRecognize,
+    onSourceChange,
     statusText,
     fineTune,
     debugOverlay,
@@ -222,6 +224,7 @@ export const CapturePanel = forwardRef<CapturePanelHandle, Props>(function Captu
     const url = URL.createObjectURL(file);
     stillUrlRef.current = url;
     setStillUrl(url);
+    onSourceChange();
     closeSources();
     setStillReady(false);
     setError(null);
@@ -239,6 +242,7 @@ export const CapturePanel = forwardRef<CapturePanelHandle, Props>(function Captu
     // 非 blob URL，revokeStill 不會誤撤銷
     const label = currentFixtureLabel();
     setStillUrl(fixtureTeamPreviewUrl(true));
+    onSourceChange();
     closeSources();
     setStillReady(false);
     setError(null);
@@ -276,6 +280,7 @@ export const CapturePanel = forwardRef<CapturePanelHandle, Props>(function Captu
       }
       if (deviceId) saveDeviceId(deviceId);
       setLive(true);
+      onSourceChange();
       closeSources();
       // 連線後再 enumerate，補齊 label／groupId；probe:false 以免搶走 live track。
       try {
@@ -380,7 +385,7 @@ export const CapturePanel = forwardRef<CapturePanelHandle, Props>(function Captu
     }
   }
 
-  const handleRecognize = useCallback(() => {
+  const handleRecognize = useCallback((fresh = false) => {
     let canvas: HTMLCanvasElement | null = null;
     if (stillUrl && stillImgRef.current?.naturalWidth) {
       const img = stillImgRef.current;
@@ -390,7 +395,7 @@ export const CapturePanel = forwardRef<CapturePanelHandle, Props>(function Captu
     }
     if (!canvas) return;
     if (saveRecognizeFrames) downloadRecognizeFrame(canvas);
-    onRecognize(canvas);
+    onRecognize(canvas, fresh);
   }, [onRecognize, saveRecognizeFrames, stillUrl]);
 
   useImperativeHandle(ref, () => ({ recognizeNow: handleRecognize }), [handleRecognize]);
@@ -415,7 +420,7 @@ export const CapturePanel = forwardRef<CapturePanelHandle, Props>(function Captu
       const { next, fire } = stepAutoRecognize(autoStateRef.current, previewVisible, busy);
       autoStateRef.current = next;
       setAutoPhase(next.phase);
-      if (fire) handleRecognize();
+      if (fire) handleRecognize(true);
     }, AUTO_RECOGNIZE_TICK_MS);
     return () => window.clearInterval(id);
   }, [autoRecognize, busy, handleRecognize, hasValidFrames, stillUrl, live]);
@@ -558,7 +563,7 @@ export const CapturePanel = forwardRef<CapturePanelHandle, Props>(function Captu
             {signalMeta && <p className="capture-signal">{signalMeta}</p>}
           </div>
         </details>
-        <button type="button" className="btn btn--primary" disabled={busy || !hasValidFrames} onClick={handleRecognize}>
+        <button type="button" className="btn btn--primary" disabled={busy || !hasValidFrames} onClick={() => handleRecognize()}>
           辨認
         </button>
       </header>
