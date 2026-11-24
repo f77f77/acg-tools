@@ -1,0 +1,86 @@
+name: Check Champions speed axis
+
+on:
+  push:
+    branches: [codex/champions-speed-axis-check]
+
+permissions:
+  contents: read
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+          cache: npm
+          cache-dependency-path: apps/champions/package-lock.json
+      - name: Build Pages and type-check Champions
+        run: |
+          NPM_CI=1 bash scripts/build-pages.sh
+          npm --prefix apps/champions run typecheck
+      - name: Check the speed axis in Chrome
+        run: |
+          npm install --prefix "$RUNNER_TEMP/champions-test" --no-save playwright@1.56.1
+          mkdir -p "$RUNNER_TEMP/champions-web"
+          ln -s "$PWD/dist" "$RUNNER_TEMP/champions-web/acg-tools"
+          python3 -m http.server 4173 --bind 127.0.0.1 --directory "$RUNNER_TEMP/champions-web" >"$RUNNER_TEMP/champions-http.log" 2>&1 &
+          export NODE_PATH="$RUNNER_TEMP/champions-test/node_modules"
+          node <<'NODE'
+          const assert = require('node:assert/strict');
+          const { chromium } = require('playwright');
+          (async () => {
+            const browser = await chromium.launch({ channel: 'chrome', headless: true });
+            try {
+              const page = await browser.newPage({ viewport: { width: 1920, height: 1023 } });
+              await page.addInitScript(() => {
+                localStorage.setItem('pkmn-ally-panel-open', '0');
+                localStorage.setItem('pkmn-ally-team-v1', JSON.stringify([
+                  {speciesKey:'garchomp',speed:169}, {speciesKey:'froslass',speed:172},
+                  {speciesKey:'sneasler',speed:172}, {speciesKey:'kingambit',speed:80},
+                  {speciesKey:'pelipper',speed:86}, {speciesKey:'golisopod',speed:60},
+                ]));
+              });
+              await page.goto('http://127.0.0.1:4173/acg-tools/champions/');
+              const all = page.locator('.speed-chart__ally');
+              const ticks = page.locator('.speed-chart__ticks span');
+              const ranges = page.locator('.speed-chart__range');
+              await all.nth(5).waitFor();
+              assert.equal(await all.count(), 6);
+              await all.first().locator('img').waitFor({timeout:15000});
+              const first = all.filter({hasText:/^169$/});
+              const tied = all.filter({hasText:/^172$/});
+              assert.equal(await tied.count(), 2);
+              const x172 = await tied.first().evaluate(el => el.style.left);
+              assert.equal(x172, await tied.last().evaluate(el => el.style.left));
+              assert.notEqual(await tied.first().evaluate(el => el.style.bottom), await tied.last().evaluate(el => el.style.bottom));
+              await first.click();
+              assert.equal(await first.getAttribute('aria-pressed'), 'true');
+              assert.equal(await page.locator('.speed-chart__guide').evaluate(el => el.style.left), await first.evaluate(el => el.style.left));
+              await page.getByRole('checkbox', {name:'我方順風'}).check();
+              assert.equal(await all.filter({hasText:/^338$/}).count(), 1);
+              await page.getByRole('checkbox', {name:'我方順風'}).uncheck();
+              await page.getByRole('button', {name:'載入測試圖'}).click();
+              await ranges.nth(5).waitFor({timeout:30000});
+              assert.equal(await ranges.count(), 6);
+              const expected = await ranges.first().getAttribute('aria-label');
+              assert.match(expected, /減速0 117/);
+              assert.match(expected, /加速32 178/);
+              await page.getByRole('checkbox', {name:'敵方順風'}).check();
+              assert.match(await ranges.first().getAttribute('aria-label'), /加速32 356/);
+              await page.getByRole('checkbox', {name:'敵方順風'}).uncheck();
+              for (const width of [1920,1280,390]) {
+                await page.setViewportSize({width,height:width===390?844:1023});
+                await page.waitForFunction(() => Array.from(document.querySelectorAll('.speed-chart__ticks span')).every((el,i,a) =>
+                  i===0 || a[i-1].getBoundingClientRect().right < el.getBoundingClientRect().left));
+                assert.ok(await ticks.count() >= 2);
+              }
+              console.log('Verified six ally markers, ties, guide selection, both Tailwind toggles, six recognized enemy intervals, and responsive tick spacing.');
+            } finally {
+              await browser.close();
+            }
+          })().catch(error => { console.error(error); process.exitCode = 1; });
+          NODE
