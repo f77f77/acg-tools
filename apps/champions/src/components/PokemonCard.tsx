@@ -27,6 +27,8 @@ interface Props {
   /** 我方卡片：是否為速度軸選中對象 */
   linked?: boolean;
   onHover?: (inside: boolean) => void;
+  scarf?: boolean;
+  toggleScarf?: () => void;
   selected?: boolean;
   onSelect?: () => void;
 }
@@ -288,7 +290,10 @@ function MatchupRows({ matchups }: { matchups: Record<PokemonType, number> }) {
               {types.map((t) => {
                 const icon = typeIconUrl(t);
                 return icon ? (
-                  <img key={t} src={icon} alt={t} title={`${t}: ×${mult}`} className="type-grid__icon" />
+                  <span key={t} className="type-grid__icon type-fallback" title={t + ' ×' + mult}>
+                    {t.slice(0, 1)}
+                    <img src={icon} alt={t} hidden onLoad={e => { e.currentTarget.hidden = false; }} onError={e => { e.currentTarget.hidden = true; }} />
+                  </span>
                 ) : (
                   <span key={t} className="type-grid__icon" title={`${t}: ×${mult}`}>
                     {t.slice(0, 1)}
@@ -314,6 +319,8 @@ export function PokemonCard({
   selected,
   linked,
   onHover,
+  scarf,
+  toggleScarf,
   onSelect,
 }: Props) {
   const stats = calcAllStats(pokemon.baseStats, pokemon.evs, pokemon.nature, pokemon.evsArePts);
@@ -360,7 +367,7 @@ export function PokemonCard({
       {avatarUrl ? (
         <img src={avatarUrl} alt="" className="pkmn-card__thumb" />
       ) : pokemon.speciesKey ? (
-        pokemon.speciesKey.slice(0, 2).toUpperCase()
+        pokemon.species.slice(0, 2)
       ) : (
         '??'
       )}
@@ -428,7 +435,11 @@ export function PokemonCard({
         }
       >
         {variant === 'enemy'
-          ? `道具 · ${formatItemUsageLine(held, '—')}`
+          ? <>道具 · {held.length ? held.map((item, index) => (
+              <span key={item.name}>{index > 0 && ' · '}{item.name === '講究圍巾'
+                ? <button type="button" className="scarf-toggle" aria-pressed={!!scarf} title="假設持有講究圍巾" onClick={toggleScarf}>{formatItemUsageLine([item], '')}</button>
+                : formatItemUsageLine([item], '')}</span>
+            )) : '—'}</>
           : held.length
             ? `道具：${formatItemUsageLine(held, pokemon.item || '無道具')}`
             : pokemon.item || '無道具'}
@@ -551,8 +562,10 @@ export function PokemonCard({
               {typesEl}
             </div>
             <div className="pkmn-card__dense-info">
-              {speciesEl}
-              {formEl}
+              <details className="enemy-edit" key={pokemon.speciesKey + ':' + pokemon.formKey}>
+                <summary title="更改種族或形態">{pokemon.species}{pokemon.formLabel && !/^base$/i.test(pokemon.formLabel) && !pokemon.species.includes(pokemon.formLabel) ? ' · ' + pokemon.formLabel : ''}</summary>
+                <div>{speciesEl}{formEl}</div>
+              </details>
             </div>
             <details className="card-stats">
               <summary aria-label={`${pokemon.species}能力值`}>能力</summary>

@@ -38,7 +38,7 @@ function SpeedSprite({ pokemon }: { pokemon: PokemonSet }) {
 
   return url
     ? <img className="speed-chart__sprite" src={url} alt="" />
-    : <span aria-hidden="true">{species.slice(0, 1)}</span>;
+    : <span aria-hidden="true">{species.slice(0, 2)}</span>;
 }
 
 export function SpeedAxis({ enemyFocus, myTeam, enemyTeam, selectedAllyIndex, onSelectAlly }: Props) {
@@ -68,7 +68,7 @@ export function SpeedAxis({ enemyFocus, myTeam, enemyTeam, selectedAllyIndex, on
     bands: pokemon.identified && pokemon.baseStats.spe > 0
       ? enemySpeedBands(pokemon.baseStats.spe).map((band) => ({
           ...band,
-          value: applyTailwind(band.value, enemyTailwind),
+          value: Math.floor(applyTailwind(band.value, enemyTailwind) * (enemyFocus.scarfSlot === slot ? 1.5 : 1)),
         }))
       : [],
   }));
@@ -128,6 +128,7 @@ export function SpeedAxis({ enemyFocus, myTeam, enemyTeam, selectedAllyIndex, on
             ))}
             <span className="speed-chart__enemy-sprite" aria-hidden="true">
               <SpeedSprite pokemon={pokemon} />
+              {enemyFocus.scarfSlot === slot && <small className="scarf-mark">圍巾</small>}
             </span>
           </button>
         </div>
