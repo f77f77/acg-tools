@@ -18,7 +18,6 @@ export function saveBoolPref(key: string, value: boolean): void {
   }
 }
 
-export const SHOW_AV_CONTROLS_KEY = 'pkmn-champions-show-av-controls';
 export const AUTO_RECOGNIZE_KEY = 'pkmn-champions-auto-recognize';
 /** Default off. When on, each 辨認敵方隊伍 (manual or auto) downloads the capture frame. */
 export const SAVE_RECOGNIZE_FRAMES_KEY = 'pkmn-champions-save-recognize-frames';

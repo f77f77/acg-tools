@@ -85,7 +85,7 @@ export function SpeedAxis({ enemyFocus, myTeam, enemyTeam, selectedAllyIndex, on
     return rows.map(({ pokemon, bands, slot }) => {
       const label = formatSpeciesLabel(pokemon);
       if (!bands.length) {
-        return <div className="speed-chart__enemy is-empty" key={pokemon.id}>未識別</div>;
+        return null;
       }
 
       const [slow, neutralMin, neutralMax, fast] = bands;
@@ -138,14 +138,12 @@ export function SpeedAxis({ enemyFocus, myTeam, enemyTeam, selectedAllyIndex, on
   return (
     <section className="panel panel--speed">
       <header className="panel__header panel__header--row panel__header--speed">
-        <h2>速度軸</h2>
+        <h2 title="我方實速 · 敵方減速 0 至加速 32">速度軸</h2>
         <div className="speed-team">
-          <span>目前載入隊伍</span>
+          <span>我方</span>
           <AllyIconStrip team={myTeam} selectedIndex={selectedAllyIndex} onSelect={onSelectAlly} />
         </div>
-        <p className="speed-context">
-          {selected ? `對照 ${selected.pokemon.species} · 我方實速 ${selected.speed}` : '我方實速'} · 敵方減速 0 至加速 32
-        </p>
+        {selected && <span className="speed-context">{selected.pokemon.species} · {selected.speed}</span>}
         <div className="speed-axis__toggles">
           <label className="speed-axis__tw">
             <input type="checkbox" checked={allyTailwind} onChange={(e) => setAllyTailwind(e.target.checked)} />

@@ -41,7 +41,7 @@ button, input, select, textarea {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0.6rem 1rem;
+  padding: 0.2rem 0.65rem;
   border-bottom: 1px solid var(--border);
   background: rgba(10, 12, 18, 0.9);
   backdrop-filter: blur(8px);
@@ -549,16 +549,7 @@ button, input, select, textarea {
   padding: 0.1rem 0.2rem; color: var(--text); font-size: 0.68rem;
 }
 
-.usage-source-global {
-  margin: 0.35rem 0 0;
-  padding: 0.35rem 0.5rem;
-  font-size: 0.72rem;
-  color: var(--muted);
-  line-height: 1.35;
-  border-top: 1px dashed var(--border);
-}
 
-.capture-actions { display: flex; flex-wrap: wrap; gap: 0.4rem; align-items: center; justify-content: flex-end; }
 .capture-toolbar { display: flex; flex-wrap: wrap; gap: 0.4rem; margin-bottom: 0.45rem; align-items: center; }
 .capture-toolbar select {
   flex: 1; min-width: 10rem; background: #0e1118; border: 1px solid var(--border); border-radius: 8px; padding: 0.3rem;
@@ -812,14 +803,6 @@ button, input, select, textarea {
   color: var(--muted);
 }
 
-.app-footer {
-  border-top: 1px solid var(--border);
-  padding: 0.4rem 1rem;
-  font-size: 0.8rem;
-  color: var(--muted);
-  background: rgba(10, 12, 18, 0.95);
-  flex-shrink: 0;
-}
 
 @media (max-width: 1100px) {
   .layout {
@@ -1082,4 +1065,100 @@ button, input, select, textarea {
   .speed-chart--compare { padding-left: 6.5rem; }
   .speed-team { flex-wrap: wrap; }
   .panel__header--speed .speed-axis__toggles { margin-left: 0; }
+}
+
+.capture-bar {
+  position: relative;
+  z-index: 9;
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  margin-bottom: 0.25rem;
+}
+.card-stats { position: relative; }
+.card-stats summary { cursor: pointer; font-size: 0.75rem; color: var(--muted); }
+.card-stats[open] .pkmn-card__stats {
+  position: absolute;
+  top: calc(100% + 3px);
+  right: 0;
+  z-index: 6;
+  width: 9rem;
+  padding: 0.45rem;
+  background: var(--bg-panel);
+  border: 1px solid var(--border);
+  border-radius: 0.4rem;
+}
+.pkmn-card--enemy .pkmn-card__types { flex-direction: row; }
+.pkmn-card--enemy .type-grid {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  gap: 2px 5px;
+}
+.pkmn-card--enemy .type-grid__row { display: contents; }
+.capture-bar .btn { padding: 0.15rem 0.6rem; font-size: 0.83rem; }
+.capture-result {
+  flex: 1;
+  min-width: 0;
+  color: var(--muted);
+  font-size: 0.78rem;
+}
+.capture-sources summary { cursor: pointer; }
+.capture-sources__menu {
+  position: absolute;
+  top: calc(100% + 0.3rem);
+  right: 0;
+  width: min(28rem, 100%);
+  padding: 0.65rem;
+  background: var(--bg-panel);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  box-shadow: 0 6px 22px #0009;
+}
+.capture-sources__menu select { min-width: 0; max-width: 100%; }
+.panel--capture { padding: 0.3rem; }
+.enemy-slot-empty {
+  flex-direction: row;
+  align-items: center;
+  gap: 0.35rem;
+  height: auto;
+  align-self: start;
+}
+.panel--enemy.is-waiting .panel__cards--enemy-grid {
+  grid-template-rows: none;
+  grid-auto-rows: max-content;
+  align-content: start;
+}
+@media (min-width: 1101px) {
+  .layout:has(.panel--enemy.is-waiting) {
+    grid-template-columns: minmax(0, 1fr) clamp(13rem, 17vw, 21rem);
+  }
+  .panel--enemy.is-waiting .panel__cards--enemy-grid { grid-template-columns: 1fr; }
+}
+
+/* On a wide desktop the analysis column can hold both panels, leaving the
+   capture its full height even when several speed markers share a value. */
+@media (min-width: 1500px) and (min-aspect-ratio: 7/4) {
+  .layout {
+    grid-template-areas: "capture enemies" "capture speed";
+    grid-template-rows: minmax(0, 1fr) auto;
+  }
+  .layout:has(.panel--enemy.is-waiting) {
+    grid-template-columns: minmax(0, 1.9fr) minmax(0, 1fr);
+  }
+  .layout__center { display: contents; }
+  .panel--capture { grid-area: capture; }
+  .panel--enemy { grid-area: enemies; }
+  .panel--speed { grid-area: speed; }
+  .panel--enemy.is-waiting .panel__cards--enemy-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .panel--speed { padding: 0.35rem; }
+  .panel--speed .panel__header { margin-bottom: 0.15rem; }
+  .panel__cards--enemy-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    grid-template-rows: repeat(2, minmax(max-content, 1fr));
+  }
+  .pkmn-card--enemy .move-grid--six { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .pkmn-card--enemy .pkmn-card__sprite { width: 30px; height: 30px; }
 }

@@ -23,7 +23,6 @@ import { APP_NAME, SHOWDOWN_TEAMBUILDER_URL, formatAppVersion } from './version'
 import {
   AUTO_RECOGNIZE_KEY,
   SAVE_RECOGNIZE_FRAMES_KEY,
-  SHOW_AV_CONTROLS_KEY,
   loadBoolPref,
   saveBoolPref,
 } from './lib/prefs';
@@ -198,7 +197,7 @@ export default function App() {
   const [restoredAlly] = useState(() => loadAllyTeam());
   const [myTeam, setMyTeam] = useState<PokemonSet[]>(() => restoredAlly ?? buildSyncDemoTeam());
   const [enemyTeam, setEnemyTeam] = useState<PokemonSet[]>(() => buildEmptyEnemy());
-  const [status, setStatus] = useState('就緒 — 請連接 GC551／OBS、載入靜態選隊圖，或匯入我方隊伍');
+  const [status, setStatus] = useState('');
   const [busy, setBusy] = useState(false);
   const [fineTune, setFineTune] = useState<RoiFineTune>(() => loadFineTune());
   const [debugOverlay, setDebugOverlay] = useState(() => loadDebugOverlay());
@@ -213,7 +212,6 @@ export default function App() {
   };
   const [selectedAllyIndex, setSelectedAllyIndex] = useState<number | null>(null);
   const [teamOpen, setTeamOpen] = useState(() => loadTeamPanelOpen());
-  const [showAvControls, setShowAvControls] = useState(() => loadBoolPref(SHOW_AV_CONTROLS_KEY, true));
   const [autoRecognize, setAutoRecognize] = useState(() => loadBoolPref(AUTO_RECOGNIZE_KEY, true));
   const [saveRecognizeFrames, setSaveRecognizeFrames] = useState(() =>
     loadBoolPref(SAVE_RECOGNIZE_FRAMES_KEY, false),
@@ -403,11 +401,6 @@ export default function App() {
     });
   }, []);
 
-  const toggleAvControls = useCallback((show: boolean) => {
-    setShowAvControls(show);
-    saveBoolPref(SHOW_AV_CONTROLS_KEY, show);
-  }, []);
-
   const toggleAutoRecognize = useCallback(() => {
     setAutoRecognize((prev) => {
       const next = !prev;
@@ -494,11 +487,11 @@ export default function App() {
         ).length;
         setStatus(
           hit > 0
-            ? `辨認完成：${hit}/6 命中模板（弱點／速度軸／top6 招式已刷新）`
-            : '辨認完成（低信心 → 未識別）。可手動覆寫種族；縮圖已裁切。',
+            ? `辨認 ${hit}/6`
+            : '辨認 0/6',
         );
       } catch {
-        setStatus('辨認失敗（已安全忽略）');
+        setStatus('辨認失敗');
       } finally {
         setBusy(false);
       }
@@ -522,9 +515,6 @@ export default function App() {
           </button>
           <div className="app-header__brand">
             <strong>{APP_NAME}</strong>
-            <span className="muted">
-              {appVersion} · Doubles
-            </span>
           </div>
         </div>
         <nav className="app-header__nav">
@@ -573,14 +563,6 @@ export default function App() {
                   ROI 除錯疊加（綠面板／黃縮圖）
                 </label>
                 <label className="settings__check">
-                  <input
-                    type="checkbox"
-                    checked={showAvControls}
-                    onChange={(e) => toggleAvControls(e.target.checked)}
-                  />
-                  顯示鏡頭／音訊控制
-                </label>
-                <label className="settings__check">
                   <input type="checkbox" checked={autoRecognize} onChange={toggleAutoRecognize} />
                   自動辨認（選隊畫面錨點，非逐幀 OCR）
                 </label>
@@ -609,7 +591,7 @@ export default function App() {
               <p>快捷鍵：1–6 選我方欄位 · Space 辨認敵方隊伍</p>
               <p>鏡頭：優先 GC551／AVerMedia，其次 OBS</p>
               <p>Spe 於我方卡片手填</p>
-              <p>招式來源：{MOVES_SOURCE_LABEL}（無資料→未載入）</p>
+              <p>使用率來源：{MOVES_SOURCE_LABEL}（無資料→未載入）</p>
               <p>模板：僅 Team Preview 小縮圖</p>
             </div>
           </details>
@@ -640,8 +622,6 @@ export default function App() {
             debugOverlay={debugOverlay}
             enemyTeam={enemyTeam}
             enemyFocus={enemyFocus}
-            showAvControls={showAvControls}
-            onShowAvControlsChange={toggleAvControls}
             autoRecognize={autoRecognize}
             saveRecognizeFrames={saveRecognizeFrames}
           />
@@ -660,8 +640,6 @@ export default function App() {
           onFormChange={onEnemyFormChange}
         />
       </main>
-
-      <footer className="app-footer">使用率來源：{MOVES_SOURCE_LABEL}</footer>
     </div>
   );
 }
