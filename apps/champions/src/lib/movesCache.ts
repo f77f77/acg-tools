@@ -1,3 +1,4 @@
+import { championsMoves } from './moveNotes';
 import type { HeldItemSlot, MoveSlot, PokemonType } from '../types';
 import { TYPE_ID_TO_ZH, type TypeIconId } from './typeIcons';
 
@@ -104,7 +105,7 @@ function todayKey(): string {
 }
 
 function storageKey(speciesKey: string): string {
-  return `pkmn-moves-cache:v3:${todayKey()}:${speciesKey}`;
+  return `pkmn-moves-cache:v4:${todayKey()}:${speciesKey}`;
 }
 
 export function parseUsagePercent(usage: string | number | null | undefined): number {
@@ -198,6 +199,14 @@ export async function loadMovesData(
           if (!m?.id) continue;
           MOVES_BY_ID.set(m.id, m);
         }
+      }
+      for (const [id, number, name, type, category, pp, power, accuracy] of championsMoves) {
+        const existing = MOVES_BY_ID.get(id);
+        MOVES_BY_ID.set(id, {
+          ...existing,
+          id, pokeapiId: number, type, category, pp, power, accuracy,
+          names: { en: existing?.names.en ?? id, ja: existing?.names.ja ?? null, 'zh-Hant': name },
+        });
       }
       if (Array.isArray(pokemon)) {
         for (const p of pokemon) {
