@@ -1,4 +1,4 @@
-import { moveNotes } from '../lib/moveNotes';
+import { decemberAccuracy, moveNotes } from '../lib/moveNotes';
 import { useEffect, useLayoutEffect, useRef, useState, type RefObject } from 'react';
 import { createPortal } from 'react-dom';
 import type { HeldItemSlot, PokemonFormOption, PokemonSet, PokemonType, StatKey } from '../types';
@@ -139,8 +139,10 @@ function MoveTooltip({
   const effect = note?.[2] ?? rec?.flavor?.['zh-Hant'];
   const category = rec?.category === 'physical' ? '物理' : rec?.category === 'special' ? '特殊' : rec?.category === 'status' ? '變化' : '';
   const priority = note?.[1] || 0;
-  const summary = [note?.[0], priority ? `優先度 ${priority > 0 ? '+' : ''}${priority}` : '', note?.[2]].filter(Boolean).join(' · ');
-  const stats = [typeLabel, category, power != null ? `威力 ${power}` : '', acc != null ? `命中 ${acc}%` : ''].filter(Boolean);
+  const updatedAccuracy = rec && decemberAccuracy[rec.id];
+  const rockSlide = rec?.id === 'rockslide';
+  const summary = [note?.[0], priority ? `優先度 ${priority > 0 ? '+' : ''}${priority}` : '', rockSlide ? '' : note?.[2]].filter(Boolean).join(' · ');
+  const stats = [typeLabel, category, power != null ? `威力 ${power}` : '', acc != null && !updatedAccuracy ? `命中 ${acc}%` : ''].filter(Boolean);
   const empty = name === '—' || name === '未載入';
 
   useLayoutEffect(() => {
@@ -179,6 +181,7 @@ function MoveTooltip({
       <strong>{zh}</strong>
       {summary && <span>{summary}</span>}
       {note?.[2] == null && effect && <span className="move-tooltip__flavor">{effect}</span>}
+      {updatedAccuracy && <span>12/2 維護前 · 命中 {acc}%{rockSlide && ' · 30%畏縮'}<br />維護後 · 命中 {updatedAccuracy}%{rockSlide && ' · 20%畏縮'}</span>}
       <small>{stats.join(' · ')}{usageLabel && ` · 使用率 ${usageLabel}`}</small>
     </div>,
     document.body,
