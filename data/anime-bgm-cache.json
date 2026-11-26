@@ -1,6 +1,6 @@
 {
   "schema": "anime-bgm-cache.v1",
-  "updatedAt": "2026-11-24",
+  "updatedAt": "2026-11-26",
   "entries": {
     "bluereflectionray": {
       "keyword": "BLUE REFLECTION RAY",
@@ -70,7 +70,7 @@
     "魔法骑士レイアース2026": {
       "keyword": "魔法騎士レイアース (2026)",
       "bgmId": null,
-      "checkedAt": "2026-11-19"
+      "checkedAt": "2026-11-26"
     },
     "黑化吧圣女大人s2": {
       "keyword": "黑化吧！聖女大人 第二季",
