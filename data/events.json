@@ -1,6 +1,6 @@
 {
   "schema": "events.v2",
-  "updatedAt": "2026-11-25",
+  "updatedAt": "2026-11-26",
   "note": "活動由 Notion「香港ACG情報看板」每日同步（香港時間）。狀態會按日期重算：開始至結束當日係進行中，未開始係即將開始，完結七日內先保留。周邊截止仍然手改 deadlines[]；標成示例嘅截止唔會保留。",
   "events": [
     {
@@ -159,6 +159,27 @@
       "sample": false
     },
     {
+      "id": "c05212b355412616",
+      "title": "《劇場版『鏈鋸人 蕾潔篇』》With Umbrella 打卡位 @ 動漫聯動 T.O.P 店",
+      "status": "已完結",
+      "notionStatus": "進行中",
+      "category": "店內活動",
+      "ips": [],
+      "date": "2026-11-20",
+      "endDate": "2026-11-20",
+      "timeNote": "2026-11-20 起至 2027 年 1 月（官方未寫確切結束日）；門市平日 12:00–21:00、六日及假期 11:00–21:00",
+      "place": "旺角彌敦道 700 號 T.O.P This is Our Place 1 樓 110-111 號鋪",
+      "mapUrl": "https://www.google.com/maps/search/?api=1&query=%E6%97%BA%E8%A7%92%E5%BD%8C%E6%95%A6%E9%81%93%20700%20%E8%99%9F%20T.O.P%20This%20is%20Our%20Place%201%20%E6%A8%93%20110-111%20%E8%99%9F%E9%8B%AA",
+      "price": "免費入場；買滿指定金額有滿額贈禮（門檻未公布）",
+      "ticketUrl": "",
+      "ticketNote": "無／店舖活動",
+      "source": "https://www.microworksacg.com/blogs/shop-in-shop/top-cwm-20261120",
+      "notes": "2026-11-26 補建漏報。店門設 With Umbrella 系列立牌及佈景打卡，店內有該系列及 Q 版周邊。IP 欄無「鏈鋸人」選項，未加新選項。",
+      "featured": false,
+      "verifiedAt": "2026-11-26",
+      "sample": false
+    },
+    {
       "id": "8f676a4a7a70d1f1",
       "title": "《藥師少女的獨語》夏日園遊會2026 Shop in Shop @ 動漫聯動 The ANGLE",
       "status": "已完結",
@@ -264,38 +285,15 @@
       "sample": false
     },
     {
-      "id": "6c67f3fdffe24dbe",
-      "title": "Cö shu Nie Live in Hong Kong SATURATED IN MONOCHROME",
-      "status": "進行中",
-      "notionStatus": "進行中",
-      "category": "演唱會",
-      "ips": [
-        "Cö shu Nie"
-      ],
-      "date": "2026-11-25",
-      "endDate": "2026-11-25",
-      "timeNote": "2026-11-25　20:00",
-      "place": "PORTAL　新蒲崗",
-      "mapUrl": "https://www.google.com/maps/search/?api=1&query=PORTAL%E3%80%80%E6%96%B0%E8%92%B2%E5%B4%97",
-      "price": "VIP $980／GA $680",
-      "ticketUrl": "https://edproduction.kktix.cc/events/coshunie-2026-hk",
-      "ticketNote": "",
-      "source": "https://edproduction.kktix.cc/events/coshunie-2026-hk",
-      "notes": "2026-11-25：今日舉行（20:00，新蒲崗 PORTAL）→即將開始改進行中。完場後明日封存。",
-      "featured": false,
-      "verifiedAt": "2026-11-25",
-      "sample": false
-    },
-    {
       "id": "d30409f473d8c029",
       "title": "青春豬頭少年不會夢到親愛好朋友（劇場版）",
-      "status": "即將開始",
-      "notionStatus": "即將開始",
+      "status": "進行中",
+      "notionStatus": "進行中",
       "category": "電影",
       "ips": [],
       "date": "2026-11-26",
       "endDate": "2026-11-26",
-      "timeNote": "2026-11-26（四）港澳上映；wmoov／院線場次已出（列至 12/2）。11/24 德福 MCL 會員優先場已過。「青春終章場」11/28 德福 15:10、K11 17:15，11/29 AIRSIDE 13:00（HK$160，據 ANIHK 11/23 已滿座）",
+      "timeNote": "2026-11-26（四）港澳上映進行中；wmoov 今日多院有場（MCL、百老匯、影藝、英皇等，約 $50–$110）；場次頁列至 12/2。11/24 德福 MCL 會員優先場已過。「青春終章場」11/28 德福 15:10、K11 17:15，11/29 AIRSIDE 13:00（HK$160，據 ANIHK 11/23 已滿座）",
       "place": "港澳各大院線（場次已出）　發行：木棉花香港",
       "mapUrl": "https://www.google.com/maps/search/?api=1&query=%E6%B8%AF%E6%BE%B3%E5%90%84%E5%A4%A7%E9%99%A2%E7%B7%9A%EF%BC%88%E5%A0%B4%E6%AC%A1%E5%B7%B2%E5%87%BA%EF%BC%89%E3%80%80%E7%99%BC%E8%A1%8C%EF%BC%9A%E6%9C%A8%E6%A3%89%E8%8A%B1%E9%A6%99%E6%B8%AF",
       "price": "一般場見院線（約 $50–$110）；「青春終章場」HK$160（據報 11/23 已滿座）",
@@ -304,7 +302,51 @@
       "source": "https://wmoov.com/movie/details/73598",
       "notes": "系列大學篇完結篇；日語原聲、中英文字幕；CloverWorks。2026-11-12 核實：wmoov showtimes/73598 仍無場次；片長／級別仍待定。 2026-11-17 核實：wmoov showtimes/73598…",
       "featured": false,
-      "verifiedAt": "2026-11-25",
+      "verifiedAt": "2026-11-26",
+      "sample": false
+    },
+    {
+      "id": "b71f1b0ef6e9c203",
+      "title": "Chiikawa Clinic 診所主題區 @ CHIIKAWA SHOP in HONG KONG（MOKO 二樓）",
+      "status": "即將開始",
+      "notionStatus": "即將開始",
+      "category": "限定店",
+      "ips": [
+        "CHIIKAWA"
+      ],
+      "date": "2026-11-27",
+      "endDate": "2027-01-12",
+      "timeNote": "2026-11-27～2027-01-12。11/27–12/10 預約進場 10:00–22:00；12/11 起 11:30–21:30（其後進場安排以店方為準）。Klook 營業日期另寫至 1/11，香港店／報道多寫至 1/12",
+      "place": "旺角 MOKO 新世紀廣場 2 樓 236 號舖（CHIIKAWA SHOP in HONG KONG 二樓店）",
+      "mapUrl": "https://www.google.com/maps/search/?api=1&query=%E6%97%BA%E8%A7%92%20MOKO%20%E6%96%B0%E4%B8%96%E7%B4%80%E5%BB%A3%E5%A0%B4%202%20%E6%A8%93%20236%20%E8%99%9F%E8%88%96%EF%BC%88CHIIKAWA%20SHOP%20in%20HONG%20KONG%20%E4%BA%8C%E6%A8%93%E5%BA%97%EF%BC%89",
+      "price": "免費入場（預約時段須持 Klook QR Code）；周邊約 $20 起",
+      "ticketUrl": "https://www.klook.com/zh-HK/activity/221260-langham-place-pop-up-store-entry-pass/",
+      "ticketNote": "Klook 預約。首輪（11/27–12/3）已滿；第二輪 12/1 10:00 開放（適用 12/4–10）。每次最多 2 人；3 歲或以下免登記但無購買名額",
+      "source": "https://konggokhk.com/chiikawa_clinic_hong_kong_klook_moko_organ_2026/",
+      "notes": "2026-11-26 新建。二樓店換成診所主題，與日本同步發售醫護造型系列。11/27–12/10 須預約；場次開始前 15 分鐘可排隊，須於時段結束前至少 15 分鐘到場。",
+      "featured": false,
+      "verifiedAt": "2026-11-26",
+      "sample": false
+    },
+    {
+      "id": "fc8f8b063ef2c63e",
+      "title": "San-X Universe～Happiness to you～POP-UP SHOP @ 又一城 Log-on",
+      "status": "即將開始",
+      "notionStatus": "即將開始",
+      "category": "快閃店",
+      "ips": [],
+      "date": "2026-11-27",
+      "endDate": "2027-01-17",
+      "timeNote": "2026-11-27～2027-01-17。快閃店獨立營業時間未見公布",
+      "place": "九龍塘又一城 UG 層 Log-on（達之路 80 號）",
+      "mapUrl": "https://www.google.com/maps/search/?api=1&query=%E4%B9%9D%E9%BE%8D%E5%A1%98%E5%8F%88%E4%B8%80%E5%9F%8E%20UG%20%E5%B1%A4%20Log-on%EF%BC%88%E9%81%94%E4%B9%8B%E8%B7%AF%2080%20%E8%99%9F%EF%BC%89",
+      "price": "免費入場",
+      "ticketUrl": "",
+      "ticketNote": "無／免費入場",
+      "source": "https://www.san-x.co.jp/zh/blog/2026-11-post-0437060/",
+      "notes": "2026-11-26 新建。San-X 首個海外巡迴快閃店，香港為首波開幕站；官方 11/17 網誌確認檔期至 2027/1/17（10/13 計劃稿曾寫至 1/27，以較新官方為準）。全線海外限定商品以粉紅／心形設計，角色包括鬆弛熊、角…",
+      "featured": false,
+      "verifiedAt": "2026-11-26",
       "sample": false
     },
     {
@@ -459,7 +501,7 @@
       "source": "https://acgevent.com/archives/40059",
       "notes": "2026-11-12 核實：Muse HK shop 已開售前賣券套票組 HK$110（換票證 1 張＋特製主視覺 PVC 小卡；每人限 4 套；11 月中下旬起配送；不適用特典場）。wmoov 現時未見專頁／場次。特典場資訊仍待公布。…",
       "featured": false,
-      "verifiedAt": "2026-11-25",
+      "verifiedAt": "2026-11-26",
       "sample": false
     },
     {
@@ -480,7 +522,7 @@
       "source": "https://wmoov.com/movie/details/74196",
       "notes": "2026-11-04 新建；發行新映影片；日語；約55分鐘；2D／4DX／MX4D。日本 2026-10-09 上映。2026-11-12 核實：wmoov showtimes/74196 仍無場次；片長／級別仍待定。 2026-11-1…",
       "featured": false,
-      "verifiedAt": "2026-11-25",
+      "verifiedAt": "2026-11-26",
       "sample": false
     },
     {
@@ -592,7 +634,7 @@
       "source": "https://m.wmoov.com/movie/details/73499",
       "notes": "2000 年第二部劇場版；香港以前只曾喺翡翠台播放，從未上映戲院；10-06 WMOOV 標暫定 12-10 上映，戲院未公布；木棉花預告見 https://acgevent.com/archives/40040。2026-11-12 核…",
       "featured": false,
-      "verifiedAt": "2026-11-25",
+      "verifiedAt": "2026-11-26",
       "sample": false
     },
     {
