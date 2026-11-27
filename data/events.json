@@ -1,6 +1,6 @@
 {
   "schema": "events.v2",
-  "updatedAt": "2026-11-26",
+  "updatedAt": "2026-11-27",
   "note": "活動由 Notion「香港ACG情報看板」每日同步（香港時間）。狀態會按日期重算：開始至結束當日係進行中，未開始係即將開始，完結七日內先保留。周邊截止仍然手改 deadlines[]；標成示例嘅截止唔會保留。",
   "events": [
     {
@@ -82,15 +82,15 @@
       "date": "2026-11-07",
       "endDate": "2026-12-06",
       "timeNote": "2026-11-07～12-06　14:00–19:00（星期一休息）。11/14 作者簽書會已過",
-      "place": "中環士丹頓街 5 號亞仕瑞閣 1 樓 a little something（小意思）",
-      "mapUrl": "https://www.google.com/maps/search/?api=1&query=%E4%B8%AD%E7%92%B0%E5%A3%AB%E4%B8%B9%E9%A0%93%E8%A1%97%205%20%E8%99%9F%E4%BA%9E%E4%BB%95%E7%91%9E%E9%96%A3%201%20%E6%A8%93%20a%20little%20something%EF%BC%88%E5%B0%8F%E6%84%8F%E6%80%9D%EF%BC%89",
+      "place": "中環士丹頓街 5 號嘉彩閣 1 樓 a little something（小意思）",
+      "mapUrl": "https://www.google.com/maps/search/?api=1&query=%E4%B8%AD%E7%92%B0%E5%A3%AB%E4%B8%B9%E9%A0%93%E8%A1%97%205%20%E8%99%9F%E5%98%89%E5%BD%A9%E9%96%A3%201%20%E6%A8%93%20a%20little%20something%EF%BC%88%E5%B0%8F%E6%84%8F%E6%80%9D%EF%BC%89",
       "price": "免費入場",
       "ticketUrl": "https://www.art-mate.net/doc/102276",
       "ticketNote": "免費入場。現場另售手繪原畫、Zine 及周邊；《THE GREEN CAT》Art Toy 限量發售",
       "source": "https://www.art-mate.net/doc/102276",
       "notes": "2026-11-25 補建漏報（11/7 已開幕）。香港出身漫畫家黑山 Kathy Lam（DAWNING CROW）新作原稿展，展出逾 20 幅漫畫原稿及複製原畫；台灣／日本展之後嘅香港站。主辦 a little something a…",
       "featured": false,
-      "verifiedAt": "2026-11-25",
+      "verifiedAt": "2026-11-27",
       "sample": false
     },
     {
@@ -287,13 +287,13 @@
     {
       "id": "d30409f473d8c029",
       "title": "青春豬頭少年不會夢到親愛好朋友（劇場版）",
-      "status": "進行中",
+      "status": "已完結",
       "notionStatus": "進行中",
       "category": "電影",
       "ips": [],
       "date": "2026-11-26",
       "endDate": "2026-11-26",
-      "timeNote": "2026-11-26（四）港澳上映進行中；wmoov 今日多院有場（MCL、百老匯、影藝、英皇等，約 $50–$110）；場次頁列至 12/2。11/24 德福 MCL 會員優先場已過。「青春終章場」11/28 德福 15:10、K11 17:15，11/29 AIRSIDE 13:00（HK$160，據 ANIHK 11/23 已滿座）",
+      "timeNote": "2026-11-26（四）港澳上映進行中；wmoov 今日仍多院有場（MCL、百老匯、影藝、英皇等，約 $50–$110）；場次頁列至 12/2。11/24 德福 MCL 會員優先場已過。「青春終章場」11/28 德福 15:10、K11 17:15，11/29 AIRSIDE 13:00（HK$160，據 ANIHK 11/23 已滿座）",
       "place": "港澳各大院線（場次已出）　發行：木棉花香港",
       "mapUrl": "https://www.google.com/maps/search/?api=1&query=%E6%B8%AF%E6%BE%B3%E5%90%84%E5%A4%A7%E9%99%A2%E7%B7%9A%EF%BC%88%E5%A0%B4%E6%AC%A1%E5%B7%B2%E5%87%BA%EF%BC%89%E3%80%80%E7%99%BC%E8%A1%8C%EF%BC%9A%E6%9C%A8%E6%A3%89%E8%8A%B1%E9%A6%99%E6%B8%AF",
       "price": "一般場見院線（約 $50–$110）；「青春終章場」HK$160（據報 11/23 已滿座）",
@@ -302,14 +302,14 @@
       "source": "https://wmoov.com/movie/details/73598",
       "notes": "系列大學篇完結篇；日語原聲、中英文字幕；CloverWorks。2026-11-12 核實：wmoov showtimes/73598 仍無場次；片長／級別仍待定。 2026-11-17 核實：wmoov showtimes/73598…",
       "featured": false,
-      "verifiedAt": "2026-11-26",
+      "verifiedAt": "2026-11-27",
       "sample": false
     },
     {
       "id": "b71f1b0ef6e9c203",
       "title": "Chiikawa Clinic 診所主題區 @ CHIIKAWA SHOP in HONG KONG（MOKO 二樓）",
-      "status": "即將開始",
-      "notionStatus": "即將開始",
+      "status": "進行中",
+      "notionStatus": "進行中",
       "category": "限定店",
       "ips": [
         "CHIIKAWA"
@@ -323,16 +323,16 @@
       "ticketUrl": "https://www.klook.com/zh-HK/activity/221260-langham-place-pop-up-store-entry-pass/",
       "ticketNote": "Klook 預約。首輪（11/27–12/3）已滿；第二輪 12/1 10:00 開放（適用 12/4–10）。每次最多 2 人；3 歲或以下免登記但無購買名額",
       "source": "https://konggokhk.com/chiikawa_clinic_hong_kong_klook_moko_organ_2026/",
-      "notes": "2026-11-26 新建。二樓店換成診所主題，與日本同步發售醫護造型系列。11/27–12/10 須預約；場次開始前 15 分鐘可排隊，須於時段結束前至少 15 分鐘到場。",
+      "notes": "2026-11-26 新建。二樓店換成診所主題，與日本同步發售醫護造型系列。11/27–12/10 須預約；場次開始前 15 分鐘可排隊，須於時段結束前至少 15 分鐘到場。 2026-11-27：今日開幕→即將開始改進行中。首輪預約（1…",
       "featured": false,
-      "verifiedAt": "2026-11-26",
+      "verifiedAt": "2026-11-27",
       "sample": false
     },
     {
       "id": "fc8f8b063ef2c63e",
       "title": "San-X Universe～Happiness to you～POP-UP SHOP @ 又一城 Log-on",
-      "status": "即將開始",
-      "notionStatus": "即將開始",
+      "status": "進行中",
+      "notionStatus": "進行中",
       "category": "快閃店",
       "ips": [],
       "date": "2026-11-27",
@@ -346,7 +346,7 @@
       "source": "https://www.san-x.co.jp/zh/blog/2026-11-post-0437060/",
       "notes": "2026-11-26 新建。San-X 首個海外巡迴快閃店，香港為首波開幕站；官方 11/17 網誌確認檔期至 2027/1/17（10/13 計劃稿曾寫至 1/27，以較新官方為準）。全線海外限定商品以粉紅／心形設計，角色包括鬆弛熊、角…",
       "featured": false,
-      "verifiedAt": "2026-11-26",
+      "verifiedAt": "2026-11-27",
       "sample": false
     },
     {
@@ -501,7 +501,7 @@
       "source": "https://acgevent.com/archives/40059",
       "notes": "2026-11-12 核實：Muse HK shop 已開售前賣券套票組 HK$110（換票證 1 張＋特製主視覺 PVC 小卡；每人限 4 套；11 月中下旬起配送；不適用特典場）。wmoov 現時未見專頁／場次。特典場資訊仍待公布。…",
       "featured": false,
-      "verifiedAt": "2026-11-26",
+      "verifiedAt": "2026-11-27",
       "sample": false
     },
     {
@@ -513,16 +513,16 @@
       "ips": [],
       "date": "2026-12-03",
       "endDate": "2026-12-03",
-      "timeNote": "2026-12-03（四）香港公映；wmoov 片長 55 分，級別待定；場次仍未公布",
-      "place": "全港院線（戲院／場次未公布）",
-      "mapUrl": "https://www.google.com/maps/search/?api=1&query=%E5%85%A8%E6%B8%AF%E9%99%A2%E7%B7%9A%EF%BC%88%E6%88%B2%E9%99%A2%EF%BC%8F%E5%A0%B4%E6%AC%A1%E6%9C%AA%E5%85%AC%E5%B8%83%EF%BC%89",
-      "price": "未公布",
+      "timeNote": "2026-12-03（四）香港公映；2D／MX4D／4DX；wmoov 片長 55 分，級別待定；入場特典已公布；場次／前售仍未開",
+      "place": "香港：MCL（K11 Art House、德福、AIRSIDE、Movie Town）；Cinema City（愉景新城 Candy Park）；CGV D2 Place；百老匯（B+ apm、GALA、B+ MOKO、MOViE MOViE Cityplaza、YOHO、Premiere Elements、葵芳、嘉湖銀座）；影藝（青衣城、MegaBox）。場次仍未公布",
+      "mapUrl": "https://www.google.com/maps/search/?api=1&query=%E9%A6%99%E6%B8%AF%EF%BC%9AMCL%EF%BC%88K11%20Art%20House%E3%80%81%E5%BE%B7%E7%A6%8F%E3%80%81AIRSIDE%E3%80%81Movie%20Town%EF%BC%89%EF%BC%9BCinema%20City%EF%BC%88%E6%84%89%E6%99%AF%E6%96%B0%E5%9F%8E%20Candy%20Park%EF%BC%89%EF%BC%9BCGV%20D2%20Place%EF%BC%9B%E7%99%BE%E8%80%81%E5%8C%AF%EF%BC%88B%2B%20apm%E3%80%81GALA%E3%80%81B%2B%20MOKO%E3%80%81MOViE%20MOViE%20Cityplaza%E3%80%81YOHO%E3%80%81Premiere%20Elements%E3%80%81%E8%91%B5%E8%8A%B3%E3%80%81%E5%98%89%E6%B9%96%E9%8A%80%E5%BA%A7%EF%BC%89%EF%BC%9B%E5%BD%B1%E8%97%9D%EF%BC%88%E9%9D%92%E8%A1%A3%E5%9F%8E%E3%80%81MegaBox%EF%BC%89%E3%80%82%E5%A0%B4%E6%AC%A1%E4%BB%8D%E6%9C%AA%E5%85%AC%E5%B8%83",
+      "price": "票價未公布。入場特典：2D「決戰開始」／MX4D「跨越雙壁」／4DX「關鍵一勝」香港版 A3 海報（限量、先到先得；只限正場，不適用優惠／換票證）",
       "ticketUrl": "https://m.wmoov.com/movie/showtimes/74196",
-      "ticketNote": "院線／未公布",
+      "ticketNote": "院線已公布，前售／場次未開",
       "source": "https://wmoov.com/movie/details/74196",
       "notes": "2026-11-04 新建；發行新映影片；日語；約55分鐘；2D／4DX／MX4D。日本 2026-10-09 上映。2026-11-12 核實：wmoov showtimes/74196 仍無場次；片長／級別仍待定。 2026-11-1…",
       "featured": false,
-      "verifiedAt": "2026-11-26",
+      "verifiedAt": "2026-11-27",
       "sample": false
     },
     {
@@ -634,7 +634,7 @@
       "source": "https://m.wmoov.com/movie/details/73499",
       "notes": "2000 年第二部劇場版；香港以前只曾喺翡翠台播放，從未上映戲院；10-06 WMOOV 標暫定 12-10 上映，戲院未公布；木棉花預告見 https://acgevent.com/archives/40040。2026-11-12 核…",
       "featured": false,
-      "verifiedAt": "2026-11-26",
+      "verifiedAt": "2026-11-27",
       "sample": false
     },
     {
